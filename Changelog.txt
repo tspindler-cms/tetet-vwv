@@ -1,0 +1,8 @@
+2023-11-21
+  P 4
+    - Increase hitpoints to 200
+  Maddox    
+    - Reduce hitpoints to 1000
+    - Reduce turn radius to 300
+    - Use KS19_100HE shell to remove dependency on WWII pack
+    - Add Oerlikon 20mm texture

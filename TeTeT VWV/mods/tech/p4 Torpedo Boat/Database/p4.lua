@@ -13,7 +13,7 @@ GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 -- most values taken from https://en.wikipedia.org/wiki/P_4-class_torpedo_boat
 -- and the speedboat: https://github.com/Quaggles/dcs-lua-datamine/blob/master/_G/db/Units/Ships/Ship/speedboat.lua
 
-GT.life = 4 -- 7200; -- hit points
+GT.life = 200 -- 7200; -- hit points
 GT.mass = 2000 -- should be heavier? -- 11339.809; -- KGs
 GT.max_velocity = 28 -- 14.4 --M/S
 GT.race_velocity =  23 -- 12.1 --M/S

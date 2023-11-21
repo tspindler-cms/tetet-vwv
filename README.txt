@@ -21,7 +21,7 @@ Links and model sources:
 	* https://github.com/Quaggles/dcs-lua-datamine
 
 Thanks
-	Joey45 - for the DCS ship template on github and help via discord
+    Joey45 - for the DCS ship template on github and help via discord
     Hawkeye60 - for all the help via DCS World forum
     Tobsen - for help around the Blender EDM exporter
     Aplion - for an important topic on ship building on DCS World forum and help via discord

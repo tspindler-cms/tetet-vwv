@@ -11,7 +11,7 @@ GT.visual = {}
 GT.visual.shape = "maddox_dcs"  -- name of LODs lua
 GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 
-GT.life = 7200; -- hit points
+GT.life = 1000; -- hit points
 GT.mass = 11339.809; -- KGs
 GT.max_velocity = 14.4 --M/S
 GT.race_velocity = 12.1 --M/S
@@ -29,11 +29,10 @@ GT.Tail_Width = 8 --wake width
 GT.Gamma_max = 0.35 -- no idea
 GT.Om = 0.05 --no idea
 GT.speedup = 0.119249; --time it takes to accelerate
-GT.R_min = 665.8 -- turn radius
+GT.R_min = 300 -- turn radius
 
 GT.RCS = 100000 -- new in 2.7 ----estimated RCS in square meters
 GT.IR_emission_coeff = 0.9 -- new in 2.7 not sure the params
-
 
 GT.TACAN = false;		--If it has TACAN say true if not say false or not have this entry
 
@@ -100,7 +99,10 @@ set_recursive_metatable(GT_t.WS_t.ship_mk12_2x127mm.LN[1].sensor, GT_t.WSN_t[11]
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL = {}
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1] = {}
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].ammo_capacity = 200;
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_name = { "Mk_12_HE_shell" };
+-- The Mk_12_HE_shell is part of the WWII pack, without it there's no dependency
+-- Kudos to Citizen for the suggestion
+-- GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_name = { "Mk_12_HE_shell" };
+GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_name = { "KS19_100HE" };
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_display_name = "127mm";
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shot_delay = 3;
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].reload_time = 15000000; -- never
