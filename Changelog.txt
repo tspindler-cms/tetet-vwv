@@ -1,3 +1,8 @@
+2023-12-04
+  Maddox
+    - Fix turret 2 elevation
+  Bon Homme Richard
+    - Initial release
 2023-11-21
   P 4
     - Increase hitpoints to 200
