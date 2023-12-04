@@ -42,14 +42,14 @@ GT.TACAN_position = {88.422, 21.293, 5.7438} -- { 5.7438, 88.422,  21.293 } -- p
 
 GT.ICLS = true; -- IF it has ICLS say true if not say false or not have this entry
 GT.ICLS_Localizer_position =  {-31.699883,  17.116796,  -32.048683, 189.0}	-- {x [m], y [m], z [m], yaw [deg]} 
-GT.ICLS_Glideslope_position = {-78.591599,  17.002604, -4.102856,   4.5}	-- {x [m], y [m], z [m], glideslope = 3.5 [deg]}
+GT.ICLS_Glideslope_position = {-78.591599,  17.002604, -4.102856,   3.5}	-- {x [m], y [m], z [m], glideslope = 3.5 [deg]}
 --Optical Landing System
 GT.OLS = {
 	Type = GT_t.OLS_TYPE.IFLOLS, 
 	CutLightsArg = 44, 
 	DatumAndWaveOffLightsArg = 45, 
 	MeatBallArg = 51, 
-	GlideslopeBasicAngle = 4.5, 
+	GlideslopeBasicAngle = 3.5, 
 	VerticalCoverageAngle = 1.7
 }
 
