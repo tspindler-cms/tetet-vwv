@@ -1,6 +1,7 @@
 Vietnam War Vessels by TeTeT
+0.2.1
 
-The pre-release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier:
+This release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier:
 
 P 4 Class Torpedo Boat
 USS Maddox (DD-731), Sumner class destroyer
@@ -12,6 +13,9 @@ How to install
 
 The mods directory needs to go into your Saved Games DCS folder. 
 
+Videos:
+    * https://www.youtube.com/watch?v=yv03h-a1TQA Sidekick65's video of Unboxing and First Impression for CVA-31
+	* https://youtu.be/h-b9WlLvd8E TeTeT's take on a release video for CVA-31
 
 Links and model sources:
 	* https://en.wikipedia.org/wiki/USS_Bon_Homme_Richard_(CV-31)
@@ -35,3 +39,13 @@ Thanks
     Citizen - tester of the mod
 
 Without these persons the mod would not have been possible!
+
+Also thanks to present contributors:
+	Odyseus - overhauling the base model of the CVA-31
+	Erwin23p - providing the new main mast of USS_Maddox
+	ColeMinor - created graphics for the mod
+
+Final thanks to the past contributors:
+	- karla - creator of the mod for IL-2 1946
+	- NightIntruder - porting the mod to Arma 3 initially
+	- TheSn4k3 - provided shuttle shoe and wires

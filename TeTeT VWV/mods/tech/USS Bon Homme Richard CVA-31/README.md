@@ -12,7 +12,7 @@ It has been brought to Arma 3 by NightIntruder and myself: https://steamcommunit
 
 Thanks to Joey45, Admiral189, Tobsen and Hawkeye60 for all the help and advice on getting this boat afloat in DCS.
 
-Final thanks to Citizen, tester of the mod.
+Final thanks to Citizen and seabat, testers of the mod.
 
 The carrier will be published in the Vietnam War Vessels mod, https://github.com/tspindler-cms/tetet-vwv
 
@@ -29,5 +29,4 @@ KNOWN ISSUES
 * The trail marking is suspended in thin air
 * The IFLOLS is not fully operational
 * The AA guns are not working
-* The white landing lights are not fully aligned with the yellow-white marking
-* The wires are not hidden upon trapping
+* The VSN F-4B falls through the deck

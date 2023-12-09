@@ -52,7 +52,7 @@ GT.animation_arguments = {
 	radar2_rotation = 8
 }
 GT.radar1_period = 5; --speed
-GT.radar2_period = 180; 
+GT.radar2_period = 30; 
 
 --Damage Model
 GT.DM = {

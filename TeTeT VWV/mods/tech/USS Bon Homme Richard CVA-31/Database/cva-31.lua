@@ -92,7 +92,7 @@ GT.animation_arguments.bubbles = {138, 139} -- doesn't go back down ED bug
  ]]
 
 GT.animation_arguments.catapult_shuttles = {145, 146} -- shuttle args
-GT.animation_arguments.arresting_wires = {141, 142, 143, 144} -- can't get the visibilty anim to work, differnt #arg numbers on the Stennis and SC
+GT.animation_arguments.arresting_wires = {400, 401, 402, 403} -- can't get the visibilty anim to work, differnt #arg numbers on the Stennis and SC
 GT.animation_arguments.landing_strip_illumination = 40 --runway lights
 GT.animation_arguments.water_propeller = 10
 GT.animation_arguments.radar1_rotation = 1

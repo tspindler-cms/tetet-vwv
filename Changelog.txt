@@ -1,3 +1,14 @@
+2023-12-09
+  Maddox
+    - Use new main mast from erwin23p
+  Bon Homme Richard  
+    - Improved collision shell and mast texture
+    - Add Skid Marks to flight deck
+    - Add normal texture for flightdeck
+    - Add distance lods, add cranes, add FCR bottom
+    - Hide wires, fix ramping pos
+    - Changed landing pos, changed landing lights
+    - Update README
 2023-12-04
   Maddox
     - Fix turret 2 elevation
