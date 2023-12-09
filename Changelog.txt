@@ -8,6 +8,7 @@
     - Add distance lods, add cranes, add FCR bottom
     - Hide wires, fix ramping pos
     - Changed landing pos, changed landing lights
+    - Thicken flight deck collision shell to 30cm
     - Update README
 2023-12-04
   Maddox
