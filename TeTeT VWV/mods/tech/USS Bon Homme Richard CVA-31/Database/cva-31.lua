@@ -42,7 +42,7 @@ GT.TACAN_position = {88.422, 21.293, 5.7438} -- { 5.7438, 88.422,  21.293 } -- p
 
 GT.ICLS = true; -- IF it has ICLS say true if not say false or not have this entry
 GT.ICLS_Localizer_position =  {-31.699883,  17.116796,  -32.048683, 189.0}	-- {x [m], y [m], z [m], yaw [deg]} 
-GT.ICLS_Glideslope_position = {-78.591599,  17.002604, -4.102856,   3.5}	-- {x [m], y [m], z [m], glideslope = 3.5 [deg]}
+GT.ICLS_Glideslope_position = {-72.591599,  16.95, -5.60511,   3.5}	-- {x [m], y [m], z [m], glideslope = 3.5 [deg]}
 --Optical Landing System
 GT.OLS = {
 	Type = GT_t.OLS_TYPE.IFLOLS, 
@@ -71,7 +71,7 @@ GT.Stations = 	{	LSO = LSO_Station, }
 
 
 -- Landing point
-GT.Landing_Point	= {-78.5916, 17.0026, -5.60511}
+GT.Landing_Point	= {-72.5916, 16.95, -5.60511}
 
 -- smoke density and position
 GT.exhaust = {
