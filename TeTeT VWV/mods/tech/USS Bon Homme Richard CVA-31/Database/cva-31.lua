@@ -98,7 +98,7 @@ GT.animation_arguments.water_propeller = 10
 GT.animation_arguments.radar1_rotation = 1
 GT.animation_arguments.radar2_rotation = 2
 
-GT.radar1_period = 5; --speed
+GT.radar1_period = 10; --speed
 GT.radar2_period = 20; --speed
 
 -- for lights you can look at the shps in the modelviewer 
