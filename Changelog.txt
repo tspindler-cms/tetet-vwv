@@ -1,4 +1,6 @@
-2023-12-09
+2023-12-10
+  P 4
+    - Add distance lod
   Maddox
     - Use new main mast from erwin23p
   Bon Homme Richard  

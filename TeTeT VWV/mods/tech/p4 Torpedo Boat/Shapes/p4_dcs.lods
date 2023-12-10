@@ -1,6 +1,7 @@
 model = {
 	lods = {		
-		{"p4_dcs.edm",10000.000000}; 
+		{"p4_dcs.edm",5000.00};
+		{"p4_5km_dcs.edm", 10000.00};
 	};
 	collision_shell = "p4_coll_dcs.edm";
 }
