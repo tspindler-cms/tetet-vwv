@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.2.1
+0.2.3
 
 This release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier:
 
@@ -37,6 +37,7 @@ Thanks
     Aplion - for an important topic on ship building on DCS World forum and help via discord
     Admiral189 - for helpful advice on the CVA-31
     Citizen - tester of the mod
+	seabat - tester of the mod
 
 Without these persons the mod would not have been possible!
 

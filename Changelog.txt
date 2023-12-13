@@ -1,3 +1,9 @@
+2023-12-13
+  Bon Homme Richard
+    - New TACAN pos, updated secondary and primary flight deck textures
+    - Fix broken collision shell, better wake (kudos seabat)
+    - Improvement to damage model by Joey45
+    - Fix floating door, update README
 2023-12-10
   P 4
     - Add distance lod
