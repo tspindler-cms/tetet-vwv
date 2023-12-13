@@ -25,8 +25,8 @@ GT.Height = 58.30 --335.226 from sea level I think
 GT.Length = 260.00 -- deck length I think
 GT.DeckLevel = 16.95 -- height of deck
 GT.X_nose = 126.0 -- bow wave
-GT.X_tail = -127.238 -- wake
-GT.Tail_Width = 16 --wake width
+GT.X_tail = -120.0 -- -127.238 -- wake
+GT.Tail_Width = 24 --wake width
 GT.Gamma_max = 0.35 -- no idea
 GT.Om = 0.05 --no idea
 GT.speedup = 0.119249; --time it takes to accelerate
@@ -37,7 +37,7 @@ GT.IR_emission_coeff = 0.9 -- new in 2.7 not sure the params
 
 -- TODO: ensure any of this works
 GT.TACAN = true;		--If it has TACAN say true if not say false or not have this entry
-GT.TACAN_position = {88.422, 21.293, 5.7438} -- { 5.7438, 88.422,  21.293 } -- position of tacan TX, center of wires
+GT.TACAN_position = {-72.5916, 16.95, -5.60511} -- { 5.7438, 88.422,  21.293 } -- position of tacan TX, center of wires
 
 
 GT.ICLS = true; -- IF it has ICLS say true if not say false or not have this entry
@@ -111,14 +111,14 @@ GT.carrierIlluminationStates = {
 								
 --Damage Model
 GT.DM = {
-	{ area_name = "Deck aft", area_arg = 70, area_life = 100 },
-	{ area_name = "Deck cat", area_arg = 71, area_life = 100 },
-	{ area_name = "Deck fore", area_arg = 72, area_life = 100 },
-	{ area_name = "Deck island", area_arg = 73, area_life = 100 },
-	{ area_name = "Hull Simple", area_arg = 78, area_life = 150 },
-	{ area_name = "Island Elevator", area_arg = 79, area_life = 150 },
-	{ area_name = "Island radar", area_arg = 80, area_life = 50 },
-	-- { area_name = "JBD", area_arg = 81, area_life = 50 },
+    { area_name = "Deck aft",              area_arg = 70, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_AFT", size = 0.8 }, belongsToRunway = true},
+    { area_name = "Deck cat",              area_arg = 71, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_CAT", size = 0.8 }, belongsToRunway = true},
+    { area_name = "Deck fore",             area_arg = 72, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_FORE", size = 0.8 }, belongsToRunway = true},
+    { area_name = "Deck island",           area_arg = 73, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_ISLAND", size = 0.8 }, belongsToRunway = true},
+	{ area_name = "Deck LSO",              area_arg = 74, area_life = 50 },
+    { area_name = "Hull Simple",           area_arg = 78, area_life = 150 },
+    { area_name = "Island Elevator",       area_arg = 79, area_life = 150 },
+    { area_name = "Island radar",          area_arg = 80, area_life = 50 },	
 }
 
 --GT.WS[ws].pointer = "BRIDGE" --possible CA or Weapon controls??

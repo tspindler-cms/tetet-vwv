@@ -22,11 +22,14 @@ References:
 * https://www.navsource.org/archives/02/31.htm
 * https://www.navysite.de/cv/cv31.htm
 * http://www.gonavy.jp/CV-CV31f.html
+* https://www.seaforces.org/usnships/cv/CV-31-USS-Bon-Homme-Richard.htm
+
 
 KNOWN ISSUES
-* The collision shell at catapult 2 (port) sometimes fails and the planes starts from the hangar, more or less
+* The collision shell is not optimized
 * The island has gaps in between meshes
 * The trail marking is suspended in thin air
 * The IFLOLS is not fully operational
 * The AA guns are not working
-* The VSN F-4B falls through the deck
+* The VSN F-4B nose gear collapses upon launch
+* BDA between CVA-31 and planes happen all times on launch and landing
