@@ -147,6 +147,7 @@ GT.Rate = 5500.000000
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"}, --optics types
                 RADAR = {"Tor 9A331", "carrier search radar"}, --radar types
             };
+GT.sensor = {};
 GT.sensor.height = 30; -- unclear what it does
 
 ----------------------------------------------------
