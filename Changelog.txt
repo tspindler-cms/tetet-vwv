@@ -1,3 +1,9 @@
+2023-12-15
+  Bon Homme Richard
+    - New collision shell, 50cm thick
+    - Adjust DM to new collision shell
+    - Move cat position forward for large aircraft (F-14, F-4)
+    - Add sensor.height setting 
 2023-12-13
   Bon Homme Richard
     - New TACAN pos, updated secondary and primary flight deck textures

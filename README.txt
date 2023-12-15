@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.2.3
+0.2.4
 
 This release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier:
 
