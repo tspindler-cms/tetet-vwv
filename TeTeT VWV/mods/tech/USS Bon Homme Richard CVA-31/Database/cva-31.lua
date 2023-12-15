@@ -115,10 +115,10 @@ GT.DM = {
     { area_name = "Deck cat",              area_arg = 71, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_CAT", size = 0.8 }, belongsToRunway = true},
     { area_name = "Deck fore",             area_arg = 72, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_FORE", size = 0.8 }, belongsToRunway = true},
     { area_name = "Deck island",           area_arg = 73, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_ISLAND", size = 0.8 }, belongsToRunway = true},
-	{ area_name = "Deck LSO",              area_arg = 74, area_life = 50 },
+	{ area_name = "Deck ele",              area_arg = 74, area_life = 300, armour = {width = 0.030}, area_fire = { connector = "FIRE_DECK_CAT", size = 0.8 }, belongsToRunway = true},
+	{ area_name = "Deck LSO",              area_arg = 75, area_life = 50 },
     { area_name = "Hull Simple",           area_arg = 78, area_life = 150 },
-    { area_name = "Island Elevator",       area_arg = 79, area_life = 150 },
-    { area_name = "Island radar",          area_arg = 80, area_life = 50 },	
+    { area_name = "Island",                area_arg = 79, area_life = 150 },
 }
 
 --GT.WS[ws].pointer = "BRIDGE" --possible CA or Weapon controls??
@@ -147,8 +147,9 @@ GT.Rate = 5500.000000
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"}, --optics types
                 RADAR = {"Tor 9A331", "carrier search radar"}, --radar types
             };
+GT.sensor.height = 30; -- unclear what it does
 
- ----------------------------------------------------
+----------------------------------------------------
 GT.DetectionRange	= GT.airFindDist;
 GT.ThreatRange		= GT.airWeaponDist;
 GT.Singleton		= "yes";
