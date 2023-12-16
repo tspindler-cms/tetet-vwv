@@ -167,7 +167,7 @@ GT.attribute		= {wsType_Navy, wsType_Ship, wsType_AirCarrier, WSTYPE_PLACEHOLDER
 GT.Categories		= {
 						{name = "AircraftCarrier"}, --aircraft carrier
 						{name = "AircraftCarrier With Catapult"}, --if it has catapults
-						-- {name = "AircraftCarrier With Tramplin"}, -- if it has a ramp
+						{name = "AircraftCarrier With Tramplin"}, -- if it has a ramp
 						{name = "Armed Ship"} -- has weapons
 						--{name = "AircraftCarrier With Arresting Gear"} -- disables mod when enabled, showws on SC module and Stennis and Forrestal.
 					};	
