@@ -38,6 +38,7 @@ Thanks
     Admiral189 - for helpful advice on the CVA-31
     Citizen - tester of the mod
 	seabat - tester of the mod
+	Zabbie - tester of the mod
 
 Without these persons the mod would not have been possible!
 
