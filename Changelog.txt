@@ -1,3 +1,13 @@
+2023-12-26
+  - Prefix all mods directories with vwv
+  Bon Homme Richard
+    - Make damage args consecutive for DM table
+    - Add Zabbie as tester to README
+    - Change cat position slightly
+    - Change height of cat connectors
+    - Update screens with those from Sidekick65
+    - Update screens with those from Sidekick65 by toan
+    - Update screens with those from Sidekick65
 2023-12-15
   Bon Homme Richard
     - New collision shell, 50cm thick

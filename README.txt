@@ -3,7 +3,7 @@ Vietnam War Vessels by TeTeT
 
 This release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier:
 
-P 4 Class Torpedo Boat
+P 4 class torpedo boat
 USS Maddox (DD-731), Sumner class destroyer
 USS Bon Homme Richard (CVA-31), Essex class carrier
 
@@ -39,6 +39,7 @@ Thanks
     Citizen - tester of the mod
 	seabat - tester of the mod
 	Zabbie - tester of the mod
+	toan - new parking code
 
 Without these persons the mod would not have been possible!
 
