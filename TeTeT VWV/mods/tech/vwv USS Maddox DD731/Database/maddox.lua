@@ -129,10 +129,10 @@ GT.WS[ws].angles = {
 GT.WS[ws].LN[1].BR = 
 					{
 						{
-							connector_name = 'POINT_127mm_1',
+							connector_name = 'POINT_GUN_127mm_1_1',
 						},
 						{
-							connector_name = 'POINT_127mm_2',
+							connector_name = 'POINT_GUN_127mm_1_2',
 						}
 					};
 
@@ -152,10 +152,10 @@ GT.WS[ws].angles = {
 GT.WS[ws].LN[1].BR = 
 					{
 						{
-							connector_name = 'POINT_127mm_2_1',
+							connector_name = 'POINT_GUN_127mm_2_1',
 						},
 						{
-							connector_name = 'POINT_127mm_2_2',
+							connector_name = 'POINT_GUN_127mm_2_2',
 						}
 					};
 
@@ -175,10 +175,10 @@ GT.WS[ws].angles = {
 GT.WS[ws].LN[1].BR = 
 					{
 						{
-							connector_name = 'POINT_127mm_3_1',
+							connector_name = 'POINT_GUN_127mm_3_1',
 						},
 						{
-							connector_name = 'POINT_127mm_3_2',
+							connector_name = 'POINT_GUN_127mm_3_2',
 						}
 					};
 
@@ -248,10 +248,10 @@ GT.WS[ws] = {};
 set_recursive_metatable( GT.WS[ws], GT_t.WS_t.ship_Torpedo84 );
 GT.WS[ws].area = 'HullFront'
 GT.WS[ws].LN[1].BR = {
-	{connector_name = 'TPO_01_gone', recoilArgument = 177, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
-	{connector_name = 'TPO_02_gone', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
-	{connector_name = 'TPO_03_gone', recoilArgument = 177, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
-	{connector_name = 'TPO_04_gone', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
+	{connector_name = 'TPO_01', recoilArgument = 177, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
+	{connector_name = 'TPO_02', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
+	{connector_name = 'TPO_03', recoilArgument = 177, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
+	{connector_name = 'TPO_04', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
 };
 GT.WS[ws].LN[1].show_external_missile = false
 
@@ -266,7 +266,8 @@ GT.Rate = 5500.000000
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"}, --optics types
                 RADAR = {"ticonderoga search radar"}, --radar types
             };
-
+GT.sensor = {};
+GT.sensor.height = 15; -- unclear what it does
 ----------------------------------------------------
 GT.DetectionRange	= GT.airFindDist;
 GT.ThreatRange		= GT.airWeaponDist;

@@ -7,7 +7,7 @@ GT.RunWays =
 {     
 -- landing strip definition (first in table)  
 --	VppStartPoint; 		   azimuth (degree} 	  Length_Vpp; 	   Width_Vpp;
-	{{-72.5916, 16.95, -5.60511}, 349.0,		   97.0, 			   20.0,  --somewhere between last wire and model center / just past last wire
+	{{-72.5916, 17.2, -5.60511}, 349.0,		   97.0, 			   20.0,  --somewhere between last wire and model center / just past last wire
 
 -- alsArgument, lowGlidePath, slightlyLowGlidePath, onLowerGlidePath, onUpperGlidePath, slightlyHighGlidePath, highGlidePath
 	1, 			3.5, 		  		4.0, 					4.5, 			  4.5, 				5.0, 				5.5},
