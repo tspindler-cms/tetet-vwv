@@ -14,7 +14,7 @@ Thanks to Joey45, Admiral189, Tobsen and Hawkeye60 for all the help and advice o
 
 Thanks to Sidekick65 for the screenshots, check out his youtube channel at https://www.youtube.com/@Sidekick65
 
-Final thanks to Citizen, seabat and Zabbie, testers of the mod.
+Final thanks to Citizen, seabat, toan, and Zabbie, testers and contributors of the mod.
 
 The carrier will be published in the Vietnam War Vessels mod, https://github.com/tspindler-cms/tetet-vwv
 
@@ -33,5 +33,4 @@ KNOWN ISSUES
 * The trail marking is suspended in thin air
 * The IFLOLS is not fully operational
 * The AA guns are not working
-* The VSN F-4B nose gear collapses upon launch
 * BDA between CVA-31 and planes happen all times on launch and landing

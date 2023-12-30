@@ -1,0 +1,1 @@
+return _('VSN_A7ECorsair')

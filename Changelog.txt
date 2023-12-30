@@ -1,3 +1,12 @@
+2023-12-30
+  F-8 Crusader
+    - Initial release
+  Maddox
+    - Fix connects and sensor height    
+  Bon Homme Richard
+    - Add wake, thanks to toan
+    - Raise landing points to 17.2 meters
+    - Use new parking positions by seabat
 2023-12-26
   - Prefix all mods directories with vwv
   Bon Homme Richard
@@ -5,8 +14,6 @@
     - Add Zabbie as tester to README
     - Change cat position slightly
     - Change height of cat connectors
-    - Update screens with those from Sidekick65
-    - Update screens with those from Sidekick65 by toan
     - Update screens with those from Sidekick65
 2023-12-15
   Bon Homme Richard
