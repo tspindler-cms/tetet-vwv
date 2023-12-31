@@ -1,11 +1,12 @@
 Vietnam War Vessels by TeTeT
-0.2.4
+0.3.0
 
-This release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier:
+This release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier, and a plane:
 
 P 4 class torpedo boat
 USS Maddox (DD-731), Sumner class destroyer
 USS Bon Homme Richard (CVA-31), Essex class carrier
+F-8 Crusader, a supersonic fighter jet
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -29,6 +30,7 @@ Links and model sources:
 	* https://www.navsource.org/archives/02/31.htm
 	* https://www.navysite.de/cv/cv31.htm
 	* http://www.gonavy.jp/CV-CV31f.html
+	* https://en.wikipedia.org/wiki/Vought_F-8_Crusader 
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -36,10 +38,13 @@ Thanks
     Tobsen - for help around the Blender EDM exporter
     Aplion - for an important topic on ship building on DCS World forum and help via discord
     Admiral189 - for helpful advice on the CVA-31
-    Citizen - tester of the mod
-	seabat - tester of the mod
+    Citizen - tester and contributor of the mod
+	seabat - tester and contributor of the mod, creator of CVA-31 liveries for the F-8
 	Zabbie - tester of the mod
-	toan - new parking code
+	Toan - new parking code and improvements to F-8
+	Spino - for the F-8 mod
+	Pedro Caparros - for the original F-8 livery
+	VSN Team - for permission to use the F-8 mod
 
 Without these persons the mod would not have been possible!
 
@@ -52,3 +57,4 @@ Final thanks to the past contributors:
 	- karla - creator of the mod for IL-2 1946
 	- NightIntruder - porting the mod to Arma 3 initially
 	- TheSn4k3 - provided shuttle shoe and wires
+
