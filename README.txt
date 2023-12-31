@@ -16,21 +16,21 @@ The mods directory needs to go into your Saved Games DCS folder.
 
 Videos:
     * https://www.youtube.com/watch?v=yv03h-a1TQA Sidekick65's video of Unboxing and First Impression for CVA-31
-	* https://youtu.be/h-b9WlLvd8E TeTeT's take on a release video for CVA-31
+    * https://youtu.be/h-b9WlLvd8E TeTeT's take on a release video for CVA-31
 
 Links and model sources:
-	* https://en.wikipedia.org/wiki/USS_Bon_Homme_Richard_(CV-31)
-	* https://commons.wikimedia.org/wiki/Category:USS_Bon_Homme_Richard_(CV-31)
-	* https://en.wikipedia.org/wiki/USS_Maddox_(DD-731)
-	* https://en.wikipedia.org/wiki/P_4-class_torpedo_boat
-	* https://www.patreon.com/ThomasBeerens/posts
-	* https://www.turbosquid.com/3d-models/torpedo-boat-p123k-komsomolec-max/809089
-	* https://github.com/Joeys45Mods/DCS-Ship-mod-Template
-	* https://github.com/Quaggles/dcs-lua-datamine
-	* https://www.navsource.org/archives/02/31.htm
-	* https://www.navysite.de/cv/cv31.htm
-	* http://www.gonavy.jp/CV-CV31f.html
-	* https://en.wikipedia.org/wiki/Vought_F-8_Crusader 
+    * https://en.wikipedia.org/wiki/USS_Bon_Homme_Richard_(CV-31)
+    * https://commons.wikimedia.org/wiki/Category:USS_Bon_Homme_Richard_(CV-31)
+    * https://en.wikipedia.org/wiki/USS_Maddox_(DD-731)
+    * https://en.wikipedia.org/wiki/P_4-class_torpedo_boat
+    * https://www.patreon.com/ThomasBeerens/posts
+    * https://www.turbosquid.com/3d-models/torpedo-boat-p123k-komsomolec-max/809089
+    * https://github.com/Joeys45Mods/DCS-Ship-mod-Template
+    * https://github.com/Quaggles/dcs-lua-datamine
+    * https://www.navsource.org/archives/02/31.htm
+    * https://www.navysite.de/cv/cv31.htm
+    * http://www.gonavy.jp/CV-CV31f.html
+    * https://en.wikipedia.org/wiki/Vought_F-8_Crusader 
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -39,22 +39,22 @@ Thanks
     Aplion - for an important topic on ship building on DCS World forum and help via discord
     Admiral189 - for helpful advice on the CVA-31
     Citizen - tester and contributor of the mod
-	seabat - tester and contributor of the mod, creator of CVA-31 liveries for the F-8
-	Zabbie - tester of the mod
-	Toan - new parking code and improvements to F-8
-	Spino - for the F-8 mod
-	Pedro Caparros - for the original F-8 livery
-	VSN Team - for permission to use the F-8 mod
+    seabat - tester and contributor of the mod, creator of CVA-31 liveries for the F-8
+    Zabbie - tester of the mod
+    Toan - new parking code and improvements to F-8
+    Spino - for the F-8 mod
+    Pedro Caparros - for the original F-8 livery
+    VSN Team - for permission to use the F-8 mod
 
 Without these persons the mod would not have been possible!
 
 Also thanks to present contributors:
-	Odyseus - overhauling the base model of the CVA-31
-	Erwin23p - providing the new main mast of USS_Maddox
-	ColeMinor - created graphics for the mod
+    Odyseus - overhauling the base model of the CVA-31
+    Erwin23p - providing the new main mast of USS_Maddox
+    ColeMinor - created graphics for the mod
 
 Final thanks to the past contributors:
-	- karla - creator of the mod for IL-2 1946
-	- NightIntruder - porting the mod to Arma 3 initially
-	- TheSn4k3 - provided shuttle shoe and wires
+    - karla - creator of the mod for IL-2 1946
+    - NightIntruder - porting the mod to Arma 3 initially
+    - TheSn4k3 - provided shuttle shoe and wires
 
