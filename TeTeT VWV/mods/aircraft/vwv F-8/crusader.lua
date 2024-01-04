@@ -181,20 +181,21 @@ crusader =  {
 		nose_gear_wheel_diameter	=	0.566,
 		main_gear_wheel_diameter	=	0.778,
 		
-		
+	
+	-- Afterburner effect by Toan
     engines_count    = 1, -- added by Toan, otherwise smoke doesn't work, 27-12-2023 ----------------------
-    engines_nozzles = {
+	engines_nozzles = {
         [1] = 
         {
-            pos            = {-9.2,    -0.8,    0}, -- nozzle coords ------ update by Toan, 27-12-2023 --------
-            elevation            = -0.1, -- AFB cone elevation
-            diameter            = 0.6, -- AFB cone diameter
-            exhaust_length_ab    = 4.0, -- lenght in m
+            pos            = {-9.2,    -0.5,    0}, -- nozzle coords -- was -0.8, by Toan, 27-12-2023 ---------
+            elevation            = 0, -- AFB cone elevation -------- was -0.1, by Toan, 29-12-2023 ---------
+            diameter            = 0.8, -- AFB cone diameter ------- was 0.6, by Toan, 03-01-2024 ----------
+            exhaust_length_ab    = 5.0, -- lenght in m ------------- was 4, by Toan, 03-01-2024 ------------
             exhaust_length_ab_K = 0.707, -- AB animation
-            smokiness_level     = 0.5, -- ------ update by Toan, 27-12-2023 -------------------------------- 
-            afterburner_circles_count = 3,
+            smokiness_level     = 0.4, ---------------------------- update by Toan, 27-12-2023 ------------ 
+            afterburner_circles_count = 5, ------------------------ 0 if no AB, by Toan, 01-01-2024 -------
         }, -- end of [1]        
-    }, -- end of engines_nozzles 
+    }, -- end of engines_nozzles
 	
 	
 	
@@ -430,7 +431,7 @@ Pylons = {
                         { CLSID = "{AGM_12B}" }, --someday
                 }
         ),  
-	pylon(7, 0, 0.0, 1.00, 0.60,
+	    pylon(7, 0, 0.0, 1.00, 0.60,
             {
                         use_full_connector_position = false,connector = "pylon_7",
             },

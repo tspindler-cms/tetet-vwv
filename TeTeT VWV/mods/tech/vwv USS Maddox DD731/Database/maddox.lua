@@ -34,6 +34,7 @@ GT.R_min = 300 -- turn radius
 GT.RCS = 100000 -- new in 2.7 ----estimated RCS in square meters
 GT.IR_emission_coeff = 0.9 -- new in 2.7 not sure the params
 
+
 GT.TACAN = false;		--If it has TACAN say true if not say false or not have this entry
 
 GT.ICLS = false; -- IF it has ICLS say true if not say false or not have this entry
@@ -63,14 +64,21 @@ GT.DM = {
 }
 
 
-GT.airWeaponDist = 15000  -- Max engagement range air threats (meters)
-GT.airFindDist = 28000 -- Max detenction range air threats (meters)
+GT.airWeaponDist = 58000  -- Max engagement range air threats (meters)
+GT.airFindDist = 58000 -- Max detenction range air threats (meters)
 
 --Radar info
+GT.WS = {};
+GT.WS.maxTargetDetectionRange = 450000;
+GT.WS.radar_type = 102;
+GT.WS.searchRadarMaxElevation = math.rad(90);
+GT.WS.searchRadarFrequencies = {{50.0e6, 54.0e6}, {2.0e9, 2.2e9}};
+
+--Test Optical 
 GT.WS = {}
-GT.WS.maxTargetDetectionRange = 25000; --450000
-GT.WS.radar_type = 104 --104= Short range, 103 = Mid range at a guess 102 = Long range
-GT.WS.searchRadarMaxElevation = math.rad(60);
+GT.WS.maxTargetDetectionRange = 25000;
+GT.WS.radar_type = 109 --optical in wstypes
+GT.WS.searchRadarMaxElevation = math.rad(90);
 local ws;
 
 -- weapon systems goes here
@@ -81,30 +89,27 @@ GT_t.WS_t.ship_mk12_2x127mm = {name = "Mk12 5inch 38cal Twin"};
 GT_t.WS_t.ship_mk12_2x127mm.angles = {
                     {math.rad(180), math.rad(-180), math.rad(-5), math.rad(90)},
                     };
-GT_t.WS_t.ship_mk12_2x127mm.omegaY = math.rad(115) -- Block 1B
-GT_t.WS_t.ship_mk12_2x127mm.omegaZ = math.rad(116) -- Block 1B
+GT_t.WS_t.ship_mk12_2x127mm.omegaY = math.rad(10) -- Block 1B
+GT_t.WS_t.ship_mk12_2x127mm.omegaZ = math.rad(10) -- Block 1B
 GT_t.WS_t.ship_mk12_2x127mm.pidY = {p=300, i = 0.05, d = 10.0, inn = 1000};
 GT_t.WS_t.ship_mk12_2x127mm.pidZ = {p=300, i = 0.05, d = 10.0, inn = 1000};
 GT_t.WS_t.ship_mk12_2x127mm.reference_angle_Z = 0
 GT_t.WS_t.ship_mk12_2x127mm.LN = {}
 GT_t.WS_t.ship_mk12_2x127mm.LN[1] = {}
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].type = 11
+GT_t.WS_t.ship_mk12_2x127mm.LN[1].type = 12
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].distanceMin = 10
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].distanceMax = 16000 -- effective shooting
+GT_t.WS_t.ship_mk12_2x127mm.LN[1].distanceMax = 56000 -- effective shooting
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].max_trg_alt = 11300
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].reactionTime = 3
+GT_t.WS_t.ship_mk12_2x127mm.LN[1].reactionTime = 1
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].beamWidth = math.rad(1);
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].sensor = {}
-set_recursive_metatable(GT_t.WS_t.ship_mk12_2x127mm.LN[1].sensor, GT_t.WSN_t[11])
+set_recursive_metatable(GT_t.WS_t.ship_mk12_2x127mm.LN[1].sensor, GT_t.WSN_t[1])
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL = {}
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1] = {}
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].ammo_capacity = 200;
--- The Mk_12_HE_shell is part of the WWII pack, without it there's no dependency
--- Kudos to Citizen for the suggestion
--- GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_name = { "Mk_12_HE_shell" };
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_name = { "KS19_100HE" };
+GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].ammo_capacity = 352;
+GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_name = { "127_Mk49_AAC_1", "127_Mk49_AAC_2", "127_Mk49_HC_1", "127_Mk49_HC_2" };
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_display_name = "127mm";
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shot_delay = 3;
+GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shot_delay = 2;
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].reload_time = 15000000; -- never
 GT_t.WS_t.ship_mk12_2x127mm.LN[1].BR =
 { {
@@ -263,14 +268,14 @@ GT.DisplayName = _("USS Maddox (DD-731)") -- name in game in ME and on the tape 
 GT.DisplayNameShort = _("Maddox") -- Label name
 GT.Rate = 5500.000000 
 
-GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"}, --optics types
+GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
                 RADAR = {"ticonderoga search radar"}, --radar types
             };
 GT.sensor = {};
 GT.sensor.height = 15; -- unclear what it does
 ----------------------------------------------------
-GT.DetectionRange	= GT.airFindDist;
-GT.ThreatRange		= GT.airWeaponDist;
+GT.DetectionRange	= 20000;
+GT.ThreatRange		= 12000;
 GT.Singleton		= "yes";
 GT.mapclasskey		= "P0091000068"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
