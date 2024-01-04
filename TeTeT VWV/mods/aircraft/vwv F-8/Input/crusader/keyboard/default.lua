@@ -24,6 +24,10 @@ join(res.keyCommands,{
 {combos = {{key = 'P', reformers = {'RCtrl'}}}, down = iCommandPlanePackWing, name = _('Folding Wings'), category = _('Systems')},
 {combos = {{key = 'W', reformers = {'LShift'}}}, down = iCommandPlaneWheelParkingBrake, up = iCommandPlaneWheelParkingBrake, name = _('Wheel Brake Start'), category = _('Systems')},
 {combos = {{key = 'I', reformers = {'LAlt'}}}, down = iCommandPlane_HOTAS_ChinaHatForward, name = _('Engine Inlet Grids Auto/Off'), category = _('Systems')},
+-- Systems F-8 Carrier Operations
+{combos = {{key = 'L', reformers = {'LShift','LCtrl'}}}, down = iCommandPlaneRightMFD_OSB6_Off, name = _('Launch Bar Toggle'), category = _('Carrier Operations')},
+{combos = {{key = 'U', reformers = {'LCtrl'}}}, down = iCommandPlaneShipTakeOff, name = _('Catapult Hook-Up'), category = _('Carrier Operations')}, -- command Nr. 120
+{combos = {{key = 'S', reformers = {'LShift','LCtrl'}}}, down = iCommandPilotGestureSalute, name = _('Pilot Salute'), category = _('Carrier Operations')},
 
 -- Modes
 {combos = {{key = '2'}}, down = iCommandPlaneModeBVR, name = _('(2) Beyond Visual Range Mode'), category = _('Modes')},

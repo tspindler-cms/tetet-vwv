@@ -5,7 +5,6 @@ image     	 = "FC3.bmp",
 installed 	 = true, -- if false that will be place holder , or advertising
 dirName	  	 = current_mod_path,
 displayName  = _("crusader"),
--- developerName = _("VSN"),
 
 fileMenuName = _("crusader"),
 update_id        = "crusader",
@@ -55,11 +54,11 @@ mount_vfs_texture_path  (current_mod_path.."/Textures/crusader")
 
 dofile(current_mod_path.."/Views.lua")
 make_view_settings('crusader', ViewSettings, SnapViews)
-make_flyable('crusader'	, current_mod_path..'/Cockpit/A10A/', {nil,old = true}, current_mod_path..'/Comm/')
+make_flyable('crusader'	, current_mod_path..'/Cockpit/A10A/', {nil, old = true}, current_mod_path..'/comm.lua/')
 --make_flyable('crusader',current_mod_path..'/Cockpit/KneeboardRight/',{nil, old = 17}, current_mod_path..'/comm.lua')--SFM
 -------------------------------------------------------------------------------------
 
-
+dofile(current_mod_path..'/f8_pilot_attachments.lua')
 dofile(current_mod_path..'/crusader.lua')
 -------------------------------------------------------------------------------------
 plugin_done()

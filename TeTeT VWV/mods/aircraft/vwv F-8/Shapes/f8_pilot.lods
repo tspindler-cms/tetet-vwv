@@ -1,0 +1,14 @@
+model={
+	lods={
+	    {"f8_pilot.edm",500.0};
+		{"f8_pilot.edm",5000.0};
+		{"f8_pilot.edm",200000.000};
+	
+	};
+        
+
+}
+
+
+
+

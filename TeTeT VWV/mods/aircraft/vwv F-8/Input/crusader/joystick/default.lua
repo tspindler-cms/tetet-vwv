@@ -31,6 +31,11 @@ join(res.keyCommands,{
 {down = iCommandPlaneHook, name = _('Tail Hook'), category = _('Systems')},
 {down = iCommandPlanePackWing, name = _('Folding Wings'), category = _('Systems')},
 
+-- Systems F-8 Carrier Operations
+{down = iCommandPlaneShipTakeOff, name = _('Catapult Hook-Up'), category = _('Carrier Operations')}, -- command Nr. 120
+{down = iCommandPilotGestureSalute, name = _('Pilot Salute'), category = _('Carrier Operations')},
+{down = iCommandPlaneRightMFD_OSB6_Off, name = _('Launch Bar Toggle'), category = _('Carrier Operations')},
+
 -- Sensors
 {combos = {{key = 'JOY_BTN3'}}, down = iCommandPlaneChangeLock, up = iCommandPlaneChangeLockUp, name = _('Target Lock').._('(Air Refuel Reset/Disconnect)'), category = _('Sensors')},
 {down = iCommandSensorReset, name = _('Target Unlock'), category = _('Sensors')},

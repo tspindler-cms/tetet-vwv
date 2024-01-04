@@ -14,6 +14,9 @@ How to install
 
 The mods directory needs to go into your Saved Games DCS folder. 
 
+Liveries:
+    * https://www.digitalcombatsimulator.com/en/files/3335218/ A-4 Skyhawk livery set for CVA-31 by seabat
+
 Videos:
     * https://www.youtube.com/watch?v=yv03h-a1TQA Sidekick65's video of Unboxing and First Impression for CVA-31
     * https://youtu.be/h-b9WlLvd8E TeTeT's take on a release video for CVA-31
@@ -39,10 +42,11 @@ Thanks
     Aplion - for an important topic on ship building on DCS World forum and help via discord
     Admiral189 - for helpful advice on the CVA-31
     Citizen - tester and contributor of the mod
-    seabat - tester and contributor of the mod, creator of CVA-31 liveries for the F-8
+    seabat - tester and contributor of the mod, creator of CVA-31 liveries for the F-8 and A-4
     Zabbie - tester of the mod
     Toan - new parking code and improvements to F-8
-    Spino - for the F-8 mod
+    Mario - for the F-8 mod
+    Spino - for the F-8 mods weapons and pylons
     Pedro Caparros - for the original F-8 livery
     VSN Team - for permission to use the F-8 mod
 
