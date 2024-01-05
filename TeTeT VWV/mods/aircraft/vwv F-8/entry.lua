@@ -38,10 +38,8 @@ LogBook =
 InputProfiles =
 	{
 		["crusader"] = current_mod_path .. '/Input/crusader',
-
+		["crusader_np"] = current_mod_path .. '/Input/crusader_np',
 	},
-
-	
 })
 ----------------------------------------------------------------------------------------
 mount_vfs_model_path	(current_mod_path.."/Shapes")
@@ -49,16 +47,17 @@ mount_vfs_liveries_path (current_mod_path.."/Liveries")
 mount_vfs_texture_path  (current_mod_path.."/Textures/Avionics")
 mount_vfs_texture_path  (current_mod_path.."/Textures/crusader")
 
-
 -------------------------------------------------------------------------------------
 
 dofile(current_mod_path.."/Views.lua")
 make_view_settings('crusader', ViewSettings, SnapViews)
 make_flyable('crusader'	, current_mod_path..'/Cockpit/A10A/', {nil, old = true}, current_mod_path..'/comm.lua/')
---make_flyable('crusader',current_mod_path..'/Cockpit/KneeboardRight/',{nil, old = 17}, current_mod_path..'/comm.lua')--SFM
+make_view_settings('crusader_np', ViewSettings, SnapViews)
+make_flyable('crusader_np'	, current_mod_path..'/Cockpit/A10A/', {nil,old = true}, current_mod_path..'/comm.lua/')
 -------------------------------------------------------------------------------------
 
 dofile(current_mod_path..'/f8_pilot_attachments.lua')
 dofile(current_mod_path..'/crusader.lua')
+dofile(current_mod_path..'/crusader_np.lua')
 -------------------------------------------------------------------------------------
 plugin_done()
