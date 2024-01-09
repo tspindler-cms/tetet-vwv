@@ -359,6 +359,13 @@ Pylons = {
                         { CLSID = "{BRU33_2*LAU10}"},
                         { CLSID = "{BRU33_2X_MK-82}" },
                         { CLSID = "{BRU33_2X_MK-82_Snakeye}" },
+						{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}"},--single Zuni
+						{ CLSID = "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}" },--Walleye
+						{ CLSID = "{BRU-42_2*Mk-82SNAKEYE_LEFT}" },-- 2 ea MK82 SE on TER
+						{ CLSID = "{BRU-42_2*Mk-82_LEFT}" },--2 ea MK82 on TER
+						{ CLSID = "{SB_F8_BRU_41A_M82_4 Lt}" },--4 each MK82 on MER  needs weapons declaration at end of this lua
+						{ CLSID = "{SB_F8_BRU_41A_M82SE_4 Lt}" },--4 each MK82SE on MER  needs weapons declaration at end of this lua
+					    { CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" }, -- M117 750LBS
                         { CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}" }, --Mk84
                         { CLSID = "{AGM_12A}" }, --someday
                         { CLSID = "{AGM_12B}" }, --someday
@@ -417,19 +424,26 @@ Pylons = {
                         use_full_connector_position = false,connector = "pylon_2",
                 },
                 {
-                        { CLSID = "LAU3_HE151" }, --LAU-3 HE M151
-                        -- { CLSID = "{AIM-7E}" }, --AIM-7E (Fox-1s here just in case you decide to add them)
-                        -- { CLSID = "{AIM-7F}" }, --AIM-7F 
-                        -- { CLSID = "{R530F_EM}" }, --R.530 EM (carried by marine nationale on long fuselage pylons)
-                        -- { CLSID = "{R530F_IR}" }, --R.530 IR (carried by marine nationale on long fuselage pylons)
-                        { CLSID = "LAU3_HE5" }, --LAU-3 HEAT Mk5
-                        { CLSID = "{BRU33_2*LAU10}"},
-                        { CLSID = "{BRU33_2X_MK-82}" },
-                        { CLSID = "{BRU33_2X_MK-82_Snakeye}" },
-                        { CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}" }, --Mk84
-                        { CLSID = "{AGM_12A}" }, --someday
-                        { CLSID = "{AGM_12B}" }, --someday
-                }
+					{ CLSID = "LAU3_HE151" }, --LAU-3 HE M151
+					-- { CLSID = "{AIM-7E}" }, --AIM-7E (Fox-1s here just in case you decide to add them)
+					-- { CLSID = "{AIM-7F}" }, --AIM-7F 
+					-- { CLSID = "{R530F_EM}" }, --R.530 EM (carried by marine nationale on long fuselage pylons)
+					-- { CLSID = "{R530F_IR}" }, --R.530 IR (carried by marine nationale on long fuselage pylons)
+					{ CLSID = "LAU3_HE5" }, --LAU-3 HEAT Mk5
+					{ CLSID = "{BRU33_2*LAU10}"},
+					{ CLSID = "{BRU33_2X_MK-82}" },
+					{ CLSID = "{BRU33_2X_MK-82_Snakeye}" },
+					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}"},--single Zuni
+					{ CLSID = "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}" },--Walleye
+					{ CLSID = "{BRU-42_2*Mk-82SNAKEYE_RIGHT}" },-- 2 ea MK82 SE on TER
+					{ CLSID = "{BRU-42_2*Mk-82_RIGHT}" },--2 ea MK82 on TER
+					{ CLSID = "{SB_F8_BRU_41A_M82_4 Rt}" },--4 each MK82 on MER  needs weapons declaration at end of this lua
+					{ CLSID = "{SB_F8_BRU_41A_M82SE_4 Rt}" },--4 each MK82SE on MER  needs weapons declaration at end of this lua
+					{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" }, -- M117 750LBS
+					{ CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}" }, --Mk84
+					{ CLSID = "{AGM_12A}" }, --someday
+					{ CLSID = "{AGM_12B}" }, --someday
+			}
         ),  
 	    pylon(7, 0, 0.0, 1.00, 0.60,
             {
@@ -726,4 +740,121 @@ SFM_Data = {
 	},
 }
 
+-- Overwing vapor effect by Toan -------------------------------------------------------------------
+effects_presets = {
+	{effect = "OVERWING_VAPOR", file = current_mod_path.."/Effects/crusader_overwingVapor.lua"},
+
+	-- you must create a folder Effects in the F-8 Mod folder ---------------------------------------
+	-- inside the Effects folder copy the crusader_overwingVapor.lua, by Toan, 05-01-2024 --------
+},  -- end of Overwing vapor effect -----------------------------------------------------------------
+
 add_aircraft(crusader)
+
+declare_loadout(
+	{
+		category		= 	CAT_BOMBS,
+		CLSID			=	"{SB_F8_BRU_41A_M82_4 Rt}",
+		Picture			=	"mk82.png",
+	--	wsTypeOfWeapon	=	{4,	15,	47,	34},--
+		wsTypeOfWeapon	=	{wsType_Weapon,	wsType_Bomb, wsType_Bomb_A,	31},-- Mk_117/34 31 mk82 79 mk82se
+		displayName		=	_("BRU-41A with 4 x Mk-82 - 500lb GP Bomb HD Right"),
+		attribute		=	{4,	5,	32,	14},
+		Cx_pil			=	0.00544,
+		Count			=	4,
+		Weight			=	2100,
+				
+				Elements	=	
+		{
+				{ShapeName	=	"BRU_41A", IsAdapter=true},
+							
+				{ShapeName	=	"{Mk82}",Position	=	{1.261035,	-0.193789,	0.000397}},--FB point 1
+				{ShapeName	=	"{Mk82}",Position	=	{-1.095152,	-0.193789,	0.000397}},--BB point 2
+				
+				{ShapeName	=	"{Mk82}",Position	=	{-1.095152,	0.075838,	0.144016},Rotation = {-45,0,0}},--BR point 3
+				{ShapeName	=	"{Mk82}",Position	=	{1.261035,	0.075838,	0.144016},Rotation = {-45,0,0}},--FR POINT 4
+				
+		}, -- end of Elements
+	}
+)
+
+declare_loadout(
+	{
+		category		= 	CAT_BOMBS,
+		CLSID			=	"{SB_F8_BRU_41A_M82_4 Lt}",
+		Picture			=	"mk82.png",
+	--	wsTypeOfWeapon	=	{4,	15,	47,	34},--
+		wsTypeOfWeapon	=	{wsType_Weapon,	wsType_Bomb, wsType_Bomb_A,	31},-- Mk_117/34 31 mk82 79 mk82se
+		displayName		=	_("BRU-41A with 4 x Mk-82 - 500lb GP Bomb HD Left"),
+		attribute		=	{4,	5,	32,	14},
+		Cx_pil			=	0.00544,
+		Count			=	4,
+		Weight			=	2100,
+						
+				Elements	=	
+		{
+				{ShapeName	=	"BRU_41A", IsAdapter=true},
+							
+				{ShapeName	=	"{Mk82}",Position	=	{1.261035,	-0.193789,	0.000397}},--FB point 1
+				{ShapeName	=	"{Mk82}",Position	=	{-1.095152,	-0.193789,	0.000397}},--BB point 2
+				
+				{ShapeName	=	"{Mk82}",Position	=	{-1.095152,	0.075838,	-0.144016},Rotation = {45,0,0}},--BL point 5
+				{ShapeName	=	"{Mk82}",Position	=	{1.261035,	0.075838,	-0.144016},Rotation = {45,0,0}},--FL POINT 6
+				
+		}, -- end of Elements
+	}
+)
+
+
+declare_loadout(
+	{
+		category		= 	CAT_BOMBS,
+		CLSID			=	"{SB_F8_BRU_41A_M82SE_4 Rt}",
+		Picture			=	"mk82.png",
+	--	wsTypeOfWeapon	=	{4,	15,	47,	34},--
+		wsTypeOfWeapon	=	{wsType_Weapon,	wsType_Bomb, wsType_Bomb_A,	79},-- Mk_117/34 31 mk82 79 mk82se
+		displayName		=	_("BRU-41A with 4 x Mk-82 Snakeye - 500lb GP Bomb HD Right"),
+		attribute		=	{4,	5,	32,	14},
+		Cx_pil			=	0.00544,
+		Count			=	4,
+		Weight			=	2100,
+				
+				Elements	=	
+		{
+				{ShapeName	=	"BRU_41A", IsAdapter=true},
+							
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{1.261035,	-0.193789,	0.000397}},--FB point 1
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{-1.095152,	-0.193789,	0.000397}},--BB point 2
+				
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{-1.095152,	0.075838,	0.144016},Rotation = {-45,0,0}},--BR point 3
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{1.261035,	0.075838,	0.144016},Rotation = {-45,0,0}},--FR POINT 4
+				
+		}, -- end of Elements
+	}
+)
+
+declare_loadout(
+	{
+		category		= 	CAT_BOMBS,
+		CLSID			=	"{SB_F8_BRU_41A_M82SE_4 Lt}",
+		Picture			=	"mk82.png",
+	--	wsTypeOfWeapon	=	{4,	15,	47,	34},--
+		wsTypeOfWeapon	=	{wsType_Weapon,	wsType_Bomb, wsType_Bomb_A,	79},-- Mk_117/34 31 mk82 79 mk82se
+		displayName		=	_("BRU-41A with 4 x Mk-82 Snakeye - 500lb GP Bomb HD Left"),
+		attribute		=	{4,	5,	32,	14},
+		Cx_pil			=	0.00544,
+		Count			=	4,
+		Weight			=	2100,
+						
+				Elements	=	
+		{
+				{ShapeName	=	"BRU_41A", IsAdapter=true},
+							
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{1.261035,	-0.193789,	0.000397}},--FB point 1
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{-1.095152,	-0.193789,	0.000397}},--BB point 2
+				
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{-1.095152,	0.075838,	-0.144016},Rotation = {45,0,0}},--BL point 5
+				{ShapeName	=	"{mk-82SNAKEYE}",Position	=	{1.261035,	0.075838,	-0.144016},Rotation = {45,0,0}},--FL POINT 6
+				
+		}, -- end of Elements
+	}
+)
