@@ -1,4 +1,7 @@
 local res = external_profile("Config/Input/Aircrafts/base_keyboard_binding.lua")
+ignore_features(res.keyCommands,{
+"dragchute","a2aBVR"
+})
 
 join(res.keyCommands,{
 
@@ -24,26 +27,35 @@ join(res.keyCommands,{
 {combos = {{key = 'P', reformers = {'RCtrl'}}}, down = iCommandPlanePackWing, name = _('Folding Wings'), category = _('Systems')},
 {combos = {{key = 'W', reformers = {'LShift'}}}, down = iCommandPlaneWheelParkingBrake, up = iCommandPlaneWheelParkingBrake, name = _('Wheel Brake Start'), category = _('Systems')},
 {combos = {{key = 'I', reformers = {'LAlt'}}}, down = iCommandPlane_HOTAS_ChinaHatForward, name = _('Engine Inlet Grids Auto/Off'), category = _('Systems')},
--- Systems F-8 Carrier Operations
-{combos = {{key = 'L', reformers = {'LShift','LCtrl'}}}, down = iCommandPlaneRightMFD_OSB6_Off, name = _('Launch Bar Toggle'), category = _('Carrier Operations')},
-{combos = {{key = 'U', reformers = {'LCtrl'}}}, down = iCommandPlaneShipTakeOff, name = _('Catapult Hook-Up'), category = _('Carrier Operations')}, -- command Nr. 120
-{combos = {{key = 'S', reformers = {'LShift','LCtrl'}}}, down = iCommandPilotGestureSalute, name = _('Pilot Salute'), category = _('Carrier Operations')},
 
 -- Modes
-{combos = {{key = '2'}}, down = iCommandPlaneModeBVR, name = _('(2) Beyond Visual Range Mode'), category = _('Modes')},
 {combos = {{key = '3'}}, down = iCommandPlaneModeVS, name = _('(3) Close Air Combat Vertical Scan Mode'), category = _('Modes')},
 {combos = {{key = '4'}}, down = iCommandPlaneModeBore, name = _('(4) Close Air Combat Bore Mode'), category = _('Modes')},
 {combos = {{key = '5'}}, down = iCommandPlaneModeHelmet, name = _('(5) Close Air Combat HMD Helmet Mode'), category = _('Modes')},
 {combos = {{key = '6'}}, down = iCommandPlaneModeFI0, name = _('(6) Longitudinal Missile Aiming Mode'), category = _('Modes')},
-{combos = {{key = '7'}}, down = iCommandPlaneModeGround, name = _('(7) Air-To-Ground Mode'), category = _('Modes')},
 {combos = {{key = '8'}}, down = iCommandPlaneModeGrid, name = _('(8) Gunsight Reticle Switch'), category = _('Modes')},
 
 -- Flight Control
 {combos = {{key = 'T', reformers = {'LCtrl'}}}, down = iCommandPlaneTrimCancel, name = _('Trim Reset'), category = _('Flight Control')},
+--{combos = {{key = 'S'}}, down = iCommandPlaneCobra, up = iCommandPlaneCobra, value_down = 1.0, value_up = 0.0, name = _('ASC Direct Control (Cobra)'), category = _('Flight Control')},
+{combos = {{key = 'S'}}, down = iCommandPlaneCobra, name = _('ASC Direct Control (Cobra)'), category = _('Flight Control')},
+{down = iCommandPlaneTrimOn, up = iCommandPlaneTrimOff, name = _('Stick to Trimmer Control Mode'), category = _('Flight Control')},
+{combos = {{key = 'E', reformers = {'LShift'}}}, down = iCommandPlane_P_51_WarEmergencyPower, name = _('Special Afterburner Mode'), category = _('Flight Control')},
+{combos = {{key = 'R', reformers = {'RCtrl'}}}, down = iCommandPlane_ADF_Mode_change, name = _('ASC Refueling Mode'), category = _('Flight Control')},
+
+{combos = {{key = 'Y'}}, down = iCommandPlane_HOTAS_LeftThrottleButton, up = iCommandPlane_HOTAS_LeftThrottleButton_Off, name = _('Stick Deflection Limiter Override'), category = _('Flight Control')},
+
+-- Systems
+{combos = {{key = 'Q', reformers = {'LAlt'}}}, down = iCommandPlane_HOTAS_NoseWheelSteeringButton, name = _('Nose Wheel Steering'), category = _('Systems')},
+{combos = {{key = 'A', reformers = {'LCtrl'}}}, down = iCommandPlaneWheelBrakeLeftOn, up = iCommandPlaneWheelBrakeLeftOff, name = _('Wheel Brake Left'), category = _('Systems')},
+{combos = {{key = 'A', reformers = {'LAlt'}}}, down = iCommandPlaneWheelBrakeRightOn, up = iCommandPlaneWheelBrakeRightOff, name = _('Wheel Brake Right'), category = _('Systems')},
+{combos = {{key = 'R', reformers = {'LAlt'}}}, down = iCommandPlane_ADF_Test, name = _('Aerial Refueling Lights'), category = _('Systems')},
+{combos = {{key = 'H', reformers = {'RShift'}}}, down = iCommandPlaneHUDFilterOnOff, name = _('HUD Color Filter On/Off'), category = _('Systems')},
+{down = iCommandPlaneRightMFD_OSB1 , name = _('HDD, HUD Repeater Mode On/Off'), category = _('Systems')},
 
 -- Sensors
-{combos = {{key = 'Enter'}}, down = iCommandPlaneChangeLock, up = iCommandPlaneChangeLockUp, name = _('Target Lock'), category = _('Sensors')},
-{combos = {{key = 'Back'}}, down = iCommandSensorReset, name = _('Return To Search'), category = _('Sensors')},
+{combos = defaultDeviceAssignmentFor("lock_aircraft"), down = iCommandPlaneChangeLock, up = iCommandPlaneChangeLockUp, name = _('Target Lock'), category = _('Sensors')},
+{combos = defaultDeviceAssignmentFor("unlock_target"), down = iCommandSensorReset, name = _('Return To Search'), category = _('Sensors')},
 {combos = {{key = 'I'}}, down = iCommandPlaneRadarOnOff, name = _('Radar'), category = _('Sensors')},
 {combos = {{key = 'I', reformers = {'RAlt'}}}, down = iCommandPlaneRadarChangeMode, name = _('Radar RWS/TWS Mode Select'), category = _('Sensors')},
 {combos = {{key = 'I', reformers = {'RCtrl'}}}, down = iCommandPlaneRadarCenter, name = _('Target Designator To Center'), category = _('Sensors')},
@@ -67,7 +79,6 @@ join(res.keyCommands,{
 {combos = {{key = ',', reformers = {'RAlt'}}}, down = iCommandPlaneThreatWarnSoundVolumeDown, name = _('RWR/SPO Sound Signals Volume Down'), category = _('Sensors')},
 {combos = {{key = '.', reformers = {'RAlt'}}}, down = iCommandPlaneThreatWarnSoundVolumeUp, name = _('RWR/SPO Sound Signals Volume Up'), category = _('Sensors')},
 
-
 -- Weapons                                                                        
 {combos = {{key = 'V', reformers = {'LCtrl'}}}, down = iCommandPlaneSalvoOnOff, name = _('Salvo Mode'), category = _('Weapons')},
 {combos = {{key = 'Space', reformers = {'RAlt'}}}, down = iCommandPlanePickleOn,	up = iCommandPlanePickleOff, name = _('Weapon Release'), category = _('Weapons')},
@@ -76,5 +87,9 @@ join(res.keyCommands,{
 {combos = {{key = 'V'}}, down = iCommandChangeRippleInterval, name = _('Ripple Interval Increase'), category = _('Weapons')},
 {combos = {{key = 'V', reformers = {'LShift'}}}, down = iCommandChangeRippleIntervalDown, name = _('Ripple Interval Decrease'), category = _('Weapons')},
 {combos = {{key = 'Space', reformers = {'LShift'}}}, down = iCommandChangeReleaseMode, name = _('PRS/SGL Release Submodes Cycle'), category = _('Weapons')},
+
+-- Communications
+{down = iCommandPlaneRefuelingReadyPreContact, name = _('A/A refueling - "Ready for precontact" radio call'), category = _('Communications')},
+
 })
 return res
