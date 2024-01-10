@@ -62,3 +62,14 @@ Final thanks to the past contributors:
     - NightIntruder - porting the mod to Arma 3 initially
     - TheSn4k3 - provided shuttle shoe and wires
 
+Known Limitations
+=================
+
+CVA-31 Bon Homme Richard
+    - Player controlled helicopters slightly move forward on the flight deck
+F-8 Crusader
+    - Aircraft is intended as static and for limited AI operations
+    - Player control is experimental at best, but largely untested and unsupported
+    - Carrier launch operations are not supported for player aircraft, only AI
+    - Unknown how to drop bombs as player aircraft
+    - Variable incidence wing is not enabled

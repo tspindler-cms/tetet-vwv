@@ -1,3 +1,11 @@
+2023-01-10
+  F-8 Crusader
+    - Add no wing pylon version for French Navy
+    - Various config fixes
+    - New liveries by seabat
+    - Model updates by Hawkeye60
+  Maddox
+    - Add wake, thanks to toan
 2023-12-30
   F-8 Crusader
     - Initial release
