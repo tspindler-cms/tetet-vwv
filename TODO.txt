@@ -3,9 +3,9 @@ TODO
     Check rotation upon parking, probably a DCS problem
   F-8 Crusader
     Separate tail fins from main uv for texturing it separately
-    Make the vertical stabilisator move in one piece
+    Make the elevator move in one piece
     Add visor to Vietnam war style pilot helmet
   DD-731 Maddox
     Make bridge Vietnam era like, not WWII
   P 4 Torpedo Boat
-    Source Vietname sailor figures as crew
+    Source Vietnamese sailor figures as crew
