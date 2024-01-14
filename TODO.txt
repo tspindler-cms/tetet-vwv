@@ -8,7 +8,9 @@ TODO
     Make wing pylons hideable
     Make y-pylon on side hideable
     Add single pylon on side, hideable
+    Variable incidence wing
   DD-731 Maddox
     Make bridge Vietnam era like, not WWII
   P 4 Torpedo Boat
     Source Vietnamese sailor figures as crew
+    Windows or grey panels at the bridge
