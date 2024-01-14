@@ -5,6 +5,9 @@ TODO
     Separate tail fins from main uv for texturing it separately
     Make the elevator move in one piece
     Add visor to Vietnam war style pilot helmet
+    Make wing pylons hideable
+    Make y-pylon on side hideable
+    Add single pylon on side, hideable
   DD-731 Maddox
     Make bridge Vietnam era like, not WWII
   P 4 Torpedo Boat
