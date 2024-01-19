@@ -1,14 +1,24 @@
 TODO
   CVA-31 Bon Homme Richard
     Check rotation upon parking, probably a DCS problem
+    Move EssexRunwaysAndRoutes.lua out of Scripts folder, one level up
   F-8 Crusader
-    Separate tail fins from main uv for texturing it separately
-    Make the elevator move in one piece
-    Add visor to Vietnam war style pilot helmet
-    Make wing pylons hideable
-    Make y-pylon on side hideable
-    Add single pylon on side, hideable
-    Variable incidence wing
+    DONE Separate tail fins from main uv for texturing it separately
+    DONE Make the elevator move in one piece
+    DONE Add visor to Vietnam war style pilot helmet
+    Fix shadows at control surface 
+    Fix VFP-206 texture
+    Add pilot to main F-8 edm (?optional?)
+    Tweak front gear wheel turn angle for tighter turns
+    Consider a separate RF-8 model creation
+    Add AIM-9D/G/H
+    Add AIM-9C (radar?)
+    Remove Walleyes
+    Add LAU-33 twin launchers from OV-10 mod
+    WONT DO Make wing pylons hideable
+    WONT DO Make y-pylon on side hideable
+    WONT DO Add single pylon on side, hideable
+    WONT DO Variable incidence wing
   DD-731 Maddox
     Make bridge Vietnam era like, not WWII
   P 4 Torpedo Boat
