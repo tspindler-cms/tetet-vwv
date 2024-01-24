@@ -3,7 +3,7 @@
 
 GT = {};
 -- TODO
-dofile(current_mod_path..'/scripts/EssexRunwaysAndRoutes.lua') -- the runways and taxiway lua file
+dofile(current_mod_path..'/Database/EssexRunwaysAndRoutes.lua') -- the runways and taxiway lua file
 GT_t.ws = 0;
 
 set_recursive_metatable(GT, GT_t.generic_ship) -- all ships have this
@@ -59,16 +59,15 @@ GT.numParking = 2 -- runways
 GT.Plane_Num_ = 8 --number of planes, not sure if it matters in game
 GT.Helicopter_Num_ = 3 -- Number heli spawns
 
---[[ 
--- the new LOS stuff is still new to me but this is what I have found out by looking through the lua files
+------------------------ Landing Signal Officer (Left Alt + F9) -- updated by Toan, 2024-01-22 -------------------------------
+-- LSO view          high quality edm file, whatever you named the connector , Visiblity arg   , Position of camera
 
---LSO view          high quality edm file, whatever you named the connector , Visiblity arg   , Position of camera
-local LSO_Station = { HQ_model = "empty", dockConnector  = "LSO_VIEW" , hide_argument = 821 , cameraPos = {-110+1,19.8,-18+0.5,180}} --this camera pos works
+local LSO_Station = { HQ_model = "empty", dockConnector  = "FIRE_DECK_AFT" , hide_argument = 821 , cameraPos = {-119+1,18.3,-16+0.5,180}} -- this camera pos works, was -110, 19.8, -18 by Toan, 2022-01-22
 
-GT.Stations = 	{	LSO = LSO_Station, }
- ]]
--- GT.LSOView = {cockpit = "empty", position = {--[[connector = "LSO_VIEW", ]]offset = {0.0, 0.0, 0.0, 0.0, 0.0}}} --this offset has no effect but the line needs to be here
+GT.Stations =     {    LSO = LSO_Station, } -- connector was LSO_VIEW, update by Toan to FIRE_DECK_AFT, 2024-01-22 -------
 
+GT.LSOView = {cockpit = "empty", position = {--[[connector = "FIRE_DECK_AFT", ]]offset = {0.0, 0.0, 0.0, 0.0, 0.0}}} -- this offset has no effect but the line needs to be here
+------------------------- End Landing Signal Officer --------------------------------------------------------------------------- 
 
 -- Landing point
 GT.Landing_Point	= {-72.5916, 16.95, -5.60511}

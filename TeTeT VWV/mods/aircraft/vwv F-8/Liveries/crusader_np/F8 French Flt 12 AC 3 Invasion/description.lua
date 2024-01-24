@@ -1,13 +1,13 @@
 livery = {
 
 
-    {"fuselage",        0, "F-8 CRUSADER INV" ,false},
+    {"fuselage",        0, "F-8 CRUSADER FLT 12 INV" ,false},
     
 
 
 
 }
-name = "Flottille 12 Invasion Stripes"
+name = "Flotille 12 Invasion Stripes"
 
 
 

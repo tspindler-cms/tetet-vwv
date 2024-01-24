@@ -1,7 +1,7 @@
 livery = {
 
 
-    {"fuselage",        0, "F8-CRUSADER FR FLT 25" ,false},
+    {"fuselage",        0, "F-8 CRUSADER FLT 14-25" ,false},
     
 
 

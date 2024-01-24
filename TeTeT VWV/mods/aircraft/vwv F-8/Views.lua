@@ -7,17 +7,17 @@ ViewSettings = {
 		CameraAngleLimits      = {190.000000,-75.000000,115.000000},--Kopf drehen = links rechts,runter,hoch
 		EyePoint               = {0.000000,0.000000,0.000000},--front/back,up/down,left/right}<-'neck dimension'in meters 
 		limits_6DOF            = {x = {-0.050000,0.500000},y ={-0.250000,0.120000},z = {-0.300000,0.300000},roll = 90.000000},--Bewegen = hinten vorne,oben unten,links rechts
-		ShoulderSize		   = 0.25,-- bewegt Körper, wenn Azimuth Wert mehr als 90 Grad
+		ShoulderSize		   = 0.25,-- bewegt Kï¿½rper, wenn Azimuth Wert mehr als 90 Grad
 		Allow360rotation	   = false,
 	},	
 	}, -- Cockpit 
 	Chase = {
-		LocalPoint      = {2.510000,3.604000,0.000000},
-		AnglesDefault   = {180.000000,-8.000000},
+		LocalPoint      = { 0, 0, 0 }, -- {2.510000,3.604000,0.000000},
+		AnglesDefault   = { 0, 0 }, -- {180.000000,-8.000000},
 	}, -- Chase 
 	Arcade = {
-		LocalPoint      = {-13.790000,6.204000,0.000000},
-		AnglesDefault   = {0.000000,-8.000000},
+		LocalPoint      = { 0, 0, 0}, -- {-13.790000,6.204000,0.000000},
+		AnglesDefault   = { 0, 0 }, -- {0.000000,-8.000000},
 	}, -- Arcade 
 }
 

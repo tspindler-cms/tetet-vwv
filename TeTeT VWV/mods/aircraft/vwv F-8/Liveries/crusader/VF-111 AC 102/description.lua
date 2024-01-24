@@ -1,13 +1,13 @@
 livery = {
 
 
-    {"fuselage",        0, "F8-CRUSADER VF111 102" ,false},
+    {"fuselage",        0, "F-8 CRUSADER VF111 102" ,false},
     
 
 
 
 }
-name = "VF-111 102"
+name = "VF111 102"
 countries = {
 	"USA",
 }

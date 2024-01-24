@@ -154,20 +154,20 @@ crusader_np =  {
 	has_speedbrake	=	true,
 	radar_can_see_ground	=	true,	
 		
-		nose_gear_pos = 	{0.98, -2.100,	0},	----1.990
-		main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
-	wing_tip_pos =      {-5.214,-0.7, 5.35},-- wingtip coords for visual effects  -- was -10.214, by Toan, 28-12-2023 --------------
+	nose_gear_pos = 	{0.98, -2.100,	0},	----1.990
+	main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
+	wing_tip_pos =      {-5.0,-0.4, 5.50},-- wingtip coords for visual effects  -- was -10.214, by Toan, 19-01-2024
 
 		
-		AOA_take_off	=	0.16,
-		stores_number	=	10,		
-		tand_gear_max	=	3.73,		
-		tanker_type	=	2,
+	AOA_take_off	=	0.16,
+	stores_number	=	10,		
+	tand_gear_max	=	5.54,   -- 83° tangent maximum yaw angle of front wheel, by Toan, 15-01-2024
+	tanker_type	=	2,
 	wing_area	=	34.84,
 	wing_span	=	10.87,
 	wing_type = 1,-- FIXED_WING = 0/VARIABLE_GEOMETRY = 1/FOLDED_WING = 2/ARIABLE_GEOMETRY_FOLDED = 3
-		thrust_sum_max	=	15200,
-		thrust_sum_ab	=	25000,
+	thrust_sum_max	=	15200,
+	thrust_sum_ab	=	25000,
 	length	=	16.53,
 	height	=	4.8,
 	flaps_maneuver	=	0.5,
@@ -175,14 +175,21 @@ crusader_np =  {
 	range	=	2372,
 	crew_size	=	1,
 	RCS	=	1.8,			
-		IR_emission_coeff	=	0.58,
-		IR_emission_coeff_ab	=	2.5,
-		engines_count	=	1,
-		nose_gear_wheel_diameter	=	0.566,
-		main_gear_wheel_diameter	=	0.778,
+	IR_emission_coeff	=	0.58,
+	IR_emission_coeff_ab	=	2.5,
+	engines_count	=	1,
+	nose_gear_wheel_diameter	=	0.566,
+	main_gear_wheel_diameter	=	0.778,
 		
+	-- Overwing vapor effect by Toan
+	effects_presets = {
+		{effect = "OVERWING_VAPOR", file = current_mod_path.."/Effects/crusader_overwingVapor.lua"},
 		
-    engines_count    = 1, -- added by Toan, otherwise smoke doesn't work, 27-12-2023 ----------------------
+		-- you must create a folder Effects in the F-8 Mod folder ---------------------------------------
+		-- inside the Effects folder copy the crusader_overwingVapor.lua, by Toan, 05-01-2024 -----------
+		-- also, you must put in the Shapes folder the crusader_vapor.owv file, by Toan, 06-01-2024 -----
+	},  -- end of Overwing vapor effect
+
     engines_count    = 1, -- added by Toan, otherwise smoke doesn't work, 27-12-2023 ----------------------
     engines_nozzles = {
         [1] = 
@@ -445,8 +452,7 @@ Pylons =     {
 				use_full_connector_position = false,connector = "pylon_7",
             },
             {
-				{ CLSID = "f8_pilot" }, --f8_pilot1
-               
+				-- unused for now, might be good for sensors later on -- TeTeT 2024-02-21   
             }
         ),	
       

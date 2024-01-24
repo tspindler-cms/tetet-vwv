@@ -154,20 +154,20 @@ crusader =  {
 	has_speedbrake	=	true,
 	radar_can_see_ground	=	true,	
 		
-		nose_gear_pos = 	{0.98, -2.100,	0},	----1.990
-		main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
-	wing_tip_pos =      {-5.214,-0.7, 5.35},-- wingtip coords for visual effects  -- was -10.214, by Toan, 28-12-2023 --------------
+	nose_gear_pos = 	{0.98, -2.100,	0},	----1.990
+	main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
+	wing_tip_pos =      {-5.0,-0.4, 5.50},-- wingtip coords for visual effects  -- was -10.214, by Toan, 19-01-2024 
 
 		
-		AOA_take_off	=	0.16,
-		stores_number	=	10,		
-		tand_gear_max	=	3.73,		
-		tanker_type	=	2,
+	AOA_take_off	=	0.16,
+	stores_number	=	10,		
+	tand_gear_max	=	5.54,   -- 83° tangent maximum yaw angle of front wheel, by Toan, 15-01-2024
+	tanker_type	=	2,
 	wing_area	=	34.84,
 	wing_span	=	10.87,
 	wing_type = 1,-- FIXED_WING = 0/VARIABLE_GEOMETRY = 1/FOLDED_WING = 2/ARIABLE_GEOMETRY_FOLDED = 3
-		thrust_sum_max	=	15200,
-		thrust_sum_ab	=	25000,
+	thrust_sum_max	=	15200,
+	thrust_sum_ab	=	25000,
 	length	=	16.53,
 	height	=	4.8,
 	flaps_maneuver	=	0.5,
@@ -175,12 +175,20 @@ crusader =  {
 	range	=	2372,
 	crew_size	=	1,
 	RCS	=	1.8,			
-		IR_emission_coeff	=	0.58,
-		IR_emission_coeff_ab	=	2.5,
-		engines_count	=	1,
-		nose_gear_wheel_diameter	=	0.566,
-		main_gear_wheel_diameter	=	0.778,
-		
+	IR_emission_coeff	=	0.58,
+	IR_emission_coeff_ab	=	2.5,
+	engines_count	=	1,
+	nose_gear_wheel_diameter	=	0.566,
+	main_gear_wheel_diameter	=	0.778,
+	
+	-- Overwing vapor effect by Toan
+	effects_presets = {
+		{effect = "OVERWING_VAPOR", file = current_mod_path.."/Effects/crusader_overwingVapor.lua"},
+        
+        -- you must create a folder Effects in the F-8 Mod folder ---------------------------------------
+        -- inside the Effects folder copy the crusader_overwingVapor.lua, by Toan, 05-01-2024 -----------
+        -- also, you must put in the Shapes folder the crusader_vapor.owv file, by Toan, 06-01-2024 -----
+    },  -- end of Overwing vapor effect
 	
 	-- Afterburner effect by Toan
     engines_count    = 1, -- added by Toan, otherwise smoke doesn't work, 27-12-2023 ----------------------
@@ -360,7 +368,7 @@ Pylons = {
                         { CLSID = "{BRU33_2X_MK-82}" },
                         { CLSID = "{BRU33_2X_MK-82_Snakeye}" },
 						{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}"},--single Zuni
-						{ CLSID = "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}" },--Walleye
+						-- { CLSID = "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}" },--Walleye
 						{ CLSID = "{BRU-42_2*Mk-82SNAKEYE_LEFT}" },-- 2 ea MK82 SE on TER
 						{ CLSID = "{BRU-42_2*Mk-82_LEFT}" },--2 ea MK82 on TER
 						{ CLSID = "{SB_F8_BRU_41A_M82_4 Lt}" },--4 each MK82 on MER  needs weapons declaration at end of this lua
@@ -377,33 +385,41 @@ Pylons = {
                 },
                 {
                                 --{ CLSID = "{6CEB49FC-DED8-4DED-B053-E1F033FF72D3}" ,attach_point_position = {0.4,  0.2, 0.0}}, --AIM-9M
-                                { CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
-                                { CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
-                                { CLSID = "{R550_Magic_1}" ,attach_point_position = {0.5,  0.05, 0.0}}, --Magic 1
+                                { CLSID = "{AIM-9B}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9B
+								{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
+								{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
+                                { CLSID = "{AIM-9L}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9L
+                                -- { CLSID = "{R550_Magic_1}" ,attach_point_position = {0.5,  0.05, 0.0}}, --Magic 1
                         --  { CLSID = "{HVARx2}"},
                 }
         ),
         pylon(3, 0, 1.2, 1.34, 1.75,
                 {
-                        use_full_connector_position = false,connector = "pylon_6",
+                        use_full_connector_position = false,connector = "pylon_4",
                 },
                 {
                                 --{ CLSID = "{AIM-9M-ON-ADAPTER}" ,attach_point_position = {-0.2,  0.05, 0.0}}, --AIM-9M
-                                { CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
-                                { CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
-                                { CLSID = "{R550_Magic_1}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --Magic 1
+								{ CLSID = "{LAU-33A}",attach_point_position = {-0.3,  0.0, 0.0}}, --LAU-33A
+                                { CLSID = "{AIM-9B}" ,attach_point_position = {-0.3,  -0.05, 0.0}}, --AIM-9B
+								{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {-0.3,  -0.05, 0.0}}, --AIM-9C
+								{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {-0.3,  0.05, 0.0}}, --AIM-9D
+                                { CLSID = "{AIM-9L}" ,attach_point_position = {-0.3,  -0.05, 0.0}}, --AIM-9L
+                                -- { CLSID = "{R550_Magic_1}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --Magic 1
                         --  { CLSID = "{HVARx2}"},  
                 }
         ),
         pylon(4, 0, 1.2, 1.34, 1.60,
                 {
-                        use_full_connector_position = false,connector = "pylon_4",
+                        use_full_connector_position = false,connector = "pylon_6",
                 },
                 {
                                 --{ CLSID = "{AIM-9M-ON-ADAPTER}" ,attach_point_position = {-0.4,  0.05, 0.0}}, --AIM-9M
-                                { CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
-                                { CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
-                                { CLSID = "{R550_Magic_1}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --Magic 1
+								{ CLSID = "{LAU-33A}",attach_point_position = {-0.5,  0.0, 0.0}}, --LAU-33A
+                                { CLSID = "{AIM-9B}" ,attach_point_position = {-0.5,  -0.05, 0.0}}, --AIM-9B
+								{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {-0.5,  -0.05, 0.0}}, --AIM-9C
+								{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {-0.5,  0.05, 0.0}}, --AIM-9D
+                                { CLSID = "{AIM-9L}" ,attach_point_position = {-0.5,  -0.05, 0.0}}, --AIM-9L
+                                -- { CLSID = "{R550_Magic_1}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --Magic 1
                         --  { CLSID = "{HVARx2}"},
                 }
         ),
@@ -413,9 +429,11 @@ Pylons = {
                 },
                 {
                                 --{ CLSID = "{6CEB49FC-DED8-4DED-B053-E1F033FF72D3}" ,attach_point_position = {0.0,  0.2, 0.0}}, --AIM-9M
-                                { CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
-                                { CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
-                                { CLSID = "{R550_Magic_1}" ,attach_point_position = {0.5,  0.05, 0.0}}, --Magic 1
+                                { CLSID = "{AIM-9B}" ,attach_point_position = {0.2,  0.05, 0.0}}, --AIM-9B
+								{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.2,  0.05, 0.0}}, --AIM-9C
+								{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.2,  0.11, 0.0}}, --AIM-9D
+                                { CLSID = "{AIM-9L}" ,attach_point_position = {0.2,  0.05, 0.0}}, --AIM-9L
+                                -- { CLSID = "{R550_Magic_1}" ,attach_point_position = {0.5,  0.05, 0.0}}, --Magic 1
                         --  { CLSID = "{HVARx2}"},
                 }
         ),
@@ -434,7 +452,7 @@ Pylons = {
 					{ CLSID = "{BRU33_2X_MK-82}" },
 					{ CLSID = "{BRU33_2X_MK-82_Snakeye}" },
 					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}"},--single Zuni
-					{ CLSID = "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}" },--Walleye
+					-- { CLSID = "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}" },--Walleye
 					{ CLSID = "{BRU-42_2*Mk-82SNAKEYE_RIGHT}" },-- 2 ea MK82 SE on TER
 					{ CLSID = "{BRU-42_2*Mk-82_RIGHT}" },--2 ea MK82 on TER
 					{ CLSID = "{SB_F8_BRU_41A_M82_4 Rt}" },--4 each MK82 on MER  needs weapons declaration at end of this lua
@@ -450,7 +468,7 @@ Pylons = {
                         use_full_connector_position = false,connector = "pylon_7",
             },
             {
-                        { CLSID = "f8_pilot" }, --f8_pilot1
+                        -- unused for now, might be good for sensors later on -- TeTeT 2024-02-21
 
             }
         ),
@@ -592,38 +610,6 @@ SFM_Data = {
 	[59] = {critical_damage = 3,  args = {148}},--NOSE_BOTTOM
 	[61] = {critical_damage = 2,  args = {147}},--FUEL_TANK_F
 	[82] = {critical_damage = 2,  args = {152}},--FUSELAGE_BOTTOM
-	},
-	
-	
-	--damage , index meaning see in  Scripts\Aircrafts\_Common\Damage.lua
-	Damage = {
-				[0] = {critical_damage = 5, args = {82}},
-				[3] = {critical_damage = 10, args = {65}},
-				[8] = {critical_damage = 10},
-				[11] = {critical_damage = 3},
-				[12] = {critical_damage = 3},
-				[15] = {critical_damage = 10},
-				[16] = {critical_damage = 10},
-				[17] = {critical_damage = 3},
-				[18] = {critical_damage = 3},
-				[25] = {critical_damage = 5, args = {53}},
-				[26] = {critical_damage = 5, args = {54}},
-				[35] = {critical_damage = 10, args = {67}, deps_cells = {25, 37}},
-				[36] = {critical_damage = 10, args = {68}, deps_cells = {26, 38}},
-				[37] = {critical_damage = 20, args = {55}},
-				[38] = {critical_damage = 20, args = {56}},
-				[43] = {critical_damage = 20, args = {61}, deps_cells = {53}},
-				[44] = {critical_damage = 20, args = {62}, deps_cells = {54}},
-				[47] = {critical_damage = 5, args = {63}, deps_cells = {51}},
-				[48] = {critical_damage = 5, args = {64}, deps_cells = {52}},
-				[51] = {critical_damage = 20, args = {59}},
-				[52] = {critical_damage = 20, args = {60}},
-				[53] = {critical_damage = 30, args = {57}},
-				[54] = {critical_damage = 2, args = {58}},
-				[55] = {critical_damage = 5, args = {81}},
-				[83]	= {critical_damage = 3, args = {134}}, -- nose wheel                                  
-				[84]	= {critical_damage = 3, args = {136}}, -- left wheel                                  
-				[85]	= {critical_damage = 3, args = {135}}, -- right wheel
 	},
 	
 	DamageParts = 
