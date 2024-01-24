@@ -8,7 +8,7 @@ displayName  = _("crusader"),
 
 fileMenuName = _("crusader"),
 update_id        = "crusader",
-version		 = "0.3.0",
+version		 = "0.3.1",
 state		 = "installed",
 -- info		 = _("Die Ling-Temco-Vought A-7 Corsair II ist ein einstrahliges Kampfflugzeug aus US-amerikanischer Produktion. Sie basierte auf der F-8 Crusader. Die A-7 war bei der US Navy und US Air Force im Dienst. Spaeter wurde sie von der Air National Guard bis 1998 eingesetzt. Das Modell uebernahmen auch Griechenland, Portugal (Einsatz bis 1999) und Thailand. In Griechenland sind A-7 bis heute bei der 336. Staffel des 116. Kampfgeschwaders in Araxos im Einsatz. Die Ausserdienststellung der A-7E war fuer Ende 2013 geplant, waehrend die TA-7C noch etwas laenger genutzt werden sollen."),
 
