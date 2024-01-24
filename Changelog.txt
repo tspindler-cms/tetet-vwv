@@ -1,4 +1,30 @@
-2023-01-10
+2024-01-24
+- Update TODO.txt
+  F-8 Crusader
+    - Add and update liveries by seabat to crusader (US) and crusader_np (French)
+      - Philippines Air Force
+      - VF-111
+      - VF-162
+      - VF-51
+      - VF-53
+      - VF-206 Recon
+      - VMF-235
+      - VMF-312
+      - VMF-321
+      - VMF-333
+      - FLT-12
+      - FLT-14
+    - Add experimental roughMet to texture set
+    - Add more Sidewinder variants
+    - Integrate pilot into model, remove pylon 7 pilot
+    - Update ME screens
+    - Increase frontwheel turn ability
+  CVA-31 Bon Homme Richard
+    - Add EssexRunwaysAndRoutes.lua to Database folder, to not confuse MOOSE
+    - Update ME screens
+  P 4 Torpedo Boat
+    - Add roughMet to texture set
+2024-01-10
   F-8 Crusader
     - Add no wing pylon version for French Navy
     - Various config fixes
