@@ -7,7 +7,7 @@ livery = {
 
 
 }
-name = "VMF-333 AC15"
+name = "VMF-333 SHAMROCKS 15"
 countries = {
 	"USA",
 }
