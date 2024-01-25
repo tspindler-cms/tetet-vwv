@@ -12,12 +12,12 @@ ViewSettings = {
 	},	
 	}, -- Cockpit 
 	Chase = {
-		LocalPoint      = { 0, 0, 0 }, -- {2.510000,3.604000,0.000000},
-		AnglesDefault   = { 0, 0 }, -- {180.000000,-8.000000},
+		LocalPoint      = {2.510000,3.604000,0.000000},
+		AnglesDefault   = {180.000000,-8.000000},
 	}, -- Chase 
 	Arcade = {
-		LocalPoint      = { 0, 0, 0}, -- {-13.790000,6.204000,0.000000},
-		AnglesDefault   = { 0, 0 }, -- {0.000000,-8.000000},
+		LocalPoint      = {-13.790000,6.204000,0.000000},
+		AnglesDefault   = {0.000000,-8.000000},
 	}, -- Arcade 
 }
 
