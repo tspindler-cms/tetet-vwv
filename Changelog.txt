@@ -1,3 +1,6 @@
+2024-01-26
+  CVA-31 Bon Homme Richard
+    - Change LSO position
 2024-01-24
 - Update TODO.txt
   F-8 Crusader
