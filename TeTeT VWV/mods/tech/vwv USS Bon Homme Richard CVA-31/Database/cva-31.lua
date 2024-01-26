@@ -62,7 +62,12 @@ GT.Helicopter_Num_ = 3 -- Number heli spawns
 ------------------------ Landing Signal Officer (Left Alt + F9) -- updated by Toan, 2024-01-22 -------------------------------
 -- LSO view          high quality edm file, whatever you named the connector , Visiblity arg   , Position of camera
 
-local LSO_Station = { HQ_model = "empty", dockConnector  = "FIRE_DECK_AFT" , hide_argument = 821 , cameraPos = {-119+1,18.3,-16+0.5,180}} -- this camera pos works, was -110, 19.8, -18 by Toan, 2022-01-22
+local LSO_Station = { 
+	HQ_model = "empty", 
+	dockConnector  = "FIRE_DECK_AFT", 
+	hide_argument = 821, 
+	cameraPos = {-119+1,18.3,-15,180}  -- this camera pos works, was -110, 19.8, -18 by Toan, 2024-01-22 updated 2024-01-26
+}
 
 GT.Stations =     {    LSO = LSO_Station, } -- connector was LSO_VIEW, update by Toan to FIRE_DECK_AFT, 2024-01-22 -------
 
