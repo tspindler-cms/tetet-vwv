@@ -1,3 +1,6 @@
+2024-01-28
+  F-8 Crusader
+    - Inverse front wheel turn
 2024-01-26
   CVA-31 Bon Homme Richard
     - Change LSO position
