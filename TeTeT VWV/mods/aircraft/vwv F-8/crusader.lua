@@ -161,7 +161,7 @@ crusader =  {
 		
 	AOA_take_off	=	0.16,
 	stores_number	=	10,		
-	tand_gear_max	=	5.54,   -- 83° tangent maximum yaw angle of front wheel, by Toan, 15-01-2024
+	tand_gear_max	=	-5.54,   -- 83° tangent maximum yaw angle of front wheel, by Toan, 15-01-2024
 	tanker_type	=	2,
 	wing_area	=	34.84,
 	wing_span	=	10.87,
