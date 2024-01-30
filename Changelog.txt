@@ -13,7 +13,7 @@
       - VF-162
       - VF-51
       - VF-53
-      - VF-206 Recon
+      - VFP-206 Recon
       - VMF-235
       - VMF-312
       - VMF-321
