@@ -1,12 +1,16 @@
 Vietnam War Vessels by TeTeT
-0.3.1
+0.4.0
 
-This release of Vietnam War Vessels contains two participants in the Gulf of Tonkin incident, and an aircraft carrier, and a plane:
+This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
+
+This release of Vietnam War Vessels contains:
 
 P 4 class torpedo boat
 USS Maddox (DD-731), Sumner class destroyer
 USS Bon Homme Richard (CVA-31), Essex class carrier
 F-8 Crusader, a supersonic fighter jet
+MiG-17F "Fresco-C", a North Vietnamese fighter jet
+PBR Mk II, patrol boat used in South Vietnam
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -34,21 +38,25 @@ Links and model sources:
     * https://www.navysite.de/cv/cv31.htm
     * http://www.gonavy.jp/CV-CV31f.html
     * https://en.wikipedia.org/wiki/Vought_F-8_Crusader 
+    * https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-17
+    * https://en.wikipedia.org/wiki/Patrol_Boat,_River 
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
-    Hawkeye60 - for all the help via DCS World forum
+    Hawkeye60 - for all the help via DCS World forum and driving the new model introduction to the mod
     Tobsen - for help around the Blender EDM exporter
     Aplion - for an important topic on ship building on DCS World forum and help via discord
     Admiral189 - for helpful advice on the CVA-31
     Citizen - tester and contributor of the mod
     seabat - tester and contributor of the mod, creator of CVA-31 liveries for the F-8 and A-4
     Zabbie - tester of the mod
-    Toan - new parking code and improvements to F-8
-    Mario - for the F-8 mod
+    Toan - new parking code and improvements to F-8, and all the testing
+    Markindel/Mario - for the F-8 and MiG-17 mod
     Spino - for the F-8 mods weapons and pylons
     Pedro Caparros - for the original F-8 livery
     VSN Team - for permission to use the F-8 mod
+    Beldin - for patiently providing updates to the F-8 mod and runways and parking code for the CVA-31
+    EightBall - for providing the PBR MkII mod
 
 Without these persons the mod would not have been possible!
 
@@ -73,3 +81,5 @@ F-8 Crusader
     - Carrier launch operations are not supported for player aircraft, only AI
     - Unknown how to drop bombs as player aircraft
     - Variable incidence wing is not enabled
+MiG-17F "Fresco-C"
+    - Player control is untested and unsupported

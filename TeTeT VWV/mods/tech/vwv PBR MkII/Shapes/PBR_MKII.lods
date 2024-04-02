@@ -1,0 +1,6 @@
+model = {
+	lods = {		
+		{"PBR_MKII.edm", 10000.000000};
+	};
+    collision_shell = "PBR_MKII_Collision.edm";
+};

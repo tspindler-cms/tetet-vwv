@@ -1,5 +1,6 @@
-# DCS-Essex
-Essex class carrier CVA-31 Bon Homme Richard for DCS.
+# Essex class carrier CVA-31 Bon Homme Richard for DCS.
+
+This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
 The model is based on a mod by karla for IL-2 1946: https://www.sas1946.com/main/index.php/topic,46424.0.html
 

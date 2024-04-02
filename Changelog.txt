@@ -1,3 +1,31 @@
+2024-04-02
+  All
+    - Add Creative Commons License (CC-BY-NC-SA)
+  F-8 Crusader
+    - Add vapour file
+    - Version bump, formatting of entry.lua
+    - Prefix name with vwv_, change livery dirs, make flyable again
+    - Fix damage.lua script
+    - Add f_8_crusader_glass_blu.dds to crusader.zip
+  MiG-17F "Fresco-C"
+    - Remove F4E OVERWING_VAPOR effect
+    - Fix various errors from dcs.log
+  P 4 Torpedo Boat
+    - Remove old spec file from 5km lod
+    - Use correct sensor definition
+  PBR MkII Patrol Boat
+    - Use correct sensor definition
+  CVA-31 Bon Homme Richard
+    - Use correct sensor definition
+  Maddox
+    - Use correct sensor definition
+2024-04-01
+  F-8 Crusader
+    - Various updates
+  MiG-17
+    - Initial Release
+  PBR MkII
+    - Initial Release
 2024-01-28
   F-8 Crusader
     - Inverse front wheel turn

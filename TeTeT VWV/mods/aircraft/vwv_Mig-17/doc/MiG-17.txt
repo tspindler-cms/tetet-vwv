@@ -1,0 +1,435 @@
+Mikoyan-Gurevich MiG-17
+
+    Article
+    Talk
+
+    Read
+    Edit
+    View history
+
+Tools
+
+From Wikipedia, the free encyclopedia
+	
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.
+Find sources: "Mikoyan-Gurevich MiG-17" – news · newspapers · books · scholar · JSTOR (May 2015) (Learn how and when to remove this template message)
+MiG-17
+A restored MiG-17
+Role 	Fighter aircraft
+National origin 	Soviet Union
+Manufacturer 	Mikoyan-Gurevich
+First flight 	14 January 1950
+Introduction 	October 1952
+Status 	In limited service
+Primary users 	Soviet Air Forces (historical)
+People's Liberation Army Air Force (historical)
+Polish Air Force (historical)
+Vietnam People's Air Force (historical)
+Number built 	10,649 including Polish, Czech and Chinese variants
+Developed from 	Mikoyan-Gurevich MiG-15
+Variants 	PZL-Mielec Lim-6
+Shenyang J-5
+Developed into 	Mikoyan-Gurevich MiG-19
+
+The Mikoyan-Gurevich MiG-17 (Russian: Микоян и Гуревич МиГ-17; NATO reporting name: Fresco)[1] is a high-subsonic fighter aircraft produced in the Soviet Union from 1952 and was operated by air forces internationally. The MiG-17 was license-built in China as the Shenyang J-5 and Poland as the PZL-Mielec Lim-6. The MiG-17 is still being used by the North Korean air force in the present day and has seen combat in the Middle East and Asia.
+
+The MiG-17 was an advanced modification of the MiG-15 aircraft produced by the Soviet Union during the Korean War. Production of the MiG-17 was too late for use in that conflict and was first used in the Second Taiwan Strait Crisis in 1958. While the MiG-17 was designed to shoot down slower American bombers, it showed surprising success when used by North Vietnamese pilots to combat American fighters and fighter-bombers during the Vietnam War, nearly a decade after its initial design. This was due to the MiG-17 being more agile and maneuverable than the American F-4 Phantom and F-105 Thunderchief, which were focused on speed and long range combat, as well as the fact that MiG-17 was armed with guns, which initial models of the F-4 Phantom lacked.[2]
+Design and development
+
+While the MiG-15bis introduced swept wings to air combat over Korea, the Mikoyan-Gurevich design bureau had already begun work on its replacement in 1949 (originally the MiG-15bis45) in order to fix any problems found with the MiG-15 in combat.[3] The result was one of the most successful transonic fighters introduced before the advent of true supersonic types such as the Mikoyan-Gurevich MiG-19 and North American F-100 Super Sabre. The design would ultimately still prove effective into the 1960s when pressed into subsonic dogfights over Vietnam against much faster planes that were not optimized for maneuvering in such slower speed, short-range engagements.
+
+While the MiG-15 used a Mach sensor to deploy airbrakes because it could not safely exceed Mach 0.92, the MiG-17 was designed to be controllable at higher Mach numbers.[4] Early versions that retained the original Soviet copy of the Rolls-Royce Nene engine, the Klimov VK-1, were heavier with equal thrust. Later MiG-17s would be the first Soviet fighter application of an afterburner, which burned extra fuel in the exhaust of the basic engine to give extra thrust at a high efficiency cost.
+
+Though the MiG-17 looks very similar to the MiG-15, it had a new thinner and more highly swept wing and tailplane for speeds approaching Mach 1. While the F-86 introduced the "all-flying" tailplane, which made the aircraft more controllable near the speed of sound, this feature would not be adopted on MiG aircraft until the fully supersonic MiG-19.[5] The wing sweep was 45° (like the U.S. F-100 Super Sabre) near the fuselage and 42° for the outboard part of the wing.[6] The stiffer wing resisted the tendency to bend its wingtips and lose aerodynamic symmetry unexpectedly at high speeds and wing loads.[3]
+
+Other easily visible differences to its predecessor were the addition of a third wing fence on each wing, the addition of a ventral fin and a longer and less tapered rear fuselage that added about one meter in length. The MiG-17 shared the same Klimov VK-1 engine, and much of the rest of its construction such as the forward fuselage, landing gear and gun installation was carried over.[6] The first prototype, designated I-330 "SI" by the construction bureau, was flown on the 14 January 1950, piloted by Ivan Ivashchenko.[7]
+MiG-17 at the Aviation Museum of Central Finland in Jyväskylä. The paintscheme is from 2006 and is based on the idea of Luonetjärvi primary school student Anni Lundahl.
+A North Vietnamese MiG-17 on display at the Mighty Eighth Air Force Museum.
+Tail section showing insignia; camouflaged MiG-17s were often referred to as "snakes" by NVAF pilots.[8]
+
+In the midst of testing, pilot Ivan Ivashchenko was killed when his aircraft developed flutter, which tore off his horizontal tail, causing a spin and crash on 17 March 1950. Lack of wing stiffness also resulted in aileron reversal which was discovered and fixed. Construction and tests of additional prototypes "SI-2" and experimental series aircraft "SI-02" and "SI-01" in 1951, were generally successful. On 1 September 1951, the aircraft was accepted for production, and formally given its own MiG-17 designation after so many changes from the original MiG-15. It was estimated that with the same engine as the MiG-15's, the MiG-17's maximum speed is higher by 40–50 km/h, and the fighter has greater maneuverability at high altitude.[7]
+
+Serial production started in August 1951, but large quantity production was delayed in favor of producing more MiG-15s so it was never introduced in the Korean War. It did not enter service until October 1952, when the MiG-19 was almost ready to be flight tested. During production, the aircraft was improved and modified several times. The basic MiG-17 was a general-purpose day fighter, armed with three cannons, one Nudelman N-37 37 mm cannon and two 23 mm with 80 rounds per gun, 160 rounds total. It could also act as a fighter-bomber, but its bombload was considered light relative to other aircraft of the time, and it usually carried additional fuel tanks instead of bombs.
+
+Although a canopy that provided clear vision to the rear—necessary for dogfighting, like the F-86—was designed, production MiG-17Fs got a cheaper rear-view periscope, which would still appear on Soviet fighters as late as the MiG-23. By 1953, pilots got safer ejection seats with protective face curtains and leg restraints like the Martin-Baker seats in the West. The MiG-15 had suffered for its lack of a radar gunsight, but in 1951, Soviet engineers obtained a captured F-86 Sabre from Korea, and copied the optical gunsight and SRD-3 gun ranging radar to produce the ASP-4N gunsight and SRC-3 radar. The combination would prove deadly over the skies of Vietnam against aircraft such as the F-4 Phantom, whose pilots lamented that guns and radar gunsights had been omitted as obsolescent.[3]
+
+The second prototype variant, "SP-2" (dubbed "Fresco A" by NATO), was an interceptor equipped with a radar. Soon a number of MiG-17P ("Fresco B") all-weather fighters were produced with the RP-1 Izumrud radar and front air intake modifications.
+
+In early 1953 the MiG-17F day fighter entered production. The "F" indicated it was fitted with the VK-1F engine with an afterburner by modifying the rear fuselage with a new convergent-divergent nozzle and fuel system. Early VK-1F engines that were specifically modified to equip the MIG-17F had issues during prolonged normal afterburner usage, due to the insufficient heat resistance of the alloys used for the external nozzle body and stator vanes. Because of this, early 1953-1955 production planes had a special afterburner unit that used a separate tank filled with 90% ethanol for consumption in the afterburner due to its lower combustion temperature. This engine variant was labeled VK-1F(A). Later production jets used a normal system with on-board fuel. The afterburner doubled the rate of climb and greatly improved vertical maneuvers. But while the plane was not designed to be supersonic, skilled pilots could just dash to supersonic speed in a shallow dive, although the aircraft would often pitch up just short of Mach 1. This became the most popular variant of the MiG-17. The next mass-produced variant, MiG-17PF ("Fresco D") incorporated a more powerful Izumrud RP-2 radar, though they were still dependent on Ground Control Interception to find and be directed to targets. In 1956 a small series (47 aircraft) was converted to the MiG-17PM standard (also known as PFU) with four first-generation Kaliningrad K-5 (NATO reporting name AA-1 'Alkali') air-to-air missiles. A small series of MiG-17R reconnaissance aircraft were built with VK-1F engine (after first being tested with the VK-5F engine).
+
+5,467 MiG-17, 1,685 MiG-17F, 225 MiG-17P and 668 MiG-17PF were built in the USSR by 1958. Over 2,600 were built under licence in Poland and China.
+License production
+MiG-17F on display at the Hiller Aviation Museum in San Carlos, California
+Lim-5 in Polish Air Force markings
+A privately owned JJ-5 (MiG-17) at JeffCo Airport
+Main articles: PZL-Mielec Lim-6 and Shenyang J-5
+
+In 1955, Poland received a license for MiG-17 production. The MiG-17F was produced by the WSK-Mielec factory under the designation Lim-5 (an abbreviation of licencyjny myśliwiec – license-built fighter). The first Lim-5 was built on 28 November 1956 and 477 were built by 1960. Apart from Poland, a number were exported to Bulgaria, designated as MiG-17F.[9] An unknown number were built as the Lim-5R reconnaissance variant, fitted with the AFA-39 camera. In 1959–1960, 129 MiG-17PF interceptors were produced as the Lim-5P. WSK-Mielec also developed several Polish strike variants based on the MiG-17: the Lim-5M, produced from 1960; Lim-6bis, produced from 1963 (totaling 170 aircraft). Additionally some Lim-5Ps were converted in the 1970s into attack Lim-6Ms whereas other Lim-5, Lim-6bis and Lim-5P aircraft were modified for reconnaissance role as the Lim-6R, Lim-6bis R and Lim-6MR.
+
+In the People's Republic of China (PRC), an initial MiG-17F was assembled from parts in 1956, with license production following in 1957 at Shenyang. The Chinese-built version is known as the Shenyang J-5 (for local use) or F-5 (for export). Similarly the MiG-17PF was manufactured there as the J-5A (F-5A for export). Altogether 767 of these single-seater variants were built.
+Operational history
+An Egyptian MiG-17
+
+MiG-17s were designed to intercept straight-and-level-flying enemy bombers, not for air-to-air combat (dogfighting) with other fighters.[10] This subsonic (Mach .93) fighter was effective against slower (Mach .6-.8), heavily loaded U.S. fighter-bombers, as well as the mainstay American strategic bombers during the MiG-17's development cycle (such as the Boeing B-50 Superfortress or Convair B-36 Peacemaker, which were both still powered by piston engines). It was not however able to intercept the new generation of British jet bombers such as the Avro Vulcan and Handley Page Victor, which could both fly higher. The USAF's introduction of strategic bombers capable of supersonic dash speeds such as the Convair B-58 Hustler and General Dynamics FB-111 rendered the MiG-17 obsolete in front-line PVO service, and they were supplanted by supersonic interceptors such as the MiG-21 and MiG-23.
+
+MiG-17s were not available for the Korean War, but saw combat for the first time over the Straits of Taiwan when the Communist PRC MiG-17s clashed with the Republic of China (ROC, Nationalist China) F-86 Sabres in 1958.
+
+MiG-17s downed a spy aircraft in the 1958 C-130 shootdown incident over Armenia, with 17 casualties.[11]
+Vietnam War
+
+In 1960, the first group of approximately 50 North Vietnamese airmen were transferred to the PRC to begin transitional training onto the MiG-17. By this time the first detachment of Chinese trained MiG-15 pilots had returned to North Vietnam, and a group of 31 airmen were deployed to the Vietnam People's Air Force (VPAF) base at Son Dong for conversion to the MiG-17. By 1962 the first North Vietnamese pilots had finished their MiG-17 courses in the Soviet Union and the PRC, and returned to their units; to mark the occasion, the Soviets sent as a "gift" 36 MiG-17 fighters and MiG-15UTI trainers to Hanoi in February 1964. These airmen would create North Vietnam's first jet fighter regiment, the 921st.[12] By 1965, another group of MiG pilots had returned from training in Krasnodar, in the USSR, as well as from the PRC. This group would form North Vietnam's second fighter unit, the 923rd Fighter Regiment. While the newly created 923rd FR operated only MiG-17s, and initially these were the only types available to oppose modern American supersonic jets before MiG-21s and MiG-19s were introduced into North Vietnamese service (the 925 FR regiment was formed in 1969, flying MiG-19s).[13]
+An F-105D shoots down a MiG-17 during the Vietnam War, 1967.
+
+American fighter-bombers had been in theatre flying combat sorties since 1961,[14] and the U.S. had many experienced pilots from the Korean War and World War II, such as World War II veteran Robin Olds.[15][16] Untried MiGs and pilots of the VPAF would be pitted against some of the most combat experienced airmen of the U.S. Air Force (USAF) and U.S. Navy. On 3 April 1965 six MiGs took off from Noi Bai Air Base in two groups of two and four respectively, with the first acting as bait and the second being the shooters. Their target were U.S. Navy aircraft supporting an USAF 80-aircraft strike package trying to knock out the Thanh Hóa Bridge. The MiG-17 leader, Lt. Pham Ngoc Lan, attacked a group of Vought F-8 Crusaders of VF-211 from USS Hancock and damaged an F-8E flown by Lt. Cdr. Spence Thomas, who managed to land the aircraft at Da Nang Air Base. A second F-8 was claimed by his wingman Phan Van Tuc, but this is not corroborated by USN loss listings.[17]
+
+On 4 April 1965, the USAF made another attempt on the Thanh Hóa Bridge with 48 Republic F-105 Thunderchiefs of the 355th Tactical Fighter Wing (TFW) loaded with 384 x 750 lb (340 kg) bombs. The Thunderchiefs were escorted by a MIGCAP flight of F-100 Super Sabres from the 416th Tactical Fighter Squadron (416th TFS). Coming from above, four MiG-17s from the 921st Fighter Regiment bypassed the escorts and dove onto the Thunderchiefs, shooting two of them down; the leader Tran Hanh downed F-105D BuNo. 59-1754 of Major F. E. Benett, and his element leader Le Minh Huan downed F-105D BuNo. 59-1764 of Captain J. A. Magnusson.[18][19] The Super Sabres engaged; one AIM-9 Sidewinder was fired and missed (or malfunctioned),[20] and another F-100D flown by Captain Donald Kilgus fired 20 mm cannons,[21] scoring a probable kill. Tran Hanh's wingman Pham Giay went down and was killed.[22] No other U.S. airmen reported any confirmed aerial kills during the air battle; Tran Hanh stated that three of his accompanying MiG-17s had been shot down by the opposing USAF fighters.[23]
+
+Three F-100s from the MiGCAP, piloted by LtCol Emmett L. Hays, Capt Keith B. Connolly,[20] and Capt Donald W. Kilgus, all from the 416th TFS, had engaged the MiG-17s.[24] The four attacking MiGs from the 921st FR were flown by Flight Leader Tran Hanh, Wingman Pham Giay, Le Minh Huan and Tran Nguyen Nam.[25] Flight Leader Tran Hanh was the only Vietnamese survivor from the air battle and believed that the others in his flight were "... shot down by the F-105s."[23] Based upon the report, the USAF F-100s could have been mistaken for F-105s, and the loss of three MiG-17s was attributed to Super Sabres,[18] the first aerial victories of any American aircraft in the war. The F-100s themselves would never again encounter MiGs, being relegated to close air support. They were replaced in the MiGCAP role by faster and longer range but less manoeuvrable McDonnell Douglas F-4 Phantoms.
+
+USAF Chief of Staff General John P. McConnell was "hopping mad" to hear that two Mach-2-class F-105s had been shot down by Korean War-era subsonic North Vietnamese MiG-17s.[26]
+
+In 1965, the NVAF had only 36 MiG-17s and a similar number of qualified pilots, which increased to 180 MiGs and 72 pilots by 1968. The Americans had at least 200 USAF F-4s and 140 USAF F-105s, plus at least 100 U.S. Navy aircraft (F-8s, A-4s and F-4s) which operated from the aircraft carriers in the Gulf of Tonkin, plus scores of other support aircraft. The Americans had a multiple numerical advantage.[27]
+
+The MiG-17 was the primary interceptor of the fledgling VPAF in 1965, responsible for their first aerial victories and seeing extensive service during the Vietnam War. Some North Vietnamese pilots preferred the MiG-17 over the MiG-21 because it was more agile, though not as fast; three of the 16 VPAF Aces of the war (credited with shooting down five or more opposing aircraft) were from MiG-17s. Those were: Nguyen Van Bay (seven victories), Luu Huy Chao and Le Hai (both with six).[28] The rest gained ace status in MiG-21s.
+MiG-17/J-5 aerial combat victories in the Vietnam War 1965–1972
+
+This table lists VPAF[29] and Chinese air-to-air kills. Sources include Hobson p. 271 and Toperczer (#25) pp. 88–90.
+Date/year 	MiG-17 unit 	Aircraft weapon used 	Aircraft destroyed 	Destroyed aircraft unit/comments
+4/4/1965 	VPAF 921st Fighter Regiment 	23 mm/37 mm 	(2) Republic F-105 Thunderchiefs 	USAF 354th Tactical Fighter Squadron
+4/9/1965 	Unknown 	23 mm/37 mm 	F-4B Phantom II 	VF-96/Downed by Chinese MiGs
+6/20/1965 	Unknown 	23 mm/37 mm 	F-4C 	USAF 45th TFS
+4/12/1966 	Unknown 	23 mm/37 mm 	KA-3B Skywarrior 	USN VAH-4 Aerial Re-Fueller (Air Tanker)/Downed by Chinese MiGs
+4/19/1966 	Unknown 	23 mm/37 mm 	A-1E Skyraider 	USAF 602nd Air Commando Squadron
+6/21/1966 	923rd Fighter Regiment 	23 mm/37 mm 	Vought F-8E Crusader[30] 	USN VF-211
+1966 	923rd FR 	23 mm/37 mm 	(4) F-105Ds, (2) F-8Es, (2) F-4Cs, (1) RC-47D 	USAF 355th Tactical Fighter Wing, 354th TFS, 421st TFS, 433rd TFS, 555th TFS, 606th ACS. USN VF-111, VF-162. (3) F-105s and (2) F-4s were downed by unknown MiG units.
+4/19/1967 	921st FR 	23 mm/37 mm 	F-105F 	USAF 357th TFS
+1967 	923rd FR 	23 mm/37 mm 	(1) A-1E, (3) F-4Cs, (1) A-4C Skyhawk, (1) F-4D 	USAF 390th TFS, 433rd TFS, 602nd ACS; USN VA-76. F-4D downed by unknown MiG unit. (1) F-4C downed by Chinese MiGs.
+1968 	Unknown 	23 mm/37 mm 	(2) F-4Ds, (1) F-105F 	USAF 357th TFS, 435th TFS
+2/14/1968 	Unknown 	23 mm/37 mm 	A-1H 	USN VA-25/Downed by Chinese MiG
+7/10/1972 	923rd FR 	23 mm/37 mm 	F-4J 	USN VF-103
+Total other: 	6
+Total F-4s 	11
+Total F-8s 	3
+F-105s 	8
+Total aircraft downed: 	28
+Technical data: 	The VPAF made no distinction between their MiG-17s and J-5s.[31] Both mounted two 23 mm and one 37 mm cannons with enough ammunition for 5 seconds of continuous firing for all three guns. However the MiG-17 guns at a range of 1,500 m (5,000 ft) and with a two-second burst could strike an American jet with nearly 23 kg (50 lb) of metal. This contrasted to a two-second burst from US M61 Vulcan and Colt Mk 12 cannon 20 mm cannons which hit with an approximate 27 and 16 kg (60 and 35 lb) of metal respectively.[32]
+Luu Huy Chao and Le Hai, VPAF MIG 17 pilots, each credited with six aerial combat victories against U.S. planes in the skies over North Vietnam.
+
+VPAF flew their interceptors with guidance from ground controllers, who directed the MiGs to ambush American formations. The MIGs made fast attacks against US formations from several directions (usually the MiG-17s performed head-on attacks and the MiG-21s attacked from the rear). After shooting down a few American planes and forcing some of the F-105s to drop their bombs prematurely, the MiGs did not wait for retaliation, but disengaged rapidly. This "guerrilla warfare in the air" proved very successful[33]
+
+The MiG-17 was not originally designed to function as a fighter-bomber, but in 1971 Hanoi directed that United States Navy warships were to be attacked by elements of the VPAF. This would require the MiG-17 to be fitted with bomb mountings and release mechanisms. Chief Engineer of the VPAF ground crews, Truong Khanh Chau,[34] was tasked with the mission of modifying two MiG-17s for the ground attack role; after three months of work, the two jets were ready. On 19 April 1972, two pilots from the 923rd FR took their bomb laden MiG-17s and attacked the U.S. Navy destroyer USS Higbee and light cruiser USS Oklahoma City. Each MiG was armed with two 250 kg (550 lb) bombs. Pilot Le Xuan Di managed to hit the destroyer's aft 5" (127 mm) gun mount, destroying it, but inflicting no fatalities, as the crewmen had vacated the turret earlier due to a malfunction with the gun system.[35]
+
+From 1965 to 1972, MiG-17s from the VPAF 921st and 923rd FRs would claim 71 aerial victories against U.S. aircraft: 11 Crusaders, 16 F-105 Thunderchiefs, 32 F-4 Phantom IIs, two A-4 Skyhawks, seven A-1 Skyraiders, one C-47 cargo/transport aircraft, one Sikorsky CH-3C helicopter and one Ryan Firebee UAV.,[36] while VPAF lost 63 MiG-17s in air combat[37] According to Russian sources, from 1965 to 1972, MiG-17s from the VPAF shot-down 143 enemy aircraft and helicopters, while VPAF lost 75 MiG-17s through all causes and 49 pilots were killed[38]
+
+The American fighter community was shocked in 1965 when elderly, subsonic MiG-17s downed sophisticated Mach-2-class F-105 Thunderchief fighter-bombers over North Vietnam. As a result of these experiences the U.S. Air Force initiated project "Feather Duster" aimed at developing tactics that would enable the heavier American fighters to deal with smaller and more agile opponents like the MiG-17. To simulate the MiG-17 the U.S. Air Force chose the F-86H Sabre. One pilot who participated in the project remarked that "In any envelope except nose down and full throttle", either the F-100 or F-105 was inferior to the F-86H in a dogfight.[39][40] The project was generally successful in that the resulting tactics effectively minimized the disadvantages of the F-105, F-100 and other heavy American fighters while minimising the advantages of slower but more manoeuvrable fighters such as the F-86 and the MiG-17.[40]
+Other MiG-17 users
+East German MiG-17F.
+
+Twenty countries flew MiG-17s. The MiG-17 became a standard fighter in all Warsaw Pact countries in the late 1950s and early 1960s. They were also bought by many other countries, mainly in Africa and Asia, that were neutrally aligned or allied with the USSR. The MiG-17 still flies today in the air forces of Democratic Republic of the Congo, Guinea, Mali, Madagascar, Sudan, and Tanzania, and by extension through the Shenyang J-5, North Korea. JJ-5s trainers are still in limited use in China as well.
+Middle East
+A Syrian MiG-17 in Betzet at a landing strip in 1968. The aircraft was sent to be evaluated at Have Drill.
+
+The Egyptian Air Force received its first MiG-17s in 1956, deploying them against the Israeli invasion of the Sinai during the early stages of the Suez Crisis. When Britain and France launched air attacks against Egyptian air bases on 1 November 1956, Egyptian president Gamal Abdel Nasser ordered the Egyptian Air Force not to oppose the Anglo-French air strikes, and where possible to evacuate its aircraft to Syria or Saudi Arabia, so while Egypt lost large numbers of aircraft, including MiG-17s, losses of pilots were relatively low. The losses were quickly replaced after the end of the war, and by June 1957 Egypt had about 100 MiG-17s.[41][42] Syria also operated the MiG-17, receiving 60 MiG-17Fs in 1957.[42] The two air forces gradually switched the MiG-17 to ground-attack duties in the early 1960s, as the MiG-21 supplanted it in the interceptor role.[42] From 1962, Egyptian forces became involved in the North Yemen Civil War, supporting the republican government, with Egyptian MiG-17s flying ground attack operations.[43]
+
+The MiG-17 formed a major part of the Arab air strength during the Six-Day War in June 1967.[44][45] The war started with a massive airstrike by Israel against Egyptian, Jordanian, Syrian and Iraqi airbases, with more than 150 Egyptian aircraft destroyed or damaged. Egypt's surviving MiG-17s were heavily deployed in ground attacks against Israeli forces in the Sinai.[44][46] The Soviet Union again replaced Egypt's losses after the war, and Egypt was soon involved in the War of Attrition, a sustained series of armed clashes on and over Sinai, with Egypt's MiG-17s continuing to be used in the ground attack role. While the MiG-17 was slower and shorter-ranged than the Sukhoi Su-7 that was the other main component of Egypt's ground-attack forces, the MiG-17 was more manoeuvrable and sustained lower losses.[47] From 1970, Egypt deployed detachments of MiG-17s to Sudan to support government forces during the First Sudanese Civil War.[48] The MiG-17 continued in use in the Yom Kippur War. MiG-17s were used during the Ofira Air Battle by Egypt. Egyptian and Syrian Mig-17s retired shortly after these wars.
+Africa
+
+At least 24 of them served with the Nigerian Air Force and were flown by a mixed group of Nigerian and mercenary pilots from East Germany, Soviet Union, South Africa, the United Kingdom, and Australia during the 1967–70 Nigerian Civil War.
+Asia
+
+Four were hurriedly supplied by the USSR to Sri Lanka during the 1971 insurgency and were used for bombing and ground attack in the brief insurgency.
+Soviet Union
+
+In 1958, a US Air Force Lockheed C-130 was shot down by four MiG-17 fighters when it flew into Soviet airspace near Yerevan, Armenia while on a Sun Valley Signal intelligence mission, with all 17 crew killed.
+United States
+Two 64th Fighter Weapons Squadron F-5s with a 4477th TEF MiG-17 (leading) and MiG-21 (trailing) in 1979. Note the Tactical Air Command badge applied to the vertical fin of the MiG-21 on the right.
+
+A number of U.S. federal agencies undertook a program at Groom Lake to evaluate the MiG-17 to help fight the Vietnam War, as the kill ratio against North Vietnamese MiG-17s and MiG-21s was only 2:1. The program was code-named HAVE DRILL (see also Have Doughnut), involving trials of two ex-Syrian MiG-17F Frescos, acquired and provided by Israel, over the skies of Groom Lake.[49] These aircraft were given USAF designations and fake serial numbers so that they may be identified in DOD standard flight logs.
+
+In addition to tracking the dog fights staged between the various MiG models against virtually every fighter in U.S. service, and against SAC's B-52 Stratofortresses and B-58 Hustlers to test the ability of the bombers’ countermeasures systems, they also performed radar cross-section and propulsion tests that contributed greatly to improvements in U.S. aerial performance in Vietnam.
+
+According to the Federal Aviation Administration, there are 17 privately owned MiG-17s in the US.[50] Several MiG-17s have been seized due to questions over the legality of their import into the country.[51]
+Variants
+A Hungarian MiG-17PF "Fresco D" all-weather fighter with Izumrud radar.
+
+I-330 (Samolet SI)
+    Prototype.[52]
+MiG-17 (Samolet SI, "Fresco A")
+    Basic fighter version powered by VK-1 engine.[52]
+Samolet SI-10
+    Single MiG-17 modified with new Fowler flaps, leading-edge slats, and other improvements to enhance handling.[52]
+Samolet SI-16
+    Testbed for the 57 mm N-57 autocannon.[52]
+Samolet SI-19
+    Testbed for the TRS-190 rocket on modified APU-4 pylons.[52]
+MiG-17A
+    Fighter version powered by VK-1A engine with longer lifespan.
+MiG-17AS
+    Multirole conversion, fitted to carry unguided rockets and the K-13 air-to-air missile.
+Samolet SP-2
+    Experimental variant with an afterburning VK-1F engine and a Korshun interception radar.[52]
+MiG-17P (Samolet SP-7, "Fresco B")
+    All-weather fighter version equipped with Izumrud radar. 225 built.[52]
+MiG-17F (Samolet SF, "Fresco C")
+    Basic fighter version powered by VK-1F engine with afterburner. 1,685 built.[52]
+I-340 (Samolet SM-1)
+    Experimental twin-engined variant powered by two Mikulin AM-5 engines. Developed into the Mikoyan-Gurevich MiG-19.[52]
+MiG-17F (Samolet SR-2)
+    Reconnaissance variant of the similarly-designated MiG-17F fighter. Sometimes mistakenly referred to as MiG-17R.[52]
+MiG-17PF (Samolet SP-7F, "Fresco D")
+    All-weather fighter version equipped with Izumrud radar, 3 x 23 mm NR-23 cannons and VK-1F engine. 668 built.[52]
+MiG-17PM/PFU (Samolet SP-6, "Fresco E")
+    Fighter version equipped with radar and K-5 (NATO: AA-1 "Alkali") air-to-air missiles.[52]
+Samolet SP-8
+    Testbed for the SRD-3 Grad radar.[52]
+Samolet SP-9
+    Testbed for the RP-2U Izumrud radar and the K-5M missile.[52]
+Samolet SP-10
+    MiG-17PF converted to a testbed for a pair of unidentified 23 mm guns and the ARS-57 rocket.[52]
+Samolet SN
+    Experimental variant with twin side intakes, no central intake, and nose redesigned to allow 23 mm cannons to pivot to engage ground targets.[52]
+M-17
+    Target UAV, converting program for MiG-17 with service life at its end (1968).[53]
+PZL-Mielec Lim-5
+    Polish variant of MiG-17
+S-104
+    Czechoslovak variant of MiG-17
+Shenyang J-5
+    Chinese variant of MiG-17
+
+Some withdrawn aircraft were converted to remotely controlled targets.
+
+
+Operators
+
+[54]
+A former Indonesian Lim-5 on display in the United States in North Korean markings
+Current operators
+
+ North Korea
+
+    North Korean Air Force – 106 Shenyang F-5s and 135 Shenyang FT-5s are in service.[55] However, reports of dire levels of serviceability suggest an airworthiness rate of less than 50%.[56]
+
+Former operators
+
+ Afghanistan
+
+    Afghan Air Force received its first MiG-17s in 1957, and operated at least 90.[57] Remained mostly grounded by the end of 1980.[58]
+
+ Albania
+
+    Albanian Air Force – operated both Soviet-built MiG-17 and Chinese-built F-5s.[59]
+
+ Algeria
+
+    Algerian Air Force – operated 60 MiG-17Fs from the 1960s. Some remained in service as trainers in the late 1980s.[60]
+
+ Angola
+
+    Angolan Air Force[60]
+
+ Bulgaria
+
+    Bulgarian Air Force – operated MiG-17Fs, 17-PFs and 17-Rs.[60]
+
+ Burkina Faso
+
+    Burkina Faso Air Force[61]
+
+ Cambodia
+
+    Royal Cambodian Air Force – 16 aircraft, including five MiG-17s and 11 Shenyang J-5s were received from the Soviet Union and China in 1967–1968, later all were destroyed on the ground in 1971.[62]
+         Khmer Republic
+            Khmer Air Force
+        Democratic Kampuchea
+            Kampuchean Revolutionary Army
+
+ China
+
+    People's Liberation Army Air Force[63]
+    People's Liberation Army Naval Air Force
+
+ Republic of the Congo
+
+    Congolese Air Force[64]
+
+ Cuba
+
+    Cuban Revolutionary Air and Air Defense Force[65]
+
+ Czechoslovakia
+
+    Czechoslovak Air Force[66]
+
+ East Germany
+
+East German MiG-17
+
+    Air Forces of the National People's Army[67]
+
+ Egypt
+
+    Egyptian Air Force[68]
+
+ Ethiopia
+
+    Ethiopian Air Force[68]
+
+ Guinea
+
+    Guinea Air Force[68][69]
+
+ Guinea-Bissau
+
+    Guinea-Bissau Air Force – Operated two MiG-17Fs[70]
+
+A restored Hungarian People's Army Air Force MiG-17PF on display in Kecskemét
+
+ Hungarian People's Republic
+
+    Hungarian People's Army Air Force[71]
+
+ Indonesia
+
+    Indonesian Air Force[71]
+
+ Iraq
+
+    Iraqi Air Force[71]
+
+ Madagascar
+
+MiG-17 of the Malagasy Air Force.
+
+    Malagasy Air Force – 4 delivered in 1975 from North Korea.[54][72]
+
+ Mali
+
+    Malian Air Force[71]
+
+ Mongolia
+
+    Mongolian People's Army Air Force[73]
+
+ Morocco
+
+    Royal Moroccan Air Force[73]
+
+ Mozambique
+
+    Mozambique Air Force[73]
+
+ Nigeria
+
+    Nigerian Air Force[73]
+
+ North Yemen
+
+    Yemen Arab Republic Air Force – 13 MiG-17s donated by the USSR in November 1967.[74]
+
+ Poland
+
+    Polish Air Force[75]
+    Polish Navy[75]
+
+ Romania
+
+    Romanian Air Force[76]
+
+ Somalia
+
+    Somali Aeronautical Corps – In 1967, 30 MiG-17 and MiG-17F were delivered by the Soviet Union.[54][77][78] In 1991 the Air Force was dissolved.[79]
+
+ South Yemen
+
+    People's Democratic Republic of Yemen Air Force – First ten MiG-17Fs delivered from the USSR in January 1969. Eight additional aircraft were delivered in 1971.[80]
+
+ Soviet Union
+
+    Soviet Air Forces
+    Soviet Air Defense Forces
+    Soviet Naval Aviation
+
+ Sri Lanka
+
+    Sri Lanka Air Force removed out of service after the 1971 Communist JVP Insurrection.[81] Now preserved in SLAF Ratmalana museum.
+
+ Syria
+
+Syrian MiG-17 at the Israeli Air Force Museum
+
+    Syrian Air Force[82]
+
+ Uganda
+
+    Ugandan Air Force – Some ex-Czech; serviceability doubtful.[83]
+
+ United States
+
+Soviet MiG-17F in USAF use
+
+    Formerly used for evaluation in the United States Air Force, however in January 2014 a camouflaged example was seen operating near Edwards AFB, possibly as a training vehicle at the USAF Test Pilot School where MiG-15s are routinely operated.
+
+ Vietnam
+
+    Vietnam People's Air Force[84]
+
+Specifications (MiG-17F)
+Twin 23 mm Nudelman-Rikhter NR-23 cannon winched down from the nose of a Polish-built Lim-6 (MiG-17F; a third 37 mm Nudelman N-37 cannon was also fitted.
+
+Data from Combat Aircraft since 1945,[85] MiG: Fifty Years of Secret Aircraft Design[86]
+
+General characteristics
+
+    Crew: 1
+    Length: 11.264 m (36 ft 11 in)
+    Wingspan: 9.628 m (31 ft 7 in)
+    Height: 3.8 m (12 ft 6 in)
+    Wing area: 22.6 m2 (243 sq ft)
+    Airfoil: root: TsAGI S-12; tip: TsAGI SR-11[87]
+    Empty weight: 3,919 kg (8,640 lb) [88]
+    Gross weight: 5,340 kg (11,773 lb)
+    Max takeoff weight: 6,069 kg (13,380 lb)
+    Powerplant: 1 × Klimov VK-1F afterburning centrifugal-flow turbojet engine, 26.5 kN (6,000 lbf) thrust dry, 33.8 kN (7,600 lbf) with afterburner
+
+Performance
+
+    Maximum speed: 1,100 km/h (680 mph, 590 kn) M0.89 at sea level
+
+            1,145 km/h (711 mph; 618 kn) / M0.93 at 3,000 m (9,800 ft) with reheat
+
+    Range: 2,020 km (1,260 mi, 1,090 nmi) at 12,000 m (39,000 ft) with 2 × 400 L (110 US gal; 88 imp gal) drop-tanks
+    Service ceiling: 16,600 m (54,500 ft)
+    g limits: +8
+    Rate of climb: 65 m/s (12,800 ft/min)
+    Wing loading: 268.5 kg/m2 (55.0 lb/sq ft)
+    Thrust/weight: 0.63
+
+Armament
+
+    Guns: **2 × 23 mm (0.906 in) Nudelman-Rikhter NR-23 autocannon (80 rounds per gun, 160 rounds total)
+        1 × 37 mm Nudelman N-37 autocannon (40 rounds total)
+    Hardpoints: 2 pylons with a capacity of up to 500 kg (1,100 lb) of stores, with provisions to carry combinations of:
+        Rockets: 2 × UB-16-57 rocket pods for S-5 rockets
+        Bombs: 2 × 250 kg (550 lb) bombs
+    (some versions equipped with 3 x NR-23 autocannons and 2 x K-5 air-to-air missiles)[7][89]
+
+See also
+
+    Aviation portal
+
+Related development
+
+    Mikoyan-Gurevich MiG-15
+    PZL-Mielec Lim-6
+    Shenyang J-5
+
+Aircraft of comparable role, configuration, and era
+
+    CAC Sabre
+    Dassault Mystère IV
+    Fiat G.91
+    Hawker Hunter
+    North American F-86D Sabre
+    Supermarine Swift
+
