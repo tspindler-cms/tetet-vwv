@@ -1,3 +1,9 @@
+2024-04-03
+  PBR MkII Patrol Boat
+    - Add 5km lod
+  Maddox 
+    - Fix elevation of turret 2
+    - Use fire argument for main armament
 2024-04-02
   All
     - Add Creative Commons License (CC-BY-NC-SA)

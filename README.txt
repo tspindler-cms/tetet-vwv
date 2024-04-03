@@ -10,7 +10,7 @@ USS Maddox (DD-731), Sumner class destroyer
 USS Bon Homme Richard (CVA-31), Essex class carrier
 F-8 Crusader, a supersonic fighter jet
 MiG-17F "Fresco-C", a North Vietnamese fighter jet
-PBR Mk II, patrol boat used in South Vietnam
+PBR Mk II, US patrol boat used in South Vietnam
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
