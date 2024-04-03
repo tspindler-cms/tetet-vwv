@@ -131,7 +131,8 @@ GT.WS[ws].angles = {
 --                    {math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
 --                    {math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
                     };
-GT.WS[ws].LN[1].BR = 
+GT.WS[ws].LN[1].fireAnimationArgument = -90;
+GT.WS[ws].LN[1].BR =
 					{
 						{
 							connector_name = 'POINT_GUN_127mm_1_1',
@@ -154,6 +155,7 @@ GT.WS[ws].angles = {
 --                    {math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
 --                    {math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
                     };
+GT.WS[ws].LN[1].fireAnimationArgument = -90;
 GT.WS[ws].LN[1].BR = 
 					{
 						{
@@ -177,6 +179,7 @@ GT.WS[ws].angles = {
 --                    {math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
 --                    {math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
                     };
+GT.WS[ws].LN[1].fireAnimationArgument = -90;
 GT.WS[ws].LN[1].BR = 
 					{
 						{
