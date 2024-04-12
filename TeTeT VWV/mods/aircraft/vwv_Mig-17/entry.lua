@@ -7,7 +7,7 @@ declare_plugin(self_ID, {
     fileMenuName = _("vwv_mig17f"),
     developerName = _("TeTeT"),    
     update_id = "mig17f",
-    version = "0.4.0",
+    version = "0.4.1",
     state = "installed",
     info = _("mig17f."),
 

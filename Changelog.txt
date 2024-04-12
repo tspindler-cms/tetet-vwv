@@ -1,3 +1,15 @@
+2024-04-12
+  CVA-31 Bon Homme Richard
+    - Use a differential approach to the generic Essex lua definition
+    - Provide Beldin's routes and runways file as alternative
+2024-04-08
+  F-8 Crusader
+    - Use new collision shell and damage table
+  MiG-17F "Fresco-C"
+    - Use new collision shell and damage table
+  CVA-31 Bon Homme Richard
+    - Provide a generic Essex class carrier with SCB-125 Angled Deck upgrade
+    - Sample number 14 added, but only as a test
 2024-04-03
   PBR MkII Patrol Boat
     - Add 5km lod

@@ -470,36 +470,36 @@ local crusader_np =  {
 		}, -- end of engine
 	},-- end of SFM_Data
 
-	Damage = {
-		[0] = {critical_damage = 5, args = {82}},
-		[3] = {critical_damage = 10, args = {65}},
-		[8] = {critical_damage = 10},
-		[11] = {critical_damage = 3},
-		[12] = {critical_damage = 3},
-		[15] = {critical_damage = 10},
-		[16] = {critical_damage = 10},
-		[17] = {critical_damage = 3},
-		[18] = {critical_damage = 3},
-		[25] = {critical_damage = 5, args = {53}},
-		[26] = {critical_damage = 5, args = {54}},
-		[35] = {critical_damage = 10, args = {67}, deps_cells = {25, 37}},
-		[36] = {critical_damage = 10, args = {68}, deps_cells = {26, 38}},
-		[37] = {critical_damage = 20, args = {55}},
-		[38] = {critical_damage = 20, args = {56}},
-		[43] = {critical_damage = 20, args = {61}, deps_cells = {53}},
-		[44] = {critical_damage = 20, args = {62}, deps_cells = {54}},
-		[47] = {critical_damage = 5, args = {63}, deps_cells = {51}},
-		[48] = {critical_damage = 5, args = {64}, deps_cells = {52}},
-		[51] = {critical_damage = 20, args = {59}},
-		[52] = {critical_damage = 20, args = {60}},
-		[53] = {critical_damage = 30, args = {57}},
-		[54] = {critical_damage = 2, args = {58}},
-		[55] = {critical_damage = 5, args = {81}},
-		[83]    = {critical_damage = 3, args = {134}}, -- nose wheel
-		[84]    = {critical_damage = 3, args = {136}}, -- left wheel
-		[85]    = {critical_damage = 3, args = {135}}, -- right wheel
-    },
+	-- Blueprint taken from Damage.lua of ED, Fencer (Scripts/Aircraft/_Common/Damage.lua)
+	Damage = verbose_to_dmg_properties({
+		["COCKPIT"]				= {critical_damage = 2,args =  { 65}},
+		["NOSE_CENTER"]			= {critical_damage = 3,args =  {146}},
+		["NOSE_RIGHT_SIDE"] 	= {critical_damage = 3,args =  {147}},
+		["NOSE_LEFT_SIDE"]		= {critical_damage = 3,args =  {150}},
+		["NOSE_BOTTOM"]			= {critical_damage = 3,args =  {148}},
+		["NOSE_TOP_SIDE"]		= {critical_damage = 3,args =  {147}},
 
+		["WING_L_OUT"]			= {critical_damage = 10,args =  {223},deps_cells = {"FLAP_L_IN","WING_L_PART_OUT"}},
+		["WING_R_OUT"]			= {critical_damage = 10,args =  {213},deps_cells = {"FLAP_R_IN","WING_R_PART_OUT"}},
+		["WING_L_PART_OUT"]		= {critical_damage = 3, args =  {221}},
+		["WING_R_PART_OUT"]		= {critical_damage = 3, args =  {231}},
+		["FLAP_L_IN"]			= {critical_damage = 4, args =  {227}},
+		["FLAP_R_IN"]			= {critical_damage = 4, args =  {217}},
+
+		["FUSELAGE_BOTTOM"]		= {critical_damage = 8, args =  {152}},
+		["FUSELAGE_CENTR_TOP"]	= {critical_damage = 8, args =  {151}},
+		-- ["FUSELAGE_CENTR_L"]	= {critical_damage = 4, args =  {154}},
+		-- ["FUSELAGE_CENTR_R"]	= {critical_damage = 4, args =  {153}},
+
+		["FIN_TOP"]				= {critical_damage = 4, args =  {244}},
+		["RUDDER"]				= {critical_damage = 2, args =  {247}},
+
+		["ENGINE_L"]			= {critical_damage = 4, args =  {167}},
+		-- ["ENGINE_R"]			= {critical_damage = 3, args =  {161}},
+
+		["STABILIZER_L_IN"]		= {critical_damage = 3, args =  {235}},
+		["STABILIZER_R_IN"]		= {critical_damage = 3, args =  {233}},
+		}),
 	DamageParts =
 	{
 		[1] = "crusader-oblomok",

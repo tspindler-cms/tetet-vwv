@@ -526,59 +526,36 @@ local vwv_mig17f = {
 		}, -- end of engine
 	},
 
-    -- damage , index meaning see in  Scripts\Aircrafts\_Common\Damage.lua
-    Damage = {
-        [0] = {critical_damage = 5, args = {146}},
-        [1] = {critical_damage = 3, args = {296}},
-        [2] = {critical_damage = 3, args = {297}},
-        [3] = {critical_damage = 8, args = {65}},
-        [4] = {critical_damage = 2, args = {298}},
-        [5] = {critical_damage = 2, args = {301}},
-        [7] = {critical_damage = 2, args = {249}},
-        [8] = {critical_damage = 3, args = {265}},
-        [9] = {critical_damage = 3, args = {154}},
-        [10] = {critical_damage = 3, args = {153}},
-        [11] = {critical_damage = 1, args = {167}},
-        [12] = {critical_damage = 1, args = {161}},
-        [13] = {critical_damage = 2, args = {169}},
-        [14] = {critical_damage = 2, args = {163}},
-        [15] = {critical_damage = 2, args = {267}},
-        [16] = {critical_damage = 2, args = {266}},
-        [17] = {critical_damage = 2, args = {168}},
-        [18] = {critical_damage = 2, args = {162}},
-        [20] = {critical_damage = 2, args = {183}},
-        [23] = {critical_damage = 5, args = {223}},
-        [24] = {critical_damage = 5, args = {213}},
-        [25] = {critical_damage = 2, args = {226}},
-        [26] = {critical_damage = 2, args = {216}},
-        [29] = {critical_damage = 5, args = {224}, deps_cells = {23, 25}},
-        [30] = {critical_damage = 5, args = {214}, deps_cells = {24, 26}},
-        [35] = {
-            critical_damage = 6,
-            args = {225},
-            deps_cells = {23, 29, 25, 37}
-        },
-        [36] = {
-            critical_damage = 6,
-            args = {215},
-            deps_cells = {24, 30, 26, 38}
-        },
-        [37] = {critical_damage = 2, args = {228}},
-        [38] = {critical_damage = 2, args = {218}},
-        [39] = {critical_damage = 2, args = {244}, deps_cells = {53}},
-        [40] = {critical_damage = 2, args = {241}, deps_cells = {54}},
-        [43] = {critical_damage = 2, args = {243}, deps_cells = {39, 53}},
-        [44] = {critical_damage = 2, args = {242}, deps_cells = {40, 54}},
-        [51] = {critical_damage = 2, args = {240}},
-        [52] = {critical_damage = 2, args = {238}},
-        [53] = {critical_damage = 2, args = {248}},
-        [54] = {critical_damage = 2, args = {247}},
-        [56] = {critical_damage = 2, args = {158}},
-        [57] = {critical_damage = 2, args = {157}},
-        [59] = {critical_damage = 3, args = {148}},
-        [61] = {critical_damage = 2, args = {147}},
-        [82] = {critical_damage = 2, args = {152}}
-    },
+	-- Blueprint taken from Damage.lua of ED, Fencer (Scripts/Aircraft/_Common/Damage.lua)
+	Damage  = verbose_to_dmg_properties({
+		["COCKPIT"]				= {critical_damage = 2,args =  { 65}},
+		["NOSE_CENTER"]			= {critical_damage = 3,args =  {146}},
+		["NOSE_RIGHT_SIDE"] 	= {critical_damage = 3,args =  {147}},
+		["NOSE_LEFT_SIDE"]		= {critical_damage = 3,args =  {150}},
+		["NOSE_BOTTOM"]			= {critical_damage = 3,args =  {148}},
+		["NOSE_TOP_SIDE"]		= {critical_damage = 3,args =  {147}},
+
+		["WING_L_OUT"]			= {critical_damage = 10,args =  {223},deps_cells = {"FLAP_L_IN","WING_L_PART_OUT"}},
+		["WING_R_OUT"]			= {critical_damage = 10,args =  {213},deps_cells = {"FLAP_R_IN","WING_R_PART_OUT"}},
+		["WING_L_PART_OUT"]		= {critical_damage = 3, args =  {221}},
+		["WING_R_PART_OUT"]		= {critical_damage = 3, args =  {231}},
+		["FLAP_L_IN"]			= {critical_damage = 4, args =  {227}},
+		["FLAP_R_IN"]			= {critical_damage = 4, args =  {217}},
+
+		["FUSELAGE_BOTTOM"]		= {critical_damage = 8, args =  {152}},
+		["FUSELAGE_CENTR_TOP"]	= {critical_damage = 8, args =  {151}},
+		-- ["FUSELAGE_CENTR_L"]	= {critical_damage = 4, args =  {154}},
+		-- ["FUSELAGE_CENTR_R"]	= {critical_damage = 4, args =  {153}},
+
+		["FIN_TOP"]				= {critical_damage = 4, args =  {244}},
+		["RUDDER"]				= {critical_damage = 2, args =  {247}},
+
+		["ENGINE_L"]			= {critical_damage = 4, args =  {167}},
+		-- ["ENGINE_R"]			= {critical_damage = 3, args =  {161}},
+
+		["STABILIZER_L_IN"]		= {critical_damage = 3, args =  {235}},
+		["STABILIZER_R_IN"]		= {critical_damage = 3, args =  {233}},
+		}),
 
     DamageParts = {
         [1] = "mig17f-oblomok-wing-r", -- wing R

@@ -1,4 +1,4 @@
--- Ship template by Joey45 edit as you see fit 
+-- Ship template by Joey45 edit as you see fit
 -- CVA-31 Bon Homme Richard by TeTeT
 
 GT = {};

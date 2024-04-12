@@ -1,15 +1,15 @@
-crusader =  {
-        
+local crusader = {
+
 	Name 				= 'vwv_crusader',
 	DisplayName			= _('F-8E Crusader'),
 	DisplayNameShort    = _('F-8E'),
 	HumanCockpit 		= true,
-    HumanCockpitPath	= current_mod_path..'/Cockpit/',
+	HumanCockpitPath	= current_mod_path..'/Cockpit/',
 	Picture 			= "crusader.png",
 	Rate 				= 40, -- RewardPoint in Multiplayer
 	Shape 				= "crusader",
-	
-	shape_table_data 	= 
+
+	shape_table_data 	=
 	{
 		{
 			file  	 	= 'crusader';
@@ -20,7 +20,7 @@ crusader =  {
 			username	= 'crusader';
 			index    	=  WSTYPE_PLACEHOLDER;
 			classname   = "lLandPlane";
-	    	positioning = "BYNORMAL";
+			positioning = "BYNORMAL";
 		},
 		{
 			name  = "crusader-oblomok";
@@ -57,7 +57,7 @@ crusader =  {
 	has_afteburner	            = true,
 	has_speedbrake	            = true,
 	radar_can_see_ground	    = true,	
-		
+
 	nose_gear_pos =         {0.96, -2.100,  0},     ----1.990
 	nose_gear_wheel_diameter        =       0.566,
 	nose_gear_amortizer_direct_stroke        =   1.58 - 1.40, --0.220,
@@ -71,9 +71,8 @@ crusader =  {
 	main_gear_amortizer_normal_weight_stroke =  0.0,
 
 	wing_tip_pos =          {-5.214,-0.7, 5.35},-- wingtip coords for visual effects  -- was -10.214, by Toan, 28-12		
-		
-	AOA_take_off	=	0.16,
-	stores_number	=	7,		
+
+	stores_number	=	7,
 	tand_gear_max	=	-5.54,   -- 83° tangent maximum yaw angle of front wheel, by Toan, 15-01-2024
 	tanker_type	=	2,
 	wing_area	=	34.8,
@@ -89,23 +88,19 @@ crusader =  {
 	RCS	=	4.0,
 	IR_emission_coeff	=	0.6,
 	IR_emission_coeff_ab	=	2.5,
-	engines_count	=	1,
-	nose_gear_wheel_diameter	=	0.566,
-	main_gear_wheel_diameter	=	0.778,
-	
 	-- Overwing vapor effect by Toan
 	effects_presets = {
 		{effect = "OVERWING_VAPOR", file = current_mod_path.."/Effects/crusader_overwingVapor.lua"},
-        
+
         -- you must create a folder Effects in the F-8 Mod folder ---------------------------------------
         -- inside the Effects folder copy the crusader_overwingVapor.lua, by Toan, 05-01-2024 -----------
         -- also, you must put in the Shapes folder the crusader_vapor.owv file, by Toan, 06-01-2024 -----
     },  -- end of Overwing vapor effect
-	
+
 	-- Afterburner effect by Toan
     engines_count    = 1, -- added by Toan, otherwise smoke doesn't work, 27-12-2023 ----------------------
 	engines_nozzles = {
-        [1] = 
+        [1] =
         {
             pos            = {-9.2,    -0.5,    0}, -- nozzle coords -- was -0.8, by Toan, 27-12-2023 ---------
             elevation           = 0, -- AFB cone elevation -------- was -0.1, by Toan, 29-12-2023 ---------
@@ -114,14 +109,12 @@ crusader =  {
             exhaust_length_ab_K = 0.707, -- AB animation
             smokiness_level     = 0.5, ---------------------------- update by Toan, 27-12-2023 ------------ 
             afterburner_circles_count = 3, ------------------------ 0 if no AB, by Toan, 01-01-2024 -------
-        }, -- end of [1]        
+        }, -- end of [1]
     }, -- end of engines_nozzles
-	
-	
-	
-	crew_members = 
+
+	crew_members =
 	{
-		[1] = 
+		[1] =
 		{
 			ejection_seat_name = "pilot_f86_seat",
 			drop_canopy_name   = 0,
@@ -134,16 +127,11 @@ crusader =  {
 		}, -- end of [1]
 	}, -- end of crew_members
 
-	
-		
-		
 	brakeshute_name	=	0,
 	is_tanker	=	false,
 	air_refuel_receptacle_pos = 	{0.75,	-0.25,	-0.3},	---?
-		
-		
-		
-	fires_pos = 
+
+	fires_pos =
 	{
 		[1] = 	{-0.40,		-0.46,	 0.0},		-- Fuselage					10 - fuselage right
 		[2] = 	{-1.114,	-0.29,	 0.901},	-- Wing inner Right
@@ -155,13 +143,11 @@ crusader =  {
 		[8] = 	{0.0,		 0.0,	 0.0},		-- Engine (inner Right)
 		[9] = 	{-7.75,		 0.3,	 0.0},		-- Engine (inner Left)
 	}, -- end of fires_pos
-	
+
 	Countermeasures = {
 		ECM = "AN/ALQ-126"
 	},
 
-
-	
 	passivCounterm = {
 		CMDS_Edit = true,
 		SingleChargeTotal = 240,
@@ -179,46 +165,44 @@ crusader =  {
 			{Transition = {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 5.0}}}}, Flags = {"Reversible"}},
 			{Transition = {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 15.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
         },
-    }, -- end of mechanimations	
+    }, -- end of mechanimations
 
-    LandRWCategories = 
+    LandRWCategories =
     {
-        [1] = 
+        [1] =
         {
 			Name = "AircraftCarrier",
         },
-        [2] = 
+        [2] =
         {
             Name = "AircraftCarrier With Catapult",
-        }, 
-        [3] = 
+        },
+        [3] =
         {
             Name = "AircraftCarrier With Tramplin",
-        }, 
+        },
     }, -- end of LandRWCategories
-    TakeOffRWCategories = 
+    TakeOffRWCategories =
     {
-        [1] = 
+        [1] =
         {
 			Name = "AircraftCarrier",
         },
-        [2] = 
+        [2] =
         {
             Name = "AircraftCarrier With Catapult",
-        }, 
-        [3] = 
+        },
+        [3] =
         {
             Name = "AircraftCarrier With Tramplin",
-        }, 
+        },
     }, -- end of TakeOffRWCategories
 
-			
 	--sensors
 	detection_range_max		 = 40,
-	radar_can_see_ground 	 = true, 
 	CanopyGeometry = {
-    	azimuth = {-145.0, 145.0},
-    	elevation = {-50.0, 90.0}
+		azimuth = {-145.0, 145.0},
+		elevation = {-50.0, 90.0}
     },
 
 	Sensors = {
@@ -250,7 +234,7 @@ crusader =  {
 		maxFrequency = 156.000,
 		modulation = MODULATION_AM
 	},
-	
+
 	-- Guns from Beldin
 	Guns = {
 		gun_mount("M_39",
@@ -316,7 +300,7 @@ crusader =  {
 				{name = "FireEffect", arg 				= 433, duration  = 0.02, attenuation = 2 , light_pos = {0.5,0,0}},
 				{name = "SmokeEffect",gas_deflector_arg = 328, add_speed = {0,  3, 10}},
 			},
-		})			
+		})
 	},
 	ammo_type_default = 2, -- interface to set desired ammunition mix in ME (DCSCORE-1104)
 	ammo_type ={_("HEI High Explosive Incendiary"),
@@ -363,8 +347,6 @@ crusader =  {
 					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D\
 					{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
 					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
-					
-				
 			}
 		),
 		pylon(3, 0, 1.2, 1.34, 1.75,
@@ -377,8 +359,6 @@ crusader =  {
 					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
 					{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
 					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
-					
-					
 			}
 		),
 		pylon(4, 0, 1.2, 1.34, 1.60,
@@ -391,8 +371,6 @@ crusader =  {
 					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
 					{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
 					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
-					
-				
 			}
 		),
 		pylon(5, 0, 1.2, 1.34, 1.75,
@@ -405,8 +383,6 @@ crusader =  {
 					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
 					{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
 					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
-					
-				
 			}
 		),
 		pylon(6, 0, 1.2, 1.34, 1.60,
@@ -440,29 +416,28 @@ crusader =  {
 				use_full_connector_position = false,connector = "pylon_7",
 			},
 			{
-	
 			}
 		),
 	},
-	
+
 	Tasks = {
         aircraft_task(CAP),
-     	aircraft_task(Escort),
-      	aircraft_task(FighterSweep),
+		aircraft_task(Escort),
+		aircraft_task(FighterSweep),
 		aircraft_task(Intercept),
 		aircraft_task(Reconnaissance),
-  		aircraft_task(GroundAttack),
-     	aircraft_task(CAS),
+		aircraft_task(GroundAttack),
+		aircraft_task(CAS),
 --      aircraft_task(AFAC),
 --	aircraft_task(RunwayAttack),
-  		aircraft_task(AntishipStrike),
-    },	
+		aircraft_task(AntishipStrike),
+    },
 	DefaultTask = aircraft_task(CAP),
 	Countries = {"USA"},
-	
+
 	-- based on MiG-19 SFM
 	SFM_Data =
-	{		
+	{
 		aerodynamics =
 		{
 			Cy0	        =   0, -- zero AoA lift coefficient*
@@ -505,7 +480,7 @@ crusader =  {
 			-- Aldop - Alfadop Max AOA at current M - departure threshold
 			-- Cymax - Coefficient, lift, maximum possible (ignores other calculations if current Cy > Cymax)
 		}, -- end of aerodynamics
-		
+
 		engine =
 		{
 			Nmg		=	50,		-- RPM at idle
@@ -543,47 +518,45 @@ crusader =  {
 		}, -- end of engine
 	},-- end of SFM_Data
 
-	Damage = {
-		[0] = {critical_damage = 5, args = {82}},
-		[3] = {critical_damage = 10, args = {65}},
-		[8] = {critical_damage = 10},
-		[11] = {critical_damage = 3},
-		[12] = {critical_damage = 3},
-		[15] = {critical_damage = 10},
-		[16] = {critical_damage = 10},
-		[17] = {critical_damage = 3},
-		[18] = {critical_damage = 3},
-		[25] = {critical_damage = 5, args = {53}},
-		[26] = {critical_damage = 5, args = {54}},
-		[35] = {critical_damage = 10, args = {67}, deps_cells = {25, 37}},
-		[36] = {critical_damage = 10, args = {68}, deps_cells = {26, 38}},
-		[37] = {critical_damage = 20, args = {55}},
-		[38] = {critical_damage = 20, args = {56}},
-		[43] = {critical_damage = 20, args = {61}, deps_cells = {53}},
-		[44] = {critical_damage = 20, args = {62}, deps_cells = {54}},
-		[47] = {critical_damage = 5, args = {63}, deps_cells = {51}},
-		[48] = {critical_damage = 5, args = {64}, deps_cells = {52}},
-		[51] = {critical_damage = 20, args = {59}},
-		[52] = {critical_damage = 20, args = {60}},
-		[53] = {critical_damage = 30, args = {57}},
-		[54] = {critical_damage = 2, args = {58}},
-		[55] = {critical_damage = 5, args = {81}},
-		[83]    = {critical_damage = 3, args = {134}}, -- nose wheel
-		[84]    = {critical_damage = 3, args = {136}}, -- left wheel
-		[85]    = {critical_damage = 3, args = {135}}, -- right wheel
-    },
-	
-	DamageParts = 
-	{  
-		[1] = "crusader-oblomok", 
-		[2] = "crusader-oblomok", 
-		
+	-- Blueprint taken from Damage.lua of ED, Fencer (Scripts/Aircraft/_Common/Damage.lua)
+	Damage = verbose_to_dmg_properties({
+		["COCKPIT"]				= {critical_damage = 2,args =  { 65}},
+		["NOSE_CENTER"]			= {critical_damage = 3,args =  {146}},
+		["NOSE_RIGHT_SIDE"] 	= {critical_damage = 3,args =  {147}},
+		["NOSE_LEFT_SIDE"]		= {critical_damage = 3,args =  {150}},
+		["NOSE_BOTTOM"]			= {critical_damage = 3,args =  {148}},
+		["NOSE_TOP_SIDE"]		= {critical_damage = 3,args =  {147}},
+
+		["WING_L_OUT"]			= {critical_damage = 10,args =  {223},deps_cells = {"FLAP_L_IN","WING_L_PART_OUT"}},
+		["WING_R_OUT"]			= {critical_damage = 10,args =  {213},deps_cells = {"FLAP_R_IN","WING_R_PART_OUT"}},
+		["WING_L_PART_OUT"]		= {critical_damage = 3, args =  {221}},
+		["WING_R_PART_OUT"]		= {critical_damage = 3, args =  {231}},
+		["FLAP_L_IN"]			= {critical_damage = 4, args =  {227}},
+		["FLAP_R_IN"]			= {critical_damage = 4, args =  {217}},
+
+		["FUSELAGE_BOTTOM"]		= {critical_damage = 8, args =  {152}},
+		["FUSELAGE_CENTR_TOP"]	= {critical_damage = 8, args =  {151}},
+		-- ["FUSELAGE_CENTR_L"]	= {critical_damage = 4, args =  {154}},
+		-- ["FUSELAGE_CENTR_R"]	= {critical_damage = 4, args =  {153}},
+
+		["FIN_TOP"]				= {critical_damage = 4, args =  {244}},
+		["RUDDER"]				= {critical_damage = 2, args =  {247}},
+
+		["ENGINE_L"]			= {critical_damage = 4, args =  {167}},
+		-- ["ENGINE_R"]			= {critical_damage = 3, args =  {161}},
+
+		["STABILIZER_L_IN"]		= {critical_damage = 3, args =  {235}},
+		["STABILIZER_R_IN"]		= {critical_damage = 3, args =  {233}},
+		}),
+	DamageParts =
+	{
+		[1] = "crusader-oblomok",
+		[2] = "crusader-oblomok",
 	},
-	
+
 	lights_data = {
 	typename = "collection",
 	lights = {
-    
 	[1] = { typename = "collection",
 							lights = {-- Landing light
 									  {typename = "spotlight",

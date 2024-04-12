@@ -4,7 +4,7 @@ local function ship_file(f)
 		return
 	end
 	if(GT) then
-		GT.shape_table_data = 
+		GT.shape_table_data =
 		{
 			{
 				file  	    = GT.visual.shape;
@@ -27,5 +27,6 @@ end
 --^^ this is normal on all ships
 
 ship_file(current_mod_path.."/Database/cva-31.lua") -- this is the ship or ships lua files
+ship_file(current_mod_path.."/Database/essex-scb125_diff.lua") -- this is the ship or ships lua files
 
 --add anything else here like LSO POS and Hanger stuff
