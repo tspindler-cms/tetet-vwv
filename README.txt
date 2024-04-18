@@ -57,6 +57,7 @@ Thanks
     VSN Team - for permission to use the F-8 mod
     Beldin - for patiently providing updates to the F-8 mod and runways and parking code for the CVA-31
     EightBall - for providing the PBR MkII mod
+    currenthill - allowing to use his armament system for the Maddox main guns
 
 Without these persons the mod would not have been possible!
 

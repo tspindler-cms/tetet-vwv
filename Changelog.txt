@@ -1,3 +1,14 @@
+2024-04-18
+  CVA-31 Bon Homme Richard
+    - Add number free variant 'CV Essex Class SCB-125'
+    - Provide liveries for different Essex Class carriers, kudos seabat
+    - Add 24 and 36 plane deck layouts, kudos Beldin
+  F-8 Crusader
+    - Fix Cockpit, now visible again
+  MiG-17F "Fresco-C"
+    - Provide new liveries, kudos seabat
+  Maddox
+    - New armament system, based on currenthill's work, and Beldin
 2024-04-12
   CVA-31 Bon Homme Richard
     - Use a differential approach to the generic Essex lua definition
