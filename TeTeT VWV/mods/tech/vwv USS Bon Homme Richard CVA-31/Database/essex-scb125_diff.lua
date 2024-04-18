@@ -8,5 +8,5 @@ dofile(current_mod_path.."/Database/cva-31.lua")
 
 GT.visual.shape = "essex_dcs_generic"  -- name of LODs lua
 GT.Name = "essex_scb125" -- folder name for Liveries
-GT.DisplayName = _("Generic Essex Carrier SCB125") -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("CV Essex Class SCB-125") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("CV Essex SCB125") -- Label name

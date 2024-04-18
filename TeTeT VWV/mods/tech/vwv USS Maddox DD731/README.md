@@ -7,3 +7,4 @@ The USS Maddox is a Sumner class destroyer, in this mod in a circa 1964 version.
 * https://en.wikipedia.org/wiki/USS_Maddox_(DD-731)
 * https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident
 
+Kudos to currenthill for allowing his armament code to be adjusted and used here. Learn more on his mods at https://currenthill.com/

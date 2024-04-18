@@ -9,7 +9,7 @@ displayName  = _("mig17f"),
 
 fileMenuName = _("mig17f"),
 update_id        = "mig17f",
-version		 = "0.4.1",
+version		 = "2.5.5",
 state		 = "installed",
 info		 = _("mig17f."),
 

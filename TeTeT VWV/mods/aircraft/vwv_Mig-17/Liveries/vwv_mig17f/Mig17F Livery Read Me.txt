@@ -1,0 +1,24 @@
+Mig-17f Liveries for CV-31 USS Bon Homme Richard Mod
+
+Work in Progress Liveries (if you care, roughmet files need more work)
+
+These do not over write the original liveries in the mod.  To distinguish original liveries and the new liveries look for the livery 
+an aircraft number in the drop down selection in mission editor.
+
+Thanks to:
+
+Hawkeye for the mod
+Hawkeye for the updates, tweaks, and additional mods
+Pedro Caparros for the orignial mod and livery
+TeTeT for the USS Bon Homme Richard mod which started all this
+TeTeT, Toan, Citizen and Spino for the ideas, codes, textures
+
+To those I missed, my sincere apologies and a big Mahalo!
+
+Unzip.  Place individual folders in saved games/liveries/vwv_mig17f  Create "vwv_mig17f  " and "vwv_mig17f  " folders if needed.
+
+For use and distribution by VWV Team.
+
+seabat
+
+(Mahalo means thank you)

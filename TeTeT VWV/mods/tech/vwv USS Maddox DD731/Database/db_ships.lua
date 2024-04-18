@@ -4,7 +4,7 @@ local function ship_file(f)
 		return
 	end
 	if(GT) then
-		GT.shape_table_data = 
+		GT.shape_table_data =
 		{
 			{
 				file  	    = GT.visual.shape;

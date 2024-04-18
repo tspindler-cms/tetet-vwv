@@ -10,11 +10,11 @@ developerName = "TeTeT",
 info		  = _("USS Maddox, DD-731, circa 1964"),
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 
-Skins = 
+Skins =
 {
-	 {     
-	     name  = "Maddox", 
-		 dir   = "Skins/1" 
+	 {
+	     name  = "Maddox",
+		 dir   = "Skins/1"
 	 },
 },
 
