@@ -15,9 +15,22 @@ Thanks to Joey45, Admiral189, Tobsen and Hawkeye60 for all the help and advice o
 
 Thanks to Sidekick65 for the screenshots, check out his youtube channel at https://www.youtube.com/@Sidekick65
 
-Final thanks to Citizen, seabat, toan, and Zabbie, testers and contributors of the mod.
+Final thanks to Citizen, seabat, toan, Zabbie, and Beldin, testers and contributors of the mod.
 
 The carrier will be published in the Vietnam War Vessels mod, https://github.com/tspindler-cms/tetet-vwv
+
+
+## HOWTO use alternate deck layouts
+
+In the Database directory there are three different layouts for planes taking off and parking on the flight deck:
+
+* EssexRunwaysAndRoutes.lua - the default layout for any type of carrier plane, plenty of space around planes
+* EssexRunwaysAndRoutes24.lua - tight configuration for 12 A-4 and 12 F-8. The A-4s need to be placed first
+* EssexRunwaysAndRoutes36.lua - tight configuration for up 36 planes, either A-4 or F-8, the last 8 should be A-4s
+
+You need to save the original EssexRunwaysAndRoutes.lua and copy either EssexRunwaysAndRoutes24.lua or EssexRunwaysAndRoutes36.lua to EssexRunwaysAndRoutes.lua to use them.
+
+Kudos to Beldin for going the extra mile with those deck layouts!
 
 References:
 * https://en.wikipedia.org/wiki/USS_Bon_Homme_Richard_(CV-31) 

@@ -62,7 +62,8 @@ local crusader_np =  {
 	nose_gear_amortizer_reversal_stroke      =  1.25 - 1.40,
 	nose_gear_amortizer_normal_weight_stroke =  0,
 
-	main_gear_pos =         {-6.92, -1.90, 0.0},    ----2.012 1.4
+	-- main_gear_pos =         {-6.92, -1.90, 0.0},    ----2.012 1.4 CTD when pilot controlled
+	main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
 	main_gear_wheel_diameter        =       0.778,
 	main_gear_amortizer_direct_stroke        =  0.21,
 	main_gear_amortizer_reversal_stroke      = -0.01,

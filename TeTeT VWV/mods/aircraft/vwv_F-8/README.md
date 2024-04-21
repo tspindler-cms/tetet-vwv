@@ -4,7 +4,7 @@ This mod is released under the Creative Commons Attribution-NonCommercial-ShareA
 
 A mod of the F-8 Crusader for DCS, thanks to Hawkeye60, Mario and Spino and the VSN team.
 
-With help from Toan, seabat, Spino, ViolentNomad and Beldin.
+With help from Toan, seabat, Spino, ViolentNomad, Beldin and Chap2012.
 
 Based on a VSN plane, kudos to the team!
 
