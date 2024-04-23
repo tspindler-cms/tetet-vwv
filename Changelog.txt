@@ -1,3 +1,11 @@
+2024-04-23
+  CVA-31 Bon Homme Richard
+    - Add black waterline and red submerged colored hull
+  F-8 Crusader
+    - Update collision shell
+  MiG-17F "Fresco-C"
+    - Update collision shell
+    - Fix floating wheels
 2024-04-18
   CVA-31 Bon Homme Richard
     - Add number free variant 'CV Essex Class SCB-125'

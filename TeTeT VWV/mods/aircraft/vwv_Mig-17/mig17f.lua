@@ -2,9 +2,11 @@ local vwv_mig17f = {
 
     Name = 'vwv_mig17f', -- AG
     DisplayName = _('MiG-17F "Fresco C"'),
+	HumanCockpit = true,
+	HumanCockpitPath = current_mod_path..'/Cockpit/',
     Picture = "mig17f.png",
     Rate = "50",
-    Shape = "mig17f", -- AG	
+    Shape = "mig17f", -- AG
 
     shape_table_data = {
         {
@@ -17,7 +19,12 @@ local vwv_mig17f = {
             index = WSTYPE_PLACEHOLDER,
             classname = "lLandPlane",
             positioning = "BYNORMAL"
-        }, {name = "mig17f-oblomok", file = "mig17f-oblomok", fire = {240, 2}}
+        },
+        {
+            name = "mig17f-oblomok",
+            file = "mig17f-oblomok",
+            fire = {240, 2}
+        }
     },
 
     mapclasskey = "P0091000024",
@@ -41,13 +48,15 @@ local vwv_mig17f = {
     has_speedbrake = true,
     radar_can_see_ground = true,
 
-    nose_gear_pos = {1.42, -2.20, 0}, -- nosegear coord---6.157,	-1.26,	0 
+    -- nose_gear_pos = {1.42, -2.20, 0}, -- nosegear coord---6.157,	-1.26,	0 
+    nose_gear_pos = {1.42, -2.00, 0}, -- nosegear coord---6.157,	-1.26,	0 
     nose_gear_amortizer_direct_stroke = 0, -- down from nose_gear_pos !!!
     nose_gear_amortizer_reversal_stroke = 0, -- up 
     nose_gear_amortizer_normal_weight_stroke = 0, -- up 
     nose_gear_wheel_diameter = 0.754, -- in m
 
-    main_gear_pos = {-2.14, -2.23, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714 
+    -- main_gear_pos = {-2.14, -2.23, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714 
+    main_gear_pos = {-2.14, -2.03, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714 
     main_gear_amortizer_direct_stroke = 0, --  down from main_gear_pos !!!
     main_gear_amortizer_reversal_stroke = 0, --  up 
     main_gear_amortizer_normal_weight_stroke = 0, -- down from main_gear_pos

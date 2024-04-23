@@ -79,8 +79,10 @@ CVA-31 Bon Homme Richard
 F-8 Crusader
     - Aircraft is intended as static and for limited AI operations
     - Player control is experimental at best, but largely untested and unsupported
-    - Carrier launch operations are not supported for player aircraft, only AI
+    - Carrier launch and landing operations are not supported for player aircraft, only AI
     - Unknown how to drop bombs as player aircraft
     - Variable incidence wing is not enabled
+    - Collision shell not reliable under player control
 MiG-17F "Fresco-C"
-    - Player control is untested and unsupported
+    - Player control is almost untested and unsupported
+    - Collision shell not reliable under player control
