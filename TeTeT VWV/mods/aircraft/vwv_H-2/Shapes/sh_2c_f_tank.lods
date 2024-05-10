@@ -1,0 +1,14 @@
+model = {
+	lods = {
+		{"sh_2c_f_tank.edm", 10000};
+                {"sh_2c_f_tank.edm", 20000};
+		{"sh_2c_f_tank.edm",5000.000000},
+	},
+
+       collision_shell = "sh_2c_f_collision.edm",
+	         
+	
+
+}
+
+

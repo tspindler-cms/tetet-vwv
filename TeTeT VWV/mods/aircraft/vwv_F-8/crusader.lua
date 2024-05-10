@@ -1,3 +1,4 @@
+local launch_bar_connected_arg_value_ = 0.87;
 local crusader = {
 
 	Name 				= 'vwv_crusader',
@@ -162,12 +163,32 @@ local crusader = {
 	},
 
 	mechanimations = {
+		-- LaunchBar copied from A-4E-C for testing purposes
+        LaunchBar = {
+            {Transition = {"Retract", "Extend"}, Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "to", 0.881, "in", 4.4}}}}},
+            {Transition = {"Retract", "Stage"},  Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "to", 0.815, "in", 4.4}}}}},
+            {Transition = {"Any", "Retract"},  Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.000, "in", 4.5}}}}},
+            {Transition = {"Extend", "Stage"},   Sequence = {
+                    {C = {{"ChangeDriveTo", "Mechanical"}, {"Sleep", "for", 0.000}}},
+                    {C = {{"Arg", 85, "from", 0.881, "to", 0.766, "in", 0.600}}},
+                    {C = {{"Arg", 85, "from", 0.766, "to", 0.753, "in", 0.200}}},
+                    {C = {{"Sleep", "for", 0.15}}},
+                    {C = {{"Arg", 85, "from", 0.753, "to", 0.784, "in", 0.1, "sign", 2}}},
+                    {C = {{"Arg", 85, "from", 0.784, "to", 0.881, "in", 1.0}}},
+                },
+            },
+            {Transition = {"Stage", "Pull"},  Sequence = {
+                    {C = {{"ChangeDriveTo", "Mechanical"}, {"VelType", 2}, {"Arg", 85,"from", 0.881, "to", launch_bar_connected_arg_value_, "in", 0.27}}},
+                    }
+            },
+            {Transition = {"Stage", "Extend"},   Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "from", 0.815, "to", 0.881, "in", 0.2}}}}},
+        },
         FoldableWings = {
 			{Transition = {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 5.0}}}}, Flags = {"Reversible"}},
 			{Transition = {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 15.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
         },
     }, -- end of mechanimations
-
+	launch_bar_connected_arg_value = launch_bar_connected_arg_value_;
     LandRWCategories =
     {
         [1] =
@@ -563,15 +584,17 @@ local crusader = {
 									  {typename = "spotlight",
 									   connector = "MAIN_SPOT_PTR_02",
 									   argument = 209,
-									   dir_correction = {elevation = math.rad(-1)}
+									   dir_correction = {elevation = math.rad(-1)},
+									   intensity_max = 0
 									  },
 									  {-- Landing/Taxi light
 									   typename = "spotlight",
 									   connector = "MAIN_SPOT_PTR_01",
 									   argument = 208,
-									   dir_correction = {elevation = math.rad(3)}
+									   dir_correction = {elevation = math.rad(3)},
+									   intensity_max = 0
 									  }
-									 }
+							}
 						},
     [2]	= {	typename = "collection",
 								lights = {-- Left Position Light (red)

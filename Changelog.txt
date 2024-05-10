@@ -1,3 +1,22 @@
+2024-05-10
+  CVA-31 Bon Homme Richard
+    - Overhaul 36 plane layout by Beldin
+    - Enable meatball for experiments
+    - Add dirty deck texture
+  F-8 Crusader
+    - Updated and improved collision shell and main model
+    - Fix icon color
+    - Add launchbar support (broken without EFM)
+    - Remove light when launching
+    - Change main menu name to F-8 Crusader (from crusader)
+  MiG-17F "Fresco-C"
+    - New icon
+    - Add wikipedia based info
+    - Change main menu name to MiG-17F (from mig17f)
+  Maddox
+    - New livery DD-692 Sumner
+  H-2 Seasprite
+    - Initial Release
 2024-04-23
   CVA-31 Bon Homme Richard
     - Add black waterline and red submerged colored hull

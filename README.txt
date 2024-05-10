@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.4.1
+0.5.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -11,6 +11,7 @@ USS Bon Homme Richard (CVA-31), Essex class carrier
 F-8 Crusader, a supersonic fighter jet
 MiG-17F "Fresco-C", a North Vietnamese fighter jet
 PBR Mk II, US patrol boat used in South Vietnam
+H-2 Seasprite, a naval helicopter
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 

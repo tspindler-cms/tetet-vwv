@@ -1,17 +1,17 @@
 self_ID = "tetet_mig17f"
 declare_plugin(self_ID, {
-    image = "mig17f.bmp",
+    -- image = "mig17f.bmp",
     installed = true, -- if false that will be place holder , or advertising
     dirName = current_mod_path,
     displayName = _("vwv_mig17f"),
     fileMenuName = _("vwv_mig17f"),
-    developerName = _("TeTeT"),    
+    developerName = _("TeTeT"),
     update_id = "mig17f",
-    version = "0.4.1",
+    version = "0.5.0",
     state = "installed",
-    info = _("mig17f."),
+    info = _("Wikipedia: The Mikoyan-Gurevich MiG-17 (Russian: Микоян и Гуревич МиГ-17; NATO reporting name: Fresco) is a high-subsonic fighter aircraft produced in the Soviet Union from 1952 and was operated by air forces internationally."),
 
-    Skins = {{name = _("mig17f"), dir = "Theme"}},
+    Skins = {{name = _("MiG-17F"), dir = "Skins/1"}},
     Missions = {{name = _("mig17f"), dir = "Missions"}},
     LogBook = {
         {name = _("mig17f"), type = "mig17f"}
@@ -37,12 +37,14 @@ mount_vfs_texture_path(current_mod_path .. "/Textures/mig17f")
 mount_vfs_liveries_path(current_mod_path .. "/Liveries")
 -- mount_vfs_sound_path(current_mod_path .. "/Sounds")
 -------------------------------------------------------------------------------------
+--[[ TeTeT - unclear if this is needed
 local cfg_path = current_mod_path .. "/FM/F15/config.lua"
 dofile(cfg_path)
 F15FM[1] = self_ID
 F15FM[2] = 'F15'
 F15FM.config_path = cfg_path
 F15FM.old = 54
+]]
 
 -- dofile(current_mod_path .. '/weapons/guns.lua')
 dofile(current_mod_path .. '/mig_boarding_ladder.lua')

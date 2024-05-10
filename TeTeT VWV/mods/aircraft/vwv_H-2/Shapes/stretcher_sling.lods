@@ -1,0 +1,14 @@
+model = {
+	lods = {
+		{"stretcher_sling.edm", 1000};
+               {"stretcher_sling.edm", 10000};
+		{"stretcher_sling.edm", 100000};
+	},
+
+       collision_shell = "stretcher_sling_collision.edm",
+	         
+	
+
+}
+
+

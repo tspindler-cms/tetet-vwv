@@ -1,0 +1,196 @@
+Kaman SH-2 Seasprite
+From Wikipedia, the free encyclopedia
+Jump to navigation
+Jump to search
+"SH-2" and "Seasprite" redirect here. For SH2 related uses, see SH2 (disambiguation). For Sea Sprite related uses, see Sea Sprite (disambiguation).
+SH-2 Seasprite
+SH-2F Seasprite landing on the USS Nicholson (cropped).jpg
+SH-2F Seasprite of the US Navy
+Role 	Anti-submarine warfare helicopter
+Manufacturer 	Kaman Aircraft Corporation
+First flight 	2 July 1959 (HU2K-1)
+Introduction 	December 1962
+Retired 	1993 (United States Navy)
+Primary users 	United States Navy (historical)
+Royal New Zealand Air Force (historical)
+Produced 	1959-1969
+Number built 	184
+Variants 	Kaman SH-2G Super Seasprite
+
+The Kaman SH-2 Seasprite is a ship-based helicopter originally developed and produced by American manufacturer Kaman Aircraft Corporation. It has been typically used as a compact and fast-moving rotorcraft for utility and anti-submarine warfare missions.
+
+Development of the Seasprite had been initiated during the late 1950s in response to a request from the United States Navy, calling for a suitably fast and compact naval helicopter for utility missions. Kaman's submission, internally designated as the K-20, was favourably evaluated, leading to the issuing of a contract for the construction of four prototypes and an initial batch of 12 production helicopters, designated as the HU2K-1. Under the 1962 United States Tri-Service aircraft designation system, the HU2K was redesignated H-2, the HU2K-1 becoming the UH-2A. Beyond the U.S. Navy, the company had also made efforts to acquire other customers for export sales, in particular the Royal Canadian Navy; however, the initial interest of the Canadians was quelled as a result of Kaman's demand for price increases and the Seasprite performing below company projections during its sea trials. Due to its unsatisfactory performance, from 1968 onwards, the U.S. Navy's existing UH-2s were remanufactured from their originally-delivered single-engine arrangement to a more powerful twin-engine configuration.
+
+In October 1970, the Seasprite was selected by the U.S. Navy as the platform for the interim Light Airborne Multi-Purpose System (LAMPS) helicopter, which resulted in greatly enhanced anti-submarine and anti-surface threat capabilities being developed and installed upon a new variant of the type, designated as the SH-2D/F. Accordingly, during the 1970s and 1980s, the majority of the existing UH-2 helicopters were remanufactured into the improved SH-2F model. In this configuration, the Seasprite extended and increased shipboard sensor and weapon capabilities against several types of enemy threats, including submarines of all types, surface ships and patrol craft that may be armed with anti-ship missiles.
+
+The Seasprite served for many decades with the U.S. Navy. Highlights of its service life included operations during the lengthy Vietnam War, in which the type was primarily used to rescue downed friendly aircrews within the theatre of operations, and its deployment during the Gulf War, where Seasprites conducted combat support and surface warfare operations against hostile Iraqi forces. In more routine operations, the Seasprite was operated in a number of roles, including anti-submarine warfare (ASW), search and rescue (SAR), utility and plane guard (the latter being performed when on attachment to aircraft carriers). The type was finally withdrawn in 2001 when the last examples of the final variant, known as the SH-2G Super Seasprite were retired. During the 1990s and 2000s, ex-U.S. Navy Seasprites were offered to various nations as a form of foreign aid, which typically met with mixed interest and a limited uptake.
+Contents
+
+    1 Design and development
+        1.1 Origins
+        1.2 Further development
+    2 Operational history
+        2.1 United States
+        2.2 New Zealand
+        2.3 Exports
+    3 Variants
+    4 Operators
+    5 Aircraft on display
+    6 Specifications (SH-2F Seasprite)
+    7 See also
+    8 References
+        8.1 Citations
+        8.2 Bibliography
+    9 External links
+
+Design and development
+Origins
+A YUH-2A during ditching trials, 1963
+
+In 1956, the U.S. Navy launched a new competition with the intent of meeting its requirements for a compact, all-weather multipurpose naval helicopter, encouraging private companies to submit their proposals.[1][2] American manufacturer Kaman Aircraft Corporation decided to produce its own response for the competition, their submitted design, which was given the internal company designation of K-20, was of a relatively conventional helicopter powered by a single General Electric T58-8F turboshaft engine which drove a 44-foot four-bladed main rotor and a four-bladed tail rotor.[2][3] Following an evaluation of the designs that had been bid in response, the U.S. Navy decided to select the submission by Kaman to proceed with further development.[3][4] Accordingly, in late 1957, Kaman was promptly awarded with a contract calling for the construction of four prototypes and an initial batch of 12 production helicopters, designated as the HU2K-1.[1]
+
+In 1960, the Royal Canadian Navy announced that the HU2K has been identified as the frontrunner for their own requirement for an anti-submarine warfare helicopter; this choice was confirmed when the Treasury Board of the Canadian government gave its approval for the initial procurement of 12 rotorcraft from Kaman at a price of $14.5 million.[5] However, the Canadian purchase was disrupted by multiple factors, including Kaman's decision to abruptly raise the estimated price of the initial batch to $23 million; at the same time, there were concerns amongst officials that the manufacturer's projections of both the weight and performance criteria has been overly optimistic. In response, the Canadian Naval Board decided to hold off on issuing its approval to proceed with the HU2K purchase until after the US Navy had conducted sea trials with the type.[6] During these sea trials, it was revealed that the HU2K was indeed overweight and underpowered; in light of this inferior performance, the HU2K was deemed to be incapable of meeting the Canadian requirements. Accordingly, during late 1961, the competing Sikorsky CH-124 Sea King was selected to fulfil the intended role instead.[7]
+
+Having been unable to achieve any follow-on orders for the type, Kaman decided in the late 1960s to terminate production following the completion of the delivery of 184 H-2s to the U.S. Navy. However, in 1971, production was restarted by Kaman in order to manufacture an improved variant of the helicopter, designated as the SH-2F.[8] A significant factor in the reopening of the production line was that the Navy's Sikorsky SH-60 Sea Hawk, which was both newer and more capable in anti-submarine operations, had been determined to be too large to allow it to be safely operated from the smaller flight decks present upon the older frigates then in service.[9]
+Further development
+
+Upon the enactment of the 1962 United States Tri-Service aircraft designation system, the HU2K-1 had been redesignated as the UH-2A, while the HU2K-1U model was redesignated as the UH-2B. During its service, the UH-2 Seasprite would be subject to several modifications and improvements, such as the addition of fixtures for the mounting of external stores. Beginning in 1968, the Navy's remaining UH-2s were extensively remanufactured; perhaps the most extensive alteration performance was the replacement of their original single-engine arrangement with a more powerful twin-engine configuration.[10]
+A UH-2C aboard USS Hancock between July 1968 and March 1969
+
+In October 1970, the UH-2 was selected to be the platform to function as the interim Light Airborne Multi-Purpose System (LAMPS) helicopter.[10] During the course of the 1960s, LAMPS had evolved out of an urgent requirement to develop a manned helicopter that would be capable of supporting a non-aviation vessel and serve as its tactical Anti-Submarine Warfare arm. Widely referred to as LAMPS Mark I, the advanced sensors, processors, and display capabilities aboard the helicopter enabled such equipped ships to extend their situational awareness beyond the line-of-sight limitations that unavoidably hampered the performance of shipboard radars, as well as the short distances involved in the acoustic detection and prosecution of underwater threats associated with hull-mounted sonars. Those H-2s that were reconfigured to perform the LAMPS mission were accordingly re-designated as SH-2Ds.[10]
+
+On 16 March 1971, the first SH-2D LAMPS prototype conducted its first flight.[11] Beginning in 1973, production deliveries of the latest variant of the rotorcraft, designated as the SH-2F, commenced. Amongst the features of the SH-2F model was the full suite of LAMPS I equipment, along with various other improvements, such as upgraded engines, an extended life main rotor, and an elevated take-off weight. During 1981, the Navy placed an order for 60 production SH-2Fs. From 1987 onwards, a total of 16 SH-2Fs were upgraded with a chin-mounted forward-looking infrared (FLIR) sensor, chaff/flare launchers, dual rear-mounted infrared countermeasures, and missile/mine detecting equipment.[12]
+
+Eventually, all but two H-2s that were then in the U.S. Navy inventory were remanufactured into the SH-2F configuration. The final production procurement of the SH-2F was in Fiscal Year 1986. The final six orders for production SH-2Fs were converted to the more extensive and newer SH-2G Super Seasprite variant.[12]
+Operational history
+United States
+UH-2 in flight over the Tonkin Gulf, 1970
+
+In 1962, the initial UH-2 model commenced its operational service with the U.S. Navy.[3] The U.S. Navy quickly determined that the helicopter's capabilities were greatly restricted by its single engine; thus, the service ordered Kaman to retrofit all of its Seasprites into a more capable twin-engine arrangement instead; when furnished with a pair of engines, the Seasprite was capable of attaining an airspeed of 130 knots and operating at a range of up to 411 nautical miles.[2] The U.S. Navy would operate a total fleet of nearly 200 Seasprites to perform a variety of missions, ranging from anti-submarine warfare (ASW) operations, search and rescue (SAR) and utility transport.[2] Under typical operational conditions, several UH-2s would be deployed upon each of the U.S. Navy's aircraft carriers in order to perform plane guard and SAR missions.[10]
+
+The UH-2 was introduced in time to see action in the Tonkin Gulf incident in August 1964. The Seasprite's principal contribution to what would escalate into the lengthy Vietnam War between the Soviet-backed North Vietnamese and the United States-backed South Vietnamese, was the retrieval of downed aircrews, both from the sea and from inside enemy territory. The type was increasingly relied upon to perform the retrieval mission as the conflict intensified, such as during Operation Rolling Thunder in 1965.[13] During October 1966 alone, out of 269 downed pilots, helicopter-based SAR teams were recorded as having enabled the recovery of 103 men.[14]
+A UH-2A on plane guard duty hovers over the USS Kitty Hawk in March 1966
+
+During the 1970s, the conversion of UH-2s to the SH-2 anti-submarine configuration provided the U.S. Navy with its first dedicated ASW helicopter capable of operating from vessels other than its aircraft carriers. The compact size of the SH-2 allowed the type to be operated from flight decks that were too small for the majority of helicopters; this factor would later play a role in the U.S. Navy's decision to acquire the improved SH-2F during the early 1980s.[15]
+
+The SH-2F fleet was utilized to enforce and support Operation Earnest Will in July 1987, Operation Praying Mantis in April 1988, and Operation Desert Storm during January 1991 in the Persian Gulf region.[16] The countermeasures and additional equipment present upon the SH-2F allowed the type to conduct combat support and surface warfare missions within these hostile environments, which had an often-minimal submarine threat. In April 1994, the SH-2F was retired from active service with the U.S. Navy; the timing corresponded with the retirement of the last of the Vietnam-era Knox-class frigates that were unable to accommodate the new and larger SH-60 Sea Hawks, which were used to replace the aging Seasprites.
+
+In 1991, the U.S. Navy had begun to receive deliveries of the new SH-2G Super Seasprite; a total of 18 converted SH-2Fs and 6 new-built SH-2Gs were produced.[17] These were assigned to Naval Reserve squadrons, the SH-2G entered service with HSL-84 in 1993.[18] The SH-2 served in some 600 deployments and flew 1.5 million flight hours before the last of the type were finally retired in mid-2001.[18][19]
+New Zealand
+
+The Royal New Zealand Navy (RNZN) replaced its Westland Wasps with an initial batch of four[20] interim SH-2F Seasprites (formerly operated by the U.S. Navy), operated and maintained by a mix of Navy and Air Force personnel known as No. 3 Squadron RNZAF Naval Support Flight, to operate with ANZAC class frigates until the fleet of five new SH-2G(NZ) Super Seasprites were delivered. In October 2005, the Navy air element was transferred to No. 6 Squadron RNZAF at RNZAF Base Auckland in Whenuapai. RNZN Seasprites have seen service in East Timor. 10 of the 11 SH-2G(A)s rejected by the Royal Australian Navy[21] were purchased in 2014 to replace the five RNZN SH-2G(NZ) Seasprites that had required either a MLU (Mid Life Upgrade) or replacement due to corrosion issues, maintenance problems and obsolescence.[22] Kaman modified the ex-Australian aircraft and renamed them SH-2G(I), with the last one being delivered to New Zealand in early 2016. Eight of the aircraft are flying with the ninth and tenth aircraft being attritional aircraft used for spares etc. The 11th aircraft is held by Kaman as a prototype and test aircraft.[23] The five SH-2G(NZ) have been sold to Peru.[24] A SH-2F (ex-RNZN, NZ3442) is preserved in the Royal New Zealand Air Force Museum, donated to the museum by Kaman Aircraft Corporation after an accident while in service with the RNZN.
+Exports
+
+During the late 1990s, the United States decided to offer the surplus U.S. Navy SH-2Fs as foreign aid to a number of overseas countries. Among those to be offered the type included Greece, which had been offered six, and Turkey, which had been offered 14, but they rejected the offer.[25][26] Egypt opted to acquire four SH-2F under this aid program, they were mainly used for spares in to support of their existing fleet of ten SH-2Gs.[26] Poland chose to acquire the later SH-2G variant.[26]
+Variants
+The Vietnam War-era HH-2C Combat search and rescue version
+A YSH-2E "LAMPS II" prototype approaching USS Fox (CG-33), 1971.
+
+YHU2K-1
+    Four test and evaluation prototypes powered by an 875-shp General Electric T58-GE-6 turboshaft engine. Later redesignated YUH-2A in 1962.[1]
+HU2K-1
+    Utility transport helicopter, powered by a 1,250-shp (932-kW) General Electric T58-GE-8B turboshaft engine. Initial production version. Later redesignated UH-2A in 1962. 88 built.[1]
+UH-2B
+    Utility transport helicopter, same as UH-2A without IFR instruments, although these were later added without a subsequent change to the designation. 102 built.[citation needed]
+H-2 "Tomahawk"
+    A gunship version based on UH-2A. One prototype was built and tested for the U.S. Army in 1963. The Army selected it in November 1963, but the planned order for 220 H-2s was forsaken for additional UH-1 orders.[27]
+NUH-2B
+    One aircraft (147978) fitted with Beechcraft Queen Air wings and a General Electric J85 turbojet engine in May 1968.[citation needed]
+UH-2C
+    UH-2A and UH-2B helicopters fitted with two General Electric T58-GE-8B turboshaft engines.[1] One former UH-2A acted as a prototype and was followed by 40 conversions from UH-2A and UH-2B.
+NUH-2C
+    One UH-2C helicopter (147978) was modified with stub-wings and pylons for weapons trials, missiles fitted included the AIM-9 Sidewinder and AIM-7 Sparrow III air-to-air missiles.[1]
+NUH-2D
+    Redesignation of the NUH-1C test and evaluation helicopter.[1]
+HH-2C
+    Search and rescue helicopter, armed with a single Minigun in a chin-mounted turret and two waist mounted 7.62mm machine guns, six conversions.[1]
+HH-2D
+    Search and rescue helicopter, without any armament or armor but fitted with T58-GE-8F engines and four-bladed tail rotor, 67 conversions from UH-2A and UH-2Bs.[1]
+SH-2D
+    Anti-submarine warfare helicopter, 20 conversions from earlier models.[1]
+YSH-2E
+    Two test and evaluation helicopters, fitted with an advanced radar and LAMPS equipment.[1]
+SEALITE
+    Intended as the definitive version of the Seasprite for the LAMPS program. A 'lightweight' design for use on naval destroyers and escort vessels which had helicopter deck loading limits of about 6,000 lb (2,720 kg). Was to utilize the dynamic system of the basic UH-2 helicopter, but with a small, lighter fuselage, new skid landing gear, one Pratt & Whitney (UACL) PT6T (T400-CP-400) turboshaft engine, and a three-blade folding rotor with a new rotor hub to keep the maximum gross weight at 7,900 lb (3,583 kg). Planned in three variants, ASW, CMD (Cruise Missile Defense, i.e. anti-ASM), and General Purpose.[28][29] The company designation for the SEALITE was K-820. Due to post-Vietnam cutbacks, the SH-2F was ultimately procured instead.[30]
+SH-2F
+    Anti-submarine warfare helicopter, powered by two 1,350 shp (1,007 kW) General Electric T58-GE-8F turboshaft engines. Improved version. Mostly conversions from SH-2Ds and earlier models. Bureau numbers 161641 through 161652 and 161654 through 163214, a total of 59 aircraft, entered service as SH-2Fs.[31][verification needed]
+YSH-2G
+    1 SH-2G prototype converted from an SH-2F.[citation needed]
+Kaman SH-2G Super Seasprite
+    Anti-submarine warfare helicopter, powered by two 1,723 shp (1,285 kW) General Electric T700-GE-401 turboshaft engines.[citation needed]
+
+Operators
+For operators of SH-2G and its versions, see Kaman SH-2G Super Seasprite.
+
+ New Zealand
+
+    Royal New Zealand Air Force[32]
+        No. 6 Squadron RNZAF
+
+ United States
+
+    United States Navy[33]
+
+Aircraft on display
+For SH-2G and its versions on display, see Kaman SH-2G Super Seasprite.
+
+New Zealand
+
+    NZ3442 – SH-2F on static display at the Air Force Museum of New Zealand in Wigram, Christchurch.[34]
+
+United States
+
+    149021 – SH-2F on static display at the USS Hornet Museum in Alameda, California.[35][36]
+    149022 – SH-2F on static display at Naval Air Station North Island in Coronado, California.[37]
+    149026 – SH-2F on static display at Naval Station Norfolk Chambers Field in Norfolk, Virginia.[38]
+    149031 – HH‑2D on static display at the American Helicopter Museum & Education Center in West Chester, Pennsylvania. It was the last HH-2D in the U.S. Navy and used the callsign "Copyright 14" (or callsign "Shaka 14").[39][40][41]
+    150155 – SH-2F on static display at the Pima Air and Space Museum in Tucson, Arizona.[42]
+    150157 – SH-2F on static display at the USS Midway Museum in San Diego, California. It is painted in the markings of its last assignment, HSL-33.[43]
+    150175 – SH-2F on static display at the USS New Jersey in Camden, New Jersey. It is painted as bureau number 150141.[44]
+    150181 – SH-2F on static display at Battleship Memorial Park in Mobile, Alabama. It is painted in the markings of its last assignment, HSL-31.[45][46]
+    151312 – SH-2F on static display at the National Naval Aviation Museum at Naval Air Station Pensacola in Pensacola, Florida.[47][48]
+    151321 – SH-2F on static display at the Evergreen Aviation & Space Museum in McMinnville, Oregon.[49][50]
+    152201 – SH-2F on static display at the Louisiana Military Museum in Ruston, Louisiana.[51]
+    161905 – SH-2F on static display at the New England Air Museum in Windsor Locks, Connecticut.[52]
+    162583 – SH-2F on static display at the Aviation Challenge Camp at the U.S. Space and Rocket Center in Huntsville, Alabama.[53] It was flown by HSL-36 with the callsign "Lamplighter 342".[citation needed]
+
+Specifications (SH-2F Seasprite)
+
+Data from Jane's all the World's Aircraft 1976–77,[54] Encyclopedia of world military aircraft : Volume One[55]
+
+General characteristics
+
+    Crew: 3 (Pilot, Co-pilot/Tactical Coordinator (TACCO), Sensor Operator (SENSO))
+    Capacity: 1 pax with litter patient (with LAMPS installed) / 4 pax and two litter patients (with Sonobuoy launcher removed)
+    Length: 38 ft 4 in (11.68 m) nose and blades folded
+    Height: 13 ft 7 in (4.14 m) to top of rotor head
+    Empty weight: 7,040 lb (3,193 kg)
+    Max takeoff weight: 12,500 lb (5,670 kg) normal max
+    Maximum overload take-off weight: 13,300 lb (6,000 kg)
+    Fuel capacity: 396 US gal (330 imp gal; 1,500 l) internal fuel tanks; 120 US gal (100 imp gal; 450 l) auxiliary external fuel tanks.
+    Powerplant: 2 × General Electric T58-GE-8F turboshaft engines, 1,350 shp (1,010 kW) each
+    Main rotor diameter: 44 ft 0 in (13.41 m)
+    Main rotor area: 1,520.53 sq ft (141.262 m2) 4-bladed main and tail rotors
+    Rotor blade section: - root: KM23014.86; tip: KM23011.47[56]
+
+Performance
+
+    Maximum speed: 143 kn (165 mph, 265 km/h) at sea level
+    Cruise speed: 130 kn (150 mph, 240 km/h)
+    Range: 367 nmi (422 mi, 680 km) with maximum fuel
+    Endurance: 5 hours with 2 external tanks
+    Service ceiling: 22,500 ft (6,900 m)
+    Hover ceiling IGE: 18,600 ft (5,700 m)
+    Hover ceiling OGE: 15,400 ft (4,700 m)
+    Rate of climb: 2,440 ft/min (12.4 m/s)
+
+Armament
+
+    Hardpoints: 2× side fuselage mounting stub/pylon stations
+    Missiles: Non-US aircraft carry a variety of guided missiles, including the AGM-65 Maverick (often used in the anti-ship role) and dedicated anti-ship missiles.
+    Torpedoes: 2× Mk 46 or Mk 50 ASW torpedoes
+
+Avionics
+
+    LN 66HP radar
+    Improved tactical navigation and communications suites

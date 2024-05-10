@@ -516,15 +516,17 @@ local crusader_np =  {
 										{typename = "spotlight",
 										connector = "MAIN_SPOT_PTR_02",
 										argument = 209,
-										dir_correction = {elevation = math.rad(-1)}
+										dir_correction = {elevation = math.rad(-1)},
+										intensity_max = 0
 										},
 										{-- Landing/Taxi light
 										typename = "spotlight",
 										connector = "MAIN_SPOT_PTR_01",
 										argument = 208,
-										dir_correction = {elevation = math.rad(3)}
+										dir_correction = {elevation = math.rad(3)},
+										intensity_max = 0
 										}
-										}
+								}
 							},
 		[2]	= {	typename = "collection",
 									lights = {-- Left Position Light (red)
