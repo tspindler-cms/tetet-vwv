@@ -28,6 +28,8 @@ mount_vfs_liveries_path (current_mod_path.."/Liveries")
 mount_vfs_model_path	(current_mod_path.."/Shapes")
 
 dofile(current_mod_path..'/vwv_sh2f_statics.lua')
-dofile(current_mod_path..'/vwv_seasprite.lua')
+-- dofile(current_mod_path..'/vwv_seasprite.lua')
+dofile(current_mod_path..'/vwv_sh2f.lua')
+dofile(current_mod_path..'/vwv_hh2d.lua')
 
 plugin_done()
