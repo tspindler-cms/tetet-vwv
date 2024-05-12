@@ -1,4 +1,4 @@
-local vwv_sh2f =  {
+vwv_sh2f =  {
 
 	Name 				=   'vwv_sh2f',
 	DisplayName			= _('SH-2F Seasprite'),
@@ -370,8 +370,8 @@ local vwv_sh2f =  {
 	}
 };
 
-local vwv_hh2d = {};
-copyTable(vwv_sh2f, vwv_hh2d);
+vwv_hh2d = {};
+copyTable(vwv_hh2d, vwv_sh2f);
 -- set_recursive_metatable(vwv_hh2d, vwv_sh2f);
 
 vwv_hh2d.Name             = 'vwv_hh2d';
