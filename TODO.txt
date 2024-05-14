@@ -1,11 +1,11 @@
 TODO
   CVA-31 Bon Homme Richard
-    Check rotation upon parking, probably a DCS problem
+    DONE Check rotation upon parking, probably a DCS problem
     DONE Move EssexRunwaysAndRoutes.lua out of Scripts folder, one level up
     Improve meatball
     Improve cat precision
     Improve night time operations
-    Paint lower hull part red
+    DONE Paint lower hull part red
   F-8 Crusader
     DONE Separate tail fins from main uv for texturing it separately
     DONE Make the elevator move in one piece

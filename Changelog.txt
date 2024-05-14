@@ -1,3 +1,10 @@
+2024-05-15
+  CVA-31 Bon Homme Richard
+    - Fix cat 1 smoke effect problem
+  H-2 Seasprite
+    - Revert copy table
+    - Add drop tanks
+    - Add statics, but comment due to positioning
 2024-05-10
   CVA-31 Bon Homme Richard
     - Overhaul 36 plane layout by Beldin
