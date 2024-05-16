@@ -279,15 +279,16 @@ vwv_hh2d =  {
 				-- { CLSID = "SPITFIRE_45GAL_TORPEDO_TANK", attach_point_position = {-0.560, -0.194, -0.200}, connector = "Pylon_4" },
 			}
 		),
-		pylon(5, 0, -4.005000, 0.0000, 0.0000,{use_full_connector_position = false, connector = "Pylon_5"},
+		pylon(5, 0, -4.005000, -0.38, 0.0000,
+		      {arg = 202, arg_value = 0, use_full_connector_position = false, connector = "Pylon_5"},
 			{
 				-- { CLSID = "{AIRBORNE_MI8}", attach_point_position = {1.00,-0.10, 0.00, } },
 				-- { CLSID = "CABLE_MH6", arg_value = 1, attach_point_position = {0.00, 1.00 ,0.00  } },
-				-- { CLSID = "ab-212_cable", arg_value = 1, attach_point_position = {0.00, 1.00 ,0.00  } },
 				-- { CLSID = "suspended_soldier", arg_value = 1, attach_point_position = {-0.10, -4.20 ,-0.18  } },
 				-- { CLSID = "stretcher_sling", arg_value = 1, attach_point_position = {-0.10, -4.20 ,-0.18  } },
-				-- { CLSID = "rescue_crew_sling", arg_value = 1, attach_point_position = {-0.10, -4.20 ,-0.18  } },
-				-- { CLSID = "uscg_stretcher", arg_value = 1, attach_point_position = {-0.10, -4.20 ,-0.18  } },
+				{ CLSID = "ab-212_cable", arg_value = 1, attach_point_position = {0.00, 0.75 ,0.00  } },
+				{ CLSID = "rescue_crew_sling", arg_value = 1, attach_point_position = {1.22, -2, -1.15} },
+				{ CLSID = "uscg_stretcher", arg_value = 1, attach_point_position = {-0.03, -2.55, -0.05} },
 			}
 		),
 	},

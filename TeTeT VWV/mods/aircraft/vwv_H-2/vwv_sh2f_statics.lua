@@ -67,7 +67,7 @@ DrawArgs = {[3] = {3, 0.1}}}}})
 declare_loadout({category = CAT_PODS,
 CLSID = "uscg_stretcher",
  Picture = "uscg_stretcher.png",
- displayName = _("uscg_stretcher"),
+ displayName = _("USCG stretcher"),
 attribute = {4, 15, 45, WSTYPE_PLACEHOLDER},
 Smoke = {alpha = 180, r = 255, g = 255, b = 255, dx = -3.85, dy = -0.062},
 shape_table_data = {
@@ -89,7 +89,7 @@ DrawArgs = {[3] = {3, 0.1}}}}})
 declare_loadout({category = CAT_PODS,
 CLSID = "ab-212_cable",
  Picture = "ab-212_cable.png",
- displayName = _("ab-212_cable"),
+ displayName = _("AB-212 cable"),
 attribute = {4, 15, 45, WSTYPE_PLACEHOLDER},
 Smoke = {alpha = 180, r = 255, g = 255, b = 255, dx = -3.85, dy = -0.062},
 shape_table_data = {

@@ -77,6 +77,7 @@ Known Limitations
 
 CVA-31 Bon Homme Richard
     - Player controlled helicopters slightly move forward on the flight deck
+    - bda between carrier and player aircraft happens
 F-8 Crusader
     - Aircraft is intended as static and for limited AI operations
     - Player control is experimental at best, but largely untested and unsupported
@@ -87,3 +88,4 @@ F-8 Crusader
 MiG-17F "Fresco-C"
     - Player control is almost untested and unsupported
     - Collision shell not reliable under player control
+    - Damage suspectible when placed as static
