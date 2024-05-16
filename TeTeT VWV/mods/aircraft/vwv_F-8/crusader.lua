@@ -335,7 +335,8 @@ local crusader = {
 	Pylons = {
 		pylon(1, 0, 1.2, 2.50, -1.60,
 			{
-				use_full_connector_position = false,connector = "pylon_1",
+				use_full_connector_position = false,
+				connector = "pylon_1"
 			},
 			{
 				{ CLSID = "LAU3_HE151" }, --LAU-3 HE M151
@@ -353,34 +354,40 @@ local crusader = {
 				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" }, -- M117 750LBS
 				{ CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}" }, --Mk84
 				{ CLSID = "{DFT-300gal_LR}" },
-					{ CLSID = "{DFT-300gal_LR_EMPTY}" },
-							-- { CLSID = "{DFT-300gal_LR}",attach_point_position = { -0.10, -0.008, 0.0}}, --another posibility to fix 300 gal tank position/angle ?
-					{ CLSID = "{DFT-150gal}" },
-					{ CLSID = "{DFT-150gal_EMPTY}" },   
+				{ CLSID = "{DFT-300gal_LR_EMPTY}" },
+				-- { CLSID = "{DFT-300gal_LR}",attach_point_position = { -0.10, -0.008, 0.0}}, --another posibility to fix 300 gal tank position/angle ?
+				{ CLSID = "{DFT-150gal}" },
+				{ CLSID = "{DFT-150gal_EMPTY}" },
 			}
 		),
-		pylon(2, 0, 1.2, 2.40, -1.75,
+		pylon(2, 0, 1.2, 2.40, -1.75,  {
+				use_full_connector_position = false,
+				connector = "pylon_2",
+				arg = 310,
+				arg_value = 0.0
+			},
 			{
-				use_full_connector_position = false,connector = "pylon_3",
+				{ CLSID = "{AIM-9B}" , attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
+				{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
+				{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D\
+				{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
+				{ CLSID = "<CLEAN>","pylon_2", arg_value = 1.0 }, -- CLEAN --
+			}
+		),
+		pylon(3, 0, 1.2, 1.34, 1.75, {
+				use_full_connector_position = false,
+				connector = "pylon_3",
+				arg = 310,
+				arg_value = 0.0
 			},
 			{
 					{ CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
 					{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
-					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D\
-					{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
-					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
-			}
-		),
-		pylon(3, 0, 1.2, 1.34, 1.75,
-			{
-				use_full_connector_position = false,connector = "pylon_6",
-			},
-			{
-					{ CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
-					{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
 					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
 					{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
 					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
+					{ CLSID = "<CLEAN>","pylon_3", arg_value = 1.0 }, -- CLEAN --
 			}
 		),
 		pylon(4, 0, 1.2, 1.34, 1.60,
@@ -388,16 +395,17 @@ local crusader = {
 				use_full_connector_position = false,connector = "pylon_4",
 			},
 			{
-					{ CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
-					{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
-					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
-					{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
-					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
+					{ CLSID = "{AIM-9B}" , arg_value = 0.2, attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
+					{ CLSID = "{F8_AIM-9C}", attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
+					{ CLSID = "{F8_AIM-9D}", attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
+					{ CLSID = "{AIM-9J}", attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
+					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}", attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
 			}
 		),
 		pylon(5, 0, 1.2, 1.34, 1.75,
 			{
-				use_full_connector_position = false,connector = "pylon_5",
+				use_full_connector_position = false,
+				connector = "pylon_5"
 			},
 			{
 					{ CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
@@ -427,12 +435,12 @@ local crusader = {
 				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" }, -- M117 750LBS			
 				{ CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}" }, --Mk84
 				{ CLSID = "{DFT-300gal_LR}" },
-					{ CLSID = "{DFT-300gal_LR_EMPTY}" },
-							-- { CLSID = "{DFT-300gal_LR}",attach_point_position = { -0.10, -0.008, 0.0}}, --another posibility to fix 300 gal tank position/angle ?
-					{ CLSID = "{DFT-150gal}" },
-					{ CLSID = "{DFT-150gal_EMPTY}" },  
+				{ CLSID = "{DFT-300gal_LR_EMPTY}" },
+				-- { CLSID = "{DFT-300gal_LR}",attach_point_position = { -0.10, -0.008, 0.0}}, --another posibility to fix 300 gal tank position/angle ?
+				{ CLSID = "{DFT-150gal}" },
+				{ CLSID = "{DFT-150gal_EMPTY}" },
 			}
-		),  
+		),
 		pylon(7, 0, 1.2, 1.34, 1.60, --?????
 			{
 				use_full_connector_position = false,connector = "pylon_7",
