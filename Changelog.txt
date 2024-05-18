@@ -1,3 +1,6 @@
+2024-05-18
+  F-8 Crusader
+    - Fix hideable wing pylons
 2024-05-16
   H-2 Seasprite
     - Add pylon 5 and rescue equipment
