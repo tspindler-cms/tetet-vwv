@@ -8,7 +8,7 @@ declare_plugin(self_ID,
 
 	fileMenuName = _("crusader"),
 	update_id = "crusader",
-	version = "0.5.0",
+	version = "0.5.2",
 	state = "installed",
 	info = _("Wikipedia: The Vought F-8 Crusader (originally F8U) is a single-engine, supersonic, carrier-based air superiority jet aircraft designed and produced by the American aircraft manufacturer Vought. It was the last American fighter that had guns as the primary weapon, earning it the title 'The Last of the Gunfighters'."), 
 

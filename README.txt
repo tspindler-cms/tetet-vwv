@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.5.0
+0.5.2
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -89,3 +89,5 @@ MiG-17F "Fresco-C"
     - Player control is almost untested and unsupported
     - Collision shell not reliable under player control
     - Damage suspectible when placed as static
+H-2 Seasprite
+    - Wheels don't touch the ship deck

@@ -6,16 +6,16 @@ local crusader_np =  {
     HumanCockpitPath    = current_mod_path..'/Cockpit/',
 	Picture 			= "crusader_np.png",
 	Rate 				= 40, -- RewardPoint in Multiplayer
-	Shape 				= "crusader_np",
+	Shape 				= "crusader",
 	shape_table_data 	=
 	{
 		{
-			file  	 	= 'crusader_np';
+			file  	 	= 'crusader';
 			life  	 	= 20; -- lifebar
 			vis   	 	= 3; -- visibility gain.
 			desrt    	= 'crusader-oblomok'; -- Name of destroyed object file name
 			fire  	 	= { 300, 2}; -- Fire on the ground after destoyed: 300sec 2m
-			username	= 'crusader_np';
+			username	= 'crusader';
 			index    	=  WSTYPE_PLACEHOLDER;
 			classname   = "lLandPlane";
 			positioning = "BYNORMAL";
@@ -312,9 +312,10 @@ local crusader_np =  {
 		pylon(1, 0, 1.2, 2.50, -1.60,
 			{
 				use_full_connector_position = false,connector = "pylon_1",
+				arg = 308, arg_value = 1.0,
 			},
 			{
-				{ CLSID = "<CLEAN>", arg_value = 1 }, -- CLEAN --
+				-- { CLSID = "<CLEAN>", arg_value = 1 }, -- CLEAN --
 			}
 		),
 		pylon(2, 0, 1.2, 2.40, -1.75,
@@ -360,9 +361,10 @@ local crusader_np =  {
 		pylon(6, 0, 1.2, 1.34, 1.60,
 			{
 				use_full_connector_position = false,connector = "pylon_2",
+				arg = 310, arg_value = 1.0
 			},
 			{
-				{ CLSID = "<CLEAN>", arg_value = 1 }, -- CLEAN --
+				-- { CLSID = "<CLEAN>", arg_value = 1 }, -- CLEAN --
 			}
 		),
 		pylon(7, 0, 1.2, 1.34, 1.60, --?????

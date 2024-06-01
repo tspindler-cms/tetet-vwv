@@ -6,7 +6,7 @@ declare_plugin(self_ID,
 	dirName	  	 = current_mod_path,
 
 	fileMenuName = _("H-2 Seasprite"),
-	version		 = "0.5.0",
+	version		 = "0.5.2",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Kaman SH-2 Seasprite is a ship-based helicopter originally developed and produced by American manufacturer Kaman Aircraft Corporation. It has been typically used as a compact and fast-moving rotorcraft for utility and anti-submarine warfare missions."),
 
@@ -28,7 +28,6 @@ mount_vfs_liveries_path (current_mod_path.."/Liveries")
 mount_vfs_model_path	(current_mod_path.."/Shapes")
 
 dofile(current_mod_path..'/vwv_sh2f_statics.lua')
--- dofile(current_mod_path..'/vwv_seasprite.lua')
 dofile(current_mod_path..'/vwv_sh2f.lua')
 dofile(current_mod_path..'/vwv_hh2d.lua')
 

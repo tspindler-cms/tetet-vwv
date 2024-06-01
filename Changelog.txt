@@ -1,3 +1,11 @@
+2024-06-01
+  F-8 Crusader
+    - Remove shape for non pylon variant
+    - Use arguments to hide pylons in crusader_np for France
+    - Add new 8k liveries by seabat
+  H-2 Seasprite
+    - Fix landing behaviour
+    - Raise wheel positions  
 2024-05-18
   F-8 Crusader
     - Fix hideable wing pylons

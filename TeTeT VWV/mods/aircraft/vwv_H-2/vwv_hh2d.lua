@@ -1,25 +1,28 @@
 vwv_hh2d =  {
 
-	Name             = 'vwv_hh2d',
-	DisplayName      = _('HH-2D Seasprite'),
-	DisplayNameShort = _('HH-2D'),
+	Name             = "vwv_hh2d",
+	DisplayName      = _("HH-2D Seasprite"),
+	DisplayNameShort = _("HH-2D"),
 	--HumanCockpit 		= false,
-	--HumanCockpitPath    = current_mod_path..'/Cockpit/',
+	--HumanCockpitPath    = current_mod_path.."/Cockpit/",
 
-	Picture 			=  current_mod_path..'/Textures/sh_2c_f.png',
+	Picture 			=  current_mod_path.."/Textures/sh_2c_f.png",
 	Rate 				= 40, -- RewardPoint in Multiplayer
 	Shape 				= "sh_2c_f",
 
 	shape_table_data 	=
 	{
 		{
-			file  	 = 'sh_2c_f';
+			file  	 = "sh_2c_f";
 			life  	 = 5; -- lifebar
 			vis   	 = 3; -- visibility gain.
-			desrt    = 'kaman_h2_desrt'; -- Name of destroyed object file name
+			desrt    = "kaman_h2_desrt"; -- Name of destroyed object file name
 			fire  	 = { 300, 2}; -- Fire on the ground after destroyed: 300sec 2m
-			username = 'sh_2c_f';
+			username = "sh_2c_f";
 			index    =  WSTYPE_PLACEHOLDER;
+            classname 	= "lLandPlane";
+			positioning = "BYNORMAL";
+			drawonmap = true;
 		},
 		{
 			name  = "kaman_h2_desrt";
@@ -42,6 +45,7 @@ vwv_hh2d =  {
 		blade_area		=	3.48,
 		rotor_RPM		=	258,
 		engines_count		=	2,
+		apu_rpm_delay_ = 2,
 		blade_chord		=	0.53,
 		rotor_MOI		=	8700,
 		rotor_pos 		= 	{0, 1.646, 0},
@@ -53,10 +57,10 @@ vwv_hh2d =  {
 		tail_pos 		= 	{-10.042, 1.76, 0},
 		tail_fin_area		=	4.75,
 		tail_stab_area		=	2.94,
-		M_empty			=	3193,
-		M_nominal		=	4396,
-		M_max			=	5670,
-		MOI 			= 	{7406,	50000, 53516},
+		M_empty	= 8030,
+		M_nominal =	9800,
+		M_max =	11900,
+		MOI = {12000, 35000, 40000},
 		M_fuel_max		=	1100,
 		V_max			=	295.0,
 		V_max_cruise		=	270.0,
@@ -69,46 +73,31 @@ vwv_hh2d =  {
 		flight_time_typical	=	110,
 		flight_time_maximum	=	138,
 
-		crew_members =
-		{
-			[1] =
-			{
-				ejection_seat_name	=	0,
-				drop_canopy_name	=	0,
-				pos = {2.5, 0.0, -1.3},
-			}, -- end of [1]
-			[2] =
-			{
-				ejection_seat_name	=	0,
-				drop_canopy_name	=	0,
-				pos = {2.5, 0.0, 1.3},
-                canopy_arg = 38,
-			}, -- end of [1]
-			[3] =
-			{
-				ejection_seat_name	=	0,
-				drop_canopy_name	=	0,
-				pos = {0.0, -0.8, -1.8},
-                canopy_arg = 38,
-			}, -- end of [1]
-			[4] =
-			{
-				ejection_seat_name	=	0,
-				drop_canopy_name	=	0,
-				pos = {0.0, -0.8, 1.8},
-                canopy_arg = 38,
-			}, -- end of [1]
-		}, -- end of crew_members
-
-	nose_gear_pos 				= { -2.681, -1.63,	0}, -- nosegear coord
-	main_gear_pos 				= {  2.113, -1.63,   1.114}, -- main gear coords
+	nose_gear_pos 				= { -2.681, -1.70,	0}, -- nosegear coord
+	main_gear_pos 				= {  2.113, -1.70,   1.114}, -- main gear coords
 -----------------------------------------------------------
 	lead_stock_main	=	-0.1,
 	lead_stock_support	=	-0.1,
 	stores_number	=	4,
-	scheme	=	0,
+	scheme	=	1,
 	fire_rate	=	625,
 	crew_size	=	2,
+	crew_members =
+	{
+		[1] =
+		{
+			ejection_seat_name	=	0,
+			drop_canopy_name	=	0,
+			pos = {2.5, 0.0, -1.3},
+		}, -- end of [1]
+		[2] =
+		{
+			ejection_seat_name	=	0,
+			drop_canopy_name	=	0,
+			pos = {2.5, 0.0, 1.3},
+			canopy_arg = 38,
+		}, -- end of [2]
+	}, -- end of crew_members
 
 	LandRWCategories =
     {
@@ -214,10 +203,51 @@ vwv_hh2d =  {
 		}, -- end of [2]
 	}, -- end of chaff_flare_dispenser
 
+	engines_nozzles =
+    {
+            [1] =
+            {
+                pos         =  { -7.027, 1.165, 1.563}, -- nozzle coords
+                azimuth = 15,
+                smokiness_level = 0.1,
+                exhaust_length_ab_K    =    0.3,
+            },
+
+            [2] =
+            {
+                pos         =  { -7.027, 1.165, -1.563}, -- nozzle coords
+                azimuth = -15,
+                smokiness_level = 0.1,
+                exhaust_length_ab_K    =    0.3,
+            },
+
+
+    }, -- end of engines_nozzles
+	net_animation =
+	{
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+		9, --collective
+		11, -- stick roll
+		15, --stick pitch
+		37,-- main rotor spin
+		14, -- stab
+		900, -- rotor blur
+		22, -- probe
+		122, -- probe extension
+		123, -- esss
+	},
+
 	--sensors
 	detection_range_max		 = 20,
 	radar_can_see_ground 	 = true, -- this should be examined (what is this exactly?)
 
+	undercarriage_movement   = 2, -- with value 2 DCS will use mechanimated gears, other values - default
 --        Crew = 2,
     CanopyGeometry = {
             azimuth = {-165.0, 165.0},
@@ -230,13 +260,6 @@ vwv_hh2d =  {
 		OPTIC = {"long-range naval optics", "long-range naval FLIR", "long-range naval LLTV"},
 	},
 
-	HumanRadio = {
-		frequency = 127.5,  -- Radio Freq
-		editable = true,
-		minFrequency = 100.000,
-		maxFrequency = 156.000,
-		modulation = MODULATION_AM
-	},
 	Failures = {
 		{ id = 'hydro_main',  		label = _('HYDRO MAIN'), 	enable = false, hh = 0, mm = 0, mmint = 1, prob = 100 },
         { id = 'hydro_common',  	label = _('HYDRO COMMON'), 	enable = false, hh = 0, mm = 0, mmint = 1, prob = 100 },
@@ -296,14 +319,10 @@ vwv_hh2d =  {
 ----------------------------------------------------------------------------------------------
 
 		Tasks = {
-        aircraft_task(CAP),
         aircraft_task(Escort),
-        aircraft_task(Intercept),
-        aircraft_task(FighterSweep),
         aircraft_task(GroundAttack),
         aircraft_task(CAS),
         aircraft_task(AFAC),
-        aircraft_task(RunwayAttack),
         aircraft_task(AntishipStrike),
     },
     DefaultTask = aircraft_task(AntishipStrike),

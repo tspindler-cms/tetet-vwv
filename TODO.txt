@@ -19,7 +19,7 @@ TODO
     DONE Add AIM-9C (radar?)
     DONE Remove Walleyes
     DONE Add LAU-33 twin launchers from OV-10 mod
-    WONT DO Make wing pylons hideable
+    DONE Make wing pylons hideable
     WONT DO Make y-pylon on side hideable
     WONT DO Add single pylon on side, hideable
     WONT DO Variable incidence wing
@@ -29,3 +29,5 @@ TODO
     Source Vietnamese sailor figures as crew
     Windows or grey panels at the bridge
     DONE Use new secondary textures (normal and roughMet)
+  H-2 Seasprite
+    Better wheels positions for ship decks
