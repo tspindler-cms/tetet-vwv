@@ -1,3 +1,9 @@
+2024-07-14
+  CVA-31 Bon Homme Richard
+    - Rename Deck to PALUBA_ to remove bda log
+    - Renovate fore and aft section of boat, add more details
+  Maddox
+    - Replace bridge windows
 2024-06-01
   F-8 Crusader
     - Remove shape for non pylon variant
