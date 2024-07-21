@@ -53,7 +53,7 @@ GT.animation_arguments = {
 	radar2_rotation = 8
 }
 GT.radar1_period = 5; --speed
-GT.radar2_period = 30; 
+GT.radar2_period = 30;
 
 --Damage Model
 GT.DM = {
@@ -74,7 +74,7 @@ GT.WS.radar_type = 102;
 GT.WS.searchRadarMaxElevation = math.rad(90);
 GT.WS.searchRadarFrequencies = {{50.0e6, 54.0e6}, {2.0e9, 2.2e9}};
 
---Test Optical 
+--Test Optical
 GT.WS = {}
 GT.WS.maxTargetDetectionRange = 45000;
 GT.WS.radar_type = 109 --optical in wstypes
@@ -132,8 +132,8 @@ GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 16000
 GT_t.LN_t.ship_mk12_127mm_AIR.max_trg_alt = 8000
 GT_t.LN_t.ship_mk12_127mm_AIR.reactionTime = 2
 GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {}
-set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[1])
--- set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[20])
+-- set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[1])
+set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[20])
 GT_t.LN_t.ship_mk12_127mm_AIR.PL = {}
 GT_t.LN_t.ship_mk12_127mm_AIR.PL[1] = {
 							shell_name = {"vwv_mk12_127mm_AIR"},

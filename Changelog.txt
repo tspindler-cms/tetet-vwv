@@ -1,3 +1,10 @@
+2024-07-22 
+  F-8 Crusader
+    Remove broken launchbar
+  CVA-31 Bon Homme Richard
+    Fix broken Essex generic edm
+  Maddox
+    Use sensor 20 for mk12 127mm AIR
 2024-07-14
   CVA-31 Bon Homme Richard
     - Rename Deck to PALUBA_ to remove bda log
