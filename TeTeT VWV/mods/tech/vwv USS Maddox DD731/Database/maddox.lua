@@ -89,6 +89,15 @@ local ws;
 -- Original launcher are ModernUSNShips_Mark45_M4 and ModernUSNShips_Mark45_M4_AIR
 -- Download currenthill's mod from https://currenthill.com/
 
+local WSN_20 = {};
+WSN_20.deviation_error_azimuth 		= 0.0002;
+WSN_20.deviation_error_elevation 	= 0.0002;
+WSN_20.deviation_error_speed_sensor	= 0.0002;
+WSN_20.deviation_error_stability 	= 0.0002;
+WSN_20.deviation_error_distance 	= 0.0002;
+
+GT_t.WSN_t[20] = WSN_20;
+
 GT_t.WS_t.ship_mk12_2x127mm = {name = "Mk12 5inch 38cal Twin"};
 GT_t.WS_t.ship_mk12_2x127mm.angles = {
                     {math.rad(180), math.rad(-180), math.rad(-5), math.rad(90)},
