@@ -1,10 +1,16 @@
+2024-07-26
+  F-8 Crusader
+    - Remove gear suspension code
+    - Fix AIM-9C/D position
+    - Fix hideable pylon
+    - Update edm to fix various problems
 2024-07-22 
   F-8 Crusader
-    Remove broken launchbar
+    - Remove broken launchbar
   CVA-31 Bon Homme Richard
-    Fix broken Essex generic edm
+    - Fix broken Essex generic edm
   Maddox
-    Use sensor 20 for mk12 127mm AIR
+    - Use sensor 20 for mk12 127mm AIR
 2024-07-14
   CVA-31 Bon Homme Richard
     - Rename Deck to PALUBA_ to remove bda log

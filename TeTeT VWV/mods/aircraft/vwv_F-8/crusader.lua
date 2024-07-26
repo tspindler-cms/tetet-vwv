@@ -61,18 +61,22 @@ local crusader = {
 
 	nose_gear_pos =         {0.96, -2.100,  0},     ----1.990
 	nose_gear_wheel_diameter        =       0.566,
+	--[[
 	nose_gear_amortizer_direct_stroke        =   1.58 - 1.40, --0.220,
 	nose_gear_amortizer_reversal_stroke      =  1.25 - 1.40,
 	nose_gear_amortizer_normal_weight_stroke =  0,
+	]]
 
 	-- main_gear_pos =         {-6.92, -1.90, 0.0},    ----2.012 1.4 CTD when pilot controlled
 	main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
+	--[[
 	main_gear_wheel_diameter        =       0.778,
 	main_gear_amortizer_direct_stroke        =  0.21,
 	main_gear_amortizer_reversal_stroke      = -0.01,
 	main_gear_amortizer_normal_weight_stroke =  0.0,
+	]]
 
-	wing_tip_pos =          {-5.214,-0.7, 5.35},-- wingtip coords for visual effects  -- was -10.214, by Toan, 28-12		
+	wing_tip_pos =          {-5.214,-0.7, 5.35},-- wingtip coords for visual effects  -- was -10.214, by Toan, 28-12
 
 	stores_number	=	7,
 	tand_gear_max	=	-5.54,   -- 83° tangent maximum yaw angle of front wheel, by Toan, 15-01-2024
@@ -369,11 +373,11 @@ local crusader = {
 				use_full_connector_position = false, connector = "pylon_3",
 			},
 			{
-					{ CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
-					{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
-					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D\
-					{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
-					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
+				{ CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
+				{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
+				{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
+				{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
 			}
 		),
 		pylon(3, 0, 1.2, 1.34, 1.75,
@@ -381,11 +385,11 @@ local crusader = {
 				use_full_connector_position = false, connector = "pylon_6",
 			},
 			{
-					{ CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
-					{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
-					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
-					{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
-					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
+				{ CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
+				{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {-0.2,  -0.05, 0.0}}, --AIM-9C
+				{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {-0.2,  -0.05, 0.0}}, --AIM-9D
+				{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
 			}
 		),
 		pylon(4, 0, 1.2, 1.34, 1.60,
@@ -393,11 +397,11 @@ local crusader = {
 				use_full_connector_position = false, connector = "pylon_4",
 			},
 			{
-					{ CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
-					{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
-					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
-					{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
-					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
+				{ CLSID = "{AIM-9B}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9B
+				{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {-0.2,  -0.05, 0.0}}, --AIM-9C
+				{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {-0.2,  -0.05, 0.0}}, --AIM-9D
+				{ CLSID = "{AIM-9J}" ,attach_point_position = {-0.4,  -0.05, 0.0}}, --AIM-9J
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {-0.4,  -0.05, 0.0}}, -- LAU-10 Zuni
 			}
 		),
 		pylon(5, 0, 1.2, 1.34, 1.75,
@@ -405,17 +409,17 @@ local crusader = {
 				use_full_connector_position = false, connector = "pylon_5",
 			},
 			{
-					{ CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
-					{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
-					{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
-					{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
-					{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
+				{ CLSID = "{AIM-9B}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9B
+				{ CLSID = "{F8_AIM-9C}" ,attach_point_position = {0.7,  0.05, 0.0}}, --AIM-9C
+				{ CLSID = "{F8_AIM-9D}" ,attach_point_position = {0.7,  0.11, 0.0}}, --AIM-9D
+				{ CLSID = "{AIM-9J}" ,attach_point_position = {0.5,  0.05, 0.0}}, --AIM-9J
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}",attach_point_position = {0.5,  0.05, 0.0}}, -- LAU-10 Zuni
 			}
 		),
 		pylon(6, 0, 1.2, 1.34, 1.60,
 			{
 				use_full_connector_position = false, connector = "pylon_2",
-				arg = 310, arg_value = 0
+				arg = 309, arg_value = 0
 			},
 			{
 				{ CLSID = "LAU3_HE151" }, --LAU-3 HE M151
