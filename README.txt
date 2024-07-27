@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.5.4
+0.5.5
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -49,16 +49,18 @@ Thanks
     Aplion - for an important topic on ship building on DCS World forum and help via discord
     Admiral189 - for helpful advice on the CVA-31
     Citizen - tester and contributor of the mod
-    seabat - tester and contributor of the mod, creator of CVA-31 liveries for the F-8 and A-4
+    seabat - tester and contributor of the mod, mastermind behind the mod's liveries!
     Zabbie - tester of the mod
     Toan - new parking code and improvements to F-8, and all the testing
     Markindel/Mario - for the F-8 and MiG-17 mod
     Spino - for the F-8 mods weapons and pylons
     Pedro Caparros - for the original F-8 livery
-    VSN Team - for permission to use the F-8 mod
+    VSN Team - for permission to use VSN code
     Beldin - for patiently providing updates to the F-8 mod and runways and parking code for the CVA-31
     EightBall - for providing the PBR MkII mod
     currenthill - allowing to use his armament system for the Maddox main guns
+    Stratos - tester of the mod
+    Slapshot - tester of the mod
 
 Without these persons the mod would not have been possible!
 
@@ -77,7 +79,6 @@ Known Limitations
 
 CVA-31 Bon Homme Richard
     - Player controlled helicopters slightly move forward on the flight deck
-    - bda between carrier and player aircraft happens
 F-8 Crusader
     - Aircraft is intended as static and for limited AI operations
     - Player control is experimental at best, but largely untested and unsupported
@@ -85,6 +86,7 @@ F-8 Crusader
     - Unknown how to drop bombs as player aircraft
     - Variable incidence wing is not enabled
     - Collision shell not reliable under player control
+    - Nose wheel rotation disabled
 MiG-17F "Fresco-C"
     - Player control is almost untested and unsupported
     - Collision shell not reliable under player control
