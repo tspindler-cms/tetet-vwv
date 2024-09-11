@@ -1,0 +1,317 @@
+Douglas A-1 Skyraider
+From Wikipedia, the free encyclopedia
+Jump to navigation
+Jump to search
+A-1 (AD) Skyraider
+A-1J Skyraider VA-176 Vietnam 1966.jpg
+Role 	Attack aircraft
+National origin 	United States
+Manufacturer 	Douglas Aircraft Company
+First flight 	18 March 1945
+Introduction 	1946
+Retired 	1985 Gabonese Air Force[1]
+Status 	Retired
+Primary users 	United States Navy
+United States Air Force
+Royal Navy
+Republic of Vietnam Air Force
+Produced 	1945–1957
+Number built 	3,180
+Developed into 	Douglas A2D Skyshark
+
+The Douglas A-1 Skyraider (formerly AD Skyraider) is an American single-seat attack aircraft that saw service between the late 1940s and early 1980s. The Skyraider had a remarkably long and successful career; it became a piston-powered, propeller-driven anachronism in the jet age, and was nicknamed "Spad", after the French World War I fighter.[2]
+
+It was operated by the United States Navy (USN), the United States Marine Corps (USMC), and the United States Air Force (USAF), and also saw service with the British Royal Navy, the French Air Force, the Republic of Vietnam Air Force (RVNAF), and others. It remained in U.S. service until the early 1970s.
+Contents
+
+    1 Design and development
+    2 Operational history
+        2.1 Korean War
+        2.2 Cathay Pacific VR-HEU incident
+        2.3 Vietnam War
+            2.3.1 Republic of Vietnam Air Force
+        2.4 United Kingdom
+        2.5 Sweden
+        2.6 France
+    3 Variants
+    4 Operators
+    5 Surviving aircraft
+    6 Specifications (AD-6 / A-1H Skyraider)
+    7 Naming
+    8 Notable appearances in media
+    9 See also
+    10 References
+        10.1 Notes
+        10.2 Bibliography
+    11 External links
+
+Design and development
+
+The piston-engined Skyraider was designed during World War II to meet United States Navy requirements for a carrier-based, single-seat, long-range, high performance dive/torpedo bomber, to follow-on from earlier types such as the Curtiss SB2C Helldiver and Grumman TBF Avenger.[3] Designed by Ed Heinemann of the Douglas Aircraft Company, prototypes were ordered on 6 July 1944 as the XBT2D-1. The XBT2D-1 made its first flight on 18 March 1945 and in April 1945, the USN began evaluation of the aircraft at the Naval Air Test Center (NATC).[4] In December 1946, after a designation change to AD-1, delivery of the first production aircraft to a fleet squadron was made to VA-19A.[5]
+
+The AD-1 was built at Douglas' El Segundo plant in Southern California. In his memoir The Lonely Sky, test pilot Bill Bridgeman describes the routine yet sometimes hazardous work of certifying AD-1s fresh off the assembly line at a rate of two aircraft per day for delivery to the U.S. Navy in 1949 and 1950.[6]
+A Douglas XBT2D-1 Skyraider prototype
+
+The low-wing monoplane design started with a Wright R-3350 Duplex-Cyclone radial engine which was later upgraded several times. Its distinctive feature was large straight wings with seven hard points apiece. The Skyraider possessed excellent low-speed maneuverability and carried a large amount of ordnance over a considerable combat radius. Further, it had a long loiter time for its size, compared to much heavier subsonic or supersonic jets. The aircraft was optimized for the ground-attack mission and was armored against ground fire in key locations, unlike faster fighters adapted to carry bombs, such as the Vought F4U Corsair or North American P-51 Mustang, which were retired by U.S. forces before the 1960s.
+
+Shortly after Heinemann began designing the XBT2D-1, a study was issued that showed for every 100 lb (45 kg) of weight reduction, the takeoff run was decreased by 8 ft (2.4 m), the combat radius increased by 22 mi (35 km) and the rate-of-climb increased by 18 ft/min (0.091 m/s). Heinemann immediately had his design engineers begin a program for finding weight-saving on the XBT2D-1 design, no matter how small. Simplifying the fuel system resulted in a reduction of 270 lb (120 kg); 200 lb (91 kg) by eliminating an internal bomb bay and hanging external stores from the wings or fuselage; 70 lb (32 kg) by using a fuselage dive brake; and 100 lb (45 kg) by using an older tailwheel design. In the end, Heinemann and his design engineers achieved more than 1,800 lb (820 kg) of weight reduction on the original XBT2D-1 design.[7]
+
+The Navy AD series was initially painted in ANA 623 Glossy Sea Blue, but during the 1950s following the Korean War, the color scheme was changed to light gull grey (Fed Std 595 26440) and white (Fed Std 595 27875). Initially using the gray and white Navy scheme, by 1967 the USAF began to paint its Skyraiders in a camouflaged pattern using two shades of green, and one of tan.
+A-1E Skyraider in RVNAF colors during an Air show
+
+Used by the US Navy over Korea and Vietnam, the A-1 was a primary close air support aircraft for the USAF and RVNAF during the Vietnam War. The A-1 was famous for being able to take hits and keep flying thanks to armor plating around the cockpit area for pilot protection. It was replaced beginning in the mid-1960s by the Grumman A-6 Intruder as the Navy's primary medium-attack plane in supercarrier-based air wings; however Skyraiders continued to operate from the smaller Essex-class aircraft carriers.
+
+The Skyraider went through seven versions, starting with the AD-1, then AD-2 and AD-3 with various minor improvements, then the AD-4 with a more powerful R-3350-26WA engine. The AD-5 was significantly widened, allowing two crew to sit side-by-side (this was not the first multiple-crew variant, the AD-1Q being a two-seater and the AD-3N a three-seater); it also came in a four-seat night-attack version, the AD-5N. The AD-6 was an improved AD-4B with improved low-level bombing equipment, and the final production version AD-7 was upgraded to a R-3350-26WB engine.
+
+For service in Vietnam, USAF Skyraiders were fitted with the Stanley Yankee extraction system,[8] which acted in a similar manner to an ejection seat, though with twin rockets extracting pilot from the cockpit.
+
+In addition to serving during Korea and Vietnam as an attack aircraft, the Skyraider was modified to serve as a carrier-based airborne early warning aircraft, replacing the Grumman TBM-3W Avenger. It fulfilled this function in the USN and Royal Navy, being replaced by the Grumman E-1 Tracer and Fairey Gannet, respectively, in those services.[9]
+
+Skyraider production ended in 1957 with a total of 3,180 having been built. In 1962, the existing Skyraiders were redesignated A-1D through A-1J and later used by both the USAF and the Navy in the Vietnam War.
+Operational history
+Korean War
+AD-4 Skyraider taking off from USS Princeton during the Korean War
+
+The Skyraider was produced too late to take part in World War II, but became the backbone of United States Navy aircraft carrier and United States Marine Corps strike aircraft sorties in the Korean War (1950–1953), with the first ADs going into action from Valley Forge with VA-55 on 3 July 1950.[10] Its weapons load and 10-hour flying time far surpassed the jets that were available at the time.[9] On 2 May 1951, Skyraiders made the only aerial torpedo attack of the war, hitting the Hwacheon Dam, then controlled by North Korea.[11]
+
+On 16 June 1953, a USMC AD-4 from VMC-1 piloted by Major George H. Linnemeier and CWO Vernon S. Kramer shot down a Soviet-built Polikarpov Po-2 biplane, the only documented Skyraider air victory of the war.[12] AD-3N and -4N aircraft carrying bombs and flares flew night-attack sorties, and radar-equipped ADs carried out radar-jamming missions from carriers and land bases.[9]
+
+During the Korean War, AD Skyraiders were flown by only the U.S. Navy and U.S. Marine Corps, and were normally painted in dark navy blue. It was called the "Blue Plane" by enemy troops.[13] Marine Corps Skyraiders suffered heavy losses when used in low-level close-support missions. To allow low-level operations to continue without unacceptable losses, a package of additional armor was fitted, consisting of 0.25–0.5 inches (6.4–12.7 mm) thick external aluminum armor plates fitted to the underside and sides of the aircraft's fuselage. The armor package weighed a total of 618 pounds (280 kg) and had little effect on performance or handling.[14] A total of 128 Navy and Marine AD Skyraiders were lost in the Korean War – 101 in combat and 27 to operational causes. Most operational losses were due to the tremendous power of the AD. ADs that were "waved-off" during carrier recovery operations were prone to performing a fatal torque roll into the sea or the deck of the aircraft carrier if the pilot mistakenly gave the AD too much throttle. The torque of the engine was so great that it would cause the aircraft to rotate about the propeller and slam into the sea or the carrier.
+Cathay Pacific VR-HEU incident
+
+On 26 July 1954, two Douglas Skyraiders from the aircraft carriers USS Philippine Sea and Hornet shot down two Chinese PLAAF Lavochkin fighters off the coast of Hainan Island while searching for survivors after the shooting down of a Cathay Pacific Douglas DC-4 Skymaster airliner three days previously.[15][16][17]
+Vietnam War
+A 1st SOS A-1E carrying a BLU-72/B, 1968
+
+As American involvement in the Vietnam War began, the A-1 Skyraider was still the medium attack aircraft in many carrier air wings, although it was planned to be replaced by the A-6A Intruder as part of the general switch to jet aircraft. Skyraiders from Constellation and Ticonderoga participated in the first U.S. Navy strikes against North Vietnam on 5 August 1964 as part of Operation Pierce Arrow in response to the Gulf of Tonkin Incident, striking against fuel depots at Vinh, with one Skyraider from Ticonderoga damaged by anti-aircraft fire, and a second from Constellation shot down, killing its pilot.[18][19]
+
+During the war, U.S. Navy Skyraiders shot down two Vietnam People's Air Force (VPAF) Mikoyan-Gurevich MiG-17 jet fighters: one on 20 June 1965, by Lieutenant Clinton B. Johnson and LTJG Charles W. Hartman III of VA-25;[20] and one on 9 October 1966 by LTJG William T. Patton of VA-176.[12] Using their cannons, this was the first gun kill of the Vietnam War. While on his very first mission, Navy pilot LTJG Dieter Dengler took damage to his A-1H over Vietnam on 1 February 1966, and crash-landed in Laos.[21]
+A 602nd SOS A-1H in June 1970
+
+As they were released from U.S. Navy service, Skyraiders were introduced into the Republic of Vietnam Air Force (RVNAF). Skyraiders were also used by Air Force Special Operations Command for search and rescue air cover. They were also used by the USAF to perform one of the Skyraider's most famous roles — the "Sandy" helicopter escort on combat rescues.[22][23] On 10 March 1966, USAF Major Bernard F. Fisher flew an A-1E mission and was awarded the Medal of Honor for rescuing Major "Jump" Myers at A Shau Special Forces Camp.[24] USAF Colonel William A. Jones III piloted an A-1H on 1 September 1968 mission for which he was awarded the Medal of Honor. In that mission, despite damage to his aircraft and suffering serious burns, he returned to his base and reported the position of a downed U.S. airman.[24]
+A-1E Skyraiders fly in formation over South Vietnam on way to target on 25 June 1965. The aircraft are assigned to the 34th Tactical Group, based at Bien Hoa Air Base, South Vietnam.
+
+After November 1972, all A-1s in U.S. service in Southeast Asia were transferred to the RVNAF. The Skyraider in Vietnam pioneered the concept of tough, survivable aircraft with long loiter times and large ordnance loads. The USAF lost 201 Skyraiders to all causes in Southeast Asia, while the Navy lost 65 to all causes. Of the 266 lost A-1s, five were shot down by surface-to-air missiles (SAMs), and three were shot down in air-to-air combat; two by VPAF MiG-17s.[25]
+
+On the night of 29 August 1964, the first A-1E Skyraider was shot down and the pilot killed near Bien Hoa Air Base; it was flown by Capt. Richard D. Goss from the 1st Air Commando Squadron, 34th Tactical Group. The second A-1 was shot down on 31 March 1965 piloted by USN LTJG Gerald W. McKinley from the USS Hancock on a bombing run over North Vietnam. He was reported missing, presumed dead. The third A-1 was shot down on 29 April 1966, and Pilot Capt. Grant N. Tabor, was lost on 19 April 1967; both were from the 602 Air Commando Squadron. The fifth A-1 Skyraider was from Navy Squadron VA-25 flying a ferry flight from Naval Air Station Cubi Point (Philippines) to USS Coral Sea and was lost to two Chinese MiG-17 on 14 February 1968. Lieutenant (j.g.) Joseph P. Dunn, USN, had flown too close to the Chinese island of Hainan, and had been intercepted. Lieutenant Dunn's A-1H Skyraider 134499 (Canasta 404) was the last U.S. Navy A-1 lost in the war. He was observed to survive the ejection and deploy his raft, but was never found. Initially listed as missing in action, he is now listed as killed in action and posthumously promoted to the rank of Commander. Shortly thereafter, A-1 Skyraider naval squadrons transitioned to the A-6 Intruder, A-7 Corsair II or Douglas A-4 Skyhawk.[citation needed]
+A-1H "Paper Tiger II" carrying the toilet bomb in October 1965
+
+In contrast to the Korean War, fought a decade earlier, the U.S. Air Force used the naval A-1 Skyraider for the first time in Vietnam. As the Vietnam War progressed, USAF A-1s were painted in camouflage, while USN A-1 Skyraiders were gray/white in color; again, in contrast to the Korean War, when A-1s were painted dark blue.
+
+In October 1965, to highlight the dropping of the six millionth pound of ordnance, Commander Clarence J. Stoddard of VA-25, flying an A-1H, dropped a special, one-time-only object in addition to his other munitions – a toilet.[26]
+Republic of Vietnam Air Force
+
+The A-1 Skyraider was the close air support workhorse of the RVNAF for much of the Vietnam War. The U.S. Navy began to transfer some of its Skyraiders to the RVNAF in September 1960, replacing the RVNAF's older Grumman F8F Bearcats. By 1962 the RVNAF had 22 of the aircraft in its inventory,[27] and by 1968 an additional 131 aircraft had been received. Initially Navy aviators and crews were responsible for training their South Vietnamese counterparts on the aircraft, but over time responsibility was gradually transferred to the USAF.
+An A-1H Skyraider of the VNAF 516th Fighter Squadron being loaded with napalm at Da Nang Air Base in 1967
+
+The initial trainees were selected from among RVNAF Bearcat pilots who had accumulated 800 to 1200 hours flying time. They were trained at NAS Corpus Christi, Texas, and then sent to NAS Lemoore, California for further training. Navy pilots and crews in Vietnam checked out the Skyraiders that were being transferred to the RVNAF, and conducted courses for RVNAF ground crews.[28]
+
+Over the course of the war, the RVNAF acquired a total of 308 Skyraiders, and was operating six A-1 squadrons by the end of 1965. These were reduced during the period of Vietnamization from 1968 to 1972, as the U.S. began to supply the South Vietnamese with more modern close air support aircraft, such as the A-37 Dragonfly and Northrop F-5, and at the beginning of 1968, only three of its squadrons were flying A-1s.[29]
+
+As the U.S. ended its direct involvement in the war, it transferred the remainder of its Skyraiders to the South Vietnamese, and by 1973, all remaining Skyraiders in U.S. inventories had been turned over to the RVNAF.[30] Unlike their American counterparts, whose combat tours were generally limited to 12 months, individual South Vietnamese Skyraider pilots ran up many thousands of combat hours in the A-1, and many senior RVNAF pilots were extremely skilled in the operation of the aircraft.[31]
+United Kingdom
+Four Royal Navy Douglas Skyraider AEW.1s from D Flight 849 Naval Air Squadron, based at Royal Naval Air Station Culdrose, in flight in the 1950s
+
+The Royal Navy acquired 50 AD-4W early warning aircraft in 1951 through the Military Assistance Program. All Skyraider AEW.1s were operated by 849 Naval Air Squadron, which provided four-plane detachments for the British carriers. One flight aboard HMS Bulwark took part in the Suez Crisis in 1956. 778 Naval Air Squadron was responsible for the training of the Skyraider crews at RNAS Culdrose.[32]
+
+In 1960, the Fairey Gannet AEW.3 replaced the Skyraiders, using the AN/APS-20 radar of the Douglas aircraft. The last British Skyraiders were retired in 1962.[32] In the late 1960s, the AN/APS-20 radars from the Skyraiders were installed in Avro Shackleton AEW.2s of the Royal Air Force which were finally retired in 1991.
+Sweden
+
+Fourteen British AEW.1 Skyraiders were sold to Sweden to be used by Svensk Flygtjänst AB between 1962 and 1976. All military equipment was removed and the aircraft were used as target tugs with the Swedish armed forces.[32]
+France
+
+The French Air Force bought 20 ex-USN AD-4s as well as 88 ex-USN AD-4Ns and five ex-USN AD-4NAs with the former three-seaters modified as single-seat aircraft with removal of the radar equipment and the two operator stations from the rear fuselage. The AD-4N/NAs were initially acquired in 1956 to replace aging Republic P-47 Thunderbolts in Algeria.[33]
+
+The Skyraiders were first ordered in 1956 and the first was handed over to the French Air Force on 6 February 1958 after being overhauled and fitted with some French equipment by Sud-Aviation. The aircraft were used until the end of the Algerian war. The aircraft were used by the 20e Escadre de Chasse (EC 1/20 "Aures Nementcha", EC 2/20 "Ouarsenis" and EC 3/20 "Oranie") and EC 21 in the close air support role armed with rockets, bombs and napalm.
+
+The Skyraiders had only a short career in Algeria, but they nonetheless proved to be the most successful of all the ad hoc COIN aircraft deployed by the French. The Skyraider remained in limited French service until the 1970s.[33] They were heavily involved in the civil war in Chad, at first with the Armée de l'Air, and later with a nominally independent Chadian Air Force staffed by French mercenaries. The aircraft also operated under the French flag in Djibouti and on the island of Madagascar. When France at last relinquished the Skyraiders it passed the survivors on to allied states, including Gabon, Chad, Cambodia and the Central African Republic.[34] (Several aircraft from Gabon and Chad have been recovered recently by French warbird enthusiasts and entered on the French civil register).
+
+The French frequently used the aft station to carry maintenance personnel, spare parts and supplies to forward bases. In Chad they even used the aft station for a "bombardier" and his "special stores" – empty beer bottles – as these were considered as non-lethal weapons, thus not breaking the government-imposed rules of engagement, during operations against Libyan-supported rebels in the late 1960s and early 1970s.[citation needed]
+Variants
+The XBT2D-1 in 1945
+VC-35 AD-1Q in the late 1940s
+VC-33 AD-3Q, AD-4N, and AD-5N in 1955
+AD-4W AEW aircraft landing on USS Leyte
+VMA-331 AD-5 in flight
+EA-1F (AD-5Q) ECM aircraft, BuNo 135010, of CVW-9 in 1966
+VAW-11 AD-5W aboard USS Kearsarge, 1958
+AD-6s from VA-42
+
+XBT2D-1
+    Single-seat dive-bomber, torpedo-bomber prototype for the U.S. Navy.
+XBT2D-1N
+    Three-seat night attack prototypes; only three aircraft built.
+XBT2D-1P
+    Photographic reconnaissance prototype; only one built.
+XBT2D-1Q
+    Two-seat electronics countermeasures prototype; one aircraft only.
+BT2D-2 (XAD-2)
+    Upgraded attack aircraft; one prototype only.
+AD-1
+    The first production model; 242 built.
+AD-1Q
+    Two-seat electronic countermeasures version of the AD-1; 35 built.
+AD-1U
+    AD-1 with radar countermeasures and tow target equipment, no armament and no water injection equipment.
+XAD-1W
+    Three-seat airborne early warning prototype. AD-3W prototype; one aircraft only.
+AD-2
+    Improved model, powered by 2,700 hp (2,000 kW) Wright R-3350-26W engine; 156 built.
+AD-2D
+    Unofficial designation for AD-2s used as remote-control aircraft, to collect and gather radioactive material in the air after nuclear tests.
+AD-2Q
+    Two-seat electronics countermeasures version of the AD-2; 21 built.
+AD-2QU
+    AD-2 with radar countermeasures and target towing equipment, no armament and no water injection equipment; one aircraft only.
+XAD-2
+    Similar to XBT2D-1 except engine, increased fuel capacity.
+AD-3
+    Proposed turboprop version, initial designation of A2D Skyshark.
+AD-3
+    Stronger fuselage, improved landing gear, new canopy design; 125 built.
+AD-3S
+    Anti-submarine warfare model; only two prototypes were built.
+AD-3N
+    Three-seat night attack version; 15 built.
+AD-3Q
+    Electronics countermeasures version, countermeasures equipment relocated for better crew comfort; 23 built.
+AD-3QU
+    Target towing aircraft, but most were delivered as the AD-3Q.
+AD-3W
+    Airborne early warning version; 31 built.
+XAD-3E
+    AD-3W modified for ASW with Aeroproducts propellor
+AD-4
+    Strengthened landing gear, improved radar, G-2 compass, anti-G suit provisions, four 20 mm (0.79 in) cannon and 14 Aero rocket launchers, capable of carrying up to 50 lb (23 kg) of bombs; 372 built.
+AD-4B
+    Specialized version designed to carry nuclear weapons, also armed with four 20 mm (0.79 in) cannon; 165 built plus 28 conversions.
+AD-4L
+    Equipped for winter operations in Korea; 63 conversions.
+AD-4N (A-1D)
+    Three-seat night attack version; 307 built.
+AD-4NA
+    Designation of 100 AD-4Ns without their night-attack equipment, but fitted with four 20mm cannon, for service in Korea as ground-attack aircraft.
+AD-4NL
+    Winterized version of the AD-4N; 36 conversions.
+AD-4Q
+    Two-seat electronic countermeasures version of the AD-4; 39 built.
+AD-4W
+    Three-seat airborne early warning version; 168 built. A total of 50 AD-4Ws were transferred to the Royal Navy as Skyraider AEW Mk 1.
+AD-5 (A-1E)
+    Side-by-side seating for pilot and co-pilot, without dive brakes; 212 built.
+AD-5N (A-1G)
+    Four-seat night attack version, with radar countermeasures; 239 built.
+AD-5Q (EA-1F)
+    Four-seat electronics countermeasures version; 54 conversions.
+AD-5S
+    One prototype to test Magnetic anomaly detector (MAD) anti-submarine equipment.
+AD-5U
+    The AD-5 when modified for target towing became UA-1E in 1962. The same model converted as a transport was sometimes referred to as AD-5R.
+AD-5W (EA-1E)
+    Three-seat airborne early warning version with an AN/APS-20 radar installed; 218 were buil.
+UA-1E
+    Utility version of the AD-5.
+AD-6 (A-1H)
+    Single-seat attack aircraft with three dive brakes, centerline station stressed for 3,500 lb (1,600 kg) of ordnance, 30 in (760 mm) in diameter, combination 14 in (360 mm) and 30 in (760 mm) bomb ejector and low/high altitude bomb director; 713 built.
+AD-7 (A-1J)
+    The final production model, powered by a R-3350-26WB engine, with structural improvements to increase wing fatigue life; 72 built.
+
+Operators
+Main article: List of Douglas A-1 Skyraider operators
+
+     Cambodia
+     Central African Republic
+     Chad
+     France
+     Gabon
+     South Vietnam
+     Thailand
+     Sweden
+     United Kingdom
+     United States
+
+Surviving aircraft
+Main article: List of surviving Douglas A-1 Skyraiders
+Specifications (AD-6 / A-1H Skyraider)
+Line drawings for the AD-4 Skyraider.
+
+Data from McDonnell Douglas aircraft since 1920 : Volume I[35]
+
+General characteristics
+
+    Crew: 1
+    Length: 38 ft 10 in (11.84 m)
+    Wingspan: 50 ft 0.25 in (15.2464 m)
+    Height: 15 ft 8.25 in (4.7816 m)
+    Wing area: 400.33 sq ft (37.192 m2)
+    Airfoil: root: NACA 2417; tip: NACA 4413[36]
+    Empty weight: 11,968 lb (5,429 kg)
+    Gross weight: 18,106 lb (8,213 kg)
+    Fuel capacity: 380 US gal (320 imp gal; 1,400 l) internal tanks
+    Powerplant: 1 × Wright R-3350-26WA Duplex-Cyclone 18-cylinder air-cooled radial piston engine, 2,700 hp (2,000 kW)
+    Propellers: 4-bladed Aeroproducts constant-speed propeller
+
+Performance
+
+    Maximum speed: 322 mph (518 km/h, 280 kn) at 18,000 ft (5,500 m)
+    Cruise speed: 198 mph (319 km/h, 172 kn)
+    Range: 1,316 mi (2,118 km, 1,144 nmi)
+    Service ceiling: 28,500 ft (8,700 m)
+    Rate of climb: 2,850 ft/min (14.5 m/s)
+    Wing loading: 46.6 lb/sq ft (228 kg/m2)
+    Power/mass: 0.149 hp/lb (0.245 kW/kg)
+
+Armament
+
+    Guns: 4x 20 mm AN/M3 cannon with 200 rounds per gun
+    Hardpoints: 15 external hardpoints with a capacity of 8,000 lb (3,600 kg),with provisions to carry combinations of:
+        Other: bombs, torpedoes, mine dispensers, unguided rockets, and gun pods.[26]
+
+Naming
+
+The A-1 Skyraider received various nicknames including: "Spad" and "Super Spad" (derived from the aircraft's AD designation, its relative longevity in service and an allusion to the "Spad" aircraft of World War I), "Able Dog" (phonetic AD), "the Destroyer", "Hobo" (radio call sign of the US Air Force's 1st Air Commando/1st Special Operations Squadron), "Firefly" (a call sign of the 602nd ACS/SOS), "Zorro" (the call sign of the 22nd SOS), "The Big Gun", "Old Faithful", "Old Miscellaneous", "Fat Face" (AD-5/A-1E version, side-by-side seating), "Guppy" (AD-5W version), "Q-Bird" or "Queer Bird" (AD-1Q/AD-5Q versions), "Flying Dumptruck" (A-1E), "Sandy" (the 602nd ACS/SOS call sign for Combat Search And Rescue helicopter escort), and "Crazy Water Buffalo" (South Vietnamese nickname).[37]‹See TfM›[failed verification] 
+
+
+The Douglas AD Skyraider, also known as the A-1 Skyraider is an American single-seat attack aircraft in service from 1946 to the early 1980s. The Skyraider had a remarkably long and successful career well into the Jet Age (when most piston-engined attack or fighter aircraft were replaced by Jet aircraft) thus becoming known by some as an "anachronism". The aircraft was nicknamed "Spad", after the French World War I fighter.
+
+It was operated by the United States Navy (USN), the United States Marine Corps (USMC), and the United States Air Force (USAF), and also saw service with the British Royal Navy, the French Air Force, the Republic of Vietnam Air Force (RVNAF), and others. It remained in U.S. service until the early 1970s.
+
+The jet powered A-10 Thunderbolt II was based on specifications for a modernized Skyraider with a heavy payload and good endurance.
+
+The piston-engined propeller Skyraider was designed during World War II to meet United States Navy requirements for a carrier-based, single-seat, long-range, high performance dive/torpedo bomber, to follow on from earlier aircraft such as the Douglas SBD Dauntless, the Curtiss SB2C Helldiver and the Grumman TBF Avenger. Designed by Ed Heinemann of the Douglas Aircraft Company, prototypes were ordered on 6 July 1944 as the XBT2D-1. The XBT2D-1 made its first flight on 18 March 1945, and the USN began evaluation of the aircraft at the Naval Air Test Center (NATC) in April 1945. In December 1946, after a designation change to AD-1, delivery of the first production aircraft to a fleet squadron was made to VA-19A.
+
+The AD-1 was built at Douglas's El Segundo plant in Southern California. In his memoir The Lonely Sky, test pilot Bill Bridgeman described the routine yet sometimes hazardous work of certifying AD-1s fresh off the assembly line at a rate of two aircraft per day for delivery to the U.S. Navy in 1949 and 1950.
+
+A Douglas XBT2D-1 Skyraider prototype
+The low-wing monoplane design started with a Wright R-3350 Duplex-Cyclone radial engine which was later upgraded several times. The aircraft had distinctive large straight wings with seven hardpoints apiece. The Skyraider had excellent maneuverability at low speed, and carried a large amount of ordnance over a considerable combat radius. It had a long loiter time for its size, compared to much heavier subsonic or supersonic jets. The aircraft was optimized for ground attack and was armored against ground fire in key locations, unlike faster fighters adapted to carry bombs, such as the Vought F4U Corsair or North American P-51 Mustang, which were retired by U.S. forces before the 1960s.
+
+Shortly after Heinemann began designing the XBT2D-1, a study was issued showing that for every 100 lb (45 kg) of weight reduction, the takeoff run was decreased by 8 ft (2.4 m), the combat radius increased by 22 mi (35 km) and the rate-of-climb increased by 18 ft/min (0.091 m/s). Heinemann immediately had his design engineers begin a program for finding weight savings on the XBT2D-1 design, no matter how small. Simplifying the fuel system resulted in a reduction of 270 lb (120 kg); 200 lb (91 kg) by eliminating an internal bomb bay and hanging external stores from the wings or fuselage; 70 lb (32 kg) by using a fuselage dive brake; and 100 lb (45 kg) by using an older tailwheel design. In the end, Heinemann and his design engineers achieved more than 1,800 lb (820 kg) of weight reduction on the original XBT2D-1 design.
+
+The Navy AD series was initially painted in ANA 623 glossy sea blue, but during the 1950s, following the Korean War, the color scheme was changed to light gull grey and white (Fed Std 595 27875). Initially using the gray and white Navy scheme, by 1967 the USAF began to paint its Skyraiders in a camouflaged pattern using two shades of green, and one of tan.
+
+General characteristics
+
+Crew: 1
+Length: 38 ft 10 in (11.84 m)
+Wingspan: 50 ft 0.25 in (15.2464 m)
+Height: 15 ft 8.25 in (4.7816 m)
+Wing area: 400.33 sq ft (37.192 m2)
+Airfoil: root: NACA 2417; tip: NACA 4413
+Empty weight: 11,968 lb (5,429 kg)
+Gross weight: 18,106 lb (8,213 kg)
+Fuel capacity: 380 US gal (320 imp gal; 1,400 l) internal tanks
+Powerplant: 1 × Wright R-3350-26WA Duplex-Cyclone 18-cylinder air-cooled radial piston engine, 2,700 hp (2,000 kW)
+Propellers: 4-bladed Aeroproducts constant-speed propeller
+Performance
+
+Maximum speed: 322 mph (518 km/h, 280 kn) at 18,000 ft (5,500 m)
+Cruise speed: 198 mph (319 km/h, 172 kn)
+Range: 1,316 mi (2,118 km, 1,144 nmi)
+Service ceiling: 28,500 ft (8,700 m)
+Rate of climb: 2,850 ft/min (14.5 m/s)
+Wing loading: 46.6 lb/sq ft (228 kg/m2)
+Power/mass: 0.149 hp/lb (0.245 kW/kg)
+Armament
+Guns: 4x 20 mm AN/M3 cannon with 200 rounds per gun
+Hardpoints: 15 external hardpoints with a capacity of 8,000 lb (3,600 kg), with provisions to carry combinations of:
+Other: bombs, torpedoes, mine dispensers, unguided rockets, and gun pods.

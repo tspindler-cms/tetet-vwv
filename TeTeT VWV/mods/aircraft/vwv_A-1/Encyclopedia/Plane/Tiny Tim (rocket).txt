@@ -1,0 +1,92 @@
+Tiny Tim (rocket)
+
+    Article
+    Talk
+
+    Read
+    Edit
+    View history
+
+Tools
+
+From Wikipedia, the free encyclopedia
+Tiny Tim
+Tiny Tim Rocket
+Type	Air-to-surface anti-ship Rocket
+Place of origin	United States
+Service history
+In service	1944-1951
+Used by	United States Navy
+Wars	World War II, Korean War
+Production history
+Designer	Caltech, NOTS
+Designed	1944
+Specifications
+Mass	1,255 lb (569 kg)
+Length	10.25 ft (312 cm)
+Width	36 in (91 cm) (across fins)
+Diameter	11.75 in (29.8 cm)
+Maximum firing range	1,600 yd (1,500 m)
+Warhead	TNT
+Warhead weight	148.5 lb (67.4 kg)
+Engine	Solid-propellant rocket
+30,000 lbf (130 kN) for 1 sec
+Maximum speed 	550 mph (245.8 m/s)
+Curtiss SB2C Helldiver firing a Tiny Tim rocket
+
+The Tiny Tim was an American air-to-ground rocket used near the end of the Second World War. It was built in response to a United States Navy requirement for an anti-ship rocket capable of hitting ships from outside of their anti-aircraft range, with a payload capable of sinking heavy shipping.[1] The Tiny Tim was manufactured using 11.75-inch (298 mm) pipe, which was chosen because it was already being manufactured.[2] Used oil field 11.75-inch pipe was acquired for the prototypes. Also, the 11.75-inch size was of interest in the development because there was already available a 500-pound semi-armor-piercing bomb that was adaptable for use as the warhead for the rocket. One of the rocket project scientists commented on the shortage of the piping “. . . we were reduced for a time to the expedient of salvaging [oil-well casing] from abandoned oil wells.”
+
+Jack Latimer
+
+    ... designed by the Caltech-China Lake team as a bunker-buster, Tim was the first large aircraft rocket, and, although it saw only limited service in WWII, it helped form the foundations of many postwar developments in rocketry.
+
+The Tiny Tim's diameter of 11.75 in (29.8 cm) was the first Allied aerial rocket to have a larger calibre than the Luftwaffe-deployed bomber destroyer aerial rocket ordnance, the Nebelwerfer-based BR 21 of 21 cm (8-1/4 in) calibre. The Tiny Tim's large diameter allowed a sizable 148.5 lb (67.4 kg) semi-armor-piercing high-explosive warhead, some 60 lbs (27 kg) heavier than the BR 21's 40.8 kg (90 lb) warhead. The Tiny Tim had a maximum range of 1,500 meters (1,640 yards), some 200 meters greater than the BR 21's time-fuze limited 1.2 km detonation range from launch.
+
+They were used by the United States Navy and United States Marine Corps near the end of the war during the Battle of Okinawa, and during the Korean War. A problem with the sheer power of the rocket motor causing damage to the firing aircraft was resolved by having the Tiny Tim drop like a bomb, and a lanyard attached to the rocket would snap, causing the rocket to ignite.[3] Common targets included coastal defense guns, bridges, pillboxes, tanks, and shipping.[4] An ambitious operation to use the Tiny Tim against German V-1 sites as part of Operation Crossbow, code-named Project Danny, was planned but cancelled before the squadrons assigned could be deployed to Europe.
+
+Common Tiny Tim delivery aircraft during World War II included the PBJ-1 Mitchell,[5] F4U Corsair, F6F Hellcat, TBM Avenger, and the SB2C Helldiver.[1]
+
+After World War II, the United States Navy's rocket laboratory at Inyokern, California developed an even larger version of the Tiny Tim, called "Richard", which was 14 inches in diameter and one of the largest air-to-surface unguided rocket ever developed for the US military. While tested, it was never placed in production. The United States Navy also experimented with a version of the Tiny Tim which was a two-stage rocket, with another Tiny Tim rocket motor mounted behind a complete Tiny Tim. Like the Richard, it never moved beyond the research and development stage.[6]
+
+During the second half of the 1940s Tiny Tim also had a short civilian life, when it was modified to be used as a booster for the first U.S. sounding rocket WAC Corporal.
+Gallery
+
+    U.S. Navy rockets on display at Michelson Laboratory, NOTS China Lake
+
+    U.S. Navy rockets on display at Michelson Laboratory, NOTS China Lake
+    Alexis B. Dember with Tiny Tim rocket casing, Naval Air Weapons Station China Lake, 1953. Notice the 24 smaller exhaust nozzles arranged in two concentric circular patterns around the larger center exhaust nozzle.
+
+    Alexis B. Dember with Tiny Tim rocket casing, Naval Air Weapons Station China Lake, 1953. Notice the 24 smaller exhaust nozzles arranged in two concentric circular patterns around the larger center exhaust nozzle.
+
+See also
+
+    Anti-ship missile
+    Rocket
+    Wurfrahmen 40
+    Red Angel
+
+References
+Wikimedia Commons has media related to Tiny Tim rocket.
+
+Parsch, Andreas (2004). "Caltech/NOTS Tiny Tim". Directory of U.S. Military Rockets and Missiles, Appendix 4: Undesignated Vehicles. Designation-Systems.net. Retrieved 2008-11-11.
+"China Lake Weapons Digest".
+Slover, G: "Chapter-11-C, 11C3. Suspension and launching of aircraft rockets", "Gene Slover".
+"Missile, Air-to-Surface, Tiny Tim". National Air and Space Museum. 2005.
+Scutts, Jerry (1993). Marine Mitchells in World War 2.
+
+    "Smash Hits" Popular Mechanics, March 1947.
+
+pages 97–108 of the China Lake History: History of the Naval Weapons Center, China Lake, California, Volume 2 “The Grand Experiment at Inyokern.’ This book is available for purchase at the China Lake museum gift shop.
+
+    vte
+
+World War II rockets of the United States
+
+    vte
+
+United States Navy missile designations 1947–1962
+Categories:
+
+    Air-to-ground rockets of the United StatesWorld War II weapons of the United StatesWeapons and ammunition introduced in 1944
+
+    This page was last edited on 8 May 2023, at 18:10 (U

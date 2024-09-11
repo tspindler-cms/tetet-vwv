@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.5.5
+0.6.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -12,6 +12,7 @@ F-8 Crusader, a supersonic fighter jet
 MiG-17F "Fresco-C", a North Vietnamese fighter jet
 PBR Mk II, US patrol boat used in South Vietnam
 H-2 Seasprite, a naval helicopter
+A-1 Skyraider, a propeller driven ground attack plane
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -41,6 +42,7 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/Vought_F-8_Crusader 
     * https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-17
     * https://en.wikipedia.org/wiki/Patrol_Boat,_River 
+    * https://en.wikipedia.org/wiki/Douglas_A-1_Skyraider
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -61,6 +63,7 @@ Thanks
     currenthill - allowing to use his armament system for the Maddox main guns
     Stratos - tester of the mod
     Slapshot - tester of the mod
+    itsdotbmp - updated the tiny tim rocket model
 
 Without these persons the mod would not have been possible!
 

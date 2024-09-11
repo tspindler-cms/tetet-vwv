@@ -1,0 +1,8 @@
+model = {
+	lods = {
+		{"a_1_skyraider.edm", 1000.0};
+		{"a_1_skyraider_lod1.edm", 5000.0};
+		{"a_1_skyraider_lod2.edm", 20000.0};
+	};
+	collision_shell = "a_1_skyraider_collision.edm";
+}

@@ -1,3 +1,6 @@
+2024-09-11
+  A-1 Skyraider
+    - Initial release
 2024-07-26
   F-8 Crusader
     - Remove gear suspension code
