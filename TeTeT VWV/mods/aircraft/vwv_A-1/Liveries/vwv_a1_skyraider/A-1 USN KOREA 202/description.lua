@@ -1,15 +1,15 @@
 livery = {
 	
-	{"fuselage",		DIFFUSE				,	"A-1 Skyraider USN KOR 202", false};
-		
-	{"fuselage",		ROUGHNESS_METALLIC			,	"A-1 Skyraider KOREA 3", false};
+	{"fuselage",		DIFFUSE				,	"A_1_Skyraider USN KOR 202", false};
+	{"fuselage",		ROUGHNESS_METALLIC			,	"A_1_Skyraider KOR RM", true};
 	
 	
-	{"18 - Default",	DIFFUSE				,	"A-1 NAVY TAILHOOK", false};
-	{"fuel_150_a4e",	DIFFUSE			,	"A1 150 GAL USN KOR", false};
-	{"AV8B7",	DIFFUSE			,	"A1 300 GAL KOR", false};
+	{"fuel_150_a4e",	DIFFUSE			,	"A_1_150 GAL USN KOR", true};
 	
-	{"vwv_A-1_propblur",	DIFFUSE				,	"A-1 Skyraider PROP BLUR", false};
+	{"AV8B7",	DIFFUSE			,	"A_1_300 GAL KOR", true};
+	
+	--{"18 - Default",	DIFFUSE					,	"A_1_NAVY TAILHOOK", false};
+	--{"vwv_A-1_propblur",	DIFFUSE				,	"A_1_Skyraider_PROPBLUR", false};
 	
 	
 }

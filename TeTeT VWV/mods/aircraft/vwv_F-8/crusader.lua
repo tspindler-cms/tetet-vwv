@@ -59,22 +59,20 @@ local crusader = {
 	has_speedbrake	            = true,
 	radar_can_see_ground	    = true,	
 
-	nose_gear_pos =         {0.96, -2.100,  0},     ----1.990
-	nose_gear_wheel_diameter        =       0.566,
-	--[[
-	nose_gear_amortizer_direct_stroke        =   1.58 - 1.40, --0.220,
-	nose_gear_amortizer_reversal_stroke      =  1.25 - 1.40,
-	nose_gear_amortizer_normal_weight_stroke =  0,
-	]]
+	nose_gear_pos = { 3.8555, -2.2115, 0 },
+	nose_gear_wheel_diameter = 0.433769,
 
-	-- main_gear_pos =         {-6.92, -1.90, 0.0},    ----2.012 1.4 CTD when pilot controlled
-	main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
-	--[[
-	main_gear_wheel_diameter        =       0.778,
-	main_gear_amortizer_direct_stroke        =  0.21,
-	main_gear_amortizer_reversal_stroke      = -0.01,
+	nose_gear_amortizer_direct_stroke        = -0.1,
+	nose_gear_amortizer_reversal_stroke      = -0.1,
+	nose_gear_amortizer_normal_weight_stroke = -0.015,
+
+	-- main_gear_pos = { -2.5327, -1.9686, -1.4374 },
+	main_gear_pos = { -2.5327, -1.9686, 0 },
+	main_gear_wheel_diameter = 0.602213,
+
+	main_gear_amortizer_direct_stroke        =  0.1,
+	main_gear_amortizer_reversal_stroke      = -0.1,
 	main_gear_amortizer_normal_weight_stroke =  0.0,
-	]]
 
 	wing_tip_pos =          {-5.214,-0.7, 5.35},-- wingtip coords for visual effects  -- was -10.214, by Toan, 28-12
 
@@ -167,27 +165,52 @@ local crusader = {
 	},
 
 	mechanimations = {
+		--[[
+		-- F-18C launchbar
+		LaunchBar = {
+			{Transition = {"Retract", "Extend"}, Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 2}, {"Arg", 85, "to", 1.0, "in", 4.5}}}}},
+			{Transition = {"Extend", "Retract"}, Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.0, "in", 4.5}}}}},
+			{Transition = {"Retract", "Stage"},  Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 2}, {"Arg", 85, "to", 0.745, "in", 4.0}}}}},
+			{Transition = {"Stage", "Retract"},  Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.0, "in", 4.0}}}}},
+			-- this stage is causing the front wheel to sink into the flight deck
+			{Transition = {"Extend", "Stage"},   Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 1.0, "to", 0.745, "in", 1.0}}}}},
+			-- {Transition = {"Extend", "Stage"},   Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 0.0, "to", 0.0, "in", 0.0}}}}},
+			{Transition = {"Stage", "Pull"},     Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 0.745, "to", 0.743, "in", 1.0}}}}},
+			{Transition = {"Stage", "Extend"},   Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 0.745, "to", 1.0, "in", 0.2}}}}},
+		},
+		]]
+		--[[
 		-- LaunchBar copied from A-4E-C for testing purposes
 		-- Does not work with the model
-		--[[
         LaunchBar = {
             {Transition = {"Retract", "Extend"}, Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "to", 0.881, "in", 4.4}}}}},
             {Transition = {"Retract", "Stage"},  Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "to", 0.815, "in", 4.4}}}}},
             {Transition = {"Any", "Retract"},  Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.000, "in", 4.5}}}}},
+            -- {Transition = {"Extend", "Stage"},   Sequence = {
+                    -- {C = {{"ChangeDriveTo", "Mechanical"}, {"Sleep", "for", 0.000}}},
+                    -- {C = {{"Arg", 85, "from", 0.881, "to", 0.766, "in", 0.600}}},
+                    -- {C = {{"Arg", 85, "from", 0.766, "to", 0.753, "in", 0.200}}},
+                    -- {C = {{"Sleep", "for", 0.15}}},
+                    -- {C = {{"Arg", 85, "from", 0.753, "to", 0.784, "in", 0.1, "sign", 2}}},
+                    -- {C = {{"Arg", 85, "from", 0.784, "to", 0.881, "in", 1.0}}},
+                --},
+            -- },
             {Transition = {"Extend", "Stage"},   Sequence = {
                     {C = {{"ChangeDriveTo", "Mechanical"}, {"Sleep", "for", 0.000}}},
-                    {C = {{"Arg", 85, "from", 0.881, "to", 0.766, "in", 0.600}}},
-                    {C = {{"Arg", 85, "from", 0.766, "to", 0.753, "in", 0.200}}},
+                    {C = {{"Arg", 85, "from", 1, "to", 1, "in", 0.600}}},
+                    {C = {{"Arg", 85, "from", 1, "to", 1, "in", 0.200}}},
                     {C = {{"Sleep", "for", 0.15}}},
-                    {C = {{"Arg", 85, "from", 0.753, "to", 0.784, "in", 0.1, "sign", 2}}},
-                    {C = {{"Arg", 85, "from", 0.784, "to", 0.881, "in", 1.0}}},
+                    {C = {{"Arg", 85, "from", 1, "to", 1, "in", 0.1, "sign", 2}}},
+                    {C = {{"Arg", 85, "from", 1, "to", 1, "in", 1.0}}},
                 },
             },
             {Transition = {"Stage", "Pull"},  Sequence = {
-                    {C = {{"ChangeDriveTo", "Mechanical"}, {"VelType", 2}, {"Arg", 85,"from", 0.881, "to", launch_bar_connected_arg_value_, "in", 0.27}}},
-                    }
-            },
-            {Transition = {"Stage", "Extend"},   Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "from", 0.815, "to", 0.881, "in", 0.2}}}}},
+                -- {C = {{"ChangeDriveTo", "Mechanical"}, {"VelType", 2}, {"Arg", 85,"from", 0.881, "to", launch_bar_connected_arg_value_, "in", 0.27}}},
+				{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 2}, {"Arg", 85,"from", 1, "to", 1, "in", 0}}},
+            }},
+            {Transition = {"Stage", "Extend"},   Sequence = {
+				{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "from", 0.815, "to", 0.881, "in", 0.2}}}
+			}},
         },
 		]]
         FoldableWings = {

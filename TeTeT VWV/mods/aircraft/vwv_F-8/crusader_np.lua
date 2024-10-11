@@ -56,22 +56,20 @@ local crusader_np =  {
 	has_speedbrake				= true,
 	radar_can_see_ground		= true,
 
-	nose_gear_pos =         {0.96, -2.100,  0},     ----1.990
-	nose_gear_wheel_diameter        =       0.566,
-	--[[
-	nose_gear_amortizer_direct_stroke        =   1.58 - 1.40, --0.220,
-	nose_gear_amortizer_reversal_stroke      =  1.25 - 1.40,
-	nose_gear_amortizer_normal_weight_stroke =  0,
-	]]
+	nose_gear_pos = { 3.8555, -2.2115, 0 },
+	nose_gear_wheel_diameter = 0.433769,
 
-	-- main_gear_pos =         {-6.92, -1.90, 0.0},    ----2.012 1.4 CTD when pilot controlled
-	main_gear_pos = 	{-6.95, -1.90, 1.4},	----2.012
-	main_gear_wheel_diameter        =       0.778,
-	--[[
-	main_gear_amortizer_direct_stroke        =  0.21,
-	main_gear_amortizer_reversal_stroke      = -0.01,
+	nose_gear_amortizer_direct_stroke        = -0.1,
+	nose_gear_amortizer_reversal_stroke      = -0.1,
+	nose_gear_amortizer_normal_weight_stroke = -0.015,
+
+	-- main_gear_pos = { -2.5327, -1.9686, -1.4374 },
+	main_gear_pos = { -2.5327, -1.9686, 0 },
+	main_gear_wheel_diameter = 0.602213,
+
+	main_gear_amortizer_direct_stroke        =  0.1,
+	main_gear_amortizer_reversal_stroke      = -0.1,
 	main_gear_amortizer_normal_weight_stroke =  0.0,
-	]]
 
 	wing_tip_pos =          {-5.214,-0.7, 5.35},-- wingtip coords for visual effects  -- was -10.214, by Toan, 28-12
 

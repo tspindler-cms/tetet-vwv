@@ -1,15 +1,17 @@
 livery = {
 	
-	{"fuselage",		DIFFUSE				,	"A-1 USAF 6T 552", false};
+	{"fuselage",		DIFFUSE				,	"A_1_USAF 6T 552", false};
+	{"fuselage",		ROUGHNESS_METALLIC			,	"A_1_USAF RM", true};
 	
 	
+	{"AV8B7",	DIFFUSE			,	"A_1_300 GAL USAF WHT", true};
 	
-	{"AV8B7",	DIFFUSE			,	"A1 300 GAL USAF WHT", false};
+	{"fuel_150_a4e",	DIFFUSE			,	"A_1_150 GAL USAF WHT", true};
+	{"fuel_150_a4e",	ROUGHNESS_METALLIC	,	"A_1_150 GAL RM", true};
 	
-	{"fuel_150_a4e",	DIFFUSE			,	"A1 150 GAL USAF WHT", false};
-	{"fuel_150_a4e",	ROUGHNESS_METALLIC	,	"A1 150 GAL ROUGHMET1", false};
-	{"vwv_A-1_propblur",	DIFFUSE				,	"A-1 Skyraider PROP BLUR", false};
-	{"fuselage",		ROUGHNESS_METALLIC			,	"A_1_Seabat_RoughMet", false};
+	--{"18 - Default",	DIFFUSE					,	"A_1_NAVY TAILHOOK", false};
+	--{"vwv_A-1_propblur",	DIFFUSE				,	"A_1_Skyraider_PROPBLUR", false};
+	
 	
 }
 name = "A-1 USAF 6T 552"

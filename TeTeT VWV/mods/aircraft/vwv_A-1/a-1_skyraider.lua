@@ -41,7 +41,7 @@ local vwv_a1_skyraider =  {
 	CAS_min				=	55,
 	V_opt				=	135,
 	V_take_off			=	65,
-	V_land				=	62,
+	V_land				=	80, -- 62,
 	has_afteburner			=	false,
 	has_speedbrake			=	true,
 	has_differential_stabilizer 	= 	false,
@@ -69,7 +69,7 @@ local vwv_a1_skyraider =  {
 	radar_can_see_ground	=	true,
 	AOA_take_off		=	0.16,
 	stores_number		=	15,
-	bank_angle_max		=	60,
+	bank_angle_max		=	40, -- 60
 	Ny_min			=	-3,
 	Ny_max			=	7,
 	tand_gear_max		=	3.3577,
@@ -99,12 +99,11 @@ local vwv_a1_skyraider =  {
 			{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 6.0},},},}, Flags = {"Reversible", "StepsBackwards"},},
 			{Transition = {"Any", "Bailout"}, Sequence = {{C = {{"JettisonCanopy", 0},},},},},
 		},
-		FoldableWings 		= {
+		FoldableWings = {
 				{Transition 		= {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 10.0}}}}, Flags = {"Reversible"}},
 				{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
-			},
+		},
     }, -- end of mechanimations
-
 	LandRWCategories =
     {
         [1] =
@@ -297,7 +296,7 @@ local vwv_a1_skyraider =  {
 ----------------------------------------------------------------------Pylons---------------------------------------------------------------------------------------------------------------
 	Pylons =     {
 
-        pylon(1, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_1", arg = 308, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(1, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_1", arg = 308, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -316,7 +315,7 @@ local vwv_a1_skyraider =  {
 		   }
         ),
 
-        pylon(2, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_2", arg = 309, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(2, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_2", arg = 309, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -335,7 +334,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-       pylon(3, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_3", arg = 310, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(3, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_3", arg = 310, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -354,7 +353,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-      pylon(4, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_4", arg = 311, FiX = 0, FiY = 0, FiZ = 2},
+      pylon(4, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_4", arg = 311, FiX = 0, FiY = 0, FiZ = 2},
            {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -373,7 +372,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-       pylon(5, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_5", arg = 312, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(5, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_5", arg = 312, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -392,7 +391,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-       pylon(6, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_6", arg = 313, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(6, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_6", arg = 313, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -411,7 +410,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-        pylon(7, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_14", arg = 314},
+        pylon(7, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_14", arg = 314},
              {
 				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.500, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" 	,attach_point_position = {.4500, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -436,11 +435,12 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
+				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 				
 			}
         ),
 
-        pylon(8, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_13", arg = 314},
+        pylon(8, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_13", arg = 314},
             {
 
 				
@@ -461,12 +461,12 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.00, .1 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{AV8BNA_AERO1D}" ,attach_point_position = {.00, .1 ,0 }},--AERO 1D 300 GalFuelTank AV8B Harrier good for Skyraider
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
-				
+				{ CLSID = "DIS_mk46torp", attach_point_position = {0, -0.07, 0}}, --Torpedo
 				
 			}
         ),
 		
-        pylon(9, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_15", arg = 314},
+        pylon(9, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_15", arg = 314},
            {
 				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.500, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" 	,attach_point_position = {.4500, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -491,10 +491,11 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
+				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 		   }
         ),
 			
-       pylon(10, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_7", arg = 315, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(10, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_7", arg = 315, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -513,7 +514,7 @@ local vwv_a1_skyraider =  {
 		   }
         ),
 			
-       pylon(11, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_8", arg = 316, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(11, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_8", arg = 316, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -532,7 +533,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 			
-        pylon(12, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_9", arg = 317, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(12, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_9", arg = 317, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -551,7 +552,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 			
-        pylon(13, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_10", arg = 318, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(13, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_10", arg = 318, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -570,7 +571,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 			
-        pylon(14, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_11", arg = 319, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(14, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_11", arg = 319, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -589,7 +590,7 @@ local vwv_a1_skyraider =  {
 		   }
         ),
 			
-        pylon(15, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_12", arg = 320, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(15, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_12", arg = 320, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -699,14 +700,14 @@ local vwv_a1_skyraider =  {
         aerodynamics = -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
         {
             Cy0            =    0.2,  -- zero AoA lift coefficient
-            Mzalfa         =    3.4,  -- coefficients for pitch agility
+            Mzalfa         =    4.3,   -- 3.4,  -- coefficients for pitch agility
             Mzalfadt       =    0.8,    -- coefficients for pitch agility
             kjx            =    2.25,    
             kjz            =    0.00125,
             Czbe           =    -0.012, -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
-            cx_gear        =    0.0330,    -- coefficient, drag, gear
-            cx_flap        =    0.033,   -- coefficient, drag, full flaps
-            cy_flap        =    0.28,    -- coefficient, normal force, lift, flaps
+            cx_gear        =    0.02,  -- 0.0330,    -- coefficient, drag, gear - less drag to allow for good take-off when heavy
+            cx_flap        =    0.02,  -- 0.033,   -- coefficient, drag, full flaps - less drag to allow for good take-off when heavy
+            cy_flap        =    0.9,   -- 0.28,    -- coefficient, normal force, lift, flaps - very efficient flaps to allow for take-off with max weight
             cx_brk         =    0.06,   -- coefficient, drag, breaks
             table_data  =
             {
@@ -723,11 +724,19 @@ local vwv_a1_skyraider =  {
                 {0.9,    0.0995,    0.1185,    0.175,    2.7925,      0.1,      3,        0.4}, --690.542
                 {1,      0.146,     0.1184,    0.2,      3.19,        0.1,      1,        0.2}, --767.269
 ]]
-                {0,      0.018,    0.117,     0.056,    0.000089,    0.11,    17,        1.40}, --0
-                {0.1,    0.018,    0.117,     0.056,    0.000089,    0.25,    18,        1.65}, --76.7269mph
-                {0.2,    0.018,    0.116,     0.056,    0.000089,    0.25,    18,        1.65}, --153.454 mph
-                {0.3,    0.018,    0.1163,    0.054,    0.000089,    0.25,    17,        1.6}, --230.2 mph
-                {0.4,    0.019,    0.1176,    0.048,    0.000192,    0.20,    16,        1.44}, --306.908
+--[[
+{ 0, 0.0217, 0.076, 0.075, 0, 0.01, 20, 1.58 }, 
+{ 0.2, 0.0217, 0.076, 0.075, 0, 0.933, 20, 1.58 }
+ ]]
+--[[                {0,      0.010,    0.117,     0.056,    0.000089,    0.11,    17,        2.00}, --0
+                {0.1,    0.012,    0.117,     0.056,    0.000089,    0.25,    18,        1.85}, --76.7269mph
+                {0.2,    0.013,    0.116,     0.056,    0.000089,    0.25,    18,        1.65}, --153.454 mph
+]]				
+				{0,      0.010,    0.117,     0.056,    0.000089,    0.25,    20,        2.00}, --0
+				{0.1,    0.012,    0.112,     0.055,    0.000089,    0.25,    20,        1.9}, --76.7269mph
+				{0.2,    0.013,    0.114,     0.055,    0.000089,    0.25,    20,        1.8}, --153.454 mph				
+                {0.3,    0.014,    0.1163,    0.054,    0.000089,    0.25,    17,        1.6}, --230.2 mph
+                {0.4,    0.016,    0.1176,    0.048,    0.000192,    0.20,    16,        1.44}, --306.908
                 {0.5,    0.020,    0.1179,    0.030,    0.000593,    0.18,    10,        1.0}, --383.635
                 {0.6,    0.021,    0.1180,    0.029,    0.0004,      0.15,     9,        0.9}, --460.361
                 {0.7,    0.021,    0.1183,    0.028,    0.00032,     0.14,     9,        0.85}, --537.088
@@ -752,7 +761,7 @@ local vwv_a1_skyraider =  {
             MaxRUD      =     1, -- Max state of the throttle
             MaksRUD     =     1, -- Military power state of the throttle
             ForsRUD     =     1, -- Afterburner state of the throttle
-            type        = "Radial",
+            type        =     "TurboProp", -- use 3 for carrier take-off
 			Startup_Prework = 12,
 			Startup_RPMs = {
 				{0, 0},
@@ -782,13 +791,13 @@ local vwv_a1_skyraider =  {
 
             table_data =
             {
-                [1] =     {0,      11395.9    ,11395.9},
-                [2] =     {0.1,    11393.8    ,11393.8},
-                [3] =     {0.2,    10995.6    ,10995.6},
-                [4] =     {0.3,    10800.8    ,10800.8},
-                [5] =     {0.4,    10673.3    ,10673.3},
-                [6] =     {0.5,    10254.2    ,10254.2},
-                [7] =     {0.6,    10029.2    ,10029.2},
+                [1] =     {0,      16395.9    ,16395.9},
+                [2] =     {0.1,    16393.8    ,16393.8},
+                [3] =     {0.2,    15995.6    ,15995.6},
+                [4] =     {0.3,    15800.8    ,15800.8},
+                [5] =     {0.4,    14673.3    ,14673.3},
+                [6] =     {0.5,    13254.2    ,13254.2},
+                [7] =     {0.6,    11029.2    ,11029.2},
                 [8] =     {0.7,    10012.3    ,10012.3},
                 [9] =     {0.8,     6719.3    , 6719.3},
                 [10] =    {0.9,     4650      , 4650},
