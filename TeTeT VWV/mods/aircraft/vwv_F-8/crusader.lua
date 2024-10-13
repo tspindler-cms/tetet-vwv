@@ -467,13 +467,6 @@ local crusader = {
 				{ CLSID = "<CLEAN>", arg_value = 1.0},
 			}
 		),
-		pylon(7, 0, 1.2, 1.34, 1.60, --?????
-			{
-				use_full_connector_position = false, connector = "pylon_7",
-			},
-			{
-			}
-		),
 	},
 
 	Tasks = {
@@ -484,8 +477,6 @@ local crusader = {
 		aircraft_task(Reconnaissance),
 		aircraft_task(GroundAttack),
 		aircraft_task(CAS),
---      aircraft_task(AFAC),
---	aircraft_task(RunwayAttack),
 		aircraft_task(AntishipStrike),
     },
 	DefaultTask = aircraft_task(CAP),
@@ -576,12 +567,12 @@ local crusader = {
 
 	-- Blueprint taken from Damage.lua of ED, Fencer (Scripts/Aircraft/_Common/Damage.lua)
 	Damage = verbose_to_dmg_properties({
-		["COCKPIT"]				= {critical_damage = 2,args =  { 65}},
-		["NOSE_CENTER"]			= {critical_damage = 3,args =  {146}},
-		["NOSE_RIGHT_SIDE"] 	= {critical_damage = 3,args =  {147}},
-		["NOSE_LEFT_SIDE"]		= {critical_damage = 3,args =  {150}},
-		["NOSE_BOTTOM"]			= {critical_damage = 3,args =  {148}},
-		["NOSE_TOP_SIDE"]		= {critical_damage = 3,args =  {147}},
+		["COCKPIT"]				= {critical_damage = 2, args =  { 65}},
+		["NOSE_CENTER"]			= {critical_damage = 3, args =  {146}},
+		["NOSE_RIGHT_SIDE"] 	= {critical_damage = 3, args =  {147}},
+		["NOSE_LEFT_SIDE"]		= {critical_damage = 3, args =  {150}},
+		["NOSE_BOTTOM"]			= {critical_damage = 3, args =  {148}},
+		["NOSE_TOP_SIDE"]		= {critical_damage = 3, args =  {147}},
 
 		["WING_L_OUT"]			= {critical_damage = 10,args =  {223},deps_cells = {"FLAP_L_IN","WING_L_PART_OUT"}},
 		["WING_R_OUT"]			= {critical_damage = 10,args =  {213},deps_cells = {"FLAP_R_IN","WING_R_PART_OUT"}},
@@ -603,6 +594,9 @@ local crusader = {
 
 		["STABILIZER_L_IN"]		= {critical_damage = 3, args =  {235}},
 		["STABILIZER_R_IN"]		= {critical_damage = 3, args =  {233}},
+		["Front Wheel Out"]     = {critical_damage = 1},
+		["Left Wheel Out"]      = {critical_damage = 1},
+		["Right Wheel Out"]     = {critical_damage = 1},
 		}),
 	DamageParts =
 	{

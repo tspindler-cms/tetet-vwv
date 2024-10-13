@@ -369,13 +369,6 @@ local crusader_np =  {
 				-- { CLSID = "<CLEAN>", arg_value = 1 }, -- CLEAN --
 			}
 		),
-		pylon(7, 0, 1.2, 1.34, 1.60, --?????
-			{
-				use_full_connector_position = false,connector = "pylon_7",
-			},
-			{
-			}
-		),
 	},
 	Tasks = {
         aircraft_task(CAP),
@@ -383,11 +376,6 @@ local crusader_np =  {
 		aircraft_task(FighterSweep),
 		aircraft_task(Intercept),
 		aircraft_task(Reconnaissance),
---  	aircraft_task(GroundAttack),
---     	aircraft_task(CAS),
---      aircraft_task(AFAC),
---	    aircraft_task(RunwayAttack),
---  	aircraft_task(AntishipStrike),
     },
 	DefaultTask = aircraft_task(CAP),
 	Countries = {"France"},
@@ -504,6 +492,9 @@ local crusader_np =  {
 
 		["STABILIZER_L_IN"]		= {critical_damage = 3, args =  {235}},
 		["STABILIZER_R_IN"]		= {critical_damage = 3, args =  {233}},
+		["Front Wheel Out"]     = {critical_damage = 1},
+		["Left Wheel Out"]      = {critical_damage = 1},
+		["Right Wheel Out"]     = {critical_damage = 1},
 		}),
 	DamageParts =
 	{

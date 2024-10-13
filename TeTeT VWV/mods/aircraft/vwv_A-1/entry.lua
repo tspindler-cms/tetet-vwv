@@ -6,9 +6,9 @@ declare_plugin(self_ID,
 	dirName	  	 = current_mod_path,
 	displayName  = _("vvw_a-1_skyraider"),
 	developerName = _("TeTeT, Hawkeye60, seabat, Beldin"),
-
-	fileMenuName = _("vwv_a-1_skyraider"),
-	update_id        = "a-1_skyraider",
+	creditsFile = "credits.txt",
+	fileMenuName = _("A-1 Skyraider"),
+	update_id    = "a-1_skyraider",
 	version		 = "0.6.0",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Douglas A-1 Skyraider (formerly designated AD before the 1962 unification of Navy and Air Force designations) is an American single-seat attack aircraft in service from 1946 to the early 1980s, which served during the Korean War and Vietnam War."),
@@ -18,21 +18,21 @@ declare_plugin(self_ID,
 	Skins	=
 		{
 			{
-				name		= _("a-1_skyraider"),
-				dir			= "Theme"
+				name		= _("A-1 Skyraider"),
+				dir			= "Skins/1"
 			},
 		},
 	Missions =
 		{
 			{
-				name		= _("a-1_skyraider"),
+				name		= _("A-1 Skyraider"),
 				dir			= "Missions",
 			},
 		},
 	LogBook =
 		{
 			{
-				name		= _("a-1_skyraider"),
+				name		= _("A-1 Skyraider"),
 				type		= "a-1_skyraider",
 			},
 		},

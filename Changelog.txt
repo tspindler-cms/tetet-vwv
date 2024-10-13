@@ -1,3 +1,25 @@
+2024-10-13
+  A-1 Skyraider
+    - Rename Theme to Skins/1
+    - Fix model issues
+  F-8 Crusader
+    - Remove pylon 7 (was for pilot)
+    - Update Damage section to reduce log spam
+  CVA-31 Bon Homme Richard
+    - Version bump  
+  main 
+    - Version bump
+    - Use different more verbose fileMenuName
+    - Update info section
+2024-10-11
+  A-1 Skyraider
+    - Optimize textures
+    - Fix pylon alignment problem when wings are folded (kudos Violent Nomad)
+  F-8 Crusader
+    - Fix catapult alignment problem
+    - Add wheels to collision shell
+  CVA-31 Bon Homme Richard
+    - Fix misaligned taxi paths for catapult take-off 
 2024-09-11
   A-1 Skyraider
     - Initial release
