@@ -2,6 +2,6 @@
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
-A mod of the A-1 Skyraider for DCS, thanks to Hawkeye60, seabat, Beldin, Stratos and itsdotbmp.
+A mod of the A-1 Skyraider for DCS, thanks to Hawkeye60, seabat, Beldin, Stratos, itsdotbmp and Violent Nomad.
 
 TeTeT

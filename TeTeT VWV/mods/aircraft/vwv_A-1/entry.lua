@@ -4,7 +4,7 @@ declare_plugin(self_ID,
 	-- image     	 = "a_1_skyraider.bmp",
 	installed 	 = true, -- if false that will be place holder , or advertising
 	dirName	  	 = current_mod_path,
-	displayName  = _("vvw_a-1_skyraider"),
+	displayName  = _("vwv_a-1_skyraider"),
 	developerName = _("TeTeT, Hawkeye60, seabat, Beldin"),
 	creditsFile = "credits.txt",
 	fileMenuName = _("A-1 Skyraider"),

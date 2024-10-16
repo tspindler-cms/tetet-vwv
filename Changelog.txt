@@ -1,3 +1,11 @@
+2024-10-16
+  A-1 Skyraider
+    - New ME images by Whiplash and Sidekick65
+    - New UnitPayloads
+    - Fix model issues
+    - Add new propeller blur texture by Violent Nomad
+  F-8 Crusader
+    - New ME images by Sidekick65
 2024-10-13
   A-1 Skyraider
     - Rename Theme to Skins/1
