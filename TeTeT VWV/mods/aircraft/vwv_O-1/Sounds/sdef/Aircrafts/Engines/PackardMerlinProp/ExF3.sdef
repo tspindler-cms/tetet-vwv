@@ -1,0 +1,8 @@
+inherit = "Aircrafts/Engines/PackardMerlinProp/ExF"
+wave = "Effects/Aircrafts/Engines/PackardMerlinProp/ExF3"
+inner_radius = 20
+outer_radius = 250
+cone_inner_angle = 90
+cone_outer_angle = 120
+gain = 2.9
+pitch = 0.94

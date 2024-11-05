@@ -1,0 +1,6 @@
+model = {
+	lods = {
+		{"indo_hut2.edm", 5000.0},
+	};
+	collision_shell = "indo_hut2_coll.edm";
+}

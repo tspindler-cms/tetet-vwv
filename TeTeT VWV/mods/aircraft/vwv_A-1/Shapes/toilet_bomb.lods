@@ -1,0 +1,9 @@
+model={
+	lods={
+		{"toilet_bomb.edm", 10000.0};
+	};
+}
+
+
+
+

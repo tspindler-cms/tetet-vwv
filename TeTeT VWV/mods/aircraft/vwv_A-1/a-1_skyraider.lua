@@ -424,6 +424,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.13 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.4, 0}}, -- Toilet Bomb
 			}
         ),
 
@@ -476,6 +477,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.13 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
 		   }
         ),
 			

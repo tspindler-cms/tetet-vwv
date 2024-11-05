@@ -1,0 +1,5 @@
+inherit = "Aircrafts/Engines/PackardMerlinProp/ExB"
+wave = "Effects/Aircrafts/Engines/PackardMerlinProp/ExB1"
+inner_radius = 30
+outer_radius = 350
+

@@ -1,0 +1,3 @@
+inherit = "Aircrafts/Engines/PackardMerlinProp/Cockpit/ExProp"
+wave = "Effects/Aircrafts/Engines/PackardMerlinProp/Cockpit/PropIn1"
+pitch = 0.9

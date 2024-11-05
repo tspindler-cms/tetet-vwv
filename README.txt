@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.6.0
+0.7.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -13,6 +13,8 @@ MiG-17F "Fresco-C", a North Vietnamese fighter jet
 PBR Mk II, US patrol boat used in South Vietnam
 H-2 Seasprite, a naval helicopter
 A-1 Skyraider, a propeller driven ground attack plane
+O-1 Bird Dog, a propeller drive observation plane
+Huts, some Indochinese huts
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -25,7 +27,9 @@ Liveries:
 
 Videos:
     * https://www.youtube.com/watch?v=yv03h-a1TQA Sidekick65's video of Unboxing and First Impression for CVA-31
+    * https://www.youtube.com/watch?v=6SQsg3xx6JA Sidekick65's video on the 0.6.0 update 
     * https://youtu.be/h-b9WlLvd8E TeTeT's take on a release video for CVA-31
+    * https://youtu.be/VT4Cq9SRnMg TeTeT's take on an update video for CVA-31
 
 Links and model sources:
     * https://en.wikipedia.org/wiki/USS_Bon_Homme_Richard_(CV-31)
@@ -64,6 +68,7 @@ Thanks
     Stratos - tester of the mod
     Slapshot - tester of the mod
     itsdotbmp - updated the tiny tim rocket model
+    Pirat3n - Indochinese huts
 
 Without these persons the mod would not have been possible!
 

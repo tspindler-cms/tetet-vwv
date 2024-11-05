@@ -1,0 +1,5 @@
+wave = "Effects/Aircrafts/Engines/PackardMerlinProp/StartBot"
+inner_radius = 50
+outer_radius = 350
+position = {1.2, 0, 0}
+gain = 0.7

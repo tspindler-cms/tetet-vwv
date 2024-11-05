@@ -1,8 +1,8 @@
 model = {
 	lods = {		
 		{"mig17f.edm",50.000000},
-		{"mig17f.edm",500.000000},
-		{"mig17f.edm",50000.000000},
+		{"mig17f_lod01.edm",500.000000},
+		{"mig17f_lod02.edm",50000.000000},
 	};
 	collision_shell = "mig17f_collision.edm";
 }

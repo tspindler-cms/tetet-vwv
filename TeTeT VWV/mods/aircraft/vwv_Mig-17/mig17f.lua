@@ -526,8 +526,7 @@ local vwv_mig17f = {
 				{ 1	    ,	26260	,	26260	},
 				{ 1.04  ,	26600	,	26600	},
 				{ 1.1	,	27640	,	27640	},
-				
-				
+
 			}, -- end of table_data
 			-- M - Mach number
 			-- Pmax - Engine thrust at military power
@@ -537,7 +536,7 @@ local vwv_mig17f = {
 
 	-- Blueprint taken from Damage.lua of ED, Fencer (Scripts/Aircraft/_Common/Damage.lua)
 	Damage  = verbose_to_dmg_properties({
-		["COCKPIT"]				= {critical_damage = 2,args =  { 65}},
+		-- ["COCKPIT"]				= {critical_damage = 2,args =  { 65}},
 		["NOSE_CENTER"]			= {critical_damage = 3,args =  {146}},
 		["NOSE_RIGHT_SIDE"] 	= {critical_damage = 3,args =  {147}},
 		["NOSE_LEFT_SIDE"]		= {critical_damage = 3,args =  {150}},
@@ -548,10 +547,10 @@ local vwv_mig17f = {
 		["WING_R_OUT"]			= {critical_damage = 10,args =  {213},deps_cells = {"FLAP_R_IN","WING_R_PART_OUT"}},
 		["WING_L_PART_OUT"]		= {critical_damage = 3, args =  {221}},
 		["WING_R_PART_OUT"]		= {critical_damage = 3, args =  {231}},
-		["FLAP_L_IN"]			= {critical_damage = 4, args =  {227}},
-		["FLAP_R_IN"]			= {critical_damage = 4, args =  {217}},
+		["FLAPS_L_IN"]			= {critical_damage = 4, args =  {227}},
+		["FLAPS_R_IN"]			= {critical_damage = 4, args =  {217}},
 
-		["FUSELAGE_BOTTOM"]		= {critical_damage = 8, args =  {152}},
+		-- ["FUSELAGE_BOTTOM"]		= {critical_damage = 8, args =  {152}},
 		["FUSELAGE_CENTR_TOP"]	= {critical_damage = 8, args =  {151}},
 		-- ["FUSELAGE_CENTR_L"]	= {critical_damage = 4, args =  {154}},
 		-- ["FUSELAGE_CENTR_R"]	= {critical_damage = 4, args =  {153}},

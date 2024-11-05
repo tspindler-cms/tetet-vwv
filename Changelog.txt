@@ -1,3 +1,17 @@
+2024-11-05
+  buildings
+    - Initial release of two Indochinese huts from Pirat3n 
+  A-1 Skyraider
+    - Add infamous toilet bomb as loadout
+  MiG-17F "Fresco-C"
+    - Use correct distance lod edms
+  O-1 Bird Dog 
+    - Initial release of this light observation aircraft 
+  CVA-31 Bon Homme Richard
+    - Texture updates for island, LSO and rescue boat
+    - Improved hook-up behaviour on both cats 
+    - Use a different wake class (Arleigh Burke) 
+    - Add CVS16 routes
 2024-10-16
   A-1 Skyraider
     - New ME images by Whiplash and Sidekick65

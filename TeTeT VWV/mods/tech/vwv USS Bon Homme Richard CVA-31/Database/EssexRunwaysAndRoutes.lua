@@ -14,8 +14,8 @@ GT.RunWays =
 	1, 			3.5, 		  		4.0, 					4.5, 			  4.5, 				5.0, 				5.5},
 
 -- runways/Cats inbetween Hold back start and connect to front of ship not where the cat/start point connectors are
-	{{55.5750,  16.95,    9.332 }, 	     	000, 		    	  72.5735, 		    20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 1 location
-	{{55.6561,  16.95,  -11.781}, 		    002.4, 		    	  72.5735, 	        20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 2 location
+	{{50.5750,  16.95,    9.332 }, 	     	000, 		    	  72.5735, 		    20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 1 location
+	{{50.6561,  16.95,  -11.781}, 		    002.4, 		    	  72.5735, 	        20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 2 location
 };
 GT.RunWays.RunwaysNumber = #GT.RunWays
 
