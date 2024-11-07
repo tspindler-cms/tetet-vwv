@@ -1,3 +1,13 @@
+2024-11-07
+  A-1 Skyraider
+    - Fix toilet bomb pylon position
+    - Reduce toilet bomb count to 1 from 50
+  MiG-17F "Fresco-C"
+    - Fix distance lods  
+  CVA-31 Bon Homme Richard
+    - Close bottom of LSO station
+  DD-731 Maddox
+    - Enable firing sounds for three main turrets
 2024-11-05
   buildings
     - Initial release of two Indochinese huts from Pirat3n 

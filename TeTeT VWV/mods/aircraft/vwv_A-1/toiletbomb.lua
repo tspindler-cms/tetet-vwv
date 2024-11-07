@@ -102,7 +102,7 @@ declare_loadout({
 	category 		= CAT_BOMBS,
 	CLSID	 		= "{toilet_bomb}",
 	attribute		= toilet_bomb.wsTypeOfWeapon,
-	Count 			= 50,
+	Count 			= 1,
 	Cx_pil			= toilet_bomb.Cx,
 	Picture			= "toilet_bomb.png",
 	displayName		= toilet_bomb.user_name,
