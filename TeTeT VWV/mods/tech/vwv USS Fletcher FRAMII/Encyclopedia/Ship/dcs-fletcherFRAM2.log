@@ -1,0 +1,846 @@
+=== Log opened UTC 2024-03-30 21:27:39
+2024-03-30 21:27:39.327 INFO    EDCORE (Main): system  affinity mask: 11111111111111111111111111111111
+2024-03-30 21:27:39.327 INFO    EDCORE (Main): process affinity mask: 11111111111111111111111111111111
+2024-03-30 21:27:39.338 WARNING EDCORE (Main): hypervisor is active
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): CPU: 13th Gen Intel(R) Core(TM) i9-13900KF [1x L3 caches]
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): CPU has uniform cache size 36 MB (per cache)
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): CPU cores have different efficiency classes: [0-1]
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {4, 5}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {6, 7}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {0, 1}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {2, 3}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {8, 9}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {10, 11}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {12, 13}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 1: {14, 15}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {16}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {17}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {18}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {19}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {20}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {21}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {22}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {23}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {24}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {25}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {26}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {27}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {28}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {29}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {30}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with efficiency class 0: {31}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): CPU cores have different performance classes: [0-2]
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 2: {4, 5}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 2: {6, 7}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 1: {0, 1}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 1: {2, 3}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 1: {8, 9}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 1: {10, 11}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 1: {12, 13}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 1: {14, 15}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {16}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {17}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {18}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {19}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {20}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {21}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {22}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {23}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {24}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {25}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {26}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {27}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {28}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {29}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {30}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): logical cores with performance class 0: {31}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): common cores: {8, 9, 10, 11, 12, 13, 14, 15}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): render cores: {4, 5, 6, 7, 0, 1, 2, 3}
+2024-03-30 21:27:39.338 INFO    EDCORE (Main): IO cores: {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}
+2024-03-30 21:27:41.419 INFO    EDCORE (Main): pause10: 0.031461 us (std dev: 0.048955)
+2024-03-30 21:27:41.419 INFO    EDCORE (Main): pause10: 922 cycles (std dev: 1066.4)
+2024-03-30 21:27:41.420 INFO    EDCORE (Main): Created boot pool: n:32
+2024-03-30 21:27:41.422 INFO    APP (Main): Command line: "E:\Eagle Dynamics\DCS World OpenBeta\bin-mt\DCS.exe" 
+2024-03-30 21:27:41.422 INFO    APP (Main): DCS/2.9.3.51704 (x86_64; MT; Windows NT 10.0.22631)
+2024-03-30 21:27:41.422 INFO    APP (Main): Application revision: 231704
+2024-03-30 21:27:41.422 INFO    APP (Main): Renderer revision: 24955
+2024-03-30 21:27:41.422 INFO    APP (Main): Terrain revision: 24991
+2024-03-30 21:27:41.422 INFO    APP (Main): Build number: 73
+2024-03-30 21:27:41.422 INFO    APP (Main): CPU cores: 24, threads: 32, System RAM: 65345 MB, Pagefile: 4096 MB
+2024-03-30 21:27:42.244 INFO    ASYNCNET (42160): Login success.
+2024-03-30 21:27:43.239 INFO    ASYNCNET (42160): Got auth data.
+2024-03-30 21:27:43.412 INFO    APP (Main): Successfully got authorization data.
+2024-03-30 21:27:43.438 INFO    EDCORE (Main): (dDispatcher)enterToState_:0
+2024-03-30 21:27:43.438 INFO    Dispatcher (Main): 2024/3/30 22:27 V1803061700
+2024-03-30 21:27:43.438 INFO    ASYNCNET (Main): ProtocolVersion: 350
+2024-03-30 21:27:43.442 INFO    ED_SOUND (Main): Using driver: wasapi
+2024-03-30 21:27:43.442 INFO    ED_SOUND (Main): Found 4 available audio device(s):
+2024-03-30 21:27:43.442 INFO    ED_SOUND (Main):   0: ID: "{0.0.0.00000000}.{34b12082-5026-44c2-8856-565b2ea90a47}", Name: "LS27A600U (NVIDIA High Definition Audio)"
+2024-03-30 21:27:43.442 INFO    ED_SOUND (Main):   1: ID: "{0.0.0.00000000}.{6ad2d656-544f-47a5-9627-02dfdabddb4a}", Name: "Digital Audio (S/PDIF) (High Definition Audio Device)"
+2024-03-30 21:27:43.442 INFO    ED_SOUND (Main):   2: ID: "{0.0.0.00000000}.{e602e75b-245f-4c8a-a1ec-80fa7a541e68}", Name: "Lautsprecher (High Definition Audio Device)"
+2024-03-30 21:27:43.442 INFO    ED_SOUND (Main):   3: ID: "{0.0.0.00000000}.{e8bc7cea-68b3-4091-8629-809b3f6cff69}", Name: "LC32G7xT (NVIDIA High Definition Audio)"
+2024-03-30 21:27:43.548 INFO    SOUND (Main): Added sound path: Sounds
+2024-03-30 21:27:43.569 INFO    SOUNDER (Main): Loaded 214 packed sounders.
+2024-03-30 21:27:43.569 INFO    Dispatcher (Main): InitLow
+2024-03-30 21:27:43.881 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/bin-mt/CockpitBase.dll
+2024-03-30 21:27:43.887 INFO    Dispatcher (Main): Loading installed modules...
+2024-03-30 21:27:43.982 INFO    SECURITYCONTROL (Main): Loaded coremods/tech/heavymetalcore/dcs_module.pak.crypt
+2024-03-30 21:27:44.434 INFO    SECURITYCONTROL (Main): Loaded mods/tech/wwii units/dcs_module.pak.crypt
+2024-03-30 21:27:47.172 INFO    Scripting (Main): OBSOLETE mount_vfs_sound_path() used in ./CoreMods/aircraft/AJS37/entry.lua
+2024-03-30 21:27:47.347 INFO    Scripting (Main): OBSOLETE mount_vfs_sound_path() used in ./Mods/aircraft/AJS37/entry.lua
+2024-03-30 21:27:47.350 INFO    Scripting (Main): OBSOLETE mount_vfs_sound_path() used in ./Mods/aircraft/F14/entry.lua
+2024-03-30 21:27:47.384 INFO    Scripting (Main): PLUGINS START-------------------------------------------------
+2024-03-30 21:27:47.409 INFO    SOUND (Main): Added sound path: ./CoreMods/tech/Animals/Sounds
+2024-03-30 21:27:47.413 INFO    SOUND (Main): Added sound path: ./CoreMods/tech/HeavyMetalCore/Sounds
+2024-03-30 21:27:47.413 INFO    SOUNDER (Main): Loaded 7 packed sounders.
+2024-03-30 21:27:47.428 INFO    SOUND (Main): Added sound path: ./CoreMods/tech/Kuznecow/Sounds
+2024-03-30 21:27:47.428 INFO    SOUNDER (Main): Loaded 1 packed sounders.
+2024-03-30 21:27:47.436 INFO    SOUND (Main): Added sound path: ./CoreMods/tech/SouthAtlanticAssets/Sounds
+2024-03-30 21:27:47.437 INFO    SOUNDER (Main): Loaded 14 packed sounders.
+2024-03-30 21:27:47.441 WARNING EDCORE (Main): Source coremods/tech/southatlanticassets/textures/navy/ara_vdm/ara_vdm.zip is already mounted to the same mount /textures/.
+2024-03-30 21:27:47.451 INFO    SOUND (Main): Added sound path: ./CoreMods/tech/TechWeaponPack/Sounds
+2024-03-30 21:27:47.452 INFO    SOUNDER (Main): Loaded 74 packed sounders.
+2024-03-30 21:27:47.539 INFO    SOUND (Main): Added sound path: ./CoreMods/tech/USS_Nimitz/Sounds
+2024-03-30 21:27:47.540 INFO    SOUNDER (Main): Loaded 6 packed sounders.
+2024-03-30 21:27:47.581 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/AJS37/Sounds
+2024-03-30 21:27:47.593 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/AV8BNA/Sounds
+2024-03-30 21:27:47.596 INFO    SOUNDER (Main): Loaded 1 sounders.
+2024-03-30 21:27:47.596 WARNING EDCORE (Main): Source coremods/aircraft/av8bna/shapes is already mounted to the same mount /models/.
+2024-03-30 21:27:47.638 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/C-101/Sounds
+2024-03-30 21:27:47.654 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/ChinaAssetPack/Sounds
+2024-03-30 21:27:47.659 INFO    SOUNDER (Main): Loaded 14 sounders.
+2024-03-30 21:27:47.665 WARNING EDCORE (Main): Source coremods/aircraft/chinaassetpack/textures/vehicles/hq7 is already mounted to the same mount /textures/.
+2024-03-30 21:27:47.693 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/Christen Eagle II/Sounds
+2024-03-30 21:27:47.704 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/F-15E/Sounds
+2024-03-30 21:27:47.751 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/F14/Sounds
+2024-03-30 21:27:47.756 INFO    SOUNDER (Main): Loaded 1 sounders.
+2024-03-30 21:27:47.810 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/I-16/Sounds
+2024-03-30 21:27:47.820 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/Ka-50/Sounds
+2024-03-30 21:27:47.848 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/M-2000C/Sounds
+2024-03-30 21:27:47.890 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/MiG-21bis/Sounds
+2024-03-30 21:27:47.915 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/Mirage-F1/Sounds
+2024-03-30 21:27:47.958 INFO    SOUND (Main): Added sound path: ./CoreMods/aircraft/SA342/Sounds
+2024-03-30 21:27:47.989 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_R2}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:47.989 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_L2}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:47.989 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_R1}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:47.989 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_L1}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:47.990 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_R2_M}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:47.990 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_L2_M}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:47.990 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_R1_M}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:47.990 ERROR   Scripting (Main): declare loadout fail, duplicate not allowed: "{HOT3_L1_M}" from "./CoreMods/aircraft/SA342/SA342_Weapons.lua", original located here "./CoreMods/aircraft/AircraftWeaponPack/HOT.lua"
+2024-03-30 21:27:48.014 INFO    SOUND (Main): Added sound path: ./CoreMods/services/VoiceChat/Sounds
+2024-03-30 21:27:48.014 INFO    Scripting (Main): plugin: SKIPPED 'jsAvionics': disabled by user
+2024-03-30 21:27:48.018 INFO    SOUND (Main): Added sound path: ./Mods/tech/CombinedArms/Sounds
+2024-03-30 21:27:48.029 INFO    SOUND (Main): Added sound path: ./Mods/tech/WWII Units/Sounds
+2024-03-30 21:27:48.031 INFO    SOUNDER (Main): Loaded 79 packed sounders.
+2024-03-30 21:27:48.047 WARNING EDCORE (Main): Source mods/tech/wwii units/textures/ju-88 is already mounted to the same mount /textures/.
+2024-03-30 21:27:48.125 INFO    Scripting (Main): plugin: SKIPPED 'A-10A by Eagle Dynamics': disabled by 'Flaming Cliffs by Eagle Dynamics'
+2024-03-30 21:27:48.129 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/A-10C/Sounds
+2024-03-30 21:27:48.134 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/A-10C_2/Sounds
+2024-03-30 21:27:48.142 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/AH-64D/Sounds
+2024-03-30 21:27:48.152 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/AJS37/Sounds
+2024-03-30 21:27:48.166 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/AV8BNA/Sounds
+2024-03-30 21:27:48.176 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Bf-109K-4/Sounds
+2024-03-30 21:27:48.180 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/C-101/Sounds
+2024-03-30 21:27:48.196 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/F-15E/Sounds
+2024-03-30 21:27:48.203 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/F-16C/Sounds
+2024-03-30 21:27:48.208 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/F-5E/Sounds
+2024-03-30 21:27:48.215 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/F-86/Sounds
+2024-03-30 21:27:48.295 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/F14/Sounds
+2024-03-30 21:27:48.673 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/FA-18C/Sounds
+2024-03-30 21:27:48.679 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/FW-190A8/Sounds
+2024-03-30 21:27:48.685 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/FW-190D9/Sounds
+2024-03-30 21:27:48.690 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/I-16/Sounds
+2024-03-30 21:27:48.702 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/JF-17/Sounds
+2024-03-30 21:27:48.723 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Ka-50/Sounds
+2024-03-30 21:27:48.741 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Ka-50_3/Sounds
+2024-03-30 21:27:48.746 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/L-39C/Sounds
+2024-03-30 21:27:48.754 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/M-2000C/Sounds
+2024-03-30 21:27:48.771 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/MB-339/Sounds
+2024-03-30 21:27:48.791 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/MIG-21bis/Sounds
+2024-03-30 21:27:48.814 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Mi-24P/Sounds
+2024-03-30 21:27:48.823 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Mi-8MTV2/Sounds
+2024-03-30 21:27:48.832 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/MiG-15bis/Sounds
+2024-03-30 21:27:48.840 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/MiG-19P/Sounds
+2024-03-30 21:27:48.852 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Mirage-F1/Sounds
+2024-03-30 21:27:48.866 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/MosquitoFBMkVI/Sounds
+2024-03-30 21:27:48.874 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/P-47D-30/Sounds
+2024-03-30 21:27:48.884 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/SA342/Sounds
+2024-03-30 21:27:48.897 INFO    SOUNDER (Main): Loaded 1 sounders.
+2024-03-30 21:27:48.902 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/SpitfireLFMkIX/Sounds
+2024-03-30 21:27:48.907 INFO    Scripting (Main): plugin: SKIPPED 'Su-25A by Eagle Dynamics': disabled by 'Flaming Cliffs by Eagle Dynamics'
+2024-03-30 21:27:48.914 INFO    Scripting (Main): plugin: SKIPPED 'Su-33 Flanker by Eagle Dynamics': disabled by 'Flaming Cliffs by Eagle Dynamics'
+2024-03-30 21:27:48.921 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Uh-1H/Sounds
+2024-03-30 21:27:48.926 INFO    SOUND (Main): Added sound path: ./Mods/aircraft/Yak-52/Sounds
+2024-03-30 21:27:48.939 INFO    SOUND (Main): Added sound path: ./Mods/terrains/MarianaIslands/Sounds
+2024-03-30 21:27:48.942 INFO    SOUND (Main): Added sound path: ./Mods/terrains/Nevada/Sounds
+2024-03-30 21:27:48.945 INFO    SOUND (Main): Added sound path: ./Mods/terrains/Normandy/Sounds
+2024-03-30 21:27:48.949 INFO    SOUND (Main): Added sound path: ./Mods/terrains/PersianGulf/Sounds
+2024-03-30 21:27:48.959 INFO    SOUND (Main): Added sound path: ./Mods/terrains/TheChannel/Sounds
+2024-03-30 21:27:49.044 INFO    Scripting (Main): plugin: SKIPPED 'Christen Eagle II by Magnitude 3 LLC': disabled by user
+2024-03-30 21:27:49.044 INFO    Scripting (Main): plugin: SKIPPED 'F-15C': disabled by user
+2024-03-30 21:27:49.044 INFO    Scripting (Main): plugin: SKIPPED 'MiG-29 Fulcrum by Eagle Dynamics': disabled by user
+2024-03-30 21:27:49.044 INFO    Scripting (Main): plugin: SKIPPED 'Su-27 Flanker by Eagle Dynamics': disabled by user
+2024-03-30 21:27:49.053 INFO    Scripting (Main): PLUGINS DONE--------------------------------------------------
+2024-03-30 21:27:49.533 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/tech/SouthAtlanticAssets/bin/SouthAtlantic.dll
+2024-03-30 21:27:49.542 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/AV8BNA/bin/AV8B_AI.dll
+2024-03-30 21:27:49.551 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/C-101/bin/C101Core.dll
+2024-03-30 21:27:49.562 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/ChinaAssetPack/bin/CAP_AI.dll
+2024-03-30 21:27:49.568 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/ChinaAssetPack/bin/JF-17_AI.dll
+2024-03-30 21:27:49.578 INFO    CE2_AI (Main): Loading CE AI
+2024-03-30 21:27:49.578 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/Christen Eagle II/bin/CE2_AI.dll
+2024-03-30 21:27:49.587 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/F-15E/bin/F15E_AI.dll
+2024-03-30 21:27:49.596 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/F14/bin/F14-AI.dll
+2024-03-30 21:27:49.605 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/M-2000C/bin/M2KC_AI.dll
+2024-03-30 21:27:49.615 INFO    MiG21_AI (Main): Loading Mig21 AI
+2024-03-30 21:27:49.615 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/MiG-21bis/bin/MiG21_AI.dll
+2024-03-30 21:27:49.625 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/aircraft/Mirage-F1/bin/MirageF1Core.dll
+2024-03-30 21:27:49.639 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/services/CaptoGlove/bin/edCaptoGlove.dll
+2024-03-30 21:27:49.650 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/services/LeapMotion/bin/edLeapMotion.dll
+2024-03-30 21:27:49.664 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/services/SensoryxVRFree/bin/edSensoryxVRFree.dll
+2024-03-30 21:27:49.675 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/CoreMods/services/VoiceChat/bin/VoiceChat.dll
+2024-03-30 21:27:50.555 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/Mods/tech/CombinedArms/bin/GroundCockpitBase.dll
+2024-03-30 21:27:51.772 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/Mods/tech/CombinedArms/bin/CombinedArms.dll
+2024-03-30 21:27:52.911 INFO    EDCORE (Main): Loaded E:/Eagle Dynamics/DCS World OpenBeta/Mods/tech/Supercarrier/bin/edSupercarrier.dll
+2024-03-30 21:27:53.025 INFO    EDCORE (Main): Loaded C:/Users/spindler/Saved Games/DCS.openbeta/Mods/services/DCS-SRS/bin/srs.dll
+2024-03-30 21:27:53.027 INFO    SOUND (Main): Added sound path: C:\Users\spindler\Saved Games\DCS.openbeta\Sounds
+2024-03-30 21:27:53.076 INFO    APP (Main): options.graphics =
+{
+	['AA'] = 'OFF';
+	['forestDetailsFactor'] = 1;
+	['rainDroplets'] = false;
+	['LensEffects'] = 0;
+	['box_mouse_cursor'] = false;
+	['anisotropy'] = 4;
+	['water'] = 2;
+	['motionBlurAmount'] = 1;
+	['BlurFlatShadows'] = 0;
+	['outputGamma'] = 2.2;
+	['aspect'] = 1.7777777777778;
+	['lights'] = 2;
+	['LODmult'] = 1;
+	['MSAA'] = 1;
+	['messagesFontScale'] = 1;
+	['width'] = 2560;
+	['visibRange'] = 'High';
+	['DLSS_PerfQuality'] = 1;
+	['useDeferredShading'] = 1;
+	['clutterMaxDistance'] = 750;
+	['textures'] = 2;
+	['cockpitGI'] = 0;
+	['terrainTextures'] = 'max';
+	['height'] = 1440;
+	['multiMonitorSetup'] = '1camera';
+	['shadows'] = 4;
+	['defaultFOV'] = 78;
+	['shadowTree'] = false;
+	['chimneySmokeDensity'] = 1;
+	['secondaryShadows'] = 0;
+	['SSS'] = 0;
+	['fullScreen'] = false;
+	['preloadRadius'] = 100000;
+	['scaleGui'] = 1;
+	['Scaling'] = 0.66;
+	['DOF'] = 0;
+	['clouds'] = 3;
+	['sceneryDetailsFactor'] = 1;
+	['Upscaling'] = 'OFF';
+	['Sharpening'] = 0;
+	['motionBlur'] = 0;
+	['ColorGradingLUT'] = 0;
+	['SSLR'] = 0;
+	['effects'] = 3;
+	['SSAO'] = 0;
+	['maxFPS'] = 180;
+	['sync'] = false;
+	['heatBlr'] = 2;
+	['forestDistanceFactor'] = 0.5;
+	['flatTerrainShadows'] = 2;
+	['civTraffic'] = 'low';
+	['ScreenshotExt'] = 'jpg';
+};
+2024-03-30 21:27:53.077 INFO    VISUALIZER (Main): render thread initialization...
+2024-03-30 21:27:53.083 INFO    GRAPHICSVISTA (27132): renderer: 'dx11backend.dll'
+2024-03-30 21:27:53.124 INFO    DX11BACKEND (27132): DX11Renderer initialization (w:2560 h:1440 fullscrn:0 vsync:0 adapter:0 monitor:0 shaderErrors:1)
+2024-03-30 21:27:53.310 INFO    DX11BACKEND (27132): Driver Concurrent Creates - 1
+2024-03-30 21:27:53.310 INFO    DX11BACKEND (27132): Driver Command Lists - 1
+2024-03-30 21:27:53.321 INFO    DX11BACKEND (27132): NVIDIA API init OK
+2024-03-30 21:27:53.322 INFO    DX11BACKEND (27132): NVIDIA Display Driver Version 55186.r550_00
+2024-03-30 21:27:53.322 INFO    DX11BACKEND (27132): GPU count:1
+2024-03-30 21:27:53.362 INFO    DX11BACKEND (27132): commonPool: 48-128, cbPool: 4-14
+2024-03-30 21:27:53.362 INFO    DX11BACKEND (27132): samplerPool: 5-16
+2024-03-30 21:27:53.893 INFO    DX11BACKEND (27132): NVIDIA DLSS Minimum driver version was reported as : 445.0
+2024-03-30 21:27:53.894 INFO    METASHADER (27132): Init filesystem: E
+2024-03-30 21:27:53.903 INFO    DX11BACKEND (27132): DX11ShaderBinaries::loadCache Bazar/shaders/fxo/fxo
+2024-03-30 21:27:56.316 INFO    DX11BACKEND (27132): DX11ShaderBinaries::loadCache done. Loaded 2428/2429.
+2024-03-30 21:27:56.325 INFO    DX11BACKEND (27132): DX11ShaderBinaries::loadCache C:\Users\spindler\Saved Games\DCS.openbeta\fxo
+2024-03-30 21:27:56.351 INFO    DX11BACKEND (27132): DX11ShaderBinaries::loadCache done. Loaded 153/153.
+2024-03-30 21:27:56.374 INFO    VISUALIZER (27132): SceneManager initialization
+2024-03-30 21:27:56.469 INFO    VISUALIZER (27132): DCSScene initialized
+2024-03-30 21:27:56.739 ERROR_ONCE DX11BACKEND (27132): render target 'mainDepthBuffer' not found
+2024-03-30 21:27:56.807 ERROR_ONCE DX11BACKEND (27132): render target 'uiTargetColor' not found
+2024-03-30 21:27:56.807 ERROR_ONCE DX11BACKEND (27132): render target 'uiTargetDepth' not found
+2024-03-30 21:27:56.807 INFO    VISUALIZER (27132): DCSSceneRenderer initialized
+2024-03-30 21:27:56.808 INFO    VISUALIZER (27132): SceneManager: render pool size:6
+2024-03-30 21:27:56.870 ERROR_ONCE DX11BACKEND (37384): texture 'lightning.dds' not found. Asked from ''
+2024-03-30 21:27:56.893 INFO    VISUALIZER (Main): render thread is initialized
+2024-03-30 21:27:56.914 INFO    INPUT (Main): created [Keyboard]
+2024-03-30 21:27:56.917 INFO    INPUT (Main): created [R-VPC Stick WarBRD] with full id [R-VPC Stick WarBRD {7DFB59B0-8944-11ee-8005-444553540000}], ForceFeedBack: no
+2024-03-30 21:27:56.935 INFO    INPUT (Main): created [L-VPC Throttle MT-50CM3] with full id [L-VPC Throttle MT-50CM3 {7DFDF1C0-8944-11ee-800D-444553540000}], ForceFeedBack: no
+2024-03-30 21:27:56.945 INFO    INPUT (Main): created [MFG Crosswind V2] with full id [MFG Crosswind V2 {7DFFC680-8944-11ee-8012-444553540000}], ForceFeedBack: no
+2024-03-30 21:27:56.947 INFO    INPUT (Main): created [Controller (XBOX 360 For Windows)] with full id [Controller (XBOX 360 For Windows) {7E003BB0-8944-11ee-8013-444553540000}], ForceFeedBack: no
+2024-03-30 21:27:56.956 INFO    INPUT (Main): created [Mouse]
+2024-03-30 21:27:56.973 INFO    ED_SOUND (Main): Opening default audio device.
+2024-03-30 21:27:56.974 INFO    ED_SOUND (Main): Speaker layout: auto
+2024-03-30 21:27:56.976 INFO    ED_SOUND (Main): Driver reports 2 channels with mask 0x3
+2024-03-30 21:27:56.976 INFO    ED_SOUND (Main): Using 2 channels at 48000 Hz
+2024-03-30 21:27:56.976 INFO    ED_SOUND (Main): Channel layout: Headphones/Stereo
+2024-03-30 21:27:56.983 ERROR   EFFECTS2 (27132): OParticleSystem: error reading 'liquidAnimationBaking' emitter in 'Config/Effects/ParticleSystem2/liquidLeak.lua'
+2024-03-30 21:27:56.983 ERROR_ONCE DX11BACKEND (17240): texture 'LiquidAnimationNormals' not found. Asked from ''
+2024-03-30 21:27:56.983 ERROR_ONCE DX11BACKEND (14560): texture 'LiquidAnimationAlphas' not found. Asked from ''
+2024-03-30 21:27:56.984 INFO    ED_SOUND (Main): Opening default audio device.
+2024-03-30 21:27:56.985 INFO    ED_SOUND (Main): Speaker layout: forced_stereo
+2024-03-30 21:27:56.985 INFO    ED_SOUND (Main): Driver reports 2 channels with mask 0x3
+2024-03-30 21:27:56.985 INFO    ED_SOUND (Main): Using 2 channels at 48000 Hz
+2024-03-30 21:27:56.985 INFO    ED_SOUND (Main): Channel layout: Headphones/Stereo
+2024-03-30 21:27:57.044 INFO    APP (Main): gDescription: "NVIDIA GeForce RTX 4080" gVendorId: 4318 gDeviceId: 9988 gMemory: 16050 MB
+2024-03-30 21:27:58.356 ERROR   WORLDGENERAL (Main): Error: Unit [IL-76MD]: Cell "TAIL" is linked to self.
+2024-03-30 21:27:58.356 ERROR   WORLDGENERAL (Main): Error: Unit [IL-76MD]: Cell "KEEL_IN" link to cell "TAIL" produces a link loop.
+2024-03-30 21:27:58.356 ERROR   WORLDGENERAL (Main): Error: Unit [IL-76MD]: Cell "KEEL_IN" is linked to self.
+2024-03-30 21:27:58.364 ERROR   WORLDGENERAL (Main): AJS37 AI by Heatblur Simulations: Unexpected fires_pos index  12
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [IL-78M]: Cell "TAIL" is linked to self.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [IL-78M]: Cell "KEEL_IN" link to cell "TAIL" produces a link loop.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [IL-78M]: Cell "KEEL_IN" is linked to self.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [Hawk]: Cell "COCKPIT" is linked to self.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [Hawk]: Cell "CABIN_BOTTOM" link to cell "COCKPIT" produces a link loop.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [Hawk]: Cell "CABIN_BOTTOM" is linked to self.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [Hawk]: Cell "CABIN_LEFT_SIDE" is linked to self.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [Hawk]: Cell "CABIN_RIGHT_SIDE" link to cell "CABIN_LEFT_SIDE" produces a link loop.
+2024-03-30 21:27:58.365 ERROR   WORLDGENERAL (Main): Error: Unit [Hawk]: Cell "CABIN_RIGHT_SIDE" is linked to self.
+2024-03-30 21:27:58.387 ERROR   WORLDGENERAL (Main): Error: Unit [A-50]: Cell "TAIL" is linked to self.
+2024-03-30 21:27:58.387 ERROR   WORLDGENERAL (Main): Error: Unit [A-50]: Cell "KEEL_IN" link to cell "TAIL" produces a link loop.
+2024-03-30 21:27:58.387 ERROR   WORLDGENERAL (Main): Error: Unit [A-50]: Cell "KEEL_IN" is linked to self.
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "MK_82*28"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{F4-2-AIM9P5}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{MAK79_MK20 1R}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "GBU-31*8"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{X-25ML}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{D8F2C90B-887B-4B9E-9FE2-996BC9E9AF0A}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_2*GBU-54_SIDE_RIGHT}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{3468C652-E830-4E73-AFA9-B5F260AB7C3D}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{FAB_500_DUAL_R}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{F4-2-AIM9B}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_2*GBU-54_LEFT}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{FAB_250_DUAL_R}"
+2024-03-30 21:27:58.388 ERROR   wInfo (Main): negative drag of payload "{MAK79_BDU45B 3L}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{BRU41_6X_MK-82}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_2*GBU-38_SIDE_RIGHT}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{X-25MR}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{5F1C54C0-0ABD-4868-A883-B52FF9FCB422}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{HSAB-6xAGM-84}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{292960BB-6518-41AC-BADA-210D65D5073C}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{773675AB-7C29-422f-AFD8-32844A7B7F17}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{HOT3_L2_M}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{BRU-42_2*GBU-38_RIGHT}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_3*GBU-38}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{2234F529-1D57-4496-8BB0-0150F9BDBBD3}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{BRU-42_2*GBU-38_LEFT}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{29A828E2-C6BB-11d8-9897-000476191836}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{BRU-32 BDU-45}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{MAK79_BDU45B 3R}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{45447F82-01B5-4029-A572-9AAD28AF0275}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "LAU-127_AIM-9X"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{FAB-500-TA}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{CLB4_BR250}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{79D73885-0801-45a9-917F-C90FE1CE3DFC}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{96A7F676-F956-404A-AD04-F33FB2C74884}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{HOT3_R2}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "{601C99F7-9AF3-4ed7-A565-F8B8EC0D7AAC}"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "LAU-127_CATM-9M"
+2024-03-30 21:27:58.389 ERROR   wInfo (Main): negative drag of payload "CBU87*10"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{BRU-32 GBU-10}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{BRU-32 MK-82}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{FAB-250-M54}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{BKF_PTAB2_5KO}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{B5CA9846-776E-4230-B4FD-8BCC9BFB1676}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{FAB-250-M54-TU}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{4D459A95-59C0-462F-8A57-34E80697F38B}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{6DADF342-D4BA-4D8A-B081-BA928C4AF86D}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{8_x_AGM_86C}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{RBK_500_PTAB105_DUAL_R}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_2*GBU-54_SIDE_LEFT}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{ODAB-500PM}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{3EA17AB0-A805-4D9E-8732-4CE00CB00F17}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{07BE2D19-0E48-4B0B-91DA-5F6C8F9E3C75}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{RN-24}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{RN-28}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{IAB-500}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{FAB-500-M54-TU}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{FAB_500_DUAL_L}"
+2024-03-30 21:27:58.390 ERROR   wInfo (Main): negative drag of payload "{X-29L}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{40AB87E8-BEFB-4D85-90D9-B2753ACF9514}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{E86C5AA5-6D49-4F00-AD2E-79A62D6DDE26}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{MAK79_MK20 1L}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{MAK79_MK20 2R}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{5A1AC2B4-CA4B-4D09-A1AF-AC52FBC4B60B}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{9DDF5297-94B9-42FC-A45E-6E316121CD85}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "CBU97*10"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{MAK79_BDU45B 4}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BF83E8FD-E7A2-40D2-9608-42E13AFE2193}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-32 MK-82AIR}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{FE382A68-8620-4AC0-BDF5-709BFE3977D7}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BETAB-500S}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{RBK_500_PTAB105_DUAL_L}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-32 GBU-24}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-32 GBU-16}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-32 BDU-45B}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-32 MK-83}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-32 MK-84}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "B-1B_Mk-84*8"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{C535596E-F7D2-4301-8BB4-B1658BB87ED7}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_3*GBU-54}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{8DCAF3A3-7FCF-41B8-BB88-58DEDA878EDE}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{BRU-32 MK-20}"
+2024-03-30 21:27:58.391 ERROR   wInfo (Main): negative drag of payload "{FAB-500-M54}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{RBK_250_PTAB25M_DUAL_R}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "GBU-38*16"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "GBU-31V3B*8"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{FAB_250_DUAL_L}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{MAK79_MK20 2L}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{D8F2C90B-887B-4B9E-9FE2-996BC9E9AF03}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{FAB-500-SL}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "DIS_LS_6_250_DUAL_R"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_2*GBU-54_RIGHT}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "DIS_LS_6_250_DUAL_L"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{X-25MPU}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{752AF1D2-EBCC-4bd7-A1E7-2357F5601C70}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{X-31P}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{X-29T}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{RBK_250_PTAB25M_DUAL_L}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{AABA1A14-78A1-4E85-94DD-463CF75BD9E4}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{F503C276-FE15-4C54-B310-17B50B735A84}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{4D13E282-DF46-4B23-864A-A9423DFDE504}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{HOT3_L2}"
+2024-03-30 21:27:58.392 ERROR   wInfo (Main): negative drag of payload "{7C5F0F5F-0A0B-46E8-937C-8922303E39A8}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{BRU-32 GBU-12}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{BETAB-500M}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "LAU-127_AIM-9M"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "LAU-127_AIM-9L"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{B4FC81C9-B861-4E87-BBDC-A1158E648EBF}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{BRU-42_3*GBU-38}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{D4A8D9B9-5C45-42e7-BBD2-0E54F8308432}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{HOT3_R2_M}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{X-31A}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{0180F983-C14A-11d8-9897-000476191836}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{Kh-25MP}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{3E6B632D-65EB-44D2-9501-1C2D04515405}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{96A7F676-F956-404A-AD04-F33FB2C74881}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{BRU-70A_2*GBU-38_SIDE_LEFT}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{F4-2-AIM9L}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{CLB4_BLU107}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{4D13E282-DF46-4B23-864A-A9423DFDE50A}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{BKF_AO2_5RT}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{E1AAE713-5FC3-4CAA-9FF5-3FDCFB899E33}"
+2024-03-30 21:27:58.393 ERROR   wInfo (Main): negative drag of payload "{BRU-32 MK-82SE}"
+2024-03-30 21:27:58.400 INFO    DX11BACKEND (Main): DX11ShaderBinaries::loadCache ./Mods/aircraft/F14/fxo
+2024-03-30 21:27:58.401 INFO    DX11BACKEND (Main): DX11ShaderBinaries::loadCache done. Loaded 0/0.
+2024-03-30 21:27:58.439 INFO    EDCORE (Main): (dDispatcher)enterToState_:1
+2024-03-30 21:27:59.799 INFO    UIBASERENDERER (Main): Cannot load font [E:\Eagle Dynamics\DCS World OpenBeta\dxgui\skins\fonts\]!
+2024-03-30 21:27:59.799 INFO    UIBASERENDERER (Main): Cannot create font [E:\Eagle Dynamics\DCS World OpenBeta\dxgui\skins\fonts\] size 0!
+2024-03-30 21:28:00.883 INFO    APP (Main): Loaded E:\Eagle Dynamics\DCS World OpenBeta\Scripts\Hooks\common.lua
+2024-03-30 21:28:00.883 INFO    APP (Main): Loaded E:\Eagle Dynamics\DCS World OpenBeta\Scripts\Hooks\multislot.lua
+2024-03-30 21:28:00.883 INFO    APP (Main): Loaded E:\Eagle Dynamics\DCS World OpenBeta\Scripts\Hooks\voicechat.lua
+2024-03-30 21:28:00.883 INFO    APP (Main): Loaded E:\Eagle Dynamics\DCS World OpenBeta\Scripts\Hooks\webGUI.lua
+2024-03-30 21:28:01.249 INFO    LuaNET (Main): Loading - DCS-SRS GameGUI - Ciribob: 2.1.0.1
+2024-03-30 21:28:01.250 INFO    LuaNET (Main): Loaded - DCS-SRS GameGUI - Ciribob: 2.1.0.1
+2024-03-30 21:28:01.250 INFO    LuaNET (Main): Loading - DCS-SRS Overlay GameGUI - Ciribob: 2.1.0.1 
+2024-03-30 21:28:01.251 INFO    LuaNET (Main): Loaded - DCS-SRS Overlay GameGUI - Ciribob: 2.1.0.1 
+2024-03-30 21:28:01.251 INFO    APP (Main): Loaded C:\Users\spindler\Saved Games\DCS.openbeta\Scripts\Hooks\DCS-SRS-hook.lua
+2024-03-30 21:28:01.251 INFO    OpenKneeboard (Main): Init
+2024-03-30 21:28:01.251 INFO    OpenKneeboard (Main): Loading DLL - search path: C:\Users\spindler\Saved Games\DCS.openbeta\\Scripts\Hooks\?.dll;.\lua-?.dll;.\?.dll;E:\Eagle Dynamics\DCS World OpenBeta\bin-mt\lua-?.dll;E:\Eagle Dynamics\DCS World OpenBeta\bin-mt\?.dll;;.\LuaSocket\?.dll;;C:\Users\spindler\Saved Games\DCS.openbeta\Mods\Services\DCS-SRS\bin\?.dll;;.\LuaSocket\?.dll;
+2024-03-30 21:28:01.252 INFO    OpenKneeboard (Main): DLL Loaded
+2024-03-30 21:28:01.252 INFO    OpenKneeboard (Main): Callbacks installed
+2024-03-30 21:28:01.252 INFO    APP (Main): Loaded C:\Users\spindler\Saved Games\DCS.openbeta\Scripts\Hooks\OpenKneeboardDCSExt.lua
+2024-03-30 21:28:01.253 INFO    LuaNET (Main): [Scratchpad] Loaded ...
+2024-03-30 21:28:01.253 INFO    APP (Main): Loaded C:\Users\spindler\Saved Games\DCS.openbeta\Scripts\Hooks\scratchpad-hook.lua
+2024-03-30 21:28:01.315 INFO    Dispatcher (Main): //=== END OF INIT ======================================//
+2024-03-30 21:28:01.316 INFO    EDCORE (Main): (dDispatcher)enterToState_:2
+2024-03-30 21:28:01.335 INFO    EDCORE (Main): (dDispatcher)enterToState_:3
+2024-03-30 21:28:01.335 INFO    LUA (Main): Lua: States: 638, CPU load: 26.8%, Mem: 352.7 MB
+2024-03-30 21:28:02.693 INFO    ED_SOUND (29552): Using SSSE3 for peak calc.
+2024-03-30 21:28:13.150 INFO    Dispatcher (Main): load terrain from ./Mods/terrains/MarianaIslands\terrain.cfg.lua
+2024-03-30 21:28:13.166 INFO    SECURITYCONTROL (Main): Loaded mods/terrains/marianaislands/terrain.cfg.lua.pak.crypt
+2024-03-30 21:28:13.166 INFO    TERRAIN (Main): lSystem::load(./Mods/terrains/MarianaIslands\terrain.cfg.lua)
+2024-03-30 21:28:13.166 INFO    TERRAIN (Main): lSystem::openSession(./Mods/terrains/MarianaIslands\terrain.cfg.lua)
+2024-03-30 21:28:13.166 INFO    TERRAIN (Main): lSystem::exit()
+2024-03-30 21:28:13.167 INFO    TERRAIN (Main): lSystem::CleanScenes()
+2024-03-30 21:28:13.167 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 13
+2024-03-30 21:28:14.540 INFO    EDTERRAIN4 (Main): TERRAIN_REVISION = 6314
+2024-03-30 21:28:14.546 INFO    EDTERRAIN4 (Main): Open terrain cfg "./Mods/terrains/MarianaIslands\terrain.cfg.lua"
+2024-03-30 21:28:14.546 INFO    EDTERRAIN4 (Main): Build date: 
+2024-03-30 21:28:14.546 INFO    EDTERRAIN4 (Main): Texture quality: "max"
+2024-03-30 21:28:14.546 INFO    EDTERRAIN4 (Main): Language: "en"
+2024-03-30 21:28:14.572 INFO    EDCORE (Main): 0.024 s  terrain references
+2024-03-30 21:28:14.573 INFO    EDCORE (Main): 0.000 s  terrain models
+2024-03-30 21:28:14.573 INFO    EDCORE (Main): 0.000 s  terrain assets
+2024-03-30 21:28:14.716 INFO    EDCORE (Main): 0.140 s  terrain assets2
+2024-03-30 21:28:14.835 INFO    EDCORE (Main): 0.118 s  terrain landfile
+2024-03-30 21:28:14.842 INFO    EDCORE (Main): 0.007 s  terrain surfaceTile
+2024-03-30 21:28:14.843 INFO    EDTERRAIN4 (Main): switchTextures (season=1, minTexture=false)
+2024-03-30 21:28:14.858 ERROR   EDCORE (Main): No suitable driver found to mount mods/terrains/marianaislands/assets/assetstextures.zip
+2024-03-30 21:28:14.883 INFO    EDCORE (Main): 0.039 s  terrain vfstextures
+2024-03-30 21:28:14.898 INFO    EDCORE (Main): 0.014 s  terrain scene
+2024-03-30 21:28:14.899 INFO    EDCORE (Main): 0.000 s  terrain roaddetails
+2024-03-30 21:28:14.899 INFO    EDCORE (Main): 0.000 s  terrain forest
+2024-03-30 21:28:15.047 INFO    EDCORE (Main): 0.147 s  terrain routes
+2024-03-30 21:28:15.048 INFO    EDCORE (Main): 0.000 s  terrain surfacedetails
+2024-03-30 21:28:15.049 INFO    EDCORE (Main): 0.000 s  terrain blocks
+2024-03-30 21:28:15.052 INFO    EDCORE (Main): 0.000 s  terrain references
+2024-03-30 21:28:15.962 INFO    EDCORE (Main): 0.913 s  terrain superficials
+2024-03-30 21:28:15.967 INFO    EDCORE (Main): 0.004 s  terrain lma
+2024-03-30 21:28:15.968 INFO    EDCORE (Main): 0.000 s  terrain vectordatasettings
+2024-03-30 21:28:17.174 INFO    EDCORE (Main): 1.205 s  terrain navgraph
+2024-03-30 21:28:17.175 INFO    EDCORE (Main): 0.000 s  terrain vti
+2024-03-30 21:28:17.519 INFO    EDTERRAIN4 (Main): terrain time: 2.972715 s
+2024-03-30 21:28:17.522 ERROR   EDOBJECTS (Main): Destruction shape not found HOUSEHOLD_BUILDING_CRASH
+2024-03-30 21:28:17.522 INFO    TERRAIN (Main): lSystem::InitScenes()
+2024-03-30 21:28:17.522 INFO    EDTERRAIN4 (Main): ITerrainContextImpl4::setTrafficDecimation(0)
+2024-03-30 21:28:17.523 INFO    EDTERRAIN4 (Main): ITerrainContextImpl4::setDate( day=1, month=6)
+2024-03-30 21:28:17.523 INFO    EDTERRAIN4 (Main): lTerraDispatchImpl::setDate( day=1, month=6)
+2024-03-30 21:28:17.523 INFO    EDTERRAIN4 (Main): ITerrainContextImpl4::setTextureMode(full=1)
+2024-03-30 21:28:17.524 INFO    Dispatcher (Main): load terrain done
+2024-03-30 21:28:17.524 INFO    LUA-TERRAIN (Main): Init done
+2024-03-30 21:28:17.525 INFO    EDTERRAINGRAPHICS41 (27132): ITerrainGraphicsImpl4::openTerrain() START
+2024-03-30 21:28:17.526 INFO    EDTERRAINGRAPHICS41 (27132): loading terrain options: Config/terrain/terrainoptions41.lua
+2024-03-30 21:28:17.526 INFO    EDTERRAINGRAPHICS41 (27132): loading terrain shading options: ./Mods/terrains/MarianaIslands/shadingOptions.lua
+2024-03-30 21:28:17.526 INFO    METASHADER (27132): MetaShaderCache2: [124] from ./Mods/terrains/MarianaIslands/misc/metacache/base.lua
+2024-03-30 21:28:17.611 INFO    METASHADER (27132): loaded [124/124]
+2024-03-30 21:28:17.616 WARNING EDTERRAINGRAPHICS41 (27132): failed to open "surfaceDetailsHints" section in terrain config
+2024-03-30 21:28:17.620 ERROR_ONCE DX11BACKEND (9852): texture 'lightPalette.tif' not found. Asked from ''
+2024-03-30 21:28:18.711 ERROR_ONCE DX11BACKEND (10892): texture 'terrainPalette.tif' not found. Asked from ''
+2024-03-30 21:28:18.991 INFO    EDCORE (27132): 1.355 s  Precompile metashaders
+2024-03-30 21:28:18.992 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[5]*1536
+2024-03-30 21:28:19.000 INFO    EDTERRAINGRAPHICS41 (27132): 0.008035s Loaded reference file "airfieldslights" buffers: 6
+2024-03-30 21:28:19.000 INFO    EDCORE (27132): 0.008 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.003 INFO    EDTERRAINGRAPHICS41 (27132): 0.002382s Loaded reference file "airfieldslightseffects" buffers: 0
+2024-03-30 21:28:19.003 INFO    EDCORE (27132): 0.002 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.005 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[1]*1536
+2024-03-30 21:28:19.006 INFO    EDTERRAINGRAPHICS41 (27132): 0.001225s Loaded reference file "airfieldstabs" buffers: 1
+2024-03-30 21:28:19.006 INFO    EDCORE (27132): 0.001 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.011 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[182]*1536
+2024-03-30 21:28:19.040 INFO    EDTERRAINGRAPHICS41 (27132): 0.030799s Loaded reference file "blockobjects" buffers: 11
+2024-03-30 21:28:19.040 INFO    EDCORE (27132): 0.031 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.042 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[7]*1536
+2024-03-30 21:28:19.044 INFO    EDTERRAINGRAPHICS41 (27132): 0.003289s Loaded reference file "bridges" buffers: 3
+2024-03-30 21:28:19.044 INFO    EDCORE (27132): 0.003 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.046 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[30]*1536
+2024-03-30 21:28:19.050 INFO    EDTERRAINGRAPHICS41 (27132): 0.004574s Loaded reference file "communication" buffers: 6
+2024-03-30 21:28:19.050 INFO    EDCORE (27132): 0.005 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.052 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[40]*1536
+2024-03-30 21:28:19.056 INFO    EDTERRAINGRAPHICS41 (27132): 0.005425s Loaded reference file "destructiondetails" buffers: 5
+2024-03-30 21:28:19.056 INFO    EDCORE (27132): 0.005 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.059 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[157]*1536
+2024-03-30 21:28:19.071 INFO    EDTERRAINGRAPHICS41 (27132): 0.014274s Loaded reference file "destructionmodels" buffers: 13
+2024-03-30 21:28:19.071 INFO    EDCORE (27132): 0.014 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.073 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[85]*1536
+2024-03-30 21:28:19.087 INFO    EDTERRAINGRAPHICS41 (27132): 0.014951s Loaded reference file "environment" buffers: 11
+2024-03-30 21:28:19.087 INFO    EDCORE (27132): 0.015 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.089 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[40]*1536
+2024-03-30 21:28:19.095 INFO    EDTERRAINGRAPHICS41 (27132): 0.006748s Loaded reference file "housedetails" buffers: 14
+2024-03-30 21:28:19.095 INFO    EDCORE (27132): 0.007 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.097 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[22]*1536
+2024-03-30 21:28:19.102 INFO    EDTERRAINGRAPHICS41 (27132): 0.006300s Loaded reference file "illumination" buffers: 8
+2024-03-30 21:28:19.102 INFO    EDCORE (27132): 0.006 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.105 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[157]*1536
+2024-03-30 21:28:19.112 INFO    EDTERRAINGRAPHICS41 (27132): 0.009185s Loaded reference file "industrial" buffers: 8
+2024-03-30 21:28:19.112 INFO    EDCORE (27132): 0.009 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.113 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[1]*1536
+2024-03-30 21:28:19.126 INFO    EDTERRAINGRAPHICS41 (27132): 0.013291s Loaded reference file "misc" buffers: 0
+2024-03-30 21:28:19.126 INFO    EDCORE (27132): 0.013 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.128 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[5]*1536
+2024-03-30 21:28:19.131 INFO    EDTERRAINGRAPHICS41 (27132): 0.003701s Loaded reference file "roadsideobjects" buffers: 2
+2024-03-30 21:28:19.131 INFO    EDCORE (27132): 0.004 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.133 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[13]*1536
+2024-03-30 21:28:19.137 INFO    EDTERRAINGRAPHICS41 (27132): 0.004821s Loaded reference file "stones" buffers: 7
+2024-03-30 21:28:19.137 INFO    EDCORE (27132): 0.005 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.141 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[207]*1536
+2024-03-30 21:28:19.154 INFO    EDTERRAINGRAPHICS41 (27132): 0.016502s Loaded reference file "unique_guam" buffers: 14
+2024-03-30 21:28:19.154 INFO    EDCORE (27132): 0.017 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.156 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[33]*1536
+2024-03-30 21:28:19.161 INFO    EDTERRAINGRAPHICS41 (27132): 0.005247s Loaded reference file "unique_rota" buffers: 7
+2024-03-30 21:28:19.161 INFO    EDCORE (27132): 0.005 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.163 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[53]*1536
+2024-03-30 21:28:19.170 INFO    EDTERRAINGRAPHICS41 (27132): 0.008586s Loaded reference file "unique_saipan" buffers: 10
+2024-03-30 21:28:19.170 INFO    EDCORE (27132): 0.009 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.173 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[14]*1536
+2024-03-30 21:28:19.193 INFO    EDTERRAINGRAPHICS41 (27132): 0.020822s Loaded reference file "unique_tinian" buffers: 8
+2024-03-30 21:28:19.193 INFO    EDCORE (27132): 0.021 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.195 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[27]*1536
+2024-03-30 21:28:19.223 INFO    EDTERRAINGRAPHICS41 (27132): 0.028841s Loaded reference file "vehicles" buffers: 13
+2024-03-30 21:28:19.223 INFO    EDCORE (27132): 0.029 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.224 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[40]*1536
+2024-03-30 21:28:19.232 INFO    EDTERRAINGRAPHICS41 (27132): 0.008135s Loaded reference file "vessels" buffers: 9
+2024-03-30 21:28:19.232 INFO    EDCORE (27132): 0.008 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.233 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[9]*1536
+2024-03-30 21:28:19.239 INFO    EDTERRAINGRAPHICS41 (27132): 0.005821s Loaded reference file "banyan" buffers: 0
+2024-03-30 21:28:19.239 INFO    EDCORE (27132): 0.006 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.241 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[8]*1536
+2024-03-30 21:28:19.241 INFO    EDTERRAINGRAPHICS41 (27132): 0.000631s Loaded reference file "burfordholly_shrubsingle" buffers: 0
+2024-03-30 21:28:19.241 INFO    EDCORE (27132): 0.001 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.248 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[12]*1536
+2024-03-30 21:28:19.251 INFO    EDTERRAINGRAPHICS41 (27132): 0.003125s Loaded reference file "coconutpalm" buffers: 0
+2024-03-30 21:28:19.251 INFO    EDCORE (27132): 0.003 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.253 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[12]*1536
+2024-03-30 21:28:19.254 INFO    EDTERRAINGRAPHICS41 (27132): 0.001997s Loaded reference file "cynometra" buffers: 0
+2024-03-30 21:28:19.254 INFO    EDCORE (27132): 0.002 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.262 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[8]*1536
+2024-03-30 21:28:19.263 INFO    EDTERRAINGRAPHICS41 (27132): 0.007156s Loaded reference file "datepalm" buffers: 0
+2024-03-30 21:28:19.263 INFO    EDCORE (27132): 0.007 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.265 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[10]*1536
+2024-03-30 21:28:19.267 INFO    EDTERRAINGRAPHICS41 (27132): 0.001630s Loaded reference file "guaiacum" buffers: 0
+2024-03-30 21:28:19.267 INFO    EDCORE (27132): 0.002 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.269 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[9]*1536
+2024-03-30 21:28:19.269 INFO    EDTERRAINGRAPHICS41 (27132): 0.000666s Loaded reference file "hibiscus" buffers: 0
+2024-03-30 21:28:19.269 INFO    EDCORE (27132): 0.001 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.273 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[9]*1536
+2024-03-30 21:28:19.274 INFO    EDTERRAINGRAPHICS41 (27132): 0.000768s Loaded reference file "leucaena" buffers: 0
+2024-03-30 21:28:19.274 INFO    EDCORE (27132): 0.001 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.277 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[7]*1536
+2024-03-30 21:28:19.277 INFO    EDTERRAINGRAPHICS41 (27132): 0.000518s Loaded reference file "pisonia" buffers: 0
+2024-03-30 21:28:19.277 INFO    EDCORE (27132): 0.001 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.281 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[8]*1536
+2024-03-30 21:28:19.283 INFO    EDTERRAINGRAPHICS41 (27132): 0.001921s Loaded reference file "plumeria" buffers: 0
+2024-03-30 21:28:19.283 INFO    EDCORE (27132): 0.002 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.286 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[1]*1536
+2024-03-30 21:28:19.291 INFO    EDTERRAINGRAPHICS41 (27132): 0.005943s Loaded reference file "shrubs" buffers: 0
+2024-03-30 21:28:19.291 INFO    EDCORE (27132): 0.006 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.292 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[5]*1536
+2024-03-30 21:28:19.293 INFO    EDTERRAINGRAPHICS41 (27132): 0.000414s Loaded reference file "tallgrass" buffers: 0
+2024-03-30 21:28:19.293 INFO    EDCORE (27132): 0.000 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.296 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[2]*1536
+2024-03-30 21:28:19.301 INFO    EDTERRAINGRAPHICS41 (27132): 0.004871s Loaded reference file "tallgrasslod" buffers: 0
+2024-03-30 21:28:19.301 INFO    EDCORE (27132): 0.005 s  landscape4::lReferenceFile
+2024-03-30 21:28:19.301 INFO    EDTERRAINGRAPHICS41 (27132): InstanceManager2 is completing initialization... 
+2024-03-30 21:28:19.315 ERROR   EDTERRAINGRAPHICS41 (27132):   missing object declaration: light_source_spot_red_stop
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132): InstanceManager2 complete initialization: 
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132):   objects:    868
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132):   subObjects: 11988
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132):   objectLods: 3142
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132):   objectLodRenderItems: 245
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132):   MAX_LODS_IN_OBJECT:       10
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132):   MAX_SUBOBJECTS_IN_OBJECT: 942
+2024-03-30 21:28:19.322 INFO    EDTERRAINGRAPHICS41 (27132):   GEOMETRY BUFFERS: 156
+2024-03-30 21:28:19.329 INFO    EDCORE (27132): 0.000 s  landscape5::OceanFile
+2024-03-30 21:28:19.387 INFO    EDCORE (27132): 0.054 s  landscape5::GrassFile
+2024-03-30 21:28:19.388 INFO    EDTERRAINGRAPHICS41 (27132): remapper.deformers is not empty
+2024-03-30 21:28:19.515 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[31249]*1536
+2024-03-30 21:28:19.517 INFO    EDCORE (27132): 0.129 s  landscape5::Surface5File
+2024-03-30 21:28:19.518 ERROR   EDTERRAINGRAPHICS41 (27132): cant init lDataFileGraphics for type of file = landscape5::SurfaceTile
+2024-03-30 21:28:19.518 INFO    EDCORE (27132): 0.000 s  landscape5::SurfaceTile
+2024-03-30 21:28:19.522 INFO    EDCORE (27132): 0.000 s  landscape5::Scene5File
+2024-03-30 21:28:19.526 INFO    EDCORE (27132): 0.001 s  landscape4::lRoutesFile
+2024-03-30 21:28:19.530 INFO    EDTERRAINGRAPHICS41 (27132): materialParams[1]*1536
+2024-03-30 21:28:19.530 INFO    EDCORE (27132): 0.000 s  landscape4::lSuperficialFile
+2024-03-30 21:28:19.536 INFO    EDCORE (27132): Loaded E:/Eagle Dynamics/DCS World OpenBeta/bin-mt/dxgui_edge_render.dll
+2024-03-30 21:28:19.536 INFO    EDCORE (27132): 0.000 s  landscape4::lGeoNamesFile
+2024-03-30 21:28:19.542 INFO    EDCORE (27132): 0.001 s  landscape5::sup5File
+2024-03-30 21:28:19.545 INFO    EDCORE (27132): 0.000 s  landscape5::sup5File
+2024-03-30 21:28:19.548 INFO    EDCORE (27132): 0.000 s  landscape5::navGraph5File
+2024-03-30 21:28:19.548 INFO    EDTERRAINGRAPHICS41 (27132): ITerrainGraphicsImpl4::openTerrain() END 2.022979 s
+2024-03-30 21:28:22.672 ERROR   LUA-TERRAIN (Main): getRunwayHeading: not found runways for './Mods/terrains/MarianaIslands/AirfieldsTaxiways/North_West_Field.rn4' airdrome
+2024-03-30 21:28:23.430 ERROR_ONCE DX11BACKEND (38312): texture 'am063_wind_direction_mg' not found. Asked from ''
+2024-03-30 21:28:23.431 ERROR_ONCE DX11BACKEND (35456): texture 'am129_turtles_box_mg' not found. Asked from ''
+2024-03-30 21:28:23.432 ERROR_ONCE DX11BACKEND (15404): texture 'mistral-bano-green' not found. Asked from ''
+2024-03-30 21:28:23.435 INFO    EDTERRAINGRAPHICS41 (27132): ClipmapGraphics::init("colortexture")
+2024-03-30 21:28:28.262 INFO    Dispatcher (Main): loadMission C:\Users\spindler\AppData\Local\Temp\DCS.openbeta\tempMission.miz
+2024-03-30 21:28:28.263 INFO    WORLDGENERAL (Main): loading mission from: "C:\Users\spindler\AppData\Local\Temp\DCS.openbeta\tempMission.miz"
+2024-03-30 21:28:28.266 INFO    APP (Main): use_xRay: yes
+2024-03-30 21:28:28.266 INFO    APP (Main): netfm_enable_coeff_switching: yes
+2024-03-30 21:28:28.277 INFO    Dispatcher (Main): Terrain theatre MarianaIslands
+2024-03-30 21:28:28.278 INFO    EDCORE (Main): (dDispatcher)enterToState_:4
+2024-03-30 21:28:28.278 INFO    Dispatcher (Main): Start
+2024-03-30 21:28:28.282 INFO    OpenKneeboard (Main): onMissionLoadBegin: fletcherFRAM2
+2024-03-30 21:28:28.282 INFO    OpenKneeboard (Main): Mission: C:\Users\spindler\Saved Games\DCS.openbeta\Missions\fletcherFRAM2.miz
+2024-03-30 21:28:28.282 INFO    OpenKneeboard (Main): Terrain: MarianaIslands
+2024-03-30 21:28:28.288 INFO    Dispatcher (Main): Terrain theatre MarianaIslands
+2024-03-30 21:28:28.289 INFO    Dispatcher (Main): load terrain from ./Mods/terrains/MarianaIslands\terrain.cfg.lua
+2024-03-30 21:28:28.305 INFO    SECURITYCONTROL (Main): Loaded mods/terrains/marianaislands/terrain.cfg.lua.pak.crypt
+2024-03-30 21:28:28.305 INFO    TERRAIN (Main): lSystem::load(./Mods/terrains/MarianaIslands\terrain.cfg.lua)
+2024-03-30 21:28:28.305 INFO    TERRAIN (Main): lSystem::openSession(./Mods/terrains/MarianaIslands\terrain.cfg.lua)
+2024-03-30 21:28:28.309 INFO    EDCORE (Main): 0.000 s  terrain references
+2024-03-30 21:28:28.315 INFO    EDCORE (Main): 0.000 s  terrain models
+2024-03-30 21:28:28.321 INFO    EDCORE (Main): 0.000 s  terrain assets
+2024-03-30 21:28:28.328 INFO    EDCORE (Main): 0.000 s  terrain assets2
+2024-03-30 21:28:28.332 INFO    EDCORE (Main): 0.000 s  terrain landfile
+2024-03-30 21:28:28.337 INFO    EDCORE (Main): 0.000 s  terrain surfaceTile
+2024-03-30 21:28:28.343 INFO    EDCORE (Main): 0.000 s  terrain vfstextures
+2024-03-30 21:28:28.349 INFO    EDCORE (Main): 0.000 s  terrain scene
+2024-03-30 21:28:28.354 INFO    EDCORE (Main): 0.000 s  terrain roaddetails
+2024-03-30 21:28:28.360 INFO    EDCORE (Main): 0.000 s  terrain forest
+2024-03-30 21:28:28.366 INFO    EDCORE (Main): 0.000 s  terrain routes
+2024-03-30 21:28:28.371 INFO    EDCORE (Main): 0.000 s  terrain surfacedetails
+2024-03-30 21:28:28.377 INFO    EDCORE (Main): 0.000 s  terrain blocks
+2024-03-30 21:28:28.382 INFO    EDCORE (Main): 0.000 s  terrain superficials
+2024-03-30 21:28:28.388 INFO    EDCORE (Main): 0.000 s  terrain lma
+2024-03-30 21:28:28.394 INFO    EDCORE (Main): 0.000 s  terrain vectordatasettings
+2024-03-30 21:28:28.399 INFO    EDCORE (Main): 0.000 s  terrain navgraph
+2024-03-30 21:28:28.405 INFO    EDCORE (Main): 0.000 s  terrain vti
+2024-03-30 21:28:28.405 INFO    EDTERRAIN4 (Main): terrain time: 0.099361 s
+2024-03-30 21:28:28.407 ERROR   EDOBJECTS (Main): Destruction shape not found HOUSEHOLD_BUILDING_CRASH
+2024-03-30 21:28:28.407 INFO    TERRAIN (Main): lSystem::InitScenes()
+2024-03-30 21:28:28.411 INFO    EDTERRAIN4 (Main): ITerrainContextImpl4::setTrafficDecimation(4)
+2024-03-30 21:28:28.412 INFO    EDTERRAIN4 (Main): ITerrainContextImpl4::setDate( day=1, month=6)
+2024-03-30 21:28:28.412 INFO    EDTERRAIN4 (Main): ITerrainContextImpl4::setTextureMode(full=1)
+2024-03-30 21:28:28.413 INFO    Dispatcher (Main): load terrain done
+2024-03-30 21:28:28.416 WARNING GRAPHICSCORE (Main): already registered Renderer callback
+2024-03-30 21:28:28.417 INFO    EDTERRAIN4 (27132): ITerrainContextImpl4::setTrafficDecimation(4)
+2024-03-30 21:28:28.417 INFO    EDTERRAIN4 (27132): ITerrainContextImpl4::setDate( day=1, month=6)
+2024-03-30 21:28:28.417 INFO    EDTERRAIN4 (27132): ITerrainContextImpl4::setTextureMode(full=1)
+2024-03-30 21:28:28.422 WARNING SCENE (Main): Scene was removed with 4 alive objects
+2024-03-30 21:28:28.422 INFO    VISUALIZER (Main): DCSScene initialized
+2024-03-30 21:28:28.451 INFO    VISUALIZER (27132): DCSSceneRenderer initialized
+2024-03-30 21:28:28.602 INFO    Dispatcher (Main): initial random seed = 4108610
+2024-03-30 21:28:28.602 INFO    Dispatcher (Main): apply random seed = 4108610
+2024-03-30 21:28:28.602 INFO    WORLDGENERAL (Main): loaded from mission Scripts/World/GPS_GNSS.lua
+2024-03-30 21:28:28.757 ERROR   EDCORE (Main): Can't open file: /models/b-1b.owv.
+2024-03-30 21:28:28.757 ERROR   EFFECTS2 (Main): OverwingVaporEmitter: file /models/B-1B.owv is not exist
+2024-03-30 21:28:28.763 ERROR   EDCORE (Main): Can't open file: /models/b-52.owv.
+2024-03-30 21:28:28.763 ERROR   EFFECTS2 (Main): OverwingVaporEmitter: file /models/B-52.owv is not exist
+2024-03-30 21:28:28.782 INFO    WORLDGENERAL (Main): loaded from mission Config/View/SnapViewsDefault.lua
+2024-03-30 21:28:28.782 INFO    WORLDGENERAL (Main): loaded from mission Config/View/View.lua
+2024-03-30 21:28:28.782 INFO    WORLDGENERAL (Main): loaded from mission Config/View/Server.lua
+2024-03-30 21:28:29.069 WARNING FLIGHT (Main): No taxiroad found on Rota Intl from 1 to 10
+2024-03-30 21:28:29.116 WARNING FLIGHT (Main): No taxiroad found on Olf Orote from 0 to 4
+2024-03-30 21:28:29.116 WARNING FLIGHT (Main): No taxiroad found on Olf Orote from 1 to 4
+2024-03-30 21:28:29.116 WARNING FLIGHT (Main): No taxiroad found on Olf Orote from 2 to 4
+2024-03-30 21:28:29.116 WARNING FLIGHT (Main): No taxiroad found on Olf Orote from 3 to 4
+2024-03-30 21:28:29.134 WARNING FLIGHT (Main): No taxiroad found on Pagan Airstrip from 0 to 3
+2024-03-30 21:28:29.134 WARNING FLIGHT (Main): No taxiroad found on Pagan Airstrip from 1 to 3
+2024-03-30 21:28:29.134 WARNING FLIGHT (Main): No taxiroad found on Pagan Airstrip from 2 to 3
+2024-03-30 21:28:29.136 INFO    APP (Main): MissionSpawn:spawnShips 81
+2024-03-30 21:28:29.137 ERROR   wWeaponSystemManager (Main): Invalid sensor height! (fletcher_class_framii)
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_4): unit type = fletcher_class_framii, ws id=6, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_5): unit type = fletcher_class_framii, ws id=7, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_6): unit type = fletcher_class_framii, ws id=8, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_7): unit type = fletcher_class_framii, ws id=9, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_8): unit type = fletcher_class_framii, ws id=10, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_9): unit type = fletcher_class_framii, ws id=11, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_10): unit type = fletcher_class_framii, ws id=12, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (POINT_KORTIK_1_1): unit type = fletcher_class_framii, ws id=15, ln id=1, br id=1
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_02): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=2
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_04): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=4
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_06): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=6
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_012): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=7
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_013): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=8
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_014): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=9
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_015): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=10
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_016): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=11
+2024-03-30 21:28:29.137 ERROR   WEAPONS (Main): Invalid connector name (TPO_017): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=12
+2024-03-30 21:28:29.137 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_09 for unit fletcher_class_framii
+2024-03-30 21:28:29.137 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_10 for unit fletcher_class_framii
+2024-03-30 21:28:29.137 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_11 for unit fletcher_class_framii
+2024-03-30 21:28:29.137 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_12 for unit fletcher_class_framii
+2024-03-30 21:28:29.137 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_13 for unit fletcher_class_framii
+2024-03-30 21:28:29.137 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_14 for unit fletcher_class_framii
+2024-03-30 21:28:29.137 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_18 for unit fletcher_class_framii
+2024-03-30 21:28:29.139 WARNING EFFECTS2 (Main): OParticleSystem: preset '' not found in 'shipTrail.lua', using default
+2024-03-30 21:28:29.140 INFO    APP (Main): MissionSpawn:spawnShips 2
+2024-03-30 21:28:29.140 ERROR   wWeaponSystemManager (Main): Invalid sensor height! (fletcher_class_framii)
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_4): unit type = fletcher_class_framii, ws id=6, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_5): unit type = fletcher_class_framii, ws id=7, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_6): unit type = fletcher_class_framii, ws id=8, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_7): unit type = fletcher_class_framii, ws id=9, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_8): unit type = fletcher_class_framii, ws id=10, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_9): unit type = fletcher_class_framii, ws id=11, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_MGUN_10): unit type = fletcher_class_framii, ws id=12, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (POINT_KORTIK_1_1): unit type = fletcher_class_framii, ws id=15, ln id=1, br id=1
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_02): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=2
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_04): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=4
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_06): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=6
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_012): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=7
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_013): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=8
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_014): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=9
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_015): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=10
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_016): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=11
+2024-03-30 21:28:29.140 ERROR   WEAPONS (Main): Invalid connector name (TPO_017): unit type = fletcher_class_framii, ws id=16, ln id=1, br id=12
+2024-03-30 21:28:29.140 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_09 for unit fletcher_class_framii
+2024-03-30 21:28:29.140 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_10 for unit fletcher_class_framii
+2024-03-30 21:28:29.140 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_11 for unit fletcher_class_framii
+2024-03-30 21:28:29.140 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_12 for unit fletcher_class_framii
+2024-03-30 21:28:29.140 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_13 for unit fletcher_class_framii
+2024-03-30 21:28:29.140 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_14 for unit fletcher_class_framii
+2024-03-30 21:28:29.140 ERROR   wWeaponSystem (Main): invalid connector CENTER_TOWER_18 for unit fletcher_class_framii
+2024-03-30 21:28:29.140 WARNING EFFECTS2 (Main): OParticleSystem: preset '' not found in 'shipTrail.lua', using default
+2024-03-30 21:28:29.174 INFO    APP (Main): MissionSpawn:initScript
+2024-03-30 21:28:29.174 INFO    APP (Main): MissionSpawn:spawnCoalition neutrals
+2024-03-30 21:28:29.174 INFO    APP (Main): MissionSpawn:spawnCoalition red
+2024-03-30 21:28:29.174 INFO    APP (Main): MissionSpawn:spawnCoalition blue
+2024-03-30 21:28:29.211 INFO    VISUALIZER (Main): Preload() radius: 100000.000000
+2024-03-30 21:28:29.211 INFO    EDTERRAINGRAPHICS41 (Main): ITerrainGraphicsImpl4::forceLoading(): pos=(-34419.3, 12.3268, 20271.1), radius=100000
+2024-03-30 21:28:29.504 INFO    EDTERRAINGRAPHICS41 (27132): surface5 clean up LOD 0: left 2  released 2
+2024-03-30 21:28:29.504 INFO    EDTERRAINGRAPHICS41 (27132): surface5 clean up LOD 1: left 4  released 0
+2024-03-30 21:28:29.504 INFO    EDTERRAINGRAPHICS41 (27132): surface5 clean up 0.044600 ms
+2024-03-30 21:28:29.622 INFO    GRAPHICSVISTA (27132): Creating Resource "Unicode" of type 1
+2024-03-30 21:28:29.629 INFO    EDTERRAINGRAPHICS41 (27132): instancer factors has been changed. Update lod buffers.
+2024-03-30 21:28:29.629 INFO    EDTERRAINGRAPHICS41 (27132): 	 distanceFactor = 1.000000
+2024-03-30 21:28:29.629 INFO    EDTERRAINGRAPHICS41 (27132): 	 instancerDetailsFactor = 1.000000
+2024-03-30 21:28:29.629 INFO    EDTERRAINGRAPHICS41 (27132): 	 forestDistanceFactor = 0.500000
+2024-03-30 21:28:29.629 INFO    EDTERRAINGRAPHICS41 (27132): 	 forestDetailsFactor = 1.000000
+2024-03-30 21:28:32.803 INFO    VISUALIZER (Main): Preload() finished
+2024-03-30 21:28:32.877 INFO    Dispatcher (Main): precache units resources in slots
+2024-03-30 21:28:32.877 INFO    OpenKneeboard (Main): onSimulationStart
+2024-03-30 21:28:32.901 INFO    LUA (Main): Lua: States: 660, CPU load: 5.5%, Mem: 408.9 MB
+2024-03-30 21:28:33.273 INFO    EDCORE (Main): Created game pool: h:2 n:6 l:16
+2024-03-30 21:28:33.273 INFO    Dispatcher (Main): loadMission Done: Сontrol passed to the player
+2024-03-30 21:28:48.766 INFO    LUA (Main): Lua: States: 660, CPU load: 0.9%, Mem: 410.7 MB
+2024-03-30 21:28:51.761 INFO    Dispatcher (Main): Stop
+2024-03-30 21:28:51.977 INFO    TERRAIN (Main): lSystem::CleanScenes()
+2024-03-30 21:28:52.006 INFO    VISUALIZER (27132): Stopped collection of statistic.
+2024-03-30 21:27:31.000 ERROR_ONCE  (): 
+2024-03-30 21:28:52.059 ERROR_ONCE DX11BACKEND (27132): render target 'uiTargetColor' not found
+2024-03-30 21:28:52.059 ERROR_ONCE DX11BACKEND (27132): render target 'uiTargetDepth' not found
+2024-03-30 21:28:52.059 INFO    VISUALIZER (27132): DCSSceneRenderer initialized
+2024-03-30 21:28:52.198 INFO    EDCORE (Main): Created boot pool: n:32
+2024-03-30 21:28:52.198 INFO    EDCORE (Main): (dDispatcher)enterToState_:3
+2024-03-30 21:28:52.604 INFO    EDCORE (Main): (dDispatcher)enterToState_:5
+2024-03-30 21:28:52.623 INFO    APP (Main): application shutdown
+2024-03-30 21:28:53.030 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 0
+2024-03-30 21:28:53.032 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 1
+2024-03-30 21:28:53.032 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 2
+2024-03-30 21:28:53.120 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 3
+2024-03-30 21:28:53.195 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 4
+2024-03-30 21:28:53.208 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 5
+2024-03-30 21:28:53.210 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 6
+2024-03-30 21:28:53.212 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 7
+2024-03-30 21:28:53.212 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 8
+2024-03-30 21:28:53.214 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 9
+2024-03-30 21:28:53.214 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 10
+2024-03-30 21:28:53.214 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 11
+2024-03-30 21:28:53.214 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 12
+2024-03-30 21:28:53.215 INFO    EDOBJECTS (Main): lTypeObjectManagerImpl::clear 13
+2024-03-30 21:28:53.235 WARNING SCENE (27132): Scene was removed with 2 alive objects
+2024-03-30 21:28:53.235 WARNING SCENE (27132): Scene was removed with 4 alive lights
+2024-03-30 21:28:53.788 INFO    TERRAIN (Main): lSystem::exit()
+2024-03-30 21:28:53.796 INFO    TERRAIN (Main): lSystem::CleanScenes()
+2024-03-30 21:28:54.747 WARNING SCENE (27132): Scene was removed with 77 alive objects
+2024-03-30 21:28:54.747 WARNING SCENE (27132): Scene was removed with 5 alive lights
+2024-03-30 21:28:54.797 INFO    DX11BACKEND (27132): DX11Renderer::shutdown()
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): NVIDIA API exit OK
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): textures_count: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): textures_size: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): buffers_count: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): buffers_size: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): CB_count: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): CB_size: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): SB_count: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): SB_size: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): IB_count: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): IB_size: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): VB_count: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): VB_size: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): total_buffers_size: 0
+2024-03-30 21:28:55.304 INFO    DX11BACKEND (27132): total_size: 0
+2024-03-30 21:28:55.315 INFO    VISUALIZER (27132): render thread has stopped
+=== Log closed.

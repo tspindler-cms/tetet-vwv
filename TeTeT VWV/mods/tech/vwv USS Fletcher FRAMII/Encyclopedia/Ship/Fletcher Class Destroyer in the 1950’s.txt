@@ -1,0 +1,744 @@
+
+Life on a Fletcher Class Destroyer in the 1950’s
+July 31, 2013129 CommentsHistory, Newsclass, destroyer, fletcher, foundation, Halsey, Historical, history, naval, navy, NHF, Powell, Stewart
+USS Halsey Powell NH 91903
+
+The author served in USS Halsey Powell (DD 686), shown here in an undated post-World War II photo. NHHC image NH 91903.
+
+ 
+
+By Captain George Stewart, USN (Retired)
+
+This is the first of a series of articles describing life in the 1950s on a World War II built Fletcher Class Destroyer. My connection to these ships began as I was approaching graduation from the Massachusetts Maritime Academy in August of 1956. Due to a change in legislation it was suddenly announced that all of my class would be required to serve on active duty in the Navy for 3 years upon graduation. My orders turned out to be to the USS Halsey Powell (DD 686), a Fletcher Class Destroyer home ported in San Diego, California. At the time I had not quite reached my 21st birthday.
+
+The Fletcher class destroyers were authorized as part of the 1941-42 Shipbuilding Program. They incorporated many lessons learned from earlier classes of destroyers built during the 1930s and in the early stages of World War II, particularly relating to stability and sea keeping ability. During the 1930s, the Navy had produced a succession of “step deck” destroyer designs with raised forecastles. But the Fletcher Class reverted to a “flush deck” design like the destroyers of World War I. Most of the ships were initially assigned to the Pacific Fleet where they were to play a major role in the war.
+
+A total of 175 Fletcher Class Destroyers were commissioned between 4 June 1942 and 22 February 1945. The lead ship of the class was USS Fletcher (DD 445). Hull numbers ranged between 445 and 691 plus an additional block between 792 and 804. The ships were built in 11 different shipyards. A total of 19 ships of the class were lost to war action and 6 more were damaged beyond repair. My ship, USS Halsey Powell (DD 686) was built at Bethlehem Steel, Staten Island. It was commissioned in October 1943.
+
+The major ship characteristics were as follows:
+
+    Length – 376.5’
+    Beam – 39’7”
+    Draft – 18’
+    Standard Displacement – 2150 Tons
+    Screws – 2
+    Rudders – 1
+    Power – 60,000 HP
+    Design Speed – 36 Knots
+    Range – 4790 nautical miles at 15.8 knots
+    Wartime Complement – 329 Personnel
+    Normal peacetime – 14 Officers – 236 Enlisted
+
+The Main Battery consisted of five single dual purpose (Surface to surface and Anti-Air) 5”/38 Gun Mounts. Two mounts were located forward and three aft. Mounts were numbered consecutively from forward to aft (51, 52, 53, 54, and 55). These mounts had a firing rate up to 18 rounds per minute. Effective range was 17,306 yards at 45° elevation and altitude of 32,250 feet at 85° elevation. The total crew for reach mount was approximately 20, counting personnel in the mount, upper and lower handling rooms, and projectile & powder magazines. The guns used semi-fixed ammunition (projectile and powder loaded separately). Guns could be fired using radar, computer generated, or visual information. All training, elevation, and firing was normally controlled from the Mk 37 Director on top of the pilot house. However all loading functions were accomplished manually. There was a 5 inch loading machine on the main deck amidships that replicated the loading mechanism of the guns. These were used for training gun crews.
+
+Occasionally I was assigned duties as check sight observer during live firing exercises. My purpose was to look through a telescope and ensure that the gun was pointed where it should be. This was an assignment that I absolutely loathed.
+
+The destroyer was originally conceived as a counter to high speed torpedo boats around the turn of the century. The first US Navy destroyer was USS Bainbridge (DD 1), which entered service in 1903. By the time of World War I, the destroyer had become a major part of the fleet. During that war its primary duties were convoy escort and antisubmarine patrol. Originally, the primary purpose of the ships was to deliver torpedoes against surface targets and this thinking carried over into World War II. Therefore, the Fletchers were originally fitted with two five tube surface to surface torpedo mounts, each located immediately aft of one of the stacks. As the threat imposed by aircraft became more apparent, one of the mounts was later removed and replaced with anti-aircraft protection.
+
+Another reason for the demise of the surface to surface torpedo was the invention of radar which essentially destroyed any stealth advantages that the destroyer possessed. I only remember a couple of live firing exercises. The approach was by the “John Wayne” method consisting of a 25 knot approach, delivery of the weapon, and a high speed retreat.
+
+The surface to surface torpedo essentially disappeared from the post war fleet, although destroyer types were later fitted with anti-submarine homing torpedoes.
+
+Other weaponry included:
+
+    Two quad (4 barrel) 40 MM AA gun mounts – These replaced the forward torpedo mount.
+    Three twin (2 barrel) 40 MM gun mounts
+    Two depth charge tracks
+    Six depth charge projectors
+    Six 20 MM gun mounts
+
+After the war all 20 MM gun mounts were removed and the forward 40 MM mounts were replaced by a pair of ahead thrown anti-submarine projectile (Hedgehog) mounts. Additionally, a number of the ships had their 40 MM mounts replaced by 3”/50s.
+
+Fletchers were the first destroyers to be fitted with radar. The ships carried surface search, air search, and fire control radars. The surface search radar had a range out to the horizon (about 10-12 miles) while the air search (when it worked) could see out to about 40-45 miles. The fire control radar was used strictly for control of the 5” gun battery.
+
+The advent of radar resulted in a new space being created, called the Combat Information Center (CIC). On Halsey Powell, it had been converted from what was originally the unit commander’s cabin. The CIC later evolved into the major nerve center for conducting all surface, subsurface, and anti-air/missile operations aboard naval ships.
+
+The ships were propelled by a twin screw steam propulsion plant rated at 60,000 HP that could produce a maximum speed somewhere between 35 and 37 knots. Considering that this was with 1930s technology, this was a very respectable level of power and it would still be considered as such today.
+
+Superheated steam was generated in four oil burning boilers at a pressure of 600 pounds per square inch and a temperature of 850° F. Two boilers were installed in each fire room. Each of the two stacks served a pair of boilers. The boilers were of the divided furnace or “M” type with separate furnaces for control of steam pressure and temperature (superheat). These boilers were used on nearly all World War II era carriers, battleships, cruisers, and destroyers. A disadvantage of this type of boilers was that they imposed some definite limitations on the ability to conduct low speed maneuvering on short notice.
+
+There were two cross compounded geared steam turbine main engines. Each engine consisted of a high pressure (HP) and low pressure (LP) turbine set driving its associated propeller shaft through a double reduction gear.  The rated output of each engine was 30,000 HP at a propeller speed of 395 RPM. The HP and LP turbines were connected in series with respect to steam flow and in parallel mechanically into the reduction gear. A smaller cruising turbine was mounted on the front end of the HP turbine. Astern elements were provided in the LP turbine. To go astern you had to shut off steam to the ahead turbines before you could admit steam to the astern turbine. Control was manual; by hand wheels mounted on a large gage board adjacent to the engine in response to engine order telegraph signals from the bridge.
+
+The electrical plant consisted of two 350 kW 450 VAC steam turbine driven ship service generators (SSTG), one in each engine room plus a 100 kW emergency diesel generator located in the forward part of the ship. By comparison, a modern destroyer has three 2500 to 3000 kW generators.
+
+Machinery spaces were in an echelon arrangement, with alternating fire rooms and engine rooms. The starboard shaft was about 75’ longer than the port shaft. This provided for redundancy in the event of battle damage and it remains the practice today on twin screw naval vessels. From forward to aft, the spaces were:
+
+    Forward (#1) Fire Room containing #1 and #2 Boilers and associated forced draft blowers, fuel pumps, and associated equipment.
+    Forward (#1) Engine Room containing the Starboard (#1) Main Engine, #1 ship service generator, a 12,000 gallon per day distilling plant, and associated auxiliary equipment. This was designated as the Control Engine Room and it was the station for the Engineering Officer of the Watch (usually a CPO) who was responsible for coordinating the operation, including communications with the bridge. This was the Chief Engineer’s station when entering or leaving port or under battle conditions.
+    After (#2) Fire Room containing #3 and #4 Boilers and associated equipment. Except for the starboard shaft running through it, the space was essentially the same as the Forward Fire Room.
+    After (#2) Engine Room, essentially a mirror image of the Forward Engine Room containing the Port (#2) Main Engine, #2 generator, and associated equipment.
+
+Normal steaming configuration was with two boilers on the line in a “Split Plant” configuration with one boiler in each fire room supplying its associated engine and all valves connecting the forward and after plants closed. Essentially this provided two completely independent engineering plants. Two boilers were capable of providing speeds up to 28 knots which was adequate for most operations.
+
+Access to each of these spaces was by hatches and vertical ladders to the Main Deck above. There were two means of egress from each space, one port and one starboard. There was no access between spaces below the Main Deck. To go between machinery spaces it was “up and over”.
+
+An environmentalist would look askance at ships of this era. All commodes and urinals discharged directly overboard. When I was Chief Engineer, my night orders told my sailors to only pump bilges at night while in port. We still had the capability to lay smoke screens. All trash and garbage was dumped overboard at sea. The ships had to take on sea water ballast directly into the fuel tanks to maintain stability under light loading conditions and deballasting operations at sea took several hours during which we would be discharging a nasty looking oil slick. The machinery spaces were loaded with asbestos insulation. Fortunately, we do much better today at protecting the environment.
+
+Living accommodations were nothing to brag about. Sailors were berthed by division in 4 high tiers of canvas bunks with upright lockers. The practice of placing portholes in the side for ventilation had gone away and there was no air conditioning. The galley was on the main deck and all food had to be carried down in large trays to the mess deck below. A drawback to the ship design was the lack of a fore and aft passage inside the ship, making it possible for the two ends of the ship to be cut off from each other during bad weather when it was unsafe to go out on deck.
+
+The Chief Petty Officers had their own mess. But their berthing accommodations were not much better than those of the crew. As officers we lived somewhat better, but our accommodations were not very sumptuous either. The captain had his own cabin and head. He also had a small sea cabin adjacent to the bridge. The wardroom and officers mess was on the Main Deck forward, just aft of Mount 52. All of the rest of us lived one deck down in “Officer’s Country” in small two man staterooms. We all shared the same head. Only the Executive Officer had his own stateroom.
+
+The Fletcher class destroyers are still regarded as the best destroyers produced by any navy during World War II. The Sumner (DD 692) and Gearing (DD 710) class ships were essentially improved versions of the Fletchers. But they did not really get into the war soon enough to make as much of an impact. Because the navy had a surplus of ships after the war, many of the Fletcher Class destroyers, including Halsey Powell were decommissioned, and placed into reserve fleets in 1946.
+
+Halsey Powell and many of her sister ships were re-commissioned in 1952 at the outbreak of the Korean War. By the 1960s a number of them, including Halsey Powell had been assigned to Naval Reserve training duties. In the early 1960s the navy embarked on a major effort referred to as the FRAM (Fleet Rehabilitation and Modernization) program. But the majority of the ships upgraded under this program were of the Sumner and Gearing classes.
+
+Some Fletchers were still around during the Vietnam War, but all had been decommissioned by 1971. Thirty Two were sold to foreign navies, including my old ship, USS Halsey Powell  which became the ROK Seoul. The last active Fletcher was the USS John Rogers (DD 574) which served in the Mexican Navy until 2001. For those interested in visiting a Fletcher class museum ship, there are three located around the United States: USS Cassin Young (DD 793) in Boston, MA, USS Kidd (DD 661) in Baton Rouge, LA, and USS The Sullivans (DD 537)  in Buffalo, NY.
+
+More details concerning life on a Fletcher Class destroyer will be provided in upcoming articles.
+
+(read part 2 here)
+
+George W. Stewart is a retired US Navy Captain. He is a 1956 graduate of the Massachusetts Maritime Academy. During his 30 year naval career he held two ship commands and served a total of 8 years on naval material inspection boards, during which he conducted trials and inspections aboard over 200 naval vessels. Since his retirement from active naval service in 1986 he has been employed in the ship design industry where he has specialized in the development of concept designs of propulsion and powering systems, some of which have entered active service. He currently holds the title of Chief Marine Engineer at Marine Design Dynamics.
+
+Spread the word. Share this post!
+Previous
+Next
+129 Comments
+
+    Pingback: Manning Fletcher Class Destroyers | Naval Historical Foundation
+
+    Pingback: Fletcher Class Destroyer Operations | Naval Historical Foundation
+    vince marino
+    7 / Sep / 2013
+
+    This is a great article. I tour the Cassin Young quite often and getting first hand accounts of life on board brings the ship alive ( sadly, she may not have much longer to “live” as the Navy doesn’t have the funds to continue needed repairs to keep her afloat). For example, I did not know you couldn’t go from one end to the other without being outside on deck. I also assumed food from the galley had an unseen elevator available. Carrying heavy trays of hot food in bad seas had to be hard. I look forward to the next chapters.
+        geoge monaghan
+        14 / Dec / 2013
+
+        I was on the Fletcher DD445. Our food was served to us down below on the Mess Decks. It was brought below by the mess cooks. Your right the idea of carry food below is crazy ??
+        We finally got A/C in 1966. Also I was a Boilerman. On the Fletcher we had D type boilers.
+            Mike Kelly
+            27 / Dec / 2014
+
+            On the “D” type boilers was that uncontrollable superheat?
+                George W. Stewart
+                29 / Dec / 2014
+
+                Virtually all of the major combatants of destroyer size and above including the Fletcher, Sumner, and Gearing classes that entered service during World War II were fitted with M Type boilers with divided furnaces, one of which contained separate burners for control of superheat. At least one ship in Our Squadron, the USS Shields had been back fitted with D type single furnace boilers with integral superheaters as an experimental installation. D type boilers were used on World War II built steam powered destroyer escorts and they became virtually universal on all conventional steam powered vessels that entered service after the war. An exception being the pressurized furnace boilers that were fitted on the Garcia (DE/FF 1040) class ocean escorts built in the 1960s.
+                    william clark
+                    12 / Aug / 2015
+
+                    All Gearing class and most all Fletcher class had M -type superheat controlled 600 psi boilers or they could not have reached 32+ knots . I was on The USS Furse DDR 882 and the Richard E Krause DD 849 back in 1957 to 1970, also on the DLG 8 MacDonough, and DLG 32 Stanley which had Foster wheeler Boilers of 1200 PSI with Auto combustion controls. I cannot count the times I had to clean the firesides and watersides over those period of times on those 600 PSI M-Type Boilers. Not to mention all those Handhole plates that had to be replaced with new gaskets for Hydro test afterwards.
+            Steve Krenz
+            28 / Sep / 2015
+
+            I was a BT aboard the USS Sproston DD-577 in the same unit as the Fletcher. Our home port was Pearl Harbor. We had B&W M type boilers not D types.
+                MAURICE R. CHEVALIER
+                1 / Oct / 2018
+
+                Hello Shipmate, Krenz. I served on the Sproston at Pearl Nov. 1966 thru decom.
+                1968. Went to Vietnam Mar. 1967 thru Aug 1967. My name is Maurice (CHEVY)
+                Chevalier, RM1. Was ordered to the USS Davidson (DD-FF- 1045). Was promoted
+                to Radioman Chief during deployment to Vietnam (again) NOV. 1967.
+                Do you know of anyone who served on SPROSTON who has Medical issues that could be related to Agent Orange? Mu reason for asking – I filed a claim in 2012 for Disability Compensation – Type II Diabetes, Ischemic Heart Disease and other related problems caused by Toxins in Agent Orange. My claim was denied –
+                I’m considered to be “not elligiable ” because I was a BLUE WATER NAVY VIETNAM VETERAN.
+
+                Your response would be greatly appreciated.
+
+                Shipmate, Maurice R. Chevalier, CPO, USN(ret) Now 81 yrs.
+            Jerry Stephenson BTC UJSN Ret
+            29 / Mar / 2016
+
+            Were you on the Shields? Only 2100 ton DD that I’m aware of having the “D” type boilers.
+                George Stewart
+                1 / Apr / 2016
+
+                I did not serve on Shields. But it was in our squadron. I visited the ship once to take a look at its boilers. If I remember correctly they had 8 burners which we felt were far too many.
+            Joe Gatlin
+            7 / Sep / 2016
+
+            Sorry George. Fletcher had “M” type boilers. That is, one side of the boiler produced saturated steam and the other side produced superheated steam. I was among the last crew of Fletcher and later served as Engineer Officer on USS Braine DD-630 and USS W L Lind DD-703.
+            To answer the question below, these DD’s had controlled superheat, usually at 750 or 850 deg F. The temperature of 600 psi sat steam is 489 deg F.
+                E richardson
+                12 / Jun / 2018
+
+                Ahoy Joe, I served on the USS Braine 61-64 Gunners mate 3-50s and helmsman.
+                    Frans Bouman
+                    7 / Nov / 2018
+
+                    If you remember an FT laboriously repairing the canvas cover for 32 that got ripped when in the Taiwan Strait – that was me.
+                    Small world.
+            Tony
+            30 / May / 2018
+
+            George my Father in law was on the Fletcher 1953-1956 in the boiler room Otis Lyons, he has recently passed and we will be having a memorial service for him. I appreciate you and him for your service and sacrifice.
+        Loring Edwards
+        4 / May / 2018
+
+        This article was very informative for me. My father served on DD663
+        the Heywood L Edwards.
+        He spent his time in one of the Engineering Rooms (if I remember correctly). He was aboard from 43/44 (can’t remember what he told me) through the occupation of the Land of the Rising Sun. Later the Edwards (663) was sold to the Japanese Navy…..kind of ironic considering its war record. My father was
+        Lt. Eugene H Edwards USNR.
+        Thank you for the information.
+            Admin
+            4 / May / 2018
+
+            So glad you enjoyed it!
+            Doug Keener
+            16 / Jun / 2020
+
+            Our father was a Torpedoman TC on the Waller DD466 from New Calidonia January 1943 until decommissioning at Charleston, SC Navy Yard 1946.
+
+            Please see the article I wrote on the Waller Website. I took my son on board the Cassin Young in 2009. We enjoyed going to the Fire Control on the bridge where my father was assigned during battle.
+    Ralph Heimlich
+    8 / Sep / 2013
+
+    I served on a Gearing long hull during the Viet Nam war, and it was essentially just as you descrbed. We had ASROC launchers mounted amidships and had a helo deck and hanger for anti-sub helo ops, but mostly lived just as you had in the 1950’s.
+
+    See the website above for an indication of how well they could survive modern mines.
+    Dave Shirlaw
+    8 / Sep / 2013
+
+    Uhlmann was the last in US service as NRF ship in Tacoma.
+        Steve Winters
+        14 / Dec / 2014
+
+        I was an active duty Gunners Mate aboard Uhlmann until she was decommissioned and replaced as a Naval Reserve Trainer in Tacoma, WA by a Gearing, USS Brinkley Bass, DD887. She was scrapped in Portland, Oregon so I stopped by to get a couple of pictures and they cut a chunk of 1″ thick steel and gave to me, so a piece of her is still here!
+
+    Pingback: Destroyers - Fletcher Class - Page 140
+    Pete Smith
+    10 / Jan / 2014
+
+    This a wonderful website and that is a great article by Capt. Stewart. I was a radioman on the USS Knapp DD-653 and my brother was an Ensign on the USS Cogswell DD-651 and we both served in the early 50’s. My other brother was in the army and he was also serving at the same time during the Korean War. I have a question regarding REPUN. How often did a Fletcher have to refuel while underway and was it an actual need for fuel or to keep the ballast up for stability?
+    Thanks,
+    Pete Smith RM2c USS Knapp
+        George W. Stewart
+        13 / Jan / 2014
+
+        In response to Pete Smith’s question, here is what I remember.
+        How often we were refueled depended a great deal on the operating circumstances. In a battle group, they tried to not let us get below 60%. This was for both operational and stability reasons. The weather in the South China Sea could be rather unpredictable. I described the circumstances in which we got caught in a typhoon and snapped our mast in a later article. We were always required to take on ballast during transits between Pearl Harbor and San Diego.
+        Interestingly, my CO, Cdr Dave Loomis had served as XO aboard the USS Aylwin (DD 355) during WW II when it got caught in what was referred to as “Halsey’s Typhoon” and he had very strong views on ballastin. He is listed as one of the consultants in a book on this subject.
+        We absolutely hated the exercise. In those days we had no tank level indicators and when deballasting we had to take the tank covers off and shine flashlights down into
+            Pete Smith
+            31 / Dec / 2015
+
+            You answered my question completely and I appreciate your response. My ship, the USS Knapp DD-653 was also in Typhoon Cobra and picked up some of the survivors from the destroyers that capsized. Most people don’t realize that refueling at sea was difficult and dangerous.
+            Norman Ridenour
+            20 / Apr / 2021
+
+            I was Ops Officer on Braine 1965-67. At 28 kts we burned 2% per hour. We did 30 kt SOA with Connie, Japan to Yankee station. We fueled at 25 kts. 30 kts possible only because the Chief Snipe had made a set of bored out boiler nozzle plates. We did most of the trip at 30 kts. That is steaming!!!!
+    George W. Stewart
+    13 / Jan / 2014
+
+    (Continued) the tanks to make sure we had gotten all of the water out. If we were steaming in a column, the commodore had to put us in a line abreast foundation so we would not contaminate the distilling plants on ships astern of us with our oil slick.
+    Hope this answers the question.
+    John Bailey
+    22 / Feb / 2014
+
+    Captain
+
+    I served aboard the USS Nicholas (DD-449) in the late 60s as DASH and Gunnery Officer both, reporting to Weaps. This morning I plugged into Google’s search window “Fletcher destroyer longitudinals” hoping for information on Fletcher-class hull design and pulled up your articles. What a surprise and what a delight.
+
+    My stateroom-mate was the Nick’s Chief Engineer. Did he have his work cut out for him!
+    Harry Curtis
+    11 / Mar / 2014
+
+    Is a good read…
+    I served in Ammen DD 527 in the late 50’s until the collision 19 July 1960 , with the USS Collett and her decommisioning in Sept 1960.The Fletcher’s were a wonderful little ship, one of my favorite’s that I served on.
+        Bill Spillman
+        18 / Sep / 2021
+
+        Harry, I also was serving on the Ammen at the time of the collision and was later transferred to the Radford DD 446. I loved being at sea, especially on the Fletchers. I had only been on her for a little over a year before the collision. Like you I’m sure, lost some good friends. Ironic that the Ammen only lost 6 lives during the war but 11 lives when hit by one of it’s own ships in peacetime. “30 knots and no steam!”
+    Richard Lingenfelter
+    16 / Apr / 2014
+
+    I served aboard the U.S.S. Henley D.D. 762 from Sept. 1952—May 26,1956. I was a BT in the after firerroom under Chief Richard Branch. Many remarks have been made about Destroyer duty, but I loved it, and would do it again.
+    warren mitchell
+    27 / May / 2014
+
+    I served for 2 years on the USS Owen DD536 in CIC. 1953 – 1955. We were still all WW2 except for upgrades on electronics, no 20mm, and a tripod mast. It was a fine ship and I enjoyed my time on her as we were on the go a lot. Home port was Norfolk and later Long beach.
+        Robert Yerkes RD3
+        17 / Feb / 2015
+
+        Warren you wouldn’t by chance have a picture of CIC.I was on USS Conway DDE 507 1954-56 in Radar Gang
+            Robert J Peters
+            23 / Dec / 2016
+
+            Hey, Yerkes
+            I remember you, R Peters BT3
+            are yo attending the reunions each year ?
+            Look on the internet USS Conway Reunions
+    HENRY WATSON
+    8 / Aug / 2014
+
+    I was on the Vammen DE644 & the Isbell DD869. My buddy was on the Marshel DD676& He only rembers one way in &out but they were one port & one starbard. Am i right
+
+    Thanks Hank
+    1960-1964
+    HENRY WATSON
+    8 / Aug / 2014
+
+    I was on the Vammen DE644 & the Isbell DD869. My buddy was on the Marshel DD676& He only rembers one way in &out of the Eng rm but they were one port & one starbard. Am i right
+
+    Thanks Hank
+    1960-1964
+        George W. Stewart
+        10 / Aug / 2014
+
+        There were always two ways in and out of the machinery spaces on the Fletcher Class Destroyers, one port and one starboard. The main entrances to the spaces were located on the Main Deck as follows:
+        Forward Fire Room – Starboard
+        Forward Engine Room -Port
+        After Fire Room – Port
+        After Engine Room – Starboard
+        Each space also had a ladder on the opposite side of the space from the main entrances leading up to an emergency escape scuttle on the main deck.
+        On ships designed in the early 1930s there was direct access between spaces through water tight doors in the bulkheads. By World War II direct access was prohibited and it was necessary to go “Up and Over” between spaces.
+        George W. Stewart
+    Howard Bennett Jr
+    3 / Oct / 2014
+
+    I served on the Fletcher Class Ship, USS Saufley DD DDE EDDE 465 in the early 1960’s thru the Cuban Missile Crisis. I was a Radioman (RM 3). I was aboard when JFK came on the Saufley for a review of the ships involved in the Blockade, in November 26, 1962.
+        richard bonnett
+        8 / May / 2015
+
+        hey shipmate… I was aboard 1963 up through mothballs in Portsmouth in 1965 …. contact me on cell phone at 301-674-0181 … I also have some pictures of President Kennedy visiting the ship … Are you planning to go to any reunions ? ..and did you make a career of the Navy ? What state do you live in ? And is your contact info with the reunion group ?
+            Tony Nardone
+            1 / Feb / 2016
+
+            Richard, I was on the repair ship in Portsmouth,helped put the Saufley out of commission. She was a good ship…TN
+    Thom Lakso
+    3 / Dec / 2014
+
+    My father was a fire controlman on the McCord. He was one of the first Navy nerds. Fire control is an all to often forgotten inovation, but the Fletchers had the first Navy computers that gave greater accuracy to gun control.
+    I served on the Prichett and Preston for almost six years. I am probably one of the last torpedomen to fire the old steam torpedoes before they were replaced with more modern ASW systems.
+    You also right about cramped living and absence of privacy. “Where do you go for privacy?” This was the first question my wife asked when we toured the Kidd. Also I am very claustrophobic, but I only remember three bunk stacks not four.
+        Ronald Meland
+        10 / Jun / 2022
+
+        Hey I rember you. I was an FT on the Pritchett from 1964 – 1966. You probably remember Torpedoman Jerry Mutton. He died a few years ago. I am still in contact with Guners Mate Bert Belknap and another gunner named Sonny Lambert.
+    Michael Bell
+    3 / Dec / 2014
+
+    I was a Communications Technician Operator in the early 1970s on the USS FORRESTAL and was exclusively a teletype/crypto operator. I am curious about the radio work done in the 1950s. From what little I’ve found, I think each watch would have a couple of morse code operators copying the fleet broadcast and possibly ship to ship or ship to shore. There would also have been a couple of RMs copying teletype. Encryption was via a roto disk system (KL7?) as the tube or transistor crypto would have come some what later..
+
+    Was the ship to shore comms via manual morse or was it teletype?
+
+    I can see them using manual morse nets between ships but somehow using teletype in a ship to ship net seems unlikely (unless there was a strong net control operator!)
+
+    I enjoyed your article and admit the FORRESTAL was much more pleasant.
+
+    Michael Bell
+        Ed Vallette
+        21 / Feb / 2016
+
+        I was lead Radioman aboard the USS STEPHEN POTTER DD538 from 1956 to 1958. We had 6 RM’s and ship to ship and ship to shore was by CW. In good conditions we copied FOX on 2 teletypes (receive only)slightest bit of rough seas and teletype went out Then we copied FOX by CW. This was a rough hard trip; I had one RM3 the rest were RMSN….
+    Kenneth foerster
+    17 / Dec / 2014
+
+    Re CT operator Michael Bells comments re 1950’s radio work. I was a RM2. In the
+    Late 50’s , and we had teletype, CW, and crypto (I was a crypto operator) stationed
+    In NSA Naples, Italy serving the Sixth fleet. We mainly copied teletype msgs, but once in a while we wud get a fleet operator on CW. All crypto msgs wereon teletype
+    Our mid watch msgs, we’re limited to probably 2400 hrs to 0200/0300, and then we
+    Lost our frequency contact, knocking everything out. We paid for this outage around
+    0500 when everything came back on line, and it was nonstop until relieved at 0800…
+    Does the code MVRIN mean anything to you???? Reply
+    jerry burbridge
+    17 / Feb / 2015
+
+    I served on the U.S.S. Conway D.D. 507. I remember tying an uncapped fuel hose into the trunk when refueling at sea. When refueling was completed the station crew were the only ones to get a fresh water shower to get that black fuel off. Does anyone know the exact type of fuel we received?
+        George W. Stewart
+        18 / Feb / 2015
+
+        In those days we were burning Navy Special Fuel Oil (NSFO) which was a blend of Heavy Fuel Oil (HFO) and Navy Distillate. In the early 1970s the navy shifted over to a single fuel called DFM (Distillate Fuel Marine) that was much cleaner and could be burned in any type of plant aboard surface ships. This was a major factor that allowed a changeover from steam to gas turbine propulsion aboard surface combatants.
+            George W. Stewart
+            18 / Feb / 2015
+
+            Just one thing to add.
+
+            The navy would have liked to go to a single fuel for everything but it is necessary to use a separate fuel, JP-5 for aircraft. DFM and JP-5 have many similar characteristics including the same flash point.But JP-5 contains additives to prevent congealing when the aircraft is operating in cold air at high altitudes. So now we have a two fuel navy, DFM & JP-5.
+        william clark
+        12 / Aug / 2015
+
+        Most likely Naval Special # 6 oil.
+        Bob Crocker BT2
+        1 / Dec / 2015
+
+        I remember salt water showers. We were always on water hours before clearing port. I was on decom crews of DD-447 & DD-450, these were good ships
+        Bob Crocker BT-2
+    Mike
+    22 / Mar / 2015
+
+    Could people have gone fore to aft (and vice versa) by going through engineering? I suspect that few non-snipes would either want to or would be allowed to do so.
+        George W. Stewart
+        23 / Mar / 2015
+
+        No. By World War II direct access between engineering spaces was prohibited and it was necessary to go “Up and Over. To get from forward to aft or vice versa it was necessary to go up on the main deck. On the Fletchers it was necessary to go out into the weather but the Sumner and Gearing class ships were fitted with enclosed passages.
+    Bill Spillman
+    30 / Mar / 2015
+
+    I served on the Ammen DD527 (’59, ’60) and was also on it when it collided with the Collette in 1960. Also, on the Radford DD446 (CIC) out of Pearl from late ’60 thru 63. Four Wespac cruises and three typhoons. Loved it all!!! Radford Reunions every year since 1990. Losing a lot of shipmates as the years go by. One saying that applies to all of us and our Ships, is that as long as one of us is still alive, so are our ships.
+    Robert Ulery
+    1 / Apr / 2015
+
+    I was an et on the Black DD 666, ’65 to ’67. We did gunfire & river boat support.
+    She was sort of ratty by then & needed frequent patching up, but did 38.6 knots.
+    In 1967 the navy offered to sell her to Uruguay, but the decided she was not in good enough condition & bought the USS Chickadee instead.
+
+    The Black has an annual reunion. Contact: Nancy West of Placerville CA.
+    Warren Whited
+    27 / May / 2015
+
+    Best years of my life were in the U.S.S. Heermann DD 532. After fortunately attaining sea duty as the Korean conflict started, was able to depart NAS Agana, Guam and be assigned and be part of the commissioning of the U.S.S. Heermann DD 532 in San Diego, CA in 12 September, 1951. We sailed to England in July of ’53 for exercises during the Queen’s Coronation. Made our World Cruise on 7 December, 1953. I served aboard the Heermann till June of 1955 as GM2. Will always have fond memories of my days aboard a Fletcher Class destroyer. Our sister ship was the U.S.S. Hazelwood DD 531. Check out my website members.tripod.com/~WaipahuHaole1/heermann.html
+    Ed Young
+    22 / Jul / 2015
+
+    I served on the USS Black DD666, ’59-’60, and the USS Allen M. Sumner DD692, ’64-’65. Have to admit the enclosed passageway fore and aft was a big improvement on Sumner. I can remember spending a lot of time in rough weather in the aft berthing compartment waiting for a break to try and go forward for food. Great tours on both ships though.
+    Joseph N. Rich
+    9 / Sep / 2015
+
+    I went into navy in 6/23/5,at the age of 17 yrs.took my basic at Bainbridge, Md.,upon completion of same,was order to serve on the tender AD-19. Arrived on board in 10/22/52.Was assigned to 1st div. which was the deck apes. As time moved on I got luckily & was picked to go on temp. assignment aboard The U.S.S. Rich DDE 820 for helmsman training.(No Relation) to individual to whom the ship was named after. Six of my shipmates went along.We were on her for eight weeks plane guarding with the carrrier Lake Champlain CV39.off the coast of Virgina. The first week we were all sea sick & even forgotten that we were there. Then one day whle out & under way during take off & landing excercise & the weather being nasty,the helmsman that were on duty were not having a good day of keeping on course. The Captain was also having a bad hair day. Some unknown Quartermaster the mention to the Captain that there were six trainees on board to be helmsman. The Captain made a quick decision & order that we start are training right then & there.The reason being that we would do a better job at staying on course. It was just my luck that I would be first! The only wheel I ever had was the steering of a tractor up to that momment of time. I took hold of the wheel from Qm3, & was given the correct course to steer. Well let me tell you if the more experience QM could not stay on course by 5 degrees ,what did he expect of six rookies. There I was frozen at the wheel watching the gryo needle going to starborad then coming back to port the sea was I thought were fifty high, here we are bouncing, rolling,& the Captain expects me to do a better job of staying the course! Well I manged to stay within 20 . Well that was some day for me & the rest of my mates. We all made it . We went back to our luxury liner. We did get underway for operation spring board, Brooklyn Naval,& Hurricane
+    anchorage that seem to come every weekend in Norfolk during the 1950’s. We got must of our sea duty during that period. That was my short time served on a “TinCan”. Then I took a Tiger Cruise in 1970 from Pearl Harbor, HW. to SanDigo,CA. on board the U.S.S. Hewtt 966, asa guest of Captain Mayberry. That was great!
+        Joseph N. Rich
+        9 / Sep / 2015
+
+        correction on the year tiger cruise should be 1990. jnr.
+    Frank Schoenbeck
+    23 / Sep / 2015
+
+    Great article. Information that I very much appreciate.
+    I served on two Fletcher’s, the Philip, DD498, (1967-68) and the Fletcher herself. (1968-69). I was a DC3 on her last WesPac cruise and was volunteered for her decommissioning crew, setting flooding alarms under the boilers. A fresh air snipe that deep in the hole. Sure glad it was VERY cold iron.
+    As a Sounding and Security watchstander, I made that fore and aft trip across the 01 deck, no matter what weather, 8 times in 4 hours. Hard way to earn sea legs. I ended my hitch on the Dennis J. Buckley, DD808. She had the luxury on an interior passageway. I died and gone to heaven. Pumping the chain locker on any of them was a major seasick test which I failed on occasion.
+    Thanks again for your article!
+    Frank Schoenbeck
+        Joe Gatlin
+        7 / Sep / 2016
+
+        Frank, we were shipmates. Made the same WestPac cruise that you did. Our skipper made flag rank. Also, Ensign Bill Cobb, the EMO, made flag rank.
+        David A Moehrke
+        21 / Jan / 2017
+
+        Frank I was a BT in the forward fire room I was on board from April of 1965 until I think May or June of 1968. I made Second Class BT reenlisted requested and got BT C school ( automatic combustion control school) and (Pressure fired steam generator school) one of the easiest to operate boilers 1200lbs 975DEGF superheat. we carried up to 65psi combustion air pressure to the burners. These boilers were about one half the size of an M type boiler, but put out the same volume of steam @1200psi@975DEGF.
+            Mike Lacey
+            27 / Aug / 2018
+
+            Morak, I sailed with you on Philip. Mike Lacey, I retired in 83 BTCM.
+    Tony Cirillo
+    19 / Oct / 2015
+
+    I served aboard the USS KIDD 661 as part of her decommissioning crew. Just prior to that we took her on her last voyage from Philadelphia to Boston where we were greeted by a number of ex KIDD crew members (Korea and WWII). If you want to learn all the workings of a ship decommissioning is the way to do it. As a machinist mates we were responsible to decommission all engineering components. That is, other than boilers. For example, the emegency diesel was dismantled, thoroughly cleaned with spirits. New piston rings and a new head gasket were installed. However, not before everything was coated with cosmoline for protection. The head gasket was not torqued as the head will have to be removed remove the cosmoline. All valve stem packing was removed from each manual valve. New, cut to size, packing was place in water proof bags and attached, by wire, to each valve. All tools, spanner, cresent, open end/closed end wrenches, rachetts, etc. were coated with cosmoline and wrapped in heavy wax cloth and stored in the engine room work bench. This also went for the reduction gears and associated oil sump. Why you ask, did we do all this. We were told the ship had to be put in such a capacity that she could be put back in action in 30 days if called upon. Well she’e now a living museum in Baton Rouge, LA. She was brought back to her WWII armament. They have air conditioned some spaces to allow sleep overs by scouts. It’s amazing all the memories walking her decks brought back. Only a tin can sailor can appreciate this sea going grey hound for what she really is, home.
+        Debra Bales
+        8 / Feb / 2019
+
+        Tony Do you know where the USS Kidd was in 1956? I am looking to get info on Willard G Abney. who was on the Kidd 1945-1957….. Any info would be helpful
+            Dale Lay
+            14 / Jan / 2021
+
+            I was on the USS Kidd in June/July 1956. I was a Naval Reservist on TDY. We were at the Naval Station in San Diego. I was only onboard for about 30 days. Not long enough to get to know anyone.
+    David FOGG U.S.N. Ret.
+    20 / Oct / 2015
+
+    I served 4 years on the Caperton DD650 went on right out of boot camp I was there for a week and the CO asked me if I wanted to be a cook. Good job I had a lot of buddies and a lot of cold beer in port went on for 20 that was the best duty God Bless Dave
+    Donald W Hansen
+    25 / Nov / 2015
+
+    Was on the USS Saufley… DD 465….. I was a Water Tender 3rd class in forward fire room….. We all took turns at the four functions and each of us “blew a safety valve” at least once when we could not shut oil valves fast enough (steam pressure over 615 pounds.) Our bunks were 3-high with lockers under bottom bunk. Served mostly Ithe Phillipines from OCT44 to end of war. I lament the fact there are not many of us WWII vets left! The
+        John Gormley
+        3 / Dec / 2021
+
+        Donaldyui78 There are only 315,000 WW2 vets left. (Google)
+            John Gormley
+            3 / Dec / 2021
+
+            I was FC2C, on Twining DD540, from commissioning till end of war. Pacific only.
+    Donald W Hansen
+    25 / Nov / 2015
+
+    I was on the USS Saufley DD465 from MAY44 thru JULY46….. Was a Water Tender 3rd class and served in the forward fire room. …. We took turns on the 4 four functions and each of us blew at least 1 safety valve (615 pounds) when not getting oil valve/s shut off fast enough! Our bunks were mostly 3 high with lockers under….. I have 4 battle stars…. I really lament the fact that there are so few of us WWII veterans left!
+    Bob Crocker BT2
+    1 / Dec / 2015
+
+    I remember saltwater showers, we won’t even clear port until we were on water hours! I served on DD-450 & DD-447 From 1967-1970, then finished on a cruiser.
+    The Fletcher’s were good ships, started my life’s work as a process operator @ petro-
+    chemical facilities . Wonderful experience!!
+        Joseph E Morris
+        6 / May / 2019
+
+        I served on the Sherwood DD520, Oct 54 to Nov 55, BT3 in the after fire room, the best steaming in my 4yrs of active duty, went from Newport RI to SanDieago and on to Japan and surrounding areas. Any body on board in this span, my email, joethedriver93@yahoo.com. The article hits the nail on the head as for living aboard.. used to hang out by the galley after getting off night 8-12 watch and wait for the sweet rolls to come out of the oven.
+    Richard L. Orton
+    22 / Dec / 2015
+
+    I served aboard the Fletcher class Destroyer USS Bache from July 1952 to August 1955 out of Norfolk Va. The ship spent time in the Caribbean during the cold weather months in Norfolk. We made two trips to the Med. I made MM2 in a little less than 3 years. It was a fast little ship but some times a real rough rider. I saw a lot of the world while aboard and wouldn’t trade that experience for anything. We spent three months in the Brooklyn navy yard and that was also a real experience. Ten years after I was discharged the ship went aground in Rhodes Greece. It was scraped there. I treasure the pictures I have of her. She saw a lot of action during WW2. Was hit by a Kamikaze. Killed a number of people.
+    Richard L. Orton
+    22 / Dec / 2015
+
+    An after thought. The order came down to vacate the CE piers (Norfolk) and anchor out in the bay because a Hurricane was on the way. When arrived the anchor site someone decided to drop only one anchor. The engine rooms were tasked with keeping the strain off the anchor chain which we were doing until someone didn’t give the throttle man a bell to add more RPMs when suddenly,
+    Thud. The anchor chain parted and nearly put us all on the deck. Then the bells started coming down faster than they could be recorded. The worst part was the deck crew had to go out and free up the other anchor. I think they were tied off some how. After the storm the Sonar crew looked for the anchor but never found it.
+    Chuck Stoudt
+    14 / Jan / 2016
+
+    I served on the U.S.S.Taylor DDE 468 from September 1956 to September 1960, I loved Her like the finest woman in the world. I was a Gunners Mate, as you all know, doesn’t exist anymore. Had some bad typhoons in the South China Sea but great liberties in Japan, Subic Bay,Austrailia, and yes, I am a Shellback. They don’t do all the celebration anymore when the ship crosses any important meridians, it would probably be a violation of a crewmans personal rights..I thank God for being a part of my Brothers lives for those four years, they were some of the finest, crazyiest but most dependable men in this World.
+        Chuck Stoudt
+        14 / Jan / 2016
+
+        I can be reached at 404-520-9100..
+        Joe Gatlin
+        8 / Sep / 2016
+
+        You will be interested to know that Taylor was in Tokyo Bay for the surrender ceremonies. She was used to ferry the flag officers to Missouri for the Japanese surrender. My father was served in the Army was in Tokyo Bay for the ceremonies, too, but he was not on the Missouri. He served a year in the occupation forces in Japan on MacArthur’s staff.
+        In 1969, after I got off the Fletcher, I was assigned to the Taylor which had been sold to the Italian Navy. I was with one other officer and about 17 enlisted men in the turnover crew. The new name was “Lanciere,” I think. When the ship left San Diego, there had to be at least two women for every Italian sailor attached to the ship. The women were of all ages and they were all crying. I can’t tell you how many phone calls I got from irate fathers, whose daughters were going to marry some Italian sailor, making $45 per month, and who couldn’t speak English. They were looking to me to intercede.
+            Benny Ezzell
+            19 / Feb / 2019
+
+            My dad was on the TAYLOR! DD468. I think he was a fire controller or something like that. Never talked much about it.. Told grandfather of shelling a gasoline tank with Jap machine gun on top killing Marines going ashore. Suppose to be a picture of it just blowing up but can find it.. Thank all for your service and God bless you.
+    Edward C Bowman Jr. MM 2
+    17 / Jan / 2016
+
+    Was on board uss Bache dd470 from may of 62 till nov. 63.Most of the time I was in charge of the ships evaporator. ( water king).I remember the throttle board still had the holes in it from when the turbines blew up from the kamkazi attack.all in the forward engine room were killed.In November 1962 we were operating off the coast of New England in a terrible storm. The orders were all fore and aft traffic was to be done on the O-1 level for safety.I was on watch in the fwd. engine room with the messenger sitting beside me when it became time to call the next watch.He went up the ladder to call the watch.less than a minute later the ship took a tremendous roll to port, everyone had a frightened look as this was the worst roll we had ever taken.All of a sudden the man overboard alarm was sounded.The messengers hat had blown off and he went down to the main deck to retrieve it when the ship rolled.We had him sighted for 45 minutes but the sea was just too rough for him. He was lost.May God hold him in His loving arms forever. His name was George Hyduck ICFA. He was eighteen years old from Philadelphia,PA.
+        Randy Hall BT 2
+        21 / Feb / 2016
+
+        I served on the Beale DD 471 from 67 to 69
+    Don Bruschi
+    24 / Jan / 2016
+
+    I served aboard the USS STOCKHAM DD683 homeported in NEWPORT, r.i. from April 1953 to June 6, 1956 as a Radioman P.O. After graduating from Class A Radioman school in Bainbridge,Md, I reported aboard ship and we made a shakedown cruise to Guantnamo Bay, Cuba, After departing Gitmo, we started on our round the world cruise on Dec. 7th ,1953. This included four months in the combat zone in Korea. Our duties were to escort and plane guard six attack carriers and to pick up any downed carrier aviators. We blockaded several Korean ports and were ready for shore bombardment if if called upon. We returned to Newport on July13, 1954. We conducted anti-submarine hunter-killer operations in the Atlantic until October,1955. During this time, we were the first destroyer to play hunter-killer with Americas first nuclear sub, the Uss Nautilaus along with Heerman, Hazelwood and C.J. Badger. after operations were over, all engines were stopped and the Nautilus surfaced alongside of us and we were amazed to see that she was longer and bigger than we were. I never will forget that. In October,1955, we departed for the Suez Canal, Isreal, Lebanon, Egypt. Arabia, Greece, France, Italy, Spain, Portugal, and Gibralter. We returned to Newport in May and I was dicharged June 6, 1956. This was the best years of my life and I loved being on a destroyer – that was the real Navy.
+    Mike Owens
+    29 / Jan / 2016
+
+    Us Halsey Powell DD686
+    My father served as a electrician from
+    About 1949 to 1964. I was no in Jan 27
+    @955.in 1951 and 1952 my father and 64 other sailor’s were told that they would participate in Nuclear testing of A- bomds
+
+    Mike Owens his Bennie
+    64 sailor’s stood on deck so the navy could register the amount of radiation they would be exposed to. 1st day 5 miles
+    Navy said too close over exsposed 2nd dsy 15 miles. My dad and 64 other sailor’s died with leukemia. My dad was 48 when he died in 1978. My dad had a country music band and he looked like Hank Williams Sang like Hank Williams and drank like him. The ship was requested to different ports where would sing for the admirals and their parties
+    He was an alcoholic all my life. And their band would be drunk all the time. He brought Hank Williams music to different countries. He was good but he would be drunk all the time and spend all our money on guitars ,cowboy hats and new suit. We were poor and went hungry sometimes. He drank badly when they the navy exsposed him to the radiation. There are 6 kids in my family and 4 of the older including me have birth defects associated with radiation exposure. In my Jr high school and
+    High school My father drank all the time. I was embarrassed. When we lived in San Pedro he would sing in all the bars in Los Angeles. He brought Hank Williams to LA and was in high demand. We were poor and me in the 4th grade I would steel news papers from the box and go into the bars and sell them to the drunks for 1 Dollars and some drunks gave me 10 s and20s. That’s where my mother got money to feed us. And I would return all the newspaper back to the box but before I did that I would get a free taxi ride across the harbor then go on the ships and sell papers to the people aboard them I would eat in the mess hall where they would give me food to eat. And the taxi would bring me back to Port acall where I would Fish around the docks and piers next to yahts and catch King Fish to bring home and give them to My mother to feed us because daddy would spend all our money all this was done when I was in the 4th grade at 10 year’s old.he died in 1978 at the VA hospital in Pineville, LA. With leukemia. I knew him as Hank Williams.
+    Fred
+    4 / Feb / 2016
+
+    Anyone know the maximum roll angle and the angle that the gyro alarm sounded?
+    On a sumner class. Dd759
+        william Clark
+        23 / Feb / 2016
+
+        I can remember in the North Atlantic with the NATO standing force doing almost a scoop by the Bridge wing in a real bad storm. Someone said that we just about did a 70 roll , that would mean another wave had to push us back upright . But in the Boiler-room it sure was rough, the worse I have ever seen in all my service time on Destroyers which was about 13 years total at sea, shore duty was at Great Lakes Recruit Training center as a C/C and classroom instructor . Retired in 1975, spent time after Boot camp at Webster Field in Branchville Md. Attached to Pax. River Naval Air test center.
+            Sam M
+            22 / Jul / 2016
+
+            Hi, William. I was wondering if you recall what boilers were installed at the Great Lakes Training Center (for the boiler training?) Any help you can provide will be appreciated.
+                Herb Moore
+                5 / Nov / 2017
+
+                there were three steam labs for BT”A”,MM”A” schools, a 450psi D-type Turbo-electric DE-plant, a 600 psi M-type plant DD-445/692 aft fireroom, and then plans for a 1200 psi D-type 1052 plant. Had served after BT”A” aboard DD-547 (Cowell), DD-776(J.C.Owens)
+    Michael Vaughan
+    21 / Feb / 2016
+
+    Capt. Stewart, my dad was CO of Halsey Powell from 54 to 56. Did you know him? Henry “Hank” Vaughan, USNA ’40. He had an XO who was a real piece of work plus a tough commodore! He made two WestPac deployments on HP. He retired in ’60 in “the Hump”. I was 10 when dad took me out for a gun shoot on board. Probably broke a few rules but I was in awe!
+    Mike (retired O-6 myself)
+        George Stewart
+        22 / Feb / 2016
+
+        I reported to the Halsey Powell in August 1956. My CO was Cdr Garrison Brown. Your dad was his predecessor. There were still plenty of crew members who served under him. I never met him but I do remember frequently hearing his name.
+
+        George Stewart
+        George Stewart
+        23 / Feb / 2016
+
+        More Stuff
+        If you go to a website called E-Yearbook it contains a selection of Navy Cruise Books. If you go to that page you will find a large number of them, sorted by the first letter of the ships name. Hit the letter H and you will see the Halsey Powell’s name come up. You will find ones from 1956 and 1958. I still have my copy of the 1958 edition. If you open up the 1956 version and scroll down a few pages you will find a prominent picture of your dad, accompanied by a brief biography. You may also see some other familiar faces. His XO, Lcdr Joe Kington was still there when I arrived. I heard that his commodore was pretty tough.
+
+        The website NAVSOURCE contains a list of commanding officers for each ship. Your dad was there from July 1954 through July 1956. I did not arrive until the end of September 1956. So I just missed him.
+
+        I do remember the Hump. A lot of the officers, particularly LCDR aviators were pretty bitter about it.
+
+        Do not hesitate to ask questions. I can be reached at 703 960 0489
+        George Stewart
+    Bruce Helmboldt (ex RD3, USS Joseph P Kennedy, Jr DD850)
+    22 / Feb / 2016
+
+    My dad, EC2 Leo Helmboldt, served on USS Bache DD470 in WWII. He swears that they exceeded 40 knots in the Battle of Surigao Straits by holding/tying the safeties down.
+    Dan Brown
+    22 / Feb / 2016
+
+    I served on the USS SHELDON DD 790 in 1971. I was an SK3, but spent most of my time in the upper handling room of mount 52. This was during Vietnam. We won many citations and awards for outstanding service. We blew the hell out of the enemy.
+    Phil Becker
+    22 / Feb / 2016
+
+    I served on the USS Luce DD522 in 1942 as a Seaman 1rst striking for Signalman-my GQ station was in After Steering which was a small hot place–it was just me and an Electricians mate. It was a rough riding ship and the “No passageway from aft to forward” was a drawback as in foul weather the trip to the bridge from aft crews quarters could be wet and exciting.
+        JO Bailey
+        31 / Aug / 2020
+
+        Phil, I’m a retired CPO doing research for an individual who is part of a reunion committee for the USS Luce, he is wondering if you are available for a ship’s reunion?
+        Jim Bailey GMGC. job1037@yahoo.com
+    VIC GRILLO MM\2
+    22 / Feb / 2016
+
+    I served 0n the C,J,BADGER (DD657) 43 45 went on ship out of bklyn navy yard, she was built in staten island, went to west coast up to kerille islands for six months, then to frisco got camofloged and headed to south pacific , three invasions layte Luzon okanowa never saw a thing was in forward engine room, ship got hit by small boat with bomb in bow, got called back in 50 on a LSD BELLE GROVE 2 discharged in 51!!!!!!!!!!!!!
+    Leon "HUD" Hudlin MM3
+    23 / Feb / 2016
+
+    Sorry no one mentioned the Renshaw DD499. Made two Westpac trips and was on board till decom. Still trying to find a few buddies that were on the RINKI DINK. Full steam ahead!!
+    John Todd
+    10 / Mar / 2016
+
+    Class 22 at Destroyer School, graduating in 4/68. Asked for a new FF and Weps, but first was home port which I wrote down as Pearl Harbor. Got the home port and CHENG in O’Bannon (DD-450)! Best tour of my 20 year career save for command. There were no “snipes” on board, just engineers. Proudest most can-do guys with whom I’ve ever served. One short vignette:
+
+    A full power run off Hawaii… And all four throttled wide open. Over the 21MC from the bridge to Main Control: you up to full power yet? A chief BT had the watch (he had the driest sense of humor I’d ever experienced, and he hailed from a mountain town in Tennessee) replied with a slow lazy drawl “on Auxiliary and about to bring the plant onto the main.” We were already up to 33 knots….
+    Gary
+    18 / Jun / 2016
+
+    My dad was on the U.S.S. Shaw (DD 373) at Pearl Harbor during attack. He was Chief Boiler Tender and passed in 2007. I believe the Shaw was a Spruance Class tin can. Anybody know about these destroyers?
+    Gary
+    18 / Jun / 2016
+
+    Correction: the Shaw was a Mahan class destroyer. Dad was a Chief Boiler Tender from ’34-’54… Shaw, Cassin, other tin cans.
+        George Stewart
+        20 / Jun / 2016
+
+        Shaw was a Mahan Class destroyer that entered service in 1936. At the end of the war the navy had too many destroyers so ships of this vintage were decommissioned. Shaw was scrapped in 1946. If you go to the website NAVSOURCE and type Shaw into the search box you will get a brief ship history accompanied by lots of photographs,
+    Joe Gatlin
+    7 / Sep / 2016
+
+    Captain Stewart, technical question for you. Do you know the RPM that the SSTG’s operated at? Is there any reference where I could get the technical specifications for the SSTG’s in each engine room? Thanks in advance
+        David A Moehrke
+        21 / Jan / 2017
+
+        I believe the SSTG generator speed was 1,200rpm making these 6 pole machines.
+    Joe Gatlin
+    7 / Sep / 2016
+
+    As I stated in an earlier post, I was Engineer Officer on USS Braine DD-630. One day we off loaded our ammo at Seal Beach and then headed south to San Diego. It was a beautiful SoCal day and the sea was like glass. The skipper said we could put on liberty turns and all the sailors were anxious to go liberty in San Diego. I was the OOD on the bridge. My guys cranked up the turns and we were doing 29 knots on two boilers. I was taking fixes along the coast and verified the speed! A great memory from my time in the Navy.
+    I loved the Dirty 630. Later, we sold the ship to the Argentine Navy. The Argentines came on board one day and wanted only to talk to me. I told my wife that evening that I had just sold a ship! Don’t know if she was in the Falklands War or not.
+        MAURICE R CHEVALIER
+        1 / Oct / 2018
+
+        Hello Shipmate Gatlin. I was RM1 on the USS SPROSTON (DD-577) 1966 – 1968 (Decom). First tour to Vietnam
+        Mar 1967 – Aug 1967. Sproston was designated “The ROADRUNNER” – She was given an OFFICIAL ROAD RUNNER FLAG by Walt Disney, Corp. We flew it every time we finished along side replenishment/refueling, with the music.
+        I would like to ask a question — Do you or any of the other Engineering Officers you might know of a requirement
+        of having to go beyond the 12 mile at sea to make fresh water? I’m referring to waters in the Vietnam area.
+        Do you know if the ships on the “GUNLINE” or in the Bays and Harbors stopped making “fresh water” while there?
+        Your response is greatly appreciated.
+        Shipmate, Chevalier, CPO,USN(ret)
+    Kyong Reinoso
+    1 / Oct / 2016
+
+    Thoughtful post . I learned a lot from the specifics – Does anyone know where my company would be able to get ahold of a blank DD 577 copy to use ?
+    Jon Snow
+    8 / Oct / 2016
+
+    Hi , my assistant acquired a sample DD 577 form using this https://goo.gl/B6X6ma
+    Ted Soper
+    26 / Nov / 2016
+
+    Went in the Navy the Spring of 1952 till 1960. I went to boot camp at Bainbridge, Maryland and my first Destroyer Escort was the USS Blair, in 1955 I was on the USS Benham DD796 out of Newport, Rhode Island. During these times I was in the Med twice also we were the last Destroyer to go thru the Suez canal before they sunk the ships (cilivan ships) in the cdanal blocking it for at least 2 months. We went to the Red Sea, Persian Gulf and were told to go to Masawa, Ethiopiia Africa , no A?C on our ship just blowers. It was so hot we had coco matting on all decks. Working hours were reversed up at 6PM and taps at 10AM. Get cool the best way you could. I was a Gunners mate 2nd class so i hug a hammock in Mt.52 a 5″ 38 on the 02 level.. Lots of sea snakes on top of the water in the Persian Gulf. Finally they cleared the Suez canal and we were one of the first destroyers to go thru the Suez.
+    As we approached Alexandria pretty close to the med, there were thousands of Egyptians holding signs YANKEE GO HOME. Then they starting throwing rocks and bottles at our ship. It go so bad that the Captain sounded GQ and we all manned our battle states, I was the gun Caption of Mt.52 a 5″38. As they still kept throwing rocks the Captain over the PA system and my head set said all guns train 090, which I repeated to my gun crew, then over the PA system “All guns elevation 0 degrees.They still were throwing rock again over the PA System the Captain said “Load” Now when load a 52 pound projectile in a 5″38 that can be heard pretty far, then ths Captain said over the PA Stand by to fire, For the first 5 seconds they kept screaming and throwing the rocks then they all froze and they all started to run, tramping each other, I’m sure people were pretty hurt of killed trying to get out of the way. That was an unforgettable experience for all aboard our ship that none of us would ever forget. I got married in 1957 and after 3 weeks went to the med for 9 months. home for 2 month then to South America also I am a shellback and also I have been in the Artic Circle and am a Blue Nose.After getting back I went to try out for Destroyer Force Atlantic Fleet Basketball Team and made the team so I spent 6 months a year at McCormic Sports Center, I was TAD aboard Destroyer Tenders USS Tidewater, USS Shenandoah, there as another one but can not think of the name, I will think of it after I submit this. Here I am married and I have only seen my wife a month after those trips a year of being married, so I got out of the Navy 1n 1960. I never had shore duty, sometimes I think I should have stayed in but probably
+    I would not had my wife, Now we’ll be married 60 years April 2017. Thanks for letting me tell some of my experience on Tin Cans, being 82 I can’t go back but I would ask to go back aboard Destroyers again. Great duty.
+        Donald Gill
+        17 / Dec / 2018
+
+        Dear Ted,
+        I also went thru the Suez canal after it was cleared for passage. I was on the USS MCGOWAN DD678 which I was told was the first ship thru with three others, cant remember the others. May have been the Sullivans, McNair and possibly yours. Made two Med Cruises. Last cruise made we were on the Island of Crete, when Captain ordered to get ship underway immediately’ ALL HANDS ON DECK.Later that day we were told we were headed to Beirut, Lebanon at there request as a show of force against nations surrounding them threatning a Coup. When I saw the amount of ships massed (about 50) I thought we were at war.The marines were already on shore. Needless to say they changed their minds about their plan. Somewhere in that time frame we also went to Cuba (GTMO) after leaving the shipyards in Boston, Mass, to check out our new ASW equipment. My sea time was from
+        1956 -1960. Spent about two months at Great Lakes in electricians school until I almost burned the school down so they sent me to the fleet (for punishment) Made my rating as an EN3. GOD bless brother, THANK YOU FOR YOUR SERVICE. (DONALD GILL EN3 USS MCGOWAN DD678; NEWPORT RI (Ship passed on to Spanish Navy for trainig purposes and 5 years later scrapped) donald.gill@sbcghlobal.net
+            Yohayna Madera
+            24 / Sep / 2020
+
+            Mr. Gill.
+            I am a litigation paralegal doing asbestos research on the USS McGowan. Do you recall if the USS McGowan ever dock at the Norfolk Naval Shipyard between 1956-1958 and for how long?
+    David A Moehrke
+    21 / Jan / 2017
+
+    I was a BT aboard a Fletcher class destroyer commissioned in 1941 as the USS Philip DD498 and sailed out of Pearl Harbor from 1965-1968. Our ship had been FRAMed by the removal of mount 52 and replaced by weapon Alpha. The torpedo mount was removed, as was gun mount 55, and 54. What was mount 55 was renamed 52, and the quad 40mm AA guns were replaced by 2 dual 3inch 50’s. I was stationed in the forward fire room my whole time. In 1966 we got A/C in crew birthing, and had when I reported on board as an E2 fireman A/C in the officer country, Chief mess, and berthing and crews mess. I made 3 Westpac tours while on board, and several tours on the gun line on Yankee Station. I think it was during the 1966 Westpac tour that we lost the Starboard or #1 propeller while doing 26 knots right out of Subic Bay heading for Yankee Station. This caused us to remain in Subic Bay for another 2 or maybe 3 weeks. I left in summer of 1968 for leave, BT C school as a second class BT petty Officer. The ship was decommissioned in late 1968 and I was told later that she was towed out across the Pacific to be broken up for scrap, but sank in a typhoon not too far from Guam. Yes we did have 4, 600lb @ 850 DEGF superheat steam and if I remember correctly that was generated at a maximum rate of 185,000lb. per hour each boiler. I also remember 36 knot was on the main control gage board as 404 shaft rpm. I have many fond memories of that ship, and know you could not make that ship go dead in the water during Engineering Casualty Control Drills. A statement that cannot be made on any of the Fast Frigates that later served on.
+    Charles Croy MM3
+    24 / Apr / 2017
+
+    Served on The Sullivans DD537 from !959-1961 . The ship is currently on display in Buffalo, NY. Toured it in Oct. 2016. Was confused about being able to go thru watertight doors in rear engine room into a berthing compartment. Having served in forward engine room and having only ladders for entrance & exit at the time this seemed strange & thought my memory was failing. I now realize they must’ve installed the doors in the rear engine room for ease in touring the ship. It was a nasty day & didn’t have a chance to get as much info as would’ve liked. Would like to to get back to Buffalo in the future with a better day for touring.
+        Ruth Ingmire
+        23 / Oct / 2017
+
+        Hello Charles,
+        My husband served on the DD-710 USS Gearing and I am doing a scrapbook for him. I am looking for pictures of the fire room and turbine room he worked in. Would you be able to help me with this? Maybe on your tour you took pictures of these rooms.
+        Thank you,
+        Ruth Ingmire
+        Bill Burke SM3
+        18 / Sep / 2018
+
+        Hi shipmate I was on the Sully 61 /64 sm3 my name is Bill Burke, many trips to gimo I visited her in Buffalo a few times great duty loved the cruise to Nova scotia and Halifax
+        When we were an engineering school you guys in engin room must have hated it with all the docking drills we did do you remember going ashore on the git our base to drink and coming back on what they called the cattle car (bus)
+    Ted Kierscey
+    21 / Jun / 2017
+
+    Dad was on Clemson destroyers from 1923-1935. He then was assigned to various other types of ships through 1941. He described to me many practices on four piper destroyers that I still remember today, 2017. One of them was the carrying of meals. I found the mess information so interesting because the practice on destroyers was still somewhat the same from the Wickes and Clemson classes to the Fletchers.
+    Back to dad. He was involved in the 1923 Point Honda pile up and following grounding of seven US Navy Destroyers. He, as a signalman striker, operated one of the searchlights of the USS Percival DD 298, to help illuminate the effort to rescue and adjudicate the subsequent disaster there. He had many stories about that event as well as destroyer living in that era.
+    Barbara Bartlett
+    25 / Aug / 2017
+
+    Dad was on Fletcher-class, USS Hickox (DD-673) during the last 2 years of WWII. The Hickox survived Typhoon Cobra 12/18/1944 while Dad served (thanks to the captain’s efforts to add water to the ballast). Dad, John Gluchman, is still doing well. He was an electrician on board and a gunner’s mate during combat. I always enjoyed the meridian stories which he shared, although I’m sure he excluded a lot of the story (to his daughter). :)
+    Ruth Ingmire
+    23 / Oct / 2017
+
+    My husband was on the USS Gearing from 1961-1965 as a BT. I am doing a scrapbook for him and I need some pictures of a fire room and a turbine fan room. If anyone has some available would appreciate them for this project.
+    Thank you.
+    Ruth Ingmire
+    John D. Blair
+    4 / Dec / 2017
+
+    I served on the U. S. S. Bradford (DD 545) from October, 1957 to September, 1959. I, was a “Two Week Wonder”; that is, a member of the naval reserves. Like the Halsey Powell. the Bradford’s life had been extended — it was needed to train reservists. In the two years I served, Bradford made two six month cruises. We visited all the WW II battle areas — Pearl Harbor, Samoa, New Ireland, Australia, Philippines, Korea, Japan, Hong Kong We picked up satellites, or mock satellites, that were falling from space or being dropped from planes, we plane guarded for carriers, we plied the Formosa Straights during the Matsu/Quimoy dust up, we helped celebrate Hawaiian statehood. Fletchers were faster than Gearings — several hours out of Hawaii , our squadron started speed trials. We beat ’em every time.. Bradford was handed over to the Greek navy, then scrapped in the mid sixties. Several Fletchers still exist — U. S. S. Kidd in Baton Rouge, Sullivans in New York, etc.
+
+    Pingback: USS Fletcher Destroyer: World War II - Learning History
+    Bob Raesemann
+    9 / Apr / 2018
+
+    Served aboard a Fletcher, a Sumner and 2 Gearing class destroyers along with a long list of other types and classes of other ships during my thirty year career, bu the destroyers were always my favorite duty stations.
+    Howard Freeman
+    21 / Apr / 2018
+
+    I was honored to be assigned to the USS Nicholas DD-449 out of Pearl Harbor. Made he last deployment to West-Pac and Vietnam. We did a lot of fire support for troops ashore. I was the MM1 in the After Engine room. We would make double acceleration breakaways from refueling and replenishing from other ships. The Signalmen would pop the Roadrunner flag, and blow the train whistle attached to the forward stack. It went to the fastest DD in DesRon 25. Nicholas retired on 30 January, 1970. It was an honor to have served on her. She retired as the most decorated ship in the Navy during the 20th Century, with 30 Battle Stars and The Presidential Unit Citation.
+    Richard Fischer
+    5 / May / 2018
+
+    Served on the Saufley DD-465.
+    Hugh Cattnach
+    4 / Nov / 2018
+
+    I serviced aboard the USS PRESTON( DD 795 ) 1963 to 1966 . She was the best ship I ever served aboard. Haze Gray and Underway..
+    Barbara Bird
+    8 / Feb / 2019
+
+    I an the widow of Carroll Bird jr,who served on the DORTCH DD670 during the Korean War 1952- 56 as a BT. I am putting to gather photos as a memorial of his time in the Navy to give to his family. If anyone remembers him or has photos of the engine room I would appreciate it.
+    theft meaning
+    18 / Feb / 2019
+
+    Remarkable! Its in fact amazing post, I have got much clear idea about from this piece
+    of writing.
+    James Thomas RMCS USN Ret
+    18 / Jun / 2019
+
+    I served on USS The Sullivans DD537 in 1962, as RM1, and on USS Gearing DD710 in 1967, as RMC. Each of those tours was less than a year. I never really got used to the up and over, required to go fore to aft, on The Sullivans.
+    Cochran
+    1 / Nov / 2019
+
+    I served on the USS Caperton DD650 from 1950 to 1954. Caperton was recommissioned at Charleston SC in 1950. Were to Philadelphia Naval Shipyard for major changes removal of 40mm guns and addition of 3inch guns and Mark 37 radar, tripod mast plus other improvements. After sea trials additional training was conducted at Guantanamo. Caperton was reassigned to Pacific. Later participating in the Korean War. After leaving Korea we continued on a world cruise. I was approaching the en of my enlightenment and was reassigned to DE in Located at. Guantanamo.
+    Tony J. Pappas
+    15 / Jan / 2020
+
+    WOW! I just stumbled onto this website an hour ago and can’t remember having such a reawakening of days gone by. I served on the Isherwood 520 (Fletch) ’55-56 and then the Richard B. Anderson 786 (Gearing) ’56-57 as RM3. The ‘Ish’ was a survivor of an Okinawa kamakazi hit on 4/22/45 that killed 68…including the entire DC guys that were trying to pry away the burning wreckage away from the port after depth charge rack. Others wounded were transferred to another ship and some didn’t survive a second kamakazi hit. Talk about being in the wrong place at the wrong time, eh? But the ‘Ish’ survived and 10 yrs later I had the honor of serving aboard her. Thirty years later I attended her 2nd reunion in Denver where most were aboard her that fateful day, including the skipper…who died a year later. I told him about a book that I had just read called ‘The Ship That Wouldn’t Die’ by F. Julian Beckton, skipper of the LAFFEY that survived multiple bomb and kamakazi hits and is now one of the memorial ships on the East coast. The skipper blew my mind when he told me he and Beckton were Academy class mates and that their class were having a reunion that very night at Annapolis but he chose, instead, to attend this crew reunion. Some guy, huh?! Then he further blew my mind when he told me ISHERWOOD left her shore bombardment duties to go out and relieve the LAFFEY way up North on the radar picket line, the hotspot for the kami’s, and six days later SHE took her hit. Only one kami hit her but she lost 68. LAFFEY took multiple hits, bombs and kami’s, but lost far fewer. Who’da thunk!! Sorry for this novel. I hope it was meaningful to some of you as it is to me. I honor all who served then when I was still a kid. I salute you all.
+    T.J. Pappas
+    Donald Brothers
+    19 / May / 2020
+
+    I served as a Sonarman aboard the USS Cogswell (DD651) from 58-61 and being a small-town 18 year old at the time, I can say that there were so many exciting events that took place; some of which were:
+
+    losing our mast from a heavy roll during a typhoon
+    shore patrol duty in the back alleys of Hong Kong
+    viewing a nighttime high altitude nuclear test near Johnston Atoll
+    R & R visit to a retreat deep in the mountains of the Philippines
+    watching artillery duals in the evening sky near Quemoy and Matsu
+    tracking one of the first nuclear subs
+    looking at the nearby coast of China
+    refueling in rough seas
+    taking bathythermographs in rough seas
+
+    I truly enjoyed every moment of my tour on the Cogswell
+    John Gormley
+    3 / Dec / 2021
+
+    I was FC2C, on Twining DD540, from commissioning till end of war. Pacific only.
+    Gil Goodwin
+    6 / Dec / 2021
+
+    I was on USS SAUFLEY EDDE-465, 1958 – 1959. PNSN rating and worked in ship’s office. Home port was Key West with runs to GITMO and Charleston, but mostly steamed locally. Later transferred to USS SARSFIELD DD-837.
+
+Comments are closed.
+THANK YOU TO OUR SPONSORS:
+VIEW OUR PULL TOGETHER NEWSLETTERS

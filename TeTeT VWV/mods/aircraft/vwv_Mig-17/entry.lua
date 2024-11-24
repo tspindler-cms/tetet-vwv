@@ -7,7 +7,7 @@ declare_plugin(self_ID, {
     fileMenuName = _("vwv_mig17f"),
     developerName = _("TeTeT"),
     update_id = "mig17f",
-    version = "0.7.0",
+    version = "0.8.0",
     state = "installed",
     info = _("Wikipedia: The Mikoyan-Gurevich MiG-17 (Russian: Микоян и Гуревич МиГ-17; NATO reporting name: Fresco) is a high-subsonic fighter aircraft produced in the Soviet Union from 1952 and was operated by air forces internationally."),
 

@@ -9,7 +9,7 @@ declare_plugin(self_ID,
 	creditsFile = "credits.txt",
 	fileMenuName = _("A-1 Skyraider"),
 	update_id    = "a-1_skyraider",
-	version		 = "0.7.0",
+	version		 = "0.8.0",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Douglas A-1 Skyraider (formerly designated AD before the 1962 unification of Navy and Air Force designations) is an American single-seat attack aircraft in service from 1946 to the early 1980s, which served during the Korean War and Vietnam War."),
 

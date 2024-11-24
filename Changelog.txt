@@ -1,3 +1,22 @@
+2024-11-24
+  A-1 Skyraider
+    - New Simple Flight Model (SFM)
+  MiG-17F "Fresco-C"
+    - Add livery for Syria
+    - Add ship strike capability
+  O-1 Bird Dog
+    - Use new propeller animations
+  CVA-31 Bon Homme Richard
+    - New shuttle textures, new catapult textures, new wire anchor textures
+    - Fixes to runways and routes
+  DD Fletcher class FRAM II 
+    - Initial Release
+  DD-537 The Sullivans
+    - Initial Release
+  DD-731 Maddox
+    - Various model upgrades
+    - New AA gun code for small calibres
+    - Main gun fixes
 2024-11-07
   A-1 Skyraider
     - Fix toilet bomb pylon position

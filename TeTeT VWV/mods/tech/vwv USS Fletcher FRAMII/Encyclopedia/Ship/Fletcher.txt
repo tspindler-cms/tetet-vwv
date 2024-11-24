@@ -1,0 +1,18 @@
+USS Fletcher 
+
+USS_Fletcher
+
+
+Type: Destroyer Fletcher Class 445
+Displacement: 2,500 tons (full load)
+Length: 376.5 ft (114.8 m)
+Beam: 39.5 ft (12.0 m)
+Draft: 17.5 ft (5.3 m)
+Speed: 36.5 knots (67.6 km/h; 42.0 mph)
+Armament: 5 single 5 inch (127 mm)/38 caliber guns
+6  x 10 40 mm Bofors AA guns
+7  x 10 20 mm Oerlikon cannons
+10 x 21 inch (533 mm) torpedo tubes (2 x 5; Mark 15 torpedoes)
+6    K-gun depth charge projectors
+2    depth charge racks
+

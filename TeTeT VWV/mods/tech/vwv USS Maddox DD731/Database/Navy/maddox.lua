@@ -52,8 +52,8 @@ GT.animation_arguments = {
 	radar1_rotation = 7,
 	radar2_rotation = 8
 }
-GT.radar1_period = 5; --speed
-GT.radar2_period = 30;
+GT.radar1_period = 4; --speed
+GT.radar2_period = 4;
 
 --Damage Model
 GT.DM = {
@@ -100,73 +100,104 @@ GT_t.WSN_t[20] = WSN_20;
 
 GT_t.WS_t.ship_mk12_2x127mm = {name = "Mk12 5inch 38cal Twin"};
 GT_t.WS_t.ship_mk12_2x127mm.angles = {
-                    {math.rad(180), math.rad(-180), math.rad(-5), math.rad(90)},
-                    };
-GT_t.WS_t.ship_mk12_2x127mm.omegaY = math.rad(10) -- Block 1B
-GT_t.WS_t.ship_mk12_2x127mm.omegaZ = math.rad(10) -- Block 1B
+					{math.rad(180), math.rad(-180), math.rad(-10), math.rad(85)},
+					};
+GT_t.WS_t.ship_mk12_2x127mm.omegaY = math.rad(10); -- Block 1B
+GT_t.WS_t.ship_mk12_2x127mm.omegaZ = math.rad(10); -- Block 1B
 GT_t.WS_t.ship_mk12_2x127mm.pidY = {p=300, i = 0.05, d = 10.0, inn = 1000};
 GT_t.WS_t.ship_mk12_2x127mm.pidZ = {p=300, i = 0.05, d = 10.0, inn = 1000};
-GT_t.WS_t.ship_mk12_2x127mm.reference_angle_Z = 0
+GT_t.WS_t.ship_mk12_2x127mm.reference_angle_Z = 0;
 
---[[
-GT_t.WS_t.ship_mk12_2x127mm.LN = {}
-GT_t.WS_t.ship_mk12_2x127mm.LN[1] = {}
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].type = 12
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].distanceMin = 10
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].distanceMax = 56000.0 -- effective shooting
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].max_trg_alt = 11300
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].reactionTime = 1
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].beamWidth = math.rad(1);
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].sensor = {}
-set_recursive_metatable(GT_t.WS_t.ship_mk12_2x127mm.LN[1].sensor, GT_t.WSN_t[1])
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL = {}
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1] = {}
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].ammo_capacity = 352;
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_name = { "127_Mk49_AAC_1", "127_Mk49_AAC_2", "127_Mk49_HC_1", "127_Mk49_HC_2" };
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shell_display_name = "127mm";
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].shot_delay = 2;
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].PL[1].reload_time = 15000000; -- never
-GT_t.WS_t.ship_mk12_2x127mm.LN[1].BR =
-{ {
-    pos = { 5.2, 0, -0.1 }
-}, {
-    pos = { 5.2, 0, 0.1 }
-} }
-]]
 
-GT_t.LN_t.ship_mk12_127mm_AIR = {}
-GT_t.LN_t.ship_mk12_127mm_AIR.type = 11
-GT_t.LN_t.ship_mk12_127mm_AIR.distanceMin = 20
-GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 16000
-GT_t.LN_t.ship_mk12_127mm_AIR.max_trg_alt = 8000
-GT_t.LN_t.ship_mk12_127mm_AIR.reactionTime = 2
-GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {}
+GT_t.LN_t.ship_mk12_127mm_AIR = {};
+GT_t.LN_t.ship_mk12_127mm_AIR.type = 11;
+GT_t.LN_t.ship_mk12_127mm_AIR.distanceMin = 20;
+GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 16642;
+GT_t.LN_t.ship_mk12_127mm_AIR.max_trg_alt = 11339;
+GT_t.LN_t.ship_mk12_127mm_AIR.reactionTime = 12;
+GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {};
 -- set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[1])
-set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[20])
-GT_t.LN_t.ship_mk12_127mm_AIR.PL = {}
+set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[20]);
+GT_t.LN_t.ship_mk12_127mm_AIR.PL = {};
 GT_t.LN_t.ship_mk12_127mm_AIR.PL[1] = {
-							shell_name = {"vwv_mk12_127mm_AIR"},
-							automaticLoader = false,
-							shot_delay = 2,
-							ammo_capacity = 352,
-						}
+	shell_name = {"vwv_mk12_127mm_AIR"},
+	automaticLoader = false,
+	shot_delay = 5,
+	ammo_capacity = 352,
+};
 
 GT_t.LN_t.ship_mk12_127mm = {}
 GT_t.LN_t.ship_mk12_127mm.type = 6
 GT_t.LN_t.ship_mk12_127mm.distanceMin = 20
---GT_t.LN_t.ship_mk12_127mm.distanceMax = 16000
---GT_t.LN_t.ship_mk12_127mm.max_trg_alt = 8000
+--GT_t.LN_t.ship_mk12_127mm.distanceMax = 16642
+--GT_t.LN_t.ship_mk12_127mm.max_trg_alt = 11339
 GT_t.LN_t.ship_mk12_127mm.reactionTime = 12
 GT_t.LN_t.ship_mk12_127mm.sensor = {}
 set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm.sensor, GT_t.WSN_t[10])
 GT_t.LN_t.ship_mk12_127mm.PL = {}
 GT_t.LN_t.ship_mk12_127mm.PL[1] = {
-							-- unclear why the 127_Mk49 shells not work
-							shell_name = {"MK45_127"}, --shell_name = { "127_Mk49_HC_1", "127_Mk49_HC_2" },
-							automaticLoader = false,
-							shot_delay = 2,
-							ammo_capacity = 352,
-						}
+	-- unclear why the 127_Mk49 shells not work
+	shell_name = {"MK45_127"}, --shell_name = { "127_Mk49_HC_1", "127_Mk49_HC_2" },
+	automaticLoader = false,
+	shot_delay = 5,
+	ammo_capacity = 352,
+};
+
+GT_t.WS_t.ship_mk33_76mm = { name = "Mk33 3 inch"};
+GT_t.WS_t.ship_mk33_76mm.angles = {
+	{math.rad(180), math.rad(-180), math.rad(-15), math.rad(85)},
+};
+GT_t.WS_t.ship_mk33_76mm.omegaY = math.rad(10); -- Block 1B
+GT_t.WS_t.ship_mk33_76mm.omegaZ = math.rad(10); -- Block 1B
+GT_t.WS_t.ship_mk33_76mm.pidY = {p=300, i = 0.05, d = 10.0, inn = 1000};
+GT_t.WS_t.ship_mk33_76mm.pidZ = {p=300, i = 0.05, d = 10.0, inn = 1000};
+GT_t.WS_t.ship_mk33_76mm.reference_angle_Z = 0
+
+GT_t.LN_t.ship_mk33_76mm_AIR = {};
+GT_t.LN_t.ship_mk33_76mm_AIR.type = 11;
+GT_t.LN_t.ship_mk33_76mm_AIR.distanceMin = 20;
+GT_t.LN_t.ship_mk33_76mm_AIR.distanceMax = 13341;
+GT_t.LN_t.ship_mk33_76mm_AIR.max_trg_alt = 9083;
+GT_t.LN_t.ship_mk33_76mm_AIR.reactionTime = 10;
+GT_t.LN_t.ship_mk33_76mm_AIR.sensor = {}
+set_recursive_metatable(GT_t.LN_t.ship_mk33_76mm_AIR.sensor, GT_t.WSN_t[20]);
+GT_t.LN_t.ship_mk33_76mm_AIR.PL = {};
+GT_t.LN_t.ship_mk33_76mm_AIR.PL[1] = {
+	shell_name = {"vwv_mk33_76mm_AIR"},
+	automaticLoader = false,
+	shot_delay = 1.3333,
+	ammo_capacity = 352,
+};
+
+GT_t.WS_t.ship_maddox_oerlikon_20mm = { name = "Maddox Oerlikon 20mm"};
+GT_t.WS_t.ship_maddox_oerlikon_20mm.angles = {
+	{math.rad(180), math.rad(-180), math.rad(-15), math.rad(85)},
+};
+GT_t.WS_t.ship_maddox_oerlikon_20mm.omegaY = math.rad(10); -- Block 1B
+GT_t.WS_t.ship_maddox_oerlikon_20mm.omegaZ = math.rad(10); -- Block 1B
+GT_t.WS_t.ship_maddox_oerlikon_20mm.pidY = {p=300, i = 0.05, d = 10.0, inn = 1000};
+GT_t.WS_t.ship_maddox_oerlikon_20mm.pidZ = {p=300, i = 0.05, d = 10.0, inn = 1000};
+GT_t.WS_t.ship_maddox_oerlikon_20mm.reference_angle_Z = 0;
+
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR = {};
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.type = 3;
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.distanceMin = 20;
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.distanceMax = 4341;
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.max_trg_alt = 3083;
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.reactionTime = 2;
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.sensor = {};
+set_recursive_metatable(GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.sensor, GT_t.WSN_t[20]);
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.PL = {};
+GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.PL[1] = {
+	shell_name = { "vwv_oerlikon_20mm_AIR" },
+	automaticLoader = false,
+	shot_delay = 0.3333,
+	ammo_capacity = 4000,
+};
+
+
+
+--------------------------------------------------------------
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
@@ -174,22 +205,22 @@ GT.WS[ws].area = 'TurretFront'
 GT.WS[ws].center = 'CENTER_TURRET_01'
 GT.WS[ws].omegaY = math.rad(30);
 GT.WS[ws].omegaZ = math.rad(20);
-GT.WS[ws].drawArgument1 = 0
-GT.WS[ws].drawArgument2 = 1
-GT.WS[ws].reference_angle_Z = math.rad(0)
+GT.WS[ws].drawArgument1 = 0;
+GT.WS[ws].drawArgument2 = 1;
+GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].angles = {
-                    {math.rad(140), math.rad(-140), math.rad(-5), math.rad(75)},
-                    };
+	{math.rad(140), math.rad(-140), math.rad(-10), math.rad(85)},
+};
 -- first set of launchers
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
-__LN.sightMaxTanVel = 300
+__LN.sightMaxTanVel = 300;
 __LN.BR = {{ connector_name = 'POINT_GUN_127mm_1_1',
 							recoilArgument = 33,
-							recoilTime = 0.2 }} 
+							recoilTime = 0.2 }};
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_1_2', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_1_2',
 							recoilArgument = 33,
-							recoilTime = 0.2 }}
+							recoilTime = 0.2 }};
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
@@ -198,17 +229,17 @@ GT.WS[ws].center = 'CENTER_TURRET_01'
 GT.WS[ws].omegaY = math.rad(30);
 GT.WS[ws].omegaZ = math.rad(20);
 GT.WS[ws].angles = {
-                    {math.rad(140), math.rad(-140), math.rad(-5), math.rad(75)},
-                    };
+					{math.rad(140), math.rad(-140), math.rad(-10), math.rad(85)},
+					};
 GT.WS[ws].reference_angle_Z = math.rad(0);
 -- second set of launchers
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
 __LN.sightMaxTanVel = 300
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_1_2', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_1_2',
 							recoilArgument = 33,
 							recoilTime = 0.2 }}
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_1_1', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_1_1',
 							recoilArgument = 33,
 							recoilTime = 0.2 }}
 
@@ -223,17 +254,17 @@ GT.WS[ws].reference_angle_Z = math.rad(0)
 GT.WS[ws].omegaY = math.rad(30);
 GT.WS[ws].omegaZ = math.rad(20);
 GT.WS[ws].angles = {
-                    {math.rad(140), math.rad(-140), math.rad(-5), math.rad(75)},
+					{math.rad(140), math.rad(-140), math.rad(-10), math.rad(85)},
 
-                    };
+					};
 -- first set of launchers					
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
 __LN.sightMaxTanVel = 300
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_1', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_1',
 							recoilArgument = 33,
-							recoilTime = 0.2 }} 
+							recoilTime = 0.2 }}
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_2', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_2',
 							recoilArgument = 33,
 							recoilTime = 0.2 }}
 
@@ -244,17 +275,17 @@ GT.WS[ws].center = 'CENTER_TURRET_02'
 GT.WS[ws].omegaY = math.rad(30);
 GT.WS[ws].omegaZ = math.rad(20);
 GT.WS[ws].angles = {
-                    {math.rad(140), math.rad(-140), math.rad(-5), math.rad(75)},
-                    };
+					{math.rad(140), math.rad(-140), math.rad(-10), math.rad(85)},
+					};
 GT.WS[ws].reference_angle_Z = math.rad(0);
 -- second set of launchers
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
 __LN.sightMaxTanVel = 300
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_2', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_2',
 							recoilArgument = 33,
-							recoilTime = 0.2 }} 
+							recoilTime = 0.2 }}
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_1', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_2_1',
 							recoilArgument = 33,
 							recoilTime = 0.2 }}
 
@@ -270,16 +301,16 @@ GT.WS[ws].drawArgument2 = 5
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].reference_angle_Y = math.rad(-180)
 GT.WS[ws].angles = {
-                    {math.rad(-45), math.rad(45), math.rad(-5), math.rad(75)},
-                    };
+					{math.rad(-45), math.rad(45), math.rad(-10), math.rad(85)},
+					};
 -- first set of launchers					
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
 __LN.sightMaxTanVel = 300
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_1', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_1',
 							recoilArgument = 33,
-							recoilTime = 0.2 }} 
+							recoilTime = 0.2 }}
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_2', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_2',
 							recoilArgument = 33,
 							recoilTime = 0.2 }}
 
@@ -290,80 +321,150 @@ GT.WS[ws].center = 'CENTER_TURRET_03'
 GT.WS[ws].omegaY = math.rad(30);
 GT.WS[ws].omegaZ = math.rad(20);
 GT.WS[ws].angles = {
-                    {math.rad(140), math.rad(-140), math.rad(-5), math.rad(75)},
-                    };
+					{math.rad(140), math.rad(-140), math.rad(-10), math.rad(85)},
+					};
 GT.WS[ws].reference_angle_Z = math.rad(0);
 -- second set of launchers
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
-__LN.sightMaxTanVel = 300
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_2', 
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_2',
 							recoilArgument = 33,
-							recoilTime = 0.2 }} 
+							recoilTime = 0.2 }};
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
-__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_1', 
+__LN.BR = {{ connector_name = 'POINT_GUN_127mm_3_1',
 							recoilArgument = 33,
-							recoilTime = 0.2 }}
+							recoilTime = 0.2 }};
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
-set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Oerlikon_20 )
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_maddox_oerlikon_20mm)
 GT.WS[ws].area = 'HullRear'
 GT.WS[ws].center = 'CENTER_TURRET_04'
 GT.WS[ws].drawArgument1 = 9
 GT.WS[ws].drawArgument2 = 10
 GT.WS[ws].reference_angle_Y = math.rad(-180)
 GT.WS[ws].angles = {
-                    {math.rad(-45), math.rad(45), math.rad(-5), math.rad(85)},
---                    {math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
---                    {math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
-                    };
-GT.WS[ws].LN[1].BR = 
-					{
-						{
-							connector_name = 'POINT_20mm_1',
-						}
+					{math.rad(-45), math.rad(45), math.rad(-5), math.rad(85)},
+--					{math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
+--					{math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
 					};
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_20mm_1',
+							recoilArgument = 33,
+							recoilTime = 0.2 }};
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
-set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Oerlikon_20 )
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_maddox_oerlikon_20mm)
 GT.WS[ws].area = 'HullRear'
 GT.WS[ws].center = 'CENTER_TURRET_05'
 GT.WS[ws].drawArgument1 = 11
 GT.WS[ws].drawArgument2 = 12
 GT.WS[ws].reference_angle_Y = math.rad(-90)
 GT.WS[ws].angles = {
-                    {math.rad(-20), math.rad(-175), math.rad(-5), math.rad(85)},
---                    {math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
---                    {math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
-                    };
-GT.WS[ws].LN[1].BR = 
-					{
-						{
-							connector_name = 'POINT_20mm_2',
-						}
+					{math.rad(-20), math.rad(-175), math.rad(-5), math.rad(85)},
+--					{math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
+--					{math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
 					};
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_20mm_2',
+							recoilArgument = 33,
+							recoilTime = 0.2 }};
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
-set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Oerlikon_20 )
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_maddox_oerlikon_20mm)
 GT.WS[ws].area = 'HullRear'
 GT.WS[ws].center = 'CENTER_TURRET_06'
 GT.WS[ws].drawArgument1 = 13
 GT.WS[ws].drawArgument2 = 14
 GT.WS[ws].reference_angle_Y = math.rad(90)
 GT.WS[ws].angles = {
-                    {math.rad(135), math.rad(10), math.rad(-5), math.rad(85)},
---                    {math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
---                    {math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
-                    };
-GT.WS[ws].LN[1].BR = 
-					{
-						{
-							connector_name = 'POINT_20mm_3',
-						}
+					{math.rad(135), math.rad(10), math.rad(-5), math.rad(85)},
+--					{math.rad(40), math.rad(-40), math.rad(0), math.rad(65)},
+--					{math.rad(-40), math.rad(-170), math.rad(-7.5), math.rad(65)},
 					};
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_20mm_3',
+							recoilArgument = 33,
+							recoilTime = 0.2 }};
 
+ws = GT_t.inc_ws();
+GT.WS[ws] = {};
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk33_76mm);
+GT.WS[ws].area = 'HullRear';
+GT.WS[ws].center = 'CENTER_TURRET_07';
+GT.WS[ws].drawArgument1 = 15;
+GT.WS[ws].drawArgument2 = 16;
+GT.WS[ws].reference_angle_Y = math.rad(90)
+GT.WS[ws].angles = {
+					{math.rad(135), math.rad(10), math.rad(-5), math.rad(85)},
+					};	
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_762mm_1',
+							recoilArgument = 33,
+							recoilTime = 0.2 }};
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {};
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk33_76mm);
+GT.WS[ws].area = 'HullRear';
+GT.WS[ws].center = 'CENTER_TURRET_08';
+GT.WS[ws].drawArgument1 = 17;
+GT.WS[ws].drawArgument2 = 18;
+GT.WS[ws].reference_angle_Y = math.rad(-90);
+GT.WS[ws].angles = {
+					{math.rad(-20), math.rad(-175), math.rad(-5), math.rad(85)},
+					};
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_762mm_2',
+							recoilArgument = 33,
+							recoilTime = 0.2 }};
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {};
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk33_76mm);
+GT.WS[ws].area = 'HullRear';
+GT.WS[ws].center = 'CENTER_TURRET_09';
+GT.WS[ws].drawArgument1 = 19;
+GT.WS[ws].drawArgument2 = 20;
+GT.WS[ws].reference_angle_Y = math.rad(180)
+GT.WS[ws].angles = {
+	{math.rad(-45), math.rad(45), math.rad(-10), math.rad(85)},
+};
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_762mm_3_1',
+			recoilArgument = 33,
+			recoilTime = 0.2 },
+		   { connector_name = 'POINT_GUN_762mm_3_2',
+			recoilArgument = 33,
+			recoilTime = 0.2 }};
+							
+ws = GT_t.inc_ws();
+GT.WS[ws] = {};
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk33_76mm);
+GT.WS[ws].area = 'HullRear';
+GT.WS[ws].center = 'CENTER_TURRET_10';
+GT.WS[ws].drawArgument1 = 21;
+GT.WS[ws].drawArgument2 = 22;
+GT.WS[ws].reference_angle_Y = math.rad(180);
+GT.WS[ws].angles = {
+	{math.rad(-45), math.rad(45), math.rad(-10), math.rad(85)},
+};
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_762mm_4_1',
+			recoilArgument = 33,
+			recoilTime = 0.2 },
+		   { connector_name = 'POINT_GUN_762mm_4_2',
+			recoilArgument = 33,
+			recoilTime = 0.2 }};
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
@@ -386,8 +487,8 @@ GT.DisplayNameShort = _("Maddox") -- Label name
 GT.Rate = 5500.000000 
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
-                RADAR = {"ticonderoga search radar"}, --radar types
-            };
+				RADAR = {"ticonderoga search radar"}, --radar types
+			};
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
 GT.sensor.height = 15;
@@ -395,7 +496,7 @@ GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
-GT.Singleton		= "yes";
+GT.Singleton		= "no";
 GT.mapclasskey		= "P0091000068"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
 						"Cruisers",

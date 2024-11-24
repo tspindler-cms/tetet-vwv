@@ -1,0 +1,18 @@
+-------- uss_fletcher_framii_hedge_hog - Destroyer Fletcher Class mod by Markindel 
+
+
+model = {
+	lods = {		
+		{"uss_fletcher_framii_hedge_hog.edm", 2000.000000};
+		{"uss_fletcher_framii_hedge_hog.edm",25000.000000};
+		{"uss_fletcher_framii_hedge_hog.edm",35000.000000};
+		{"uss_fletcher_framii_hedge_hog.edm",50000.000000};
+	};
+
+	      collision_shell = "uss_fletcher_framii_Collision.edm";
+
+
+}
+
+
+

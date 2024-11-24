@@ -30,18 +30,18 @@ local vwv_a1_skyraider =  {
 
 	mapclasskey = "P0091000025",
 	index       =  WSTYPE_PLACEHOLDER,
-	attribute   =   {wsType_Air, wsType_Airplane, wsType_Battleplane, a_1_skyraider, "Battleplanes", "Refuelable"},
+	attribute   =   {wsType_Air, wsType_Airplane, wsType_Fighter, a_1_skyraider, "Battleplanes", "Refuelable"},
 	Categories  =   {},
-	M_empty				=	5429,
-	M_nominal			=	8213,
-	M_max				=	13975,
+	M_empty				=	3429,
+	M_nominal			=	5213,
+	M_max				=	10975,
 	M_fuel_max			=  	1036,
 	H_max				=	8685,
 	average_fuel_consumption	=	0.03,
-	CAS_min				=	55,
-	V_opt				=	135,
-	V_take_off			=	65,
-	V_land				=	80, -- 62,
+	CAS_min				=	50,
+	V_opt				=	165,
+	V_take_off			=	70,
+	V_land				=	60, -- 62,
 	has_afteburner			=	false,
 	has_speedbrake			=	true,
 	has_differential_stabilizer 	= 	false,
@@ -64,14 +64,14 @@ local vwv_a1_skyraider =  {
 	main_gear_amortizer_reversal_stroke  	    	=  -0.1, --  -1.0, --  -1
 	main_gear_amortizer_normal_weight_stroke    	=   -0.015,--  -0.05
 
-	wing_tip_pos = {-0.82, 0.200,     7.5},
+	wing_tip_pos = {-0.82, 0.400,     7.5},
 
 	radar_can_see_ground	=	true,
 	AOA_take_off		=	0.16,
 	stores_number		=	15,
-	bank_angle_max		=	40, -- 60
-	Ny_min			=	-3,
-	Ny_max			=	7,
+	bank_angle_max		=	20, -- 60
+	Ny_min			=	-1,
+	Ny_max			=	3,
 	tand_gear_max		=	3.3577,
 	V_max_sea_level		= 145.0,
 	V_max_h			=	  165.0,
@@ -673,14 +673,14 @@ local vwv_a1_skyraider =  {
 	SFM_Data = {
         aerodynamics = -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
         {
-            Cy0            =    0.2,  -- zero AoA lift coefficient
+            Cy0            =    0.0,  -- zero AoA lift coefficient
             Mzalfa         =    4.3,   -- 3.4,  -- coefficients for pitch agility
             Mzalfadt       =    0.8,    -- coefficients for pitch agility
             kjx            =    2.25,    
             kjz            =    0.00125,
             Czbe           =    -0.012, -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
             cx_gear        =    0.02,  -- 0.0330,    -- coefficient, drag, gear - less drag to allow for good take-off when heavy
-            cx_flap        =    0.02,  -- 0.033,   -- coefficient, drag, full flaps - less drag to allow for good take-off when heavy
+            cx_flap        =    0.01,  -- 0.033,   -- coefficient, drag, full flaps - less drag to allow for good take-off when heavy
             cy_flap        =    0.9,   -- 0.28,    -- coefficient, normal force, lift, flaps - very efficient flaps to allow for take-off with max weight
             cx_brk         =    0.06,   -- coefficient, drag, breaks
             table_data  =
@@ -706,17 +706,17 @@ local vwv_a1_skyraider =  {
                 {0.1,    0.012,    0.117,     0.056,    0.000089,    0.25,    18,        1.85}, --76.7269mph
                 {0.2,    0.013,    0.116,     0.056,    0.000089,    0.25,    18,        1.65}, --153.454 mph
 ]]				
-				{0,      0.010,    0.117,     0.056,    0.000089,    0.25,    20,        2.00}, --0
-				{0.1,    0.012,    0.112,     0.055,    0.000089,    0.25,    20,        1.9}, --76.7269mph
-				{0.2,    0.013,    0.114,     0.055,    0.000089,    0.25,    20,        1.8}, --153.454 mph				
-                {0.3,    0.014,    0.1163,    0.054,    0.000089,    0.25,    17,        1.6}, --230.2 mph
-                {0.4,    0.016,    0.1176,    0.048,    0.000192,    0.20,    16,        1.44}, --306.908
-                {0.5,    0.020,    0.1179,    0.030,    0.000593,    0.18,    10,        1.0}, --383.635
-                {0.6,    0.021,    0.1180,    0.029,    0.0004,      0.15,     9,        0.9}, --460.361
-                {0.7,    0.021,    0.1183,    0.028,    0.00032,     0.14,     9,        0.85}, --537.088
-                {0.8,    0.064,    0.1186,    0.17,     0.4,         0.1,      3,        0.6}, --613.815
-                {0.9,    0.0995,    0.1185,    0.175,    2.7925,      0.1,      3,        0.4}, --690.542
-                {1,      0.146,     0.1184,    0.2,      3.19,        0.1,      1,        0.2}, --767.269
+				{0,      0.010,    0.517,     0.056,    0.000089,    0.25,    20,        0.00}, --0
+				{0.1,    0.012,    0.212,     0.055,    0.000089,    0.85,    20,        0.2}, --76.7269mph
+				{0.2,    0.013,    0.454,     0.055,    0.000089,    0.95,    20,        1.2}, --153.454 mph				
+                {0.3,    0.014,    0.4163,    0.054,    0.000089,    1.25,    17,        1.6}, --230.2 mph
+                {0.4,    0.016,    0.4176,    0.048,    0.000192,    1.20,    16,        1.44}, --306.908
+                {0.5,    0.020,    0.4179,    0.030,    0.000593,    1.18,    10,        1.0}, --383.635
+                {0.6,    0.021,    0.4180,    0.029,    0.0004,      1.15,     9,        0.9}, --460.361
+                {0.7,    0.021,    0.4183,    0.028,    0.00032,     0.14,     9,        0.85}, --537.088
+                {0.8,    0.064,    0.4186,    0.17,     0.4,         0.1,      3,        0.6}, --613.815
+                {0.9,    0.0995,    0.4185,    0.175,    2.7925,      0.1,      3,        0.4}, --690.542
+                {1,      0.146,     0.4184,    0.2,      3.19,        0.1,      1,        0.2}, --767.269
             }, -- end of table_data
             -- M - Mach number
             -- Cx0 - Coefficient, drag, profile, of the airplane
@@ -735,7 +735,8 @@ local vwv_a1_skyraider =  {
             MaxRUD      =     1, -- Max state of the throttle
             MaksRUD     =     1, -- Military power state of the throttle
             ForsRUD     =     1, -- Afterburner state of the throttle
-            type        =     "TurboProp", -- use 3 for carrier take-off
+			typeng	=	3,
+            -- type   =  "Radial", -- use 3 for carrier take-off
 			Startup_Prework = 12,
 			Startup_RPMs = {
 				{0, 0},
@@ -765,13 +766,13 @@ local vwv_a1_skyraider =  {
 
             table_data =
             {
-                [1] =     {0,      16395.9    ,16395.9},
-                [2] =     {0.1,    16393.8    ,16393.8},
-                [3] =     {0.2,    15995.6    ,15995.6},
-                [4] =     {0.3,    15800.8    ,15800.8},
-                [5] =     {0.4,    14673.3    ,14673.3},
-                [6] =     {0.5,    13254.2    ,13254.2},
-                [7] =     {0.6,    11029.2    ,11029.2},
+                [1] =     {0,      26395.9    ,26395.9},
+                [2] =     {0.1,    26393.8    ,26393.8},
+                [3] =     {0.2,    12995.6    ,12995.6},
+                [4] =     {0.3,    11800.8    ,11800.8},
+                [5] =     {0.4,    10673.3    ,10673.3},
+                [6] =     {0.5,    10254.2    ,10254.2},
+                [7] =     {0.6,    10029.2    ,10029.2},
                 [8] =     {0.7,    10012.3    ,10012.3},
                 [9] =     {0.8,     6719.3    , 6719.3},
                 [10] =    {0.9,     4650      , 4650},
@@ -799,7 +800,7 @@ local vwv_a1_skyraider =  {
 			MAX_Manifold_P_3 = 196410,
 			k_after_cool = 0.38,
             Displ = 45.9,
-			k_Eps = 6.75,
+			k_Eps = 4.75,
             Stroke = 0.152,
             V_pist_0 = 15,
 			Nu_0 = 1.2,
@@ -807,7 +808,7 @@ local vwv_a1_skyraider =  {
 			Nu_2 = 0.0015,
 			N_fr_0 = 0.078,
 			N_fr_1 = 0.002,
-			N_indic_0 = 993576.4,
+			N_indic_0 = 1993576.4,
             Init_Mom            = 220,
             D_prop              = 3.51, --dia of propeller in metres
             MOI_prop = 88,
@@ -818,33 +819,40 @@ local vwv_a1_skyraider =  {
             k_oil = 4e-05,
             k_piston            = 3000,
             k_reg               = 0.003,
-            k_vel               = 0.017,			
+            k_vel               = 0.017,		
+				prop_pitch_min		= 23.0,	-- prop pitch min, degrees 
+				prop_pitch_max		= 65.0,	-- prop pitch max, degrees 
+				prop_pitch_feather	= 80.0,	-- prop pitch feather position, degrees if feather < prop_pitch_max no feathering available
+                prop_blades_count   = 4,
+                prop_locations      = {
+                    {2.211, -0.014, 0.000}, {0.0, 0.0, math.rad(-1.87)},
+                },			
 		}, -- end of engine
     }, -- end of SFM_Data
 
 	--damage , index meaning see in  Scripts\Aircrafts\_Common\Damage.lua
 	Damage = {
-		[0] =  {critical_damage = 15, args = {296}},  -- pilot area
-		[1] =  {critical_damage = 15, args = {297}},  -- copilot area
-		[2] =  {critical_damage = 15, args = {146}},  -- nose bottom
-		[3] =  {critical_damage = 2, args = {235}},   -- elevator left
-		[4] =  {critical_damage = 2, args = {233}},   -- elevator right
+		[0] =  {critical_damage = 20, args = {296}},  -- pilot area
+		[1] =  {critical_damage = 20, args = {297}},  -- copilot area
+		[2] =  {critical_damage = 20, args = {146}},  -- nose bottom
+		[3] =  {critical_damage = 20, args = {235}},   -- elevator left
+		[4] =  {critical_damage = 20, args = {233}},   -- elevator right
 		[5] =  {critical_damage = 20, args = {213}},  -- pod left
 		[6] =  {critical_damage = 20, args = {223}},  -- pod right
-		[7] =  {critical_damage = 5, args = {159}},   -- Vertical stabilizer
+		[7] =  {critical_damage = 20, args = {159}},   -- Vertical stabilizer
 		[8] =  {critical_damage = 20, args = {152}},  -- fuselage bottom
-		[9] =  {critical_damage = 15, args = {154}},  -- cabin left
-		[10] =  {critical_damage = 15, args = {153}}, -- cabin right
+		[9] =  {critical_damage = 20, args = {154}},  -- cabin left
+		[10] =  {critical_damage = 20, args = {153}}, -- cabin right
 		[11] =  {critical_damage = 20, args = {156}}, -- under tail	
-		[12] =  {critical_damage = 8, args = {157}}, -- fuselage rear left
-		[13] =  {critical_damage = 8, args = {158}}, -- fuselage rear right
-		[12] =  {critical_damage = 15, args = {260}},  -- copilot area
-		[13] =  {critical_damage = 15, args = {261}},  -- nose bottom
-		[14] =  {critical_damage = 2, args = {262}},   -- elevator left
-		[15] =  {critical_damage = 2, args = {263}},   -- elevator right
+		[12] =  {critical_damage = 20, args = {157}}, -- fuselage rear left
+		[13] =  {critical_damage = 20, args = {158}}, -- fuselage rear right
+		[12] =  {critical_damage = 20, args = {260}},  -- copilot area
+		[13] =  {critical_damage = 20, args = {261}},  -- nose bottom
+		[14] =  {critical_damage = 20, args = {262}},   -- elevator left
+		[15] =  {critical_damage = 20, args = {263}},   -- elevator right
 		[16] =  {critical_damage = 20, args = {264}},  -- pod left
 		[17] =  {critical_damage = 20, args = {265}},  -- pod right
-		[18] =  {critical_damage = 5, args = {266}},   -- Vertical stabilizer
+		[18] =  {critical_damage = 20, args = {266}},   -- Vertical stabilizer
 
 		-- Undercarriage
 		["WHEEL_REAR"] = {

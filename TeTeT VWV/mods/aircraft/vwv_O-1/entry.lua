@@ -8,7 +8,7 @@ declare_plugin(self_ID,
 	dirName	  	 = current_mod_path,
 	creditsFile = "credits.txt",
 	fileMenuName = _("O-1E Bird Dog"),
-	version		 = "0.7.0",
+	version		 = "0.8.0",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Cessna O-1 Bird Dog is a liaison and observation aircraft that first flew on December 14, 1949, and entered service in 1950 as the L-19 in the Korean War. It went to serve in many branches of the U.S. Armed Forces, was not retired until the 1970s in a number of variants, and also served in the Vietnam War."),
 

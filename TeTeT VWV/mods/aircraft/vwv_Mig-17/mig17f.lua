@@ -443,8 +443,8 @@ local vwv_mig17f = {
         aircraft_task(GroundAttack), 
 		aircraft_task(CAS), 
 		aircraft_task(AFAC),
-        aircraft_task(RunwayAttack)
-        --  	aircraft_task(AntishipStrike),
+        aircraft_task(RunwayAttack),
+        aircraft_task(AntishipStrike),
     },
     DefaultTask = aircraft_task(CAP),
 

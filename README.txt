@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.7.0
+0.8.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -15,6 +15,8 @@ H-2 Seasprite, a naval helicopter
 A-1 Skyraider, a propeller driven ground attack plane
 O-1 Bird Dog, a propeller drive observation plane
 Huts, some Indochinese huts
+USS Fletcher class destroyer with FRAM II upgrade
+USS The Sullivans (DD-537), Fletcher class destroyer
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -47,6 +49,9 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-17
     * https://en.wikipedia.org/wiki/Patrol_Boat,_River 
     * https://en.wikipedia.org/wiki/Douglas_A-1_Skyraider
+    * https://en.wikipedia.org/wiki/Fletcher-class_destroyer
+    * https://en.wikipedia.org/wiki/Fleet_Rehabilitation_and_Modernization
+    * https://en.wikipedia.org/wiki/USS_The_Sullivans_(DD-537)
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -69,6 +74,7 @@ Thanks
     Slapshot - tester of the mod
     itsdotbmp - updated the tiny tim rocket model
     Pirat3n - Indochinese huts
+    James J Jackson - The Sullivans and various model upgrades
 
 Without these persons the mod would not have been possible!
 
@@ -101,3 +107,5 @@ MiG-17F "Fresco-C"
     - Damage suspectible when placed as static
 H-2 Seasprite
     - Wheels don't touch the ship deck
+Fletcher Class Destroyers with FRAM II upgrade
+    - Bridge and mast are WWII style    

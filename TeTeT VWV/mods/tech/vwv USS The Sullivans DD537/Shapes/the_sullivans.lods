@@ -1,0 +1,9 @@
+model = {
+	lods = {		
+		{"the_sullivans.edm", 2000.00}; 
+		{"the_sullivans_2km.edm", 5000.00};
+		{"the_sullivans_5km.edm", 10000.00};
+		{"the_sullivans_15km.edm", 15000.00}; 
+	};
+	collision_shell = "the_sullivans_coll.edm";
+}
