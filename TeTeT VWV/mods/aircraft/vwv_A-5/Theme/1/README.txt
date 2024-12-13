@@ -1,0 +1,1 @@
+Source: https://en.wikipedia.org/wiki/North_American_A-5_Vigilante#/media/File:RA-5C_Vigilante_overhead_aerial_view.jpg

@@ -1,7 +1,7 @@
 vwv_hh2d =  {
 
 	Name             = "vwv_hh2d",
-	DisplayName      = _("HH-2D Seasprite"),
+	DisplayName      = _("[VWV] HH-2D Seasprite"),
 	DisplayNameShort = _("HH-2D"),
 	--HumanCockpit 		= false,
 	--HumanCockpitPath    = current_mod_path.."/Cockpit/",

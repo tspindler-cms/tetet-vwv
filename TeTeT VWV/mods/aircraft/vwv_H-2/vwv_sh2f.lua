@@ -1,7 +1,7 @@
 vwv_sh2f =  {
 
 	Name 				=   'vwv_sh2f',
-	DisplayName			= _('SH-2F Seasprite'),
+	DisplayName			= _('[VWV] SH-2F Seasprite'),
 	DisplayNameShort	= _('SH-2F'),
 
 	--HumanCockpit 		= false,

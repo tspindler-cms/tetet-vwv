@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-0.8.0
+0.9.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -17,6 +17,9 @@ O-1 Bird Dog, a propeller drive observation plane
 Huts, some Indochinese huts
 USS Fletcher class destroyer with FRAM II upgrade
 USS The Sullivans (DD-537), Fletcher class destroyer
+RA-5C Vigilante, a supersonic carrier based recon plane
+USS Allen M. Sumner (DD-692), the lead ship of the Sumner class destroyers
+
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -52,6 +55,9 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/Fletcher-class_destroyer
     * https://en.wikipedia.org/wiki/Fleet_Rehabilitation_and_Modernization
     * https://en.wikipedia.org/wiki/USS_The_Sullivans_(DD-537)
+    * https://en.wikipedia.org/wiki/Allen_M._Sumner-class_destroyer 
+    * https://en.wikipedia.org/wiki/North_American_A-5_Vigilante 
+
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -75,6 +81,7 @@ Thanks
     itsdotbmp - updated the tiny tim rocket model
     Pirat3n - Indochinese huts
     James J Jackson - The Sullivans and various model upgrades
+    Helijah - for the A-5 base model
 
 Without these persons the mod would not have been possible!
 
@@ -109,3 +116,11 @@ H-2 Seasprite
     - Wheels don't touch the ship deck
 Fletcher Class Destroyers with FRAM II upgrade
     - Bridge and mast are WWII style    
+USS Laffey and Sumner class destroyers
+    - 20mm Oerlikons have no firing sound
+RA-5C Vigilante
+    - The plane is too large for regular parking spots, best to use as single plane on the runway
+A-1 Skyraider
+    - The new bridle disappears during launch
+MiG-21MF "Fishbed-C"
+    - Textures are work in progress

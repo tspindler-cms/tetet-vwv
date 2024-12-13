@@ -2,7 +2,7 @@ local launch_bar_connected_arg_value_ = 0.87;
 local crusader = {
 
 	Name 				= 'vwv_crusader',
-	DisplayName			= _('F-8E Crusader'),
+	DisplayName			= _('[VWV] F-8E Crusader'),
 	DisplayNameShort    = _('F-8E'),
 	HumanCockpit 		= true,
 	HumanCockpitPath	= current_mod_path..'/Cockpit/',

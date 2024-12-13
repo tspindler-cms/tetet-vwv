@@ -9,7 +9,7 @@ dirName	  	 	= current_mod_path,
 encyclopedia_path = current_mod_path..'/Encyclopedia',
 
 fileMenuName 	= _("VWV"),
-version		 	= "0.8.0",
+version		 	= "0.9.0",
 state		 	= "installed",
 developerName	= "TeTeT, Pirat3n",
 info		 	= _("Buildings for the VWV mod"),

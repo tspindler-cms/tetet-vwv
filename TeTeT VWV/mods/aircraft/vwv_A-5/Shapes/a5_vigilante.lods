@@ -1,0 +1,6 @@
+model={
+	lods={
+		{"a5-vigilante.edm",10000.0};
+	};
+	collision_shell="a5-vigilante_coll.edm";
+}

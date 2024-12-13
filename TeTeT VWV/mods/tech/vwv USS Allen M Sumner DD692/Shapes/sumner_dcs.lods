@@ -1,0 +1,9 @@
+model = {
+	lods = {		
+		{"Sumner_dcs.edm",5000.00}; 
+		{"Laffey_5km_dcs.edm",10000.00}; 
+		{"Laffey_10km_dcs.edm",15000.00};
+		{"Laffey_15km_dcs.edm",20000.00};
+	};
+	collision_shell = "Sumner_coll_dcs.edm";
+}

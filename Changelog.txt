@@ -1,3 +1,35 @@
+2024-12-13
+  buildings
+    - Add License
+  All Planes
+    - Prefix name with [VWV]
+  A-1 Skyraider
+    - Improve model
+    - Add new bridle, but is broken in config currently
+  RA-5C Vigilante
+    - Initial Release
+  MiG-17F "Fresco-C"
+    - Add Syrian camos
+    - Add MiG-15 drop tanks
+    - Improve model
+  MiG-21MF "Fishbed-J"
+    - Initial Release
+  CVA-31 Bon Homme Richard
+    - Fix runways and routes after latest DCS update
+    - Improve model and textures
+  DD Fletcher class FRAM II     
+    - Add 4k liveries
+    - Improve model and textures
+  DD-537 The Sullivans
+    - Fix wake filename
+    - Improve model and textures
+  DD-692 Allen M Sumner
+    - Initial Release
+  DD-724 Laffey
+    - Initial Release
+  DD-731 Maddox
+    - Add 15km LOD
+    - Improve model and textures, including distance LODs
 2024-11-24
   A-1 Skyraider
     - New Simple Flight Model (SFM)

@@ -2,7 +2,7 @@
 return
 {
 	Name 				=   'vwv_o-1',
-	DisplayName			= _('O-1 Bird Dog'),
+	DisplayName			= _('[VWV] O-1 Bird Dog'),
 
 	HumanCockpit 		= false,
 

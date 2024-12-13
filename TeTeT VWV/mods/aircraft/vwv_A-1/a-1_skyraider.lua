@@ -3,7 +3,7 @@ dofile(current_mod_path.."/a-1_skyraider_damage.lua")
 local vwv_a1_skyraider =  {
 
 	Name 				=  'vwv_a1_skyraider',
-	DisplayName			= _('A-1H Skyraider'),
+	DisplayName			= _('[VWV] A-1H Skyraider'),
 	DisplayNameShort	= _('A-1H'),
 	Cannon = "yes",
 
@@ -94,6 +94,18 @@ local vwv_a1_skyraider =  {
 	engines_count		=	1,
 
 	mechanimations = {
+		-- from FA-18C
+		LaunchBar = {
+			{Transition = {"Retract", "Extend"}, Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 2}, {"Arg", 85, "to", 1.0, "in", 4.5}}}}},
+			{Transition = {"Extend", "Retract"}, Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.0, "in", 4.5}}}}},
+			{Transition = {"Retract", "Stage"},  Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 2}, {"Arg", 85, "to", 0.745, "in", 4.0}}}}},
+			{Transition = {"Any", "Retract"},    Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.000, "in", 1.0}}}}},--4.5 LaunchBar Hoch from VSN F-4B
+			{Transition = {"Stage", "Retract"},  Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.0, "in", 0.5}}}}}, -- in was 4.0
+			{Transition = {"Extend", "Stage"},   Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 1.0, "to", 0.745, "in", 1.0}}}}},
+			{Transition = {"Stage", "Pull"},     Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 0.745, "to", 0.743, "in", 1.0}}}}},
+			{Transition = {"Stage", "Extend"},   Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 0.745, "to", 1.0, "in", 0.2}}}}},
+		},
+
 		Door0 = {
 			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.9, "in", 9.0},},},}, Flags = {"Reversible"},},
 			{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 6.0},},},}, Flags = {"Reversible", "StepsBackwards"},},
@@ -135,17 +147,20 @@ local vwv_a1_skyraider =  {
         },
     }, -- end of TakeOffRWCategories
 
+	-- From toan 2024-12-11
 	engines_nozzles =
 	{
 		[1] =
-		{
-			pos 		=  {4.3,	0.24,	-0.672}, -- nozzle coords
-			elevation   =  0, -- AFB cone elevation
-			diameter	 = 0, -- AFB cone diameter
-			exhaust_length_ab	=	0,
-			exhaust_length_ab_K	=	0.35,
-			smokiness_level     = 	0.1,
-		},
+        {
+            pos         =  {-4.3,    0.24,    -0.672}, -- nozzle coords
+            elevation   =  0, -- AFB cone elevation
+            diameter    = 0.5, -- AFB cone diameter
+            exhaust_length_ab = 0.01,
+            exhaust_length_ab_K = 0.7,
+            smokiness_level = 0.2,
+            afterburner_circles_count = 0,
+			-- engine_number  = 1, --both to first engine
+        },
 	}, -- end of engines_nozzles
 
 	crew_size	 = 1,

@@ -1,6 +1,6 @@
 local crusader_np =  {
 	Name 				= 'vwv_crusader_np',
-	DisplayName			= _('F-8E(FN) Crusader'),
+	DisplayName			= _('[VWV] F-8E(FN) Crusader'),
 	DisplayNameShort    = _('F-8E(FN)'),
 	HumanCockpit 		= true,
     HumanCockpitPath    = current_mod_path..'/Cockpit/',
