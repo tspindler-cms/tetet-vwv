@@ -1,5 +1,5 @@
 dofile(current_mod_path.."/a-1_skyraider_damage.lua")
-
+local launch_bar_connected_arg_value_ = 1.0;
 local vwv_a1_skyraider =  {
 
 	Name 				=  'vwv_a1_skyraider',
@@ -105,17 +105,17 @@ local vwv_a1_skyraider =  {
 			{Transition = {"Stage", "Pull"},     Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 0.745, "to", 0.743, "in", 1.0}}}}},
 			{Transition = {"Stage", "Extend"},   Sequence = {{C = {{"ChangeDriveTo", "Mechanical"}, {"Arg", 85, "from", 0.745, "to", 1.0, "in", 0.2}}}}},
 		},
-
 		Door0 = {
 			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.9, "in", 9.0},},},}, Flags = {"Reversible"},},
 			{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 6.0},},},}, Flags = {"Reversible", "StepsBackwards"},},
 			{Transition = {"Any", "Bailout"}, Sequence = {{C = {{"JettisonCanopy", 0},},},},},
 		},
 		FoldableWings = {
-				{Transition 		= {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 10.0}}}}, Flags = {"Reversible"}},
-				{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
+			{Transition 		= {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 10.0}}}}, Flags = {"Reversible"}},
+			{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
 		},
     }, -- end of mechanimations
+	launch_bar_connected_arg_value = launch_bar_connected_arg_value_;
 	LandRWCategories =
     {
         [1] =
@@ -907,43 +907,43 @@ local vwv_a1_skyraider =  {
 				lights = {
 					[1] = {
 						typename = "collection",
-						lights = {
-			{
-				typename  = "omnilight",
-				connector = "BANO_0",
-				color     = {1.0, 1.0, 1.0, 0.333},
-				position  = {-8.880, 0.687, 0.000},
-				argument  = 192,
-				movable   = false,
-			},					
-			{
-				typename  = "omnilight",
-				connector = "BANO_1",
-				color     = {0.99, 0.11, 0.3, 0.333},
-				position  = {-0.406, -0.480, -3.901},
-				argument  = 190,
-				movable   = false,
-			},
-			{
-				typename  = "omnilight",
-				connector = "BANO_2",
-				color     = {0.0, 0.894, 0.6, 0.333},
-				position  = {-0.406, -0.480,  3.901},
-				argument  = 191,
-				movable   = false,
-			},
-					{ 
-						typename = "argumentlight", argument = 0,
-					},
-					{ 
-						typename = "argumentlight", argument = 3,
-					},
-					{ 
-						typename = "argumentlight", argument = 5,
-					},		
+						lights = 
+						{
+							{
+								typename  = "omnilight",
+								connector = "BANO_0",
+								color     = {1.0, 1.0, 1.0, 0.333},
+								position  = {-8.880, 0.687, 0.000},
+								argument  = 192,
+								movable   = false,
+							},					
+							{
+								typename  = "omnilight",
+								connector = "BANO_1",
+								color     = {0.99, 0.11, 0.3, 0.333},
+								position  = {-0.406, -0.480, -3.901},
+								argument  = 190,
+								movable   = false,
+							},
+							{
+								typename  = "omnilight",
+								connector = "BANO_2",
+								color     = {0.0, 0.894, 0.6, 0.333},
+								position  = {-0.406, -0.480,  3.901},
+								argument  = 191,
+								movable   = false,
+							},
+							{ 
+								typename = "argumentlight", argument = 100,
+							},
+							{ 
+								typename = "argumentlight", argument = 103,
+							},
+							{ 
+								typename = "argumentlight", argument = 105,
+							},		
 						},
 					},
-				
 				},
 			},--must be collection
 			[WOLALIGHT_SPOTS] = {
