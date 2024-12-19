@@ -1,3 +1,11 @@
+2024-12-18
+  A-1 Skyraider
+    - New collision shell
+    - Improve model
+    - Fix bridle use
+    - Fix night time and gear problem
+  CVA-31 Bon Homme Richard
+    - Update Generic Essex
 2024-12-13
   buildings
     - Add License
