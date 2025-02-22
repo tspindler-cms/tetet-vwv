@@ -205,6 +205,7 @@ local unitPayloads = {
 				[5] = 34,   -- Runway Attack
 			},
 		},
-    }
+    },
+	["unitType"]="vwv_a1_skyraider"
 }
 return unitPayloads
