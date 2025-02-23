@@ -24,27 +24,31 @@ USS_TheSullivans_weapons:addLauncher(4, 1, ship_FMC5)
 USS_TheSullivans_weapons:addLauncher(4, 2, ship_FMC5)
 
 USS_TheSullivans_weapons:addTurret(5)
-USS_TheSullivans_weapons:addLauncher(5, 1, ship_FMC5)
+USS_TheSullivans_weapons:addLauncher(5, 1, ship_MK75)
 
 USS_TheSullivans_weapons:addTurret(6)
-USS_TheSullivans_weapons:addLauncher(6, 1, ship_FMC5)
+USS_TheSullivans_weapons:addLauncher(6, 1, ship_MK75)
 
 USS_TheSullivans_weapons:addTurret(7)
-USS_TheSullivans_weapons:addLauncher(7, 1, ship_FMC5)
-USS_TheSullivans_weapons:addLauncher(7, 2, ship_FMC5)
+USS_TheSullivans_weapons:addLauncher(7, 1, ship_MK75)
+USS_TheSullivans_weapons:addLauncher(7, 2, ship_MK75)
 
 USS_TheSullivans_weapons:addTurret(8)
-USS_TheSullivans_weapons:addLauncher(8, 1, automatic_gun_25mm)
+USS_TheSullivans_weapons:addLauncher(8, 1, ship_MK75)
+USS_TheSullivans_weapons:addLauncher(8, 2, ship_MK75)
 
 USS_TheSullivans_weapons:addTurret(9)
 USS_TheSullivans_weapons:addLauncher(9, 1, automatic_gun_25mm)
 
-
 USS_TheSullivans_weapons:addTurret(10)
 USS_TheSullivans_weapons:addLauncher(10, 1, automatic_gun_25mm)
+
 
 USS_TheSullivans_weapons:addTurret(11)
 USS_TheSullivans_weapons:addLauncher(11, 1, automatic_gun_25mm)
 
 USS_TheSullivans_weapons:addTurret(12)
 USS_TheSullivans_weapons:addLauncher(12, 1, automatic_gun_25mm)
+
+USS_TheSullivans_weapons:addTurret(13)
+USS_TheSullivans_weapons:addLauncher(13, 1, automatic_gun_25mm)

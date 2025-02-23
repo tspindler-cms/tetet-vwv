@@ -318,6 +318,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -335,6 +336,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -352,6 +354,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -369,6 +372,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -386,6 +390,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -474,6 +479,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN_M65}" 	,attach_point_position = {.35, -.1 ,0 }},--AN-M65A1 1000 lb GP HE (595 lb Comp B)
 				{ CLSID = "{AN-M81}" 	,attach_point_position = {.5, .1 ,0  }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" 	,attach_point_position = {.5, .1 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}",attach_point_position = {.500, .1 ,0 }},--M117 1x 750 lbs
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.45, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {.450, -.05 ,0 	}},--Mk-82 - 500lb GP Bomb LD
@@ -503,6 +509,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -520,6 +527,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -537,6 +545,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -554,6 +563,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -571,6 +581,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
@@ -588,6 +599,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, 0.03, 0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{90321C8E-7ED1-47D4-A160-E074D5ABD902}" ,attach_point_position = {0, 0, 0.0124 }},--Mk-81 - 250lb GP Bomb LD
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.15, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.13 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE

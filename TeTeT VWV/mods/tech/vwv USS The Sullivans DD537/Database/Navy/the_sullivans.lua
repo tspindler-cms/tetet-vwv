@@ -47,7 +47,8 @@ GT.exhaust = {
 GT.animation_arguments = {
 	water_propeller = 1,
 	radar1_rotation = 2,
-	radar2_rotation = 3
+	radar2_rotation = 3,
+	nav_lights = 901,
 };
 GT.radar1_period = 4; --speed
 GT.radar2_period = 4;

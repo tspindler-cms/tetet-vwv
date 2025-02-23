@@ -1,3 +1,25 @@
+2025-02-23
+  A-1 Skyraider
+    - Add mk81 bombs
+    - Add unitType to UnitPayloads
+  RA-5C Vigilante
+    - Different front cockpit art, black
+  DD-537 The Sullivans
+    - Fix gun sounds
+    - Add nav lights
+    - Main fire control unit up to 60ies
+  DD-692 Allen M Sumner
+    - Fix gun sounds
+    - Add nav lights
+    - Main fire control unit up to 60ies
+  DD-724 Laffey
+    - Fix gun sounds
+    - Add nav lights
+    - Main fire control unit up to 60ies
+  DD-731 Maddox
+    - Fix gun sounds
+    - Add nav lights
+    - Main fire control unit up to 60ies
 2024-12-18
   A-1 Skyraider
     - New collision shell
