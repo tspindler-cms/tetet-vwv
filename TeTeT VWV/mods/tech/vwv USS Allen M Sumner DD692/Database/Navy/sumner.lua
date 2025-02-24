@@ -11,9 +11,9 @@ GT.visual = {}
 GT.visual.shape = "sumner_dcs"  -- name of LODs lua
 GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 
-GT.life = 1000; -- hit points
-GT.mass = 11339.809; -- KGs
-GT.max_velocity = 14.4 --M/S
+GT.life = 2200; -- hit points
+GT.mass = 2200000.0; -- KGs
+GT.max_velocity = 17.49111 --M/S
 GT.race_velocity = 12.1 --M/S
 GT.economy_velocity = 7.7 --M/S 
 GT.economy_distance = 13000 -- KM
@@ -369,7 +369,7 @@ GT.WS[ws].LN[1].show_external_missile = false
 GT.Name = "USS Sumner" -- folder name for Liveries
 GT.DisplayName = _("USS Allen M. Sumner (DD-692)") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Sumner") -- Label name
-GT.Rate = 5500.000000 
+GT.Rate = 2200.000000 
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
 				RADAR = {"ticonderoga search radar"}, --radar types

@@ -1,4 +1,4 @@
-declare_plugin("tetet_thesullivans_60",
+declare_plugin("jjj_thesullivans_64",
 {
 dirName		  = current_mod_path,
 displayName   = _("USS The Sullivans"),
@@ -7,7 +7,7 @@ version		  = "0.9.0",
 state		  = "installed",
 fileMenuName  = _("vwv The Sullivans"),
 developerName = "TeTeT, James J Jackson",
-info		  = _("USS The Sullivans, DD-537, circa 1960"),
+info		  = _("USS The Sullivans, DD-537, circa 1964"),
 encyclopedia_path = current_mod_path .. '/Encyclopedia',
 
 Skins =

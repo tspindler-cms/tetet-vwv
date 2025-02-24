@@ -1,5 +1,5 @@
 -- Ship template by Joey45 edit as you see fit
--- USS The Sullivans 60 by TeTeT
+-- USS The Sullivans 60 by James J. Jackson
 
 GT = {};
 GT_t.ws = 0;
@@ -10,9 +10,9 @@ GT.visual = {}
 GT.visual.shape = "the_sullivans"  -- name of LODs lua
 GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 
-GT.life = 1000; -- hit points
-GT.mass = 11339.809; -- KGs
-GT.max_velocity = 18.0; --M/S
+GT.life = 2080; -- hit points
+GT.mass = 2080000.0; -- KGs
+GT.max_velocity = 18.00556; --M/S
 GT.race_velocity = 14.1; --M/S
 GT.economy_velocity = 7.7; --M/S 
 GT.economy_distance = 12000; -- KM
@@ -520,7 +520,7 @@ GT.WS[ws].LN[1].show_external_missile = false;
 GT.Name = "USS The Sullivans"; -- folder name for Liveries
 GT.DisplayName = _("USS The Sullivans (DD-537)"); -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("The Sullivans"); -- Label name
-GT.Rate = 5500.000000;
+GT.Rate = 2080.000000;
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
                 RADAR = {"ticonderoga search radar"}, --radar types
