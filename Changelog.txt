@@ -1,3 +1,8 @@
+2025-03-01
+  Destroyers
+    - Improved wake files
+  Maddox 
+    - Removed Sumner livery
 2025-02-23
   A-1 Skyraider
     - Add mk81 bombs
