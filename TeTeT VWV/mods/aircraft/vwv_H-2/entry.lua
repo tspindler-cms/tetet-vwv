@@ -6,7 +6,7 @@ declare_plugin(self_ID,
 	dirName	  	 = current_mod_path,
 
 	fileMenuName = _("H-2 Seasprite"),
-	version		 = "0.9.0",
+	version		 = "0.9.1",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Kaman SH-2 Seasprite is a ship-based helicopter originally developed and produced by American manufacturer Kaman Aircraft Corporation. It has been typically used as a compact and fast-moving rotorcraft for utility and anti-submarine warfare missions."),
 
