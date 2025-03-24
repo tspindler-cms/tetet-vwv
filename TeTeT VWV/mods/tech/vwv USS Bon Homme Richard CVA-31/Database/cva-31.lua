@@ -12,9 +12,9 @@ GT.visual = {}
 GT.visual.shape = "essex_dcs"  -- name of LODs lua
 GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 
-GT.life = 7200; -- hit points
-GT.mass = 11339.809; -- KGs
-GT.max_velocity = 14.4 --M/S
+GT.life = 6875; -- hit points
+GT.mass = 27500000.00; -- KGs
+GT.max_velocity = 16.9766667 --M/S
 GT.race_velocity = 12.1 --M/S
 GT.economy_velocity = 7.7 --M/S 
 GT.economy_distance = 13000 -- KM
@@ -53,7 +53,7 @@ GT.OLS = {
 	VerticalCoverageAngle = 1.7
 }
 
-GT.distFindObstacles = 10000
+GT.distFindObstacles = 800
 
 GT.numParking = 2 -- runways
 GT.Plane_Num_ = 8 --number of planes, not sure if it matters in game
@@ -112,9 +112,9 @@ GT.radar3_period = 10; --speed
 -- for lights you can look at the shps in the modelviewer 
 --                             {int ArgumentNo, float OffValue, float OnValue, [float AnimationDuration],  [bool cycleAnimation]}
 GT.carrierIlluminationStates = { 
-								 {{307, 0.0, 0.45}, {308, 0.0, 0.45}, {790, 0.0, 0.60}, {792, 0.0, 0.37}}, --NAV_LIGHTS
-								 {{307, 0.0, 0.75}, {308, 0.0, 0.75}, {790, 0.0, 0.50}, {792, 0.0, 0.45}}, -- AC_LAUNCH_STATE
-								 {{307, 0.0, 0.30}, {308, 0.0, 0.30}, { 40, 0.0, 1.00}, {790, 0.0, 0.50}, {792, 0.0, 0.37}}, -- AC_RECOVERY_STATE
+								 {{901, 0.0, 1.0}}, --NAV_LIGHTS
+								 {}, -- AC_LAUNCH_STATE
+								 {}, -- AC_RECOVERY_STATE
 								}
 								
 --Damage Model
@@ -127,6 +127,7 @@ GT.DM = {
 	{ area_name = "Deck LSO",              area_arg = 75, area_life = 50 },
     { area_name = "Hull Simple",           area_arg = 76, area_life = 150 },
     { area_name = "Island",                area_arg = 77, area_life = 150 },
+	{ area_name = "SuperStructure", area_arg = 78, area_life = 500},
 }
 
 --GT.WS[ws].pointer = "BRIDGE" --possible CA or Weapon controls??
@@ -145,12 +146,261 @@ local ws;
 
 -- weapon systems goes here
 
+-------------------------------------------------------------------------------------------------
+--   5inch  Ammo   
+-------------------------------------------------------------------------------------------------
+
+GT_t.WS_t.ship_mk12_2x127mm = {name = "Mk12 5inch 38cal Twin"};
+GT_t.WS_t.ship_mk12_2x127mm.angles = {
+					{math.rad(180), math.rad(-180), math.rad(-10), math.rad(85)},
+					};
+GT_t.WS_t.ship_mk12_2x127mm.omegaY = math.rad(10); -- Block 1B
+GT_t.WS_t.ship_mk12_2x127mm.omegaZ = math.rad(10); -- Block 1B
+GT_t.WS_t.ship_mk12_2x127mm.pidY = {p=300, i = 0.05, d = 10.0, inn = 1000};
+GT_t.WS_t.ship_mk12_2x127mm.pidZ = {p=300, i = 0.05, d = 10.0, inn = 1000};
+GT_t.WS_t.ship_mk12_2x127mm.reference_angle_Z = 0;
+
+
+GT_t.LN_t.ship_mk12_127mm_AIR = {};
+GT_t.LN_t.ship_mk12_127mm_AIR.type = 11;
+GT_t.LN_t.ship_mk12_127mm_AIR.distanceMin = 20;
+GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 16642;
+GT_t.LN_t.ship_mk12_127mm_AIR.max_trg_alt = 11339;
+GT_t.LN_t.ship_mk12_127mm_AIR.reactionTime = 12;
+GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {};
+-- set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[1])
+set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[20]);
+GT_t.LN_t.ship_mk12_127mm_AIR.PL = {};
+GT_t.LN_t.ship_mk12_127mm_AIR.PL[1] = {
+	shell_name = {"vwv_mk12_127mm_AIR"},
+	automaticLoader = false,
+	shot_delay = 3,
+	ammo_capacity = 352,
+};
+
+GT_t.LN_t.ship_mk12_127mm = {}
+GT_t.LN_t.ship_mk12_127mm.type = 6
+GT_t.LN_t.ship_mk12_127mm.distanceMin = 20
+--GT_t.LN_t.ship_mk12_127mm.distanceMax = 16642
+--GT_t.LN_t.ship_mk12_127mm.max_trg_alt = 11339
+GT_t.LN_t.ship_mk12_127mm.reactionTime = 12
+GT_t.LN_t.ship_mk12_127mm.sensor = {}
+set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm.sensor, GT_t.WSN_t[10])
+GT_t.LN_t.ship_mk12_127mm.PL = {}
+GT_t.LN_t.ship_mk12_127mm.PL[1] = {
+	-- unclear why the 127_Mk49 shells not work
+	shell_name = {"MK45_127"}, --shell_name = { "127_Mk49_HC_1", "127_Mk49_HC_2" },
+	automaticLoader = false,
+	shot_delay = 3,
+	ammo_capacity = 352,
+};
+
+-------------------------------------------------------------------------------------------------
+--   5inch turret 1
+-------------------------------------------------------------------------------------------------
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].area = 'SuperStructure'
+GT.WS[ws].center = 'CENTER_TURRET_01'
+GT.WS[ws].omegaY = math.rad(30);
+GT.WS[ws].omegaZ = math.rad(20);
+GT.WS[ws].drawArgument1 = 501;
+GT.WS[ws].drawArgument2 = 502;
+GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].reference_angle_Y = math.rad(-0)
+GT.WS[ws].angles = {
+	{math.rad(-0), math.rad(-160), math.rad(-10), math.rad(85)},
+};
+-- first set of launchers
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_1',
+							recoilArgument = 205,
+							recoilTime = 0.2 }}
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_1',
+							recoilArgument = 206,
+							recoilTime = 0.2 }}
+
+
+-------------------------------------------------------------------------------------------------
+--   5inch turret 2
+-------------------------------------------------------------------------------------------------
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].area = 'SuperStructure'
+GT.WS[ws].center = 'CENTER_TURRET_02'
+GT.WS[ws].omegaY = math.rad(30);
+GT.WS[ws].omegaZ = math.rad(20);
+GT.WS[ws].drawArgument1 = 503;
+GT.WS[ws].drawArgument2 = 504;
+GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].reference_angle_Y = math.rad(-0)
+GT.WS[ws].angles = {
+	{math.rad(-10), math.rad(-160), math.rad(-10), math.rad(85)},
+};
+-- first set of launchers
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_2',
+							recoilArgument = 205,
+							recoilTime = 0.2 }}
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_2',
+							recoilArgument = 206,
+							recoilTime = 0.2 }}
+
+
+-------------------------------------------------------------------------------------------------
+--   5inch turret 3
+-------------------------------------------------------------------------------------------------
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].area = 'SuperStructure'
+GT.WS[ws].center = 'CENTER_TURRET_03'
+GT.WS[ws].omegaY = math.rad(30);
+GT.WS[ws].omegaZ = math.rad(20);
+GT.WS[ws].drawArgument1 = 505;
+GT.WS[ws].drawArgument2 = 506;
+GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].reference_angle_Y = math.rad(-180)
+GT.WS[ws].angles = {
+	{math.rad(-10), math.rad(-170), math.rad(-10), math.rad(85)},
+};
+-- first set of launchers
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_3',
+							recoilArgument = 209,
+							recoilTime = 0.2 }}
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_3',
+							recoilArgument = 210,
+							recoilTime = 0.2 }}
+
+-------------------------------------------------------------------------------------------------
+--   5inch turret 4
+-------------------------------------------------------------------------------------------------
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].area = 'SuperStructure'
+GT.WS[ws].center = 'CENTER_TURRET_04'
+GT.WS[ws].omegaY = math.rad(30);
+GT.WS[ws].omegaZ = math.rad(20);
+GT.WS[ws].drawArgument1 = 507;
+GT.WS[ws].drawArgument2 = 508;
+GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].reference_angle_Y = math.rad(-180)
+GT.WS[ws].angles = {
+	{math.rad(-10), math.rad(-180), math.rad(-10), math.rad(85)},
+};
+-- first set of launchers
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_4',
+							recoilArgument = 209,
+							recoilTime = 0.2 }}
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_4',
+							recoilArgument = 210,
+							recoilTime = 0.2 }}
+
+
+-------------------------------------------------------------------------------------------------
+--   5inch turret 5
+-------------------------------------------------------------------------------------------------
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].area = 'SuperStructure'
+GT.WS[ws].center = 'CENTER_TURRET_05'
+GT.WS[ws].omegaY = math.rad(30);
+GT.WS[ws].omegaZ = math.rad(20);
+GT.WS[ws].drawArgument1 = 509;
+GT.WS[ws].drawArgument2 = 510;
+GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].reference_angle_Y = math.rad(0)
+GT.WS[ws].angles = {
+	{math.rad(160), math.rad(0), math.rad(-10), math.rad(85)},
+};
+-- first set of launchers
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_5',
+							recoilArgument = 203,
+							recoilTime = 0.2 }}
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_5',
+							recoilArgument = 204,
+							recoilTime = 0.2 }}
+
+-------------------------------------------------------------------------------------------------
+--   5inch turret 6
+-------------------------------------------------------------------------------------------------
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].area = 'SuperStructure'
+GT.WS[ws].center = 'CENTER_TURRET_06'
+GT.WS[ws].omegaY = math.rad(30);
+GT.WS[ws].omegaZ = math.rad(20);
+GT.WS[ws].drawArgument1 = 511;
+GT.WS[ws].drawArgument2 = 512;
+GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].reference_angle_Y = math.rad(0)
+GT.WS[ws].angles = {
+	{math.rad(160), math.rad(10), math.rad(-10), math.rad(85)},
+};
+-- first set of launchers
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_6',
+							recoilArgument = 203,
+							recoilTime = 0.2 }}
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_6',
+							recoilArgument = 204,
+							recoilTime = 0.2 }}
+
+
+-------------------------------------------------------------------------------------------------
+--   5inch turret 7
+-------------------------------------------------------------------------------------------------
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].area = 'SuperStructure'
+GT.WS[ws].center = 'CENTER_TURRET_07'
+GT.WS[ws].omegaY = math.rad(30);
+GT.WS[ws].omegaZ = math.rad(20);
+GT.WS[ws].drawArgument1 = 513;
+GT.WS[ws].drawArgument2 = 514;
+GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].reference_angle_Y = math.rad(180)
+GT.WS[ws].angles = {
+	{math.rad(180), math.rad(10), math.rad(-10), math.rad(85)},
+};
+-- first set of launchers
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm_AIR);
+__LN.sightMaxTanVel = 300;
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_7',
+							recoilArgument = 207,
+							recoilTime = 0.2 }}
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk12_127mm);
+__LN.BR = {{ connector_name = 'POINT_GUN_5inch_7',
+							recoilArgument = 208,
+							recoilTime = 0.2 }}
+
 -------------------------------------------------------------------------
 
-GT.Name = "cva-31" -- folder name for Liveries
+GT.Name = "USS Bon Homme Richard" -- folder name for Liveries
 GT.DisplayName = _("CVA-31 Bon Homme Richard") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("CVA-31") -- Label name
-GT.Rate = 5500.000000 
+GT.Rate = 27500.000000 
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"}, --optics types
                 RADAR = {"Tor 9A331", "carrier search radar"}, --radar types

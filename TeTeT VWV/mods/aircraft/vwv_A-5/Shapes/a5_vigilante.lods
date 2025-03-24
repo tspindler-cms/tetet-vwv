@@ -1,6 +1,8 @@
 model={
 	lods={
-		{"a5-vigilante.edm",10000.0};
+		{"a5-vigilante.edm",  5000.0};
+		{"a5-vigilante_5km.edm", 10000.0};
+		{"a5-vigilante_10km.edm", 15000.0};
 	};
 	collision_shell="a5-vigilante_coll.edm";
 }

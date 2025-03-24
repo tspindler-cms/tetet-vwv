@@ -1,0 +1,9 @@
+presetId = "ArleighBurke" 
+--shipWakeSize = {0,0}	--use default
+--shipWakeSize = {140, 30}
+--shipWakeSize = {160, 20}
+--shipWakeSize = {150, 20}
+shipWakeSize = {200, 20}
+
+
+

@@ -1,5 +1,7 @@
 Vietnam War Vessels by TeTeT
-0.9.1
+1.0.0
+
+ATTENTION: There is a breaking change for USS CVA-31 Bon Homme Richard and Essex class, the GT.Name was changed and hence missions built previously will not have the CVAs any longer/
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -19,7 +21,9 @@ USS Fletcher class destroyer with FRAM II upgrade
 USS The Sullivans (DD-537), Fletcher class destroyer
 RA-5C Vigilante, a supersonic carrier based recon plane
 USS Allen M. Sumner (DD-692), the lead ship of the Sumner class destroyers
-
+USS Bigelow (DD-942), a Forrest Sherman class destroyer
+USS Forrest Sherman (DD-931), the first destroyer class built after WII
+USS New Jersey (BB-62), an Iowa class battleship
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -57,7 +61,9 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/USS_The_Sullivans_(DD-537)
     * https://en.wikipedia.org/wiki/Allen_M._Sumner-class_destroyer 
     * https://en.wikipedia.org/wiki/North_American_A-5_Vigilante 
-
+    * https://en.wikipedia.org/wiki/USS_Bigelow
+    * https://en.wikipedia.org/wiki/Forrest_Sherman-class_destroyer
+    * https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord

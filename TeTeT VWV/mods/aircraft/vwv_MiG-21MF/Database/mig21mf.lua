@@ -50,8 +50,8 @@ return {
 
     -- nose_gear_pos = {1.42, -2.20, 0}, -- nosegear coord---6.157,	-1.26,	0
     nose_gear_pos = {1.42, -1.50, 0.00}, -- nosegear coord---6.157,	-1.26,	0
-    nose_gear_amortizer_direct_stroke = 0, -- down from nose_gear_pos !!!
-    nose_gear_amortizer_reversal_stroke = 0, -- up
+    nose_gear_amortizer_direct_stroke = 0.1, -- down from nose_gear_pos !!!
+    nose_gear_amortizer_reversal_stroke = -0.05, -- up
     nose_gear_amortizer_normal_weight_stroke = 0, -- up
     nose_gear_wheel_diameter = 0.5, -- in m
 

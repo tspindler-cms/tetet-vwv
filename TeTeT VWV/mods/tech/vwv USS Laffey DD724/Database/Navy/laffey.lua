@@ -37,7 +37,7 @@ GT.IR_emission_coeff = 0.9; -- new in 2.7 not sure the params
 GT.TACAN = false;		--If it has TACAN say true if not say false or not have this entry
 GT.ICLS = false; -- IF it has ICLS say true if not say false or not have this entry
 
-GT.distFindObstacles = 148.7;
+GT.distFindObstacles = 150;
 
 -- Aircraft complement
 GT.numParking		= 1;

@@ -1,0 +1,7 @@
+model = {
+	lods = {
+		{"new_jersey_dcs.edm",1000000.000000},
+				
+	},
+	collision_shell = "new_jersey_collision.edm",
+}

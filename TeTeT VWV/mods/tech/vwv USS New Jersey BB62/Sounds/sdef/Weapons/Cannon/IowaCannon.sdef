@@ -1,0 +1,8 @@
+wave = {
+    "Effects/Weapons/Cannon/IowaCannon.wav",
+      }
+inner_radius = 150
+outer_radius = 4000
+detached = true
+pitch_random = 1
+gain = 2.4

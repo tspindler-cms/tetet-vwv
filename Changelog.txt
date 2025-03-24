@@ -1,3 +1,29 @@
+2025-03-24
+  A-1 Skyraider
+    - Increase landing speed
+  RA-5C Vigilante
+    - Use distance lods
+  H-2 Seasprite
+    - Reorganize textures and use a common texture zip
+  MiG-21MF "Fishbed-J"
+    - Add nose wheel suspension
+    - Fix retracted gear peeking throug hull
+  MiG-17F "Fresco-C"
+    - Reorganize texture and use a common texture zip
+  DD-692 Allen M Sumner
+    - Change find obstacles setting
+    - Improve wake
+  CVA-31 Bon Homme Richard
+    - Improve model, fixing holes, aligning cats with config
+  DD-724 Laffey
+    - Change find obstacles setting
+    - Improve wake
+  DD-731 Maddox
+    - Change find obstacles setting
+    - Improve wake
+  DD-537 The Sullivans 
+    - Change find obstacles setting
+    - Improve wake
 2025-03-08
   A-1 Skyraider
     - Fix mk81 bombs placement

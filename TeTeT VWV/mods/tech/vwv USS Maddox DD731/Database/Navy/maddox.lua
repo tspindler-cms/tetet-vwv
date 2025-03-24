@@ -39,7 +39,7 @@ GT.TACAN = false;		--If it has TACAN say true if not say false or not have this 
 
 GT.ICLS = false; -- IF it has ICLS say true if not say false or not have this entry
 
-GT.distFindObstacles = 148.7
+GT.distFindObstacles = 150
 
 -- smoke density and position
 GT.exhaust = {

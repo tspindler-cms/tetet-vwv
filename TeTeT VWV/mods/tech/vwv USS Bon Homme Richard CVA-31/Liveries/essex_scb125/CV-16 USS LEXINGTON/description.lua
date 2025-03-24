@@ -1,11 +1,6 @@
 livery = {
 	
 	
-	{"essex_number_deck",	DIFFUSE			,	"CV-16 Clean", false};
-	{"essex_number_island_port",	DIFFUSE			,	"CV-16 Shadow", false};
-	{"essex_number_island_starboard",	DIFFUSE			,	"CV-16 Shadow", false};
-	{"island_signs",	DIFFUSE			,	"island_signs BLACK 2", false};
-	
-	
+	{"cv31_ship_registry_number",	DIFFUSE			,	"cv31_ship_registry_number.dds", false};	
 }
 name="CV-16 USS LEXINGTON"

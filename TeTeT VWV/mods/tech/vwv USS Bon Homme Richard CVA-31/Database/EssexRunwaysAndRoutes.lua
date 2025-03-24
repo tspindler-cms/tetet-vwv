@@ -8,14 +8,14 @@ GT.RunWays =
 {     
 -- landing strip definition (first in table)  
 --	VppStartPoint; 		   azimuth (degree} 	  Length_Vpp; 	   Width_Vpp;
-	{{-52.5916, 16.95, -5.60511}, 349.0,		   97.0, 			   20.0,  --somewhere between last wire and model center / just past last wire 72 TO 52
+	{{-52.5916, 16.95, -10.298}, 348.6,		   97.0, 			   20.0,  --somewhere between last wire and model center / just past last wire 72 TO 52
 
 -- alsArgument, lowGlidePath, slightlyLowGlidePath, onLowerGlidePath, onUpperGlidePath, slightlyHighGlidePath, highGlidePath
 	1, 			3.5, 		  		4.0, 					4.5, 			  4.5, 				5.0, 				5.5},
 
 -- runways/Cats inbetween Hold back start and connect to front of ship not where the cat/start point connectors are
-	{{50.5750,  16.95,    7.8295}, 	     	000.145, 		   	  72.5735, 		    20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 1 location
-	{{50.6561,  16.95,  -10.242 }, 		    002.215, 		   	  72.5735, 	        20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 2 location
+	{{50.5750,  16.95,    7.8285}, 	     	0.5, 		   	  72.5735, 		    20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 1 location
+	{{50.67,  16.95,  -12.799 }, 		    2.0, 		   	  72.5735, 	        20.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},  --  Cat 2 location
 };
 GT.RunWays.RunwaysNumber = #GT.RunWays
 

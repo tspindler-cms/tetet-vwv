@@ -9,7 +9,7 @@ declare_plugin(self_ID,
 
 	fileMenuName = _("RA-5C Vigilante"),
 	update_id    = "ra5-vigilante",
-	version		 = "0.9.1",
+	version		 = "1.0.0",
 	state		 = "installed",
 	info		 = _("ChatGPT: The RA-5C Vigilante was a supersonic, carrier-based reconnaissance aircraft used by the U.S. Navy during the Cold War, known for its advanced sensors and sleek design."),
 	creditsFile = "credits.txt",
