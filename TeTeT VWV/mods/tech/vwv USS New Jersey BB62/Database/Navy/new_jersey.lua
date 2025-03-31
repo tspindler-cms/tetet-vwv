@@ -62,7 +62,7 @@ GT.radar2_period = 4;
 --Damage Model
 GT.DM = {
 	{ area_name = "nj_flight_deck", area_arg = 971, area_life = 50},
-	{ area_name = "nj_16in50_mk7_T2", area_arg = 971, area_life = 100},
+	{ area_name = "nj_16in50_mk7_T1", area_arg = 971, area_life = 100},
 	{ area_name = "nj_16in50_mk7_T2", area_arg = 972, area_life = 100},
 	{ area_name = "nj_16in50_mk7_T3", area_arg = 973, area_life = 100},
 	{ area_name = "hull", area_arg = 974, area_life = 500},
