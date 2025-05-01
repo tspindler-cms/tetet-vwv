@@ -1,7 +1,6 @@
 Vietnam War Vessels by TeTeT
-1.0.0
+1.0.1
 
-ATTENTION: There is a breaking change for USS CVA-31 Bon Homme Richard and Essex class, the GT.Name was changed and hence missions built previously will not have the CVAs any longer/
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
