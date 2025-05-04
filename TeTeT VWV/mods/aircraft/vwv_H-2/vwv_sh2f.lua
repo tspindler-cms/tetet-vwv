@@ -333,7 +333,8 @@ vwv_sh2f =  {
 		[29] 	= {critical_damage = 3, args = {224}},  	--- WING_L_CENTER
 		[31]	= {critical_damage = 1, args = {229}},
 		[32]	= {critical_damage = 1, args = {219}},
-		[35]	= {critical_damage = 3, args = {225}, deps_cells = {29, 31, 25, 23}},
+		-- [35]	= {critical_damage = 3, args = {225}, deps_cells = {29, 31, 25, 23}},
+		[35]	= {critical_damage = 3, args = {225}, deps_cells = {29, 31, 25}},
 		[36]	= {critical_damage = 3, args = {215}, deps_cells = {30, 32, 26, 24, 60}} ,
 		[37]	= {critical_damage = 1, args = {227}},
 		[38]	= {critical_damage = 1, args = {217}},
