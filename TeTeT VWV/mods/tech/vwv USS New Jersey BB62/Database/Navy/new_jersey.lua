@@ -165,7 +165,7 @@ GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {};
 set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[20]);
 GT_t.LN_t.ship_mk12_127mm_AIR.PL = {};
 GT_t.LN_t.ship_mk12_127mm_AIR.PL[1] = {
-	shell_name = {"vwv_mk12_127mm_AIR"},
+	shell_name = {"vwv_nj_mk12_127mm_AIR"},
 	automaticLoader = false,
 	shot_delay = 3,
 	ammo_capacity = 352,

@@ -343,7 +343,7 @@ vwv_hh2d =  {
 		[12]	= {critical_damage = 1, args = {161}},  --- ENGINE_R
 		[15]	= {critical_damage = 2, args = {267}},  --- ??
 		[16]	= {critical_damage = 2, args = {266}},  --- ??
-		[23] 	= {critical_damage = 3, args = {214}},  --- WING_R_CENTER
+		-- [23] 	= {critical_damage = 3, args = {214}},  --- WING_R_CENTER
 		[24]	= {critical_damage = 3, args = {213}, deps_cells = {26, 60}},
 		[25]	= {critical_damage = 1, args = {226}},
 		[26]	= {critical_damage = 1, args = {216}},

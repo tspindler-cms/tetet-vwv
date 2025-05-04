@@ -46,7 +46,7 @@ declare_weapon({
 
 declare_weapon({
 	category 				= CAT_SHELLS,
-	name 					= "vwv_mk12_127mm_AIR",
+	name 					= "vwv_nj_mk12_127mm_AIR",
 	user_name 				= _("127 mm AA"),
 	model_name				= "pula",
 	projectile	  		= "HE",

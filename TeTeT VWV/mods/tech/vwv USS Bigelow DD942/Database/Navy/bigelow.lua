@@ -120,7 +120,7 @@ GT_t.LN_t.ship_mk42_127mm_AIR.sensor = {}
 set_recursive_metatable(GT_t.LN_t.ship_mk42_127mm_AIR.sensor, GT_t.WSN_t[20])
 GT_t.LN_t.ship_mk42_127mm_AIR.PL = {}
 GT_t.LN_t.ship_mk42_127mm_AIR.PL[1] = {
-							shell_name = {"vwv_mk42_127mm_AIR"},
+							shell_name = {"vwv_bigelow_mk42_127mm_AIR"},
 							automaticLoader = true,
 							shot_delay = 1.5,
 							ammo_capacity = 352,
@@ -163,7 +163,7 @@ GT_t.LN_t.ship_mk33_76mm_AIR.sensor = {}
 set_recursive_metatable(GT_t.LN_t.ship_mk33_76mm_AIR.sensor, GT_t.WSN_t[20])
 GT_t.LN_t.ship_mk33_76mm_AIR.PL = {}
 GT_t.LN_t.ship_mk33_76mm_AIR.PL[1] = {
-							shell_name = {"vwv_mk33_76mm_AIR"},
+							shell_name = {"vwv_bigelow_mk33_76mm_AIR"},
 							automaticLoader = false,
 							shot_delay = 1.3333,
 							ammo_capacity = 352,

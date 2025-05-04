@@ -86,8 +86,6 @@ return {
 	IR_emission_coeff	=	0.6,
 	IR_emission_coeff_ab	=	2.5,
 
-	effects_presets = {
-	},
 	engines_count				= 2, -- Engines count
 	engines_nozzles = {
 		[1] =

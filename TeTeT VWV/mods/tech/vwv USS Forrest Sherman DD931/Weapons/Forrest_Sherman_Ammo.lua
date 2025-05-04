@@ -3,7 +3,7 @@
 -- note that some characteristics have been changed by TeTeT, see the old value as comment
 declare_weapon({
 	category 				= CAT_SHELLS,
-	name 					= "vwv_mk42_127mm_AIR",
+	name 					= "vwv_forrest_mk42_127mm_AIR",
 	user_name 				= _("127 mm AA"),
 	model_name    			= "pula",
     projectile      		= "HE",
@@ -41,7 +41,7 @@ declare_weapon({
 -- Derived from vwv_mk12_127mm_AIR
 declare_weapon({
 	category 				= CAT_SHELLS,
-	name 					= "vwv_mk33_76mm_AIR",
+	name 					= "vwv_forrest_mk33_76mm_AIR",
 	user_name 				= _("76.2 mm AA"),
 	model_name    			= "pula",
     projectile      		= "HE",

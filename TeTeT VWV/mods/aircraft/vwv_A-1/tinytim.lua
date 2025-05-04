@@ -1,7 +1,8 @@
 
 
 -- rockets and rocket pods 
-
+--[[
+TeTeT: Somehow defined twice here, removing the first declaration
 -- tinytim
 local tinytim = {
 	category			= CAT_ROCKETS,
@@ -78,7 +79,7 @@ local tinytim = {
 }
 
 declare_weapon(tinytim)
-
+]]
 -- tinytim
 local tinytim = {
 	category			= CAT_ROCKETS,

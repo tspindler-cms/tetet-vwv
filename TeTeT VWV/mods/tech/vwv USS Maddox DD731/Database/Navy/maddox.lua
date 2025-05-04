@@ -121,7 +121,7 @@ GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {};
 set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm_AIR.sensor, GT_t.WSN_t[20]);
 GT_t.LN_t.ship_mk12_127mm_AIR.PL = {};
 GT_t.LN_t.ship_mk12_127mm_AIR.PL[1] = {
-	shell_name = {"vwv_mk12_127mm_AIR"},
+	shell_name = {"vwv_maddox_mk12_127mm_AIR"},
 	automaticLoader = false,
 	shot_delay = 5,
 	ammo_capacity = 352,
@@ -164,7 +164,7 @@ GT_t.LN_t.ship_mk33_76mm_AIR.sensor = {}
 set_recursive_metatable(GT_t.LN_t.ship_mk33_76mm_AIR.sensor, GT_t.WSN_t[20]);
 GT_t.LN_t.ship_mk33_76mm_AIR.PL = {};
 GT_t.LN_t.ship_mk33_76mm_AIR.PL[1] = {
-	shell_name = {"vwv_mk33_76mm_AIR"},
+	shell_name = {"vwv_maddox_mk33_76mm_AIR"},
 	automaticLoader = false,
 	shot_delay = 1.3333,
 	ammo_capacity = 352,
@@ -190,7 +190,7 @@ GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.sensor = {};
 set_recursive_metatable(GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.sensor, GT_t.WSN_t[20]);
 GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.PL = {};
 GT_t.LN_t.ship_maddox_oerlikon_20mm_AIR.PL[1] = {
-	shell_name = { "vwv_oerlikon_20mm_AIR" },
+	shell_name = { "vwv_maddox_oerlikon_20mm_AIR" },
 	automaticLoader = false,
 	shot_delay = 0.3333,
 	ammo_capacity = 4000,

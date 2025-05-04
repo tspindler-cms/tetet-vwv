@@ -848,12 +848,13 @@ local vwv_a1_skyraider =  {
 		["NOSE_BOTTOM"]			= {critical_damage = 3, args =  {148}},
 		["NOSE_TOP_SIDE"]		= {critical_damage = 3, args =  {147}},
 
-		["WING_L"]			= {critical_damage = 3,args =  {223},deps_cells = {"FLAP_L_IN","WING_L_PART_OUT"}},
-		["WING_R"]			= {critical_damage = 3,args =  {213},deps_cells = {"FLAP_R_IN","WING_R_PART_OUT"}},
+		["WING_L"]			= {critical_damage = 3,args =  {223},deps_cells = {"FLAP_L_IN"}},
+		["WING_R"]			= {critical_damage = 3,args =  {213},deps_cells = {"FLAP_R_IN"}},
 		["CABIN"]		= {critical_damage = 3, args =  {221}},
 		["CANOPY"]		= {critical_damage = 3, args =  {231}},
 		["HOOK"]			= {critical_damage = 5, args =  {227}},
 		["FLAP_R_IN"]			= {critical_damage = 4, args =  {217}},
+		["FLAP_L_IN"]			= {critical_damage = 4, args =  {217}},
 
 		["FUSELAGE_BOTTOM"]		= {critical_damage = 4, args =  {152}},
 		["FUSELAGE_CENTR_TOP"]	= {critical_damage = 4, args =  {151}},

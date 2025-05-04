@@ -1,3 +1,15 @@
+2025-05-04
+  Ships
+    - Make ammo unique per ship to remove DUPLICATE error in dcs.log
+  A-1 Skyraider
+    - Fix config errors
+  H-2 Seasprite
+    - Fix config errors
+    - Remove unneeded textures
+  MiG-17F "Fresco-C"
+    - Fix config errors
+  RA-5C Vigilante
+    - Remove unneeded effects table
 2025-05-01
   BB-62 New Jersey
     - Fix runway and routes file, missing opening bracket, kudos Turbine
