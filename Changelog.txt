@@ -1,3 +1,11 @@
+2025-05-07
+  USS Bigelow, USS Forrest Sherman
+    - Fix third turret mesh
+    - Add insignia to Turner Joy 
+  USS Knox, Gray, Kirk
+    - Add Know close Destroyer Escorts (Later Frigates)
+  MiG-21MF "Fishbed-J"
+    - Fix texture problems
 2025-05-04
   Ships
     - Make ammo unique per ship to remove DUPLICATE error in dcs.log

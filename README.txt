@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-1.0.1
+1.1.0
 
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
@@ -23,6 +23,7 @@ USS Allen M. Sumner (DD-692), the lead ship of the Sumner class destroyers
 USS Bigelow (DD-942), a Forrest Sherman class destroyer
 USS Forrest Sherman (DD-931), the first destroyer class built after WII
 USS New Jersey (BB-62), an Iowa class battleship
+USS Knox (DE-1052), USS Gray (DE-1054), USS Kirk (DE-1087), Knox classs Destroyer Escorts (Later Frigates)
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 

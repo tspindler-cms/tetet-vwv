@@ -290,19 +290,44 @@ __LN.BR = {{ connector_name = 'POINT_GUN_3inch_2_1',
 			recoilTime = 0.2 }};
 
 
-
+-------------------------------------------------- Torpedo Launcher-------------------------------------------------------------
+-- Mark 32 Surface Vessel Torpedo Tubes
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
-set_recursive_metatable( GT.WS[ws], GT_t.WS_t.ship_Torpedo84 );
-GT.WS[ws].area = 'HullMid'
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk46 );
+GT.WS[ws].area = 'SuperStructure';
+GT.WS[ws].center = 'CENTER_TURRET_06';
+GT.WS[ws].drawArgument1 = 501;
+GT.WS[ws].angles = {{math.rad (-20), math.rad (-160), math.rad(0), math.rad(0)},}
+GT.WS[ws].reference_angle_Y = math.rad(-180);
 GT.WS[ws].LN[1].BR = {
-	{connector_name = 'TPO_01', recoilArgument = 177, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
-	{connector_name = 'TPO_02', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
-	{connector_name = 'TPO_03', recoilArgument = 177, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
-	{connector_name = 'TPO_04', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
-};
-GT.WS[ws].LN[1].show_external_missile = false;
+	{connector_name = 'TPO_01' }, 
+	{connector_name = 'TPO_02' }, 
+	{connector_name = 'TPO_03' }, 
+}
+GT.WS[ws].LN[1].customViewPoint = { "genericMissile", {-2.0, 0.75, 0.0}, }; 
+
+-- ======================================================================================
+
+-- Mark 32 Surface Vessel Torpedo Tubes
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {};
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk46 );
+GT.WS[ws].area = 'SuperStructure';
+GT.WS[ws].center = 'CENTER_TURRET_07';
+GT.WS[ws].drawArgument1 = 502;
+GT.WS[ws].angles = {{math.rad (160), math.rad (20), math.rad(0), math.rad(0)},}
+GT.WS[ws].reference_angle_Y = math.rad(180);
+GT.WS[ws].LN[1].BR = {
+	{connector_name = 'TPO_04' },  
+	{connector_name = 'TPO_05' },  
+	{connector_name = 'TPO_06' },  
+}
+GT.WS[ws].LN[1].customViewPoint = { "genericMissile", {-2.0, 0.75, 0.0}, }; 
+
+
 
 -------------------------------------------------------------------------
 
