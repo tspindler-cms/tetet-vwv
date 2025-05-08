@@ -3,7 +3,7 @@
     - Fix third turret mesh
     - Add insignia to Turner Joy 
   USS Knox, Gray, Kirk
-    - Add Know close Destroyer Escorts (Later Frigates)
+    - Add Knox class Destroyer Escorts (Later Frigates)
   MiG-21MF "Fishbed-J"
     - Fix texture problems
 2025-05-04
