@@ -1,3 +1,6 @@
+2025-05-09
+  USS Knox, Gary, Kirk
+    - Make weapon and ammo names unique
 2025-05-07
   USS Bigelow, USS Forrest Sherman
     - Fix third turret mesh
