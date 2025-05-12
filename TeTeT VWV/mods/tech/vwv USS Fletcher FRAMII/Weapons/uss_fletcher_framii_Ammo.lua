@@ -39,7 +39,7 @@ declare_weapon({
 -- note that some characteristics have been changed by TeTeT, see the old value as comment
 declare_weapon({
 	category 				= CAT_SHELLS,
-	name 					= "vwv_fletcher_mk12_127mm_AIR",
+	name 					= "vwv_mk12_127mm_AIR",
 	user_name 				= _("127 mm AA"),
 	model_name    			= "pula",
     projectile      		= "HE",
@@ -73,10 +73,10 @@ declare_weapon({
 	}
 });
 
--- Derived from vwv_fletcher_mk12_127mm_AIR
+-- Derived from vwv_mk12_127mm_AIR
 declare_weapon({
 	category 				= CAT_SHELLS,
-	name 					= "vwv_fletcher_mk33_76mm_AIR",
+	name 					= "vwv_mk33_76mm_AIR",
 	user_name 				= _("76.2 mm AA"),
 	model_name    			= "pula",
     projectile      		= "HE",
@@ -110,10 +110,10 @@ declare_weapon({
 	}
 });
 
--- Derived from vwv_fletcher_mk12_127mm_AIR
+-- Derived from vwv_mk12_127mm_AIR
 declare_weapon({
 	category 				= CAT_SHELLS,
-	name 					= "vwv_fletcher_oerlikon_20mm_AIR",
+	name 					= "vwv_oerlikon_20mm_AIR",
 	user_name 				= _("20 mm AA"),
 	model_name				= "tracer_bullet_yellow",
 	projectile	  			= "HE",
