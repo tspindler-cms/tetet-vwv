@@ -1,3 +1,10 @@
+2025-05-12
+  MiG-21MF "Fishbed-J"
+    - Shadow on rudder fixed
+    - Lower wing shadows fixed
+    - Nose wheel now touches ground
+    - Added 5th pylon, thanks Sinzov
+    - Added bort numbers (3 digits)
 2025-05-09
   USS Knox, Gary, Kirk
     - Make weapon and ammo names unique

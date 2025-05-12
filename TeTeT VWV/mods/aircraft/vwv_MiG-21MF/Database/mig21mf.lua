@@ -49,14 +49,14 @@ return {
     radar_can_see_ground = true,
 
     -- nose_gear_pos = {1.42, -2.20, 0}, -- nosegear coord---6.157,	-1.26,	0
-    nose_gear_pos = {1.42, -1.50, 0.00}, -- nosegear coord---6.157,	-1.26,	0
+    nose_gear_pos = {1.42, -1.45, 0.00}, -- nosegear coord---6.157,	-1.26,	0
     nose_gear_amortizer_direct_stroke = 0.1, -- down from nose_gear_pos !!!
     nose_gear_amortizer_reversal_stroke = -0.05, -- up
     nose_gear_amortizer_normal_weight_stroke = 0, -- up
     nose_gear_wheel_diameter = 0.5, -- in m
 
     -- main_gear_pos = {-2.14, -2.23, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714
-    main_gear_pos = {-2.14, -1.50, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714
+    main_gear_pos = {-2.14, -1.55, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714
     main_gear_amortizer_direct_stroke = 0, --  down from main_gear_pos !!!
     main_gear_amortizer_reversal_stroke = 0, --  up
     main_gear_amortizer_normal_weight_stroke = 0, -- down from main_gear_pos
@@ -364,8 +364,12 @@ return {
                 {CLSID = "{R-3R}"},
                 {CLSID = "{R-3S}"},
                 {CLSID = "{RS-2US}"},
-		})
-
+		}), pylon(5, 0,  0.10, -0.45, 0.0,                       	--  	nr, x?, l, h!, w!
+            {use_full_connector_position = true, connector = "pylon_5"}, {
+                {CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
+                {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+                {CLSID = "PTB_490C_MIG21"},
+        })
     },
 
     ------------------------------------------------------------------------------
