@@ -7,6 +7,11 @@
     - Nose wheel now touches ground
     - Added 5th pylon, thanks Sinzov
     - Added bort numbers (3 digits)
+2025-05-11
+  buildings
+    - Change names from VVW to VWV Prefix
+  MiG-17F, F-8 Crusader
+    - Move READMEs out of livery folder
 2025-05-09
   USS Knox, Gary, Kirk
     - Make weapon and ammo names unique
