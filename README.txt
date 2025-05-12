@@ -64,6 +64,7 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/USS_Bigelow
     * https://en.wikipedia.org/wiki/Forrest_Sherman-class_destroyer
     * https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)
+    * https://en.wikipedia.org/wiki/Knox-class_frigate
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -118,6 +119,8 @@ MiG-17F "Fresco-C"
     - Player control is almost untested and unsupported
     - Collision shell not reliable under player control
     - Damage suspectible when placed as static
+MiG-21MF "Fishbed-J"
+    - Gear up location is pretty bad
 H-2 Seasprite
     - Wheels don't touch the ship deck
 Fletcher Class Destroyers with FRAM II upgrade
