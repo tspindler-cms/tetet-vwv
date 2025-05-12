@@ -1,4 +1,6 @@
 2025-05-12
+  USS Fletcher FRAM II
+    - Revert to version 1.0.0
   MiG-21MF "Fishbed-J"
     - Shadow on rudder fixed
     - Lower wing shadows fixed
