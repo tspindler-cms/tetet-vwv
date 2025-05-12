@@ -119,8 +119,6 @@ MiG-17F "Fresco-C"
     - Player control is almost untested and unsupported
     - Collision shell not reliable under player control
     - Damage suspectible when placed as static
-MiG-21MF "Fishbed-J"
-    - Gear up location is pretty bad
 H-2 Seasprite
     - Wheels don't touch the ship deck
 Fletcher Class Destroyers with FRAM II upgrade
@@ -133,3 +131,5 @@ A-1 Skyraider
     - The new bridle disappears during launch
 MiG-21MF "Fishbed-C"
     - Textures are work in progress
+    - Gear up location is pretty bad
+
