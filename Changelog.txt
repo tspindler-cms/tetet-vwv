@@ -1,3 +1,7 @@
+2025-05-13
+  MiG-21MF "Fishbed-J"
+    - Shadow on rudder fixed once more
+    - Inverted normals on right wheel box
 2025-05-12
   USS Fletcher FRAM II
     - Revert to version 1.0.0
