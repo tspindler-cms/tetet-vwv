@@ -299,8 +299,10 @@ set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk46 );
 GT.WS[ws].area = 'SuperStructure';
 GT.WS[ws].center = 'CENTER_TURRET_06';
 GT.WS[ws].drawArgument1 = 501;
+GT.WS[ws].drawArgument2 = 503;
 GT.WS[ws].angles = {{math.rad (-20), math.rad (-160), math.rad(0), math.rad(0)},}
 GT.WS[ws].reference_angle_Y = math.rad(-180);
+GT.WS[ws].LN[1].launch_delay = 1;
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'TPO_01' }, 
 	{connector_name = 'TPO_02' }, 
@@ -318,8 +320,10 @@ set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk46 );
 GT.WS[ws].area = 'SuperStructure';
 GT.WS[ws].center = 'CENTER_TURRET_07';
 GT.WS[ws].drawArgument1 = 502;
+GT.WS[ws].drawArgument2 = 504;
 GT.WS[ws].angles = {{math.rad (160), math.rad (20), math.rad(0), math.rad(0)},}
 GT.WS[ws].reference_angle_Y = math.rad(180);
+GT.WS[ws].LN[1].launch_delay = 1;
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'TPO_04' },  
 	{connector_name = 'TPO_05' },  

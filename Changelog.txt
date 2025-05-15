@@ -2,9 +2,15 @@
   F-8, MiG-17 refactoring, kudos Hawkeye
     - Remove flyable files
     - Restructure textures of Mig-17F
-  MiG-21MF
+  MiG-21MF "Fishbed-J"
     - Add DisplayNameShort
     - Fix fire positions
+  USS Bigelow
+    - Add replenishment post to 1st & 3rd turret of Bigelow
+    - Bigelow's Front & rear mast modification
+    - Add port side DESRON 19 insignia to USS Turner Joy
+  USS Maddox TI
+    - Add Gulf of Tonkin incident version USS Maddox
 2025-05-13
   MiG-21MF "Fishbed-J"
     - Shadow on rudder fixed once more

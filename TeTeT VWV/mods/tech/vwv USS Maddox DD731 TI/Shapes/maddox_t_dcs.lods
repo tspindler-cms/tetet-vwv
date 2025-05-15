@@ -1,0 +1,9 @@
+model = {
+	lods = {		
+		{"maddox_t_dcs.edm",5000.00};
+		{"maddox_t_5km_dcs.edm",10000.00};
+		{"maddox_t_10km_dcs.edm",15000.00};
+		{"maddox_t_15km_dcs.edm",20000.00};
+	};
+	collision_shell = "maddox_t_coll_dcs.edm";
+}
