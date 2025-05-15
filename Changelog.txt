@@ -1,3 +1,10 @@
+2025-05-15
+  F-8, MiG-17 refactoring, kudos Hawkeye
+    - Remove flyable files
+    - Restructure textures of Mig-17F
+  MiG-21MF
+    - Add DisplayNameShort
+    - Fix fire positions
 2025-05-13
   MiG-21MF "Fishbed-J"
     - Shadow on rudder fixed once more
