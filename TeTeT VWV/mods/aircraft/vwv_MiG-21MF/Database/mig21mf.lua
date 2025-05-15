@@ -2,6 +2,7 @@ return {
 
     Name = 'vwv_mig21mf',
     DisplayName = _('[VWV] MiG-21MF "Fishbed J"'),
+    DisplayNameShort = _('MiG-21MF'),
 	HumanCockpit = false,
     Picture = "mig21mf.png",
     Rate = "50",
@@ -156,18 +157,18 @@ return {
     is_tanker = false,
     ---air_refuel_receptacle_pos = 	{0,	0,	0},
     fires_pos = {
-        [1] = {-0.664, -0.496, 0},
-        [2] = {0.173, -0.307, 1.511},
-        [3] = {0.173, -0.307, -1.511},
-        [4] = {-0.82, 0.265, 2.774},
-        [5] = {-0.82, 0.265, -2.774},
-        [6] = {-0.82, 0.255, 4.274},
-        [7] = {-0.82, 0.255, -4.274},
-        [8] = {-4.899, -0.212, 0.611},
-        [9] = {-4.899, -0.212, -0.611},
-        [10] = {-0.896, 1.118, 0},
-        [11] = {0.445, -0.436, 0}
-    }, -- end of fires_pos
+        { -0.6, 0.5, 0 },
+        { 0, 0, 1 },
+        { 0, 0, -1 },
+        { -1, 0, 2 },
+        { -1, 0, -2 },
+        { -2, 0, 3 },
+        { -2, 0, -3 },
+        { -8, 0.15, 0 },
+        { -8, 0.15, 0 },
+        { -3.5, 0.2, 0.4 },
+        { -3.5, 0.2, -0.4 }
+    },
 
 --    effects_presets = {
 --        {
@@ -365,10 +366,10 @@ return {
                 {CLSID = "{R-3S}"},
                 {CLSID = "{RS-2US}"},
 		}), pylon(5, 0,  0.10, -0.45, 0.0,                       	--  	nr, x?, l, h!, w!
-            {use_full_connector_position = true, connector = "pylon_5"}, {
+            {use_full_connector_position = false, connector = "pylon_5"}, {
                 {CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
                 {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
-                {CLSID = "PTB_490C_MIG21"},
+                {CLSID = "PTB_490C_MIG21"}, -- seems to be a droptank, but not present?
         })
     },
 

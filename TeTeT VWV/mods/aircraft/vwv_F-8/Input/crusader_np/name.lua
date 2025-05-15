@@ -1,1 +1,0 @@
-return _('crusader_np')

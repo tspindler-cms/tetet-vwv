@@ -1,1 +1,0 @@
-return _('mig17f')

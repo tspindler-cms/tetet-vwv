@@ -1,0 +1,7 @@
+model = {
+	lods = {
+		{"mig_boarding_ladder.edm", 300};
+                {"mig_boarding_ladder.edm", 5000};
+	};
+	
+}
