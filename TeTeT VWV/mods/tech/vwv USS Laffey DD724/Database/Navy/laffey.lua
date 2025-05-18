@@ -165,15 +165,18 @@ GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.type = 3;
 GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.distanceMin = 20;
 GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.distanceMax = 4341;
 GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.max_trg_alt = 3083;
-GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.reactionTime = 2;
+GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.reactionTime = 6;
 GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.sensor = {};
 set_recursive_metatable(GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.sensor, GT_t.WSN_t[20]);
+GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.reload_time = 20;
 GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.PL = {};
 GT_t.LN_t.ship_laffey_oerlikon_20mm_AIR.PL[1] = {
 	shell_name = { "vwv_laffey_oerlikon_20mm_AIR" },
-	automaticLoader = false,
-	shot_delay = 0.3333,
-	ammo_capacity = 4000,
+	shot_delay = 0.1333,
+	shot_delay_lofi = 0.24,
+	ammo_capacity = 300,
+	portionAmmoCapacity = 60,
+	reload_time = 20,
 };
 
 --------------------------------------------------------------

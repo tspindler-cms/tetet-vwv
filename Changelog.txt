@@ -1,4 +1,13 @@
+2025-05-18
+  Destroyers
+    - Change Oerlikon 20mm params
+  USS Kirk
+    - Fix hangar
+  H-2 Seasprite 
+    - Revert to 1.0.0 version, restore old edm  
 2025-05-15
+  H-2 Seasprite
+    - Use new bounding box
   F-8, MiG-17 refactoring, kudos Hawkeye
     - Remove flyable files
     - Restructure textures of Mig-17F

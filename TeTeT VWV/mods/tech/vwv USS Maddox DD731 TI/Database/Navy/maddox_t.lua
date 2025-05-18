@@ -170,6 +170,7 @@ GT_t.LN_t.ship_mk33_76mm_AIR.PL[1] = {
 	ammo_capacity = 352,
 };
 
+
 GT_t.WS_t.ship_maddox_t_oerlikon_20mm = { name = "Maddox t Oerlikon 20mm"};
 GT_t.WS_t.ship_maddox_t_oerlikon_20mm.angles = {
 	{math.rad(180), math.rad(-180), math.rad(-15), math.rad(85)},
@@ -181,22 +182,24 @@ GT_t.WS_t.ship_maddox_t_oerlikon_20mm.pidZ = {p=300, i = 0.05, d = 10.0, inn = 1
 GT_t.WS_t.ship_maddox_t_oerlikon_20mm.reference_angle_Z = 0;
 
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR = {};
+set_recursive_metatable(GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR, def_mg_LN);
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.type = 3;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.distanceMin = 20;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.distanceMax = 4341;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.max_trg_alt = 3083;
-GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.reactionTime = 2;
+GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.reactionTime = 6;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.sensor = {};
 set_recursive_metatable(GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.sensor, GT_t.WSN_t[20]);
+GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.reload_time = 20;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.PL = {};
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.PL[1] = {
 	shell_name = { "vwv_maddox_t_oerlikon_20mm_AIR" },
-	automaticLoader = false,
-	shot_delay = 0.3333,
-	ammo_capacity = 4000,
+	shot_delay = 0.1333,
+	shot_delay_lofi = 0.24,
+	ammo_capacity = 300,
+	portionAmmoCapacity = 60,
+	reload_time = 20,
 };
-
-
 
 --------------------------------------------------------------
 

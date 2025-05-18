@@ -57,6 +57,7 @@ GT.animation_arguments = {
 	radar1_rotation = 2,
 	radar2_rotation = 3,
 	radar3_rotation = 4,
+	flight_deck_fences = 5,
 };
 GT.radar1_period = 2; --speed
 GT.radar2_period = 4;
