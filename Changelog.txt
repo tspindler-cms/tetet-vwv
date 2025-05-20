@@ -1,3 +1,8 @@
+2025-05-20
+  CVA-31 Bon Homme Richard
+    - Cleanup liveries, kudos western_JPN
+  Knox class Destroyer Escorts
+    - Update READMEs
 2025-05-19
   BB-62 New Jersey
     - Add new house to deck, probably for refuel helo

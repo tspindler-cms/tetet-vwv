@@ -1,9 +1,7 @@
-# USS The Sullivans (DD-537) for DCS
+# USS Gray (DE-1054) for DCS
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
-The USS The Sullivans is a Fletcher class destroyer, in this mod in a circa 1960 version. 
+The USS Gray is a ship of the Knox class destroyer escorts, in this mod in a circa 1973 version. It is a variant with a SAM battery at the aft.
 
-* https://en.wikipedia.org/wiki/USS_The_Sullivans_(DD-537)
-
-Kudos to currenthill for allowing his armament code to be adjusted and used here. Learn more on his mods at https://currenthill.com/
+* https://en.wikipedia.org/wiki/Knox-class_frigate
