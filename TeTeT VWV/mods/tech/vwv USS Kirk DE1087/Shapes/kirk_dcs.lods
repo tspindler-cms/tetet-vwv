@@ -1,6 +1,9 @@
 model = {
 	lods = {		
-		{"kirk_dcs.edm", 1000000.00}; 
+		{"kirk_dcs.edm", 1000000.00};
+		{"kirk_1km_lod.edm", 5000.00};
+		{"kirk_5km_lod.edm", 10000.00};
+		{"kirk_10km_lod.edm", 20000.00};		 
 	};
 	collision_shell = "kirk_collision.edm";
 }

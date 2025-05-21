@@ -2,6 +2,8 @@
   Forrest Sherman DDs, Knox DEs
     - Add connector to remove dcs.log entry
     - Remove split normals, better smoothing on model
+  Knox DEs
+    - Add distance lods for 1km, 5km and 10km
 2025-05-20
   CVA-31 Bon Homme Richard
     - Cleanup liveries, kudos western_JPN

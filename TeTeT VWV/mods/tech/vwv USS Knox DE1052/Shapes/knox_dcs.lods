@@ -1,6 +1,9 @@
 model = {
 	lods = {		
-		{"knox_dcs.edm", 1000000.00}; 
+		{"knox_dcs.edm", 1000.00};
+		{"knox_1km_lod.edm", 5000.00};
+		{"knox_5km_lod.edm", 10000.00};
+		{"knox_10km_lod.edm", 20000.00};
 	};
 	collision_shell = "knox_collision.edm";
 }
