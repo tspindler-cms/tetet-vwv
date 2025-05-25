@@ -1,6 +1,6 @@
 model = {
 	lods = {		
-		{"Gray_dcs.edm", 1000000.00}; 
+		{"Gray_dcs.edm", 1000.00}; 
 		{"gray_1km_lod.edm", 5000.00};
 		{"gray_5km_lod.edm", 10000.00};
 		{"gray_10km_lod.edm", 20000.00};

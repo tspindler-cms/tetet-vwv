@@ -1,3 +1,9 @@
+2025-05-22
+  Knox class Destroyer Escorts
+    - Fix distance lods for Knox
+    - Fix lods definition for Kirk, Gray
+  H-2 Seasprite 
+    - New engine definition, kudos Admiral
 2025-05-21
   Forrest Sherman DDs, Knox DEs
     - Add connector to remove dcs.log entry

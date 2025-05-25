@@ -148,17 +148,17 @@ vwv_hh2d =  {
 	sound_name	=	"Aircrafts/Engines/RotorAH1W",
 	engine_data =
 	{
-		power_take_off	=	1044,
-		power_max	=	1044,
-		power_WEP	=	1044,
+		power_take_off	=	1148,
+		power_max	=	1263,
+		power_WEP	=	1263,
 		power_TH_k =
 		{
-			[1] = 	{-1.8859,	17.806,	1030},
-			[2] = 	{-2.2584,	20.573,	1030},
-			[3] = 	{-0.9078,	-3.1185,	1051.6},
-			[4] = 	{-0.2853,	-0.614,	786.19},
+			[1] = 	{6.1988,	-154.38,	1319.2},
+			[2] = 	{7.3972,	-166.85,	1354.6},
+			[3] = 	{-1.3775,	-103.72,	1292.3},
+			[4] = 	{-3.0581,	-51.096,	1058.7},
 		}, -- end of power_TH_k
-		SFC_k = 	{0,	-0.000312128,	0.63},
+		SFC_k = 	{0,	-5.899e-005,	0.3759},
 		power_RPM_k = 	{-0.0778,	0.2506,	0.8099},
 		power_RPM_min	=	9.1384,
 		sound_name	=	"Aircrafts/Engines/EngineGE",
