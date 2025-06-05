@@ -1,3 +1,9 @@
+2025-06-05
+  MiG-21MF
+    - Re-order pylons
+    - Update model and texture
+  O-1 Bird Dog
+    - Restore working propeller
 2025-05-22
   Knox class Destroyer Escorts
     - Fix distance lods for Knox
