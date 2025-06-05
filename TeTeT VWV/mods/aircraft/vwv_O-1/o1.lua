@@ -9,8 +9,6 @@ return
 	Picture 			= current_mod_path..'/Textures/o1_bird_dog.png',
 	Rate 				= 40, -- RewardPoint in Multiplayer
 	Shape 				= "o1_birddog",
-	propellorShapeType  = "3ARG_PROC_BLUR",
-    propellorShapeName  = "o1_blade.fbx",
 	shape_table_data 	=
 	{
 		{
@@ -371,14 +369,14 @@ return
 				{1.20,	15680.0},
 			},
 
-			prop_direction      = 1, -- pos rotates cw looking fwd neg is ccw
+  			prop_direction      = 1, -- pos rotates cw looking fwd neg is ccw
 
 			prop_pitch_min      = 26.0, -- prop pitch min, degrees
             prop_pitch_max      = 82.0, -- prop pitch max, degrees
             prop_pitch_feather  = 90.0, -- prop pitch feather position, degrees if feather < prop_pitch_max no feathering available
             prop_blades_count   = 2,
             prop_locations      = {
-				{3.5951, 0.70414, 0.001301}, {0, 0.0, 0.2}, -- roll, yaw, pitch angle in tangent value
+				{0, 0, 0}, {0, 0.0, 0.0}, -- roll, yaw, pitch angle in tangent value
 			},
 		},
 	},
