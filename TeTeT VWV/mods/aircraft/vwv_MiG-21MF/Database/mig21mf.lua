@@ -304,6 +304,7 @@ return {
         gun_mount("GSh_23_2", {count = 250}, {muzzle_pos_connector = "GunPodMuzzle"})
     },
     -------------------------------------------------------------------------------
+    -- Pylon definitions improved by sinzov
     Pylons = {
         -- not x y z in blender, but y z x maybe
         pylon(1, 0, -1.40844, -0.07162, -2.68404,
@@ -316,12 +317,15 @@ return {
 				{CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
 				{CLSID = "FAB_100M"},
 				{CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+                {CLSID = "{PTB_490C_MIG21}"}, -- droptank
                 {CLSID = "{R-13M}"},
                 {CLSID = "{R-3R}"},
                 {CLSID = "{R-3S}"},
                 {CLSID = "{RS-2US}"},
 				-- {CLSID = "CATM-9M"} -- CATM-9M
-        }), pylon(2, 0, -0.48246, -0.06790, -2.0856,
+        }),
+
+	pylon(2, 0, -0.48246, -0.06790, -2.0856,
             {use_full_connector_position = false, connector = "pylon_2"}, {
 				{CLSID = "FAB_50"},
 				{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
@@ -336,13 +340,18 @@ return {
                 {CLSID = "{R-3S}"},
                 {CLSID = "{RS-2US}"},
 				-- {CLSID = "CATM-9M"} -- CATM-9M
+        }),
 
-        }), pylon(3, 0,  0.10, -0.45, 0.0,                       	--  	nr, x?, l, h!, w!
+	pylon(3, 0,  0.10, -0.45, 0.0,                       	--  	nr, x?, l, h!, w!  / x, z, y 
             {use_full_connector_position = false, connector = "pylon_5"}, {
                 {CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
                 {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
-                {CLSID = "PTB_490C_MIG21"}, -- seems to be a droptank, but not present?
-        }), pylon(4, 0, -0.482458, -0.06790, 2.09747,
+                {CLSID = "{PTB_490_MIG21}"},
+                {CLSID = "{PTB_490C_MIG21}"},
+                {CLSID = "{PTB_800_MIG21}"},
+        }),
+
+	pylon(4, 0, -0.482458, -0.06790, 2.09747,
             {use_full_connector_position = false, connector = "pylon_3"}, {
 				{CLSID = "FAB_50"},
 				{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
@@ -356,7 +365,9 @@ return {
                 {CLSID = "{R-3R}"},
                 {CLSID = "{R-3S}"},
                 {CLSID = "{RS-2US}"},
-		}), pylon(5, 0, -1.40844, -0.07162, 2.69591,
+		}),
+
+	pylon(5, 0, -1.40844, -0.07162, 2.69591,
 			{use_full_connector_position = false, connector = "pylon_4"}, {
 				{CLSID = "FAB_50"},
 				{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
@@ -366,12 +377,14 @@ return {
 				{CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
 				{CLSID = "FAB_100M"},
 				{CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+                {CLSID = "{PTB_490C_MIG21}"}, -- droptank
                 {CLSID = "{R-13M}"},
                 {CLSID = "{R-3R}"},
                 {CLSID = "{R-3S}"},
                 {CLSID = "{RS-2US}"},
 		})
     },
+
 
     ------------------------------------------------------------------------------
 
