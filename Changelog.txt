@@ -1,3 +1,6 @@
+2025-06-06
+  MiG-21MF
+    - Update textures, thanks Odyseus
 2025-06-05
   MiG-21MF
     - Re-order pylons
