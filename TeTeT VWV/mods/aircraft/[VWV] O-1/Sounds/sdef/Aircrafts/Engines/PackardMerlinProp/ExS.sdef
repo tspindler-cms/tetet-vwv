@@ -1,0 +1,10 @@
+inner_radius = 50
+outer_radius = 450
+cone_inner_angle = 90
+cone_outer_angle = 120
+cone_outer_gain = 0.2
+direction = {-1, 0, 0}
+position = {1, 0, 0}
+gain = 1.9
+
+

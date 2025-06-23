@@ -1,0 +1,10 @@
+wave = "Effects/Aircrafts/Engines/PackardMerlinProp/Prop2"
+inner_radius = 30
+outer_radius = 300
+cone_inner_angle = 60
+cone_outer_angle = 30
+cone_outer_gain = 0.2
+direction = {0, 0, 1}
+position = {2, 0, 0}
+gain = 1.35
+pitch = 0.68

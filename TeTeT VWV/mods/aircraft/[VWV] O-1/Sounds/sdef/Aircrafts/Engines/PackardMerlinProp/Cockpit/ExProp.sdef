@@ -1,0 +1,4 @@
+inner_radius = 2
+outer_radius = 20
+position = {0.1, 0, 0}
+gain = 1.3

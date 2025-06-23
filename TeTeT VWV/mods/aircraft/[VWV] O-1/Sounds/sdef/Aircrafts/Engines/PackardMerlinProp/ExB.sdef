@@ -1,0 +1,9 @@
+inner_radius = 50
+outer_radius = 550
+cone_inner_angle = 45
+cone_outer_angle = 90
+cone_outer_gain = 0.3
+position = {1.0, 0, 0}
+direction = {-1, 0, 0}
+pitch = 0.9
+gain = 1.8

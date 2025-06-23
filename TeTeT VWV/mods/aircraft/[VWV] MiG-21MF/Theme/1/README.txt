@@ -1,0 +1,1 @@
+Source: https://commons.wikimedia.org/wiki/File:Mikoyan-Gurevich_MiG-21PF_USAF.jpg

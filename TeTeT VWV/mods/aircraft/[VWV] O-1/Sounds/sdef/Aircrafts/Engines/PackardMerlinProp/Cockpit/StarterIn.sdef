@@ -1,0 +1,5 @@
+wave = "Effects/Aircrafts/Engines/PackardMerlinProp/Cockpit/StarterIn"
+inner_radius = 1
+outer_radius = 5
+position = {0.3, 0, 0}
+gain = 3.0
