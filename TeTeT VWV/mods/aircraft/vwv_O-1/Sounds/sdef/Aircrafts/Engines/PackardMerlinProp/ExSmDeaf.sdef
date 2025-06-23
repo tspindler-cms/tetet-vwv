@@ -1,8 +1,0 @@
-direction = {-1, 0, 0}
-cone_inner_angle = 160
-cone_outer_angle = 120
-inner_radius = 10
-outer_radius = 100
-cone_outer_gain = 0.6
-trigger = true
-gain = 1.0

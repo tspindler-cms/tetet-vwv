@@ -1,5 +1,0 @@
-inherit = "Aircrafts/Engines/PackardMerlinProp/ExS"
-wave = "Effects/Aircrafts/Engines/PackardMerlinProp/ExS3"
-gain = 1.6
-pitch = 0.8
-

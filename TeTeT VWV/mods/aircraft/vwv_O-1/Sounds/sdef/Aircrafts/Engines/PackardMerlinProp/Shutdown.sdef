@@ -1,5 +1,0 @@
-wave = "Effects/Aircrafts/Engines/PackardMerlinProp/Shutdown"
-inner_radius = 50
-outer_radius = 250
-position = {1.2, 0, 0}
-gain = 1.5

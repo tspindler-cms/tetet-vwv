@@ -1,7 +1,0 @@
-inherit = "Aircrafts/Engines/PackardMerlinProp/ExB"
-wave = "Effects/Aircrafts/Engines/PackardMerlinProp/ExB3"
-position = {-0.5, 0, 0}
-inner_radius = 250
-outer_radius = 5000
-cone_outer_gain = 0.1
-gain = 1.6

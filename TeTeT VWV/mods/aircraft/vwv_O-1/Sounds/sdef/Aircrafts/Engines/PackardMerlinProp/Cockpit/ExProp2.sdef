@@ -1,4 +1,0 @@
-inherit = "Aircrafts/Engines/PackardMerlinProp/Cockpit/ExProp"
-wave = "Effects/Aircrafts/Engines/PackardMerlinProp/Cockpit/PropIn2"
-position = {-0.1, 0, 0}
-gain = 1.2

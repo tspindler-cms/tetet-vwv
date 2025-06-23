@@ -1,8 +1,0 @@
-inner_radius = 30
-outer_radius = 100
-cone_inner_angle = 70
-cone_outer_angle = 40
-cone_outer_gain = 0.3
-direction = {-1, 0, 0}
-position = {1, 0, 0}
-gain = 3.0

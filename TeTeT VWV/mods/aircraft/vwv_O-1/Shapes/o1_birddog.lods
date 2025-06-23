@@ -1,8 +1,0 @@
-model = {
-	lods = {
-		{ "o1_birddog.edm", 5000.0 };
-		{ "o1_birddog_5km.edm", 10000.0 };
-		{ "o1_birddog_10km.edm", 15000.0 };
-	};
-	collision_shell="o1_birddog_collision.edm";
-}
