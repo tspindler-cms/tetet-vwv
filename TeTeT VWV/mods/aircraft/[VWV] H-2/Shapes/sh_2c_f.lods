@@ -1,8 +1,0 @@
-model = {
-	lods = {
-		{"sh_2c_f.edm", 10000},
-		{"sh_2c_f_lod2.edm", 20000},
-		{"sh_2c_f_lod3.edm", 50000}
-	},
-    collision_shell = "sh_2c_f_collision.edm"
-}
