@@ -426,8 +426,8 @@ GT.WS[ws].LN[1].show_external_missile = false;
 
 -- TODO: Change to Radford, Jekins or Nicholas
 GT.Name = "USS Fletcher";
-GT.DisplayName = _("USS Fletcher FRAM II Destroyer");
-GT.DisplayNameShort = _("Fletcher"); -- Label name
+GT.DisplayName = _("[VWV] DD USS Fletcher FRAM II");
+GT.DisplayNameShort = _("DD Fletcher"); -- Label name
 GT.Rate = 4000;
 
 GT.Sensors = {  

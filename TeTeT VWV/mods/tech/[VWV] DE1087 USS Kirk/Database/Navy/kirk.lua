@@ -221,7 +221,7 @@ GT.WS[ws].LN[1].show_external_missile = false
 -------------------------------------------------------------------------
 
 GT.Name = "USS Kirk"; -- folder name for Liveries
-GT.DisplayName = _("USS Kirk (DE-1087)"); -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] DE-1087 USS Kirk"); -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("USS Kirk"); -- Label name
 GT.Rate = 3000.000000;
 

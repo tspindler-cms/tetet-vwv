@@ -316,7 +316,7 @@ GT.WS[ws].center = 'CENTER_TURRET_05';
 GT.WS[ws].drawArgument1 = 20;
 GT.WS[ws].drawArgument2 = 21;
 GT.WS[ws].reference_angle_Z = math.rad(0);
-GT.WS[ws].reference_angle_Y = math.rad(90);
+GT.WS[ws].reference_angle_Y = math.rad(180);
 GT.WS[ws].angles = {
 					{math.rad(135), math.rad(10), math.rad(-5), math.rad(85)},
                     };	
@@ -334,7 +334,7 @@ GT.WS[ws].center = 'CENTER_TURRET_06';
 GT.WS[ws].drawArgument1 = 22;
 GT.WS[ws].drawArgument2 = 23;
 GT.WS[ws].reference_angle_Z = math.rad(0);
-GT.WS[ws].reference_angle_Y = math.rad(-90);
+GT.WS[ws].reference_angle_Y = math.rad(-180);
 GT.WS[ws].angles = {
 					{math.rad(-20), math.rad(-175), math.rad(-5), math.rad(85)},
                     };
@@ -521,7 +521,7 @@ GT.WS[ws].LN[1].show_external_missile = false;
 -------------------------------------------------------------------------
 
 GT.Name = "USS The Sullivans"; -- folder name for Liveries
-GT.DisplayName = _("USS The Sullivans (DD-537)"); -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] DD-537 USS The Sullivans"); -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("The Sullivans"); -- Label name
 GT.Rate = 2080.000000;
 

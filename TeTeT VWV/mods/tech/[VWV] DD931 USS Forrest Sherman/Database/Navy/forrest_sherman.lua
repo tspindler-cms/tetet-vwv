@@ -307,7 +307,7 @@ GT.WS[ws].LN[1].show_external_missile = false;
 -------------------------------------------------------------------------
 
 GT.Name = "USS Forrest Sherman"; -- folder name for Liveries
-GT.DisplayName = _("USS Forrest Sherman (DD-931)"); -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] DD-931 USS Forrest Sherman"); -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Sherman"); -- Label name
 GT.Rate = 2800.000000;
 

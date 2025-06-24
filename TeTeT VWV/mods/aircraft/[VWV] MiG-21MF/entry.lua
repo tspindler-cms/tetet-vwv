@@ -6,7 +6,7 @@ declare_plugin(self_ID, {
     fileMenuName = _("MiG-21MF"),
     developerName = _("TeTeT"),
     update_id = "mig21mf",
-    version = "1.1.2",
+    version = "2.0.0",
     state = "installed",
     info = _("Wikipedia: Export variant of the MiG-21S with two major differences: the RP-22 radar of the MiG-21S was substituted with the older RP-21MA radar, and featured a built-in GSh-23L cannon instead of a cannon pod"),
     creditsFile = "credits.txt",

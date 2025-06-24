@@ -162,7 +162,7 @@ GT.WS[ws].LN[1].BR =
 ]]
 
 GT.Name = "PBR_MKII";
-GT.DisplayName = _("Patrol Boat, River MkII");
+GT.DisplayName = _("[VWV] Patrol Boat, River MkII");
 GT.DisplayNameShort = _("PBR MkII")
 GT.Rate = 5;
 

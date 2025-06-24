@@ -56,7 +56,7 @@ end
 
 add_structure({
     Name 		 =  "vwv_bdg_indohut1",
-    DisplayName  = _("VWV Indochina Hut High"),
+    DisplayName  = _("[VWV] Indochina Hut High"),
     ShapeName	 =   "indo_hut1",
     ShapeNameDestr = "indo_hut1",
     Life		 =  5,
@@ -66,7 +66,7 @@ add_structure({
 
 add_structure({
     Name 		 =  "vwv_bdg_indohut2",
-    DisplayName  = _("VWV Indochina Hut Low"),
+    DisplayName  = _("[VWV] Indochina Hut Low"),
     ShapeName	 =   "indo_hut2",
     ShapeNameDestr = "indo_hut2",
     Life		 =  5,

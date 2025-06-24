@@ -370,7 +370,7 @@ GT.WS[ws].LN[1].show_external_missile = false
 -------------------------------------------------------------------------
 
 GT.Name = "USS Laffey" -- folder name for Liveries
-GT.DisplayName = _("USS Laffey (DD-724)") -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] DD-724 USS Laffey") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Laffey") -- Label name
 GT.Rate = 2235.000000 
 

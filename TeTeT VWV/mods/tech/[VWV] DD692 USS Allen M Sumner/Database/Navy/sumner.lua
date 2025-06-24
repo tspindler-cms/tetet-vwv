@@ -370,7 +370,7 @@ GT.WS[ws].LN[1].show_external_missile = false
 -------------------------------------------------------------------------
 
 GT.Name = "USS Sumner" -- folder name for Liveries
-GT.DisplayName = _("USS Allen M. Sumner (DD-692)") -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] DD-692 USS Allen M. Sumner") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Sumner") -- Label name
 GT.Rate = 2200.000000 
 

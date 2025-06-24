@@ -785,7 +785,7 @@ GT.WS[ws].LN[1].show_external_missile = false
 -------------------------------------------------------------------------
 
 GT.Name = "USS New Jersey" -- folder name for Liveries
-GT.DisplayName = _("USS New Jersey (BB-62)") -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] BB-62 USS New Jersey 1968") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Big J") -- Label name
 GT.Rate = 61000.000000 
 

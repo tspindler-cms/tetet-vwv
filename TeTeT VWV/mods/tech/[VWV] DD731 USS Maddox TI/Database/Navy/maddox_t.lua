@@ -452,7 +452,7 @@ GT.WS[ws].LN[1].show_external_missile = false
 -------------------------------------------------------------------------
 
 GT.Name = "USS Maddox T" -- folder name for Liveries
-GT.DisplayName = _("USS Maddox (DD-731) Tonkin Incident") -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] DD-731 USS Maddox Tonkin Incident") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Maddox TI") -- Label name
 GT.Rate = 2200.000000 
 

@@ -142,7 +142,7 @@ GT.WS[ws].LN[1].show_external_missile = false
 -------------------------------------------------------------------------
 
 GT.Name = "P4" -- folder name for Liveries
-GT.DisplayName = _("P 4 Torpedo Boat") -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] P 4 Torpedo Boat") -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("P 4") -- Label name
 GT.Rate = 4000 -- 5500.000000 
 

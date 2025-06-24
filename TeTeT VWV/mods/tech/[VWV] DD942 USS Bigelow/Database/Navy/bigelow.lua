@@ -336,7 +336,7 @@ GT.WS[ws].LN[1].customViewPoint = { "genericMissile", {-2.0, 0.75, 0.0}, };
 -------------------------------------------------------------------------
 
 GT.Name = "USS Bigelow"; -- folder name for Liveries
-GT.DisplayName = _("USS Bigelow (DD-942)"); -- name in game in ME and on the tape at the bottom
+GT.DisplayName = _("[VWV] DD-942 USS Bigelow"); -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Bigelow"); -- Label name
 GT.Rate = 2800.000000;
 
