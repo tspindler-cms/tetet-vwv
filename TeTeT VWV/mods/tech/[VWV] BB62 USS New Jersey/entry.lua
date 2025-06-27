@@ -26,6 +26,6 @@ mount_vfs_texture_path	(current_mod_path ..  "/Textures/new_jersey.zip") -- I us
 
 dofile(current_mod_path..'/Weapons/New_Jersey_Ammo.lua') -- any custom weapons the mod has
 dofile(current_mod_path .."/Database/db_ships.lua")
-
+--dofile(current_mod_path .."/MissionEditor/data/NewMap/classifier_jjj.lua")
 
 plugin_done()

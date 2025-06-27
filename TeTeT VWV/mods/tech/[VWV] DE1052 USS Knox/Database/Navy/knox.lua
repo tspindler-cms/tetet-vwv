@@ -233,7 +233,7 @@ GT.sensor.max_range_finding_target = 500;
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
 GT.Singleton		= "yes";
-GT.mapclasskey		= "P0091000068"; --map icon >>MissionEditor\data\NewMap\images
+GT.mapclasskey		= "P0091000070"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
 						"Frigate",
 						"RADAR_BAND1_FOR_ARM",

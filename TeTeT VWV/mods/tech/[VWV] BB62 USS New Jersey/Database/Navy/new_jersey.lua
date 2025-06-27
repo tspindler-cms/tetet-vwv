@@ -800,8 +800,10 @@ GT.sensor.max_range_finding_target = 500;
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
 GT.Singleton		= "no";
-GT.mapclasskey		= "P0091000068"; --map icon >>MissionEditor\data\NewMap\images
+GT.mapclasskey		= "P0091000066"; --map icon >>MissionEditor\data\NewMap\images P00910000114514 for BB symbol
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
+						"Aircraft Carriers", 
+						"AircraftCarrier", 
 						"Cruisers",
 						"RADAR_BAND1_FOR_ARM",
 						"DetectionByAWACS",
@@ -809,7 +811,7 @@ GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArm
 					--unfortunately the list with these have since been hidden by ED along with the ships lua files
 GT.Categories		= {
 	{name = "Armed Ship"}, -- has weapons
-	{name = "HelicopterCarrier"}
+	{name = "AircraftCarrier"}
 };
 				
 -- categories in the mission editor 
