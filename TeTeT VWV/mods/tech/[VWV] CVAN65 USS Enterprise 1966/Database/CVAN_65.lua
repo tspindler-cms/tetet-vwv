@@ -46,8 +46,8 @@ GT.ICLS_Glideslope_position = {-118.3, 25.05, 26.72, 3.5}
 --Optical Landing System
 GT.OLS = {
 	Type = GT_t.OLS_TYPE.IFLOLS,
-	CutLightsArg = 44,
-	DatumAndWaveOffLightsArg = 45,
+	CutLightsArg = 404,
+	DatumAndWaveOffLightsArg = 405,
 	MeatBallArg = 151,
 	GlideslopeBasicAngle = 3.5,
 	VerticalCoverageAngle = 1.7

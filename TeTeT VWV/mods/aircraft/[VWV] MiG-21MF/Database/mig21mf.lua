@@ -382,7 +382,12 @@ return {
                 {CLSID = "{R-3R}"},
                 {CLSID = "{R-3S}"},
                 {CLSID = "{RS-2US}"},
-		})
+		}),
+
+    pylon(6, 0,  -2.95, -0.20, 0.0,
+            {use_full_connector_position = false, connector = "pylon_3"}, {
+          {CLSID = "{SPRD}"},
+        }),
     },
 
 
