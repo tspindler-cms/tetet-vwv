@@ -1,3 +1,23 @@
+2025-07-03
+  H-2 Seasprite
+      - Add SH-2F, UH-2A, UH-2B, UH-2C variants
+      - remove H-2 folder
+  Ships
+    - Sound update for gun fire
+  MiG-21MF
+    - Add sinzov's sixth pylon for RATO take-offs
+    - Try to fix MiG-21 nose wheel compression
+    -  MiG-21MF front wheel fix
+  CVAN-65 Enterprise 1966
+    - Model improvements
+    - Add IFLOLS lights
+  CVA Essex
+    - Model improvements  
+  BB-62 New Jersey
+    - Use CC map icon
+    - declare it as aircraft carrier for helos evading the crane
+  FF Knox Class
+    - Use FF map icon
 2025-06-06
   MiG-21MF
     - Update textures, thanks Odyseus
