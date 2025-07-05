@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-1.1.2
+2.0.0
 
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
@@ -24,6 +24,8 @@ USS Bigelow (DD-942), a Forrest Sherman class destroyer
 USS Forrest Sherman (DD-931), the first destroyer class built after WII
 USS New Jersey (BB-62), an Iowa class battleship
 USS Knox (DE-1052), USS Gray (DE-1054), USS Kirk (DE-1087), Knox classs Destroyer Escorts (Later Frigates)
+USS Mullany (DD-528), a Flechter class destroyer
+USS Enterprise 1966 (CVAN-65), the first nuclear driven carrier
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -121,6 +123,7 @@ MiG-17F "Fresco-C"
     - Damage suspectible when placed as static
 H-2 Seasprite
     - Wheels don't touch the ship deck
+    - Landing gear is deployed multiple kilometers away from landing spot
 Fletcher Class Destroyers with FRAM II upgrade
     - Bridge and mast are WWII style    
 USS Laffey and Sumner class destroyers
