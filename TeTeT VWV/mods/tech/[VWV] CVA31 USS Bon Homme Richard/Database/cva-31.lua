@@ -399,7 +399,7 @@ __LN.BR = {{ connector_name = 'POINT_GUN_5inch_7',
 
 GT.Name = "USS Bon Homme Richard" -- folder name for Liveries
 GT.DisplayName = _("[VWV] CVA-31 Bon Homme Richard") -- name in game in ME and on the tape at the bottom
-GT.DisplayNameShort = _("CVA-31") -- Label name
+GT.DisplayNameShort = _("Bonnie Dick") -- Label name
 GT.Rate = 27500.000000 
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"}, --optics types

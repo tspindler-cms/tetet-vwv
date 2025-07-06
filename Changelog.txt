@@ -1,3 +1,6 @@
+2025-07-06
+  CVA-31 Bon Homme Richard  
+    - use "Bonnie Dick" as short name (formerly CVA-31)
 2025-07-05
   CVAN-65 Enterprise 1966
     - Shuttle animation moves with cubic acceleration now
