@@ -1,3 +1,15 @@
+2025-07-12
+  A-1 Skyraider
+    - Split into AD-4 (no bridle) and A-1H (bridle)
+    - Add A-4E-C Napalm bombs
+    - Add toilet bombs to all pylons
+    - Rework flight model to take off from WWII Essex with 70% loadout
+  RA-5C Vigilante
+    - Rework flight model to have more lift at low speed
+    - Add short display name RA-50c 
+  CVAN-65 Enterprise 1966 
+    - Adjust take-off angles in runway and routes file
+    - Change parking position speeds
 2025-07-06
   CVA-31 Bon Homme Richard  
     - use "Bonnie Dick" as short name (formerly CVA-31)
