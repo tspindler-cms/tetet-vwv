@@ -219,34 +219,18 @@ local crusader = {
         },
     }, -- end of mechanimations
 	launch_bar_connected_arg_value = launch_bar_connected_arg_value_;
-    LandRWCategories =
+	LandRWCategories =
     {
         [1] =
         {
-			Name = "AircraftCarrier",
-        },
-        [2] =
-        {
-            Name = "AircraftCarrier With Catapult",
-        },
-        [3] =
-        {
-            Name = "AircraftCarrier With Tramplin",
+			Name = "AircraftCarrier With Arresting Gear",
         },
     }, -- end of LandRWCategories
-    TakeOffRWCategories =
+	TakeOffRWCategories =
     {
         [1] =
         {
-			Name = "AircraftCarrier",
-        },
-        [2] =
-        {
             Name = "AircraftCarrier With Catapult",
-        },
-        [3] =
-        {
-            Name = "AircraftCarrier With Tramplin",
         },
     }, -- end of TakeOffRWCategories
 

@@ -155,10 +155,6 @@ return {
         {
 			Name = "AircraftCarrier With Catapult",
         },
-        [3] =
-        {
-            Name = "AircraftCarrier With Tramplin",
-        },
     }, -- end of TakeOffRWCategories
 
 	-- From toan 2024-12-11
@@ -468,6 +464,7 @@ return {
 				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
 				{ CLSID = "{mk77mod1}", attach_point_position = {0.4, 0.08, 0} }, -- A-4E Napalm
+				{ CLSID = "{mk77mod0}", attach_point_position = {0.4, 0.08, 0} }, -- A-4E Napalm
 			}
         ),
 
@@ -492,6 +489,7 @@ return {
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 				{ CLSID = "DIS_mk46torp", attach_point_position = {0, -0.07, 0}}, --Torpedo
 				{ CLSID = "{mk77mod1}", attach_point_position = {-0.1, 0.08, 0} }, -- A-4E Napalm
+				{ CLSID = "{mk77mod0}", attach_point_position = {0.4, 0.08, 0} }, -- A-4E Napalm
 			}
         ),
 
@@ -524,6 +522,7 @@ return {
 				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
 				{ CLSID = "{mk77mod1}",  attach_point_position = {0.4, 0.08, 0} }, -- A-4E Napalm
+				{ CLSID = "{mk77mod0}", attach_point_position = {0.4, 0.08, 0} }, -- A-4E Napalm
 		   }
         ),
 			
