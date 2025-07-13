@@ -6,7 +6,7 @@ declare_weapon({
 	category 				= CAT_SHELLS,
 	name 					= "vwv_mk7_406mm_HC",
 	user_name 				= _("406 mm HC"),
-	model_name				= "pula",
+	model_name				= "iowa_hc",
 	projectile	  		= "HE",
 	payloadEffect   		= "Fragmentation",
 	payloadMaterial 		= "RDX",

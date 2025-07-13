@@ -1,3 +1,10 @@
+2025-07-13
+  BB-62 New Jersey
+    - Use specific custom shell for main armamanet
+  CVAN-65 Enterprise 1966 
+    - Adjust take-off angles in runway and routes file
+    - Change parking position speeds
+    - Model adjustments
 2025-07-12
   A-1 Skyraider
     - Split into AD-4 (no bridle) and A-1H (bridle)
@@ -6,7 +13,7 @@
     - Rework flight model to take off from WWII Essex with 70% loadout
   RA-5C Vigilante
     - Rework flight model to have more lift at low speed
-    - Add short display name RA-50c 
+    - Add short display name RA-5C 
   CVAN-65 Enterprise 1966 
     - Adjust take-off angles in runway and routes file
     - Change parking position speeds
