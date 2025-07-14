@@ -3,6 +3,9 @@
     - Move elevator 3 parking pos 1meter forward
     - Clean attributes in main config
     - Fix model problems
+    - Reduce complexity of collision shell
+  O-1 Bird Dog
+    - Add engine nozzle def, otherwise F-14 Tomcat will CTD
 2025-07-13
   BB-62 New Jersey
     - Use specific custom shell for main armamanet

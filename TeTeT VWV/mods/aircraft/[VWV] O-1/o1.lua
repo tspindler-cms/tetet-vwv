@@ -3,6 +3,7 @@ return
 {
 	Name 				=   'vwv_o-1',
 	DisplayName			= _('[VWV] O-1 Bird Dog'),
+	DisplayNameShort    = _('O-1'),
 
 	HumanCockpit 		= false,
 
@@ -32,6 +33,8 @@ return
 	mapclasskey = "P0091000027",
 	attribute = {wsType_Air, wsType_Airplane, wsType_Battleplane, o1_bird_dog, "Battleplanes"},
 	Categories = {},
+
+	propellorShapeType = "3ARG_PROC_BLUR",
 
 	-------------------------
 	M_empty 					= 732, -- 490, -- kg
@@ -87,49 +90,17 @@ return
 ------------------------------------------------------------------------------
 	engines_nozzles =
 	{
-	--[[
 		[1] =
-		{
-				pos = 	{0.65,	0.9,	-2.5},
-				elevation	=	0,
-				diameter	=	1.523,
-				exhaust_length_ab	=	10,
-				exhaust_length_ab_K	=	0.76,
-				smokiness_level     = 	0.1,
-				engine_number  = 1, --both to first engine
-		},
-		[2] =
-		{
-			pos = 	{0.65,	0.9,	2.5},
-				elevation	=	0,
-				diameter	=	1.523,
-				exhaust_length_ab	=	10,
-				exhaust_length_ab_K	=	0.76,
-				smokiness_level     = 	0.1,
-				engine_number  = 2, --both to first engine
-		},
-
-		[3] =
-		{
-			pos = 	{1.5,	1.1,	-7},
-				elevation	=	0,
-				diameter	=	1.523,
-				exhaust_length_ab	=	11.794,
-				exhaust_length_ab_K	=	0.76,
-				smokiness_level     = 	0.2,
-				engine_number  = 3, --both to first engine
-		},
-		[4] =
-		{
-			pos = 	{1.5,	1.1,	7},
-				elevation	=	0,
-				diameter	=	1.523,
-				exhaust_length_ab	=	11.794,
-				exhaust_length_ab_K	=	0.76,
-				smokiness_level     = 	0.2,
-				engine_number  = 4, --both to first engine
-		},
-		]]
+        {
+            pos         =  {-4.3,    0.24,    -0.672}, -- nozzle coords
+            elevation   =  0, -- AFB cone elevation
+            diameter    = 0.5, -- AFB cone diameter
+            exhaust_length_ab = 0.01,
+            exhaust_length_ab_K = 0.7,
+            smokiness_level = 0.2,
+            afterburner_circles_count = 0,
+			-- engine_number  = 1, --both to first engine
+        },
 	}, -- end of engines_nozzles
 --------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
@@ -264,7 +235,7 @@ return
 	{ -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
 		aerodynamics =
 		{
-            Cy0         = 0.2, -- zero AoA lift coefficient
+            Cy0         = 0.05, -- zero AoA lift coefficient
             Mzalfa      = 1.355, -- coefficients for pitch agility
             Mzalfadt    = 0.8, -- coefficients for pitch agility
 			-- kjx				=  2.00,   --2.50,        -- koeficijent sile po nagibu (na X osi), sto vise - to brze valjanje i zaustavljanje
@@ -282,17 +253,17 @@ return
             -- Aldop  -- Alfadop Max AOA at current M - departure threshold
             -- Cymax  -- Coefficient, lift, maximum possible (ignores other calculations if current Cy > Cymax)
 			-- ED bug: avion ne moze da sleti ako su naredne vrednosti suvise male (ili 0)
-            cx_gear     = 0.0277, -- coefficient, drag, gear
+            cx_gear     = 0.0477, -- coefficient, drag, gear
             cx_flap     = 0.195, -- coefficient, drag, full flaps
-            cy_flap     = 0.05, -- coefficient, normal force, lift, flaps
+            cy_flap     = 0.4, -- coefficient, normal force, lift, flaps
             cx_brk      = 0.06, -- coefficient, drag, breaks
 			table_data =
 				{
 					--      M		Cx0		 	Cya			 B		 	B4	      Omxmax		Aldop		Cymax
-					{	0.000	,	0.020	,	0.0150	,	0.046	,	0.0120	,	0.120	,	0.000	,	0.0	,	}	,
-					{	0.020	,	0.020	,	0.0141	,	0.048	,	0.0125	,	0.123	,	1.000	,	0.161	,	}	,
-					{	0.040	,	0.020	,	0.0122	,	0.051	,	0.0135	,	0.129	,	2.000	,	0.133	,	}	,
-					{	0.060	,	0.020	,	0.0813	,	0.052	,	0.0140	,	1.332	,	15.000	,	1.820	,	}	, --60mph
+					{	0.000	,	0.010	,	0.0225	,	0.046	,	0.0120	,	0.120	,	0.000	,	0.0	,	}	,
+					{	0.010	,	0.012	,	0.0341	,	0.048	,	0.0125	,	0.123	,	1.000	,	0.161	,	}	,
+					{	0.020	,	0.014	,	0.0422	,	0.051	,	0.0135	,	0.129	,	2.000	,	0.133	,	}	,
+					{	0.040	,	0.018	,	0.0613	,	0.052	,	0.0140	,	1.332	,	15.000	,	1.820	,	}	, --60mph
 					{	0.070	,	0.020	,	0.0805	,	0.053	,	0.0145	,	1.635	,	16.000	,	1.805	,	}	,
 					{	0.080	,	0.020	,	0.0895	,	0.054	,	0.0150	,	1.938	,	14.000	,	1.791	,	}	,
 					{	0.090	,	0.020	,	0.0885	,	0.055	,	0.0155	,	2.241	,	12.000	,	1.775	,	}	,
@@ -335,7 +306,7 @@ return
 			Nu_0			 =	     1.2,
 			Nu_1			 =	     0.9,
 			Nu_2			 =	     0.001,
-			N_indic_0		 =		 1600000,--1023040,           -- veliki uticaj na vucnu silu, sto vece to jaca
+			N_indic_0		 =		 1023040, -- 1023040,           -- veliki uticaj na vucnu silu, sto vece to jaca
 			N_fr_0			 =	     0.072,
 			N_fr_1			 =	     0.02,
 			Init_Mom		 =	    20,                     -- guess /was 220/
@@ -355,21 +326,21 @@ return
 			{
 			--   M		Pmax
 
-				{0.00,	50000.0},--4000.0
-				{0.05,	56900.0}, -- 50
-				{0.10,	56800.0}, -- 100
-				{0.15,	56700.0},-- 153 mph
-				{0.42,	56600.0},
-				{0.53,	16500.0},
-				{0.64,	16400.0},
-				{0.75,	16700.0},
-				{0.86,	16600.0},
-				{0.97,	16100.0},
-				{0.98,	16000.0},-- 230 mph
-				{1.20,	15680.0},
+				{0.00,	12000.0},--4000.0
+				{0.05,	11900.0}, -- 50
+				{0.10,	10800.0}, -- 100
+				{0.15,	8700.0},-- 153 mph
+				{0.42,	7600.0},
+				{0.53,	6500.0},
+				{0.64,	6400.0},
+				{0.75,	6700.0},
+				{0.86,	6600.0},
+				{0.97,	6100.0},
+				{0.98,	6000.0},-- 230 mph
+				{1.20,	5680.0},
 			},
 
-  			prop_direction      = 1, -- pos rotates cw looking fwd neg is ccw
+			prop_direction      = 1, -- pos rotates cw looking fwd neg is ccw
 
 			prop_pitch_min      = 26.0, -- prop pitch min, degrees
             prop_pitch_max      = 82.0, -- prop pitch max, degrees
