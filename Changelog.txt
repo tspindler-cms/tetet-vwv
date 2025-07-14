@@ -1,3 +1,8 @@
+2025-07-14
+  CVAN-65 Enterprise 1966 
+    - Move elevator 3 parking pos 1meter forward
+    - Clean attributes in main config
+    - Fix model problems
 2025-07-13
   BB-62 New Jersey
     - Use specific custom shell for main armamanet
