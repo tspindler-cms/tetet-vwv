@@ -1,4 +1,4 @@
-# CVN-65 USS Enterprise carrier for DCS.
+# CVAN-65 USS Enterprise carrier for DCS.
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 

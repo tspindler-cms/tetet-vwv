@@ -162,28 +162,23 @@ GT.DetectionRange	= GT.airFindDist;
 GT.ThreatRange		= GT.airWeaponDist;
 GT.Singleton		= "yes";
 GT.mapclasskey		= "P0091000065"; --map icon >>MissionEditor\data\NewMap\images
-GT.attribute		= {wsType_Navy, wsType_Ship, wsType_AirCarrier, WSTYPE_PLACEHOLDER, -- >> \DCS World Version\Scripts\Database\wsTypes.lua
+GT.attribute		= {wsType_Navy, wsType_Ship, wsType_AirCarrier, WSTYPE_PLACEHOLDER, 
 						"Aircraft Carriers", 
-						"Arresting Gear",  --if it has arrester wires
-						"catapult", --if it has catapults
-						-- "ski_jump", -- if it has a ramp
+						"Arresting Gear",  
+						"catapult", 
 						"RADAR_BAND1_FOR_ARM",
 						"RADAR_BAND2_FOR_ARM",
 						"Datalink",
 						"Link4",
 						"ACLS",
-						"AircraftCarrier", 
-						"AircraftCarrier With Catapult",
-						"Armed Ship",
-						"AircraftCarrier With Arresting Gear"
 					};
 					--unfortunately the list with these have since been hidden by ED along with the ships lua files
 GT.Categories		= {
-						{name = "AircraftCarrier"}, --aircraft carrier
-						{name = "AircraftCarrier With Catapult"}, --if it has catapults
-						{name = "AircraftCarrier With Tramplin"}, -- if it has a ramp
-						{name = "Armed Ship"}, -- has weapons
-						{name = "AircraftCarrier With Arresting Gear"} -- TeTeT: test, seems to work now - was: disables mod when enabled, showws on SC module and Stennis and Forrestal.
+						{name = "AircraftCarrier"}, 
+						{name = "AircraftCarrier With Catapult"}, 
+						{name = "AircraftCarrier With Tramplin"}, 
+						{name = "Armed Ship"},
+						{name = "AircraftCarrier With Arresting Gear"} 
 					};	
 					
 					
