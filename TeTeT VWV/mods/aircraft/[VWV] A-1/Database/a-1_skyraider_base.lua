@@ -336,7 +336,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 		   }
         ),
 
@@ -355,7 +355,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 			}
         ),
 
@@ -374,7 +374,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 			}
         ),
 
@@ -393,7 +393,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 	}
         ),
 
@@ -412,7 +412,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 			}
         ),
 
@@ -431,7 +431,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 			}
         ),
 
@@ -541,7 +541,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 		   }
         ),
 			
@@ -560,7 +560,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 			}
         ),
 			
@@ -579,7 +579,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 			}
         ),
 			
@@ -598,7 +598,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 			}
         ),
 			
@@ -617,7 +617,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
 		   }
         ),
 			
@@ -636,7 +636,7 @@ return {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.2 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.025 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
+				{ CLSID = "{toilet_bomb}", attach_point_position = {0, -0.35, 0}}, -- Toilet Bomb
  			}
         ),
 

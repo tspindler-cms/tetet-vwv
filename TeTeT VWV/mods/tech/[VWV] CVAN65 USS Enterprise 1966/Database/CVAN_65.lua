@@ -23,7 +23,7 @@ GT.shipLength = 332.000 -- o.a in meters
 GT.Width = 40.5 --15 --meters
 GT.Height = 58.30 --335.226 from sea level I think
 GT.Length = 332.00 -- deck length I think
-GT.DeckLevel = 19.55 -- height of deck
+GT.DeckLevel = 19.52 -- height of deck
 GT.X_nose = 151.0 -- bow wave
 GT.X_tail = -150.0 -- -127.238 -- wake
 GT.Tail_Width = 32 --wake width
@@ -75,7 +75,7 @@ GT.LSOView = {cockpit = "empty", position = {offset = {0.0, 0.0, 0.0, 0.0, 0.0}}
 ------------------------- End Landing Signal Officer --------------------------------------------------------------------------- 
 
 -- Landing point
-GT.Landing_Point	= {-104.86,  19.55, -33.97}
+GT.Landing_Point	= {-104.86,  19.52, -33.97}
 
 -- smoke density and position
 GT.exhaust = {
@@ -123,7 +123,7 @@ GT.DM = {
 	{ area_name = "Deck LSO",              area_arg = 74, area_life = 50 },
     { area_name = "Hull",           area_arg = 75, area_life = 5000 },
     { area_name = "Island",                area_arg = 76, area_life = 150 },
-    { area_name = "FlightDeck",                area_arg = 77, area_life = 1500 },
+    { area_name = "FlightDeck",                area_arg = 77, area_life = 5000 },
 }
 
 --GT.WS[ws].pointer = "BRIDGE" --possible CA or Weapon controls??
