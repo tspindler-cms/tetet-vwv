@@ -1,0 +1,344 @@
+{
+ "A-10C_elements_03": {
+  "reflMult": -0.65799999237060546875,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "KNOPKI-2_905": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.30000001192092895508,
+  "albedoContrast": 0.60000002384185791016
+ },
+ "TXT-W": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_01_engines": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "HUD-01": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_01_pilo": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_01_comp_acc": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_floor": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_elements_02": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_HUD3_GLASS": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "GLASS-PIT-REFL": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_02": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "PULTS-LR": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_01_fuel": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_02_803": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "TXT-W_803": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "DVADR lamps": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "KNOPKI": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.30000001192092895508,
+  "albedoContrast": 0.60000002384185791016
+ },
+ "PULTS-LR_798": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "HUD-01_fire_215": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "PULTS-LR_799": {
+  "reflMult": 0.96799999475479125977,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_01_803": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_elements_01": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_switches_01": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "ACES-01": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "ACES-02": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "gear_handle": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "HUD-01_fire_217": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "DVADR lamps_end": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "rec_lamp_792": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "HUD-01_fire_216": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_elements_02_lamp": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_mirrors": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "KNOPKI-2_906": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_HUD2_180": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "A-10C_dev_02_DVDR_800": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "end_light_791": {
+  "reflMult": -1.0,
+  "reflAdd": 0.0,
+  "specMult": -0.47999998927116394043,
+  "specAdd": 0.80000001192092895508,
+  "specSelect": 0,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "Caut-Lgt-03": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ }
+}

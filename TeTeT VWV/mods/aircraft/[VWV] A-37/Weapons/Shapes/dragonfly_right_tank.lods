@@ -1,0 +1,7 @@
+model={
+	lods={
+		{"dragonfly_right_tank.edm",4000.0};
+        {"dragonfly_right_tank.edm",500000.0};
+	};
+	
+}

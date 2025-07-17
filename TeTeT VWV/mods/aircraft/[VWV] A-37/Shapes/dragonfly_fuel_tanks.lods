@@ -1,0 +1,7 @@
+model={
+	lods={
+		{"dragonfly_fuel_tanks.edm",4000.0};
+        {"dragonfly_fuel_tanks.edm",500000.0};
+	};
+	
+}

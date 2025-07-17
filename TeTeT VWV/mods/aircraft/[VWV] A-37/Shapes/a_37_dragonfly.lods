@@ -1,0 +1,7 @@
+model={
+	lods={
+		{"a_37_dragonfly.edm",4000.0};
+        {"a_37_dragonfly.edm",500000.0};
+	};
+	collision_shell="a_37_dragonfly_collision.edm";
+}

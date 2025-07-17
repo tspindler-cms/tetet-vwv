@@ -1,0 +1,8 @@
+Livery for A-37 Dragonfly Mod by Hawkeye.
+
+1. Place folder in saved games livery folder
+2. Place roughmet file in mod texture.zip folder
+
+
+seabat
+24.08.31

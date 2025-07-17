@@ -1,0 +1,7 @@
+model={
+	lods={
+		{"napalm.edm",4000.0};
+        {"ld_tec.edm",20000.0};
+	};
+	
+}
