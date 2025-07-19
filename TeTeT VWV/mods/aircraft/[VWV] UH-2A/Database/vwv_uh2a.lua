@@ -198,11 +198,10 @@ Pylons =     {
 
     -- TeTeT: additional settings
 	Tasks = {
-        aircraft_task(AntishipStrike),
         aircraft_task(Transport),
         aircraft_task(Reconnaissance),
     },
-    DefaultTask = aircraft_task(AntishipStrike),
+    DefaultTask = aircraft_task(Transport),
 	LandRWCategories =
     {
         [1] =

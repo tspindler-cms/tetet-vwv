@@ -138,7 +138,7 @@ A-1 Skyraider
     - The precision of dropping Napalm is abysmal
 A-37 Dragonfly
     - Flight model is raw and has not been tested much
-    - Only one pilot ejects
+    - Only one pilot ejects, ejection somewhat broken
 O-1 Bird Dog
     - The propeller blur is static
 CVAN-65 Enterprise
