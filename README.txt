@@ -130,9 +130,19 @@ USS Laffey and Sumner class destroyers
     - 20mm Oerlikons have no firing sound
 RA-5C Vigilante
     - The plane is too large for regular parking spots, best to use as single plane on the runway
-A-1 Skyraider
-    - The new bridle disappears during launch
 MiG-21MF "Fishbed-C"
     - Textures are work in progress
     - Gear up location is pretty bad
-
+A-1 Skyraider
+    - The new bridle disappears during launch
+    - The precision of dropping Napalm is abysmal
+A-37 Dragonfly
+    - Flight model is raw and has not been tested much
+    - Only one pilot ejects
+O-1 Bird Dog
+    - The propeller blur is static
+CVAN-65 Enterprise
+    - Catapult hookup spotty, sometimes planes start to drift
+    - Parking spotty, some planes start to drift
+    - Probable inability to sync INS when taking off cold 
+    - RA-5C and F-14 Tomcat slightly too large for safe aircraft operations when taxiing
