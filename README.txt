@@ -146,3 +146,5 @@ CVAN-65 Enterprise
     - Parking spotty, some planes start to drift
     - Probable inability to sync INS when taking off cold 
     - RA-5C and F-14 Tomcat slightly too large for safe aircraft operations when taxiing
+    - The shoot power of the catapults seems insufficient at times
+    - No support for night operations, e.g. no lights

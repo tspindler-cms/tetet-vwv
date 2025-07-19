@@ -12,8 +12,8 @@ local a37_dragonfly =  {
 	DisplayName			= _('[VWV] A-37 Dragonfly'),
 	DisplayNameShort	= _('A-37'),
 
-	HumanCockpit 		= true,
-	HumanCockpitPath    = current_mod_path..'/Cockpit/',
+	--HumanCockpit 		= true,
+	--HumanCockpitPath    = current_mod_path..'/Cockpit/',
 
 	Picture 			= current_mod_path..'/Textures/a_37_dragonfly.png',
 	Rate 				= 40, -- RewardPoint in Multiplayer
@@ -65,7 +65,7 @@ local a37_dragonfly =  {
 	bank_angle_max 				= 60, -- Max bank angle (for AI)
 	has_afteburner 				= false, -- AFB yes/no
 	has_speedbrake 				= false, -- Speedbrake yes/no
-    wing_tip_pos                     = {-1.6, -0.09, 5.5},
+    wing_tip_pos                = {-0.772, -0.800, 4.415},
 
 	nose_gear_pos 				= {1.643,	-1.89,	0}, -- nosegear coord
 	main_gear_pos 				= {-0.664,	-1.911,	1.953}, -- main gear coords
@@ -115,32 +115,14 @@ local a37_dragonfly =  {
 			},
 	},
 	crew_size = 2,
-	--[[ Original setup, only works for one pilot
-	crew_members =
-		{
-			[1] =
-			{
-				ejection_seat_name	=	17,
-				drop_canopy_name	=	24,
-				pos = 	{0.34, -0.140, 2},
-			},
-			[2] =
-			{
-				ejection_seat_name	=	18,
-				drop_canopy_name	=	24,
-				pos = 	{0.34, -0.140, -1},
-			},
-		}, -- end of crew_members
-	]]
-	-- Shameless copy from F-4E
-	--[[
+
 	crew_members = {
 		[1] =
 		{
-			pilot_name				= "F-4E_Pilot",
-			ejection_seat_name		= "F-4E_Seat_Pilot",
+				pilot_name				= "a_37_dragonfly_pilot_standing",
+			ejection_seat_name		= "pilot_f86_seat.edm",
 			drop_canopy_name		= "hb_f4e_pilotcanopy",
-			drop_parachute_name		= "F-4E_Parachute_Pilot",
+			drop_parachute_name		= "F4U-1D_Pilot_Parachute",
 			bailout_arg 		 	= -1,
 			role					= "pilot",
 			role_display_name		= _("Pilot"),
@@ -159,10 +141,10 @@ local a37_dragonfly =  {
 		-- WSO
 		[2] =
 		{
-			pilot_name				= "F-4E_WSO",
-			ejection_seat_name		= "F-4E_Seat_WSO",
+			pilot_name				= "a_37_dragonfly_pilot_standing",
+			ejection_seat_name		= "pilot_f86_seat.edm",
 			drop_canopy_name		= "hb_f4e_wsocanopy",
-			drop_parachute_name		= "F-4E_Parachute_WSO",
+			drop_parachute_name		= "F4U-1D_Pilot_Parachute",
 			bailout_arg 		 	= -1,
 			role					= "instructor",
 			role_display_name		= _("WSO"),
@@ -180,28 +162,7 @@ local a37_dragonfly =  {
 			g_suit					= 2.0,
 		},
 	},
-	]]
-	-- Shameless copy from p-51
-	crew_members = {
-		[1] = {
-			role                = "pilot";
-			pilot_name          = 56,
-			ejection_seat_name  = 0,
-			drop_canopy_name    = 57,
-			pos                 = {-1.460, -0.045, 0.000},
-			canopy_pos          = {0.000, 0.000, 0.000},
-			drop_parachute_name = "pilot_p51_parachute",
-		}, -- end of [1]
-			[2] = {
-			role                = "pilot";
-			pilot_name          = 56,
-			ejection_seat_name  = 0,
-			drop_canopy_name    = 57,
-			pos                 = {-1.460, -0.045, 0.000},
-			canopy_pos          = {0.000, 0.000, 0.000},
-			drop_parachute_name = "pilot_p51_parachute",
-		}, -- end of [2]
-    }, -- end of crew_members
+
 
 	fires_pos =
 		{
@@ -406,14 +367,13 @@ local a37_dragonfly =  {
 
 -----------------------------------------------------------------------------------	
 
-	Tasks =
+	Tasks = 
 	{
 		aircraft_task(GroundAttack),
 		aircraft_task(RunwayAttack),
 		aircraft_task(AntishipStrike),
-		aircraft_task(CAS),
     },
-	DefaultTask = aircraft_task(CAS),
+	DefaultTask = aircraft_task(GroundAttack),
 
 	sounderName = "Aircraft/Planes/a_37_dragonfly",
 

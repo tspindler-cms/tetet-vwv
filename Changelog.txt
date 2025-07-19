@@ -1,3 +1,12 @@
+2025-07-19
+  Add more known limitations to README.md
+  A-37 Dragonfly
+    - Fix wing vapour
+    - Remove flyability
+  SH-2/UH-2 Seasprite
+    - Add tasks, transport and recon
+  CVA-31 Bon Homme Richard
+    - Add arresting gear carrier to categories
 2025-07-17
   CVAN-65 Enterprise 1966 
     - Overhaul all routes

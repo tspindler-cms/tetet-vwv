@@ -419,7 +419,6 @@ GT.attribute		= {wsType_Navy, wsType_Ship, wsType_AirCarrier, WSTYPE_PLACEHOLDER
 						"Aircraft Carriers", 
 						"Arresting Gear",  --if it has arrester wires
 						"catapult", --if it has catapults
-						-- "ski_jump", -- if it has a ramp
 						"RADAR_BAND1_FOR_ARM",
 						"RADAR_BAND2_FOR_ARM",
 					};
@@ -427,9 +426,8 @@ GT.attribute		= {wsType_Navy, wsType_Ship, wsType_AirCarrier, WSTYPE_PLACEHOLDER
 GT.Categories		= {
 						{name = "AircraftCarrier"}, --aircraft carrier
 						{name = "AircraftCarrier With Catapult"}, --if it has catapults
-						{name = "AircraftCarrier With Tramplin"}, -- if it has a ramp
-						{name = "Armed Ship"} -- has weapons
-						--{name = "AircraftCarrier With Arresting Gear"} -- disables mod when enabled, showws on SC module and Stennis and Forrestal.
+						{name = "Armed Ship"}, -- has weapons
+						{name = "AircraftCarrier With Arresting Gear"} 
 					};	
 					
 					
