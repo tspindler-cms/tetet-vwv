@@ -5,6 +5,7 @@
     - Remove flyability
   SH-2/UH-2 Seasprite
     - Add tasks, transport and recon
+    - Remove antiship-strike task from UH-2s
   CVA-31 Bon Homme Richard
     - Add arresting gear carrier to categories
 2025-07-17
