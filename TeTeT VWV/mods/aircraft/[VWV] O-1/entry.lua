@@ -15,15 +15,15 @@ declare_plugin(self_ID,
 	Skins	=
 	{
 		{
-			name	= "O1BD",
-			dir		= "Theme"
+			name	= "O-1 Bird Dog",
+			dir		= "Skins/1"
 		},
 	},
 
 	LogBook =
 	{
 		{
-			name		= _("O1BD"),
+			name		= _("O-1 Bird Dog"),
 			type		= "O1BD",
 		},
 	},

@@ -126,8 +126,6 @@ H-2 Seasprite
     - Landing gear is deployed multiple kilometers away from landing spot
 Fletcher Class Destroyers with FRAM II upgrade
     - Bridge and mast are WWII style    
-USS Laffey and Sumner class destroyers
-    - 20mm Oerlikons have no firing sound
 RA-5C Vigilante
     - The plane is too large for regular parking spots, best to use as single plane on the runway
 MiG-21MF "Fishbed-C"

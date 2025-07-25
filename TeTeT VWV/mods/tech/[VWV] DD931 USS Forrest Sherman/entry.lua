@@ -13,7 +13,7 @@ encyclopedia_path = current_mod_path .. '/Encyclopedia',
 Skins =
 {
 	 {
-	     name  = "Forrest_Sherman",
+	     name  = "Forrest Sherman",
 		 dir   = "Skins/1"
 	 },
 },

@@ -13,7 +13,7 @@ encyclopedia_path = current_mod_path .. '/Encyclopedia',
 Skins =
 {
 	 {
-	     name  = "Maddox",
+	     name  = "Maddox TI",
 		 dir   = "Skins/1"
 	 },
 },

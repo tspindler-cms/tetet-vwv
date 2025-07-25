@@ -13,20 +13,20 @@ declare_plugin(self_ID, {
     Skins =
     {
         {
-            name = _("mig17f"),
+            name = _("MiG-17F"),
             dir = "Skins/1"
         }
     },
     Missions =
     {
         {
-            name = _("mig17f"),
+            name = _("MiG-17F"),
             dir = "Missions"
         }
     },
     LogBook = {
         {
-            name = _("mig17f"),
+            name = _("MiG-17F"),
             type = "mig17f"
         }
     },
