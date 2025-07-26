@@ -1,0 +1,7 @@
+model={
+	lods={
+		{"a_37_dragonfly_pilot_standing.edm",4000.0};
+        {"a_37_dragonfly_pilot_standing.edm",500000.0};
+	};
+	
+}

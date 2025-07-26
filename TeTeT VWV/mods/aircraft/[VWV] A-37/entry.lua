@@ -47,7 +47,7 @@ mount_vfs_texture_path  (current_mod_path.."/Skins/1/ME")
 mount_vfs_model_path	(current_mod_path.."/Shapes")
 mount_vfs_liveries_path (current_mod_path.."/Liveries")
 mount_vfs_texture_path  (current_mod_path.."/Textures/A_37.zip")
-mount_vfs_texture_path  (current_mod_path.."/Textures/")
+mount_vfs_texture_path  (current_mod_path.."/Textures/A_37_dragonfly_pilots.zip")
 
 dofile(current_mod_path.."/Cockpit/Scripts/mainpanel_init.lua")
 -- make_flyable('a37_dragonfly',current_mod_path..'/Cockpit/Scripts/', true, current_mod_path..'/comm.lua')--SFM

@@ -115,7 +115,41 @@ local a37_dragonfly =  {
 			},
 	},
 	crew_size = 2,
-
+	crew_members = 
+	{
+		[1] = 
+		{
+			drop_canopy_name		= "hb_f4e_pilotcanopy",
+			ejection_seat_name	 = "pilot_f86_seat",
+			pilot_name		     = "pilot_f86",
+			pos 				 = {3.266,	0.329,	0},
+			can_be_playable 	 = true,
+			canopy_arg           = 38, 
+			ejection_order 		 = 1,
+			canopy_pos			 = {2.916,0.798,0},
+			ejection_added_speed = {-5,15,0},
+			role 				 = "pilot",
+			role_display_name    = _("Pilot"),
+			drop_parachute_name	 = "pilot_f86_parachute",
+		},-- end of [1]
+		[2] = 
+		{
+			drop_canopy_name		= "hb_f4e_wsocanopy",
+			ejection_seat_name	= "pilot_f86_seat",
+			pilot_name		    = "pilot_f86",
+			pos 				= {1.765,	0.549,	0},
+			can_be_playable 	= true,
+			canopy_arg          = 421, 
+			pilot_body_arg		= 472,
+			ejection_order 		= 2,
+			canopy_pos			=  {1.563,0.895,0},
+			ejection_added_speed = {-5,15,0},
+			role 				 = "instructor",
+			role_display_name    = _("Instructor pilot"),
+			drop_parachute_name	 = "pilot_f86_parachute",
+		},-- end of [2]
+	},-- end of crew_members
+ --[[
 	crew_members = {
 		[1] =
 		{
@@ -162,7 +196,7 @@ local a37_dragonfly =  {
 			g_suit					= 2.0,
 		},
 	},
-
+]]
 
 	fires_pos =
 		{
@@ -377,6 +411,88 @@ local a37_dragonfly =  {
 
 	sounderName = "Aircraft/Planes/a_37_dragonfly",
 
+	-- Copy from C-101
+	SFM_Data = {
+		aerodynamics = 
+		{
+			Cy0			= 0.0,		-- zero AoA lift coefficient
+			Mzalfa		= 5.0,		-- coefficients for pitch agility 5.0
+			Mzalfadt 	= 1.0,		-- coefficients for pitch agility
+			kjx			= 2.25,		-- affects roll inertia - smaller = massive inertia
+			kjz 		= 0.00125,	-- affects pitch inertia
+			Czbe 		= -0.016,	-- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
+			cx_gear 	= 0.12,		-- coefficient, drag, gear
+			cx_flap 	= 0.05,		-- coefficient, drag, full flaps
+			cy_flap 	= 0.48,		-- coefficient, normal force, lift, flaps 0.12
+			cx_brk 		= 0.06,		-- coefficient, drag, air brake
+			table_data 	= {
+			--      	M	Cx0	Cya	B	B4	      Omxmax	Aldop		Cymax
+
+					{0.0,	0.012,	0.10,	0.04,	0.03,		1.0,	14,		1.0,	},
+					{0.1,	0.012,	0.11,	0.04,	0.03,		1.5,	14,		1.3,    },
+					{0.2,	0.013,	0.12,	0.04,	0.03,		2.3,	14,		1.3,    },
+					{0.3,	0.014,	0.11,	0.04,	0.03,		2.6,	14,		1.3,    },
+					{0.4,	0.0145,	0.10,	0.04,	0.03,		2.6,	14,		1.4,    },
+					{0.5,	0.015,	0.09,	0.04,	0.03,		2.3,	14,		1.5,    },
+					{0.6,	0.015,	0.08,	0.04,	0.03,		2.3,	14,		1.6,    },
+					{0.7,	0.015,	0.07,	0.04,	0.03,		2.3,	14,		1.5,    },
+					{0.8,	0.015,	0.06,	0.04,	0.03,		2.3,	14,  	1.4,    }, -- Cx0
+					{0.85,	0.015,	0.06,	0.04,	0.03,		2.3,	14,  	1.4,    }, -- 0.030
+					{0.9,	0.045,	0.05,	0.04,	0.03,		1.0,	14,		1.4,	}, -- 0.060
+					{0.95,	0.085,	0.04,	0.04,	0.03,		-2.0,	14,		1.4,	}, -- 0.060
+					{1.0,	0.115,	0.03,	0.04,	0.03,		-1.0,	14,		1.4	}, -- 0.100
+			}
+
+			-- M - Mach number
+			-- Cx0 - Coefficient, drag, profile, of the airplane
+			-- Cya - Normal force coefficient of the wing and body of the aircraft in the normal direction to that of flight. Inversely proportional to the available G-loading at any Mach value. (lower the Cya value, higher G available) per 1 degree AOA
+			-- B - Polar quad coeff
+			-- B4 - Polar 4th power coeff
+			-- Omxmax - roll rate, rad/s
+			-- Aldop - Alfadop Max AOA at current M - departure threshold
+			-- Cymax - Coefficient, lift, maximum possible (ignores other calculations if current Cy > Cymax)
+
+		}, -- end of aerodynamics
+---------------------------------------------------------------------------------------------------------------------------------------------		
+		engine = 
+		{
+			type	=	"TurboFan",
+			Nmg		=	60.1, --54.5
+			MinRUD	=	0,
+			MaxRUD	=	1,
+			MaksRUD	=	1,
+			ForsRUD	=	1,
+			hMaxEng	=	15.0,
+			dcx_eng	=	0.0168, -- Affects drag of engine when shutdown
+			-- cemax/cefor affect sponginess of elevator/inertia at slow speed
+			-- affects available g load apparently
+			cemax	=	0.037, -- 0.0037 0.037
+			cefor	=	0.037, -- 0.0037 0.037
+			-- following affect thrust/max alt
+			-- 
+			dpdh_m	=	1000, -- affects max alt?
+			dpdh_f	=	1000, -- affects thrust?? Apparently makes no diff. between 1000 and 20000
+			table_data = 
+			{
+			--   M			Pmax
+				{0.0,		16400.0}, --
+				{0.1,		16400.0}, --
+				{0.2,		15700.0}, -- 130 KTS = 3650 FT VS. 3800 FT MANUAL
+				{0.3,		10200.0}, -- 12800 = 2 mins 40 sec vs. 4 mins
+				{0.4,		11500.0}, --24800.0 22800.0 23800.0 21200.0 19500.0 14800.0 11700.0
+				{0.5,		14000.0}, --26000.0 23000.0 24000.0 21800.0 19000.0 14700.0 14000.0
+				{0.6,		14500.0}, --28200.0 23200.0 24200.0 22400.0 18000.0 14600.0 14500.0 30% (30 mins vs. 40 mins tables)
+				{0.7,		14500.0}, --30400.0 23400.0 24400.0 23000.0 17500.0 14500.0 14500.0
+				{0.8,		14500.0}, --32600.0 23600.0 24600.0 23600.0 17000.0 14400.0 14500.0
+				{0.9,		14500.0}, --34800.0 23800.0 24800.0 24200.0 16000.0 14300.0 14500.0
+				{1.0,		14500.0}  --36000.0 24000.0 25000.0 22000.0 15000.0 14200.0 14500.0
+			}, -- end of table_data
+			-- M - Mach number
+			-- Pmax - Engine thrust at military power - kilo Newtons (CC version is 16.4 kN)
+			-- Pfor - Engine thrust at AFB
+		}, -- end of engine
+	},	
+	--[[
 	SFM_Data = {
 		aerodynamics = -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
 		{
@@ -462,6 +578,7 @@ local a37_dragonfly =  {
 			-- Pfor - Engine thrust at AFB
 		}, -- end of engine
 	},
+	]]
 ---------------------------------------------------------------------------
 -----------------------------------
 --- MULTICREW DAMAGE - 01/05/19 ---
