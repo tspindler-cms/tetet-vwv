@@ -26,6 +26,7 @@ USS New Jersey (BB-62), an Iowa class battleship
 USS Knox (DE-1052), USS Gray (DE-1054), USS Kirk (DE-1087), Knox classs Destroyer Escorts (Later Frigates)
 USS Mullany (DD-528), a Flechter class destroyer
 USS Enterprise 1966 (CVAN-65), the first nuclear driven carrier
+A-37 Dragonfly, an iconic light attack aircraft of the Vietnam War
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -67,6 +68,8 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/Forrest_Sherman-class_destroyer
     * https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)
     * https://en.wikipedia.org/wiki/Knox-class_frigate
+    * https://en.wikipedia.org/wiki/USS_Enterprise_(CVN-65)
+    * https://en.wikipedia.org/wiki/Cessna_A-37_Dragonfly
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
