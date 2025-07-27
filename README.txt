@@ -137,6 +137,8 @@ MiG-21MF "Fishbed-C"
 A-1 Skyraider
     - The new bridle disappears during launch
     - The precision of dropping Napalm is abysmal
+    - Takes off like a spaceship from land
+    - Tiny Tim rockets seem never to be launched
 A-37 Dragonfly
     - Flight model is raw and has not been tested much
     - Only one pilot ejects, ejection somewhat broken
