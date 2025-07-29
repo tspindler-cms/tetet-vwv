@@ -78,7 +78,7 @@ local function sh2f_mad(clsid)
 		category	= CAT_PODS,
 		CLSID		= clsid,
 		attribute	=  {wsType_Air,wsType_Free_Fall,wsType_FuelTank,WSTYPE_PLACEHOLDER},
-		Picture		= "SH2F_MAD.png",
+		Picture		= "SH2_MAD.png",
 		displayName	= _("SH2F_MAD"),
 		Weight_Empty	= 0,
 		Weight			= 0,
