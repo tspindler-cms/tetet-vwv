@@ -12,6 +12,9 @@ USS_Kirk_weapons:addTurret(1)
 USS_Kirk_weapons:addLauncher(1, 1, ship_USN_125mm)
 USS_Kirk_weapons:addLauncher(1, 2, ship_USN_125mm)
 
+USS_Kirk_weapons:addTurret(2)
+USS_Kirk_weapons:addLauncher(2, 1, _9M120)
+
 
 
 

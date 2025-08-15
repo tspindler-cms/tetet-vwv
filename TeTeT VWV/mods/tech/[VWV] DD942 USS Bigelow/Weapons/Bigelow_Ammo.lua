@@ -33,7 +33,7 @@ declare_weapon({
 	{
 		precalculateAirDefenceAimingTable = true,
 		precalculateAimingTable = true,
-		[1] = { init_vel = 792.0 } -- intentionally not 792 to get less accurate
+		[1] = { init_vel = 792.0 }
 	}
 
 });

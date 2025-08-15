@@ -12,6 +12,12 @@ USS_Gray_weapons:addTurret(1)
 USS_Gray_weapons:addLauncher(1, 1, ship_USN_125mm)
 USS_Gray_weapons:addLauncher(1, 2, ship_USN_125mm)
 
+USS_Gray_weapons:addTurret(2)
+USS_Gray_weapons:addLauncher(2, 1, _9M120)
+
+USS_Gray_weapons:addTurret(3)
+USS_Gray_weapons:addLauncher(3, 1, _9M120)
+
 
 
 

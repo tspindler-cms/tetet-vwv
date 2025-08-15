@@ -146,7 +146,7 @@ local ws
 
 GT.Name = "USS Enterprise 1966" -- folder name for Liveries
 GT.DisplayName = _("[VWV] CVAN-65 USS Enterprise '66") -- name in game in ME and on the tape at the bottom
-GT.DisplayNameShort = _("Big E 1966") -- Label name
+GT.DisplayNameShort = _("Big E") -- Label name
 GT.Rate = 5500.000000
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"}, --optics types

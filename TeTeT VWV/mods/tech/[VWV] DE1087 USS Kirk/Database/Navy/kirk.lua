@@ -114,9 +114,9 @@ GT_t.WS_t.ship_mk42_1x127mm.reference_angle_Z = 0
 GT_t.LN_t.ship_mk42_127mm_AIR = {}
 GT_t.LN_t.ship_mk42_127mm_AIR.type = 11
 GT_t.LN_t.ship_mk42_127mm_AIR.distanceMin = 20
-GT_t.LN_t.ship_mk42_127mm_AIR.distanceMax = 16642
-GT_t.LN_t.ship_mk42_127mm_AIR.max_trg_alt = 11339
-GT_t.LN_t.ship_mk42_127mm_AIR.reactionTime = 12
+GT_t.LN_t.ship_mk42_127mm_AIR.distanceMax = 14155
+GT_t.LN_t.ship_mk42_127mm_AIR.max_trg_alt = 15728
+GT_t.LN_t.ship_mk42_127mm_AIR.reactionTime = 2
 GT_t.LN_t.ship_mk42_127mm_AIR.sensor = {}
 -- set_recursive_metatable(GT_t.LN_t.ship_mk42_127mm_AIR.sensor, GT_t.WSN_t[1])
 set_recursive_metatable(GT_t.LN_t.ship_mk42_127mm_AIR.sensor, GT_t.WSN_t[20])
@@ -131,8 +131,8 @@ GT_t.LN_t.ship_mk42_127mm_AIR.PL[1] = {
 GT_t.LN_t.ship_mk42_127mm = {}
 GT_t.LN_t.ship_mk42_127mm.type = 6
 GT_t.LN_t.ship_mk42_127mm.distanceMin = 20
---GT_t.LN_t.ship_mk42_127mm.distanceMax = 16642
---GT_t.LN_t.ship_mk42_127mm.max_trg_alt = 11339
+GT_t.LN_t.ship_mk42_127mm.distanceMax = 23691
+GT_t.LN_t.ship_mk42_127mm.max_trg_alt = 8534
 GT_t.LN_t.ship_mk42_127mm.reactionTime = 12
 GT_t.LN_t.ship_mk42_127mm.sensor = {}
 set_recursive_metatable(GT_t.LN_t.ship_mk42_127mm.sensor, GT_t.WSN_t[10])
@@ -165,13 +165,13 @@ GT.WS[ws].angles = {
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk42_127mm_AIR);
 __LN.sightMaxTanVel = 300;
 __LN.BR = {{ connector_name = 'POINT_GUN_127mm_1',
-							recoilArgument = 33,
-							recoilTime = 0.2 }};
+							recoilArgument = 1111,
+							recoilTime = 0.4 }};
 
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk42_127mm);
 __LN.BR = {{ connector_name = 'POINT_GUN_127mm_1',
-							recoilArgument = 33,
-							recoilTime = 0.2 }};
+							recoilArgument = 1111,
+							recoilTime = 0.4 }};
 
 -------------------------------------------------------------------------------------------------
 --   ASROC  

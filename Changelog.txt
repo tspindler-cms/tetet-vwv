@@ -1,3 +1,13 @@
+2025-08-15
+  Ships
+    Fixed some shell range setting.
+    Add Recoil animation to all cannon, over 100 barrel's animation and rigging
+    Fixed the issue twin barrel mount dual-purpose guns only shoot with one barrel
+    Change short name of ships 
+  USS Maddox TI  
+    Fixed Maddox TI front FCS not proper rotatio
+  Knox class
+  Adjusted the Knox-class hull to reduce strange light and shadow
 2025-07-25
   Overhaul Skins and Themes for icons and names
 2025-07-24

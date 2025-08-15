@@ -2,7 +2,7 @@
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
-The model has been provided by Riko and is being imported into DCS by TeTeT and James J Jackson.
+The model has been provided by Riko and Tansoku102cm. is being imported into DCS by TeTeT and James J Jackson.
 
 Valuable input during testing is provided by James J Jackson, mrflyboy, winters and Slapshot.
 
