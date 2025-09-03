@@ -97,7 +97,7 @@ GT.animation_arguments.bubbles = {138, 139} -- doesn't go back down ED bug
 
 GT.animation_arguments.catapult_shuttles = {145, 146, 147, 148} -- shuttle args
 GT.animation_arguments.arresting_wires = {400, 401, 402, 403} -- can't get the visibilty anim to work, differnt #arg numbers on the Stennis and SC
-GT.animation_arguments.landing_strip_illumination = 40 --runway lights
+GT.animation_arguments.landing_strip_illumination = 150 --runway lights
 GT.animation_arguments.water_propeller = 10
 GT.animation_arguments.radar1_rotation = 1
 GT.animation_arguments.radar2_rotation = 2
@@ -106,13 +106,26 @@ GT.radar1_period = 4; --speed
 GT.radar2_period = 4.5; --speed
 GT.radar3_period = 2; --speed
 
--- for lights you can look at the shps in the modelviewer 
---                             {int ArgumentNo, float OffValue, float OnValue, [float AnimationDuration],  [bool cycleAnimation]}
+-- Lighting lua def copied from Forrestal
+--Lighting
+	--150: Runway
+	--790: Launch floods
+	--791: 59 Illum
+	--792: Underway/Navigation
+	--793: Square Island 
+	--794: Island interior Red
+
+	--Navigation: Runway + Nav + Cockpit
+	--Launch: Floods + Runway + Cockpit + Square + Nav
+	--Recovery: Square + Runway + Cockpit + Nav
+
+	--{int ArgumentNo, float OffValue, float OnValue, [float AnimationDuration],  [bool cycleAnimation]}
+
 GT.carrierIlluminationStates = {
-								 {{307, 0.0, 0.45}, {308, 0.0, 0.45}, {790, 0.0, 0.60}, {792, 0.0, 0.37}}, --NAV_LIGHTS
-								 {{307, 0.0, 0.75}, {308, 0.0, 0.75}, {790, 0.0, 0.50}, {792, 0.0, 0.45}}, -- AC_LAUNCH_STATE
-								 {{307, 0.0, 0.30}, {308, 0.0, 0.30}, { 40, 0.0, 1.00}, {790, 0.0, 0.50}, {792, 0.0, 0.37}}, -- AC_RECOVERY_STATE
-								}
+	{{792, 0.0, 1.0}, {794, 0.0, 1.0}, {150, 0.0, 1.0}  }, --NAV_LIGHTS
+	{{790, 0.0, 1.0}, {792, 0.0, 1.0}, {793, 0.0, 1.0}, {794, 0.0, 1.0}, {150, 0.0, 1.0}  }, -- AC_LAUNCH_STATE
+	{{793, 0.0, 1.0}, {794, 0.0, 1.0}, {792, 0.0, 1.0}, {150, 0.0, 1.0}  }, -- AC_RECOVERY_STATE
+}
 
 --Damage Model
 GT.DM = {
