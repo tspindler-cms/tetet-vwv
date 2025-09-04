@@ -1,3 +1,9 @@
+2025-09-04
+  USS Enterprise '66
+    - Add illumination
+2025-09-02
+  USS Bon Homme Richard and Generic Essex SCB125
+    - Park in reverse, 8 planes work, more congestion happens
 2025-08-19
   MiG-21MF
     - Removed strange vertexes below the nose cone
