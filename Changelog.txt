@@ -1,3 +1,9 @@
+2025-09-07
+  USS Bon Homme Richard, USS Mullany, USS Allen M Sumner, USS Laffey, USS Forrest Sherman, USS Bigelow
+    - Prefix Liveries with the CVA/DD designation in brackets, e.g. (DD-942)
+  Knox class Destroyer Escorts
+    - Prefix Liveries with the CVA/DD designation in brackets, e.g. (DE-1052)
+    - Reduce Harpoon missiles to two, already placed in the ASROC launcher
 2025-09-04
   USS Enterprise '66
     - Add illumination

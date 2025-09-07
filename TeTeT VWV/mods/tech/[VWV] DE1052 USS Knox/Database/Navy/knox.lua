@@ -188,18 +188,12 @@ GT.WS[ws].omegaZ = math.rad(8);
 GT.WS[ws].reference_angle_Y = math.rad(0);
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].LN[1].launch_delay = 12;
-GT.WS[ws].LN[1].PL[1].ammo_capacity = 32;
+GT.WS[ws].LN[1].PL[1].ammo_capacity = 2;
 GT.WS[ws].LN[1].show_external_missile = true 
-GT.WS[ws].LN[1].max_number_of_missiles_channels = 8;
+GT.WS[ws].LN[1].max_number_of_missiles_channels = 2;
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'ASROC_1', recoilArgument = 211, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
-	{connector_name = 'ASROC_2', recoilArgument = 212, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
-	{connector_name = 'ASROC_3', recoilArgument = 213, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
-	{connector_name = 'ASROC_4', recoilArgument = 214, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
 	{connector_name = 'ASROC_5', recoilArgument = 215, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
-	{connector_name = 'ASROC_6', recoilArgument = 216, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
-	{connector_name = 'ASROC_7', recoilArgument = 217, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
-	{connector_name = 'ASROC_8', recoilArgument = 218, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
 					};
 -------------------------------------------------------------------------------------------------
 --   Torpedos

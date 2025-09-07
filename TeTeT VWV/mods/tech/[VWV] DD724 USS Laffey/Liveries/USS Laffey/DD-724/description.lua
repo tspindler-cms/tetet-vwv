@@ -1,7 +1,7 @@
 livery = {
 }
 
-name = "DD-724 Laffey"
+name = "(DD-724) USS Laffey"
 
 countries = {
     "USA",

@@ -1,7 +1,7 @@
 livery = {
 }
 
-name = "DD-692 Allen M. Sumner"
+name = "(DD-692) USS Allen M. Sumner"
 
 countries = {
     "USA",

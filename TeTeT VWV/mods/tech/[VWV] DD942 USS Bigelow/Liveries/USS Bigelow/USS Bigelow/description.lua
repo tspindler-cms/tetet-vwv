@@ -8,7 +8,7 @@ livery =
 --[[ name your own skin in default language (en)
      meanwhile, you can also name the skin in more than one languages,
      replace xx by [ru, cn, cs, de, es, fr, or it] ]]
-name = "USS Bigelow (DD-942)"
+name = "(DD-942) USS Bigelow"
 --name_xx = ""
 --[[ assign the countries
      if you want no country limitation,

@@ -7,7 +7,7 @@ livery =
 --[[ name your own skin in default language (en)
      meanwhile, you can also name the skin in more than one languages,
      replace xx by [ru, cn, cs, de, es, fr, or it] ]]
-name = "USS Knox (DE-1052)"
+name = "(DE-1052) USS Knox"
 --name_xx = ""
 --[[ assign the countries
      if you want no country limitation,
