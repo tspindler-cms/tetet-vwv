@@ -144,22 +144,21 @@ GT.WS.radar_type = 102 --104= Short range, 103 = Mid range at a guess 102 = Long
 GT.WS.searchRadarMaxElevation = math.rad(60);
 local ws;
 
+
 -- weapon systems goes here
 
 -------------------------------------------------------------------------------------------------
---   5inch  Ammo   
+--   5inch  Ammo
 -------------------------------------------------------------------------------------------------
 
-GT_t.WS_t.ship_mk12_2x127mm = {name = "Mk12 5inch 38cal Twin"};
-GT_t.WS_t.ship_mk12_2x127mm.angles = {
-					{math.rad(180), math.rad(-180), math.rad(-10), math.rad(85)},
-					};
-GT_t.WS_t.ship_mk12_2x127mm.omegaY = math.rad(10); -- Block 1B
-GT_t.WS_t.ship_mk12_2x127mm.omegaZ = math.rad(10); -- Block 1B
-GT_t.WS_t.ship_mk12_2x127mm.pidY = {p=300, i = 0.05, d = 10.0, inn = 1000};
-GT_t.WS_t.ship_mk12_2x127mm.pidZ = {p=300, i = 0.05, d = 10.0, inn = 1000};
-GT_t.WS_t.ship_mk12_2x127mm.reference_angle_Z = 0;
+local WSN_20 = {};
+WSN_20.deviation_error_azimuth 		= 0.0002;
+WSN_20.deviation_error_elevation 	= 0.0002;
+WSN_20.deviation_error_speed_sensor	= 0.0002;
+WSN_20.deviation_error_stability 	= 0.0002;
+WSN_20.deviation_error_distance 	= 0.0002;
 
+GT_t.WSN_t[20] = WSN_20;
 
 GT_t.LN_t.ship_mk12_127mm_AIR = {};
 GT_t.LN_t.ship_mk12_127mm_AIR.type = 11;
@@ -396,6 +395,7 @@ __LN.BR = {{ connector_name = 'POINT_GUN_5inch_7',
 							recoilTime = 0.5 }}
 
 -------------------------------------------------------------------------
+
 
 GT.Name = "USS Bon Homme Richard" -- folder name for Liveries
 GT.DisplayName = _("[VWV] CVA-31 Bon Homme Richard") -- name in game in ME and on the tape at the bottom

@@ -1,3 +1,6 @@
+2025-09-13
+  USS Bon Homme Richard
+    - Add WSN_20 to WSN_t table so the carrier works without configs from NJ or the destroyers
 2025-09-07
   USS Bon Homme Richard, USS Mullany, USS Allen M Sumner, USS Laffey, USS Forrest Sherman, USS Bigelow
     - Prefix Liveries with the CVA/DD designation in brackets, e.g. (DD-942)
