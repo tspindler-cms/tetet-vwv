@@ -1,0 +1,8 @@
+model = {
+	lods = {		
+		{"rf101b.edm", 1000.000000},
+		{"rf101b_1km.edm", 5000.000000},
+		{"rf101b_5km.edm", 50000.000000}
+	};
+	collision_shell = "rf101b_collision.edm";
+}

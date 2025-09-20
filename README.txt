@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-2.0.3
+2.1.0
 
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
@@ -27,6 +27,7 @@ USS Knox (DE-1052), USS Gray (DE-1054), USS Kirk (DE-1087), Knox classs Destroye
 USS Mullany (DD-528), a Flechter class destroyer
 USS Enterprise 1966 (CVAN-65), the first nuclear driven carrier
 A-37 Dragonfly, an iconic light attack aircraft of the Vietnam War
+RF-101B Voodoo, a two seater recon variant of the supersonic Voodoo fighter
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -69,7 +70,8 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)
     * https://en.wikipedia.org/wiki/Knox-class_frigate
     * https://en.wikipedia.org/wiki/USS_Enterprise_(CVN-65)
-    * https://en.wikipedia.org/wiki/Cessna_A-37_Dragonfly
+    * https://en.wikipedia.org/wiki/Cessna_A-37_Dragonfly\
+    * https://en.wikipedia.org/wiki/McDonnell_F-101_Voodoo
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -150,4 +152,9 @@ CVAN-65 Enterprise
     - Probable inability to sync INS when taking off cold 
     - RA-5C and F-14 Tomcat slightly too large for safe aircraft operations when taxiing
     - The shoot power of the catapults seems insufficient at times
-    - No support for night operations, e.g. no lights
+RF-101B Voodoo
+  - The landing gear doors and covers don't close perfectly
+  - The landing gear suspension is not animated
+  - The BORT number should be five digits, not three
+  - The pilot is generic rather than specific for the Voodoo. Development of a custom Voodoo pilot is out of financial reach, if interested in sponsoring one contact TeTeT
+  - There are no pylons present currently, not even for fuel tanks    
