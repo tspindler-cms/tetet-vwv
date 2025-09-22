@@ -468,12 +468,12 @@ return {
                             typename = "collection",
                             lights = {
                                 {
-                                    typename = "Spot", position = {3.853, -1.112, -0.106}, argument = 208,   dir_correction = {elevation = math.rad(-6.0)},
+                                    typename = "Spot", position = {4.6, -0.7814, 0}, argument = 208,   dir_correction = {elevation = math.rad(-6.0)},
                                     proto = lamp_prototypes.LFS_P_27_200, angle_max = math.rad(50.0), angle_max = math.rad(40.0),
                                     exposure = {{5, 0.090, 0.095}}, movable = true, power_up_t = 0.9,
                                 },
                                 {
-                                    typename = "Spot", position = {3.853, -1.112, -0.206}, 
+                                    typename = "Spot", position = {4.823, -1.3195, 0}, 
                                     proto = lamp_prototypes.LFS_P_27_200, range = 18.0, angle_max = math.rad(180.0), angle_max = math.rad(180.0),
                                     exposure = {{5, 0.090, 0.095}}, movable = true, power_up_t = 0.9,
                                 },
@@ -488,12 +488,12 @@ return {
                             typename = "collection",
                             lights = {
                                 {
-                                   typename = "Spot", position = {3.853, -1.112, -0.106}, argument = 208,   dir_correction = {elevation = math.rad(-6.0)}, 
+                                   typename = "Spot", position = {4.6, -0.7814, 0}, argument = 208,   dir_correction = {elevation = math.rad(-6.0)}, 
                                     proto = lamp_prototypes.LFS_P_27_200, angle_max = math.rad(50.0), angle_max = math.rad(40.0),
                                     exposure = {{5, 0.090, 0.095}}, movable = true, power_up_t = 0.9,
                                 },
                                 {
-                                    typename = "Spot", position = {3.853, -1.112, -0.106},  
+                                    typename = "Spot", position = {4.823, -1.3195, 0},
                                     proto = lamp_prototypes.LFS_P_27_200, range = 18.0, angle_max = math.rad(180.0), angle_max = math.rad(180.0),
                                     exposure = {{5, 0.090, 0.095}}, movable = true, power_up_t = 0.9,
                                 },
@@ -501,20 +501,20 @@ return {
                         },
                     },
                 },
-			[3] = { typename = "collection", -- left nav light
+			[3] = { typename = "collection", -- nav lights
 				lights = {
-					{typename = "argumentlight",argument = 190}, -- left nav light red
-					{typename = "argumentlight",argument = 191}, -- tail nav light white
-					{typename = "argumentlight",argument = 192}, -- right nav light green
+					{typename = "argumentlight",argument = 49}, -- nav lights red, green, white
 				},
 			},
-			[4] = { typename = "collection", -- tail nav light
+			--[[
+			[4] = { typename = "collection", -- top nav light
 				lights = {
 					{typename = "argnatostrobelight",connector = "RED_BEACON R",argument = 83,period = 2.0,color = {1.0, 0.0, 0.0},phase_shift = 0.0},
 					{typename = "argnatostrobelight",connector = "RED_BEACON R",argument = 802,period = 2.0,color = {1.0, 0.0, 0.0},phase_shift = 0.0},
-                     {typename = "argumentlight",argument = 200}, 
+                    {typename = "argumentlight",argument = 200},
 				},
 			},
+			]]
 		}
     }, -- end lights_data
 }

@@ -43,7 +43,7 @@ return {
     average_fuel_consumption = 0.150,
     CAS_min = 70, -- Minimum CAS speed (m/s) (for AI)
     V_opt = 180, -- Cruise speed (m/s) (for AI)
-    V_take_off = 90, -- 81, -- Take off speed in m/s (for AI)
+    V_take_off = 75, -- 81, -- Take off speed in m/s (for AI)
     V_land = 92, -- 81, -- Land speed in m/s (for AI)
     has_afteburner = true,
     has_speedbrake = true,
@@ -379,11 +379,11 @@ return {
     DefaultTask = aircraft_task(Reconnaissance),
 
 	SFM_Data =
-	{
+    {
         -- copied from F-8/MiG-19
 		aerodynamics =
 		{
-			Cy0	        =   0, -- zero AoA lift coefficient*
+			Cy0	        =   0.1, -- zero AoA lift coefficient*
 			Mzalfa	    =   3.500, -- coefficients for pitch agility
 			Mzalfadt	=   0.800, -- coefficients for pitch agility
 			kjx	        =   2.150, -- Inertia parametre X - Dimension (clean) airframe drag coefficient at X (Top) Simply the wing area in square meters (as that is a major factor in drag calculations)
@@ -391,17 +391,17 @@ return {
 			Czbe	    =  -0.016, -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
 			cx_gear	    =   0.020, -- coefficient, drag, gear ??
 			cx_flap	    =   0.125, -- coefficient, drag, full flaps
-			cy_flap	    =   0.350, -- coefficient, normal force, lift, flaps
+			cy_flap	    =   0.900, -- coefficient, normal force, lift, flaps
 			cx_brk	    =   0.040, -- coefficient, drag, breaks
 			-- Increased Cx0 by 0.01
 			-- Reduced Cya by 0.005
 			table_data  =
 			{
                 --M     Cx0*	 	Cya*	B2		B4	 	Omxmax	Aldop*	Cymax*
-                {0.00,	0.03400,	0.0620,	0.125,	0.070,	0.3500,	22.0,	1.100},
-                {0.20,	0.03400,	0.0620,	0.125,	0.070,	0.7000,	22.0,	1.100},
-                {0.40,	0.03400,	0.0632,	0.125,	0.120,	1.1000,	22.0,	1.050},
-                {0.60,	0.03400,	0.0696,	0.130,	0.140,	1.7204,	21.5,	1.000},
+                {0.00,	0.03400,	0.0920,	0.125,	0.070,	0.3500,	22.0,	1.700},
+                {0.20,	0.03200,	0.0920,	0.125,	0.070,	0.7000,	22.0,	1.500},
+                {0.40,	0.03000,	0.0832,	0.125,	0.120,	1.1000,	22.0,	1.300},
+                {0.60,	0.02900,	0.0696,	0.130,	0.140,	1.7204,	21.5,	1.000},
                 {0.70,	0.02800,	0.0748,	0.130,	0.140,	2.1299,	21.0,	0.990},
                 {0.80,	0.02500,	0.0800,	0.120,	0.230,	2.4261,	20.5,	0.980},
                 {0.90,	0.02550,	0.0710,	0.135,	0.170,	2.6090,	20.0,	0.960},
