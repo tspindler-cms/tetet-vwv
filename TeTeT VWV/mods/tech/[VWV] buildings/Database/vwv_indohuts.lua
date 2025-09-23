@@ -73,3 +73,13 @@ add_structure({
     Rate		 =  1,
     category     =  'Fortification',
 })
+
+add_structure({
+    Name 		 =  "vwv_bdg_guardTower",
+    DisplayName  = _("[VWV] Guard Tower"),
+    ShapeName	 =   "guardTower",
+	ShapeNameDestr = "guardTower",
+    Life		 =  5,
+    Rate		 =  1,
+    category     =  'Fortification',
+})

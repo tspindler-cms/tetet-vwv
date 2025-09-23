@@ -3,13 +3,13 @@ declare_plugin("tetet_vwv_buildings",
 {
 displayName   	= _("Vietnam War Vessels Buildings"),
 shortName	  	=   "vwv_bdg",
-installed 	 	= true, 
+installed 	 	= true,
 dirName	  	 	= current_mod_path,
 
 encyclopedia_path = current_mod_path..'/Encyclopedia',
 
 fileMenuName 	= _("VWV"),
-version		 	= "2.0.0",
+version		 	= "2.1.0",
 state		 	= "installed",
 developerName	= "TeTeT, Pirat3n",
 info		 	= _("Buildings for the VWV mod"),
@@ -24,6 +24,7 @@ mount_vfs_liveries_path (current_mod_path ..  "/Liveries")
 -- ------------------------------------------------------------------------------------------------------------------------
 -- textures
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/indohut")
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/GuardTower")
 -- Huts
 dofile(current_mod_path .."/Database/vwv_indohuts.lua")
 -- ------------------------------------------------------------------------------------------------------------------------

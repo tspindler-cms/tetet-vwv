@@ -1,3 +1,11 @@
+2025-09-23
+  RA-5C Vigilante
+    - Add navigation lights
+  RF-101B Voodoo
+    - Improve flight model
+    - Improve 3d model
+  Buildings
+    - Add Guard Tower
 2025-09-20
   RF-101B Voodoo
     - Initial Release
