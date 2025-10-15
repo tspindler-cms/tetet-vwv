@@ -1,3 +1,6 @@
+2025-10-15
+  USS Bon Homme Richard
+    - Added CENTER_ connectors to reduce log spam    
 2025-09-23
   RA-5C Vigilante
     - Add navigation lights
