@@ -215,6 +215,7 @@ GT.WS[ws].omegaY = math.rad(8);
 GT.WS[ws].omegaZ = math.rad(8);
 GT.WS[ws].reference_angle_Y = math.rad(180);
 GT.WS[ws].reference_angle_Z = math.rad(0);
+GT.WS[ws].LN[1].depends_on_unit = Gray_TRACKERS
 GT.WS[ws].LN[1].launch_delay = 12;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 8;
 GT.WS[ws].LN[1].show_external_missile = true 
@@ -243,6 +244,44 @@ GT.WS[ws].LN[1].BR = {
 	{connector_name = 'TPO_04', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
 };
 GT.WS[ws].LN[1].show_external_missile = false
+
+--------------------------- MK95_tracker radar ------------------------------------------
+
+ws = GT_t.inc_ws()
+local first_Gray_tracker_id = ws
+GT.WS[ws] = {
+	area = 'SuperStructure',
+	center = 'CENTER_RADAR_02',
+    omegaY = 2,
+    omegaZ = 2,
+    pidY = {p=100, i=0.05, d=12, inn = 50},
+    pidZ = {p=100, i=0.05, d=12, inn = 50},
+    angles = { {math.rad(180), math.rad(-180), math.rad(-90), math.rad(80)} },
+    LN = {
+        [1] = {
+            type = 102,
+            distanceMin = 400,
+            distanceMax = 30000,
+            reactionTime = 2.5,
+            reflection_limit = 0.1,
+			frequencyRange = {0.5e9, 0.58e9},
+            ECM_K = 0.65,
+            min_trg_alt = 5,
+            max_trg_alt = 15000,
+            max_number_of_missiles_channels = 1,
+            beamWidth = math.rad(90),
+        }
+    }
+}
+
+local Gray_TRACKERS = {{{'self', ws}}}
+
+for i=2,13 do 
+    ws = GT_t.inc_ws()
+    GT.WS[ws] = {}
+    set_recursive_metatable(GT.WS[ws], GT.WS[first_Gray_tracker_id])
+    table.insert(Gray_TRACKERS, {{'self', ws}})
+end
 -------------------------------------------------------------------------
 
 GT.Name = "USS Gray"; -- folder name for Liveries
@@ -251,12 +290,11 @@ GT.DisplayNameShort = _("Knox class (DASH/BPDMS)"); -- Label name
 GT.Rate = 3000.000000;
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
-                RADAR = {"ticonderoga search radar"}, --radar types
-};
-GT.sensor = {};
-set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 28.8;
-GT.sensor.max_range_finding_target = 500;
+                RADAR = {
+                    "Gray air",
+                    "Gray surface",}
+            };
+
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
