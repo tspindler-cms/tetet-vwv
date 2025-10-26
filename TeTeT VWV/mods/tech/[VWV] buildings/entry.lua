@@ -9,9 +9,9 @@ dirName	  	 	= current_mod_path,
 encyclopedia_path = current_mod_path..'/Encyclopedia',
 
 fileMenuName 	= _("VWV"),
-version		 	= "2.1.0",
+version		 	= "2.2.0",
 state		 	= "installed",
-developerName	= "TeTeT, Pirat3n",
+developerName	= "TeTeT, Pirat3n, Odyseus",
 info		 	= _("Buildings for the VWV mod"),
 
 })
@@ -25,7 +25,9 @@ mount_vfs_liveries_path (current_mod_path ..  "/Liveries")
 -- textures
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/indohut")
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/GuardTower")
--- Huts
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/us_watch_tower")
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_barrels")
+-- Huts and more, excuse the misnomer
 dofile(current_mod_path .."/Database/vwv_indohuts.lua")
 -- ------------------------------------------------------------------------------------------------------------------------
 

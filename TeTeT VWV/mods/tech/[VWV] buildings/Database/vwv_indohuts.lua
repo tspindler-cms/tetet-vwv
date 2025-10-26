@@ -83,3 +83,73 @@ add_structure({
     Rate		 =  1,
     category     =  'Fortification',
 })
+
+add_structure({
+    Name 		 =  "vwv_bdg_usWatchTower",
+    DisplayName  = _("[VWV] US Watch Tower"),
+    ShapeName	 =   "us_watchtower",
+	ShapeNameDestr = "us_watchtower",
+    Life		 =  5,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarrelGasoline",
+    DisplayName  = _("[VWV] US Barrel Gasoline"),
+    ShapeName	 =   "vwv_us_barrel_gasoline",
+	ShapeNameDestr = "vwv_us_barrel_gasoline",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarrelGasoline2",
+    DisplayName  = _("[VWV] US Barrel Gasoline 2"),
+    ShapeName	 =   "vwv_us_barrel_gasoline2",
+	ShapeNameDestr = "vwv_us_barrel_gasoline2",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarrelGasolineSpigot",
+    DisplayName  = _("[VWV] US Barrel Gasoline Spigot"),
+    ShapeName	 =   "vwv_us_barrel_gasoline_spigot",
+	ShapeNameDestr = "vwv_us_barrel_gasoline_spigot",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarrelMotorfuel",
+    DisplayName  = _("[VWV] US Barrel Motor Fuel"),
+    ShapeName	 =   "vwv_us_barrel_motorfuel",
+	ShapeNameDestr = "vwv_us_barrel_motorfuel",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarrelWastefuel",
+    DisplayName  = _("[VWV] US Barrel Waste Fuel"),
+    ShapeName	 =   "vwv_us_barrel_wastefuel",
+	ShapeNameDestr = "vwv_us_barrel_wastefuel",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarrelWasteoil",
+    DisplayName  = _("[VWV] US Barrel Waste Oil"),
+    ShapeName	 =   "vwv_us_barrel_wasteoil",
+	ShapeNameDestr = "vwv_us_barrel_wasteoil",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})

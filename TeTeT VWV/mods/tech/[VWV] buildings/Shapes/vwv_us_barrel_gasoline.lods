@@ -1,0 +1,6 @@
+model = {
+	lods = {
+		{"vwv_us_barrel_gasoline.edm", 2000.0},
+	};
+	collision_shell = "vwv_us_barrel_collision.edm";
+}
