@@ -1,3 +1,12 @@
+2025-10-27
+  Buildings
+    - Add US boom gate
+    - Add US barbed wire
+    - Add US connex container
+2025-10-26
+  Buildings
+    - Add US watch tower 
+    - Add US barrels
 2025-10-15
   USS Bon Homme Richard
     - Added CENTER_ connectors to reduce log spam    

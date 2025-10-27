@@ -1,4 +1,4 @@
 livery = {
 }
 name="US Watch Tower (Brown)"
-order = 10
+order = 20

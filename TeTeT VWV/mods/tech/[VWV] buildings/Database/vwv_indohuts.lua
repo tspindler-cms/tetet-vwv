@@ -153,3 +153,53 @@ add_structure({
     Rate		 =  1,
     category     =  'Fortification',
 })
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBoomgate",
+    DisplayName  = _("[VWV] US Boomgate"),
+    ShapeName	 =   "vwv_us_boomgate_closed",
+	ShapeNameDestr = "vwv_us_boomgate_closed",
+    Life		 =  3,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usConnex",
+    DisplayName  = _("[VWV] US Connex (half)"),
+    ShapeName	 =   "vwv_us_connex",
+	ShapeNameDestr = "vwv_us_connex",
+    Life		 =  4,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarbedWire",
+    DisplayName  = _("[VWV] US Barbed Wire (1)"),
+    ShapeName	 =   "vwv_us_barbedWire",
+	ShapeNameDestr = "vwv_us_barbedWire",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarbedWireOpen",
+    DisplayName  = _("[VWV] US Barbed Wire Open (2)"),
+    ShapeName	 =   "vwv_us_barbedWire_open",
+	ShapeNameDestr = "vwv_us_barbedWire_open",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarbedWireOpen20",
+    DisplayName  = _("[VWV] US Barbed Wire Open (20)"),
+    ShapeName	 =   "vwv_us_barbedWire_open_20",
+	ShapeNameDestr = "vwv_us_barbedWire_open_20",
+    Life		 =  8,
+    Rate		 =  1,
+    category     =  'Fortification',
+})

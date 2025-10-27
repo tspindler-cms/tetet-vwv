@@ -1,0 +1,6 @@
+model = {
+	lods = {
+		{"vwv_us_barbedWire_open_20.edm", 1000.0},
+	};
+	collision_shell = "vwv_us_barbedWire_open_20_collision.edm";
+}

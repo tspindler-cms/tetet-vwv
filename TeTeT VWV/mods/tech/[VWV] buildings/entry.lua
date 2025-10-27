@@ -27,6 +27,9 @@ mount_vfs_texture_path	(current_mod_path ..  "/Textures/indohut")
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/GuardTower")
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/us_watch_tower")
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_barrels")
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_boomgate")
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_half_connex")
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_barbwire_fence")
 -- Huts and more, excuse the misnomer
 dofile(current_mod_path .."/Database/vwv_indohuts.lua")
 -- ------------------------------------------------------------------------------------------------------------------------

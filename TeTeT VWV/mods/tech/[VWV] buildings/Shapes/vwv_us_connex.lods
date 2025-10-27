@@ -1,0 +1,6 @@
+model = {
+	lods = {
+		{"vwv_us_connex.edm", 4000.0},
+	};
+	collision_shell = "vwv_us_connex_collision.edm";
+}
