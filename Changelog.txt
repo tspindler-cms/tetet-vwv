@@ -3,6 +3,7 @@
     - Add US boom gate
     - Add US barbed wire
     - Add US connex container
+    - Add US guard house
 2025-10-26
   Buildings
     - Add US watch tower 

@@ -203,3 +203,13 @@ add_structure({
     Rate		 =  1,
     category     =  'Fortification',
 })
+
+add_structure({
+    Name 		 =  "vwv_bdg_usGuardHouse",
+    DisplayName  = _("[VWV] US Guard House"),
+    ShapeName	 =   "vwv_us_guardHouse",
+	ShapeNameDestr = "vwv_us_guardHouse",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
