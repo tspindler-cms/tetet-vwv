@@ -1,0 +1,8 @@
+model = {
+	lods = {
+		{"vwv_us_watchtower.edm", 1000.0},
+		{"vwv_us_watchtower_1km.edm", 2000.0},
+		{"vwv_us_watchtower_2km.edm", 15000.0}
+	};
+	collision_shell = "vwv_us_watchtower_collision.edm";
+}

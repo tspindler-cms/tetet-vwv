@@ -87,8 +87,8 @@ add_structure({
 add_structure({
     Name 		 =  "vwv_bdg_usWatchTower",
     DisplayName  = _("[VWV] US Watch Tower"),
-    ShapeName	 =   "us_watchtower",
-	ShapeNameDestr = "us_watchtower",
+    ShapeName	 =   "vwv_us_watchtower",
+	ShapeNameDestr = "vwv_us_watchtower",
     Life		 =  5,
     Rate		 =  1,
     category     =  'Fortification',
