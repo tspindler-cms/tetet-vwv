@@ -213,3 +213,23 @@ add_structure({
     Rate		 =  1,
     category     =  'Fortification',
 })
+
+add_structure({
+    Name 		 =  "vwv_bdg_usMarsdenMat",
+    DisplayName  = _("[VWV] US Marsden Mat"),
+    ShapeName	 =   "vwv_us_marsdenmat",
+	ShapeNameDestr = "vwv_us_marsdenmat",
+    Life		 =  1,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usRevetment",
+    DisplayName  = _("[VWV] US Revetment"),
+    ShapeName	 =   "vwv_us_revetments",
+	ShapeNameDestr = "vwv_us_revetments",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
