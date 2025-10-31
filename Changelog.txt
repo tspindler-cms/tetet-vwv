@@ -2,6 +2,10 @@
   Buildings
     - Add US barrack
     - Add US hangar
+  EC-121
+    - Initial release
+  CH-46D 
+    - Initial release
 2025-10-29
   Buildings
     - Add US marsden mat 
