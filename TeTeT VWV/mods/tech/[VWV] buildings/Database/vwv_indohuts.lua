@@ -38,7 +38,7 @@ local function add_structure(f)
 		GT.DetectionRange  = 0;
 		GT.ThreatRange = 0;
 		GT.mapclasskey = "P0091000076";
-		GT.attribute = {wsType_Ground,wsType_Tank,wsType_NoWeapon,wsType_GenericFort,
+		GT.attribute = {wsType_Ground, wsType_Tank, wsType_NoWeapon, wsType_GenericFort,
 						"Fortifications",
 						};
 		GT.category = f.category;
@@ -230,6 +230,26 @@ add_structure({
     ShapeName	 =   "vwv_us_revetments",
 	ShapeNameDestr = "vwv_us_revetments",
     Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usHangar",
+    DisplayName  = _("[VWV] US Hangar"),
+    ShapeName	 =   "vwv_us_hangar",
+	ShapeNameDestr = "vwv_us_hangar",
+    Life		 =  2,
+    Rate		 =  1,
+    category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_usBarrack",
+    DisplayName  = _("[VWV] US Barrack"),
+    ShapeName	 =   "vwv_us_barracks",
+	ShapeNameDestr = "vwv_us_barracks",
+    Life		 =  3,
     Rate		 =  1,
     category     =  'Fortification',
 })

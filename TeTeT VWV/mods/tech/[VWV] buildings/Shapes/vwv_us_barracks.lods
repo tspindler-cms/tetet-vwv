@@ -1,0 +1,6 @@
+model = {
+	lods = {
+		{"vwv_us_barracks.edm", 4000.0}
+	};
+	collision_shell = "vwv_us_barracks_collision.edm";
+}
