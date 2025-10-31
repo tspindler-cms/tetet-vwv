@@ -6,7 +6,7 @@ declare_plugin("tetet_fletcher",
     dirName	  	 = current_mod_path,
 
     fileMenuName = _("Fletcher"),
-    version		 = "2.1.0",
+    version		 = "2.2.0",
     state		 = "installed",
     info		 = _("Wikipedia: The Fletcher class was a class of destroyers built by the United States during World War II. The class was designed in 1939, as a result of dissatisfaction with the earlier destroyer leader types of the Porter and Somers classes. Some went on to serve during the Korean War and into the Vietnam War."),
 

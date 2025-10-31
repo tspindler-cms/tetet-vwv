@@ -28,6 +28,8 @@ USS Mullany (DD-528), a Flechter class destroyer
 USS Enterprise 1966 (CVAN-65), the first nuclear driven carrier
 A-37 Dragonfly, an iconic light attack aircraft of the Vietnam War
 RF-101B Voodoo, a two seater recon variant of the supersonic Voodoo fighter
+EC-121 Warning Star, an AWACS plane of the Vietnam War
+CH-46D Sea Knight, a dual rotor transport helicopter
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -72,6 +74,8 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/USS_Enterprise_(CVN-65)
     * https://en.wikipedia.org/wiki/Cessna_A-37_Dragonfly\
     * https://en.wikipedia.org/wiki/McDonnell_F-101_Voodoo
+    * https://en.wikipedia.org/wiki/Boeing_Vertol_CH-46_Sea_Knight 
+    * https://en.wikipedia.org/wiki/Lockheed_EC-121_Warning_Star 
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -96,11 +100,12 @@ Thanks
     Pirat3n - Indochinese huts
     James J Jackson - The Sullivans and various model upgrades
     Helijah - for the A-5 base model
+    TAZ56 - for donation of the EC-121 model
 
 Without these persons the mod would not have been possible!
 
 Also thanks to present contributors:
-    Odyseus - overhauling the base model of the CVA-31
+    Odyseus - overhauling the base model of the CVA-31 and many other models
     Erwin23p - providing the new main mast of USS_Maddox
     ColeMinor - created graphics for the mod
 
@@ -157,4 +162,6 @@ RF-101B Voodoo
   - The landing gear suspension is not animated
   - The BORT number should be five digits, not three
   - The pilot is generic rather than specific for the Voodoo. Development of a custom Voodoo pilot is out of financial reach, if interested in sponsoring one contact TeTeT
-  - There are no pylons present currently, not even for fuel tanks    
+  - There are no pylons present currently, not even for fuel tanks
+CH-46D
+  - The ramp does not open automatically
