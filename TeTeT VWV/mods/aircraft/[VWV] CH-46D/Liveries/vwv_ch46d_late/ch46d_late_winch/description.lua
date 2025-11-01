@@ -1,0 +1,15 @@
+livery = {
+};
+
+name = "CH-46D Early [Winch]";
+
+order = 110;
+
+custom_args =
+{
+    [1000] = 0.0, -- show dispenser
+    [1001] = 0.0, -- lower ramp closed
+    [1002] = 0.0, -- upper ramp closed
+    [1003] = 1.0, -- deploy winch
+    [38] = 0.9, -- open door
+}
