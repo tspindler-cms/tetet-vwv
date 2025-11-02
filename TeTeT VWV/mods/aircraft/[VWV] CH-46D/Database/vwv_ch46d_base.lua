@@ -32,7 +32,6 @@ return {
     attribute   = { wsType_Air, wsType_Helicopter, wsType_Cruiser, WSTYPE_PLACEHOLDER, "Transport helicopters", "Side_approach_type", },
     Categories  = {"{828CEADE-3F1D-40aa-93CE-8CDB73FE2710}", "Helicopter",},
 
-
     -- TeTeT: Copied and adjusted from UH-1 core config
     -- adjustments from https://en.wikipedia.org/wiki/Kaman_SH-2_Seasprite or model
     length          = 13.67, -- Full length in m
@@ -55,9 +54,6 @@ return {
     tail_fin_area	=	3.45,
     tail_stab_area	=	2.94,
     MOI = {10000.0, 21000.0, 24000.0},
-    -- MOI = {46000.0, 76162.0, 80778.0},
-    -- MOI = {70000.0, 115000.0, 120000.0},
-    -- MOI = {2600,	12443,	13197},
     V_max                       = 267,
     V_max_cruise                = 250,
     H_stat_max_L                = 3960,
@@ -99,7 +95,8 @@ return {
     M_max           = 10400.0, -- kg
     M_fuel_max      = 3100, -- kg
 
-    openRamp 			= 1, -- allow task for internal cargo transportation
+    -- based on CH-47
+    openRamp = 1, -- allow task for internal cargo transportation
 	InternalCargo = {
         nominalCapacity = 2000,
         maximalCapacity = 3180,
@@ -161,17 +158,18 @@ return {
     },
     ]]
     mechanimations = {
+        --[[ Does not work
         -- Copy from CH-47F
         CargoBayGates = {
             {
                 Transition = {"Close", "Open"},
                 Sequence = {
                     {C = {{"PosType", 6}, {"Sleep", "for", 6.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Sleep", "for", 1.5}}},
                     {C = {{"Arg", 38, "to", 1.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.91, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.91, "speed", 0.186}}},
                     {C = {{"PosType", 6}, {"Sleep", "for", 8.0}}},
                     {C = {{"VelType", 0}, {"Arg", 85, "to", 1.0, "speed", 3.5}}},
                 },
@@ -182,62 +180,62 @@ return {
                     {C = {{"PosType", 6}, {"Sleep", "for", 4.0}}},
                     {C = {{"VelType", 1}, {"Arg", 85, "to", 0.0, "speed", 0.5}}},
                     {C = {{"PosType", 6}, {"Sleep", "for", 6.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Arg", 38, "to", 0.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.0, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.0, "speed", 0.186}}},
                 },
             },
             {
                 Transition = {"Close", "Hang"},
                 Sequence = {
                     {C = {{"PosType", 6}, {"Sleep", "for", 6.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Sleep", "for", 1.5}}},
                     {C = {{"Arg", 38, "to", 1.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.604, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.604, "speed", 0.186}}},
                 },
             },
             {
                 Transition = {"Hang", "Close"},
                 Sequence = {
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Arg", 38, "to", 0.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.0, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.0, "speed", 0.186}}},
                 },
             },
 			{
                 Transition = {"Close", "CustomStage3"},
                 Sequence = {
                     {C = {{"PosType", 6}, {"Sleep", "for", 1.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Sleep", "for", 1.5}}},
                     {C = {{"Arg", 38, "to", 1.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 1.0}}},
-                    {C = {{"Arg", 86, "to", 0.55, "speed", 0.186}}}
+                    {C = {{"Arg", 36, "to", 0.55, "speed", 0.186}}}
                 },
             },
 			{
                 Transition = {"CustomStage3", "Close"},
                 Sequence = {
                     {C = {{"PosType", 6}, {"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Arg", 38, "to", 0.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.0, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.0, "speed", 0.186}}},
                 },
             },
 			{
                 Transition = {"Close", "Board"},
                 Sequence = {
                     {C = {{"PosType", 6}, {"Sleep", "for", 6.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Sleep", "for", 1.5}}},
                     {C = {{"Arg", 38, "to", 1.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.91, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.91, "speed", 0.186}}},
                     {C = {{"PosType", 6}, {"Sleep", "for", 8.0}}},
                     {C = {{"VelType", 0}, {"Arg", 85, "to", 1.0, "speed", 3.5}}},
                 },
@@ -248,10 +246,10 @@ return {
                     {C = {{"PosType", 6}, {"Sleep", "for", 4.0}}},
                     {C = {{"VelType", 1}, {"Arg", 85, "to", 0.0, "speed", 0.5}}},
                     {C = {{"PosType", 6}, {"Sleep", "for", 6.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Arg", 38, "to", 0.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.0, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.0, "speed", 0.186}}},
                 },
             },
         },
@@ -259,11 +257,11 @@ return {
             {
                 Transition = {"Close", "Open"},
                 Sequence = {
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     --{C = {{"Sleep", "for", 1.5}}},
                     {C = {{"Arg", 38, "to", 1.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.91, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.91, "speed", 0.186}}},
                     {C = {{"PosType", 6}, {"Sleep", "for", 4.0}}},
                     {C = {{"VelType", 0}, {"Arg", 85, "to", 1.0, "speed", 3.5}}},
                 },
@@ -273,16 +271,16 @@ return {
                 Sequence = {
                     {C = {{"VelType", 1}, {"Arg", 85, "to", 0.0, "speed", 0.5}}},
                     {C = {{"PosType", 6}, {"Sleep", "for", 4.0}}},
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Arg", 38, "to", 0.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.0, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.0, "speed", 0.186}}},
                 },
             },
             {
                 Transition = {"Close", "Ventilate"},
                 Sequence = {
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                     {C = {{"Sleep", "for", 1.5}}},
                     {C = {{"Arg", 38, "to", 1.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
@@ -291,13 +289,13 @@ return {
             {
                 Transition = {"Ventilate", "Hang"},
                 Sequence = {
-                    {C = {{"Arg", 86, "to", 0.604, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.604, "speed", 0.186}}},
                 },
             },
             {
                 Transition = {"Hang", "Board"},
                 Sequence = {
-                    {C = {{"Arg", 86, "to", 0.91, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.91, "speed", 0.186}}},
                 },
             },
             {
@@ -317,13 +315,13 @@ return {
             {
                 Transition = {"Board", "Hang"},
                 Sequence = {
-                    {C = {{"Arg", 86, "to", 0.604, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.604, "speed", 0.186}}},
                 },
             },
             {
                 Transition = {"Hang", "Ventilate"},
                 Sequence = {
-                    {C = {{"Arg", 86, "to", 0.07, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.07, "speed", 0.186}}},
                 },
             },
             {
@@ -331,29 +329,29 @@ return {
                 Sequence = {
                     {C = {{"Arg", 38, "to", 0.0, "speed", 0.25}}},
                     {C = {{"Sleep", "for", 2.0}}},
-                    {C = {{"Arg", 86, "to", 0.0, "speed", 0.186}}},
+                    {C = {{"Arg", 36, "to", 0.0, "speed", 0.186}}},
                 },
             },
             {
                 Transition = {"Any", "Open"},
                 Sequence = {
-                    {C = {{"Arg", 86, "set", 0.91}, {"Arg", 38, "set", 1.0}, {"Arg", 85, "set", 1.0}}},
+                    {C = {{"Arg", 36, "set", 0.91}, {"Arg", 38, "set", 1.0}, {"Arg", 85, "set", 1.0}}},
                 },
             },
             {
                 Transition = {"Any", "Close"},
                 Sequence = {
-                    {C = {{"Arg", 85, "set", 0.0}, {"Arg", 38, "set", 0.0}, {"Arg", 86, "set", 0.0}}},
+                    {C = {{"Arg", 85, "set", 0.0}, {"Arg", 38, "set", 0.0}, {"Arg", 36, "set", 0.0}}},
                 },
             },
         },
-
+        ]]
     }, -- end of mechanimations
 
     Pylons =     {
     },
 
-    RCS	=	10,
+    RCS = 10,
     detection_range_max	=	11,
     IR_emission_coeff	=	0.2,
     Vy_land_max	=	12.8,
@@ -399,15 +397,6 @@ return {
         power_take_off = 2200, -- 2926,
         power_max = 2400, -- 3395,
         power_WEP = 2500, -- 3395,
-        --[[
-        power_TH_k =
-        {
-            [1] = {14.007,  -383.35, 3336.5},
-            [2] = {15.464,  -409.31, 3447.3},
-            [3] = {-2.9802, -222.92, 3025.2},
-            [4] = {-4.8014, -104.19, 2382.0},
-        },
-        ]]
         power_TH_k =
         {
             [1] = {  9.338 , -255.57 , 2224.33 },
@@ -418,8 +407,6 @@ return {
 
         SFC_k = {0.0, -1.206e-005, 0.3637},
         power_RPM_k = {-0.08639, 0.24277, 0.84175},
-        -- power_RPM_k = {-0.08639, 0.24277, 0.7},
-        -- power_RPM_k = {-0.12, 0.25, 0.6}, -- Crashes/slows down DCS
         power_RPM_min = 9.1384,
         Nmg_Ready = 88.0,
         sound_name = "Aircrafts/Engines/EngineGE_CH47",
@@ -557,32 +544,11 @@ return {
             {pos = {-5.188, 4.424, 0.0}, pitch = -0.0698136985}
         },
         rotor_models = {
-            --[[
-                static, but works
             {
-            modelRotorHub_EDM  		= "uh60l_main_rotor",
-            modelRotorHubLod_FBX 	= "/models/uh60l_main_rotor_lod.fbx",
-            boundRotorHub_FBX		= "/models/uh60l_main_rotor_bb.fbx",
-            boundBlade_FBX			= "/models/uh60l_main_blade_bb.fbx",
-            modelBlade_FBX 			=
-            {
-                "/models/uh60l_main_blade.fbx",
-                "/models/uh60l_main_blade_damage1.fbx",
-                "/models/uh60l_main_blade_damage2.fbx",
-                "/models/uh60l_main_blade_damage3.fbx"
-            },
-            },
-            ]]
-            {
-                -- modelRotorHub_EDM       = "CH-47F_bl1_rotor_hub",
                 modelRotorHub_EDM       = "ch46d_rotor_head_front", -- works now
-                -- modelRotorHubLod_FBX    = "/models/ch47f_rotor_hub_lod.FBX",
                 modelRotorHubLod_FBX    = "/models/ch46d_rotor_head_front_lod.fbx", -- not textured, all black?
-                -- boundRotorHub_FBX       = "/models/ch47f_rotor_hub_bound.FBX",
                 boundRotorHub_FBX       = "/models/ch46d_rotor_head_front_bound.fbx",
-                -- boundBlade_FBX          = "/models/ch47f_rotor_blade_bound.FBX",
                 boundBlade_FBX          = "/models/ch46d_rotor_blade_bound.fbx",
-                -- modelBlade_FBX          = {"/models/ch47f_rotor_blade.FBX"}, -- "/models/ch47f_rotor_blade_damage_1.FBX", "/models/ch47f_rotor_blade_damage_2.FBX" };
                 modelBlade_FBX          = {"/models/ch46d_rotor_blade.fbx"},
             },
             {

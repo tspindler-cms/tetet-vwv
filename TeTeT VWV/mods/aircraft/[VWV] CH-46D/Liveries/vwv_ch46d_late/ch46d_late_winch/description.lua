@@ -1,15 +1,14 @@
 livery = {
 };
 
-name = "CH-46D Early [Winch]";
+name = "CH-46D Late [Winch]";
 
 order = 110;
 
 custom_args =
 {
-    [1000] = 0.0, -- show dispenser
-    [1001] = 0.0, -- lower ramp closed
-    [1002] = 0.0, -- upper ramp closed
-    [1003] = 1.0, -- deploy winch
+    [36] = 1.0, -- ramp closed
     [38] = 0.9, -- open door
+    [1000] = 0.0, -- show dispenser
+    [1003] = 1.0, -- winch deployed
 }
