@@ -1,4 +1,6 @@
 2025-11-02
+  Buildings
+    - Add destruct building to Guard Tower
   CH-46D
     - Fix ramp closing during take-off
   USS Gray 

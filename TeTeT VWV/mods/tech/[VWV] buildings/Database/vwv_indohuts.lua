@@ -78,7 +78,7 @@ add_structure({
     Name 		 =  "vwv_bdg_guardTower",
     DisplayName  = _("[VWV] Guard Tower"),
     ShapeName	 =   "guardTower",
-	ShapeNameDestr = "guardTower",
+	ShapeNameDestr = "guardTower_destroyed",
     Life		 =  5,
     Rate		 =  1,
     category     =  'Fortification',
