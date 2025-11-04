@@ -38,6 +38,8 @@ mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_barracks")
 
 -- Huts and more, excuse the misnomer
 dofile(current_mod_path .."/Database/vwv_indohuts.lua")
+-- Cargo
+dofile(current_mod_path .."/Database/vwv_cargo.lua")
 -- ------------------------------------------------------------------------------------------------------------------------
 
 plugin_done()
