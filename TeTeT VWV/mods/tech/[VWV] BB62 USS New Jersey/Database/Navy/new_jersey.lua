@@ -200,7 +200,7 @@ GT.WS[ws].center = 'CENTER_TURRET_01'
 GT.WS[ws].drawArgument1 = 0
 GT.WS[ws].drawArgument2 = 1
 GT.WS[ws].angles = {
-					{math.rad(140), math.rad(-140), math.rad(-2), math.rad(45)},
+					{math.rad(150), math.rad(-150), math.rad(-2), math.rad(45)},
 					};
 GT.WS[ws].omegaY = math.rad(4);
 GT.WS[ws].omegaZ = math.rad(12);
@@ -234,7 +234,7 @@ GT.WS[ws].center = 'CENTER_TURRET_02'
 GT.WS[ws].drawArgument1 = 4
 GT.WS[ws].drawArgument2 = 5
 GT.WS[ws].angles = {
-					{math.rad(140), math.rad(-140), math.rad(0), math.rad(45)},
+					{math.rad(150), math.rad(-150), math.rad(0), math.rad(45)},
 					};
 GT.WS[ws].omegaY = math.rad(4);
 GT.WS[ws].omegaZ = math.rad(12);
@@ -268,7 +268,7 @@ GT.WS[ws].center = 'CENTER_TURRET_03'
 GT.WS[ws].drawArgument1 = 8
 GT.WS[ws].drawArgument2 = 9
 GT.WS[ws].angles = {
-					{math.rad(-45), math.rad(45), math.rad(-2), math.rad(45)},
+					{math.rad(-30), math.rad(30), math.rad(-2), math.rad(45)},
 					};
 GT.WS[ws].omegaY = math.rad(4);
 GT.WS[ws].omegaZ = math.rad(12);
