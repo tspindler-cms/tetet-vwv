@@ -239,7 +239,7 @@ add_structure({
     DisplayName  = _("[VWV] US Hangar"),
     ShapeName	 =   "vwv_us_hangar",
 	ShapeNameDestr = "vwv_us_hangar",
-    Life		 =  2,
+    Life		 =  100,
     Rate		 =  1,
     category     =  'Fortification',
 })

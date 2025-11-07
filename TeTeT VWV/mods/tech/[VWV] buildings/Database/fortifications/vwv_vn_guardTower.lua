@@ -31,7 +31,7 @@ local ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 GT.WS[ws].center = 'CENTER_TOWER_01';
 GT.WS[ws].angles = {
-	{math.rad(90), math.rad(-90), math.rad(-60), math.rad(80)},
+	{math.rad(-60), math.rad(60), math.rad(-60), math.rad(80)},
 };
 GT.WS[ws].drawArgument1 = 0;
 GT.WS[ws].drawArgument2 = 1;
@@ -57,7 +57,7 @@ ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 GT.WS[ws].center = 'CENTER_TOWER_02';
 GT.WS[ws].angles = {
-	{math.rad(90), math.rad(-90), math.rad(-60), math.rad(80)},
+	{math.rad(-60), math.rad(60), math.rad(-60), math.rad(80)},
 };
 GT.WS[ws].reference_angle_Y = math.rad(90)
 GT.WS[ws].drawArgument1 = 2;
@@ -84,7 +84,7 @@ ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 GT.WS[ws].center = 'CENTER_TOWER_03';
 GT.WS[ws].angles = {
-	{math.rad(90), math.rad(-90), math.rad(-60), math.rad(80)},
+	{math.rad(-60), math.rad(60), math.rad(-60), math.rad(80)},
 };
 GT.WS[ws].reference_angle_Y = math.rad(180)
 GT.WS[ws].drawArgument1 = 4;
@@ -111,7 +111,7 @@ ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 GT.WS[ws].center = 'CENTER_TOWER_04';
 GT.WS[ws].angles = {
-	{math.rad(90), math.rad(-90), math.rad(-60), math.rad(80)},
+	{math.rad(-60), math.rad(60), math.rad(-60), math.rad(80)},
 };
 GT.WS[ws].reference_angle_Y = math.rad(270)					
 GT.WS[ws].drawArgument1 = 6;

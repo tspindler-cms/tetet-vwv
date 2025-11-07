@@ -42,6 +42,8 @@ dofile(current_mod_path .."/Database/vwv_indohuts.lua")
 dofile(current_mod_path .."/Database/vwv_cargo.lua")
 -- armed buildings
 dofile(current_mod_path .. "/Database/vwv_forts.lua")
+-- farps
+dofile(current_mod_path .. "/Database/vwv_farps.lua")
 -- ------------------------------------------------------------------------------------------------------------------------
 
 plugin_done()

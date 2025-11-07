@@ -4,6 +4,9 @@
     - Add armed guard tower
     - Add black squares to marsden mat corners, for visibility in editor
     - Add broke M113 cargo variant (commented)
+    - Add Marsden Mat as FARP
+    - Try to fixed armed guard tower
+    - Reduce poly count in hangar collision
   EC-121
     - Add L-1049 Super Constellation variant
   USS New Jersey
