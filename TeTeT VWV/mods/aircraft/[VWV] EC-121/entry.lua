@@ -16,21 +16,21 @@ declare_plugin(self_ID,
 	Skins	=
 	{
 		{
-			name		= _("EC121 Warning Star"),
-			dir			= "Theme/1"
+			name		= _("EC-121 Warning Star"),
+			dir			= "Skins/1"
 		},
 	},
 	Missions =
 	{
 		{
-			name		= _("EC121 Warning Star"),
+			name		= _("EC-121 Warning Star"),
 			dir			= "Missions",
 		},
 	},
 	LogBook =
 	{
 		{
-			name		= _("EC121 Warning Star"),
+			name		= _("EC-121 Warning Star"),
 			type		= "ec121-warningstar",
 		},
 	},
@@ -42,6 +42,7 @@ mount_vfs_texture_path  (current_mod_path.."/Textures/EC121.zip")
 mount_vfs_texture_path  (current_mod_path.."/Textures/EC121_USAF.zip")
 ----------------------------------------------------------------------------------------
 add_aircraft(dofile(current_mod_path.."/Database/ec121.lua"))
+add_aircraft(dofile(current_mod_path.."/Database/l1049.lua"))
 
 -------------------------------------------------------------------------------------
 plugin_done()

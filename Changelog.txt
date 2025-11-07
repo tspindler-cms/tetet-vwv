@@ -1,3 +1,11 @@
+2025-11-07
+  Buildings
+    - Reduce barracks and revetment size to 60%
+    - Add armed guard tower
+    - Add black squares to marsden mat corners, for visibility in editor
+    - Add broke M113 cargo variant (commented)
+  EC-121
+    - Add L-1049 Super Constellation variant
 2025-11-04
   Buildings
     - Make Conex Halfsize sling loadable as Cargo

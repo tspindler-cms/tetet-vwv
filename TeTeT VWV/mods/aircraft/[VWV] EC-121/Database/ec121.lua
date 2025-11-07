@@ -370,6 +370,20 @@ Yellow is the damage cells affected by damage on this location
     lights_data = {
         typename = "Collection",
         lights = {
+            [WOLALIGHT_LANDING_LIGHTS] = {
+                typename = "Collection",
+                lights = {
+					{typename = "strobelight", connector = "EC-121 Light Collison White Top", argument = 209, period = 1.01, phase_shift = 0.5, color = {0.1,0.1,0.1}},
+					{typename = "strobelight", connector = "EC-121 Light Collison White Bottom", argument = 209, period = 1.01, phase_shift = 0.5, color = {0.1,0.1,0.1}},
+                },
+            },
+            [WOLALIGHT_TAXI_LIGHTS] = {
+                typename = "Collection",
+                lights = {
+					{typename = "strobelight", connector = "EC-121 Light Collison White Top", argument = 209, period = 1.01, phase_shift = 0.5, color = {0.1,0.1,0.1}},
+					{typename = "strobelight", connector = "EC-121 Light Collison White Bottom", argument = 209, period = 1.01, phase_shift = 0.5, color = {0.1,0.1,0.1}},
+                },
+            },
             [WOLALIGHT_NAVLIGHTS] = {
                 typename = "Collection",
                 lights = {
@@ -379,8 +393,6 @@ Yellow is the damage cells affected by damage on this location
 					{typename = "omnilight", connector = "EC-121 Light Nav Green Omni", argument = 193, color = {0,0.8,0}},
 					{typename = "omnilight", connector = "EC-121 Light Nav Red Omni", argument = 193, color = {0.8,0,0}},
 					{typename = "omnilight", connector = "EC-121 Light Nav White Omni", argument = 193, color = {0.1,0.1,0.1}},
-					{typename = "strobelight", connector = "EC-121 Light Collison White Top", argument = 193, period = 1.01, phase_shift = 0.5, color = {0.1,0.1,0.1}},
-					{typename = "strobelight", connector = "EC-121 Light Collison White Bottom", argument = 193, period = 1.01, phase_shift = 0.5, color = {0.1,0.1,0.1}},
                 },
             },
 		}
