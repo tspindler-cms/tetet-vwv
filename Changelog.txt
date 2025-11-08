@@ -3,6 +3,10 @@
     - Attempt to fix the armed VC Guard Tower
   EC-121
     - Reduce normal texture strengths, thanks to Urbi
+    - Fix missing face from front gear door right
+    - Add experimental Alu livery to L-1049
+  USS New Jersey
+    - Fix normals
 2025-11-07
   Buildings
     - Reduce barracks and revetment size to 60%
