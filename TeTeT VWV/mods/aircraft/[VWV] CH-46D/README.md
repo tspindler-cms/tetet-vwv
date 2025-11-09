@@ -7,8 +7,7 @@ The CH-46D "Phrog" model was created by Odyseus and rigged by TeTeT.
 Originally created as Arma 3 mod based on work from sfc.itzhak and Snake Man, this model has been
 completely refactored by Odyseus and is now available for DCS.
 
-KNWON ISSUES
+KNOWN ISSUES
 - no water landings
-- no destruct model
 - ramp not opening when landed
 - flight model questionable at times
