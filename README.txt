@@ -30,6 +30,7 @@ A-37 Dragonfly, an iconic light attack aircraft of the Vietnam War
 RF-101B Voodoo, a two seater recon variant of the supersonic Voodoo fighter
 EC-121 Warning Star, an AWACS plane of the Vietnam War
 CH-46D Sea Knight, a dual rotor transport helicopter
+Various ground assets, for base building mainly
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
