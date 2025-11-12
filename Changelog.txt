@@ -1,3 +1,9 @@
+2025-11-12
+  CH-46D
+    - Fix front rotor rotation
+    - Fix landing gear
+  EC-121
+    - Fix for flaps and textures
 2025-11-08
   Buildings
     - Attempt to fix the armed VC Guard Tower
