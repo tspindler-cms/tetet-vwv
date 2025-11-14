@@ -9,3 +9,5 @@ The mod is very basic. Liveries for the L-1049 civilian version may come later.
 KNOWN ISSUES
 - the plane comes in a little to hot when landing
 - the textures are very basic
+- the take-off runway length is too long, should be ~2km, is more like 3.5km+
+- the flaps animation is wrong, they need to extend back and then down

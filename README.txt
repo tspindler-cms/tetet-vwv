@@ -166,3 +166,10 @@ RF-101B Voodoo
   - There are no pylons present currently, not even for fuel tanks
 CH-46D
   - The ramp does not open automatically
+  - no water landings
+  - flight model questionable at times
+EC-121
+  - the plane comes in a little to hot when landing
+  - the textures are very basic
+  - the take-off runway length is too long, should be ~2km, is more like 3.5km+
+  - the flaps animation is wrong, they need to extend back and then down
