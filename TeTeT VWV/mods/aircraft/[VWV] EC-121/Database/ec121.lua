@@ -33,7 +33,7 @@ return
 		},
 	},
 	mapclasskey = "P0091000056",
-	attribute = {wsType_Air, wsType_Airplane, wsType_Cruiser, WSTYPE_PLACEHOLDER, "AWACS", "Datalink", "Link16", "All", "NonAndLightArmoredUnits", "NonArmoredUnits", "Air", "Planes"},
+	attribute = {wsType_Air, wsType_Airplane, wsType_Cruiser, WSTYPE_PLACEHOLDER, "AWACS", "All", "NonAndLightArmoredUnits", "NonArmoredUnits", "Air", "Planes"},
 	Categories = { {
 					CLSID = "{D2BC159C-5B7D-40cf-92CD-44DF3E99FAA9}",
 					Name = "AWACS"
