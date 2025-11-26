@@ -36,8 +36,8 @@ return {
     -- adjustments from https://en.wikipedia.org/wiki/Kaman_SH-2_Seasprite or model
     length	= 11.68, --	17.62,
     height	= 4.14, --	4.41,
-    rotor_height	= 3.47, --	2.091,
-    rotor_diameter	= 12.69, --	14.7,
+    rotor_height	= 3.47,
+    rotor_diameter	= 13.41,
     blades_number	=	4,
     blade_area	=	6.2,
     rotor_RPM	=	324,
@@ -87,16 +87,29 @@ return {
             drop_canopy_name	=	0,
             pos = 	{2.3,0,	-0.5},
             canopy_args = {38, 1.0, 43, 5.0, 44, 5.0, 459, 10.0, 460, 1.0, 457, 0.1, 458, 0.1, 453, 0.5, 454, 0.5, 146, 1.0},
+            pilot_body_arg = 50,
+            role = "pilot" -- left seat
         }, -- end of [1]
         [2] =
         {
             ejection_seat_name	=	0,
             drop_canopy_name	=	0,
             pos = 	{2.3,0,	 0.5},
-            pilot_body_arg = 50,
             canopy_arg = 38,
             canopy_args = {38, 1.0, 43, 5.0, 44, 5.0, 459, 1.0, 460, 10.0, 457, 0.1, 458, 0.1, 453, 0.5, 454, 0.5, 146, 1.0},
+            pilot_body_arg = 472,
+            role = "copilot" -- right seat
         }, -- end of [2]
+        [3] =
+        {
+            ejection_seat_name	=	0,
+            drop_canopy_name	=	0,
+            pos = 	{2.3,0,	 0.5},
+            canopy_arg = 38,
+            canopy_args = {38, 1.0, 43, 5.0, 44, 5.0, 459, 1.0, 460, 10.0, 457, 0.1, 458, 0.1, 453, 0.5, 454, 0.5, 146, 1.0},
+            pilot_body_arg = 473,
+            role = "flight_officer" -- back seat
+        }, -- end of [3]
     },
     --[[
     carried_members =
@@ -208,6 +221,39 @@ Pylons =     {
     cargo_radius_in_menu = 2000, -- radius, when cargo displays in menu
     helicopter_hook_pos={0.0, -0.84, 0.0},
     h_max_gear_hook=2.4,
+
+    AddPropAircraft = {
+        {
+            id = "FoldRotor",
+            control = 'checkbox' ,
+            label = _('Fold Main Rotor'),
+            defValue = false,
+            weightWhenOn = 0,
+            arg = 8,
+            wCtrl = 150
+        }
+    },
+
+    rotor_animation = {
+        rotor_locations = {
+            {pos = { 0.5824, 1.8477, 0.0}, pitch = -0.01},
+        },
+        rotor_models = {
+            {
+                modelRotorHub_EDM       = "vwv_sh2f_rotorhub_front",
+                modelRotorHubLod_FBX    = "/models/vwv_sh2f_rotorhub_front_lod.fbx",
+                boundRotorHub_FBX       = "/models/vwv_sh2f_rotorhub_front_bound.fbx",
+                boundBlade_FBX          = "/models/vwv_sh2f_blade_bound.fbx",
+                modelBlade_FBX          = {"/models/vwv_sh2f_blade.fbx"},
+            },
+        },
+        tail_rotor = {
+				blades_count	= 4,
+				modelBlade_FBX	= "/models/vwv_sh2f_tail_blade.fbx",
+				rotor_direction	= -1,
+				rotor_locations = {{pos = {-7.2187, 1.4516, -0.4933}, pitch = 0.0, yaw = math.rad(90)}},
+        },
+    },
 
     -- TeTeT: additional settings
 	Tasks = {

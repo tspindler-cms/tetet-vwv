@@ -28,7 +28,7 @@ return {
 		},
 
 	},
-	mapclasskey 		= "P0091000021",
+	mapclasskey 		= "P0091000020",
 	attribute  			= {wsType_Air, wsType_Helicopter, wsType_Battleplane, WSTYPE_PLACEHOLDER ,"Attack helicopters",},
 	Categories 			= {"{828CEADE-3F1D-40aa-93CE-8CDB73FE2710}", "Helicopter",},
 
@@ -195,6 +195,39 @@ Pylons =     {
     cargo_radius_in_menu = 2000, -- radius, when cargo displays in menu
     helicopter_hook_pos={0.0, -0.84, 0.0},
     h_max_gear_hook=2.4,
+
+    AddPropAircraft = {
+        {
+            id = "FoldRotor",
+            control = 'checkbox' ,
+            label = _('Fold Main Rotor'),
+            defValue = false,
+            weightWhenOn = 0,
+            arg = 8,
+            wCtrl = 150
+        }
+    },
+
+    rotor_animation = {
+        rotor_locations = {
+            {pos = { 0.5824, 1.8477, 0.0}, pitch = -0.01},
+        },
+        rotor_models = {
+            {
+                modelRotorHub_EDM       = "vwv_sh2f_rotorhub_front",
+                modelRotorHubLod_FBX    = "/models/vwv_sh2f_rotorhub_front_lod.fbx",
+                boundRotorHub_FBX       = "/models/vwv_sh2f_rotorhub_front_bound.fbx",
+                boundBlade_FBX          = "/models/vwv_sh2f_blade_bound.fbx",
+                modelBlade_FBX          = {"/models/vwv_sh2f_blade.fbx"},
+            },
+        },
+        tail_rotor = {
+				blades_count	= 4,
+				modelBlade_FBX	= "/models/vwv_sh2f_tail_blade.fbx",
+				rotor_direction	= -1,
+				rotor_locations = {{pos = {-7.2187, 1.4516, -0.4933}, pitch = 0.0, yaw = math.rad(90)}},
+        },
+    },
 
     -- TeTeT: additional settings
 	Tasks = {

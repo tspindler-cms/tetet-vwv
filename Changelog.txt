@@ -1,3 +1,9 @@
+2025-11-26
+  EC-121
+    - Added CrazyEddie liveries for the L-1049 SC (EC-121 in disguise)
+  H-2 Seasprite
+    - Add new rotor blur
+    - Caveat: rotor blur disc size too small
 2025-11-12
   CH-46D
     - Fix front rotor rotation

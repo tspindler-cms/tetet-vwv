@@ -102,6 +102,7 @@ Thanks
     James J Jackson - The Sullivans and various model upgrades
     Helijah - for the A-5 base model
     TAZ56 - for donation of the EC-121 model
+    CrazyEddie - L-1049 (EC-121 Hack) liveries
 
 Without these persons the mod would not have been possible!
 
@@ -111,9 +112,9 @@ Also thanks to present contributors:
     ColeMinor - created graphics for the mod
 
 Final thanks to the past contributors:
-    - karla - creator of the mod for IL-2 1946
-    - NightIntruder - porting the mod to Arma 3 initially
-    - TheSn4k3 - provided shuttle shoe and wires
+    - karla - creator of the Bon Homme Richard mod for IL-2 1946
+    - NightIntruder - porting the CVA-31 mod to Arma 3 initially
+    - TheSn4k3 - provided shuttle shoe and wires for the carriers
 
 Known Limitations
 =================
@@ -135,6 +136,7 @@ MiG-17F "Fresco-C"
 H-2 Seasprite
     - Wheels don't touch the ship deck
     - Landing gear is deployed multiple kilometers away from landing spot
+    - Rotor blur disc too small
 Fletcher Class Destroyers with FRAM II upgrade
     - Bridge and mast are WWII style    
 RA-5C Vigilante
