@@ -11,7 +11,7 @@ livery = {
 }
 name = "BOAC"
 
-order = 10
+order = 20
 
 custom_args = {
 

@@ -11,7 +11,7 @@ livery = {
 }
 name = "PANAM"
 
-order = 10
+order = 30
 
 custom_args = {
 
