@@ -1,3 +1,6 @@
+2025-11-28
+  H-2 Seasprite
+    - Add hideable crew on disembark
 2025-11-26
   EC-121
     - Added CrazyEddie liveries for the L-1049 SC (EC-121 in disguise)

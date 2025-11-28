@@ -87,16 +87,29 @@ return {
             drop_canopy_name	=	0,
             pos = 	{2.3,0,	-0.5},
             canopy_args = {38, 1.0, 43, 5.0, 44, 5.0, 459, 10.0, 460, 1.0, 457, 0.1, 458, 0.1, 453, 0.5, 454, 0.5, 146, 1.0},
+            pilot_body_arg = 50,
+            role = "pilot" -- left seat
         }, -- end of [1]
         [2] =
         {
             ejection_seat_name	=	0,
             drop_canopy_name	=	0,
             pos = 	{2.3,0,	 0.5},
-            pilot_body_arg = 50,
             canopy_arg = 38,
             canopy_args = {38, 1.0, 43, 5.0, 44, 5.0, 459, 1.0, 460, 10.0, 457, 0.1, 458, 0.1, 453, 0.5, 454, 0.5, 146, 1.0},
+            pilot_body_arg = 472,
+            role = "copilot" -- right seat
         }, -- end of [2]
+        [3] =
+        {
+            ejection_seat_name	=	0,
+            drop_canopy_name	=	0,
+            pos = 	{2.3,0,	 0.5},
+            canopy_arg = 38,
+            canopy_args = {38, 1.0, 43, 5.0, 44, 5.0, 459, 1.0, 460, 10.0, 457, 0.1, 458, 0.1, 453, 0.5, 454, 0.5, 146, 1.0},
+            pilot_body_arg = 473,
+            role = "flight_officer" -- back seat
+        }, -- end of [3]
     },
     --[[
     carried_members =
