@@ -1,3 +1,6 @@
+2025-11-29
+  O-1 Bird Dog
+    - Add new propellor blur
 2025-11-28
   H-2 Seasprite
     - Add hideable crew on disembark

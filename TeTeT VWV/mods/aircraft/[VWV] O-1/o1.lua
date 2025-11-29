@@ -35,7 +35,7 @@ return
 	Categories = {},
 
 	propellorShapeType = "3ARG_PROC_BLUR",
-
+	propellorShapeName  = "o1_blade.fbx",
 	-------------------------
 	M_empty 					= 732, -- 490, -- kg
 	M_nominal 					= 850, -- reduced to have higher payload on pylons 892, -- kg
@@ -342,12 +342,12 @@ return
 
 			prop_direction      = 1, -- pos rotates cw looking fwd neg is ccw
 
-			prop_pitch_min      = 26.0, -- prop pitch min, degrees
-            prop_pitch_max      = 82.0, -- prop pitch max, degrees
-            prop_pitch_feather  = 90.0, -- prop pitch feather position, degrees if feather < prop_pitch_max no feathering available
+			prop_pitch_min      = -16.0, -- prop pitch min, degrees
+            prop_pitch_max      = -22.0, -- prop pitch max, degrees
+            prop_pitch_feather  = -30.0, -- prop pitch feather position, degrees if feather < prop_pitch_max no feathering available
             prop_blades_count   = 2,
             prop_locations      = {
-				{0, 0, 0}, {0, 0.0, 0.0}, -- roll, yaw, pitch angle in tangent value
+				{3.630450, 0.721771, 0},
 			},
 		},
 	},
