@@ -1,6 +1,10 @@
 2025-11-29
   O-1 Bird Dog
     - Add new propellor blur
+  USS New Jersey
+    - Added new 152mm gun sounds
+  USS Gray
+    - Fix missile placement after DCS update
 2025-11-28
   H-2 Seasprite
     - Add hideable crew on disembark
