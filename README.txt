@@ -102,7 +102,7 @@ Thanks
     James J Jackson - The Sullivans and various model upgrades
     Helijah - for the A-5 base model
     TAZ56 - for donation of the EC-121 model
-    CrazyEddie - L-1049 (EC-121 Hack) liveries
+    CrazyEddie - L-1049 (EC-121 Hack) and CH-46D liveries
 
 Without these persons the mod would not have been possible!
 

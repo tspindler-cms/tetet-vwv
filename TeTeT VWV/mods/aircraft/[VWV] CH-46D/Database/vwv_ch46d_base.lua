@@ -536,7 +536,17 @@ return {
     }),
 
     DamageParts = {},
-    AddPropAircraft = {},
+    AddPropAircraft = {
+        {
+            id = "FoldRotor",
+            control = 'checkbox' ,
+            label = _('Fold Main Rotor'),
+            defValue = false,
+            weightWhenOn = 0,
+            arg = 8,
+            wCtrl = 150
+        }
+    },
 
     rotor_animation = {
         rotor_locations = {

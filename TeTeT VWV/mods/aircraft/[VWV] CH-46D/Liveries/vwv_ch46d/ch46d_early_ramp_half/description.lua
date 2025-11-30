@@ -7,6 +7,7 @@ order = 130;
 
 custom_args =
 {
+    [8] = 0.0, -- rotors unfolded
     [36] = 0.2, -- ramp open, horizontal aligned with fuselage
     [38] = 0.0, -- door closed
     [1000] = 1.0, -- hide dispenser

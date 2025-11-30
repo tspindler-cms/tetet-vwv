@@ -4,7 +4,8 @@ This mod is released under the Creative Commons Attribution-NonCommercial-ShareA
 
 A mod of the EC-121 Warning Star for DCS, thanks to TAZ56, and TeTeT.
 
-The mod is very basic. Liveries for the L-1049 civilian version may come later.
+The mod is very basic. 
+Liveries for the L-1049 civilian version from CrazyEddie have been added.
 
 KNOWN ISSUES
 - the plane comes in a little to hot when landing

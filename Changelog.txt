@@ -1,3 +1,6 @@
+2025-11-30
+  CH-46D
+    - Add CrazyEddie liveries
 2025-11-29
   O-1 Bird Dog
     - Add new propellor blur

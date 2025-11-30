@@ -7,6 +7,7 @@ order = 120;
 
 custom_args =
 {
+    [8] = 0.0, -- rotor unfolded
     [36] = 0.0, -- ramp open
     [38] = 0.0, -- door closed
     [1000] = 1.0, -- hide dispenser

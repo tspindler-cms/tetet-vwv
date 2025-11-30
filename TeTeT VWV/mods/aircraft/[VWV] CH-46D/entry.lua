@@ -7,7 +7,7 @@ declare_plugin("tetet_ch46d",
 
     encyclopedia_path = current_mod_path..'/Encyclopedia',
     fileMenuName = _("CH-46D Sea Knight"),
-    version = "2.2.1",
+    version = "2.2.2",
     state = "installed",
     developerName = "TeTeT, Odyseus",
     info = _("Wikipedia: The Boeing Vertol CH-46 Sea Knight is an American medium-lift tandem-rotor transport helicopter powered by twin turboshaft engines."),
@@ -39,6 +39,7 @@ declare_plugin("tetet_ch46d",
 mount_vfs_model_path(current_mod_path.."/Shapes")
 mount_vfs_texture_path(current_mod_path.."/Textures/CH46D.zip")
 mount_vfs_texture_path(current_mod_path.."/Textures/CH46D-pilot.zip")
+mount_vfs_texture_path(current_mod_path.."/Textures/CH46D-CrazyEddieLiveries.zip")
 mount_vfs_liveries_path(current_mod_path.."/Liveries")
 
 add_aircraft(dofile(current_mod_path..'/Database/vwv_ch46d_early.lua'))
