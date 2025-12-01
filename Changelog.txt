@@ -1,3 +1,6 @@
+2025-12-01
+  Destroyers
+    - Model fixes for Sumner classes (Allen M Sumner, Laffey, Maddox TI)
 2025-11-30
   CH-46D
     - Add CrazyEddie liveries
