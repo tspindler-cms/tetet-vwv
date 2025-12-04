@@ -1,0 +1,8 @@
+wave = {
+    "Effects/Weapons/Cannon/USN_125mm.wav",
+      }
+inner_radius = 250
+outer_radius = 2500
+detached = true
+pitch_random = 0.05
+gain = 1.0

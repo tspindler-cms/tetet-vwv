@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-2.2.1
+2.3.0
 
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
@@ -31,6 +31,8 @@ RF-101B Voodoo, a two seater recon variant of the supersonic Voodoo fighter
 EC-121 Warning Star, an AWACS plane of the Vietnam War
 CH-46D Sea Knight, a dual rotor transport helicopter
 Various ground assets, for base building mainly
+USS Oklahoma City (CLG-5), a Cleveland light cruiser class conversion to a guided missile cruiser
+Tango and Charlie boats, landing crafts modified for riverine usage
 
 This is my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -76,7 +78,11 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/Cessna_A-37_Dragonfly\
     * https://en.wikipedia.org/wiki/McDonnell_F-101_Voodoo
     * https://en.wikipedia.org/wiki/Boeing_Vertol_CH-46_Sea_Knight 
-    * https://en.wikipedia.org/wiki/Lockheed_EC-121_Warning_Star 
+    * https://en.wikipedia.org/wiki/Lockheed_EC-121_Warning_Star
+    * https://en.wikipedia.org/wiki/USS_Oklahoma_City_(CL-91) 
+    * https://en.wikipedia.org/wiki/Armored_Troop_Carrier_(LCM)
+    * https://en.wikipedia.org/wiki/Monitor_(Vietnam_War)
+
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -101,8 +107,10 @@ Thanks
     Pirat3n - Indochinese huts
     James J Jackson - The Sullivans and various model upgrades
     Helijah - for the A-5 base model
-    TAZ56 - for donation of the EC-121 model
+    TAZ56 - for donation of the EC-121 and Oklahoma City model
     CrazyEddie - L-1049 (EC-121 Hack) and CH-46D liveries
+    upuaut - donation of his IX514, Tango and Charly boats
+    Fredy - maintaining upaut's legacy boats
 
 Without these persons the mod would not have been possible!
 

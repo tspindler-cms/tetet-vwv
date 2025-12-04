@@ -1,0 +1,7 @@
+model = {
+	lods = {
+		{"OKC_dcs.edm",1000000.000000},
+				
+	},
+	collision_shell = "OKC_collision.edm",
+}
