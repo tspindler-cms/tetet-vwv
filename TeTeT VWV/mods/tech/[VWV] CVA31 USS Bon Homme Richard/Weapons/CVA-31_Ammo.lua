@@ -13,7 +13,7 @@ declare_weapon({
 	v0						= 762, -- 2500.0 fps,
 	Dv0						= 0.001, -- 0.0002,
 	Da0						= 0.0002, -- 0.00001,
-	Da1						= 0.0001, -- 0.0,
+	Da1						= 0.0003, -- 0.0,
 	mass	  				= 25.0,
 	explosive	 			= 22.3235, -- about 3.3kg,
 	life_time	 			= 100,
@@ -34,7 +34,7 @@ declare_weapon({
 	{
 		precalculateAirDefenceAimingTable = true,
 		precalculateAimingTable = true,
-		[1] = { init_vel = 792.0 } -- intentionally not 792 to get less accurate
+		[1] = { init_vel = 762.0 } -- intentionally not 792 to get less accurate
 	}
 
 });

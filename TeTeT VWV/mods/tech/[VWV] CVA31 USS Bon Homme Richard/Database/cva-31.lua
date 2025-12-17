@@ -53,7 +53,7 @@ GT.OLS = {
 	VerticalCoverageAngle = 1.7
 }
 
-GT.distFindObstacles = 800
+GT.distFindObstacles = 180
 
 GT.numParking = 2 -- runways
 GT.Plane_Num_ = 8 --number of planes, not sure if it matters in game
@@ -104,9 +104,9 @@ GT.animation_arguments.radar2_rotation = 2
 GT.animation_arguments.radar3_rotation = 3
 -- GT.animation_arguments.radar4_rotation = 4
 
-GT.radar1_period = 10; --speed
-GT.radar2_period = 20; --speed
-GT.radar3_period = 10; --speed
+GT.radar1_period = 5; --speed
+GT.radar2_period = 4; --speed
+GT.radar3_period = 3; --speed
 -- GT.radar4_period = 10; --speed
 
 -- for lights you can look at the shps in the modelviewer 
@@ -394,6 +394,70 @@ __LN.BR = {{ connector_name = 'POINT_GUN_5inch_7',
 							recoilArgument = 1171,
 							recoilTime = 0.5 }}
 
+
+--------------------------- tracker radar ------------------------------------------
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[1]);
+GT.WS[ws].reference_angle_Y = math.rad(0)
+GT.WS[ws].reference_angle_Z = math.rad(30)
+GT.WS[ws].center = 'CENTER_RADAR_01'
+GT.WS[ws].angles = {
+                    {math.rad(180), math.rad(-180), math.rad(-10), math.rad(80)},
+                    };
+GT.WS[ws].drawArgument1 = 2001
+GT.WS[ws].LN[1].reactionTime = 1;
+GT.WS[ws].LN[1].distanceMin = 400;
+GT.WS[ws].LN[1].distanceMax = 17000;
+GT.WS[ws].LN[1].min_trg_alt = 0;
+GT.WS[ws].LN[1].max_trg_alt = 24400;
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[2]);
+GT.WS[ws].base = ws-1;
+local visual_tracker_ws1 = {{{"self", ws-1}}, {{"self", ws}}};
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[1]);
+GT.WS[ws].reference_angle_Y = math.rad(180)
+GT.WS[ws].reference_angle_Z = math.rad(30)
+GT.WS[ws].center = 'CENTER_RADAR_02'
+GT.WS[ws].angles = {
+                    {math.rad(180), math.rad(-180), math.rad(-10), math.rad(80)},
+                    };
+GT.WS[ws].drawArgument1 = 2002
+GT.WS[ws].LN[1].reactionTime = 1;
+GT.WS[ws].LN[1].distanceMin = 400;
+GT.WS[ws].LN[1].distanceMax = 17000;
+GT.WS[ws].LN[1].min_trg_alt = 0;
+GT.WS[ws].LN[1].max_trg_alt = 24400;
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[2]);
+GT.WS[ws].base = ws-1;
+local visual_tracker_ws2 = {{{"self", ws-1}}, {{"self", ws}}};	
+
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[1]);
+GT.WS[ws].reference_angle_Y = math.rad(0)
+GT.WS[ws].reference_angle_Z = math.rad(30)
+GT.WS[ws].center = 'CENTER_RADAR_03'
+GT.WS[ws].angles = {
+                    {math.rad(180), math.rad(-180), math.rad(-10), math.rad(80)},
+                    };
+GT.WS[ws].drawArgument1 = 2003
+GT.WS[ws].LN[1].reactionTime = 1;
+GT.WS[ws].LN[1].distanceMin = 400;
+GT.WS[ws].LN[1].distanceMax = 180000;
+GT.WS[ws].LN[1].min_trg_alt = 0;
+GT.WS[ws].LN[1].max_trg_alt = 24400;
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[2]);
+GT.WS[ws].base = ws-1;
+local visual_tracker_ws3 = {{{"self", ws-1}}, {{"self", ws}}};	
 -------------------------------------------------------------------------
 
 

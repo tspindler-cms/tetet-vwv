@@ -13,7 +13,7 @@ declare_weapon({
 	v0						= 812, -- 2665.0 fps,
 	Dv0						= 0.003, -- 0.001,
 	Da0						= 0.0012, -- 0.0002,
-	Da1						= 0.0000, -- 0.0001,
+	Da1						= 0.0001, -- 0.0001,
 	mass	  				= 260.0,
 	explosive	 			= 40.5881, -- about 6kg,
 	life_time	 			= 300,
@@ -37,7 +37,7 @@ declare_weapon({
 	{
 		precalculateAirDefenceAimingTable = true,
 		precalculateAimingTable = true,
-		[1] = { init_vel = 812.0 } -- intentionally not 792 to get less accurate
+		[1] = { init_vel = 812.0 } -- intentionally not 812 to get less accurate
 	}
 
 });
@@ -54,8 +54,8 @@ declare_weapon({
 	payloadMaterial 		= "RDX",
 	v0						= 762, -- 2500.0 fps,
 	Dv0						= 0.001, -- 0.0002,
-	Da0						= 0.0002, -- 0.00001,
-	Da1						= 0.0001, -- 0.0,
+	Da0						= 0.0012, -- 0.00001,
+	Da1						= 0.001, -- 0.0,
 	mass	  				= 25.0,
 	explosive	 			= 22.3235, -- about 3.3kg,
 	life_time	 			= 100,
