@@ -1,3 +1,22 @@
+2025-12-19
+  CH-46D
+    - Add improvements to config by HawaiianRyan
+    - Overhauled helicopter flight model to match real-world performance.
+    - Overhauled helicopter lighting to match real-world systems.
+    - Added additional mechanical animations.
+    - Added network animation support (only applies to multiplayer).
+    - Fixed asymmetry in helicopter rotor hubs.
+    - Fixed helicopter rotor hub spin direction.
+    - Added support for new helicopter cargo & troops system (beta).
+    - Extensive documentation throughout in code comments.
+    - Config cleanup
+  EC-121/L-1049
+    - Add improvements to config by HawaiianRyan
+    - Changed parameters to model the L-1049G "Super G" Super Constellation
+    - Performance adjusted for Wright R-3350-DA3/EA2 Turbo-Compounds (3,400 HP)
+  Buildings
+    - Add blu82 Daisy Cutter
+    - Rename csv for Conex to match edm name
 2025-12-17
   USS New Jersey and USS Oklahoma City
     - Main gun shell settings

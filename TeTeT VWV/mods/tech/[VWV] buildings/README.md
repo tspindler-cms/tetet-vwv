@@ -31,4 +31,3 @@ This part of the mod is still under (heavy) development.
 
 KNOWN ISSUES
 - Armed Guard Tower - if you place a aircraft close to it, it will ignore ground targets and engage the aircraft
-- no destruct model - only the Guard Tower has one

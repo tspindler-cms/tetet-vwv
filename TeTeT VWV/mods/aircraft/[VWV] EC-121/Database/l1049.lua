@@ -1,4 +1,5 @@
--- base taken from O-1 Bird Dog, adjusted by E-3 and C-130 values
+-- L-1049G "Super G" Super Constellation
+-- Performance adjusted for Wright R-3350-DA3/EA2 Turbo-Compounds (3,400 HP)
 return
 {
 	Name 				=   'vwv_l-1049',
@@ -37,16 +38,69 @@ return
 	Categories = {  },
 
 	-------------------------
-	M_empty 					= 31387,
-	M_nominal 					= 42000,
-	M_max 						= 60000,
-	M_fuel_max 					= 30000,
-	MaxFuelWeight = "30000",
-	defFuelRatio = 0.5,
-	length 						= 35.40,
-	height 						= 7.54,
-	wing_area 					= 153.27,
-	wing_span 					= 38.45,
+	
+	
+	-- Corrected parameters for Lockheed L-1049G "Super G"
+	
+	-- WEIGHT PARAMETERS (kg)
+	-- L-1049G Empty: ~73,000 lbs (33,115 kg)
+	-- L-1049G MTOW: 137,500 lbs (62,370 kg)
+
+	-- WEIGHT PARAMETERS (kg)
+	M_empty = 33115,			-- Empty weight: ~33,115 kg / 73,000 lbs
+	M_nominal = 54431,			-- Normal loaded: ~54,431 kg / 120,000 lbs
+	M_max = 62370,				-- Max takeoff: ~62,370 kg / 137,500 lbs
+	M_fuel_max = 17850,			-- Max fuel: ~17,850 kg / 39,300 lbs / 6,550 US Gal
+	defFuelRatio = 0.5,			-- Spawn with 50% fuel by default
+
+	-- PERFORMANCE (L-1049G Clean Configuration)
+	H_max = 7620,				-- Service ceiling: ~25,000 ft
+	V_max_sea_level = 145,		-- Max speed SL: ~280 kts / 325 mph
+	V_max_h = 166,				-- Max speed altitude: ~323 kts / 370 mph
+	V_opt = 136,				-- Cruise speed: ~265 kts / 305 mph
+	V_take_off = 50,			-- Takeoff speed: ~97 kts (lighter empty weight)
+	V_land = 45,				-- Landing speed: ~87 kts
+	CAS_min = 40,				-- Stall speed: ~78 kts
+	Mach_max = 0.58,			-- Max Mach number
+	range = 8300,				-- Max range: ~4,480 nm (ferry)
+	Vy_max = 8.2,				-- Rate of climb: ~1,620 ft/min (lighter airframe)
+
+	-- ENGINE (Four Wright R-3350-DA3/EA2, ~3,400 HP Wet/Takeoff)
+	-- Increased thrust slightly to account for EA2 power vs older C-models
+	thrust_sum_max = 104000, 
+	thrust_sum_ab = 104000,
+	engines_count = 4,
+	has_afteburner = false,
+	has_speedbrake = false,
+	has_thrustReverser = true, -- Reversible pitch props
+	average_fuel_consumption = 0.54, 
+
+	-- AERODYNAMICS
+	bank_angle_max = 30,   		-- Max bank angle (large transport)
+	Ny_min = -0.5,         		-- Negative G limit
+	Ny_max = 2.5,          		-- Positive G limit (transport category)
+	Ny_max_e = 3.0,        		-- Emergency G limit
+	AOA_take_off = 0.14,   		-- Takeoff AoA
+
+	-- DIMENSIONS
+	wing_area = 153.7,     		-- Wing area: 1,654 sq ft (Corrected for G model)
+	wing_span = 38.47,     		-- Wing span: 126 ft 2 in
+	length = 35.41,        		-- Length: 116 ft 2 in
+	height = 7.54,         		-- Height: 24 ft 9 in
+
+	-- SENSORS
+	RCS = 100, 					-- Radar Cross Section m^2
+	detection_range_max = 40, 	-- The max range enemy AI can visually see this aircraft in clear weather (km)
+	IR_emission_coeff = 1.2, 	-- Piston engines have moderate IR signature
+	IR_emission_coeff_ab = 0,
+	
+	-- STARTUP SEQUENCE
+	engines_startup_sequence = {2, 1, 0, 3}, -- Inner engines first (standard procedure)
+	engines_count				= 4, -- Engines count
+	sound_name	=	"Aircrafts/Engines/RollsRoyceMerlin/Engine",
+
+
+
 	wing_type 					= 0,
 	wing_tip_pos 				= {-2.1478,	1.114, 18.5182}, -- wingtip coords for visual effects
 
@@ -56,38 +110,14 @@ return
 
 	nose_gear_wheel_diameter 	= 0.755, -- in m
 	main_gear_wheel_diameter 	= 1.342, -- in m
+	
 	stores_number				= 0,
-	V_opt 						= 220,
-	V_take_off 					= 61,
-	V_land 						= 58,
-	V_max_sea_level 			= 130,
-	V_max_h 					= 150,
-	Vy_max 						= 6,
-	Mach_max 					= 0.5,
-	H_max 					 	= 12000, -- m
-	Ny_min 						= -0.5, -- Min G (for AI)
-	Ny_max 						= 1.2	,  -- Max G (for AI)
-	Ny_max_e 					= 2.6,  -- Max G (for AI)
-	AOA_take_off 				= 0.17, -- AoA in take off (for AI)
-	bank_angle_max 				= 10, -- 10, -- Max bank angle (for AI)
-	average_fuel_consumption 	= 0.01, -- this is highly relative, but good estimates are 36-40l/min = 28-31kg/min = 0.47-0.52kg/s -- 45l/min = 35kg/min = 0.583kg/s
-	range 						= 6843, -- Max range in km (for AI)
-	CAS_min 					= 72, -- if this is not OVERAL FLIGHT TIME, but jus LOITER TIME, than it sholud be 10-15 minutes.....CAS capability in minute (for AI)
-	thrust_sum_max 				= 40000, -- 44400, -- C-130
-	thrust_sum_ab 				= 40000, -- 44400,
-	has_afteburner 				= false, -- AFB yes/no
-	has_speedbrake 				= false, -- Speedbrake yes/no
 	tanker_type 				= 0, -- Tanker type if the plane is airrefuel capable
 	flaps_maneuver 				= 0.5, -- Max flaps in take-off and maneuver (0.5 = 1st stage; 1.0 = 2nd stage) (for AI)
 	brakeshute_name 			= 0, -- Landing - brake chute visual shape after separation
 	is_tanker 					= false, -- Tanker yes/no
 	air_refuel_receptacle_pos 	= {0, 0, 0}, -- refuel coords
-	RCS 						= 10, -- Radar Cross Section m2
-	IR_emission_coeff 			= 1.5, -- Normal engine -- IR_emission_coeff = 1 is Su-27 without afterburner. It is reference.
-	IR_emission_coeff_ab 		= 0, -- With afterburner
-	engines_count				= 4, -- Engines count
-	engines_startup_sequence = { 2, 1, 0, 3 },
-	sound_name	=	"Aircrafts/Engines/RollsRoyceMerlin/Engine",
+
 
 	engines_nozzles = {
 		[1] =
@@ -131,12 +161,11 @@ return
 			engine_number = 4
 		},
 	}, -- end of engines_nozzles
---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
---  equipaggio
+--  Crew
 ---------------------------------------------------------------------------------
 
-	crew_size	 = 1,
+	crew_size	 = 3,	-- Typical civilian cockpit (Pilot, Co-Pilot, Flight Engineer)
 	crew_members =
 	{
 			[1] =
@@ -145,7 +174,24 @@ return
 				ejection_seat_name	=	0,
 				drop_canopy_name	=	0,
 				pos = 	{3.2,	0.2,	-0.65},
+				ejection_order   	= 1,
 			}, -- end of [1]
+			[2] =
+			{
+				pilot_name          = "pilot_p51",
+				ejection_seat_name	=	0,
+				drop_canopy_name	=	0,
+				pos = 	{3.2,	0.2,	-0.65},
+				ejection_order   	= 2,
+			}, -- end of [2]
+			[3] =
+			{
+				pilot_name          = "pilot_p51",
+				ejection_seat_name	=	0,
+				drop_canopy_name	=	0,
+				pos = 	{3.2,	0.2,	-0.65},
+				ejection_order   	= 3,
+			}, -- end of [3]
 	}, -- end of crew_members
 
 	fires_pos =
@@ -159,7 +205,7 @@ return
 		[7] = 	{-7.3, 0.95, 0},
 	}, -- end of fires_pos
 
-	-- Countermeasures
+	-- Countermeasures (Removed for Civilian Airliner)
 	SingleChargeTotal	 	= 0,
 	CMDS_Incrementation 	= 0,
 	ChaffDefault 			= 0,
@@ -172,8 +218,8 @@ return
 	}, -- end of chaff_flare_dispenser
 
 	--sensors
-	detection_range_max		 = 500,
-	radar_can_see_ground 	 = true, -- this should be examined (what is this exactly?)
+	detection_range_max		 = 0,
+	radar_can_see_ground 	 = false, -- this should be examined (what is this exactly?)
 	CanopyGeometry =
 	{
 		azimuth   = {-160.0, 160.0}, -- pilot view horizontal (AI)
@@ -186,7 +232,7 @@ return
 		frequency = 127.5,  -- Radio Freq
 		editable = true,
 		minFrequency = 100.000,
-		maxFrequency = 156.000,
+		maxFrequency = 137.000,
 		modulation = MODULATION_AM
 	},
 
@@ -201,103 +247,129 @@ return
 		aircraft_task(Transport),
     },
 	DefaultTask = aircraft_task(Transport),
-	-- C-130 data
+
 	SFM_Data = {
 		aerodynamics = {
+		
+			-- AERODYNAMICS TABLE (L-1049G Super G)
+			-- Adjusted for cleaner airframe (No radomes)
+			
 			Cy0 = 0,
-			Czbe = -0.012,
 			Mzalfa = 6.6,
-			Mzalfadt = 1,
-			cx_brk = 0.06,
-			cx_flap = 0.08,
-			cx_gear = 0.015,
-			cy_flap = 1.2,
+			Mzalfadt = 1.0,
 			kjx = 2.85,
 			kjz = 0.00125,
+			Czbe = -0.012,
+			cx_gear = 0.025,       -- Gear drag
+			cx_flap = 0.12,        -- Large flaps for transport
+			cy_flap = 1.4,         -- Good flap effectiveness
+			cx_brk = 0.06,         -- Airbrake drag
+			
+			
 			table_data = {
-				{ 0,   0.024, 0.1, 0.0384, 1e-06, 0.5, 20, 0.9 },
-				{ 0.2, 0.024, 0.1, 0.0384, 1e-06, 1.5, 20, 1.05 },
-				{ 0.4, 0.024, 0.1, 0.0384, 1e-06, 2.5, 20, 1.2 },
-				{ 0.5, 0.024, 0.1, 0.0384, 1e-06, 2.5, 20, 1.2 },
-				{ 0.6, 0.027, 0.1, 0.0000, 0.3,   3.5, 20, 1.2 },
-				{ 0.7, 0.031, 0.1, 0.0450, 0.9,   3.5, 20, 1.0 },
-				{ 0.8, 0.036, 0.1, 0.1070, 1.0,   3.5, 20, 0.8 },
-				{ 0.9, 0.045, 0.1, 0.1480, 0.058, 3.5, 20, 0.6 },
-				{ 1.0, 0.054, 0.1, 0.1990, 0.10,  3.5, 20, 0.53333333333333 },
-				{ 1.5, 0.054, 0.1, 0.1990, 0.10,  3.5, 20, 0.2 },
+				-- Mach, Cx0, Cya, B, B4, Omxmax, Aldop, Cymax
+				-- Reduced Cx0 values by ~15% to account for removal of radar pods
+				{0,    0.021, 0.088, 0.038, 0.00001, 0.5,  20, 1.25},
+				{0.1,  0.021, 0.088, 0.038, 0.00001, 1.0,  20, 1.28},
+				{0.15, 0.021, 0.089, 0.038, 0.00001, 1.5,  20, 1.30},
+				{0.2,  0.021, 0.090, 0.038, 0.00001, 2.0,  20, 1.32},
+				{0.25, 0.021, 0.091, 0.038, 0.00001, 2.5,  20, 1.32},
+				{0.3,  0.021, 0.092, 0.038, 0.00001, 2.8,  20, 1.30},
+				{0.35, 0.022, 0.093, 0.040, 0.00001, 3.0,  20, 1.28},
+				{0.4,  0.023, 0.094, 0.043, 0.00001, 3.2,  20, 1.24},
+				{0.45, 0.025, 0.095, 0.048, 0.001,   3.3,  20, 1.18},
+				{0.5,  0.028, 0.096, 0.055, 0.005,   3.3,  20, 1.10},
+				{0.55, 0.032, 0.096, 0.065, 0.02,    3.2,  19, 1.00},
+				{0.6,  0.040, 0.095, 0.080, 0.05,    3.0,  18, 0.88},
+				{0.65, 0.050, 0.093, 0.100, 0.10,    2.7,  17, 0.72},
+				{0.7,  0.065, 0.090, 0.125, 0.18,    2.3,  16, 0.55},
 			},
 		},
-		-- basically from B-17G merged with table_data from C-130...
+		
 		engine = {
-			D_prop = 3.53,
-			Displ = 29.87,
-			ForsRUD = 1,
-			Init_Mom = 220,
-			MAX_Manifold_P_1 = 420000,
-			MAX_Manifold_P_2 = 418000,
-			MAX_Manifold_P_3 = 500000,
-			MOI_prop = 29,
-			MaksRUD = 1,
-			MaxRUD = 1,
+			
+			-- ENGINE TABLE (Wright R-3350-DA3/EA2 Turbo-Compound)
+			-- Rated 3,400 HP Wet
+			-- 18-cylinder radial with power recovery turbines
+			
+			Nominal_RPM = 2400,      -- Increased Takeoff RPM for Super G
+			Nmg = 27.27,             -- Idle RPM % (~600 RPM)
 			MinRUD = 0,
-			N_fr_0 = 0.072,
-			N_fr_1 = 0.02,
-			N_indic_0 = 1523040,  -- great influence on the traction force, the bigger the stronger
-			Nmg = 27.272727272727, -- RPM at idle
-			Nominal_RPM = 2200,
-			Nu_0 = 1.35,   -- was 1.2
-			Nu_1 = 1.0,    -- was 0.91
-			Nu_2 = 0.001,
-			P_oil = 495438,
-			Shutdown_Duration = 4.8,
-			Startup_Ignition_Time = 3.5,
-			Startup_Prework = 12,
-			Startup_RPMs = { { 0, 0 }, { 1, 66 }, { 2.99, 66 }, { 3, 85 }, { 4, 600 } },
-			Stroke = 0.175,
-			V_pist_0 = 12,
-			cefor = 0.37, -- not used for fuel calulation , only for AI routines to check flight time ( fuel calculation algorithm is built in )
-			cemax = 0.37, -- not used for fuel calulation , only for AI routines to check flight time ( fuel calculation algorithm is built in )
-			cylinder_firing_order = { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
-			dcx_eng = 0.013, -- 0.015,  -- Engine drag coeficient
-			dpdh_f = 1800,  --  altitude coefficient for AB thrust
-			dpdh_m = 1800, --  altitude coefficient for max thrust
-			hMaxEng = 12.5, -- Max altitude for safe engine operation in km
-			k_Eps = 6,  -- great influence on the traction force, the less the stronger the force
+			MaxRUD = 1.0,
+			MaksRUD = 1.0,
+			ForsRUD = 1.0,
+			type = "Radial",
+			
+			hMaxEng = 12.5,          -- Engine altitude limit
+			dcx_eng = 0.013,         -- Engine drag coefficient
+			cemax = 0.38,            -- Adjusted SFC for higher power
+			cefor = 0.38,
+			dpdh_m = 1800,
+			dpdh_f = 1800,
 			k_adiab_1 = 0.029,
 			k_adiab_2 = 0.0562,
+			MAX_Manifold_P_1 = 430000,  -- Increased Manifold Pressure for EA2
+			MAX_Manifold_P_2 = 430000,
+			MAX_Manifold_P_3 = 510000,
 			k_after_cool = 0.49,
+			Displ = 54.86,           -- 3,347 cubic inches total displacement
+			k_Eps = 5.5,             -- Efficiency factor
+			Stroke = 0.159,          -- 6.3125 inch stroke
+			V_pist_0 = 12.0,         -- Compression ratio
+			Nu_0 = 1.35,
+			Nu_1 = 1.0,
+			Nu_2 = 0.001,
+			N_indic_0 = 2200000,     -- Indicated power (adjusted for 3,400 HP per engine)
+			N_fr_0 = 0.072,
+			N_fr_1 = 0.02,
+			Init_Mom = 220,
+			D_prop = 4.90,           -- 16 ft 2 in diameter props (Hamilton Standard)
+			MOI_prop = 45,           -- Large prop moment of inertia
+			k_gearbox = 1.778,
+			P_oil = 495438,          -- Oil pressure
 			k_boost = 3,
 			k_cfug = 0.003,
-			k_gearbox = 1.778,
-			k_oil = 4e-05,
-			k_piston = 3300, -- 3000,
+			k_oil = 0.00004,
+			k_piston = 3300,
 			k_reg = 0.003,
 			k_vel = 0.017,
-			type = "Radial",
-			-- propeller custom data for EC-121
-			-- prop_direction      = -1,   -- pos rotates cw looking fwd neg is ccw
-			prop_pitch_min		= 23.0,	-- prop pitch min, degrees
-			prop_pitch_max		= 65.0,	-- prop pitch max, degrees
-			prop_pitch_feather	= 91.0,	-- prop pitch feather position, degrees if feather < prop_pitch_max no feathering available
-			prop_blades_count   = 3,
-			prop_locations      = {
-				{5.9, -0.37, -9.09}, {0.0, 0.0, 0.0},
-				{6.5, -0.85, -4.12}, {0.0, 0.0, 0.0},
-				{6.5, -0.85, 4.12}, {0.0, 0.0, 0.0},
-				{5.9, -0.37, 9.09}, {0.0, 0.0, 0.0},
+			
+			-- Propeller parameters
+			cylinder_firing_order = {1,12,5,16,9,2,13,6,17,10,3,14,7,18,11,4,15,8},		-- https://www.enginehistory.org/Piston/Wright/Kuhns/CurtissWrightTC18/TurboCompounds.shtml
+			prop_blades_count = 3,
+			prop_locations = {
+				{5.9, -0.37, -9.09}, {0.0, 0.0, 0.0},  -- Engine 1 (outer left)
+				{6.5, -0.85, -4.12}, {0.0, 0.0, 0.0},  -- Engine 2 (inner left)
+				{6.5, -0.85,  4.12}, {0.0, 0.0, 0.0},  -- Engine 3 (inner right)
+				{5.9, -0.37,  9.09}, {0.0, 0.0, 0.0},  -- Engine 4 (outer right)
 			},
-			-- scaled-up power curve (+60%)
+			prop_pitch_min = 23.0,
+			prop_pitch_max = 65.0,
+			prop_pitch_feather = 91.0,
+			
+			Startup_Prework = 12,
+			Startup_Ignition_Time = 3.5,
+			Shutdown_Duration = 4.8,
+			Startup_RPMs = {{0, 0}, {1, 66}, {2.99, 66}, {3, 85}, {4, 600}},
+	
+	
+			-- Power Curve for 3,400 HP R-3350-DA3/EA2
 			table_data = {
-				{ 0.0, 482534, 482534 },
-				{ 0.1, 474520, 474520 },
-				{ 0.2, 395300, 395300 },
-				{ 0.3, 332165, 332165 },
-				{ 0.4, 280149, 280149 },
-				{ 0.5, 229467, 229467 },
-				{ 0.6, 187067, 187067 },
-				{ 0.7, 155599, 155599 },
-				{ 0.8, 132604, 132604 },
-				{ 0.9, 105600, 105600 },
+				-- Mach, Thrust (N) per engine x4 = total
+				-- Increased static and low-speed thrust slightly for EA2 engines
+				{0,    104000},  -- ~23,400 lbs static thrust
+				{0.05, 101000},
+				{0.10, 95000},
+				{0.15, 88000},
+				{0.20, 80000},   -- Rotation
+				{0.25, 71000},   -- Climb
+				{0.30, 62000},
+				{0.35, 54000},
+				{0.40, 46000},   -- Cruise
+				{0.45, 39000},
+				{0.50, 33000},   -- Max Speed
+				{0.55, 28000},
+				{0.60, 24000},
 			},
 		},
 	},
@@ -354,9 +426,7 @@ Yellow is the damage cells affected by damage on this location
 	}),
 
 
-	DamageParts =
-	{
-	},
+	DamageParts = { },
 
 ----------------------------------------------------------------------------------------------------
 ---  End Damage Section
