@@ -1,3 +1,8 @@
+2025-12-20
+  USS Enterprise '66
+    - Reduce collision detection to 160 from 500
+  USS Enterprise '69
+    - 1969 version with SAMs aboard, initial release
 2025-12-19
   CH-46D
     - Add improvements to config by HawaiianRyan
