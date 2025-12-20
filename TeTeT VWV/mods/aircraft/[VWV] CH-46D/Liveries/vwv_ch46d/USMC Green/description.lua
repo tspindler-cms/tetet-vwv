@@ -1,28 +1,27 @@
 livery = {
 
 {"ch46_outside",	DIFFUSE			,	"CH46_OUTSIDE", false};
-{"ch46_outside",	NORMAL_MAP		,	"CH46_OUTSIDE_Normal", true};
-{"ch46_outside",        ROUGHNESS_METALLIC      ,       "CH46_OUTSIDE_RoughMet", true};
+{"ch46_outside",	ROUGHNESS_METALLIC,	"CH46_OUTSIDE_roughmet", false};
 
 
-{"ch46d_BORT_single",	DIFFUSE			,	"ch46d_amarillo_bort", false};
-{"ch46d_BORT_tens",	DIFFUSE			,	"ch46d_amarillo_bort", false};
 
-{"Pilot1_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_GREEN", true};
-{"Pilot2_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_GREEN", true};
+	{"ch46d_BORT_single",	DIFFUSE			,	"ch46d_amarillo_bort_single", false};
+	{"ch46d_BORT_tens",	DIFFUSE			,	"ch46d_amarillo_bort_tens", false};
+
+{"Pilot1_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_GREEN", false};
+{"Pilot2_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_GREEN", false};
 
 
 
 
 };
 
-name = "USMC Green";
+name = "CH-46D Green";
 
-order = 170;
+order = 174;
 
 custom_args =
 {
-    [8] = 0.0,
     [36] = 1.0, -- ramp closed
     [38] = 0.0, -- door closed
     [1000] = 1.0, -- hide dispenser

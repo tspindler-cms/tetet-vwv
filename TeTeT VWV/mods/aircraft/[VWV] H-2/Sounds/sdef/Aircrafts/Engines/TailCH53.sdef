@@ -1,0 +1,10 @@
+wave = "Effects/Aircrafts/Engines/TailCH53"
+inner_radius = 75
+outer_radius = 12000
+cone_inner_angle = 20
+cone_outer_angle = 180
+cone_outer_gain = 0.2
+direction = {1, 0, 1}
+attack = 0.1
+release = 0.3
+gain = 1.8

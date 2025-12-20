@@ -1,0 +1,3 @@
+inherit = "Aircrafts/Engines/HelicopterFan"
+wave = "Effects/Aircrafts/Engines/RotorCH53"
+pitch = 2

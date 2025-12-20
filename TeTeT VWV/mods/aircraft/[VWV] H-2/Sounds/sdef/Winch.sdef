@@ -1,0 +1,8 @@
+
+wave = "Effects/winch"
+inner_radius = 20
+outer_radius = 60
+pitch_random = 0.05
+gain = 5.0
+release = 0.18
+detached = false

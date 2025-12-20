@@ -33,7 +33,7 @@ return {
 	attribute   =   {wsType_Air, wsType_Airplane, wsType_Fighter, a_1_skyraider, "Battleplanes", "Refuelable"},
 	Categories  =   {},
 
-	propellerBlurShapeName = "3ARG_PROC_BLUR",
+	propellorBlurShapeName = "3ARG_PROC_BLUR",
 	propellorShapeName = "F4U-1D_Prop_Blade.FBX",
 
 	M_empty				=	3429,

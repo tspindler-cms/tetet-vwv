@@ -1,0 +1,5 @@
+inherit = "Aircrafts/Engines/HelicopterFan"
+wave = "Effects/Aircrafts/Engines/EngineCH53"
+pitch = 2
+gain = 1.65
+cone_outer_gain = 1.1

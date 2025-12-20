@@ -1,0 +1,5 @@
+wave = "Effects/Aircrafts/Ka-50/Cockpit/APU_Shutdown_In"
+inner_radius = 10
+outer_radius = 100
+release = 2
+gain = 0.5

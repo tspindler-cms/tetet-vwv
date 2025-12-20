@@ -1,4 +1,10 @@
 2025-12-20
+  A-1H
+    - Fix propellor blur
+  CH-46D
+    - Add liveries from Urbi, including improvements to existing ones
+  H-2 
+    - Replace individual directories with one united H-2 from Urbi
   USS Enterprise '66
     - Reduce collision detection to 160 from 500
   USS Enterprise '69
