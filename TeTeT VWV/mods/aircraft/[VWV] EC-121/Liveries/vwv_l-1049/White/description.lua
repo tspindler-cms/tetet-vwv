@@ -1,7 +1,5 @@
 livery = {
 	{"EC121_Outside",	DIFFUSE			,	"white", false};
-	{"EC121_Outside",	NORMAL_MAP		,	"EC121_USAF_Normal", false};
-	{"EC121_Outside",	ROUGHNESS_METALLIC	,	"EC121_USAF_RoughMet", false};
         {"EC121_Gears", 	DIFFUSE			,	"EC121_Gears", false};
         {"EC121_PropStatic",	DIFFUSE			,	"EC121_PropStatic", false};
         {"EC121_Interior",	DIFFUSE			,	"EC121_Interior", false};
@@ -11,7 +9,7 @@ livery = {
 }
 name = "White"
 
-order = 110
+order = 100
 
 custom_args = {
 
