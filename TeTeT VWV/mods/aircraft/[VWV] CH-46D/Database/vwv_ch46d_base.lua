@@ -7,6 +7,16 @@
 	performance numbers or educated guesses are applied and noted where appropriate.
 	
 	Original work by TeTeT modified by HawaiianRyan.
+	
+	Some useful references:
+		https://simviation.com/rinfouh46.htm
+		https://www.history.navy.mil/content/history/museums/nnam/explore/collections/aircraft/c/ch-46a-sea-knight.html
+		https://www.forecastinternational.com/archive/disp_pdf.cfm?DACH_RECNO=1051
+		https://apps.dtic.mil/sti/tr/pdf/ADA134320.pdf
+		https://apps.dtic.mil/sti/tr/pdf/ADA134321.pdf
+		https://apps.dtic.mil/sti/tr/pdf/ADA134322.pdf
+		https://apps.dtic.mil/sti/tr/pdf/ADA134323.pdf
+		
 ]]
 
 
@@ -14,10 +24,13 @@ return {
 	Name 				=   'vwv_ch46d',
 	DisplayName			= 	_('[VWV] CH-46D Sea Knight'),
 	DisplayNameShort	= 	_('CH-46D'),
-
+	date_of_introduction= 1964.06,
 	Picture 			=  	current_mod_path .. '/Textures/sh_2c_f.png',
 	Rate 				= 	40, -- RewardPoint in Multiplayer
 	Shape 				= 	"ch46d",
+	WorldID				=	WSTYPE_PLACEHOLDER, 
+	defFuelRatio    	= 	0.8, -- fuel default in fractions of the full (1.0)
+	singleInFlight 		= 	false,
 
 	shape_table_data 	=
 	{
@@ -42,8 +55,9 @@ return {
 	},
 	
 	mapclasskey 		= "P0091000020",
-    attribute   		= { wsType_Air, wsType_Helicopter, wsType_Cruiser, WSTYPE_PLACEHOLDER, "Transport helicopters", "Side_approach_type", },
-    Categories  		= {"{828CEADE-3F1D-40aa-93CE-8CDB73FE2710}", "Helicopter",},
+    attribute   		= { wsType_Air, wsType_Helicopter, wsType_Cruiser, WSTYPE_PLACEHOLDER, "Transport helicopters", },
+    -- Categories  		= {"{828CEADE-3F1D-40aa-93CE-8CDB73FE2710}", "Helicopter",},
+	Categories  		= { },
 	country_of_origin 	= "USA",
 	
 	Tasks = {
@@ -62,12 +76,14 @@ return {
 	blades_number 	= 6,     	-- 3 blades per rotor (6 total)
 	blade_chord 	= 0.387,   	-- CH-46D chord length: 38.7 cm = 0.387 meters
 	blade_area 		= 2.95,    	-- The area of each blade (blade chord * blade radius = 0.387m * 7.62m)
-	rotor_pos		= {5.08, 3.02, 0.0},	-- Forward rotor position (center of hub)
-	tail_pos 		= {-5.22, 4.444, 0.0},	-- Aft rotor position (center of hub)
+	
+	rotor_pos		= { 5.08, 3.02,  0.0},	-- Forward rotor position (3D model center of hub)
+	tail_pos 		= {-5.22, 4.444, 0.0},	-- Aft rotor position (3D model center of hub)
+	
 	
 	-- ROTOR PERFORMANCE
-	rotor_RPM 		= 264,      -- Main rotor RPM (synchronized tandem rotors)
-	tail_rotor_RPM 	= -264, 	-- Aft rotor RPM (same as front, negative for counter-rotation)
+	rotor_RPM 		=  264,     -- Main rotor RPM (synchronized tandem rotors)
+	tail_rotor_RPM 	= -264, 	-- Aft rotor RPM (same as front, negative for counter-rotation; clockwise looking from above)
 	
 	
 							--[[
@@ -204,8 +220,11 @@ return {
 									aerodynamic shape. The form drag coefficient is determined
 									by shape rather than size, and the CH-46 shares the CH-47's
 									hydraulically operated ramp and blunt frontal profile.
+									
+									In real aero terms, this is C_x which is approx. 0.5 - 0.8
+									for the CH-46D.
 								]]
-	fuselage_Cxa0 	= 0.60,    	-- largely unchanged from ED's CH-47F
+	fuselage_Cxa0 	= 0.60,    	-- See block comment above
 	
 	
 								--[[	
@@ -225,10 +244,19 @@ return {
 									While the CH-47F features massive fuel sponsons running the length
 									of the fuselage (widening its profile to ~3.8m), the CH-46D
 									fuselage is slender (~2.2m wide) with smaller, localized sponsons
-									at the rear. Scaling the 8.8 m2 of the Chinook by the standard
-									mass-to-area relationship (M^{2/3}) yields approximately 5.6 m2.
+									at the rear.
+									
+									As near as I can tell, this is meant to be the Equivalent Flat Plane
+									(EFP) area for the simplified flight model. Using the Aerodynamic
+									Reference is for a higher-fidelity external flight model (EFM).
+									
+									With that in mind, the CH-47F's 8.8 value is wrong (or probably not 
+									used since the CH-47F probably calls an EFM).
+									
+									The EFP area for the CH-46D is ~2.3 m2.
+									
 								]]
-	fuselage_area 	= 5.6 ,    	-- Fuselage cross-section area (Sq.-Qubed-Law scaled based on ED's CH-47F's 8.8)
+	fuselage_area 	= 3.5,    	-- Equivalent Flat Plate Area (f): 2.3 - 3.5 m^2
 
 
 	-- TAIL CONFIGURATION --
@@ -236,6 +264,7 @@ return {
 									This parameter says "area," but I'm not so sure this is meant
 									to be the width * height of the rotor pylon. Here's what I can
 									get based on ED's CH-47F listing 3.45m as their parameter:
+									
 									
 									The Aft Pylon (Vertical Profile)
 
@@ -257,12 +286,13 @@ return {
 									Justification: The CH-46 aft pylon is shorter and narrower; it houses
 									smaller engines.
 								]]
-	tail_fin_area 	= 2.2,     	-- Under the assumptions above, equivalent vertical stabilizer "area" (orig. 3.2)
+	tail_fin_area 	= 2.2,     	-- Under the assumptions above, equivalent vertical stabilizer "area"
 	
 								--[[
 									This parameter says "area" just like the above for tail_fin_area, but as above
 									it's not the area you would naively assume. Here's what I can gather based
 									on ED's CH-47F listing 2.94m as their parameter:
+									
 									
 									The Fuel Sponsons (Horizontal Profile)
 
@@ -277,9 +307,9 @@ return {
 									small amount of lift and, more importantly, pitch damping (preventing the nose
 									from bobbing up and down).
 
-									Why 2.94 m2? The CH-47F has very large, widened fuel sponsons (much larger than
-									the CH-46). This value represents the total horizontal surface area of these
-									pods acting against the airflow.
+									Why does the CH-47F use 2.94 m2? The CH-47F has very large, widened fuel
+									sponsons (much larger than the CH-46). This value represents the total
+									horizontal surface area of these pods acting against the airflow.
 									
 									CH-46D estimate: 	~0.8 - 1.2		or		0.65 - 0.85 (0.74 recommended)
 									
@@ -292,11 +322,27 @@ return {
 									during forward flight, reducing the "porpoising" tendency found in the earlier
 									"D" models.
 								]]
-	tail_stab_area 	= 0.74,    	-- Under the assumptions above, equivalent horizontal stabilizer area (orig. 2.8)
+	tail_stab_area 	= 0.74,   	-- Under the assumptions above, equivalent horizontal stabilizer area (orig. 2.8)
 	
-								-- CG position (originally -5.2). Research says 194 - 214 inches aft of front rotor hub).
-								-- This seems to WANT the distance aft of the front rotor hub.
-	centering 		= -5.21,	-- -5.1816 puts it right in the middle of the recommended range but makes the model unstable.
+								--[[
+									CG position:	Research says 194 - 214 inches aft of front rotor hub).
+													194 - 214 inches corresponds to 4.9276 - 5.4356 meters
+													
+									Is this parameter the CG position aft of the front rotor hub?
+									
+									5.1816 puts it right in the middle of the recommended range but makes
+									the model unstable.
+													
+									I think real-world values will not work since this parameter is compounded by
+									the 3D model's geographic origin, which probably should be on the
+									recommended CG. Since it's not, we have to manually tune this until the
+									helicopter "flights correctly."
+								]]
+	centering 		= -5.393,	-- -5.38	seems to surge forward more than 5.39, but rotors do not intersect after landing
+								-- -5.39	still surges forward, but rotors do not intersect anything
+								-- -5.40 	seems like minor forward surge, rotors do not intersect. rocking before landing
+								-- -5.41	slight rocking before landing
+								-- -5.42	slight rocking, rotors intersect PRIFLY again
 
 
 	-- MOMENTS OF INERTIA (kg*m^2)
@@ -307,7 +353,7 @@ return {
 		simulation model for the CH-47B, and making the assumption the CH-47F has essentially the same mass
 		distribution and geometric inertia, we should get:
 		
-			{   R,     Y,	   P  }
+			{  R,      Y,	   P  }
 			{46100, 259000, 274550} for the real world CH-47B/F, and
 			{18000, 103000, 108000} for the real world CH-46D
 			
@@ -324,9 +370,9 @@ return {
 		
 			{46000,  76162, 80778} for their DCS CH-47F implementation.
 	
-		Taking ED's CH-47F values and transforming them yields these proposed CH-46D values:
+		Transforming ED's CH-47F values yields these proposed CH-46D values:
 		
-				{   R,    Y,     P  }
+				{  R,     Y,     P  }
 				{22428, 37133, 39384}
 			
 		These values are derived using a mass-geometric scaling factor of approximately 0.49, based on the
@@ -336,7 +382,7 @@ return {
 		because Russians.
 		
 		There are two choices:
-			1) MOI = {22428, 37133, 39384},		-- Scaled based on ED's CH-47F {roll, yaw, pitch} (DCS-ism)
+			1) MOI = {22428,  37133,  39384},	-- Scaled based on ED's CH-47F {roll, yaw, pitch} (DCS-ism)
 			2) MOI = {18000, 103000, 108000},	-- From NASA Technical Memorandum 84281 transformed to CH-46D's
 												   dimensions (real world)
 	]]
@@ -399,15 +445,15 @@ return {
 									
 									We'll pick "normal" to mean M_nominal.
 								]]
-	nose_gear_amortizer_direct_stroke 		= 0.0,		-- Full Strut Expansion (no weight on wheels)
-	nose_gear_amortizer_reversal_stroke 	= -0.300225,-- Full Strut Compression (maximum+ weight on wheels)
+	nose_gear_amortizer_direct_stroke 		=  0.0,		-- Full Strut Expansion (no weight on wheels) (arg 2)
+	nose_gear_amortizer_reversal_stroke 	= -0.300225,-- Full Strut Compression (maximum+ weight on wheels) (meters)
 	nose_gear_amortizer_normal_weight_stroke= -0.10,	-- Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
-	nose_gear_wheel_diameter 				= 0.5005,	-- Diameter of the nose gear wheel (meters)
+	nose_gear_wheel_diameter 				=  0.5005,	-- Diameter of the nose gear wheel (meters)
 
-	main_gear_amortizer_direct_stroke 		= 0.0,		-- Full Strut Expansion (no weight on wheels)
-	main_gear_amortizer_reversal_stroke 	= -0.29984,	-- Full Strut Compression (maximum+ weight on wheels)
+	main_gear_amortizer_direct_stroke 		=  0.0,		-- Full Strut Expansion (no weight on wheels) (args 4 and 6)
+	main_gear_amortizer_reversal_stroke 	= -0.29984,	-- Full Strut Compression (maximum+ weight on wheels) (meters)
 	main_gear_amortizer_normal_weight_stroke= -0.076,	-- Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
-	main_gear_wheel_diameter 				= 0.4892,	-- Diameter of the main gear wheels (meters)
+	main_gear_wheel_diameter 				=  0.4892,	-- Diameter of the main gear wheels (meters)
 	
 	
 	
@@ -601,12 +647,11 @@ return {
 		[2] = {Name = "HelicopterCarrier"},},
 	
 	-- CARGO CAPACITY
-	openRamp 		= 1,  		-- allow task for internal cargo transportation 
-	doors_movement 	= 2,		-- Enable custom doors mechanimations?
+	openRamp 		= 1,  		-- allow task for internal cargo transportation
 	
 	InternalCargo 	= {
-		nominalCapacity = 3175,		-- 7,000 lbs / 3,175 kg or 25 troops
-		maximalCapacity = 4100,		-- 10,000 lbs / 4,536 kg maximum, but setting to 9,000 lbs because of fuel
+		nominalCapacity = 2000,		-- A "normal" mission is typically 1,800 - 2,200 kg (4,000–5,000 lbs)
+		maximalCapacity = 3175,		-- 7,000 lbs / 3,175 kg or 25 troops
 		para_unit_point = 10,		-- Paratrooper capacity
 		unit_point 		= 18,		-- Troops capacity
 		area 			= {8.5, 1.8, 2.1}, 	-- Cargo bay dimensions (L×W×H)
@@ -779,14 +824,14 @@ return {
 	
 	
 	AddPropAircraft = {{		-- This adds a checkbox in the mission editor to fold blades
-            id = "FoldRotor",
-            control = 'checkbox' ,
-            label = _('Fold Main Rotor'),
-            defValue = false,
-            weightWhenOn = 0,
-            arg = 8,
-            wCtrl = 150
-        },},
+		id = "FoldRotor",
+		control = 'checkbox' ,
+		label = _('Fold Main Rotor'),
+		defValue = false,
+		weightWhenOn = 0,
+		arg = 8,
+		wCtrl = 150
+	},},
 		
 
     rotor_animation = {
@@ -817,9 +862,7 @@ return {
 			This block is a good balance between videos of real-world CH-46Ds and their rotor discs vs. what's possible with this DCS 3D model.
 			Also see: https://www.facebook.com/100063486350259/videos/the-boeing-vertol-ch-46-sea-knight-helicopter-startup-and-take-off/660384630169554/
 			And: https://www.youtube.com/watch?v=ewXiz2LHuuQ
-			
-			{pos = {5.006, 3.035, 0.0}, pitch = -math.rad(8.0)},    -- Forward rotor (8° forward tilt; experimentally determined to "look right")		-- DEBUG: old value
-			{pos = {-5.209, 4.440, 0.0}, pitch = -math.rad(5.5)},   -- Aft rotor (5.5° forward tilt; experimentally determined to "look right")			-- DEBUG: old value
+	
 			
 			{pos = { 5.07827, 3.04067, 0.0}, pitch = -math.rad(8.0)},    -- Forward rotor (8° forward tilt; experimentally determined to "look right")
 			{pos = {-5.18350, 4.45821, 0.0}, pitch = -math.rad(5.5)},   -- Aft rotor (5.5° forward tilt; experimentally determined to "look right")
@@ -864,7 +907,7 @@ return {
 			diameter 			= 0.55,		-- Mensurated the 3D model in ModelViewer in orthographic projection mode
 			exhaust_length_ab 	= 0.7,
 			exhaust_length_ab_K = 0.35,
-			smokiness_level 	= 0.12,
+			smokiness_level 	= 0.08,
 			engine_number 		= 1,
         }, -- end of [1]
         [2] = {
@@ -874,7 +917,7 @@ return {
 			diameter 			= 0.55,		-- Mensurated the 3D model in ModelViewer in orthographic projection mode
 			exhaust_length_ab	= 0.7,
 			exhaust_length_ab_K = 0.35,
-			smokiness_level 	= 0.12,
+			smokiness_level 	= 0.08,
 			engine_number 		= 2,
         }, -- end of [2]
     }, -- end of engines_nozzles
@@ -945,7 +988,7 @@ return {
 		SFC_k 		= {0.0, -1.2e-005, 0.36},	-- Specific fuel consumption
 		power_RPM_k 	= {-0.085, 0.24, 0.84}, -- Power vs RPM relationship
 		power_RPM_min 	= 9.0,
-		Nmg_Ready 		= 78.0,       			-- Flight idle Ng or N1 RPM (%)
+		Nmg_Ready 		= 78.0,       			-- Flight idle Ng RPM (%)
 				
 					--[[
 						The T58-GE-10 (used in the CH-46 Sea Knight and SH-3 Sea King) is notorious
@@ -1175,6 +1218,10 @@ return {
 		1005,			-- Search light pitch up/down
     },
 	
+	undercarriage_transmission 	= "Hydraulic",
+    undercarriage_movement 		= 0,		-- Default animations, not custom mechanimation tables
+	doors_movement 				= 2,		-- Enable custom doors mechanimations
+	
     mechanimations = {
 		
 		Door0 = {
@@ -1266,32 +1313,33 @@ return {
 			-- The beam width should be: 11 degrees wide and 12 degrees tall.
 		
 			-- Spotlight elevation angle: 	arg_value = 2 * (extension_angle_deg / 90 - 1) + 1; fully stowed is angle 0
-			{Transition = {"Any", "Retract"},   Sequence = {{C = {	{"Arg", 1004, "to",  0.0, "speed", 0.17},	-- Stow search light
-																	{"Arg", 1005, "to", -1.0, "speed", 0.157},
-																	{"Arg", 209,  "to",  0.0, "speed", 5.0},},},},},
+			{Transition = {"Any", "Retract"},   Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},	-- Stow search light
+																	{"Arg", 1005, "to", -1.0,  "speed", 0.157},
+																	{"Arg", 209,  "to",  0.0,  "speed", 5.0},},},},},
 																	
 			-- Extend search light forward 85.5 deg. That is, it will point 14.5 degrees down from straight ahead
-			{Transition = {"Any", "Taxi"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0, "speed", 0.17},
-																	{"Arg", 1005, "to",  0.88, "speed", 0.157},
-																	{"Arg", 209,  "to",  0.4, "speed", 2.0},},},},},
+			{Transition = {"Any", "Taxi"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
+																	{"Arg", 1005, "to",  0.90, "speed", 0.157},
+																	{"Arg", 209,  "to",  0.40, "speed", 2.0},},},},},
 			
 			-- Extend search light forward 60 deg. That is, it will point 30 degrees down from straight ahead
-			{Transition = {"Any", "High"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0, "speed", 0.17},
-																	{"Arg", 1005, "to",  1/3, "speed", 0.157},
-																	{"Arg", 209,  "to",  1.0, "speed", 2.0},},},},},
-																	
-			{Transition = {"Retract", "Taxi"}, 	Sequence = {{C = {	{"Arg", 209,"from", 0.0, "to", 1.0, "in", 10.0},
-																	{"Arg", 1005, "to", 0.88, "speed", 0.17},
-																	},},},Flags = {"Reversible"}},
-																	
+			{Transition = {"Any", "High"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
+																	{"Arg", 1005, "to",  1/3,  "speed", 0.157},
+																	{"Arg", 209,  "to",  1.0,  "speed", 2.0},},},},},
 			
-			{Transition = {"High", "Taxi"}, 	Sequence = {{C = {	{"Arg", 209, 			"to", 0.4,"speed", 2.0},
-																	{"Arg", 1005,"from",1/3,"to", 0.88, "in",  3.0},
+		--[[ Work for v2.4.0
+			{Transition = {"Retract", "Taxi"}, 	Sequence = {{C = {	{"Arg", 209,  "from", 0.0,"to", 0.40,"speed", 2.0},
+																	{"Arg", 1005, "to", 0.90, "speed", 0.17},
 																	},},},Flags = {"Reversible"}},
 																	
-			{Transition = {"Taxi", "High"}, 	Sequence = {{C = {	{"Arg", 209, 			 "to", 1.0, "speed", 2.0},
-																	{"Arg", 1005,"from",0.88,"to", 1/3, "speed", 0.157},
+			{Transition = {"High", "Taxi"}, 	Sequence = {{C = {	{"Arg", 209, 			  "to", 0.40,"speed", 2.0},
+																	{"Arg", 1005, "from", 1/3,"to", 0.90, "in",   3.0},
 																	},},},Flags = {"Reversible"}},
+																	
+			{Transition = {"Taxi", "High"}, 	Sequence = {{C = {	{"Arg", 209, 			  "to", 1.0, "speed", 2.0},
+																	{"Arg", 1005, "from",0.90,"to", 1/3, "speed", 0.157},
+																	},},},Flags = {"Reversible"}},
+		]]
 		},
     }, -- end of mechanimations
 
@@ -1356,11 +1404,13 @@ return {
 					},
 					--[[	
 						Even though the CH-46's aft pylon (the tail fin) slopes upward,
-						the beaconlight itself was not mounted flush with the sloping
+						the beacon light itself was not mounted flush with the sloping
 						skin. It was mounted on a leveling wedge or a pedestal base.
 						
-						The beam sweeps a 360° circle effectively horizontal to the
-						fuselage, rather than pointing up into the sky or down at the tail.
+						The beam sweeps a 360° circle on the same plane as the longitudinal
+						axis of the helicopter rather than pointing up into the sky or
+						down at the ground. The 3D model does not reflect this, but the 
+						connectors are oriented properly.
 					]]
 					{
 						typename = "RotatingBeacon", 						-- Fore dorsal red beacon just forward of rear rotor, 1/2 cycle out of phase with others
@@ -1397,7 +1447,7 @@ return {
 					{	-- searchlight (part of 3D model); since this is the first table, the corresponding
 						-- mechanimations are: SearchLight0Elevation and SearchLight0Panning
 						
-						typename = "Argument", argument = 209, movable = true, color = {1, 0.945, 0.8784},
+						-- Spotlight logic for the CH-46D handled by mechanimations.HeadLights
 					},
 				},
 			},
@@ -1405,8 +1455,18 @@ return {
             [WOLALIGHT_LANDING_LIGHTS] = {
 				-- This collection turns on for approach and landing, obviously.
                 typename = "Collection",
-                lights = {					
-					{typename = "Argument", argument = 209, movable = true, color = {1, 0.945, 0.8784},},
+                lights = {
+					-- Landing lights logic for CH-46D are handled by mechanimations.HeadLights
+					
+					-- {	typename = "Spot",
+						-- proto = lamp_prototypes.LFS_P_27_450,
+						-- movable = true,
+						-- color = {1, 0.945, 0.8784},
+						-- connector = "ch46_light_search_axis",
+						-- angle = math.rad(11.0),
+						-- emitter_angle_z = math.rad(12.0),
+						-- range = 1800,
+					-- },
                 },
             },
 			
@@ -1414,7 +1474,7 @@ return {
 				-- This collection turns on when taxiing around on the ground.
                 typename = "Collection",
                 lights = {
-					{typename = "Argument", argument = 209, movable = true, color = {1, 0.945, 0.8784},},
+					-- Taxi lights logic for CH-46D are handled by mechanimations.HeadLights
 				},
 			},
 			
@@ -1424,9 +1484,9 @@ return {
 				-- 	so they don't become balls of light at a distance -- only the 3D model can do that.
                 typename = "Collection",
 				lights = {
-					{typename = "Argument",argument = 190}, 				-- Left nagivation light (red)
-					{typename = "Argument",argument = 191}, 				-- Right navigation light (green)
-					{typename = "Argument",argument = 192}, 				-- White tail lights
+					{typename = "Argument", argument = 190}, 				-- Left nagivation light (red)
+					{typename = "Argument", argument = 191}, 				-- Right navigation light (green)
+					{typename = "Argument", argument = 192}, 				-- White tail lights
 					
 					{	-- Port (left) side position light (red)
 						typename = "Spot", position = { 2.231, 0.847568, -1.117 },
