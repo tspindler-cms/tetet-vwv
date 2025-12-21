@@ -1,0 +1,34 @@
+CCB "Charly"
+
+CCB
+
+Bezeichnung: Command and Communications Boat (oder Command Control Boat)
+Typ: Gepanzertes Flussfahrzeug für Führung und Kommunikation
+Entwickler: FMC Corporation (Umbau von LCM-6)
+Produziert: 1966-1970
+Anzahl produziert: *
+Besatzung: 11 Matrosen
+Hauptbewaffnung: 1 x Bofors L/60 40mm Kanone mit koaxialem .50 cal AN/M-2HB Maschinengewehr
+Sekundärbewaffnung: 3 x 20mm Mk 16 Kanonen (oder 2 x 20mm Mk 16 und 1 x Mk 19 40mm automatischer Granatwerfer), 2 x Mk 21 7,62mm Maschinengewehre, 1 x Mk 2 Mod 0 81mm Mörser
+Panzerung: 0,25-Zoll XAR-30 Stahlpanzerung, Stangenpanzerung gegen RPGs
+Kommunikationsausrüstung: Raytheon Pathfinder 1900N Radar, Decca Navigation, 6 x AN/VSC-46 Funkgerät, 3 x AN/GRC-106 Funkgerät, 1 x AN/PRC-25 Funkgerät, 1 x AN/ARC-27 Funkgerät
+
+Motor: 2 x Gray Marine 64HN9 Diesel
+Leistung: 450 PS (je 225 PS) bei 2.100 U/min
+Geschwindigkeit: 8 Knoten (ca. 14,8 km/h)
+Reichweite: *
+Verdrängung: 80 Short Tons
+Länge: 60,5 Fuß (18,4 m)
+Breite: 17,5 Fuß (5,3 m)
+Tiefgang: 3,5 Fuß (1,1 m)
+Besonderheit: Gefechtsführungszentrum (CIC) ersetzt Mörsergrube
+
+Geschichte:
+
+Das CCB diente als Flaggschiff für Fluss-Geschwader- und Divisionskommandeure sowie als Kommandoposten für Armeebataillone innerhalb der Mobile Riverine Force.
+Ähnlich dem Monitor zeichnete es sich durch sein anspruchsvolles Kommunikationszentrum aus, das mittschiffs anstelle des standardmäßigen 81mm Mörsers installiert war.
+Das CCB fungierte als zentrales taktisches Kontrollzentrum, das es Kommandanten ermöglichte, den gesamten Konvoi zu koordinieren und die Kommunikation mit Boden-, Luft- und Marineeinheiten aufrechtzuerhalten.
+Seine Radar- und Funkausrüstung ermöglichte es, aktuelle Missionsinformationen vom IV. Korps zu empfangen und an alle MRF-Geschwaderboote zu übermitteln, während gleichzeitig Gelände- und Kampfberichte von der Flottille empfangen wurden.
+Ende 1967 umfasste jedes Flussangriffsgeschwader 2 CCBs unter seinen Einheiten, die auf den 15.000 Quadratmeilen des Mekong-Deltas operierten.
+CCBs wurden gegen Ende der amerikanischen Beteiligung im Rahmen des Vietnamisierungsprogramms an die südvietnamesischen Streitkräfte übergeben.
+Das einzige bekannte überlebende CCB, CCB-18, ist auf der Naval Amphibious Base Coronado, Kalifornien, ausgestellt.

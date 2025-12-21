@@ -1,0 +1,34 @@
+CCB "Charly"
+
+CCB
+
+Désignation: Command and Communications Boat (ou Command Control Boat)
+Type: Embarcation blindée fluviale de commandement et communication
+Développeur: FMC Corporation (conversion depuis LCM-6)
+Produit: 1966-1970
+Nombre produit: *
+Équipage: 11 marins
+Armement principal: 1 x canon Bofors L/60 40mm avec mitrailleuse coaxiale .50 cal AN/M-2HB
+Armement secondaire: 3 x canons de 20mm Mk 16 (ou 2 x 20mm Mk 16 et 1 x lance-grenades automatique Mk 19 40mm), 2 x mitrailleuses Mk 21 7,62mm, 1 x mortier Mk 2 Mod 0 81mm
+Armure: Blindage en acier XAR-30 de 0,25 pouces, bar armor contre les RPG
+Équipement communication: Radar Raytheon Pathfinder 1900N, navigation Decca, 6 x radio AN/VSC-46, 3 x radio AN/GRC-106, 1 x radio AN/PRC-25, 1 x radio AN/ARC-27
+
+Motorisation: 2 x Gray Marine 64HN9 diesel
+Puissance: 450 hp (225 hp chaque) à 2 100 rpm
+Vitesse: 8 nœuds (environ 14,8 km/h)
+Autonomie: *
+Déplacement: 80 tonnes courtes
+Longueur: 60,5 pieds (18,4 m)
+Largeur: 17,5 pieds (5,3 m)
+Tirant d'eau: 3,5 pieds (1,1 m)
+Particularité: Centre de communication et d'information de combat (CIC) à la place du puits de mortier
+
+Histoire:
+
+Le CCB servait de vaisseau amiral pour les commandants d'escadron et de division fluviale ainsi que de poste de commandement pour les bataillons de l'armée au sein de la Mobile Riverine Force.
+Similaire au Monitor, il se distinguait par son centre de communications sophistiqué installé au milieu du navire à la place du mortier de 81mm standard.
+Le CCB agissait comme un hub central de contrôle tactique, permettant aux commandants de coordonner l'ensemble du convoi et de maintenir les communications avec les unités terrestres, aériennes et navales.
+Son équipement radar et radio lui permettait de recevoir les informations de mission à jour du IV Corps et de les transmettre à tous les navires de l'escadron MRF tout en recevant les rapports de terrain et de combat de la flottille.
+Fin 1967, chaque escadron d'assaut fluvial comptait 2 CCB parmi ses effectifs, opérant dans les 15 000 miles carrés du delta du Mékong.
+Les CCB ont été transférés aux forces sud-vietnamiennes vers la fin de l'implication américaine dans le cadre du programme de vietnamisation.
+Le seul CCB survivant connu, le CCB-18, est exposé à la Naval Amphibious Base Coronado en Californie.

@@ -1,0 +1,34 @@
+CCB "Charly"
+
+CCB
+
+Designation: Command and Communications Boat (or Command Control Boat)
+Type: Armored riverine command and communications craft
+Developer: FMC Corporation (conversion from LCM-6)
+Produced: 1966-1970
+Number Produced: *
+Crew: 11 sailors
+Main Armament: 1 x Bofors L/60 40mm cannon with coaxial .50 cal AN/M-2HB machine gun
+Secondary Armament: 3 x 20mm Mk 16 cannons (or 2 x 20mm Mk 16 and 1 x Mk 19 40mm automatic grenade launcher), 2 x Mk 21 7.62mm machine guns, 1 x Mk 2 Mod 0 81mm mortar
+Armor: 0.25-inch XAR-30 steel plating, bar armor against RPGs
+Communications Equipment: Raytheon Pathfinder 1900N radar, Decca navigation, 6 x AN/VSC-46 radio, 3 x AN/GRC-106 radio, 1 x AN/PRC-25 radio, 1 x AN/ARC-27 radio
+
+Engine: 2 x Gray Marine 64HN9 diesel
+Horsepower: 450 hp (225 hp each) at 2,100 rpm
+Speed: 8 knots (approx. 14.8 km/h)
+Range: *
+Displacement: 80 short tons
+Length: 60.5 feet (18.4 m)
+Beam: 17.5 feet (5.3 m)
+Draft: 3.5 feet (1.1 m)
+Special Feature: Combat Information Center (CIC) replacing the mortar pit
+
+History:
+
+The CCB served as flagship for river squadron and division commanders as well as command post for Army battalions within the Mobile Riverine Force.
+Similar to the Monitor, it was distinguished by its sophisticated communications center installed amidships in place of the standard 81mm mortar.
+The CCB acted as a central tactical control hub, enabling commanders to coordinate the entire convoy and maintain communications with ground, air, and naval units.
+Its radar and radio equipment allowed it to receive up-to-date mission information from IV Corps and transmit it to all MRF squadron boats while receiving terrain and combat reports from the flotilla.
+By the end of 1967, each river assault squadron included 2 CCBs among its assets, operating throughout the 15,000 square miles of the Mekong Delta.
+CCBs were transferred to South Vietnamese forces toward the end of American involvement as part of the Vietnamization program.
+The only known surviving CCB, CCB-18, is on display at Naval Amphibious Base Coronado, California.

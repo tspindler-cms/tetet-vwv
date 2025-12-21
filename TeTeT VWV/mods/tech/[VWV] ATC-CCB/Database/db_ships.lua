@@ -39,7 +39,7 @@ end
 
 -- Ships --
 
-ship_file("/Database/Navy/ATCH.lua")
-ship_file("/Database/Navy/ATCH_Heavy.lua")
+ship_file("/Database/Navy/ATC-H.lua")
+ship_file("/Database/Navy/ATC-H_Heavy.lua")
 
 ship_file("/Database/Navy/CCB.lua")

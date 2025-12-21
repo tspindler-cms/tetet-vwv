@@ -1,0 +1,34 @@
+ATC(H) "Tango"
+
+ATC-H
+
+Bezeichnung: Armored Troop Carrier (Helicopter)
+Typ: Gepanzertes Flussfahrzeug mit Hubschrauberlandeplattform
+Entwickler: FMC Corporation (Umbau von LCM-6)
+Produziert: 1967-1970
+Anzahl produziert: *
+Besatzung: 7 Matrosen
+Hauptbewaffnung: 1 x 20mm Mk 16 Kanone
+Sekundärbewaffnung: 2 x Browning M2 .50 cal (12,7mm) schwere Maschinengewehre, 4 x M60 7,62mm Maschinengewehre, 2 x Mk 18 Granatwerfer (oder 1 x Mk 19 40mm automatischer Granatwerfer)
+Panzerung: 0,25-Zoll XAR-30 Stahlpanzerung, Stangenpanzerung gegen RPGs
+Transportkapazität: 40 Soldaten oder 1 x M113 APC oder 1 x 105mm Haubitze mit Zugfahrzeug
+
+Motor: 2 x Gray Marine 64HN9 Diesel
+Leistung: 450 PS (je 225 PS)
+Geschwindigkeit: 8,5 Knoten (ca. 15,7 km/h)
+Reichweite: 110 Seemeilen (ca. 204 km)
+Kraftstoffkapazität: 450 US-Gallonen Diesel
+Verdrängung: 66 Short Tons
+Länge: 56,5 Fuß (17,2 m)
+Breite: 17,5 Fuß (5,3 m)
+Tiefgang: 3,5 Fuß (1,1 m)
+Besonderheit: Stählerne Hubschrauberlandeplattform ersetzt Vinyldeck-Abdeckung
+
+Geschichte:
+
+Das ATC(H) war eine spezialisierte Variante des Armored Troop Carrier, die von der Mobile Riverine Force in Vietnam eingesetzt wurde.
+Als "kleinster Flugzeugträger der Welt" bezeichnet, zeichnete sich das ATC(H) durch seine stählerne Hubschrauberlandeplattform aus, die die Vinyldeck-Abdeckung der frühen ATCs ersetzte.
+Diese Modifikation ermöglichte es UH-1D "Huey" Hubschraubern, direkt auf dem Fahrzeug zu landen, um während Flussoperationen im Mekong-Delta verwundete Soldaten schnell zu evakuieren.
+Einige Einheiten dienten auch als vorgeschobene Sanitätsstationen.
+Die Umbauten mit Hubschrauberlandeplattform wurden hauptsächlich in Dong Tam durchgeführt und rüsteten die neueren River Assault Divisions (RivDiv 13 und 15) aus.
+Diese Fahrzeuge operierten zwischen 1967 und 1970 auf den 3.000 Kilometern schiffbarer Wasserwege im Mekong-Delta, bevor sie im Rahmen des Vietnamisierungsprogramms an die südvietnamesische Marine übergeben wurden.

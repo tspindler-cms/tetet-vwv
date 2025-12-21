@@ -1,0 +1,33 @@
+ATC(H) "Tango"
+
+ATC-H
+
+Designation: Armored Troop Carrier (Helicopter)
+Type: Armored riverine craft with helicopter platform
+Developer: FMC Corporation (conversion from LCM-6)
+Produced: 1967-1970
+Number Produced: *
+Crew: 7 sailors
+Main Armament: 1 x 20mm Mk 16 cannon
+Secondary Armament: 2 x Browning M2 .50 cal (12.7mm) heavy machine guns, 4 x M60 7.62mm machine guns, 2 x Mk 18 grenade launchers (or 1 x Mk 19 40mm automatic grenade launcher)
+Armor: 0.25-inch XAR-30 steel plating, bar armor against RPGs
+Transport Capacity: 40 soldiers or 1 x M113 APC or 1 x 105mm howitzer with prime mover
+
+Engine: 2 x Gray Marine 64HN9 diesel
+Horsepower: 450 hp (225 hp each)
+Speed: 8.5 knots (approx. 15.7 km/h)
+Range: 110 nautical miles (approx. 204 km)
+Fuel Capacity: 450 US gallons of diesel
+Displacement: 66 short tons
+Length: 56.5 feet (17.2 m)
+Beam: 17.5 feet (5.3 m)
+Draft: 3.5 feet (1.1 m)
+Special Feature: Steel helicopter platform replacing vinyl deck cover
+
+History:
+
+The ATC(H) was a specialized variant of the Armored Troop Carrier used by the Mobile Riverine Force in Vietnam.
+Nicknamed "the world's smallest aircraft carrier," the ATC(H) was distinguished by its steel helicopter platform that replaced the vinyl deck cover of early ATCs.
+This modification allowed UH-1D "Huey" helicopters to land directly on the craft for rapid medical evacuation of wounded during riverine operations in the Mekong Delta.
+Some units also served as forward aid stations. Helicopter platform conversions were primarily performed at Dong Tam and equipped the newer River Assault Divisions (RivDiv 13 and 15).
+These craft operated throughout the 3,000 kilometers of navigable waterways in the Mekong Delta between 1967 and 1970, before being transferred to the South Vietnamese Navy as part of the Vietnamization program.

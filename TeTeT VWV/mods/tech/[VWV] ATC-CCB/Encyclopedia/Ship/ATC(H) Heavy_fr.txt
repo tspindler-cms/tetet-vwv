@@ -1,0 +1,34 @@
+ATC(H) "Tango Heavy"
+
+ATC-H_Heavy
+
+Désignation: Armored Troop Carrier (Helicopter)
+Type: Embarcation blindée fluviale avec plateforme héliportée
+Développeur: FMC Corporation (conversion depuis LCM-6)
+Produit: 1967-1970
+Nombre produit: *
+Équipage: 7 marins
+Armement principal: 1 x canon de 20mm Mk 16
+Armement secondaire: 2 x mitrailleuses lourdes Browning M2 .50 cal (12,7mm), 4 x mitrailleuses M60 7,62mm, 2 x lance-grenades Mk 18 (ou 1 x lance-grenades automatique Mk 19 40mm)
+Armure: Blindage en acier XAR-30 de 0,25 pouces, bar armor contre les RPG
+Capacité transport: 40 soldats ou 1 x M113 APC ou 1 x obusier 105mm avec tracteur
+
+Motorisation: 2 x Gray Marine 64HN9 diesel
+Puissance: 450 hp (225 hp chaque)
+Vitesse: 8,5 nœuds (environ 15,7 km/h)
+Autonomie: 110 milles nautiques (environ 204 km)
+Consommation: 450 gallons US de diesel
+Déplacement: 66 tonnes courtes
+Longueur: 56,5 pieds (17,2 m)
+Largeur: 17,5 pieds (5,3 m)
+Tirant d'eau: 3,5 pieds (1,1 m)
+Particularité: Plateforme héliportée en acier remplaçant le pont en vinyle
+
+Histoire:
+
+L'ATC(H) était une variante spécialisée de l'Armored Troop Carrier utilisée par la Mobile Riverine Force au Vietnam.
+Surnommé "le plus petit porte-avions du monde", l'ATC(H) se distinguait par sa plateforme héliportée en acier qui remplaçait la couverture en vinyle du pont des premiers ATC.
+Cette modification permettait aux hélicoptères UH-1D "Huey" d'atterrir directement sur l'embarcation pour l'évacuation médicale rapide des blessés pendant les opérations fluviales dans le delta du Mékong.
+Certaines unités ont également servi de postes de soins avancés.
+Les conversions avec plateforme héliportée ont principalement été effectuées à Dong Tam et ont équipé les River Assault Divisions plus récentes (RivDiv 13 et 15).
+Ces embarcations ont opéré dans les 3 000 kilomètres de voies navigables du delta du Mékong entre 1967 et 1970, avant d'être transférées à la marine sud-vietnamienne dans le cadre du programme de vietnamisation.

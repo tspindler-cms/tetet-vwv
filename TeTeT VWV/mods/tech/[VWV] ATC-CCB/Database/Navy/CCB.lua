@@ -6,63 +6,41 @@ GT_t.ws = 0;
 set_recursive_metatable(GT, GT_t.generic_ship)
 
 GT.visual = {}
-GT.visual.shape = "CCB"
-GT.visual.shape_dstr = ""
+GT.visual.shape 		= "CCB"
+GT.visual.shape_dstr	= ""
 
-GT.life = 120
-GT.mass = 80000
-GT.max_velocity = 4.37242
-GT.race_velocity = 4.11556
-GT.economy_velocity = 2.57201
-GT.economy_distance = 1.59272e+007
-GT.race_distance = 1.59272e+007
-GT.shipLength = 17.5
-GT.Width = 5.5
-GT.Height = 4.5
-GT.Length = 17.5
-GT.DeckLevel = 1.26
-GT.X_nose = 8.5
-GT.X_tail = -8.5
-GT.Tail_Width = 6
-GT.Gamma_max = 0.35
-GT.Om = 0.05
-GT.speedup = 1.1814062
-GT.R_min = 25.0
-GT.distFindObstacles = 40.0
-
+GT.life 				= 120
+GT.mass 				= 80000
+GT.max_velocity 		= 4.37242
+GT.race_velocity 		= 4.11556
+GT.economy_velocity 	= 2.57201
+GT.economy_distance 	= 1.59272e+007
+GT.race_distance 		= 1.59272e+007
+GT.shipLength 			= 17.5
+GT.Width 				= 5.5
+GT.Height 				= 4.5
+GT.Length 				= 17.5
+GT.DeckLevel 			= 1.26
+GT.X_nose 				= 8.5
+GT.X_tail 				= -8.5
+GT.Tail_Width 			= 6
+GT.Gamma_max 			= 0.35
+GT.Om 					= 0.05
+GT.speedup 				= 1.1814062
+GT.R_min 				= 25.0
+GT.distFindObstacles	= 40.0
 
 ----------------------------------------------------------------------------------------
-
-GT.exhaust = {[1] = { size = 0.00 , pos = {-8.569 ,0.989, 1.126 } }}; --y,z,x}
+GT.exhaust = {[1] = { size = 0.00 , pos = {-8.569 ,0.989, 1.126 }}}; --y,z,x}
 GT.airWeaponDist = 3000
 GT.airFindDist = 5000
 
 GT.DM = {
---{ area_name = "NOSE_R", 	area_arg = 70, area_life = 55, area_fire = { pos = {18.0,2.3,2.3}, size = 0.3}},
---{ area_name = "BORT_R", 	area_arg = 71, area_life = 55, area_fire = { pos = {-3.0,1.0,5.0}, size = 0.3}},
---{ area_name = "KORMA_R", 	area_arg = 72, area_life = 55, area_fire = { pos = {-17.5,1.2,4.7}, size = 0.3}},
---{ area_name = "NOSE_L", 	area_arg = 73, area_life = 55, area_fire = { pos = {18.0,2.2,-2.3}, size = 0.3}},
---{ area_name = "BORT_L", 	area_arg = 74, area_life = 55, area_fire = { pos = {-3.0,1.0,-5.0}, size = 0.3}},
-{ area_name = "damage_deck", 	area_arg = 75, area_life = 55, area_fire = { pos = {-5.5,1.0,0.7}, size = 0.3}},
-{ area_name = "turret_damage", 	area_arg = 76, area_life = 100, area_fire = { pos = {6.5,2.5,0.0}, size = 0.5}},
---{ area_name = "RUBKA", 		area_arg = 77, area_life = 44, area_fire = { pos = {0.0, 9.5, 0.0}, size = 0.5}},
---{ area_name = "NADSTROYKA",	area_arg = 78, area_life = 55, area_fire = { pos = {-19.0, 4.0, 0.0}, size = 1.0}},
---{ area_name = "TOWER_F", 	area_arg = 97, area_life = 33, area_fire = { pos = {14.5, 5.0, 0.0}, size = 0.5}},
---{ area_name = "ZA_01", 		area_arg = 99, area_life = 27, area_fire = { pos = {-15.85,6.76,2.27}, size = 0.5}},
---{ area_name = "ZA_02", 		area_arg = 100, area_life = 27,area_fire = { pos = {-15.85,6.76,-2.27}, size = 0.5}},
---{ area_name = "TPK_01_R", 	area_arg = 109, area_life = 16, area_fire = { pos = {-3.0,6.0,4.5}, size = 0.4}},
---{ area_name = "TPK_02_L", 	area_arg = 110, area_life = 16, area_fire = { pos = {-3.0,6.0,-4.5}, size = 0.4}},
-	}
-
---GT.sensor = {};
---set_recursive_metatable(GT.sensor, GT_t.SN_visual);
---GT.sensor.height = 2.723;
---GT.sensor.max_range_finding_target = 3000;
+			{ area_name = "damage_deck", 	area_arg = 75, area_life = 55, area_fire = { pos = {-5.5,1.0,0.7}, size = 0.3}},
+			{ area_name = "turret_damage", 	area_arg = 76, area_life = 100, area_fire = { pos = {6.5,2.5,0.0}, size = 0.5}},
+		}
 
 ----------------------------------------------------------------------------------------
-
--- weapon systems
-	
 GT.WS = {};
 GT.WS.maxTargetDetectionRange = 5000;
 GT.WS.radar_type = 102
@@ -163,6 +141,3 @@ GT.attribute = {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmo
 GT.Categories = {{name = "Armed Ship"},};
 GT.Countries = { "USA",};
 GT.riverCraft = true
-
-
-add_surface_unit(GT)
