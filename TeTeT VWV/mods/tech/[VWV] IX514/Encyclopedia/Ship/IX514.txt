@@ -1,0 +1,42 @@
+IX-514 Helicopter Landing Trainer (HLT)
+Ship/IX514.png
+
+Type: 		Helicopter Landing Trainer (HLT)
+Complement:	1 officer, 22 enlisted 
+Displacement:   220 tons, 380 tons (Full)
+Length:		131 FT 
+Beam: 	  	36 FT, max
+Draft:		5 FT
+Dead Weight:	160 tons
+Steel Hull:	steel superstructure
+Propulsion:	2 Detroit Diesel 471 Series, 115Kw 185A generators, twin shafts 
+Speed, knots: 	9 kts. max 
+
+The Helicopter Landing Trainer (HLT), IX-514, began operations in April 1986 
+as a cost-effective training vessel, greatly needed to provide student Naval 
+Aviators with underway single-spot deck landing qualifications. 
+The HLT relieved the USS LEXINGTON (AVT-16) of rotary-wing training requirements 
+and provided a realistic training environment. 
+
+All helicopter pilots are familiar with the flatbed truck of a landing surface 
+known as IX-514. This less-than-formidable, deck-landing trainer patrolled 
+the calm waters of Santa Rosa Bay and offered aspiring aviators their first 
+taste of a landing surface that wasn't stationary. 
+
+IX-514 set a new single-day record on 10 June 1988 with 346 landings. 
+Since being assigned to NAS Pensacola, Fla., in 1986, 
+the 131-foot Vietnam-era yard freight utility craft had completed 
+64,159 mishap-free helicopter landings. Civilian contractor Seaward Services, 
+Inc., Fort Lauderdale, Fla., took over operations of 
+the helicopter landing trainer IX-514 at NAS Pensacola, Fla., on 17 December 2000. 
+
+--Laid down, 28 December 1967, at Pacific Coast Engineering Co., Alameda, CA.
+--Launched, 29 May 1968
+--Acquired by the US Navy in 1968 and placed in service as YFU-79
+--Assigned to 3rd Boat Group, Lighterage Division, NSA DaNang during her Vietnam service
+--Transferred to the US Army 329th Heavy Boat Co. at Da Nang, South Vietnam circa May-June 1970
+--Evacuated to Guam circa 1974-75
+--Returned to US Navy control circa mid-1980s
+--Converted to a landing ship for training helicopter pilots at Bender Shipyard, Mobile AL. in 1986
+--Placed in service, 31 March 1986 as Miscellaneous Unclassified IX-514
+--IX-514 is homeported at NAS Pensacola, FL. 

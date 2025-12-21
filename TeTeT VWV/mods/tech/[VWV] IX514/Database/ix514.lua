@@ -1,0 +1,134 @@
+-- Config modified by TeTeT for VWV
+-- IX514
+GT = {};
+GT_t.ws = 0;
+
+set_recursive_metatable(GT, GT_t.generic_ship)
+
+GT.animation_arguments.radar1_rotation = 2;
+GT.radar1_period = 3;
+GT.animation_arguments.radar2_rotation = 3;
+GT.radar2_period = 2;
+GT.animation_arguments.luna_lights = -1;
+
+GT.visual = {}
+GT.visual.shape = "ix514"
+GT.visual.shape_dstr = ""
+
+GT.life = 400
+GT.mass = 160000
+GT.max_velocity = 7.20222
+GT.race_velocity = 6.17333
+GT.economy_velocity = 6.17333
+GT.economy_distance = 1.59272e+007
+GT.race_distance = 1.59272e+007
+GT.shipLength = 40.0
+GT.Width = 11
+GT.Height = 14
+GT.Length = 43.5
+GT.DeckLevel = 1.68
+GT.X_nose = 25.214
+GT.X_tail = -12.35
+GT.Tail_Width = 11
+GT.Gamma_max = 0.35
+GT.Om = 0.05
+GT.speedup = 0.0814062
+GT.R_min = 212.4
+GT.distFindObstacles = 150.6
+
+GT.numParking = 1
+GT.Plane_Num_ = 0
+GT.Helicopter_Num_ = 1
+GT.Landing_Point = {-2.16, 3.57, 0.0}
+
+--GT.LSOPosition = {81.236, 24.0, 28.497, 10.0, 0.0} 
+
+--GT.exhaust = 
+--{
+--	[1] = { size = 0.15 , pos = {-12 ,7.9, 4 } },
+--				 }
+
+GT.airWeaponDist = 3000
+GT.airFindDist = 5000
+
+-- weapon systems
+
+GT.WS = {};
+GT.WS.maxTargetDetectionRange = 5000;
+GT.WS.radar_type = 102
+--GT.WS.fire_on_march = true;
+GT.animation_arguments.alarm_state = 9;
+GT.animation_arguments.luna_lights = -1;
+
+--M60 1 right
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].angles = {
+		{math.rad(-35), math.rad(-145), math.rad(-9), math.rad(45)},
+		};
+GT.WS[ws].reference_angle_Y = math.rad(-90);
+GT.WS[ws].reference_angle_Z = math.rad(20);
+GT.WS[ws].center = 'Center_M60_1'
+GT.WS[ws].drawArgument1 = 29
+GT.WS[ws].drawArgument2 = 30
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_M240C);
+__LN.type = 10;
+__LN.BR[1].connector_name = 'PointM60_1'
+__LN.fireAnimationArgument = 129;
+
+--M60 1 left
+ws = GT_t.inc_ws();
+GT.WS[ws] = {}
+GT.WS[ws].angles = {
+		{math.rad(145), math.rad(35), math.rad(-9), math.rad(45)},
+		};
+GT.WS[ws].reference_angle_Y = math.rad(90);
+GT.WS[ws].reference_angle_Z = math.rad(20);
+GT.WS[ws].center = 'Center_M60_2'
+GT.WS[ws].drawArgument1 = 32
+GT.WS[ws].drawArgument2 = 33
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_M240C);
+__LN.type = 10;
+__LN.BR[1].connector_name = 'PointM60_2'
+__LN.fireAnimationArgument = 141;
+
+GT.Name = "[VWV] IX514 (unarmed)"
+GT.DisplayName = _("[VWV] IX514 (unarmed)")
+GT.DisplayNameShort = _("IX514 (unarmed)")
+GT.Rate = 700
+
+GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR",},
+				RADAR = {
+					"Patriot str",
+					"ticonderoga search radar",
+				}
+		};
+GT.DetectionRange  = GT.airFindDist;
+GT.ThreatRange = GT.airWeaponDist;
+GT.Singleton   ="no";
+GT.mapclasskey = "P0091000065";
+GT.attribute = {wsType_Navy,wsType_Ship,wsType_ArmedShip,TICONDEROGA,
+					"Cruisers",
+					"RADAR_BAND1_FOR_ARM",
+					"DetectionByAWACS",
+				};
+GT.Categories = {
+					{name = "Armed Ship"},
+					{name = "HelicopterCarrier"}
+};
+				                
+GT.Countries = { "USA",};
+add_surface_unit(GT)
+
+
+	
+	
+	
+	
+	
+	
+	
+					
+	
+	
+

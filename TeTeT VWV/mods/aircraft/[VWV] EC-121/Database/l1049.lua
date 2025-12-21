@@ -95,18 +95,16 @@ return
 	IR_emission_coeff_ab = 0,
 	
 	-- STARTUP SEQUENCE
-	engines_startup_sequence = {2, 1, 0, 3}, -- Inner engines first (standard procedure)
+	engines_startup_sequence 	= { 2, 3, 1, 0 },
 	engines_count				= 4, -- Engines count
-	sound_name	=	"Aircrafts/Engines/RollsRoyceMerlin/Engine",
-
-
+	sound_name					= "Aircrafts/Engines/RollsRoyceMerlin/Engine",
 
 	wing_type 					= 0,
 	wing_tip_pos 				= {-2.1478,	1.114, 18.5182}, -- wingtip coords for visual effects
 
 	nose_gear_pos				= {14.6869, -3.483, 0},
 	main_gear_pos 				= {1.6139, -3.6688, 4.1448},
-	tand_gear_max 				= 0.60,  -------- distance between main gears in m
+	tand_gear_max				=	math.tan(math.rad(60)),
 
 	nose_gear_wheel_diameter 	= 0.755, -- in m
 	main_gear_wheel_diameter 	= 1.342, -- in m
@@ -118,47 +116,46 @@ return
 	is_tanker 					= false, -- Tanker yes/no
 	air_refuel_receptacle_pos 	= {0, 0, 0}, -- refuel coords
 
-
 	engines_nozzles = {
 		[1] =
 		{
 			pos =     {4.0,  0, -9.0}, -- nozzle coords forward/back,up/down,left/right
-            elevation    =    0.0, -- AFB cone elevation
-            diameter    =    0.0, -- AFB cone diameter
-            exhaust_length_ab    =    -3, -- lenght in m
-            exhaust_length_ab_K    =   0.607, -- AB animation
-            smokiness_level     =     0.05,
-			engine_number = 1
+            elevation    		=   0.0, -- AFB cone elevation
+            diameter    		=   0.0, -- AFB cone diameter
+            exhaust_length_ab   =   2.25, -- lenght in m
+            exhaust_length_ab_K =	0.607, -- AB animation
+            smokiness_level     =   0.05,
+			engine_number 		= 	1
 		},
 		[2] =
 		{
 			pos =     {4.55,  0, -4.2}, -- nozzle coords forward/back,up/down,left/right
-            elevation    =    0.0, -- AFB cone elevation
-            diameter    =    0.0, -- AFB cone diameter
-            exhaust_length_ab    =    -3, -- lenght in m
-            exhaust_length_ab_K    =   0.607, -- AB animation
-            smokiness_level     =     0.05,
-			engine_number = 2
+            elevation    		=	0.0, -- AFB cone elevation
+            diameter    		=	0.0, -- AFB cone diameter
+            exhaust_length_ab   =	2.25, -- lenght in m
+            exhaust_length_ab_K =   0.607, -- AB animation
+            smokiness_level     =	0.05,
+			engine_number 		= 	2
 		},
 		[3] =
 		{
 			pos =     {4.55,  0, 4.2}, -- nozzle coords forward/back,up/down,left/right
-            elevation    =    0.0, -- AFB cone elevation
-            diameter    =    0.0, -- AFB cone diameter
-            exhaust_length_ab    =    3, -- lenght in m
-            exhaust_length_ab_K    =    0.607, -- AB animation
-            smokiness_level     =     0.05,
-			engine_number = 3
+            elevation    		=	0.0, -- AFB cone elevation
+            diameter    		=	0.0, -- AFB cone diameter
+            exhaust_length_ab   =	2.25, -- lenght in m
+            exhaust_length_ab_K =	0.607, -- AB animation
+            smokiness_level     =	0.05,
+			engine_number 		= 	3
 		},
 		[4] =
 		{
 			pos =     {4.0,  0, 9.0}, -- nozzle coords forward/back,up/down,left/right
-            elevation    =    0.0, -- AFB cone elevation
-            diameter    =    0.0, -- AFB cone diameter
-            exhaust_length_ab    =    3, -- lenght in m
-            exhaust_length_ab_K    =    0.607, -- AB animation
-            smokiness_level     =     0.05,
-			engine_number = 4
+            elevation    		=	0.0, -- AFB cone elevation
+            diameter    		=	0.0, -- AFB cone diameter
+            exhaust_length_ab   =	2.25, -- lenght in m
+            exhaust_length_ab_K =	0.607, -- AB animation
+            smokiness_level     =	0.05,
+			engine_number 		= 	4
 		},
 	}, -- end of engines_nozzles
 ---------------------------------------------------------------------------------
