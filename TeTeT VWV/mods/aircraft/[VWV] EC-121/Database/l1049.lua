@@ -5,12 +5,14 @@ return
 	Name 				=   'vwv_l-1049',
 	DisplayName			= _('[VWV] L-1049 Super Constellation'),
 	DisplayNameShort    = _('L-1049'),
-
+	date_of_introduction= 1950.10,
 	HumanCockpit 		= false,
 
 	Picture 			= current_mod_path..'/Textures/ec121_warning_star.png',
 	Rate 				= 40, -- RewardPoint in Multiplayer
 	Shape 				= "ec121",
+	WorldID             = WSTYPE_PLACEHOLDER,
+	defFuelRatio    	= 0.8, -- fuel default in fractions of the full (1.0)
 	propellorShapeType  = "3ARG_PROC_BLUR",
     propellorShapeName  = "ec121_blade.fbx",
 	shape_table_data 	=

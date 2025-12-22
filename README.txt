@@ -111,6 +111,7 @@ Thanks
     CrazyEddie - L-1049 (EC-121 Hack) and CH-46D liveries
     upuaut - donation of his IX514, Tango and Charly boats
     Fredy - maintaining upaut's legacy boats
+    Urbi - textures for EC-121, H-2, and CH-46D
 
 Without these persons the mod would not have been possible!
 
@@ -129,6 +130,7 @@ Known Limitations
 
 CVA-31 Bon Homme Richard
     - Player controlled helicopters slightly move forward on the flight deck
+    - Landing groups of helicopters is awkward, with the first helo despawning right away
 F-8 Crusader
     - Aircraft is intended as static and for limited AI operations
     - Player control is experimental at best, but largely untested and unsupported
@@ -168,6 +170,7 @@ CVAN-65 Enterprise
     - Probable inability to sync INS when taking off cold 
     - RA-5C and F-14 Tomcat slightly too large for safe aircraft operations when taxiing
     - The shoot power of the catapults seems insufficient at times
+    - Helicopter landing is more or less broken
 RF-101B Voodoo
   - The landing gear doors and covers don't close perfectly
   - The landing gear suspension is not animated
