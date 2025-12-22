@@ -9,7 +9,7 @@ declare_plugin(self_ID,
 
 	fileMenuName = _("EC-121 Warning Star"),
 	update_id    = "ec121_warningStar",
-	version		 = "2.2.2",
+	version		 = "2.3.0",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Lockheed EC-121 Warning Star is an American airborne early warning and control radar surveillance aircraft operational in the 1950s in both the United States Navy (USN) and United States Air Force (USAF)."),
 	creditsFile = "credits.txt",

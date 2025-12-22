@@ -7,7 +7,7 @@ declare_plugin("tetet_PBR_MKII",
 
     encyclopedia_path = current_mod_path..'/Encyclopedia',
 
-    version		 	= "2.2.0",
+    version		 	= "2.3.0",
     state		 	= "installed",
     fileMenuName  =   _("vwv_pbr_mkii"),
     developerName =   "TeTeT",

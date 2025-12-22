@@ -7,7 +7,7 @@ declare_plugin("tetet_ch46d",
 
     encyclopedia_path = current_mod_path..'/Encyclopedia',
     fileMenuName = _("CH-46D Sea Knight"),
-    version = "2.2.2",
+    version = "2.3.0",
     state = "installed",
     developerName = "TeTeT, Odyseus",
     info = _("Wikipedia: The Boeing Vertol CH-46 Sea Knight is an American medium-lift tandem-rotor transport helicopter powered by twin turboshaft engines."),
