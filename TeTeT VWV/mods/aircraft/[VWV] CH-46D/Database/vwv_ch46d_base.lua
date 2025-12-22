@@ -1075,17 +1075,20 @@ return {
             --   Notes: MTOW is ~11,000kg (~108,000 N). Thrust must exceed this for Hover.
             --   Thrust drops as speed increases (Power = Force * Velocity)
 			
-                {0.0,     130000.0}, 	-- Hover Static Thrust (Allows Vertical Takeoff)
-                {0.1,     105000.0}, 	-- Transition
-                {0.2,      75000.0}, 	-- Cruise Speed (~130 kts) - Drag equilibrium
-                {0.3,      45000.0}, 	-- High Speed / Vne
-                {0.4,      25000.0}, 	-- Aerodynamic Limit
-                {0.5,      10000.0}, 	-- Theoretical limit
-                {0.6,       5000.0},
-                {0.7,          0.0},
-                {0.8,          0.0},
-                {0.9,          0.0},
-                {1.0,          0.0},
+                {0.0,  130000.0},  -- Hover Static Thrust
+				{0.05,  95000.0},  -- Low speed transition
+				{0.1,   65000.0},  -- Effective translational lift region
+				{0.15,  40000.0},  -- Approaching best cruise speed
+				{0.2,   28000.0},  -- Cruise Speed (~125 kts)
+				{0.25,  20000.0},  -- Fast cruise
+				{0.3,   12000.0},  -- High Speed / Vne
+				{0.4,    5000.0},  -- Aerodynamic Limit
+				{0.5,    2000.0},  -- Theoretical limit
+                {0.6,    1000.0},
+                {0.7,       0.0},
+                {0.8,       0.0},
+                {0.9,       0.0},
+                {1.0,       0.0},
             },
         }, -- end of engine
     },
@@ -1219,6 +1222,7 @@ return {
     },
 	
 	undercarriage_transmission 	= "Hydraulic",
+	doors_transmission 			= "Hydraulic",
     undercarriage_movement 		= 0,		-- Default animations, not custom mechanimation tables
 	doors_movement 				= 2,		-- Enable custom doors mechanimations
 	
@@ -1643,7 +1647,7 @@ return {
 						proto = lamp_prototypes.HS_2A,
 						position = { 2.213394, 1.684508, 0 },
 						intensity_max = 8.0,
-						{1, 214/255, 170/255},
+						color = {1, 214/255, 170/255},
 						range = 2,
                     },
 					
@@ -1661,7 +1665,7 @@ return {
 						proto = lamp_prototypes.HS_2A,
 						position = { 0.573959, 1.683662, 0 },
 						intensity_max = 8.0,
-						{1, 214/255, 170/255},
+						color = {1, 214/255, 170/255},
 						range = 2,
                     },
 					
@@ -1679,7 +1683,7 @@ return {
 						proto = lamp_prototypes.HS_2A,
 						position = { -1.041669, 1.697513, 0 },
 						intensity_max = 8.0,
-						{1, 214/255, 170/255},
+						color = {1, 214/255, 170/255},
 						range = 2,
                     },
 					
@@ -1697,7 +1701,7 @@ return {
 						proto = lamp_prototypes.HS_2A,
 						position = { -2.682571, 1.654862, 0 },
 						intensity_max = 8.0,
-						{1, 214/255, 170/255},
+						color = {1, 214/255, 170/255},
 						range = 2,
                     },
                 },
