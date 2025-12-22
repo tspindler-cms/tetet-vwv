@@ -42,7 +42,7 @@ GT.distFindObstacles = 130;
 GT.numParking		= 1;
 GT.Plane_Num_		= 0;
 GT.Helicopter_Num_	= 1;
-GT.Landing_Point = {-79.556,6.6695,0};
+GT.Landing_Point = {-79.556,6.69,0};
 
 -- smoke density and position
 GT.exhaust = {
