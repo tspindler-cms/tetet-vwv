@@ -10,6 +10,7 @@
     - Correction in Encyclopedia CCB "Charlie" not Charly
     - Fixed 4 unrecognized Connectors
     - Correction of the 25mm gun rest position as Historically
+    - Remove IC failing texturing, leaving exhaust pipe and lights potentially untextured
   Carriers (CVA-31, CVAN-65 '66  '69)
     - New Runway and Taxi paths for improved helo landings
 2025-12-22
