@@ -63,39 +63,39 @@ __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_12_7_M2);
 __LN.major_weapon = false;
 __LN.type = 10;
 __LN.BR[1].connector_name = 'PointM2_mid'
-__LN.fireAnimationArgument = 135;
+__LN.fireAnimationArgument = -1;
 
 --GT.WS[1].LN[2]
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
 __LN.major_weapon = true;
 __LN.BR[1].connector_name = 'Point1'
-__LN.fireAnimationArgument = 125;
+__LN.fireAnimationArgument = -1;
 
 --Turret right light gun
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 GT.WS[ws].angles = {{math.rad(-25), math.rad(-175), math.rad(-5), math.rad(80)},};
-GT.WS[ws].reference_angle_Y = math.rad(-90);
-GT.WS[ws].reference_angle_Z = math.rad(10);
+GT.WS[ws].reference_angle_Y = math.rad(-174);
+GT.WS[ws].reference_angle_Z = math.rad(5);
 GT.WS[ws].center = 'Turret2'
 GT.WS[ws].drawArgument1 = 17
 GT.WS[ws].drawArgument2 = 18
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
-__LN.BR[1].connector_name = 'POINT2'
-__LN.fireAnimationArgument = 126;
+__LN.BR[1].connector_name = 'Point2'
+__LN.fireAnimationArgument = -1;
 
 --Turret left light gun
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 GT.WS[ws].angles = {{math.rad(175), math.rad(25), math.rad(-5), math.rad(80)},};
-GT.WS[ws].reference_angle_Y = math.rad(90);
-GT.WS[ws].reference_angle_Z = math.rad(10);
+GT.WS[ws].reference_angle_Y = math.rad(174);
+GT.WS[ws].reference_angle_Z = math.rad(5);
 GT.WS[ws].center = 'Turret3'
 GT.WS[ws].drawArgument1 = 15
 GT.WS[ws].drawArgument2 = 16
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
-__LN.BR[1].connector_name = 'POINT3'
-__LN.fireAnimationArgument = 127;
+__LN.BR[1].connector_name = 'Point3'
+__LN.fireAnimationArgument = -1;
 
 --M2 right
 ws = GT_t.inc_ws();
@@ -108,7 +108,7 @@ GT.WS[ws].drawArgument1 = 21
 GT.WS[ws].drawArgument2 = 22
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_12_7_M2);
 __LN.BR[1].connector_name = 'PointM2_right'
-__LN.fireAnimationArgument = 128;
+__LN.fireAnimationArgument = -1;
 
 --M2 left
 ws = GT_t.inc_ws();
@@ -121,7 +121,7 @@ GT.WS[ws].drawArgument1 = 27
 GT.WS[ws].drawArgument2 = 28
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_12_7_M2);
 __LN.BR[1].connector_name = 'PointM2_left'
-__LN.fireAnimationArgument = 131;
+__LN.fireAnimationArgument = -1;
 
 --M60 1 right
 ws = GT_t.inc_ws();
@@ -135,7 +135,7 @@ GT.WS[ws].drawArgument2 = 24
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_M240C);
 __LN.type = 10;
 __LN.BR[1].connector_name = 'PointM60_1_right'
-__LN.fireAnimationArgument = 129;
+__LN.fireAnimationArgument = -1;
 
 --M60 2 right
 ws = GT_t.inc_ws();
@@ -149,7 +149,7 @@ GT.WS[ws].drawArgument2 = 26
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_M240C);
 __LN.type = 10;
 __LN.BR[1].connector_name = 'PointM60_2_right'
-__LN.fireAnimationArgument = 130;
+__LN.fireAnimationArgument = -1;
 
 --M60 1 left
 ws = GT_t.inc_ws();
@@ -163,7 +163,7 @@ GT.WS[ws].drawArgument2 = 30
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_M240C);
 __LN.type = 10;
 __LN.BR[1].connector_name = 'PointM60_1_left'
-__LN.fireAnimationArgument = 132;
+__LN.fireAnimationArgument = -1;
 
 --M60 2 left
 ws = GT_t.inc_ws();
@@ -177,23 +177,28 @@ GT.WS[ws].drawArgument2 = 32
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_M240C);
 __LN.type = 10;
 __LN.BR[1].connector_name = 'PointM60_2_left'
-__LN.fireAnimationArgument = 133;
+__LN.fireAnimationArgument = -1;
 
 ----------------------------------------------------------------------------------------
 GT.Name = "ATCH_Heavy"
 GT.DisplayName = _("[VWV] ATC(H) Tango Heavy")
 GT.DisplayNameShort = _("ATC(H) Tango Heavy")
 GT.Rate = 100
+
 GT.Sensors = {	OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR",},
 				RADAR = {"Patriot str","ticonderoga search radar",}};
 					
 GT.DetectionRange  = GT.airFindDist;
 GT.ThreatRange = GT.airWeaponDist;
 GT.Singleton   ="no";
+GT.riverCraft = true
+
 GT.mapclasskey = "P0091000039";
 GT.attribute = {wsType_Navy,wsType_Ship,wsType_ArmedShip,TICONDEROGA,
 				"Cruisers","RADAR_BAND1_FOR_ARM","DetectionByAWACS",};
 
 GT.Categories = {{name = "Armed Ship"},{name = "HelicopterCarrier"}};
 GT.Countries = { "USA",};
-GT.riverCraft = true
+
+
+add_surface_unit(GT)

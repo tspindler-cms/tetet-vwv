@@ -1,0 +1,36 @@
+PBR MKII
+
+PBR_MKII
+
+Désignation: Patrol Boat, River Mark II
+Type: Patrouilleur fluvial rapide
+Développeur: Willis Slane et Jack Hargrave (Hatteras Yachts), construit par Uniflite
+Produit: 1966-1975
+Nombre produit: 718 (toutes versions), dont 290+ Mk II
+Équipage: 4 marins (capitaine, canonnier, mécanicien, matelot)
+Armement principal: 2 x mitrailleuses M2HB .50 cal (12,7mm) jumelées (avant, tourelle blindée rotative), 1 x M2HB .50 cal (arrière)
+Armement secondaire: 1-2 x mitrailleuses M60 7,62mm (bâbord et tribord), 1 x lance-grenades Mk 18 40mm, fusils M16, fusils de chasse, pistolets .45 ACP, grenades
+Armure: Blindage céramique pour tourelle et poste de pilotage, plaque d'acier de 1/4 pouce pour le barreur, couvertures balistiques appliquées par l'équipage
+Configurations spéciales: Certains avec canon automatique Colt 20mm Mk16 Mod 4 (proue) ou montage "piggyback" (.50 cal sur mortier 81mm)
+
+Motorisation: 2 x Detroit Diesel 6V53N avec propulsion par jet d'eau Jacuzzi Brothers 14YJ
+Puissance: 360 hp (180 hp chaque moteur)
+Vitesse: 28,5 nœuds (52,8 km/h)
+Autonomie: *
+Consommation: *
+Déplacement: 8,9 tonnes (Mk II)
+Longueur: 32 pieds (9,8 m) - Mk II / 31 pieds (9,4 m) - Mk I
+Largeur: 11,5 pieds (3,5 m) - Mk II / 10,5 pieds (3,2 m) - Mk I
+Tirant d'eau: 2 pieds (0,61 m)
+Particularités: Coque en fibre de verre, propulsion par jet d'eau permettant navigation en eaux de 2,5 pieds, pivot complet sur place, arrêt rapide en quelques longueurs de bateau
+
+Histoire:
+
+Le PBR a été développé en 1965 pour l'Opération Game Warden (Task Force 116) afin de sécuriser le vaste réseau de voies navigables intérieures peu profondes du Sud-Vietnam contre les Viêt-Cong.
+Conçu par Willis Slane et Jack Hargrave de Hatteras Yachts en seulement sept jours après une réunion avec la Navy, le PBR était basé sur la coque d'un yacht de plaisance existant.
+Les 11 premiers PBR ont été livrés en mars 1966, suivis d'environ 300 unités construites par Uniflite à Bellingham, Washington, pour les forces américaines et sud-vietnamiennes.
+Le Mark II, version améliorée d'un pied plus large que le Mark I, incorporait des améliorations des propulseurs pour réduire l'encrassement et des pavois en aluminium pour résister à l'usure.
+Hautement maniable et léger, le PBR pouvait traverser des eaux de seulement 2,5 pieds de profondeur, mais au prix d'une protection blindée substantielle, comptant plutôt sur l'accélération rapide, la maniabilité et la vitesse.
+Les PBR patrouillaient le delta du Mékong, la zone spéciale de Rung Sat, la rivière Saïgon et le I Corps pour intercepter les trafics d'armes, menant fréquemment des combats rapprochés et servant aux insertions et extractions des équipes SEAL.
+En raison de la nature de leur mission, les équipages de la Task Force 116 ont connu certains des taux de mortalité les plus élevés de la guerre, mais ont également été parmi les plus décorés, incluant James "Willie" Williams qui reçut la Medal of Honor.
+Une force de 250 PBR a été déployée au Vietnam, devenant l'embarcation la plus répandue de la River Patrol Force jusqu'en 1975, avant d'être transférés aux forces sud-vietnamiennes, laotiennes, khmères et thaïlandaises.

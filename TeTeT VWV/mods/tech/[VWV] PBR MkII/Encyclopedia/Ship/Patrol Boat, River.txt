@@ -1,155 +1,36 @@
-Patrol Boat, River
-Vietnam War Patrol Boat, River Mark II
-Number Produced: 290+
-Crew: 4
-Main Armament: M2HB .50 caliber Machine Gun (2)
-Other Armament: M60 .30 caliber Machine Gun (2)
-Mk 18 40mm Grenade Launcher
-Engine: Detroit Diesel 6V53N
-Horsepower: 216
-Speed: 28.5 knots (32 mph, 53 km/h)
-Displacement: 8.9 tons
-Length: 32’ (9.8 m)
-Beam: 11’6”” (3.5 m)
-Draft: 2’ (.61 m)
+PBR MKII
 
-With poorly developed road and rail systems, the South Vietnamese depended on the country’s vast network of shallow inland waterways. As the Vietnam War progressed, the US Navy realized the importance of securing these waterways from the Vietcong. In 1965, it established Task Force 116, codenamed Operation Gamewarden to patrol the waterways. The Patrol Boat, River (nicknamed Pibber from its initials) was designed for this mission. Highly maneuverable and light, it could traverse waters as shallow as 2 ½ feet (.76m), but at the expense of substantial armored protection. Because of the nature of its mission, Task Force 116 servicemen experienced some of the highest mortality rates of the war, but were also some of the most decorated.
+PBR_MKII
 
-Design
+Designation: Patrol Boat, River Mark II
+Type: Fast riverine patrol boat
+Developer: Willis Slane and Jack Hargrave (Hatteras Yachts), built by Uniflite
+Produced: 1966-1975
+Number Produced: 718 (all versions), including 290+ Mk II
+Crew: 4 sailors (captain, gunner, engineman, seaman)
+Main Armament: 2 x M2HB .50 cal (12.7mm) twin machine guns (forward, rotating armored turret), 1 x M2HB .50 cal (rear)
+Secondary Armament: 1-2 x M60 7.62mm machine guns (port and starboard), 1 x Mk 18 40mm grenade launcher, M16 rifles, shotguns, .45 ACP pistols, grenades
+Armor: Ceramic armor for turret and cockpit, 1/4-inch steel plate for coxswain's flat, crew-applied ballistic blankets
+Special Configurations: Some with Colt 20mm Mk16 Mod 4 automatic cannon (bow) or "piggyback" mount (.50 cal on 81mm mortar)
 
-The PBR was a versatile boat with a fiberglass hull and water jet drive which enabled it to operate in shallow, weed-choked rivers. It drew only two feet of water fully loaded. The drives could be pivoted to reverse direction, turn the boat in its own length, or come to a stop from full speed in a few boat lengths.
+Engine: 2 x Detroit Diesel 6V53N with Jacuzzi Brothers 14YJ water-jet propulsion
+Horsepower: 360 hp (180 hp each engine)
+Speed: 28.5 knots (52.8 km/h)
+Range: *
+Fuel Capacity: *
+Displacement: 8.9 tons (Mk II)
+Length: 32 feet (9.8 m) - Mk II / 31 feet (9.4 m) - Mk I
+Beam: 11.5 feet (3.5 m) - Mk II / 10.5 feet (3.2 m) - Mk I
+Draft: 2 feet (0.61 m)
+Special Features: Fiberglass hull, water-jet propulsion enabling navigation in 2.5 feet of water, complete pivot in place, rapid stop in a few boat lengths
 
-The PBR was manufactured in two versions, the first with 31 foot length and 10 foot, 7 inch beam. The Mark II version 32 feet (9.8 m) long and one foot wider beam had improved drives to reduce fouling and aluminum gunwales to resist wear. 
+History:
 
-Crew
-
-The PBR was usually manned by a 4-man crew. Typically, a First Class Petty Officer served as boat captain, with a gunner's mate, an engineman and a seaman on board. Each crewman was cross-trained in each other's job in the event one became unable to carry out his duties. Generally, PBRs operated in pairs under the command of a patrol officer who rode on one of the boats. 
-
-Power
-
-The boats were powered by dual 220 hp (164 kW) Detroit Diesel 6V53N engines with Jacuzzi Brothers pump-jet drives. The boats reached top speeds of 28.5 knots (53 km/h 32 mph. 
-
-Armament
-
-Typical armament configuration included twin M2HB .50 caliber (12.7 mm) machine guns forward in a rotating shielded tub, a single rear .50 cal, M60 7.62mm light machine guns mounted on the port and starboard sides, and a Mk 19 40mm grenade launcher. There was also a full complement of M16 rifles, shotguns, .45 ACP handguns, and hand grenades. Sometimes a 20mm cannon was mounted on the bow and others had a "piggyback" arrangement, a .50 cal machine gun on top of an 81mm mortar. , What the boats benefited in heavy firepower they lacked in armor or shielding. Although the .50 cal machine guns and bridge area had some ceramic armor shielding, the boats were designed to rely on rapid acceleration, maneuverability, and speed to get out of tight situations. To compensate for lack of armor protection, crews in the field would attach flak jackets to the sides of the boat, lay the jackets around ammunition crates (to prevent ammo exploding from enemy fire), and stack sandbags around the machine guns and other strategic areas. Crews also welded rebar on parts of the boat to deflect rockets or cause them to explode away from the boat. 
-
-US operations
-
-PBRs were operating with the U.S. Naval Reserve up until 1995 at Mare Island, California prior to the base's closure due to BRAC action that year. During the Vietnam War, Mare Island was home to the U.S. Navy's Repair Facilities, Mothballing Operations, Submarine Operations, and Riverine Training Operations for both Swift Boats and PBRs.
-
-The training areas for the PBRs and Swift Boats still exist today within the Napa Sonoma Marsh state wildlife area. Sloughs such as Dutchman Slough, China Slough, Napa Slough, Devil's Slough, Suisun marshland and the Napa River all run through the former training area. 
-
-In the late 1990s, what remained of the U.S. Navy PBR force (Swift Boats had been retired from the U.S. Navy immediately following the Vietnam War during the early 1970s) was moved further inland towards Sacramento, California, the state capital, which is also intertwined with rivers. From Sacramento, PBRs can still transit directly to and through San Francisco Bay and into the Pacific Ocean, if need be. The waters of the State Wildlife Area, next to the former U.S. Navy (Riverine) training base at Mare Island, are still available for U.S. Navy PBR usage.
-Operators
-
-    United States - U.S. Navy
-    Flag of South Vietnam South Vietnam - Republic of Vietnam Navy
-    Flag of Cambodia Cambodia - Khmer National Navy
-    Laos Kingdom of Laos - Royal Lao Navy
-    Flag of Thailand Thailand - Royal Thai Navy
-    Flag of Brazil Brazil - Brazilian Army
-    Flag of Panama Panama - SENAN
-    Flag of Switzerland  Switzerland - Swiss Armed Forces
-
-From Wikipedia, the free encyclopedia
-"River Patrol Boats" redirects here. For the UK Royal Navy ships, see River-class patrol vessel.
-Preserved PBR 829 in Kenner, Louisiana.
-Class overview
-Name	PBR (Patrol Boat Riverine)
-Operators	See Operators
-Cost	$400,000[1]
-Completed	718[2]
-Preserved	1 operational
-General characteristics
-Type	Riverine patrol boat
-Displacement	8.9 ton for Mk II
-Length	
-
-    31 ft (9.4 m) (Mk I)
-    32 ft (9.8 m) (Mk II)
-
-Beam	
-
-    10.5 ft (3.2 m) (MK I)
-    11.5 ft (3.5 m) (MK II)
-
-Draft	2 ft (0.61 m)
-Propulsion	2 × 180 hp (130 kW) Detroit Diesel 6V53N engines each driving a Jacuzzi Brothers 14YJ water pump-jet with thrust buckets for reverse thrust.
-Speed	28.5 knots (52.8 km/h; 32.8 mph).
-Complement	4 enlisted
-Armament	
-
-    1 × twin .50 caliber (12.7 mm) M2HB Browning machine guns (forward in a rotating tub)
-    1 × single M2HB (rear)
-    1 or 2 × 7.62 mm M60 machine gun(s) (side-mounted)
-    1 × 40 mm Mk 18 grenade launcher
-
-Armor	Ceramic armor shields fitted to guns, bridge. Also crew-applied ballistic blankets to protect the coxswain in the control cockpit.
-
-Patrol Boat, Riverine, or PBR, is the United States Navy designation for a small rigid-hulled patrol boat used in the Vietnam War from March 1966 until 1975. They were deployed in a force that grew to 250 boats, the most common craft in the River Patrol Force, Task Force 116, and were used to stop and search river traffic in areas such as the Mekong Delta, the Rung Sat Special Zone, the Saigon River and in I Corps, in the area assigned to Task Force Clearwater, in an attempt to disrupt weapons shipments. In this role, they frequently became involved in firefights with enemy soldiers on boats and on the shore, were used to insert and extract Navy SEAL teams, and were employed by the United States Army's 458th Transportation Company, known as the 458th Sea Tigers.
-
-The PBR was replaced by the Special Operations Craft – Riverine (SOC-R)[3][4]
-Design
-PBR Mark II
-
-The PBR was a versatile boat with a fiberglass hull and water jet drive which enabled it to operate in shallow, weed-choked rivers. It drew only 2 feet (0.61 m) of water fully loaded. The drives could be pivoted to reverse direction, turn the boat in its own length, or come to a stop from full speed in a few boat lengths.
-
-The PBR was manufactured in two versions, the first with 31 feet (9.4 m) length and 10-foot, 7-inch beam. The Mark II version was 32 feet (9.8 m) long, and had a 1-foot (0.30 m) wider beam than the Mark I. It also had improved drives to reduce fouling and aluminum gunwales to resist wear.
-
-The PBR was designed by Willis Slane and Jack Hargrave of Hatteras Yachts, located in High Point, NC at the time, and its hull was based on an existing Hatteras Yacht hull. Just seven days after a meeting with US Navy officials, Slane and Hargrave had a prototype ready.[5][6]
-
-The 11 PBRs delivered in March 1966 and the approximately 300 delivered over the next few years to the U.S. and South Vietnamese military were based on a pleasure boat design constructed by Uniflite, a boatyard in Bellingham, Washington, on the northern end of Puget Sound near the Canadian border.
-
-In October 1965, the Navy awarded a contract to the company for construction of 140 PBRs. The first craft off the assembly line, called the Mark I, was 31 feet long with a hull constructed entirely of fiberglass, a technology developed in the early 1950s.[6]
-Crew
-
-The PBR was usually manned by a four-man crew. Typically, a First Class Petty Officer served as boat captain, with a gunner's mate, an engineman and a seaman on board. Each crewman was cross-trained in each other's jobs in the event one became unable to carry out his duties. Generally, PBRs operated in pairs under the command of a patrol officer who rode on one of the boats.
-Power
-
-The boats were powered by dual 180 horsepower (130 kilowatts) Detroit Diesel 6V53N engines with Jacuzzi Brothers 14YJ water-jet drives. The boats reached top speeds of 28.5 knots (52.8 km/h; 32.8 mph).[citation needed]
-Armament
-PBR Mark II forward .50 caliber twin M2 machine guns
-
-The boats had a comparatively heavy firepower for their size. Typical armament configuration included twin M2HB .50 caliber (12.7 mm) machine guns forward in a rotating, shielded tub, a single rear M2HB, one or two M60 7.62 mm light machine guns mounted on the port and starboard sides, and a Mk 18 grenade launcher. There was also a full complement of M16 rifles, shotguns, .45 ACP handguns and hand grenades. Some had a "piggyback" arrangement, a .50 cal machine gun on top of an 81mm mortar;[7][8] others had a bow-mounted Mk16 Mod 4 Colt 20 mm automatic cannon, derived from the AN/M3 version of the Hispano-Suiza HS.404 and also found on the LCMs and PBRs.[9]
-
-The boats are not well protected, aside from some ceramic armor shielding for the machine gun pit, and some quarter-inch thick steel armor plate for the coxswain's flat.
-
-They were designed to rely on rapid acceleration, maneuverability, and speed to get out of dangerous situations.
-Operational career
-
-From 1966 to 1972, PBRs were operated by the Navy as the principal component of Task Force 116. PBRs operated with the U.S. Naval Reserve up until 1995 at Mare Island, California, prior to the base's closure due to BRAC action that year. During the Vietnam War, Mare Island was home to the U.S. Navy's Repair Facilities, Mothballing Operations, Submarine Operations, and Riverine Training Operations for both Patrol Craft Fast (PCF—more commonly known as Swift Boats), PBRs, and the River Assault Boats of the Mobile Riverine Force.
-
-The training areas for the PBRs and Swift Boats still exist today within the Napa Sonoma Marsh state wildlife area. Sloughs such as Dutchman Slough, China Slough, Napa Slough, Devil's Slough, Suisun marshland and the Napa River all run through the former training area.
-
-Since the Navy was busy patrolling the rivers, the U.S. Army had to secure the waters around its military ports. So, it converted the 458th Transportation Company (LARC) into a PBR company in early 1968 under the 18th Military Police Brigade. With the company headquarters at Cat Lai, the company assigned pairs of PBRs to each of the Army ports. The crews consisted of two army mariners, coxswain and engineman, and two military police as gunners.[10]
-
-In the late 1990s, what remained of the U.S. Navy's PBR force was solely in the Naval Reserve (Swift Boats had been retired from the active duty U.S. Navy immediately following the Vietnam War during the early 1970s), and was moved further inland towards Sacramento, California, the state capital, which is also intertwined with rivers. From Sacramento, PBRs could still transit directly to and through San Francisco Bay and into the Pacific Ocean, if need be. The waters of the State Wildlife Area, next to the former U.S. Navy (Riverine) training base at Mare Island, are still available for U.S. Navy PBR usage.
-Operators
-	
-This section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed. (April 2023) (Learn how and when to remove this template message)
-
-     United States – U.S. Navy
-     South Vietnam – Republic of Vietnam Navy
-     Khmer Republic – Khmer National Navy
-    Laos Kingdom of Laos – Royal Lao Navy
-     Thailand – Royal Thai Navy
-     Brazil – Brazilian Army
-     Panama – SENAN
-     Iraq – Iraqi Navy
-     Portugal - Portuguese Navy
-
-Medals
-
-James "Willie" Williams was a United States Navy sailor commanding PBR 105. During a patrol operation on 31 October 1966, an engagement between the two PBRs (105 and one other) and two Viet Cong (VC) sampans escalated into a three-hour running battle involving more than 50 enemy vessels, numerous VC ground troops, and U.S. Navy attack helicopter support. For his role in this battle, Williams received the Medal of Honor. According to the citation, "the patrol accounted for the destruction or loss of 65 enemy boats and inflicted numerous casualties on the enemy personnel." Williams is considered the most heavily decorated enlisted sailor in U.S. Navy history. The U.S. Navy posthumously named a guided missile destroyer, USS James E. Williams, after him.
-
-Patrick Osborne Ford was a United States Navy sailor serving on a PBR patrol boat who was killed in South Vietnam after he saved the lives of two of his shipmates. The U.S. Navy posthumously awarded him the Navy Cross and later named a frigate, USS Ford (FFG-54), after him.
-In popular culture
-
-A major part of the action in the 1979 movie Apocalypse Now takes place on a fictional United States Navy PBR that used the radio call-sign PBR Street Gang.
-
-An unarmed PBR Mk. II replica called "Boat Machine" or "Du Ma" was used in the "Seamen" special of the television show The Grand Tour by Jeremy Clarkson, who erroneously claimed that, as there were no surviving PBRs, the replica had to be built completely from scratch and so cost £100,000.[11] Du Ma was as authentic as possible, using the same Jacuzzi drive jets as the original design, but powered by two 350 horsepower V8 gasoline engines of unspecified make.
-See also
-
-    Fast Patrol Craft: An all-aluminum, 50-foot-long (15 m), riverine boat commonly referred to as the Swift Boat by the U.S. Navy's Brown Water Navy during the Vietnam War.
-   
-
+The PBR was developed in 1965 for Operation Game Warden (Task Force 116) to secure South Vietnam's vast network of shallow inland waterways against the Viet Cong.
+Designed by Willis Slane and Jack Hargrave of Hatteras Yachts in just seven days after a meeting with the Navy, the PBR was based on an existing pleasure yacht hull.
+The first 11 PBRs were delivered in March 1966, followed by approximately 300 units built by Uniflite in Bellingham, Washington, for American and South Vietnamese forces.
+The Mark II, an improved version one foot wider than the Mark I, incorporated enhanced drives to reduce fouling and aluminum gunwales to resist wear.
+Highly maneuverable and light, the PBR could traverse waters only 2.5 feet deep, but at the expense of substantial armored protection, relying instead on rapid acceleration, maneuverability, and speed.
+PBRs patrolled the Mekong Delta, Rung Sat Special Zone, Saigon River, and I Corps to intercept weapons shipments, frequently engaging in close-quarters combat and serving for SEAL team insertions and extractions.
+Due to the nature of their mission, Task Force 116 crews experienced some of the highest mortality rates of the war, but were also among the most decorated, including James "Willie" Williams who received the Medal of Honor.
+A force of 250 PBRs was deployed in Vietnam, becoming the most common craft in the River Patrol Force until 1975, before being transferred to South Vietnamese, Laotian, Khmer, and Thai forces.

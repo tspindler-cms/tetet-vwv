@@ -59,43 +59,36 @@ GT.WS[ws].drawArgument1 = 19
 GT.WS[ws].drawArgument2 = 20
 
 --GT.WS[1].LN[1]
-__LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_12_7_M2);
-__LN.major_weapon = false;
-__LN.type = 10;
-__LN.BR[1].connector_name = 'PointM2_mid'
-__LN.fireAnimationArgument = 128;
-
---GT.WS[1].LN[2]
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
 __LN.major_weapon = true;
 __LN.BR[1].connector_name = 'Point1'
-__LN.fireAnimationArgument = 125;
+__LN.fireAnimationArgument = -1;
 	
 --Turret right light gun
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 GT.WS[ws].angles = {{math.rad(-25), math.rad(-175), math.rad(-5), math.rad(80)},};
-GT.WS[ws].reference_angle_Y = math.rad(-90);
-GT.WS[ws].reference_angle_Z = math.rad(10);
+GT.WS[ws].reference_angle_Y = math.rad(-174);
+GT.WS[ws].reference_angle_Z = math.rad(5);
 GT.WS[ws].center = 'Turret2'
 GT.WS[ws].drawArgument1 = 17
 GT.WS[ws].drawArgument2 = 18
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
 __LN.BR[1].connector_name = 'Point2'
-__LN.fireAnimationArgument = 126;
+__LN.fireAnimationArgument = -1;
 
 --Turret left light gun
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 GT.WS[ws].angles = {{math.rad(175), math.rad(25), math.rad(-5), math.rad(80)},};
-GT.WS[ws].reference_angle_Y = math.rad(90);
-GT.WS[ws].reference_angle_Z = math.rad(10);
+GT.WS[ws].reference_angle_Y = math.rad(174);
+GT.WS[ws].reference_angle_Z = math.rad(5);
 GT.WS[ws].center = 'Turret3'
 GT.WS[ws].drawArgument1 = 15
 GT.WS[ws].drawArgument2 = 16
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
 __LN.BR[1].connector_name = 'Point3'
-__LN.fireAnimationArgument = 127;
+__LN.fireAnimationArgument = -1;
 
 --Main GUN front
 
@@ -110,34 +103,31 @@ GT.WS[ws].reference_angle_Y = math.rad(0);
 GT.WS[ws].reference_angle_Z = math.rad(10);
 GT.WS[ws].drawArgument1 = 33
 GT.WS[ws].drawArgument2 = 34
-GT.WS[ws].center = 'TurretGunfront'
+GT.WS[ws].center = 'TurretGUNfront'
 __LN.major_weapon = true;
 GT.WS[ws].LN[1].BR[1].connector_name = 'PointGUNfront'
 GT.WS[ws].LN[1].BR[1].recoilArgument = 51;
 GT.WS[ws].LN[1].BR[1].recoilTime = 0.7;
 
---GT.WS[1].LN[2]
-GT.WS[ws].area = "turret_damage";
-__LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_12_7_M2);
-__LN.major_weapon = false;
-__LN.type = 10;
-__LN.BR[1].connector_name = 'PointM2_front'
-__LN.fireAnimationArgument = 130;
-
 ----------------------------------------------------------------------------------------
 GT.Name = "CCB"
-GT.DisplayName = _("[VWV] CCB")
+GT.DisplayName = _("[VWV] CCB Charlie")
 GT.DisplayNameShort = _("CCB")
 GT.Rate = 700
+
 GT.Sensors = {OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR",},
 				        RADAR = {"Patriot str","ticonderoga search radar",}};
 
 GT.DetectionRange  = GT.airFindDist;
 GT.ThreatRange = GT.airWeaponDist;
 GT.Singleton   ="no";
+GT.riverCraft = true
+
 GT.mapclasskey = "P0091000039";
 GT.attribute = {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
 				"low_reflection_vessel","Light armed ships",};
 GT.Categories = {{name = "Armed Ship"},};
 GT.Countries = { "USA",};
-GT.riverCraft = true
+
+
+add_surface_unit(GT)

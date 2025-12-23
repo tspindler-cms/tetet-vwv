@@ -7,8 +7,8 @@ dofile("GroundUnits/WeaponSystem/Tools/MissileSounds.lua")
 ATCH_weapons = weapons:new()
 
 ATCH_weapons:addTurret(1)
-ATCH_weapons:addLauncher(1, 1, machinegun_12_7_M2)
-ATCH_weapons:addLauncher(1, 2, automatic_gun_25mm)
+
+ATCH_weapons:addLauncher(1, 1, automatic_gun_25mm)
 
 ATCH_weapons:addTurret(2)
 ATCH_weapons:addLauncher(2, 1, automatic_gun_25mm)

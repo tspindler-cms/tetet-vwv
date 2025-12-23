@@ -1,4 +1,4 @@
-## Vietnam War Vessels - ATC(H) & CCB ##
+## Vietnam War Vessels - ATC(H) & CCB Boat ##
 
 ATC(H) and CCB riverine boats for DCS
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details

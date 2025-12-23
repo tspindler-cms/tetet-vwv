@@ -59,59 +59,57 @@ GT.WS[ws].drawArgument1 = 19
 GT.WS[ws].drawArgument2 = 20
 
 --GT.WS[1].LN[1]
-__LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_12_7_M2);
-__LN.major_weapon = false;
-__LN.type = 10;
-__LN.BR[1].connector_name = 'PointM2_mid'
-__LN.fireAnimationArgument = 128;
-
---GT.WS[1].LN[2]
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
 __LN.major_weapon = true;
 __LN.BR[1].connector_name = 'Point1'
-__LN.fireAnimationArgument = 125;
+__LN.fireAnimationArgument = -1;
 
 --Turret right light gun
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 GT.WS[ws].angles = {{math.rad(-25), math.rad(-175), math.rad(-5), math.rad(80)},};
-GT.WS[ws].reference_angle_Y = math.rad(-90);
-GT.WS[ws].reference_angle_Z = math.rad(10);
+GT.WS[ws].reference_angle_Y = math.rad(-174);
+GT.WS[ws].reference_angle_Z = math.rad(5);
 GT.WS[ws].center = 'Turret2'
 GT.WS[ws].drawArgument1 = 17
 GT.WS[ws].drawArgument2 = 18
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
 __LN.BR[1].connector_name = 'Point2'
-__LN.fireAnimationArgument = 126;
+__LN.fireAnimationArgument = -1;
 
 --Turret left light gun
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 GT.WS[ws].angles = {{math.rad(175), math.rad(25), math.rad(-5), math.rad(80)},};
-GT.WS[ws].reference_angle_Y = math.rad(90);
-GT.WS[ws].reference_angle_Z = math.rad(10);
+GT.WS[ws].reference_angle_Y = math.rad(174);
+GT.WS[ws].reference_angle_Z = math.rad(5);
 GT.WS[ws].center = 'Turret3'
 GT.WS[ws].drawArgument1 = 15
 GT.WS[ws].drawArgument2 = 16
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
 __LN.BR[1].connector_name = 'Point3'
-__LN.fireAnimationArgument = 127;				
+__LN.fireAnimationArgument = -1;				
 
 ----------------------------------------------------------------------------------------
 GT.Name = "ATCH"
 GT.DisplayName = _("[VWV] ATC(H) Tango")
 GT.DisplayNameShort = _("ATC(H) Tango")
 GT.Rate = 100
+
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR",},
 				RADAR = {"Patriot str","ticonderoga search radar",}}
 				
 GT.DetectionRange  = GT.airFindDist;
 GT.ThreatRange = GT.airWeaponDist;
 GT.Singleton   ="no";
+GT.riverCraft = true
+
 GT.mapclasskey = "P0091000039";
 GT.attribute = {wsType_Navy,wsType_Ship,wsType_ArmedShip,TICONDEROGA,
 				"Cruisers","RADAR_BAND1_FOR_ARM","DetectionByAWACS",};
 				
 GT.Categories = {{name = "Armed Ship"},{name = "HelicopterCarrier"}};
 GT.Countries = { "USA",};
-GT.riverCraft = true
+
+
+add_surface_unit(GT)

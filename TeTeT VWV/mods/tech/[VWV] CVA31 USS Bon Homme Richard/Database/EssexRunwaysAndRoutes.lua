@@ -206,19 +206,44 @@ GT.HelicopterSpawnTerminal =
 {
 	{ TerminalIdx = 1, Points =
 		{ -- 1 spawn spot
-        {{120, 16.95, 0.0}, 		0.0}
+        {{ -73.045, 16.95, -6.6389},   	0.0}
 		}
 	},
 	{ TerminalIdx = 2, Points =
 		{ -- 2 spawn spot
-        {{ 85, 16.95, 0.0},   	0.0}
+        {{ -103.04, 16.95, -1.2118},   	0.0}
 		}
 	},
 	{ TerminalIdx = 3, Points =
 		{ -- 3 spawn spot
-        {{ 15, 16.95, -25},   	0.0}
+        {{110.0, 16.95, -11.15}, 		0.0}
+		}
+	},
+	{ TerminalIdx = 4, Points =
+		{ -- 4 spawn spot
+        {{ 80.0, 16.95, -11.15},   	0.0}
+		}
+	},
+	{ TerminalIdx = 5, Points =
+		{ -- 5 spawn spot
+        {{ 50.0, 16.95, -13.723},   	0.0}
 		}
 	},	
+	{ TerminalIdx = 6, Points =
+		{ -- 6 spawn spot
+        {{ 16.955, 16.95, -22.88},   	0.0}
+		}
+	},
+	{ TerminalIdx = 7, Points =
+		{ -- 7 spawn spot
+        {{ -13.045, 16.95, -17.493},   	0.0}
+		}
+	},
+	{ TerminalIdx = 8, Points =
+		{ -- 8 spawn spot
+        {{ -43.045, 16.95, -12.066},   	0.0}
+		}
+	},
 }
 GT.HelicopterSpawnTerminal.TerminalNumber = #GT.HelicopterSpawnTerminal
 

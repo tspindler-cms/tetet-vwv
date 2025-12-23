@@ -23,7 +23,7 @@ GT.shipLength = 332.000 -- o.a in meters
 GT.Width = 40.5 --15 --meters
 GT.Height = 58.30 --335.226 from sea level I think
 GT.Length = 332.00 -- deck length I think
-GT.DeckLevel = 19.52 -- height of deck
+GT.DeckLevel = 19.592 -- height of deck
 GT.X_nose = 151.0 -- bow wave
 GT.X_tail = -150.0 -- -127.238 -- wake
 GT.Tail_Width = 32 --wake width
@@ -56,8 +56,8 @@ GT.OLS = {
 GT.distFindObstacles = 160
 
 GT.numParking = 4 -- runways
-GT.Plane_Num_ = 8 --number of planes, not sure if it matters in game
-GT.Helicopter_Num_ = 3 -- Number heli spawns
+GT.Plane_Num_ = 36 --number of planes, not sure if it matters in game
+GT.Helicopter_Num_ = 12 -- Number heli spawns
 
 ------------------------ Landing Signal Officer (Left Alt + F9) -- updated by Toan, 2024-01-22 -------------------------------
 -- LSO view          high quality edm file, whatever you named the connector , Visiblity arg   , Position of camera
@@ -75,7 +75,7 @@ GT.LSOView = {cockpit = "empty", position = {offset = {0.0, 0.0, 0.0, 0.0, 0.0}}
 ------------------------- End Landing Signal Officer --------------------------------------------------------------------------- 
 
 -- Landing point
-GT.Landing_Point	= {-104.86,  19.52, -33.97}
+GT.Landing_Point	= {-104.86,  19.592, -33.97}
 
 -- smoke density and position
 GT.exhaust = {
