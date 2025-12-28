@@ -1,3 +1,8 @@
+2025-12-28
+  A-37, EC-121, MiG-17, USS Fletcher FRAMII 
+    - Update liveries with textures with mipmaps
+  EC-121
+    - Update SFM with better values from HawaiianRyan
 2025-12-23
   PBR MkII
     - Add new Encyclopedia files from Fredy
