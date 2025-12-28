@@ -13,26 +13,19 @@ declare_plugin("tetet_fletcher",
     encyclopedia_path = current_mod_path .. '/Encyclopedia',
 })
 
-
 mount_vfs_model_path	(current_mod_path.."/Shapes/")
 mount_vfs_texture_path  (current_mod_path.."/Textures/")
-mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_framii.zip")
-mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_liveries.zip")
-mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_liveries_1.zip")
+mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_framii_main_1.zip")
+mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_framii_main_2.zip")
+mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_framii_main_3.zip")
+mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_framii_liveries_1.zip")
+mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_framii_liveries_2.zip")
+
 mount_vfs_liveries_path (current_mod_path.."/Liveries")
 ----------------------------------------------------------------------------------------
 
 dofile(current_mod_path.."/Weapons/uss_fletcher_framii_Ammo.lua")
 dofile(current_mod_path.."/Database/db_ships.lua")
--- dofile(current_mod_path..'/Sensors/uss_fletcher_framii_sensors.lua')
--- dofile(current_mod_path..'/Weapons/GD_RIM116.lua')
-
---[[
-dofile(current_mod_path..'/uss_fletcher_framii.lua')
-dofile(current_mod_path..'/uss_fletcher_framii_i.lua')
-dofile(current_mod_path..'/uss_the_sullivans.lua')
-dofile(current_mod_path..'/scripts/uss_fletcher_framiiRunwaysAndRoutes.lua')
-]]
 
 plugin_done()
 
