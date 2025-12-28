@@ -39,7 +39,7 @@ GT.distFindObstacles = 150.6
 GT.numParking = 1
 GT.Plane_Num_ = 0
 GT.Helicopter_Num_ = 1
-GT.Landing_Point = {-2.16, 3.57, 0.0}
+GT.Landing_Point = {-2.16-4.50, 3.57, 0.0}
 
 --GT.LSOPosition = {81.236, 24.0, 28.497, 10.0, 0.0} 
 

@@ -56,7 +56,7 @@ GT.OLS = {
 GT.distFindObstacles = 180
 
 GT.numParking = 2 -- runways
-GT.Plane_Num_ = 8 --number of planes, not sure if it matters in game
+GT.Plane_Num_ = 40 --number of planes, not sure if it matters in game
 GT.Helicopter_Num_ = 8 -- Number heli spawns
 
 ------------------------ Landing Signal Officer (Left Alt + F9) -- updated by Toan, 2024-01-22 -------------------------------

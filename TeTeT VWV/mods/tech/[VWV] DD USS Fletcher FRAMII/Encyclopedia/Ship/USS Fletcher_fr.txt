@@ -1,0 +1,45 @@
+USS Fletcher DD-445
+
+uss_fletcher_framii_hedge_hog
+USS Fletcher
+
+Désignation: USS Fletcher (DD-445, puis DDE-445)
+Type: Destroyer classe Fletcher
+Développeur: Federal Shipbuilding & Drydock Company, Kearny, New Jersey
+Construit: Lancé le 3 mai 1942, mis en service le 30 juin 1942
+Nombre produit: Navire de tête d'une classe de 175 destroyers
+Équipage: 329 officiers et hommes
+Armement principal: 5 x canons simples de 5 pouces (127mm)/38 calibre (système de contrôle de tir Mark 37)
+Armement secondaire: 6-10 x canons Bofors AA 40mm, 7-12 x canons automatiques Oerlikon 20mm
+Torpilles: 10 x tubes lance-torpilles de 21 pouces (533mm) (2 x 5 en montage axial ; torpilles Mark 15)
+Armement ASM: 6 x lanceurs de grenades sous-marines K-gun, 2 x racks de grenades sous-marines
+Blindage: *
+
+Motorisation: 2 x turbines à vapeur à engrenages alimentées par 4 chaudières au mazout, 2 hélices
+Puissance: 60 000 shp (45 MW)
+Vitesse: 36,5 nœuds (67,6 km/h)
+Autonomie: 5 500 milles nautiques à 15 nœuds (8 850 km à 28 km/h)
+Consommation: *
+Déplacement: 2 050 tonnes (standard), 2 500 tonnes (pleine charge)
+Longueur: 376,5 pieds (114,8 m)
+Largeur: 39,5 pieds (12,0 m)
+Tirant d'eau: 17,5 pieds (5,3 m)
+Particularité: Premier navire à mettre en œuvre le CIC (Combat Information Center), innovation du commandant Cole et de l'exec Wylie
+
+Histoire:
+
+L'USS Fletcher DD-445 était le navire de tête de la classe de destroyers la plus prolifique de l'histoire de la marine américaine, nommé en l'honneur de l'amiral Frank Friday Fletcher, récipiendaire de la Medal of Honor pour son leadership lors de la guerre américano-mexicaine.
+Lancé le 3 mai 1942 par Federal Shipbuilding & Drydock Company à Kearny, New Jersey, et parrainé par Mme F.F. Fletcher, veuve de l'amiral, le Fletcher fut mis en service le 30 juin 1942 sous le commandement du Lieutenant Commander W.M. Cole.
+Arrivé à Nouméa, Nouvelle-Calédonie, le 5 octobre 1942, le Fletcher commença immédiatement les missions d'escorte et de patrouille dans l'opération de Guadalcanal, bombardant Lunga Point le 30 octobre.
+Le 13 novembre 1942, lors de la bataille navale de Guadalcanal, le Fletcher joua un rôle crucial en tirant canons et torpilles dans la mêlée générale qui coula deux destroyers japonais et endommagea le cuirassé Hiei, plus tard envoyé par le fond par l'aviation.
+Surnommé "Lucky 13" après avoir émergé sans dommage de la bataille du "vendredi 13" novembre où il était le 13e navire en ligne dans la Task Force 67, le Fletcher devint célèbre pour l'innovation du CIC (Combat Information Center), une contribution majeure du commandant Cole et de l'exec Wylie qui révolutionna la conduite des combats navals.
+Le 30 novembre 1942, le Fletcher mena sa force à travers le canal de Lengo et établit le premier contact radar avec l'ennemi au large de Tassafaronga Point juste avant minuit, participant à une bataille qui vit un destroyer japonais coulé mais quatre croiseurs américains gravement endommagés.
+Le Fletcher sauva les survivants du Northampton (CA-26) en utilisant ingénieusement des filets de cargaison flottant sur liège pour récupérer de grands groupes d'hommes de l'eau, puis continua à opérer dans les Salomon : patrouilles, bombardements côtiers, destruction de péniches japonaises, sauvetage d'aviateurs abattus et couverture de nouveaux débarquements.
+Le 11 février 1943, alerté par une fusée fumigène larguée par un avion de l'Helena (CL-50), le Fletcher attaqua et coula un sous-marin japonais, l'une des 29 victoires sous-marines de la classe Fletcher durant la guerre.
+Entre avril et mai 1943, le Fletcher séjourna à Sydney, Australie, pour une pause bien méritée avant de reprendre un mois de service général dans les Salomon, puis participa aux opérations des îles Gilbert (novembre 1943), repoussant une contre-attaque aérienne japonaise le 26 novembre, et des îles Marshall (1944).
+En octobre 1944, le Fletcher participa à la libération des Philippines, soutenant les débarquements au golfe de Lingayen en janvier 1945, et le 14 février 1945, subit des pertes lors de l'opération de Corregidor où le Water Tender Second Class Elmer Charles Bigelow reçut à titre posthume la Medal of Honor pour son héroïsme au combat.
+Désarmé le 15 janvier 1947 après avoir reçu 15 étoiles de combat pour la Seconde Guerre mondiale (un nombre dépassé par peu d'autres navires), le Fletcher fut remis en service le 3 octobre 1949 en tant que spécialiste de la guerre anti-sous-marine (ASW) et reclassé DDE-445.
+Lors de la guerre de Corée, le Fletcher fournit un appui-feu lors de l'invasion d'Inchon en septembre 1950 et retourna un an plus tard pour à nouveau fournir un soutien, recevant 5 étoiles de combat supplémentaires pour ce conflit.
+Reclassé DD-445 en juin 1962, le Fletcher effectua quatre déploiements de six mois au Vietnam entre 1965 et 1969, assumant diverses missions : appui-feu naval pour les troupes à terre, garde d'avion pour porte-avions, interdiction du trafic côtier et service de piquetage près de la côte nord-vietnamienne.
+En août 1968, dans un événement historique, le Fletcher et l'USS Philip (DD-498) échangèrent leurs équipages pour permettre à l'équipage entraîné du Philip de poursuivre un déploiement prévu après que leur navire fut jugé inapte au service, résultant en un déploiement final du Fletcher seulement trois mois après son retour du précédent.
+Désarmé le 1er août 1969 à San Diego et radié le même jour après 27 ans de service honorable, le Fletcher, malgré son statut de navire de tête de classe et son palmarès exceptionnel, ne fut pas préservé comme navire-musée ; vendu pour ferraillage en février 1972 pour 103 500 $ à la Tai Kien Industries Co. de Taïwan, il fut remorqué par un remorqueur japonais vers sa destination finale, une fin indigne pour un vétéran de trois guerres qui avait forgé la légende de sa classe.

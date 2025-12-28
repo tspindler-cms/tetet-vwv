@@ -17,6 +17,8 @@ declare_plugin("tetet_fletcher",
 mount_vfs_model_path	(current_mod_path.."/Shapes/")
 mount_vfs_texture_path  (current_mod_path.."/Textures/")
 mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_framii.zip")
+mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_liveries.zip")
+mount_vfs_texture_path  (current_mod_path.."/Textures/fletcher_liveries_1.zip")
 mount_vfs_liveries_path (current_mod_path.."/Liveries")
 ----------------------------------------------------------------------------------------
 

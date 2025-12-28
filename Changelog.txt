@@ -1,4 +1,11 @@
 2025-12-28
+  USS Bon Homme Richard
+    - New parking positions by James
+  IX-514
+    - New helo landing position by HawaiianRyan
+  USS Fletcher
+    - Fixed Encyclopedia by Fredy
+    - Fixed Liveries by Fredy
   A-37, EC-121, MiG-17, USS Fletcher FRAMII 
     - Update liveries with textures with mipmaps
   EC-121
