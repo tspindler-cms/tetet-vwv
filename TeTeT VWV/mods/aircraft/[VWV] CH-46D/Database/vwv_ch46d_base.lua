@@ -6,7 +6,7 @@
 	Some values are classified or generally unavailable, so inferences based on other known
 	performance numbers or educated guesses are applied and noted where appropriate.
 	
-	Original work by TeTeT modified by HawaiianRyan.
+	Original work by TeTeT; modified by HawaiianRyan.
 	
 	Some useful references:
 		https://simviation.com/rinfouh46.htm
@@ -16,7 +16,7 @@
 		https://apps.dtic.mil/sti/tr/pdf/ADA134321.pdf
 		https://apps.dtic.mil/sti/tr/pdf/ADA134322.pdf
 		https://apps.dtic.mil/sti/tr/pdf/ADA134323.pdf
-		
+		https://ntrs.nasa.gov/api/citations/19840024310/downloads/19840024310.pdf
 ]]
 
 
@@ -24,10 +24,10 @@ return {
 	Name 				=   'vwv_ch46d',
 	DisplayName			= 	_('[VWV] CH-46D Sea Knight'),
 	DisplayNameShort	= 	_('CH-46D'),
-	date_of_introduction= 1964.06,
-	Picture 			=  	current_mod_path .. '/Textures/sh_2c_f.png',
+	date_of_introduction= 	1964.06,
+	Picture 			=  	current_mod_path .. '/Textures/sh_2c_f.png',	-- Mission editor loadout picture
 	Rate 				= 	40, -- RewardPoint in Multiplayer
-	Shape 				= 	"ch46d",
+	Shape 				= 	"ch46d",	-- This points to /Shapes/ch46d.lods
 	WorldID				=	WSTYPE_PLACEHOLDER, 
 	defFuelRatio    	= 	0.8, -- fuel default in fractions of the full (1.0)
 	singleInFlight 		= 	false,
@@ -35,10 +35,10 @@ return {
 	shape_table_data 	=
 	{
 		{
-			file  	 = "ch46d";
+			file  	 = "ch46d";		-- This points to /Shapes/ch46d.lods
 			life  	 = 5; -- lifebar
 			vis   	 = 3; -- visibility gain.
-			desrt    = ''; -- Name of destroyed object file name
+			desrt    = 'ch-47d-oblomok'; -- Name of destroyed object file name
 			fire  	 = { 300, 2}; -- Fire on the ground after destroyed: 300sec 2m
 			username = "ch46d";
 			index    =  WSTYPE_PLACEHOLDER;
@@ -47,8 +47,8 @@ return {
 			drawonmap = true;
 		},
 		{
-			name  = "ch46d_oblomok";
-			file  = "ch46d";
+			name  = "ch-47d-oblomok";
+			file  = "ch-47d-oblomok";
 			fire  = { 240, 2};
 		},
 
@@ -68,14 +68,14 @@ return {
     DefaultTask = aircraft_task(Transport),
 	
 	
-	-- DIMENSIONS (correct in original)
-	length 			= 13.92,    -- Fuselage length: Mostly used for collision avoidance and ensuring it "fits" in its spawn and parking places.
-	height 			= 5.08,     -- Height. Mostly used for collision avoidance and ensuring it "fits" in its spawn and parking places.
-	rotor_height 	= 3.02,    	-- Front hub height in the 3D model itself, in its geographic coordinate frame (not from the ground!)
-	rotor_diameter 	= 15.24, 	-- Main rotor diameter: 15.24 meters
+	-- DIMENSIONS
+	length 			= 13.92,    -- Fuselage length [meters]
+	height 			= 5.08,     -- Height [meters]
+	rotor_height 	= 3.02,    	-- Front hub height in the 3D model itself, in its geographic coordinate frame (not from the ground!) [meters]
+	rotor_diameter 	= 15.24, 	-- Main rotor diameter [meters]
 	blades_number 	= 6,     	-- 3 blades per rotor (6 total)
-	blade_chord 	= 0.387,   	-- CH-46D chord length: 38.7 cm = 0.387 meters
-	blade_area 		= 2.95,    	-- The area of each blade (blade chord * blade radius = 0.387m * 7.62m)
+	blade_chord 	= 0.387,   	-- CH-46D chord length: 38.7 cm = 0.387 meters [meters]
+	blade_area 		= 2.95,    	-- The area of each blade (blade chord * blade radius = 0.387m * 7.62m) [m^2]
 	
 	rotor_pos		= { 5.08, 3.02,  0.0},	-- Forward rotor position (3D model center of hub)
 	tail_pos 		= {-5.22, 4.444, 0.0},	-- Aft rotor position (3D model center of hub)
@@ -86,258 +86,414 @@ return {
 	tail_rotor_RPM 	= -264, 	-- Aft rotor RPM (same as front, negative for counter-rotation; clockwise looking from above)
 	
 	
-							--[[
-								ED's CH-47F lists 30000, but the real world CH-47F should have a blade MOI of ~3755 kg*m^2
-								and overall rotor MOI of ~21,900 kg*m^2, so what is the CH-47F module using?
-								Presume that the DCS CH-47F's definition file is wrong.
-								
-								Overall CH-46D rotor MOI = ~6,800 - ~8,200 kg*m^2 so we'll pick the mean.
-								
-								Note: While exact factory data for the "D" model is classified or obscure, this value
-								is derived from the standard "1.5-second hover time" energy requirement for twin-engine
-								helicopters and scaling from the CH-47B metal-blade system.
-							]]
-	rotor_MOI 		= 7000,		-- Rotor total moment of inertia (not per blade)
+	--[[
+		The CH-46D is equipped with two identical tandem rotors, each with three blades.
+		Based on available data, each rotor blade has a mass of approximately 70.3 kg and a
+		length (radius) of 7.77 m. Approximating each blade as a uniform rod pivoted at the
+		hub for the purpose of rotational inertia calculation, the moment of inertia per
+		blade is I_b = 1/3 * m_b * R^2 = ~1,415 kg*m^2 .
+		
+		The total moment of inertia for one rotor (excluding minor contributions from the hub)
+		is therefore ~4,245 kg*m^2. This value applies to each of the two rotors.
+	]]
+	rotor_MOI 		= 4245,		-- Rotor total moment of inertia (not per blade) [kg*m^2]
 	
 	
-							--[[
-								For the Boeing Vertol CH-46D Sea Knight, the tandem rotor efficiency factor—typically
-								referring to the induced power interference factor (k_int​ or K) due to the interaction
-								between the two rotors—is approximately 1.16 to 1.18 in hover.
+	--[[
+		For the Boeing Vertol CH-46D Sea Knight, the tandem rotor efficiency factor -- typically
+		referring to the induced power interference factor (k_int​ or K) due to the interaction
+		between the two rotors -- is approximately 1.16 to 1.18 in hover.
 
-								This factor quantifies the aerodynamic penalty caused by the rear rotor operating in
-								the wake of the forward rotor. In terms of overall efficiency, this translates to
-								the tandem system being roughly 85% as efficient as two isolated rotors producing
-								the same thrust.
+		This factor quantifies the aerodynamic penalty caused by the rear rotor operating in
+		the wake of the forward rotor. In terms of overall efficiency, this translates to
+		the tandem system being roughly 85% as efficient as two isolated rotors producing
+		the same thrust.
 
-								Key aerodynamic specifications determining this factor for the CH-46D include:
+		Key aerodynamic specifications determining this factor for the CH-46D include:
 
-									Rotor Overlap (critical driving factor):
-									The CH-46D rotors have an overlap of approximately 34% (geometric overlap ratio).
+			Rotor Overlap (critical driving factor):
+			The CH-46D rotors have an overlap of approximately 34% (geometric overlap ratio).
 
-									Interference Mechanism:
-									In hover, the rear rotor operates partially in the downwash of the front rotor,
-									requiring higher induced power to produce lift. The "efficiency factor" acts as
-									a multiplier to the induced power calculated by momentum theory.
+			Interference Mechanism:
+			In hover, the rear rotor operates partially in the downwash of the front rotor,
+			requiring higher induced power to produce lift. The "efficiency factor" acts as
+			a multiplier to the induced power calculated by momentum theory.
 
-									Correction Value:
-									While an ideal single rotor has a factor of 1.0, the CH-46D's tandem configuration
-									requires an induced power correction of ~1.18 (meaning ~18% more induced power
-									is required compared to ideal isolated rotors).
-									
-								* Note:
-								This interference penalty decreases significantly in forward flight(above ~60 knots)
-								as the rear rotor moves out of the forward rotor's wake, and the "tandem" configuration
-								becomes aerodynamically advantageous due to the lack of a power-consuming tail rotor.
-							]]
+			Correction Value:
+			While an ideal single rotor has a factor of 1.0, the CH-46D's tandem configuration
+			requires an induced power correction of ~1.18 (meaning ~18% more induced power
+			is required compared to ideal isolated rotors).
+			
+		* Note:
+		This interference penalty decreases significantly in forward flight(above ~60 knots)
+		as the rear rotor moves out of the forward rotor's wake, and the "tandem" configuration
+		becomes aerodynamically advantageous due to the lack of a power-consuming tail rotor.
+	]]
 	
 	thrust_correction = 0.85, 	-- Tandem rotor efficiency factor (see discussion above)
 	scheme 			= 2,  		-- Tandem rotor scheme enumeration
 
-	-- WEIGHT PARAMETERS (kg)
-	M_empty 		= 5827,		-- A empty mass of CH-46D is 	~12,846 lbs = ~5,827 kg
-	M_nominal 		= 9435,    	-- Normal mission: 				 20,800 lbs = ~9,435 kg
+	-- WEIGHT PARAMETERS [kg]
+	M_empty 		= 5827,		-- A empty mass of CH-46D is 	~12,846 lbs = ~5,827 kg [kg]
+	M_nominal 		= 9435,    	-- Normal mission: 				 20,800 lbs = ~9,435 kg [kg]
 	
-	M_max 			= 11022,   	-- Max gross weight: 			 24,300 lbs = ~11,022 kg
+	M_max 			= 11022,   	-- Max gross weight: 			 24,300 lbs = ~11,022 kg [kg]
 								-- Note: This is the absolute structural limit for takeoff, typically used for
 								-- emergency war situations or heavy-lift missions. Operations above 9,435 kg often
 								-- require "running takeoffs" rather than vertical ascents.
 	
-							--[[
-								Standard internal fuel (stub wings/sponsons) is approximately
-								350 US Gallons (1,325 Liters) = ~2,380 lbs (1,080 kg) using 
-								(JP-5/Jet A approx. 6.8 lbs/gallon).
-								
-								Fuel Burn Rate: ~1,200 lbs/hour (approx. 175–180 gallons/hour)
-								
-								Endurance: ~2.0 Hours (plus 20 min reserve)
-							]]
-	M_fuel_max 		= 1080,		-- Internal fuel tanks only (see above)
+	--[[
+		Standard internal fuel (stub wings/sponsons) is approximately
+		350 US Gallons (1,325 Liters) = ~2,380 lbs (1,080 kg) using 
+		(JP-5/Jet A approx. 6.8 lbs/gallon).
+		
+		Fuel Burn Rate: ~1,200 lbs/hour (approx. 175–180 gallons/hour)
+		
+		Endurance: ~2.0 Hours (plus 20 min reserve)
+	]]
+	M_fuel_max 		= 1080,		-- Internal fuel tanks only (see above) [kg]
 
-	-- PERFORMANCE (Speeds in km/h for Helicopters)
-	V_max 			= 267.0,    -- Max speed: 144 kts = ~267 km/h
+	-- PERFORMANCE [km/h for helicopters]
+	V_max 			= 267.0,    -- Max speed: 144 kts = ~267 km/h [kph]
 	
-							--[[
-								Although the aircraft is capable of cruising near its top speed (~265 kph), pilots
-								typically flew at the recommended 120–130 knot range for two main reasons:
+	--[[
+		Although the aircraft is capable of cruising near its top speed (~265 kph), pilots
+		typically flew at the recommended 120–130 knot range for two main reasons:
 
-									Vibration & Stress: Flying near maximum speed (Vne) in a tandem-rotor helicopter
-									like the "Phrog" significantly increases vibration and mechanical stress on the
-									rotor heads and transmission.
+			Vibration & Stress: Flying near maximum speed (Vne) in a tandem-rotor helicopter
+			like the "Phrog" significantly increases vibration and mechanical stress on the
+			rotor heads and transmission.
 
-									Fuel Economy: The "Economical Cruise" of ~209 kph (113 knots) is often cited in
-									flight manuals (NATOPS) as the speed that provides the best range per pound of fuel.
-							]]
-	V_max_cruise 	= 231.5,  	-- Cruise speed: 115 kts = ~231.5 km/h
+			Fuel Economy: The "Economical Cruise" of ~209 kph (113 knots) is often cited in
+			flight manuals (NATOPS) as the speed that provides the best range per pound of fuel.
+	]]
+	V_max_cruise 	= 231.5,  	-- Cruise speed: 115 kts = ~231.5 km/h [kph]
 	
-	-- Vertical performance, maximum hover altitude (meters)
-	H_stat_max_L 	= 4267,   	-- Hover out of ground effect (OGE) (Light)
-	H_stat_max 		= 2600,    	-- Hover OGE (Max weight)
-	
-								-- Note: The aerodynamic ceiling is approx. 5,180 m / 17,000 ft, but the
-								-- CH-46D is typically restricted to 14,000 ft by NATOPS regulations
-	H_din_two_eng 	= 5180,		-- (oxygen requirements and flight envelope limits).
-									
-								-- Single engine ceiling
-								-- Note: This figure is for a standard mission weight. If the aircraft is at
-								-- Max Gross Weight (24,300 lbs) and loses an engine, the single-engine service
-								-- ceiling is below sea level -- meaning the aircraft cannot maintain altitude
-	H_din_one_eng 	= 1450,		-- and must descend or land immediately.
-	
-							--[[
-								Because running out of fuel in a helicopter is catastrophic (the engines stop and
-								hydraulic pumps fail, making autorotation difficult), pilots rarely planned for
-								flights longer than 1 hour and 30 minutes.
-								
-								Start/Warmup: -15 mins fuel
+	-- Vertical performance, maximum hover altitude [meters]
+	H_stat_max_L 	= 4267,   	-- Hover altitude out of ground effect (OGE) (Light) [meters]
+	H_stat_max 		= 2600,    	-- Hover altitude OGE (Max weight) [meters]
 
-								Reserve Requirement: -20 mins fuel (NATOPS min)
+	--[[
+		Note: The aerodynamic ceiling is approx. 5,180 m / 17,000 ft, but the
+		CH-46D is typically restricted to 14,000 ft by NATOPS regulations
+		(oxygen requirements and flight envelope limits). [meters]
+	]]
+	H_din_two_eng 	= 5180,		-- Two-engine ceiling [meters]
+	
+	--[[
+		Single engine ceiling
+		Note: This figure is for a standard mission weight. If the aircraft is at
+		Max Gross Weight (24,300 lbs) and loses an engine, the single-engine service
+		ceiling is below sea level -- meaning the aircraft cannot maintain altitude
+		and must descend or land immediately. [meters]
+	]]
+	H_din_one_eng 	= 1450,		-- Single engine ceiling [meters]
+	
+	--[[
+		Because running out of fuel in a helicopter is catastrophic (the engines stop and
+		hydraulic pumps fail, making autorotation difficult), pilots rarely planned for
+		flights longer than 1 hour and 30 minutes.
+		
+		Start/Warmup: -15 mins fuel
 
-								Usable Mission Time: ~1 hour and 25 minutes
-								
-								For DCS, I'll assume no warmup and 20m reserve to compute this ceiling.
-							]]
-	flight_time_typical = 120, 	-- 2.0 hours hours
+		Reserve Requirement: -20 mins fuel (NATOPS min)
+
+		Usable Mission Time: ~1 hour and 25 minutes
+		
+		For DCS, I'll assume no warmup and 20m reserve to compute this ceiling.
+	]]
+	flight_time_typical = 120, 	-- 2.0 hours hours [minutes]
 	
-							--[[
-								The absolute maximum flight time for the CH-46D Sea Knight on internal fuel alone is
-								approximately 2 hours and 15 minutes. This assumes the pilot is flying at
-								"Maximum Endurance Speed" (approx. 70–75 knots) to minimize fuel consumption until
-								the engines flame out.
-							]]
-	flight_time_maximum = 135, 	-- Max endurance without extra fuel tanks
+	--[[
+		The absolute maximum flight time for the CH-46D Sea Knight on internal fuel alone is
+		approximately 2 hours and 15 minutes. This assumes the pilot is flying at
+		"Maximum Endurance Speed" (approx. 70–75 knots) to minimize fuel consumption until
+		the engines flame out.
+	]]
+	flight_time_maximum = 135, 	-- Max endurance without extra fuel tanks [minutes]
 	
-	range = 370,          		-- Maximum one-way range (km) using internal fuel only
+	range = 370,          		-- Maximum one-way range (km) using internal fuel only [km]
 
 	-- ENGINES (Two General Electric T58-GE-10 turboshafts)
 	engines_count 	= 2,		-- How many engines are modeled by this lua (independent of the 3D model)
 	has_afteburner 	= false,	-- CH-46D does not have afterburner -- sorry Airwolf fans.
 	
 	-- FUSELAGE AERODYNAMICS --
-								--[[
-									fuselage_Cxa0 remains largely unchanged from ED's CH-47F.
-									Both aircraft share the same blunt-nosed, tandem-rotor "boxcar"
-									aerodynamic shape. The form drag coefficient is determined
-									by shape rather than size, and the CH-46 shares the CH-47's
-									hydraulically operated ramp and blunt frontal profile.
-									
-									In real aero terms, this is C_x which is approx. 0.5 - 0.8
-									for the CH-46D.
-								]]
-	fuselage_Cxa0 	= 0.60,    	-- See block comment above
+	--[[
+		Definition:
+			This is the Frontal Reference Area (S_ref), a critical
+			parameter for determining drag helicopter drag in DCS.
+		
+		Calculation:
+			1. The Main Fuselage (Tube)
+				The CH-46 Sea Knight has a roughly circular cross-section
+				that tapers slightly near the top.
+
+				Diameter: 	approx. 2.2 m
+
+				Shape:		Modeled as a circle/ellipse
+
+				Calculation:
+							Area​ = pi * (2.2/2)^2 = ~3.80 m^2
+
+			2. The Sponsons (Fuel Pods & Gear Housing)
+				The CH-46 has massive sponsons that protrude significantly
+				from the sides to provide stability on water and house
+				fuel/landing gear.
+
+				Dimensions: Each sponson presents a frontal face of roughly
+							1.1 m (height) x 0.8 m (width).
+
+				Calculation:
+							Area ​= 2 * (1.1 * 0.8) = ~1.76 m^2
+
+			3. The Aft Pylon (Vertical Rise)
+				The rear engine pylon rises significantly above the main
+				cabin roofline to clear the front rotor's wake. This adds
+				a "vertical tail" surface to the frontal view.
+
+				Dimensions: Exposed height above cabin = ~1.8 m
+							Avg width = ~0.8 m.
+
+				Calculation:
+							Area = 1.8 * 0.8 = ~1.44 m^2
+
+			4. Fixed Landing Gear & Hubs
+				The non-retractable nose gear, main struts, and the
+				exposed rotor hubs add "clutter" area.
+
+				Estimate: ~0.5 m^2
+				
+			5. Total Summation:
+				S_ref 	= 	3.80 (Tube) + 1.76 (Sponsons) +
+							1.44 (Pylon) + 0.5 (Gear/Hubs)
+				
+				S_ref 	=	~7.50 m^2
+	]]
+	fuselage_area 	= 7.50,    	-- Frontal Reference Area (S_ref) [m^2]
 	
+	--[[
+		Definition:
+			The drag coefficient at 0 deg Angle of Attack (nose-on airflow).
+		
+		Derivation:
+			f     = Equivalent Flat Plate Area
+			S_ref = Reference Frontal Area
+			C_x   = 0 deg AoA drag coefficient (fuselage_Cxa0)
+		
+			C_x   = f / (S_ref)
+			
+		Calculation:
+			1. The Numerator: Equivalent Flat Plate Area (f)
+				Historical engineering data and drag analyses for the
+				CH-46 series (and similar tandem-rotor helicopters
+				like the Bristol Belvedere) suggest a total parasite
+				drag area of approximately 40 sq ft (3.75 m^2).
+
+				This 3.75 m^2 of "draggy air" comes from summing the
+				drag of specific components:
+
+					Bare Fuselage (Tube): ~1.40 m^2
+						Note: 	The CH-46 fuselage is actually quite
+								aerodynamic (rounded nose, tapered
+								tail), much cleaner than the CH-47.
+
+					Sponsons (Interference Drag): ~0.95 m^2
+						The junction where the sponsons meet the
+						fuselage creates significant turbulence.
+
+					Fixed Landing Gear: ~0.80 m^2
+						Unlike the UH-2, the CH-46 drags three
+						non-retractable wheels and struts through
+						the air.
+
+					Rear Pylon & Hub Interference: ~0.60 m^2
+						The tall aft pylon creates a large wake.
+
+				Total f = 3.75 m^2
+				
+			2. The Denominator: Reference Area (S_ref)
+			
+				Derived above:
+				
+					S_ref = fuselage_area
+					
+					S_ref = 7.50
+				
+			3. The Calculation
+			
+				f     = Equivalent Flat Plate Area = ~3.75 m^2
+				S_ref = Reference Frontal Area = ~7.5 m^2
+				C_x   = 0 deg AoA drag coefficient
+			
+				C_x   = f / (S_ref)
+				
+				C_x   = ~3.75 / ~7.5
+				
+				C_x   = ~0.50
+			
+	]]
+	fuselage_Cxa0 	= 0.50,    	-- 0 degree AoA drag coefficient (Forward drag - C_x) [unitless]
 	
-								--[[	
-									Derivation: This value is higher for the CH-46. This coefficient
-									represents side drag normalized to the frontal area. Because the
-									CH-46 is "skinnier" (a lower width-to-length ratio) than the
-									wide-bodied CH-47F, its side profile is proportionally larger
-									compared to its small frontal face. Therefore, when the wind
-									hits it from the side (90°), it generates more drag relative
-									to its frontal size than the Chinook does.
-								]]
-	fuselage_Cxa90 	= 6.8,    	-- See block comment above
-	
-	
-								--[[	
-									The CH-46D has a significantly smaller frontal cross-section.
-									While the CH-47F features massive fuel sponsons running the length
-									of the fuselage (widening its profile to ~3.8m), the CH-46D
-									fuselage is slender (~2.2m wide) with smaller, localized sponsons
-									at the rear.
-									
-									As near as I can tell, this is meant to be the Equivalent Flat Plane
-									(EFP) area for the simplified flight model. Using the Aerodynamic
-									Reference is for a higher-fidelity external flight model (EFM).
-									
-									With that in mind, the CH-47F's 8.8 value is wrong (or probably not 
-									used since the CH-47F probably calls an EFM).
-									
-									The EFP area for the CH-46D is ~2.3 m2.
-									
-								]]
-	fuselage_area 	= 3.5,    	-- Equivalent Flat Plate Area (f): 2.3 - 3.5 m^2
+	--[[
+		Definition:
+			The drag coefficient at 90 deg Angle of Attack (airflow
+			hitting the bottom of the fuselage, i.e., vertical descent
+			or "belly" drag).
+		
+		Derivation:
+			1. The Geometry: Planform (Belly) Area Breakdown
+				Main Fuselage Tube:
+					Dimensions: Length ~13.7 m × Average Width ~2.2 m
+
+						Area = ~13.7 * ~2.2 = ~30.1 m^2
+
+					Shape Note: While the fuselage is rounded, in
+								vertical flow (cross-flow), a
+								cylinder acts very much like a
+								flat plate in terms of projected
+								area.
+
+				Sponsons (The "Wings"):
+					The CH-46 has large sponsons for fuel and stability.
+
+					Dimensions: Approx. 5.0 m long ×
+								1.15 m wide (protrusion from fuselage) ×
+								2 sides
+
+						Area = 2 * (5.0 * 1.15) = ~11.5 m^2
+
+				Horizontal Stabilizer (Tail Plane):
+				
+					Note: 	The CH-46 has a small sync-shaft cover
+							and stabilizer structure at the rear.
+
+						Area = ~0.4 m^2
+		
+				Total Geometric Planform Area:
+				
+					~30.1 + ~11.5 + ~0.4 = ~42.0 m^2
+					
+			2. The Physics: The "Real" Drag Coefficient
+				Now we apply the aerodynamic reality of a bluff body
+				falling through air.
+
+					Bluff Body C_d​:
+					
+					For a shape like this (a "dirty" cylinder with
+					flat plates sticking out), the drag coefficient
+					is typically 1.0.
+
+						Cylinder C_d​: ~1.2
+
+						Flat Plate C_d​: ~1.17
+
+						3D effects (flow spilling around ends):
+						Reduces C_d slightly to ~1.0.
+
+				Therefore, the Effective Drag Area is:
+				
+					Planform Area (42.0 m^2) x C_d​ (1.0) = 42.0 m^2
+					
+			3. The Final Calculation
+				We divide the Effective Drag Area by the Reference Area
+				to get fuselage_Cxa90:
+				
+					fuselage_Cxa90​ = (Effective Drag) / (S_ref)​
+					
+					fuselage_Cxa90 = (42.0 m^2) / (7.5 m^2)
+					
+					fuselage_Cxa90 = 5.60
+		
+		Summary:
+			The value 5.60 is simply telling DCS:
+			
+				"The belly of this helicopter is 5.6 times larger
+				(and draggier) than the nose of the helicopter."
+	]]
+	fuselage_Cxa90 	= 5.60,    	-- See block comment above [unitless]
+
 
 
 	-- TAIL CONFIGURATION --
-								--[[
-									This parameter says "area," but I'm not so sure this is meant
-									to be the width * height of the rotor pylon. Here's what I can
-									get based on ED's CH-47F listing 3.45m as their parameter:
-									
-									
-									The Aft Pylon (Vertical Profile)
+	--[[
+		This parameter says "area," but I'm not so sure this is meant
+		to be the width * height of the rotor pylon. Here's what I can
+		get based on ED's CH-47F listing 3.45m as their parameter:
+		
+		
+		The Aft Pylon (Vertical Profile)
 
-									This parameter represents the vertical surface area of the rear rotor pylon,
-									specifically the section that extends above the main fuselage tube.
+		This parameter represents the vertical surface area of the rear rotor pylon,
+		specifically the section that extends above the main fuselage tube.
 
-									Physical Part: The large, slab-sided structure at the back of the helicopter
-									that houses the engines and the aft transmission.
+		Physical Part: The large, slab-sided structure at the back of the helicopter
+		that houses the engines and the aft transmission.
 
-									Function: In the real aircraft, this pylon acts exactly like a vertical
-									stabilizer (tail fin). It provides "weathercock stability," keeping the
-									nose pointed forward during high-speed flight.
+		Function: In the real aircraft, this pylon acts exactly like a vertical
+		stabilizer (tail fin). It provides "weathercock stability," keeping the
+		nose pointed forward during high-speed flight.
 
-									Why 3.45 m2? This is the "effective" aerodynamic side area of that pylon tower.
-									It creates side-force when the helicopter slides (yaws) through the air.
-									
-									CH-46D estimate: 	~2.0 - 2.2
-									
-									Justification: The CH-46 aft pylon is shorter and narrower; it houses
-									smaller engines.
-								]]
-	tail_fin_area 	= 2.2,     	-- Under the assumptions above, equivalent vertical stabilizer "area"
+		Why 3.45 m2? This is the "effective" aerodynamic side area of that pylon tower.
+		It creates side-force when the helicopter slides (yaws) through the air.
+		
+		CH-46D estimate: 	~2.0 - 2.2
+		
+		Justification: The CH-46 aft pylon is shorter and narrower; it houses
+		smaller engines.
+	]]
+	tail_fin_area 	= 2.2,     	-- Under the assumptions above, equivalent vertical stabilizer "area" [m^2]
 	
-								--[[
-									This parameter says "area" just like the above for tail_fin_area, but as above
-									it's not the area you would naively assume. Here's what I can gather based
-									on ED's CH-47F listing 2.94m as their parameter:
-									
-									
-									The Fuel Sponsons (Horizontal Profile)
+	--[[
+		This parameter says "area" just like the above for tail_fin_area, but as above
+		it's not the area you would naively assume. Here's what I can gather based
+		on ED's CH-47F listing 2.94m as their parameter:
+		
+		
+		The Fuel Sponsons (Horizontal Profile)
 
-									This parameter almost certainly corresponds to the planform (top-down) area of
-									the side fuel sponsons.
+		This parameter almost certainly corresponds to the planform (top-down) area of
+		the side fuel sponsons.
 
-									Physical Part: The long pods running along the sides of the lower fuselage that
-									hold the fuel and landing gear.
+		Physical Part: The long pods running along the sides of the lower fuselage that
+		hold the fuel and landing gear.
 
-									Function: While not true "wings," these sponsons are flat on top and bottom.
-									At speed, they act like short, stubby wings (lifting bodies). They generate a
-									small amount of lift and, more importantly, pitch damping (preventing the nose
-									from bobbing up and down).
+		Function: While not true "wings," these sponsons are flat on top and bottom.
+		At speed, they act like short, stubby wings (lifting bodies). They generate a
+		small amount of lift and, more importantly, pitch damping (preventing the nose
+		from bobbing up and down).
 
-									Why does the CH-47F use 2.94 m2? The CH-47F has very large, widened fuel
-									sponsons (much larger than the CH-46). This value represents the total
-									horizontal surface area of these pods acting against the airflow.
-									
-									CH-46D estimate: 	~0.8 - 1.2		or		0.65 - 0.85 (0.74 recommended)
-									
-									Critical Difference: The CH-46D has very small "stub" sponsons compared to the
-									massive full-length pods on the Chinook. It has very little horizontal surface
-									area.
-									
-									Important Variation: The "Bullfrog" (CH-46E) - The larger sponsons on the "E"
-									model (~1.50 equiv.) provided significantly better pitch stability (damping)
-									during forward flight, reducing the "porpoising" tendency found in the earlier
-									"D" models.
-								]]
-	tail_stab_area 	= 0.74,   	-- Under the assumptions above, equivalent horizontal stabilizer area (orig. 2.8)
+		Why does the CH-47F use 2.94 m2? The CH-47F has very large, widened fuel
+		sponsons (much larger than the CH-46). This value represents the total
+		horizontal surface area of these pods acting against the airflow.
+		
+		CH-46D estimate: 	~0.8 - 1.2		or		0.65 - 0.85 (0.74 recommended)
+		
+		Critical Difference: The CH-46D has very small "stub" sponsons compared to the
+		massive full-length pods on the Chinook. It has very little horizontal surface
+		area.
+		
+		Important Variation: The "Bullfrog" (CH-46E) - The larger sponsons on the "E"
+		model (~1.50 equiv.) provided significantly better pitch stability (damping)
+		during forward flight, reducing the "porpoising" tendency found in the earlier
+		"D" models.
+	]]
+	tail_stab_area 	= 0.74,   	-- Under the assumptions above, equivalent horizontal stabilizer area [m^2]
 	
-								--[[
-									CG position:	Research says 194 - 214 inches aft of front rotor hub).
-													194 - 214 inches corresponds to 4.9276 - 5.4356 meters
-													
-									Is this parameter the CG position aft of the front rotor hub?
-									
-									5.1816 puts it right in the middle of the recommended range but makes
-									the model unstable.
-													
-									I think real-world values will not work since this parameter is compounded by
-									the 3D model's geographic origin, which probably should be on the
-									recommended CG. Since it's not, we have to manually tune this until the
-									helicopter "flights correctly."
-								]]
+	--[[
+		CG position:	Research says 194 - 214 inches aft of front rotor hub).
+						194 - 214 inches corresponds to 4.9276 - 5.4356 meters
+						
+		Is this parameter the CG position aft of the front rotor hub?
+		
+		5.1816 puts it right in the middle of the recommended range but makes
+		the model unstable.
+						
+		I think real-world values will not work since this parameter is compounded by
+		the 3D model's geographic origin, which probably should be on the
+		recommended CG. Since it's not, we have to manually tune this until the
+		helicopter "flights correctly."
+	]]
 	centering 		= -5.393,	-- -5.38	seems to surge forward more than 5.39, but rotors do not intersect after landing
 								-- -5.39	still surges forward, but rotors do not intersect anything
 								-- -5.40 	seems like minor forward surge, rotors do not intersect. rocking before landing
@@ -345,11 +501,11 @@ return {
 								-- -5.42	slight rocking, rotors intersect PRIFLY again
 
 
-	-- MOMENTS OF INERTIA (kg*m^2)
+	-- MOMENTS OF INERTIA [kg*m^2]
 	-- Format: {pitch, roll, yaw}
 	
 	--[[
-		All the data HawaiianRyan can find on NASA's Technical Memorandum 84281, which details the mathematical
+		All the data HawaiianRyan can find on NASA's Technical Memorandum 84351, which details the mathematical
 		simulation model for the CH-47B, and making the assumption the CH-47F has essentially the same mass
 		distribution and geometric inertia, we should get:
 		
@@ -369,7 +525,7 @@ return {
 		But ED lists
 		
 			{46000,  76162, 80778} for their DCS CH-47F implementation.
-	
+
 		Transforming ED's CH-47F values yields these proposed CH-46D values:
 		
 				{  R,     Y,     P  }
@@ -386,65 +542,67 @@ return {
 			2) MOI = {18000, 103000, 108000},	-- From NASA Technical Memorandum 84281 transformed to CH-46D's
 												   dimensions (real world)
 	]]
+
+	-- MOI = {18000, 103000, 108000},	-- From NASA Technical Memorandum 84351 transformed to CH-46D's dimensions (real world) [kg*m^2]
 	
-	MOI = {18000, 103000, 108000},	-- From NASA Technical Memorandum 84281 transformed to CH-46D's dimensions (real world)
+	MOI = {24045, 144759, 156869},
 
 
 
 	-- FLIGHT CHARACTERISTICS
-	Vy_max 			= 10.4, 	-- Max climb speed in m/s (for AI)
+	Vy_max 			= 10.4, -- Max climb speed in m/s (for AI) [m/s]
 	
-								--[[
-									The maximum vertical speed for a landing in the CH-46D Sea Knight is determined
-									by its structural design limits,specifically the shock-absorbing capability
-									of its landing gear.
-										
-									Structural Design Limit (Touchdown):
-									Approximately 2.4 meters per second(8 feet per second).
-									
-									Note: This is the standard military design specification (MIL-S-8698) for
-									transport helicopters of this era. Touching down at this rate is considered a
-									"limit landing" -- the gear will absorb the impact without failure, but it is
-									the absolute threshold before potential structural damage occurs.
-									
-									Hard Landing Threshold: Generally anything exceeding 1.8 – 2.0 meters per second
-									(approx. 360–400 feet per minute).
-									
-									Note: Exceeding this rate usually requires a maintenance inspection
-									("hard landing inspection") to check for damage to the landing gear,
-									fuselage skin, or rotor transmission mounts.
-									
-									In normal operations, pilots aim for a vertical speed of 0.5 m/s or less
-									(approx. 100 ft/min) at the moment of touchdown.
-								]]
-	Vy_land_max 	= 2.0,      -- Max vertical speed landing: 1.8-2.0 m/s
-	Ny_max 			= 2.5,      -- Max load factor (Max Positive Load: 24.5 m/s2 (Equivalent to +2.5 G))
+	--[[
+		The maximum vertical speed for a landing in the CH-46D Sea Knight is determined
+		by its structural design limits,specifically the shock-absorbing capability
+		of its landing gear.
+			
+		Structural Design Limit (Touchdown):
+		Approximately 2.4 meters per second(8 feet per second).
+		
+		Note: This is the standard military design specification (MIL-S-8698) for
+		transport helicopters of this era. Touching down at this rate is considered a
+		"limit landing" -- the gear will absorb the impact without failure, but it is
+		the absolute threshold before potential structural damage occurs.
+		
+		Hard Landing Threshold: Generally anything exceeding 1.8 – 2.0 meters per second
+		(approx. 360–400 feet per minute).
+		
+		Note: Exceeding this rate usually requires a maintenance inspection
+		("hard landing inspection") to check for damage to the landing gear,
+		fuselage skin, or rotor transmission mounts.
+		
+		In normal operations, pilots aim for a vertical speed of 0.5 m/s or less
+		(approx. 100 ft/min) at the moment of touchdown.
+	]]
+	Vy_land_max 	= 2.0,	-- Max vertical speed landing: 1.8-2.0 m/s [m/s]
+	Ny_max 			= 2.5,	-- Max load factor (Max Positive Load: 24.5 m/s2 (Equivalent to +2.5 G)) [G]
 	
 	radar_can_see_ground = false,	-- Is AI radar able to see enemy surface entities (tanks, ships)?
 	
 	-- LANDING GEAR
-	nose_gear_pos 	= { 4.8265695, -1.73, -0.004341}, 	-- Nose gear position (ground under center of the axel: {y,z,x})
+	nose_gear_pos 	= { 4.8265695, -1.73, -0.004341}, 	-- Nose gear position (ground under center of the axle)
 	
-	main_gear_pos 	= {-2.816938,  -1.23,  1.949},		-- Main gear position (ground under center of the axel: {y,z,x})
+	main_gear_pos 	= {-2.816938,  -1.23,  1.949},		-- Main gear position (ground under center of the axle)
 														-- automatically mirrored
 														
-								--[[
-									Another complication: what is the definition of "normal" stroke?
-									
-									Is it with M_nominal or M_empty?
-									
-									For the CH-46D:
-									
-									Nose gear (305mm available stroke for real CH-46D; 300mm in DCS 3D model):
-										M_nominal (nose)					M_empty
-										~76-127mm chrome showing			~200-230mm chrome showing
-										
-									Main gear (302mm available stroke for real CH-46D; 300mm in DCS 3D model):
-										M_nominal (main)					M_empty
-										~76mm chrome showing				~150-180mm chrome showing
-									
-									We'll pick "normal" to mean M_nominal.
-								]]
+	--[[
+		Another complication: what is the definition of "normal" stroke?
+		
+		Is it with M_nominal or M_empty?
+		
+		For the CH-46D:
+		
+		Nose gear (305mm available stroke for real CH-46D; 300mm in DCS 3D model):
+			M_nominal (nose)					M_empty
+			~76-127mm chrome showing			~200-230mm chrome showing
+			
+		Main gear (302mm available stroke for real CH-46D; 300mm in DCS 3D model):
+			M_nominal (main)					M_empty
+			~76mm chrome showing				~150-180mm chrome showing
+		
+		We'll pick "normal" to mean M_nominal.
+	]]
 	nose_gear_amortizer_direct_stroke 		=  0.0,		-- Full Strut Expansion (no weight on wheels) (arg 2)
 	nose_gear_amortizer_reversal_stroke 	= -0.300225,-- Full Strut Compression (maximum+ weight on wheels) (meters)
 	nose_gear_amortizer_normal_weight_stroke= -0.10,	-- Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
@@ -455,184 +613,179 @@ return {
 	main_gear_amortizer_normal_weight_stroke= -0.076,	-- Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
 	main_gear_wheel_diameter 				=  0.4892,	-- Diameter of the main gear wheels (meters)
 	
-	
-	
+	--[[ 	
+		Based on the NATOPS flight manual for the CH-46D Sea Knight, the nose wheel has
+		two distinct modes of operation regarding its turning angle:
+			
+		1) Power Steering Limit (Taxiing): When the Nose Wheel Steering (NWS) system is
+		engaged, the nose wheel is steerable through a 60° arc (typically 30° left and
+		30° right) via the rudder pedals. This allows the pilot to perform controlled
+		turns during taxi.
 
-								--[[ 	
-									Based on the NATOPS flight manual for the CH-46D Sea Knight, the nose wheel has
-									two distinct modes of operation regarding its turning angle:
-										
-									1) Power Steering Limit (Taxiing): When the Nose Wheel Steering (NWS) system is
-									engaged, the nose wheel is steerable through a 60° arc (typically 30° left and
-									30° right) via the rudder pedals. This allows the pilot to perform controlled
-									turns during taxi.
-
-									2) Swivel Limit (Towing/Handling): For ground handling and towing, or when the
-									steering is disconnected/unlocked, the nose wheel is capable of swiveling 360°
-									continuously.
-									
-									
-									Since DCS only models self-powered movement, pick (1) then add some extra
-									freedom of motion to account for real-world pilots using pedal turns.
-								]]
+		2) Swivel Limit (Towing/Handling): For ground handling and towing, or when the
+		steering is disconnected/unlocked, the nose wheel is capable of swiveling 360°
+		continuously.
+		
+		
+		Since DCS only models self-powered movement, pick (1) then add some extra
+		freedom of motion to account for real-world pilots using pedal turns.
+	]]
 	wheel_steering_angle_max = math.rad(65.0),
 	
-								--[[
-									I think the next two parameters are related to the mechanical stops (limits)
-									for the rotor blade Lead-Lag (hunting) motion.
-									
-									This conclusion is based on data extracted from other DCS helicopters and
-									looking at real-world parameters which might match the given data:
-									
-										Ka-50 lead_stock_main = 0.295,
-										Ka-50 lead_stock_support = 0.21,
+	--[[
+		I think the next two parameters are related to the mechanical stops (limits)
+		for the rotor blade Lead-Lag (hunting) motion.
+		
+		This conclusion is based on data extracted from other DCS helicopters and
+		looking at real-world parameters which might match the given data:
+		
+			Ka-50 lead_stock_main = 0.295,
+			Ka-50 lead_stock_support = 0.21,
 
-										Mi-24P lead_stock_main = 0.438,
-										Mi-24P lead_stock_support = 0.356
+			Mi-24P lead_stock_main = 0.438,
+			Mi-24P lead_stock_support = 0.356
 
-										CH-47F lead_stock_main = 0.265,
-										CH-47F lead_stock_support = 0.265
-										
-										UH-60A lead_stock_main = 0.117
-										UH-60A lead_stock_support = 0.138 
-									
-									
-									The Physical Meaning
+			CH-47F lead_stock_main = 0.265,
+			CH-47F lead_stock_support = 0.265
+			
+			UH-60A lead_stock_main = 0.117
+			UH-60A lead_stock_support = 0.138 
+		
+		
+		The Physical Meaning
 
-										lead_stock_main: This is likely the Lag Limit (the rearward stop).
+			lead_stock_main: This is likely the Lag Limit (the rearward stop).
 
-									In powered flight, drag forces cause the rotor blades to "lag" behind the hub's
-									rotation. This value defines the maximum angle (in radians) the blade can swing
-									backward before hitting the mechanical stop or fully compressing the damper.
+		In powered flight, drag forces cause the rotor blades to "lag" behind the hub's
+		rotation. This value defines the maximum angle (in radians) the blade can swing
+		backward before hitting the mechanical stop or fully compressing the damper.
 
-										lead_stock_support: This is likely the Lead Limit (the forward stop).
+			lead_stock_support: This is likely the Lead Limit (the forward stop).
 
-									This defines how far forward the blade can swing (e.g., during autorotation or
-									rapid deceleration) before hitting the forward stop.
+		This defines how far forward the blade can swing (e.g., during autorotation or
+		rapid deceleration) before hitting the forward stop.
 
-									In the DCS code structure, "stock" is often a transliteration of the Russian
-									term "Shtok" (Шток), which refers to the piston rod of a hydraulic damper.
-									Therefore, these parameters define the maximum travel (stroke) of the lead-lag
-									damper, expressed as the equivalent angular limit (in radians) of the blade.
-									
-									
-									Data Analysis and Findings
-									
-									Helicopter	Parameter		(Rad) 	(Deg)	Real-World Context
-									Mi-24P		Main (Lag)		0.438	25.1°	Massive articulated rotor allows
-																				huge lag to absorb drag from heavy
-																				blades.
-												Support (Lead)	0.356	20.4°	Large forward swing allowance for
-																				high-speed maneuvering.
-												
-									Mi-8MT		Main (Lag)		0.360	20.6°	Similar to Mi-24 but slightly older
-																				hub design; limits are tighter.
-												Support (Lead)	0.176	10.1°	Much more restrictive forward swing
-																				limit than the Mi-24.
-												
-									Ka-50		Main (Lag)		0.295	16.9°	Coaxial rotors must restrict movement
-																				to prevent blades from hitting each other.
-												Support (Lead)	0.210	12.0°
-												
-									CH-47F		Both			0.265	15.2°	Symmetrical limits. The tandem rotors are
-																				identical and counter-rotating.
-									
-									UH-60A		Main (Lag)		0.117	6.7°	Key difference: The UH-60 uses an
-																				elastomeric rotor head. It doesn't have
-																				loose mechanical hinges like the Mi-24;
-																				it twists against a rubber bearing.
-																				6.7° is a very realistic, tight limit
-																				for an elastomeric bearing.
-												Support (Lead)	0.138	7.9°	Slightly more allowance for lead
-																				(possibly to account for autorotation
-																				dynamics).
-									
-									
-									
-									* Quick aside - Some helicopters have negative values:
-										
-										UH-1H lead_stock_main = -0.1,
-										UH-1H lead_stock_support = -0.1,
-										
-										SA342 lead_stock_main = -0.1,
-										SA342 lead_stock_support = -0.1,
+		In the DCS code structure, "stock" is often a transliteration of the Russian
+		term "Shtok" (Шток), which refers to the piston rod of a hydraulic damper.
+		Therefore, these parameters define the maximum travel (stroke) of the lead-lag
+		damper, expressed as the equivalent angular limit (in radians) of the blade.
+		
+		
+		Data Analysis and Findings
+		
+		Helicopter	Parameter		(Rad) 	(Deg)	Real-World Context
+		Mi-24P		Main (Lag)		0.438	25.1°	Massive articulated rotor allows
+													huge lag to absorb drag from heavy
+													blades.
+					Support (Lead)	0.356	20.4°	Large forward swing allowance for
+													high-speed maneuvering.
+					
+		Mi-8MT		Main (Lag)		0.360	20.6°	Similar to Mi-24 but slightly older
+													hub design; limits are tighter.
+					Support (Lead)	0.176	10.1°	Much more restrictive forward swing
+													limit than the Mi-24.
+					
+		Ka-50		Main (Lag)		0.295	16.9°	Coaxial rotors must restrict movement
+													to prevent blades from hitting each other.
+					Support (Lead)	0.210	12.0°
+					
+		CH-47F		Both			0.265	15.2°	Symmetrical limits. The tandem rotors are
+													identical and counter-rotating.
+		
+		UH-60A		Main (Lag)		0.117	6.7°	Key difference: The UH-60 uses an
+													elastomeric rotor head. It doesn't have
+													loose mechanical hinges like the Mi-24;
+													it twists against a rubber bearing.
+													6.7° is a very realistic, tight limit
+													for an elastomeric bearing.
+					Support (Lead)	0.138	7.9°	Slightly more allowance for lead
+													(possibly to account for autorotation
+													dynamics).
+		
+		
+		
+		* Quick aside - Some helicopters have negative values:
+			
+			UH-1H lead_stock_main = -0.1,
+			UH-1H lead_stock_support = -0.1,
+			
+			SA342 lead_stock_main = -0.1,
+			SA342 lead_stock_support = -0.1,
 
-										OH-58D lead_stock_main = -0.05,
-										OH-58D lead_stock_support = -0.05,
-										
-									It's likely that negative values tell the DCS engine that these are blades rigidly
-									attached to the rotor hug and do not have lead-lag articulation.
-									
-									Summary of the negative value case:
-									
-									If you see a positive number: The helicopter has a physical hinge, and the number
-									is the angle (in radians) where the blade hits the metal stop.
+			OH-58D lead_stock_main = -0.05,
+			OH-58D lead_stock_support = -0.05,
+			
+		It's likely that negative values tell the DCS engine that these are blades rigidly
+		attached to the rotor hub and do not have lead-lag articulation.
+		
+		Summary of the negative value case:
+		
+		If you see a positive number: The helicopter has a physical hinge, and the number
+		is the angle (in radians) where the blade hits the metal stop.
 
-									If you see a negative number: The helicopter relies on structural flexing
-									(bending the rotor yoke) OR the flight model is "Custom" and has disabled the
-									default hinge physics.
-									
-									
-									Back to our CH-46D...
-									
-									We will choose:
-									
-											lead_stock_main: 	0.265 (approx. 15.2°)
+		If you see a negative number: The helicopter relies on structural flexing
+		(bending the rotor yoke) OR the flight model is "Custom" and has disabled the
+		default hinge physics.
+		
+		
+		Back to our CH-46D...
+		
+		We will choose:
+		
+				lead_stock_main: 	0.265 (approx. 15.2°)
 
-											lead_stock_support:	0.265 (approx. 15.2°)
-											
-									
-									The Rationale
-									
-									
-									1. Design Lineage (The "Little Brother" Rule)
-									
-									The CH-46 Sea Knight is the direct predecessor to the CH-47 Chinook. Both
-									were designed by Vertol (later Boeing Vertol) using the exact same rotor
-									hub philosophy:
+				lead_stock_support:	0.265 (approx. 15.2°)
+				
+		
+		The Rationale
+		
+		
+		1. Design Lineage (The "Little Brother" Rule)
+		
+		The CH-46 Sea Knight is the direct predecessor to the CH-47 Chinook. Both
+		were designed by Vertol (later Boeing Vertol) using the exact same rotor
+		hub philosophy:
 
-									Tandem Configuration: 	Two identical, counter-rotating rotors.
+		Tandem Configuration: 	Two identical, counter-rotating rotors.
 
-									Fully Articulated Hubs:	3 blades per hub, with vertical flapping hinges
-															and vertical lead-lag (drag) hinges.
+		Fully Articulated Hubs:	3 blades per hub, with vertical flapping hinges
+								and vertical lead-lag (drag) hinges.
 
-									Hydraulic Dampers: 		Both use linear hydraulic dampers to manage the
-															lead-lag hunting.
+		Hydraulic Dampers: 		Both use linear hydraulic dampers to manage the
+								lead-lag hunting.
 
-									Because the hub geometry is geometrically scaled, the angular limits
-									(the maximum range the blade can swing before hitting a stop) are likely
-									identical or nearly identical to the CH-47.
-									
-									
-									2. Why Symmetrical Values?
-									
-									Just like the CH-47, the CH-46 uses two identical rotor heads.
+		Because the hub geometry is geometrically scaled, the angular limits
+		(the maximum range the blade can swing before hitting a stop) are likely
+		identical or nearly identical to the CH-47.
+		
+		
+		2. Why Symmetrical Values?
+		
+		Just like the CH-47, the CH-46 uses two identical rotor heads.
 
-									If lead_stock_main and lead_stock_support were different (asymmetric),
-									it would imply the rotor is optimized for air flow coming from only one
-									direction (like a standard helicopter).
+		If lead_stock_main and lead_stock_support were different (asymmetric),
+		it would imply the rotor is optimized for air flow coming from only one
+		direction (like a standard helicopter).
 
-									Tandem rotors must operate efficiently with the rear rotor flying in
-									the wake of the front rotor, and the transmission synchronizes them.
-									Symmetrical stops (+/-15.2°) are standard for this configuration to
-									prevent the blades from swinging out of sync and colliding (intermeshing).
-									
-									
-									3. Why not "Negative" or "Low"?
+		Tandem rotors must operate efficiently with the rear rotor flying in
+		the wake of the front rotor, and the transmission synchronizes them.
+		Symmetrical stops (+/-15.2°) are standard for this configuration to
+		prevent the blades from swinging out of sync and colliding (intermeshing).
+		
+		
+		3. Why not "Negative" or "Low"?
 
-									Not Negative: The CH-46 has real physical hinges (unlike the UH-1H).
+		Not Negative: The CH-46 has real physical hinges (unlike the UH-1H).
 
-									Not Low (<0.15): The CH-46 uses metal hinges and oil-filled dampers,
-									not the stiff elastomeric (rubber) bearings found on the UH-60 Black Hawk.
-									It needs the loose "swing" (15°+) to smooth out the vibrations of the
-									tandem system.
-									
-									
-								]]
-	lead_stock_main 	= 0.265,	-- See discussion above
-	lead_stock_support 	= 0.265,	-- See discussion above
+		Not Low (<0.15): The CH-46 uses metal hinges and oil-filled dampers,
+		not the stiff elastomeric (rubber) bearings found on the UH-60 Black Hawk.
+		It needs the loose "swing" (15°+) to smooth out the vibrations of the
+		tandem system.
+	]]
+	lead_stock_main 	= math.rad(15.2),	-- See discussion above [radians]
+	lead_stock_support 	= math.rad(15.2),	-- See discussion above [radians]
 	
-									-- Best/closest sound we will get given the tandem rotor design of each
+	-- Best/closest sound we will get given the tandem rotor design of each
     sound_name		= "Aircrafts/Engines/RotorCH47",
 
     stores_number	=	0,
@@ -641,13 +794,15 @@ return {
 	-- CARRIER OPERATIONS
 	LandRWCategories = {
 		[1] = {Name = "AircraftCarrier"},
-		[2] = {Name = "HelicopterCarrier"},},
+		[2] = {Name = "HelicopterCarrier"},
+    },
 	TakeOffRWCategories = {
 		[1] = {Name = "AircraftCarrier"},
-		[2] = {Name = "HelicopterCarrier"},},
+		[2] = {Name = "HelicopterCarrier"},
+    },
 	
 	-- CARGO CAPACITY
-	openRamp 		= 1,  		-- allow task for internal cargo transportation
+	openRamp 		= 1,  	-- allow task for internal cargo transportation
 	
 	InternalCargo 	= {
 		nominalCapacity = 2000,		-- A "normal" mission is typically 1,800 - 2,200 kg (4,000–5,000 lbs)
@@ -656,23 +811,23 @@ return {
 		unit_point 		= 18,		-- Troops capacity
 		area 			= {8.5, 1.8, 2.1}, 	-- Cargo bay dimensions (L×W×H)
 			
-			--[[
-				A soldier or Marine in full combat gear required significantly more space than the standard
-				military seat allotment. While a standard seat was designed for an 18–20 inch width,
-				a combat-loaded trooper required roughly 24 to 26 inches of width.
+	--[[
+		A soldier or Marine in full combat gear required significantly more space than the standard
+		military seat allotment. While a standard seat was designed for an 18–20 inch width,
+		a combat-loaded trooper required roughly 24 to 26 inches of width.
+		
+		
+				Standard troop		Combat loaded		Notes
+				(No gear)			(Vietnam)
 				
-				
-						Standard troop		Combat loaded		Notes
-						(No gear)			(Vietnam)
-						
-				Width	~18–20 inches		24–26 inches		Bulk of M-1956/ALICE webbing, canteens,
-						~0.46-0.51 meters	0.61-0.66 meters	and ammo pouches worn on the hips.
-																
-				Depth	~24 inches			30+ inches			Rucksacks were often held on laps or
-						~0.61 meters		0.76+ meters		placed between legs/knees for rapid
-																egress.
-										
-			]]
+		Width	~18–20 inches		24–26 inches		Bulk of M-1956/ALICE webbing, canteens,
+				~0.46-0.51 meters	0.61-0.66 meters	and ammo pouches worn on the hips.
+														
+		Depth	~24 inches			30+ inches			Rucksacks were often held on laps or
+				~0.61 meters		0.76+ meters		placed between legs/knees for rapid
+														egress.
+								
+	]]
 		unit_block 	   = {0.76, 0.63},		-- Volume of each soldier/marine (L, W) (meters)
 		far_wall_pos   = {4.2, -0.2325, 0},	-- coordinates of point on cargohold floor, along centerline, fore face of cargohold
 		deck_connector = "CARGO_VOLUME",
@@ -732,41 +887,41 @@ return {
 	
 	-- Comms config
 	
-		--[[
-			During the Vietnam War, the U.S. Marine Corps CH-46D Sea Knight was typically equipped
-			with two primary communication systems: a UHF radio for aviation/ship communication
-			and a VHF-FM radio for tactical communication with ground troops.
+	--[[
+		During the Vietnam War, the U.S. Marine Corps CH-46D Sea Knight was typically equipped
+		with two primary communication systems: a UHF radio for aviation/ship communication
+		and a VHF-FM radio for tactical communication with ground troops.
 
-			Here are the specific radio models and their frequency ranges:
-			
-			1. AN/ARC-51 (UHF Command Radio)
+		Here are the specific radio models and their frequency ranges:
+		
+		1. AN/ARC-51 (UHF Command Radio)
 
-			This was the primary radio for air-to-air, air-to-ship, and air-to-tower communications.
-			Because the CH-46 was a Navy/Marine asset, it relied heavily on the UHF band.
+		This was the primary radio for air-to-air, air-to-ship, and air-to-tower communications.
+		Because the CH-46 was a Navy/Marine asset, it relied heavily on the UHF band.
 
-				Frequency Range: 225.0 to 399.9 MHz
-				Modulation: AM (Amplitude Modulation)
-				Channels: 3,500 selectable channels (50 kHz spacing)
-				Guard Channel: Tuned automatically to 243.0 MHz (Military Air Distress)
+			Frequency Range: 225.0 to 399.9 MHz
+			Modulation: AM (Amplitude Modulation)
+			Channels: 3,500 selectable channels (50 kHz spacing)
+			Guard Channel: Tuned automatically to 243.0 MHz (Military Air Distress)
 
-			2. AN/ARC-54 (VHF-FM Tactical Radio)
+		2. AN/ARC-54 (VHF-FM Tactical Radio)
 
-			This was the "Fox Mike" radio used to talk to Marine infantry and Army ground units.
-			It was essential for coordinating landing zones (LZs) and medevacs.
+		This was the "Fox Mike" radio used to talk to Marine infantry and Army ground units.
+		It was essential for coordinating landing zones (LZs) and medevacs.
 
-				Frequency Range: 30.00 to 69.95 MHz
+			Frequency Range: 30.00 to 69.95 MHz
 
-			Modulation: FM (Frequency Modulation)
-			Channels: 800 selectable channels (50 kHz spacing)
-			
-			Note: Towards the very end of the war or during post-war upgrades, this was sometimes
-			replaced by the AN/ARC-131, which extended the range slightly to 30.00 – 75.95 MHz.
-			
-			Historical Note: Unlike modern helicopters, the standard CH-46D in Vietnam did not
-			typically carry a VHF-AM radio (118.00–136.00 MHz) for civilian air traffic control,
-			nor did it standardly carry HF (High Frequency) radios for long-range over-the-horizon
-			communication, relying instead on line-of-sight UHF/VHF.
-		]]
+		Modulation: FM (Frequency Modulation)
+		Channels: 800 selectable channels (50 kHz spacing)
+		
+		Note: Towards the very end of the war or during post-war upgrades, this was sometimes
+		replaced by the AN/ARC-131, which extended the range slightly to 30.00 – 75.95 MHz.
+		
+		Historical Note: Unlike modern helicopters, the standard CH-46D in Vietnam did not
+		typically carry a VHF-AM radio (118.00–136.00 MHz) for civilian air traffic control,
+		nor did it standardly carry HF (High Frequency) radios for long-range over-the-horizon
+		communication, relying instead on line-of-sight UHF/VHF.
+	]]
 	HumanRadio = {
 		editable = true,
 		frequency = 225.0,
@@ -776,7 +931,8 @@ return {
 			{min =  30.0, max =  75.975, modulation	= MODULATION_FM},
 			{min = 225.0, max = 399.975, modulation	= MODULATION_AM},
 		},
-		modulation = MODULATION_AM,},
+		modulation = MODULATION_AM,
+	},
 	
 	-- CREW
 	crew_size 		= 3,  		-- Pilot, copilot, crew chief (typically)
@@ -836,50 +992,50 @@ return {
 
     rotor_animation = {
         rotor_locations = {
-		--[[
-			The spec sheeet for the CH-46D/E/F says:
-			
-			Forward rotor (9.51° forward tilt); Aft rotor (7° forward tilt).
-			
-			However, the 3D model we have doesn't really jive well with those numbers. HawaiianRyan found numbers which
-			work well visually.
-			
-			Pick this block if you want to match: https://www.youtube.com/watch?v=gWjZ4bjWxww which shows the front rotor on top of the rear rotor (!!).
-			Also this video (e.g., 5m:56s and 10m:47s): https://www.youtube.com/watch?v=GIImvUbg31M
-			
-			{pos = {5.006, 3.035, 0.0}, pitch = -math.rad(9.51)},	-- Forward rotor (9.51° forward tilt; negative means pitch forward, positive is aft tilt)
-			{pos = {-5.209, 4.460, 0.0}, pitch = -math.rad(7.0)},	-- Aft rotor (7° forward tilt; negative means pitch forward, positive is aft tilt)
-			
-			
-			
-			The 3D model we have doesn't jive well with the real numbers.
-			Mensurating the 3D model gives: 		Forward rotor (12.75° forward tilt); Aft rotor (7.23° forward tilt).
-			
-			{pos = {5.006, 3.035, 0.0}, pitch = -math.rad(12.75)},	-- Forward rotor (12.75° forward tilt; matches 3D model)
-			{pos = {-5.209, 4.440, 0.0}, pitch = -math.rad(7.23)},	-- Aft rotor (7.23° forward tilt; matches 3D model)
-			
-			
-			This block is a good balance between videos of real-world CH-46Ds and their rotor discs vs. what's possible with this DCS 3D model.
-			Also see: https://www.facebook.com/100063486350259/videos/the-boeing-vertol-ch-46-sea-knight-helicopter-startup-and-take-off/660384630169554/
-			And: https://www.youtube.com/watch?v=ewXiz2LHuuQ
-	
-			
-			{pos = { 5.07827, 3.04067, 0.0}, pitch = -math.rad(8.0)},    -- Forward rotor (8° forward tilt; experimentally determined to "look right")
-			{pos = {-5.18350, 4.45821, 0.0}, pitch = -math.rad(5.5)},   -- Aft rotor (5.5° forward tilt; experimentally determined to "look right")
-			
-			
-			Pick this block if you want it to "look right" according to this picture, which shows more of a gap between the rotor discs:
-			https://www.history.navy.mil/content/history/museums/nnam/explore/collections/aircraft/c/ch-46a-sea-knight/ch-46-sea-knight-operations-in-south-vietnam.html
-			{pos = {5.006, 3.035, 0.0}, pitch = -math.rad(6.5)},   	-- Forward rotor; negative means pitch forward, positive is aft tilt.
-			{pos = {-5.209, 4.430, 0.0}, pitch = -math.rad(5.0)}   	-- Aft rotor; negative means pitch forward, positive is aft tilt.
-			
-			
-																	Based on https://www.youtube.com/watch?v=_ye_tYqJbcU it seems
-																	6.5 degrees and 5 degrees forward matches better, but we're
-																	trying to match against CH-65E shown in this video.
-		]]
-			{pos = { 5.07827, 3.04067, 0.0}, pitch = -math.rad(8.0)},	-- Forward rotor (8° forward tilt; experimentally determined to "look right")
-			{pos = {-5.18350, 4.45821, 0.0}, pitch = -math.rad(5.5)},	-- Aft rotor (5.5° forward tilt; experimentally determined to "look right")
+	--[[
+		The spec sheeet for the CH-46D/E/F says:
+		
+		Forward rotor (9.51° forward tilt); Aft rotor (7° forward tilt).
+		
+		However, the 3D model we have doesn't really jive well with those numbers. HawaiianRyan found numbers which
+		work well visually.
+		
+		Pick this block if you want to match: https://www.youtube.com/watch?v=gWjZ4bjWxww which shows the front rotor on top of the rear rotor (!!).
+		Also this video (e.g., 5m:56s and 10m:47s): https://www.youtube.com/watch?v=GIImvUbg31M
+		
+		{pos = {5.006, 3.035, 0.0}, pitch = -math.rad(9.51)},	-- Forward rotor (9.51° forward tilt; negative means pitch forward, positive is aft tilt)
+		{pos = {-5.209, 4.460, 0.0}, pitch = -math.rad(7.0)},	-- Aft rotor (7° forward tilt; negative means pitch forward, positive is aft tilt)
+		
+		
+		
+		The 3D model we have doesn't jive well with the real numbers.
+		Mensurating the 3D model gives: 		Forward rotor (12.75° forward tilt); Aft rotor (7.23° forward tilt).
+		
+		{pos = {5.006, 3.035, 0.0}, pitch = -math.rad(12.75)},	-- Forward rotor (12.75° forward tilt; matches 3D model)
+		{pos = {-5.209, 4.440, 0.0}, pitch = -math.rad(7.23)},	-- Aft rotor (7.23° forward tilt; matches 3D model)
+		
+		
+		This block is a good balance between videos of real-world CH-46Ds and their rotor discs vs. what's possible with this DCS 3D model.
+		Also see: https://www.facebook.com/100063486350259/videos/the-boeing-vertol-ch-46-sea-knight-helicopter-startup-and-take-off/660384630169554/
+		And: https://www.youtube.com/watch?v=ewXiz2LHuuQ
+
+		
+		{pos = { 5.07827, 3.04067, 0.0}, pitch = -math.rad(8.0)},    -- Forward rotor (8° forward tilt; experimentally determined to "look right")
+		{pos = {-5.18350, 4.45821, 0.0}, pitch = -math.rad(5.5)},   -- Aft rotor (5.5° forward tilt; experimentally determined to "look right")
+		
+		
+		Pick this block if you want it to "look right" according to this picture, which shows more of a gap between the rotor discs:
+		https://www.history.navy.mil/content/history/museums/nnam/explore/collections/aircraft/c/ch-46a-sea-knight/ch-46-sea-knight-operations-in-south-vietnam.html
+		{pos = {5.006, 3.035, 0.0}, pitch = -math.rad(6.5)},   	-- Forward rotor; negative means pitch forward, positive is aft tilt.
+		{pos = {-5.209, 4.430, 0.0}, pitch = -math.rad(5.0)}   	-- Aft rotor; negative means pitch forward, positive is aft tilt.
+		
+		
+		Based on https://www.youtube.com/watch?v=_ye_tYqJbcU it seems
+		6.5 degrees and 5 degrees forward matches better, but we're
+		trying to match against CH-65E shown in this video.
+	]]
+			{pos = { 5.07827, 3.04067, 0.0}, pitch = math.rad(-8.0)},	-- Forward rotor (8° forward tilt; experimentally determined to "look right")
+			{pos = {-5.18350, 4.45821, 0.0}, pitch = math.rad(-5.5)},	-- Aft rotor (5.5° forward tilt; experimentally determined to "look right")
 		},
 		
         rotor_models = {{
@@ -903,7 +1059,7 @@ return {
         [1] = {
             pos = {-4.5046, 2.042, -0.7},	-- Left engine exhaust plume origin
 			elevation 			= -20.0,	-- Points 20 degrees down from longitudinal axis with rotor downwash
-			azimuth 			= 35.0,		-- +90 degrees is perpendicular to the longitudinal axis and parallel to the ground (left engine)
+			azimuth 			= 30.0,		-- +90 degrees is perpendicular to the longitudinal axis and parallel to the ground (left engine)
 			diameter 			= 0.55,		-- Mensurated the 3D model in ModelViewer in orthographic projection mode
 			exhaust_length_ab 	= 0.7,
 			exhaust_length_ab_K = 0.35,
@@ -913,7 +1069,7 @@ return {
         [2] = {
             pos = {-4.5046, 2.042, 0.7},	-- Right engine exhaust plume origin
 			elevation 			= -20.0,	-- Points 20 degrees down from longitudinal axis with rotor downwash
-			azimuth 			= -35.0,	-- -90 degrees is perpendicular to the longitudinal axis and parallel to the ground (right engine)
+			azimuth 			= -30.0,	-- -90 degrees is perpendicular to the longitudinal axis and parallel to the ground (right engine)
 			diameter 			= 0.55,		-- Mensurated the 3D model in ModelViewer in orthographic projection mode
 			exhaust_length_ab	= 0.7,
 			exhaust_length_ab_K = 0.35,
@@ -924,14 +1080,15 @@ return {
 	
 
     engine_data = {
-		-- T58-GE-10 Ratings (Per Engine)
-		-- Max Takeoff (Short Duration): 	~1,400 SHP = 1,044 kW
-		-- Max Continuous: 					~1,250 SHP = 932 kW
-		-- Emergency/WEP: 					~1,400 SHP = 1,044 kW
+	--[[
+		T58-GE-10 Ratings (Per Engine)
+		Max Takeoff (Short Duration): 	~1,400 SHP = 1,044 kW
+		Max Continuous: 					~1,250 SHP = 932 kW
+		Emergency/WEP: 					~1,400 SHP = 1,044 kW
 		
-		-- These parameters are meant to be PER ENGINE. If you have x engines, DCS will multiply each value by x for you.
+		These parameters are meant to be PER ENGINE. If you have x engines, DCS will multiply each value by x for you.
 		
-		--[[	
+		
 			The CH-46D combining transmission is rated for a maximum continuous input of approximately 2,800 SHP (2,088 kW).
 			
 			Because the two T58-GE-10 engines produce exactly 1,400 SHP each (2,800 SHP total) at their maximum Military
@@ -968,57 +1125,95 @@ return {
 			a single engine failure, the remaining engine can produce enough power (up to 1,870 SHP) to keep the
 			helicopter flying, whereas earlier engines (like the T58-GE-10 at 1,400 SHP) provided significantly
 			less margin for single-engine recovery.
-		]]
+	]]
 		
 		power_take_off 	= 1044,		-- Takeoff power per engine: 1,400 SHP = ~1,044 kW (Total 2,800 SHP).
 		power_max 		= 932,		-- Max Continuous: 1,250 SHP = 932 kW per engine (Total 2,500 SHP).
 		power_WEP 		= 1044,		-- Absolute engine power limit: 1,400 SHP = ~1,044 kW (Total 2,800 SHP).
 		
-		
-		
-		-- Power variation with altitude and temperature
+	--[[ DEBUG REMOVE AFTER TESTING OTHER ONE; order was wrong
+		-- CH-46D (T58-GE-10) Power vs Altitude Coefficients
+		-- Power variation with altitude (kW vs. km) in 4 different speed regimes
 		-- Format: {coefficient_quadratic, coefficient_linear, constant}
 		power_TH_k = {
-			[1] = {  8.5,  -245.0,  2150.0 },  	-- Sea level, standard temp
-			[2] = {  9.2,  -260.0,  2200.0 },  	-- Low altitude
-			[3] = { -2.5,  -155.0,  1980.0 },  	-- Medium altitude
-			[4] = { -4.0,   -85.0,  1520.0 },  	-- High altitude
+			[1] = {4.012,  -105.35, 931.6},    -- Max Continuous (1,250 SHP)
+			[2] = {4.494,  -118.00, 1043.5},   -- Takeoff / Military (1,400 SHP)
+			[3] = {3.611,  -94.83,  838.6},    -- High Cruise (~90% Max Cont)
+			[4] = {2.850,  -74.83,  661.7},    -- Low Cruise / Descent (~70% Max Cont)
+		},
+	]]
+	
+		-- CH-46D (T58-GE-10) Power vs Altitude Coefficients
+		-- Unit: kW, Altitude: km
+		-- P(h) = a*h^2 + b*h + c
+		-- Pattern: [1] Takeoff, [2] Emergency, [3] Continuous, [4] Cruise
+		power_TH_k = {
+			--		  a,       b,      c
+			[1] = { 4.494,  -118.00, 1044.0 },	-- [1] Max Takeoff (10 min): 1,044 kW (1,400 SHP)
+			[2] = { 4.494,  -118.00, 1044.0 },	-- [2] Emergency / OEI (2.5 min): 1,044 kW (Same as Takeoff)
+			[3] = { 4.012,  -105.35,  932.0 },	-- [3] Max Continuous: 932 kW (1,250 SHP)
+			[4] = { 3.130,   -82.17,  727.0 },	-- [4] Cruise: 727 kW (~78% of Max Cont)
 		},
 		
-		SFC_k 		= {0.0, -1.2e-005, 0.36},	-- Specific fuel consumption
-		power_RPM_k 	= {-0.085, 0.24, 0.84}, -- Power vs RPM relationship
-		power_RPM_min 	= 9.0,
+		-- CH-46D (T58-GE-10) Specific Fuel Consumption vs Altitude
+		-- SFC(h) = a*h^2 + b*h + c
+		-- Unit: kg / (kW * hr)
+		-- c (Base SFC) corresponds to approx 0.61 lb/shp-hr
+		SFC_k = {0.0, -1.180e-005, 0.3710},		-- TSFC curve (specific fuel consumption (kg/kWh) vs. power (kW))
+		
+		-- CH-46D (T58-GE-10)
+		-- Power vs RPM Curve coefficients and Min Power Scalar
+		power_RPM_k = {-0.1150, 0.2750, 0.8400},	-- Engine power out (% max) vs (% RPM)
+		
+	--[[
+		1. Flight Idle RPM (Ng​)
+
+			"Flight Idle" in the CH-46D refers to the condition where the Speed Selector Levers (SSL) are in the
+			full open ("Fly") position, but the collective pitch is at the minimum (flat pitch).
+
+			Value: Approximately 82% to 85% Ng​
+
+			Behavior: At this setting, the engines are producing just enough power to keep the rotor system spinning
+			at 100% Nr​ without generating lift. If you lower the collective fully during flight (e.g., entering an
+			autorotation), the engines will drop to this RPM band to "wait" for power demand.
+			
+			power_RPM_min is the minimum RPM percentage at which the engine begins to produce usable power, but it's
+			defined as 1/10 the RPM percentage value for some dumb reason (i.e., set it to 9.1 if you want 91% engine
+			RPM to have the rotors spinning at 100% Nr).
+	]]
+		power_RPM_min 	= 75/10,				-- See discussion above
+
 		Nmg_Ready 		= 78.0,       			-- Flight idle Ng RPM (%)
 				
-					--[[
-						The T58-GE-10 (used in the CH-46 Sea Knight and SH-3 Sea King) is notorious
-						for its "scream" due to its all-axial 10-stage compressor spinning at very
-						high RPM (approx. 26,300 RPM). The high-pitched whine comes from the
-						"blade pass frequency" of those small compressor blades cutting through
-						the air, combined with the intake geometry.
-						
-						The closest match we can leverage in the existing DCS library is
-						the "Whistling Death" Isotov TV3-117.
-						
-						While deeper in tone than the T58, this is the standard Russian military
-						helicopter engine.
+	--[[
+		The T58-GE-10 (used in the CH-46 Sea Knight and SH-3 Sea King) is notorious
+		for its "scream" due to its all-axial 10-stage compressor spinning at very
+		high RPM (approx. 26,300 RPM). The high-pitched whine comes from the
+		"blade pass frequency" of those small compressor blades cutting through
+		the air, combined with the intake geometry.
+		
+		The closest match we can leverage in the existing DCS library is
+		the "Whistling Death" Isotov TV3-117.
+		
+		While deeper in tone than the T58, this is the standard Russian military
+		helicopter engine.
 
-						Aircraft: Mi-24 "Hind", Mi-8MT / Mi-17 "Hip", Ka-50/52.
+		Aircraft: Mi-24 "Hind", Mi-8MT / Mi-17 "Hip", Ka-50/52.
 
-						The Sound: These engines have a very distinct "whistling" start-up sequence.
-						Before the main rotors even turn, the AI-9V APU (Auxiliary Power Unit) emits
-						a high-pitched scream, followed by the high-frequency whine of the TV3-117
-						engines spooling up.
+		The Sound: These engines have a very distinct "whistling" start-up sequence.
+		Before the main rotors even turn, the AI-9V APU (Auxiliary Power Unit) emits
+		a high-pitched scream, followed by the high-frequency whine of the TV3-117
+		engines spooling up.
 
-						Comparison: While the T58 is a steady whine, the TV3-117 has a characteristic
-						"warbling" or "modulating" whine during flight maneuvering due to the engine
-						governor fighting to maintain RPM under the heavy load of the main rotor.
-						
-						
-						Here are some alternatives if you don't like this choice:
-							sound_name = "Aircrafts/Engines/EngineGE_CH47",
-							sound_name = "Aircrafts/Engines/EngineGE",
-					]]
+		Comparison: While the T58 is a steady whine, the TV3-117 has a characteristic
+		"warbling" or "modulating" whine during flight maneuvering due to the engine
+		governor fighting to maintain RPM under the heavy load of the main rotor.
+		
+		
+		Here are some alternatives if you don't like this choice:
+			sound_name = "Aircrafts/Engines/EngineGE_CH47",
+			sound_name = "Aircrafts/Engines/EngineGE",
+	]]
 		sound_name	= "Aircrafts/Engines/EngineTV3117",
     },
 	
@@ -1034,62 +1229,14 @@ return {
             name 		= "T58-GE-10",
 			typeng 		= 5,			-- Enumeration for turboshaft engines
 
-
-            Nmg     	= 59.0,				-- Ground idle Ng or N1 RPM (%)
-			Nominal_RPM = 19500.0,		-- 100% speed for the power turbine feeding the transmission (Nf or N2)
-            Nominal_Fan_RPM = 6000.0,	-- The T58 engine has an integral reduction gearbox that steps the
-										-- 19,500 RPM turbine speed down to ~6,000 RPM before it enters the
-										-- helicopter's main transmission mixing gearbox.
-										
+            Nmg     	= 70.0,			-- Flight idle Ng or N1 RPM (%) (ground idle = 51.0%)
+			Nominal_RPM = 19500.0,		-- 100% speed for the turbine power shaft entering the gearbox
+            Nominal_Fan_RPM = 7583.0,	-- 100% speed for the combining transmission (C-box)
+			
             MinRUD  	= 0, 			-- Min state of the throttle
             MaxRUD  	= 1, 			-- Max state of the throttle
             MaksRUD 	= 1, 			-- Military power state of the throttle
             ForsRUD 	= 1, 			-- Afterburner state of the throttle
-			
-			
-            Startup_Prework 	= 20.0,	-- Prework before starting the engines (e.g., APU, initializing GPS)
-            Shutdown_Duration	= 30.0,	-- Similar duration for AI to wait for shutting down avionics
-            Startup_Duration 	= 50.0, -- Increased to 50s for realistic twin-engine sequence
-										-- (https://www.facebook.com/reel/660384630169554)
-										-- also https://www.youtube.com/watch?v=gWjZ4bjWxww
-			
-
-            dcx_eng 	= 0.015, 		-- Engine drag coefficient
-            hMaxEng 	= 5.18, 		-- Max altitude for safe engine operation (km)
-            dpdh_f  	= 1800, 		-- altitude coefficient for AB thrust
-            dpdh_m  	= 1800, 		-- altitude coefficient for max thrust
-			
-			-- FUEL CONSUMPTION (TOTAL for 2 Engines)
-			-- T58-GE-10: ~0.64 to ~0.66 lb/shp/hr (TSFC) at cruise
-			-- Cruise burn: ~1224 lbs/hr total = ~0.154 kg/s total
-			-- Takeoff burn: ~0.226 kg/s total
-			
-            cemax   	= 0.154, 		-- Cruise flow (kg/s) - Total for aircraft (both engines)
-            cefor   	= 0.226,  		-- Takeoff flow (kg/s) - Total for aircraft (both engines)
-			
-			
-			-- I don't know if helicopters even use this table. Might be only fixed-wing in DCS.
-			
-            table_data = {
-            --   M          Thrust (Newtons) 
-            --   Notes: MTOW is ~11,000kg (~108,000 N). Thrust must exceed this for Hover.
-            --   Thrust drops as speed increases (Power = Force * Velocity)
-			
-                {0.0,  130000.0},  -- Hover Static Thrust
-				{0.05,  95000.0},  -- Low speed transition
-				{0.1,   65000.0},  -- Effective translational lift region
-				{0.15,  40000.0},  -- Approaching best cruise speed
-				{0.2,   28000.0},  -- Cruise Speed (~125 kts)
-				{0.25,  20000.0},  -- Fast cruise
-				{0.3,   12000.0},  -- High Speed / Vne
-				{0.4,    5000.0},  -- Aerodynamic Limit
-				{0.5,    2000.0},  -- Theoretical limit
-                {0.6,    1000.0},
-                {0.7,       0.0},
-                {0.8,       0.0},
-                {0.9,       0.0},
-                {1.0,       0.0},
-            },
         }, -- end of engine
     },
 	
@@ -1191,32 +1338,32 @@ return {
 		-- Only useful for multiplayer, obviously, but each one you turn on means more network traffic
 		
         1,				-- Nose gear compression
-		2,				-- Nose gear left/right
+		2,				-- Nose gear turn left/right
 		4,				-- Right main landing gear compression
 		6,				-- Left main landing gear compression
 		8,				-- Rotor folding
 		-- 31,			-- Bort numbers
 		-- 32,			-- Bort numbers
-		36,				-- Main ramp
-		38,				-- Helo side door
-		39,				-- Both pilots head turning
+		36,				-- Main ramp open/close
+		38,				-- Helo side door open/close
+		39,				-- Both pilots head turning lfet/right
 		-- 40,				-- Both rotors turning
-		50,				-- Right seat pilot presence
+		50,				-- Right seat pilot presence/absence
 		
 		76,				-- Nose wheels spinning
 		77,				-- Main wheels spinning
-		190,			-- Stbd. green nav light
-		191,			-- Port red nav light
-		192,			-- Beacon light
+		190,			-- Port red nav light
+		191,			-- Stbd. green nav light
+		192,			-- Aft white nav lights
 		193,			-- Front dorsal strobe (red)
 		209,			-- Search light intensity
 		
-		472,			-- Left seat co-pilot presence
+		472,			-- Left seat co-pilot presence/absence
 		591,			-- Ventral strobe (red)
 		593,			-- Aft dorsal strobe (red)
 		
 		1000,			-- CH-46D (late) countermeasure fins
-		-- 1003, 			-- Winch extend from fuselage
+		-- 1003, 			-- Winch abduct from/adduct to fuselage
 		1004,			-- Search light pan left/right
 		1005,			-- Search light pitch up/down
     },
@@ -1311,10 +1458,12 @@ return {
 		},
 		
 		HeadLights = {
-			-- The real-world lamp (sealed beam incandescent; PAR-46 or PAR-64 size, e.g. GE 4580 series)
-			-- is rated at 600,000 (0.6M) candela and takes 200 milliseconds to power on from black, and
-			-- 500 milliseconds to power off from full power.
-			-- The beam width should be: 11 degrees wide and 12 degrees tall.
+		--[[
+			The real-world lamp (sealed beam incandescent; PAR-46 or PAR-64 size, e.g. GE 4580 series)
+			is rated at 600,000 (0.6M) candela and takes 200 milliseconds to power on from black, and
+			500 milliseconds to power off from full power.
+			The beam width should be: 11 degrees wide and 12 degrees tall.
+		]]
 		
 			-- Spotlight elevation angle: 	arg_value = 2 * (extension_angle_deg / 90 - 1) + 1; fully stowed is angle 0
 			{Transition = {"Any", "Retract"},   Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},	-- Stow search light
@@ -1323,27 +1472,13 @@ return {
 																	
 			-- Extend search light forward 85.5 deg. That is, it will point 14.5 degrees down from straight ahead
 			{Transition = {"Any", "Taxi"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
-																	{"Arg", 1005, "to",  0.90, "speed", 0.157},
+																	{"Arg", 1005, "to",  0.60, "speed", 0.157},
 																	{"Arg", 209,  "to",  0.40, "speed", 2.0},},},},},
 			
 			-- Extend search light forward 60 deg. That is, it will point 30 degrees down from straight ahead
 			{Transition = {"Any", "High"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
 																	{"Arg", 1005, "to",  1/3,  "speed", 0.157},
 																	{"Arg", 209,  "to",  1.0,  "speed", 2.0},},},},},
-			
-		--[[ Work for v2.4.0
-			{Transition = {"Retract", "Taxi"}, 	Sequence = {{C = {	{"Arg", 209,  "from", 0.0,"to", 0.40,"speed", 2.0},
-																	{"Arg", 1005, "to", 0.90, "speed", 0.17},
-																	},},},Flags = {"Reversible"}},
-																	
-			{Transition = {"High", "Taxi"}, 	Sequence = {{C = {	{"Arg", 209, 			  "to", 0.40,"speed", 2.0},
-																	{"Arg", 1005, "from", 1/3,"to", 0.90, "in",   3.0},
-																	},},},Flags = {"Reversible"}},
-																	
-			{Transition = {"Taxi", "High"}, 	Sequence = {{C = {	{"Arg", 209, 			  "to", 1.0, "speed", 2.0},
-																	{"Arg", 1005, "from",0.90,"to", 1/3, "speed", 0.157},
-																	},},},Flags = {"Reversible"}},
-		]]
 		},
     }, -- end of mechanimations
 
@@ -1399,7 +1534,7 @@ return {
 					
 					{
 						typename = "RotatingBeacon", 						-- Ventral red beacon
-						position = { 1.7556, -0.4933, 0.000 },
+						-- position = { 1.7556, -0.4933, 0.000 },
 						connector = "ch46_light_bottom_strobe_mesh",
 						proto = lamp_prototypes.MSL_3_2,
 						color = {1.0, 30/255, 0, 3 * 0.012*math.sqrt(40)},	-- Bright, fiery red-orange
@@ -1452,6 +1587,15 @@ return {
 						-- mechanimations are: SearchLight0Elevation and SearchLight0Panning
 						
 						-- Spotlight logic for the CH-46D handled by mechanimations.HeadLights
+						{	typename = "Spot",
+							connector = "ch46_light_search_axis",
+							proto = lamp_prototypes.LFS_P_27_450,
+							movable = true,
+							color = {1, 0.945, 0.8784},
+							angle = math.rad(13.0),
+							emitter_angle_z = math.rad(15.0),
+							range = 1800,
+						},
 					},
 				},
 			},
@@ -1461,16 +1605,14 @@ return {
                 typename = "Collection",
                 lights = {
 					-- Landing lights logic for CH-46D are handled by mechanimations.HeadLights
-					
-					-- {	typename = "Spot",
-						-- proto = lamp_prototypes.LFS_P_27_450,
-						-- movable = true,
-						-- color = {1, 0.945, 0.8784},
-						-- connector = "ch46_light_search_axis",
-						-- angle = math.rad(11.0),
-						-- emitter_angle_z = math.rad(12.0),
-						-- range = 1800,
-					-- },
+					{	typename = "Spot",
+						connector = "ch46_light_search_axis",
+						proto = lamp_prototypes.LFS_R_27_250,
+						movable = true,
+						color = {1, 0.945, 0.8784},
+						angle_max = math.rad(60.0),
+						range = 600,
+					},
                 },
             },
 			
@@ -1479,6 +1621,14 @@ return {
                 typename = "Collection",
                 lights = {
 					-- Taxi lights logic for CH-46D are handled by mechanimations.HeadLights
+					{	typename = "Spot",
+						connector = "ch46_light_search_axis",
+						proto = lamp_prototypes.LFS_R_27_130,
+						movable = true,
+						color = {1, 0.945, 0.8784},
+						angle_max = math.rad(60.0),
+						range = 80,
+					},
 				},
 			},
 			
@@ -1632,6 +1782,24 @@ return {
 				-- These lights are used from engine startup, through taxi, and turn off just after takeoff.
                 typename = "Collection",
                 lights = {
+					{ 	-- Ambient cockpit scatter from instruments
+                        typename = "Spot",
+						proto = lamp_prototypes.HS_2A,
+						color = {0.588, 0, 0},
+						position = { 5.92719, 0.709705, -0.00877 },
+						intensity_max = 8.0,
+						direction = {elevation = math.rad(-130.0)},
+						-- angle_max = math.rad(165.0),
+						range = 2.0,
+					},
+					{ 	-- Ambient cockpit scatter from instruments
+                        typename = "Omni",
+						proto = lamp_prototypes.HS_2A,
+						color = {0.588, 0, 0},
+						connector = "ch46_light_red_cabin",
+						intensity_max = 8.0,
+						range = 2.0,
+					},
                     {
                         typename = "Spot",	-- Cabin is 1.85m tall
 						proto = lamp_prototypes.HS_2A,

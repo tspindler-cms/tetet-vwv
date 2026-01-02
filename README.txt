@@ -1,6 +1,5 @@
 Vietnam War Vessels by TeTeT
-2.3.1
-
+2.4.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -33,8 +32,10 @@ CH-46D Sea Knight, a dual rotor transport helicopter
 Various ground assets, for base building mainly
 USS Oklahoma City (CLG-5), a Cleveland light cruiser class conversion to a guided missile cruiser
 Tango and Charlie boats, landing crafts modified for riverine usage
+USS Radford Fletcher (DD-446), class FRAM II destroyer
+USS Epperson (DD-719), Gearing class FRAM I destroyer
 
-This is my first attempt at modding for DCS, so take the results with a grain of salt.
+This has been my first attempt at modding for DCS, so take the results with a grain of salt.
 
 How to install
 

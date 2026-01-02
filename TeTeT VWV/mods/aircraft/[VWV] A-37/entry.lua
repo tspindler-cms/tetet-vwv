@@ -4,7 +4,7 @@ declare_plugin(self_ID,
 {
 installed 	 = true,
 dirName	  	 = current_mod_path,
-version		 = "2.3.1",
+version		 = "2.4.0",
 state		 = "installed",
 info		 = _("Wikipedia: The Cessna A-37 Dragonfly, or Super Tweet, is a jet-powered, light attack aircraft designed and produced by the American aircraft manufacturer Cessna."),
 developerName= _("Hawkeye60"),
@@ -47,7 +47,6 @@ mount_vfs_texture_path  (current_mod_path.."/Skins/1/ME")
 mount_vfs_model_path	(current_mod_path.."/Shapes")
 mount_vfs_liveries_path (current_mod_path.."/Liveries")
 mount_vfs_texture_path  (current_mod_path.."/Textures/A_37.zip")
-mount_vfs_texture_path  (current_mod_path.."/Textures/A_37_dragonfly_pilots.zip")
 
 dofile(current_mod_path.."/Cockpit/Scripts/mainpanel_init.lua")
 -- make_flyable('a37_dragonfly',current_mod_path..'/Cockpit/Scripts/', true, current_mod_path..'/comm.lua')--SFM

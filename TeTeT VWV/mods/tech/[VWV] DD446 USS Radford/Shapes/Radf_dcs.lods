@@ -1,0 +1,9 @@
+model = {
+	lods = {		
+		{"Radf_dcs.edm", 2000.00}; 
+		{"Radf_dcs_2km.edm", 5000.00};
+		{"Radf_dcs_5km.edm", 10000.00};
+		{"Radf_dcs_15km.edm", 15000.00}; 
+	};
+	collision_shell = "Radf_dcs_coll.edm";
+}

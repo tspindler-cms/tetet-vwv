@@ -8,7 +8,7 @@ displayName			= _("ATC-CCB Boat"),
 shortName			= "ATC-CCB Boat",
 state				= "installed",
 developerName		= "upuaut - FMD & TeTeT",
-version				= "2.3.0",
+version				= "2.4.0",
 info				= _("Adds various Boat Vietnam units to DCS world."),
 encyclopedia_path	= current_mod_path .. "/Encyclopedia",
 })

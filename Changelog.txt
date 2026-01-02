@@ -1,3 +1,14 @@
+2026-01-02
+  USS Radford and USS Epperson
+    - Initial Release by James
+  Charlie and Tango boats
+    - Cleanup file structures by Fredy
+  USS Allen M Sumner and USS Laffey
+    - Improve model and config by James
+  A-1, A-37, CH-46D, EC-121/L-1049, H-2, MiG-17
+    - Improve lua configs and flight model by HawaiianRyan
+  Buildings FARP
+    - Improve collision shell for smoother landings
 2025-12-28
   USS Bon Homme Richard
     - New parking positions by James
@@ -6,6 +17,7 @@
   USS Fletcher
     - Fixed Encyclopedia by Fredy
     - Fixed Liveries by Fredy
+    - Cleanup of textures and adding of roughMets by Urbi
   A-37, EC-121, MiG-17, USS Fletcher FRAMII 
     - Update liveries with textures with mipmaps
   EC-121

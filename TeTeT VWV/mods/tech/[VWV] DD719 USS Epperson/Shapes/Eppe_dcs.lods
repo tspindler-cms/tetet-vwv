@@ -1,0 +1,6 @@
+model = {
+	lods = {		
+		{"Eppe_dcs.edm",1000000.00}; 
+	};
+	collision_shell = "Eppe_coll_dcs.edm";
+}

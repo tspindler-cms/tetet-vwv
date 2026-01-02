@@ -2,11 +2,11 @@ GT.RunWays =
 {
 -- landing strip definition (first in table)
 --	VppStartPoint; 					azimuth (degree} 	Length_Vpp; 	Width_Vpp;
-	{{-30.01,	5.961, 0}, 		360.8641, 			240.0, 			25.0,
+	{{-30.2,	5.961, 0}, 		360.8641, 			240.0, 			25.0,
 -- alsArgument, lowGlidePath, slightlyLowGlidePath, onLowerGlidePath, onUpperGlidePath, slightlyHighGlidePath, highGlidePath
 	0, 			2.5, 		  		2.8, 					3.0, 			  3.0, 				3.2, 				3.5},
     -- runways
-    {{-30.01,	5.961, 0}, 	1.22, 			360, 			36.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},
+    {{-30.2,	5.961, 0}, 	1.22, 			360, 			36.0, 		0, 2.5, 2.8, 3.0, 3.0, 3.2, 3.5},
 };
 GT.RunWays.RunwaysNumber = #GT.RunWays
 
@@ -24,7 +24,7 @@ GT.HelicopterSpawnTerminal =
     {
         TerminalIdx = 1, Points =
         { -- 1 spawn spot
-			{ {-30.01,	5.961, 0}, 0.0 }
+			{ {-30.2,	5.961, 0}, 0.0 }
         }
     },
 }
