@@ -19,6 +19,7 @@
 		https://ntrs.nasa.gov/api/citations/19840024310/downloads/19840024310.pdf
 ]]
 
+local origin_shift_x	=	-0.4419
 
 return {
 	Name 				=   'vwv_ch46d',
@@ -77,8 +78,8 @@ return {
 	blade_chord 	= 0.387,   	-- CH-46D chord length: 38.7 cm = 0.387 meters [meters]
 	blade_area 		= 2.95,    	-- The area of each blade (blade chord * blade radius = 0.387m * 7.62m) [m^2]
 	
-	rotor_pos		= { 5.08, 3.02,  0.0},	-- Forward rotor position (3D model center of hub)
-	tail_pos 		= {-5.22, 4.444, 0.0},	-- Aft rotor position (3D model center of hub)
+	rotor_pos		= { 5.08-origin_shift_x, 3.02,  0.0},	-- Forward rotor position (3D model center of hub)
+	tail_pos 		= {-5.22-origin_shift_x, 4.444, 0.0},	-- Aft rotor position (3D model center of hub)
 	
 	
 	-- ROTOR PERFORMANCE
@@ -226,15 +227,17 @@ return {
 		
 		Calculation:
 			1. The Main Fuselage (Tube)
-				The CH-46 Sea Knight has a roughly circular cross-section
-				that tapers slightly near the top.
+				The CH-46 Sea Knight is roughly a rectangle when
+				looking from the front.
 
-				Diameter: 	approx. 2.2 m
+				Width: 	approx. 2.2 m
+				
+				Height:	approx. 2.5 m
 
-				Shape:		Modeled as a circle/ellipse
+				Shape:		Modeled as rectangle
 
 				Calculation:
-							Area​ = pi * (2.2/2)^2 = ~3.80 m^2
+							Area​ = 2.2 * 2.5 = 5.5 m^2
 
 			2. The Sponsons (Fuel Pods & Gear Housing)
 				The CH-46 has massive sponsons that protrude significantly
@@ -242,35 +245,35 @@ return {
 				fuel/landing gear.
 
 				Dimensions: Each sponson presents a frontal face of roughly
-							1.1 m (height) x 0.8 m (width).
+							1.0 m (width) x 0.9 m (height).
 
 				Calculation:
-							Area ​= 2 * (1.1 * 0.8) = ~1.76 m^2
+							Area ​= 2 * (1.0 * 0.9) = ~1.8 m^2
 
 			3. The Aft Pylon (Vertical Rise)
 				The rear engine pylon rises significantly above the main
 				cabin roofline to clear the front rotor's wake. This adds
 				a "vertical tail" surface to the frontal view.
 
-				Dimensions: Exposed height above cabin = ~1.8 m
-							Avg width = ~0.8 m.
+				Dimensions: Exposed height above cabin = ~2.4 m
+							Avg width = ~0.6 m.
 
 				Calculation:
-							Area = 1.8 * 0.8 = ~1.44 m^2
+							Area = 2.4 * 0.6 = ~1.44 m^2
 
 			4. Fixed Landing Gear & Hubs
 				The non-retractable nose gear, main struts, and the
 				exposed rotor hubs add "clutter" area.
 
-				Estimate: ~0.5 m^2
+				Estimate: ~0.6 m^2
 				
 			5. Total Summation:
-				S_ref 	= 	3.80 (Tube) + 1.76 (Sponsons) +
-							1.44 (Pylon) + 0.5 (Gear/Hubs)
+				S_ref 	= 	5.5 (Fuselage) + 1.8 (Sponsons) +
+							1.44 (Pylon) + 0.6 (Gear/Hubs)
 				
-				S_ref 	=	~7.50 m^2
+				S_ref 	=	~9.34 m^2
 	]]
-	fuselage_area 	= 7.50,    	-- Frontal Reference Area (S_ref) [m^2]
+	fuselage_area 	= 9.34,    	-- Frontal Reference Area (S_ref) [m^2]
 	
 	--[[
 		Definition:
@@ -288,52 +291,40 @@ return {
 				Historical engineering data and drag analyses for the
 				CH-46 series (and similar tandem-rotor helicopters
 				like the Bristol Belvedere) suggest a total parasite
-				drag area of approximately 40 sq ft (3.75 m^2).
+				drag area of approximately 30.1 sq ft (2.80 m^2).
+				
+				Specifically, NASA/Army technical reports on CH-46D
+				stability list the "Equivalent Flat Plate Area" for
+				a standard combat-loaded CH-46D as roughly 30 sq ft.
+				
+				Clean/sleek configuration:	~25 sq ft
+				Combat configuration:		~30 sq ft
+				External load:				~40+ sq ft
 
-				This 3.75 m^2 of "draggy air" comes from summing the
-				drag of specific components:
-
-					Bare Fuselage (Tube): ~1.40 m^2
-						Note: 	The CH-46 fuselage is actually quite
-								aerodynamic (rounded nose, tapered
-								tail), much cleaner than the CH-47.
-
-					Sponsons (Interference Drag): ~0.95 m^2
-						The junction where the sponsons meet the
-						fuselage creates significant turbulence.
-
-					Fixed Landing Gear: ~0.80 m^2
-						Unlike the UH-2, the CH-46 drags three
-						non-retractable wheels and struts through
-						the air.
-
-					Rear Pylon & Hub Interference: ~0.60 m^2
-						The tall aft pylon creates a large wake.
-
-				Total f = 3.75 m^2
+					f = 2.80 m^2
 				
 			2. The Denominator: Reference Area (S_ref)
 			
-				Derived above:
+				Derived in section for fuselage_area:
 				
 					S_ref = fuselage_area
 					
-					S_ref = 7.50
+					S_ref = 9.34
 				
 			3. The Calculation
 			
-				f     = Equivalent Flat Plate Area = ~3.75 m^2
-				S_ref = Reference Frontal Area = ~7.5 m^2
+				f     = Equivalent Flat Plate Area = ~2.80 m^2
+				S_ref = Reference Frontal Area = ~9.34 m^2
 				C_x   = 0 deg AoA drag coefficient
 			
 				C_x   = f / (S_ref)
 				
-				C_x   = ~3.75 / ~7.5
+				C_x   = ~2.80 / ~9.34
 				
-				C_x   = ~0.50
+				C_x   = ~0.30
 			
 	]]
-	fuselage_Cxa0 	= 0.50,    	-- 0 degree AoA drag coefficient (Forward drag - C_x) [unitless]
+	fuselage_Cxa0 	= 0.30,    	-- 0 degree AoA drag coefficient (Forward drag - C_x0) [unitless]
 	
 	--[[
 		Definition:
@@ -344,9 +335,9 @@ return {
 		Derivation:
 			1. The Geometry: Planform (Belly) Area Breakdown
 				Main Fuselage Tube:
-					Dimensions: Length ~13.7 m × Average Width ~2.2 m
+					Dimensions: Length ~13.5 m * Average Width ~2.1 m
 
-						Area = ~13.7 * ~2.2 = ~30.1 m^2
+						Area = ~13.5 * ~2.1 = ~28.35 m^2
 
 					Shape Note: While the fuselage is rounded, in
 								vertical flow (cross-flow), a
@@ -357,22 +348,15 @@ return {
 				Sponsons (The "Wings"):
 					The CH-46 has large sponsons for fuel and stability.
 
-					Dimensions: Approx. 5.0 m long ×
-								1.15 m wide (protrusion from fuselage) ×
+					Dimensions: Approx. 3.0 m long ×
+								1.0 m wide (protrusion from fuselage) ×
 								2 sides
 
-						Area = 2 * (5.0 * 1.15) = ~11.5 m^2
+						Area = 2 * (4.0 * 1.0) = ~6.0 m^2
 
-				Horizontal Stabilizer (Tail Plane):
-				
-					Note: 	The CH-46 has a small sync-shaft cover
-							and stabilizer structure at the rear.
-
-						Area = ~0.4 m^2
-		
 				Total Geometric Planform Area:
 				
-					~30.1 + ~11.5 + ~0.4 = ~42.0 m^2
+						~28.35 + ~6.0 = ~34.35 m^2
 					
 			2. The Physics: The "Real" Drag Coefficient
 				Now we apply the aerodynamic reality of a bluff body
@@ -382,18 +366,18 @@ return {
 					
 					For a shape like this (a "dirty" cylinder with
 					flat plates sticking out), the drag coefficient
-					is typically 1.0.
+					is typically 1.1.
 
 						Cylinder C_d​: ~1.2
 
 						Flat Plate C_d​: ~1.17
 
 						3D effects (flow spilling around ends):
-						Reduces C_d slightly to ~1.0.
+						Reduces C_d slightly to ~1.19.
 
 				Therefore, the Effective Drag Area is:
 				
-					Planform Area (42.0 m^2) x C_d​ (1.0) = 42.0 m^2
+					Planform Area (~34.35 m^2) x C_d​ (~1.19) = ~40.9 m^2
 					
 			3. The Final Calculation
 				We divide the Effective Drag Area by the Reference Area
@@ -401,17 +385,11 @@ return {
 				
 					fuselage_Cxa90​ = (Effective Drag) / (S_ref)​
 					
-					fuselage_Cxa90 = (42.0 m^2) / (7.5 m^2)
+					fuselage_Cxa90 = (~40.9 m^2) / (~9.34 m^2)
 					
-					fuselage_Cxa90 = 5.60
-		
-		Summary:
-			The value 5.60 is simply telling DCS:
-			
-				"The belly of this helicopter is 5.6 times larger
-				(and draggier) than the nose of the helicopter."
+					fuselage_Cxa90 = ~4.38
 	]]
-	fuselage_Cxa90 	= 5.60,    	-- See block comment above [unitless]
+	fuselage_Cxa90 	= 4.38,    	-- 90 degree AoA drag coefficient (Vertical drag - C_y) [unitless]
 
 
 
@@ -545,7 +523,9 @@ return {
 
 	-- MOI = {18000, 103000, 108000},	-- From NASA Technical Memorandum 84351 transformed to CH-46D's dimensions (real world) [kg*m^2]
 	
-	MOI = {24045, 144759, 156869},
+	-- MOI = {24045, 144759, 156869},
+	
+	MOI = {34500, 198000, 192000},
 
 
 
@@ -581,9 +561,9 @@ return {
 	radar_can_see_ground = false,	-- Is AI radar able to see enemy surface entities (tanks, ships)?
 	
 	-- LANDING GEAR
-	nose_gear_pos 	= { 4.8265695, -1.73, -0.004341}, 	-- Nose gear position (ground under center of the axle)
+	nose_gear_pos 	= { 4.8265695-origin_shift_x, -1.73, -0.004341}, 	-- Nose gear position (ground under center of the axle)
 	
-	main_gear_pos 	= {-2.816938,  -1.23,  1.949},		-- Main gear position (ground under center of the axle)
+	main_gear_pos 	= {-2.816938-origin_shift_x,  -1.23,  1.949},		-- Main gear position (ground under center of the axle)
 														-- automatically mirrored
 														
 	--[[
@@ -829,7 +809,7 @@ return {
 								
 	]]
 		unit_block 	   = {0.76, 0.63},		-- Volume of each soldier/marine (L, W) (meters)
-		far_wall_pos   = {4.2, -0.2325, 0},	-- coordinates of point on cargohold floor, along centerline, fore face of cargohold
+		far_wall_pos   = {4.2-origin_shift_x, -0.2325, 0},	-- coordinates of point on cargohold floor, along centerline, fore face of cargohold
 		deck_connector = "CARGO_VOLUME",
 		ramp_connector = "RAMP_PLATFORM",
 		seat_connector = "SEAT_POINT",
@@ -876,7 +856,7 @@ return {
 	
 	cargo_max_weight 	 = 4536,  				-- CH-46D external cargo sling load: 4,536 kg / 10,000 lbs
 	cargo_radius_in_menu = 2000,				-- Presumably how far you have to be away from cargo to have it show up in the cargo UI
-	helicopter_hook_pos  = {-0.21, -0.406, 0},	-- Belly hook coordinates (sliding door and hook not modeled in 3D model)
+	helicopter_hook_pos  = {-0.21-origin_shift_x, -0.406, 0},	-- Belly hook coordinates (sliding door and hook not modeled in 3D model)
 	-- helicopter_hook_pos = {3.340,1.375,1.625},	-- The hook on this helo's 3D model is here after argument 1003 = +1.000.
 	h_max_gear_hook 	 = 3.3,					-- What is this parameter? Maybe how close the hook needs to be to "latch" onto cargo? 3.3
 
@@ -944,7 +924,7 @@ return {
 			boarding_arg 			= 38,
             ejection_seat_name 		= 0,
             drop_canopy_name 		= 0,
-            pos 					= {3.93, 0.40, -1.09},
+            pos 					= {3.93-origin_shift_x, 0.40, -1.09},
 			ejection_added_speed	= {0.0, 0.0, -1.0},
             pilot_body_arg 			= 50,
             canopy_arg 				= 38,
@@ -956,7 +936,7 @@ return {
 			boarding_arg 			= 38,
             ejection_seat_name 		= 0,
             drop_canopy_name 		= 0,
-            pos 					= {3.93, 0.40, -1.09},
+            pos 					= {3.93-origin_shift_x, 0.40, -1.09},
 			ejection_added_speed	= {0.0, 0.0, -1.0},
             pilot_body_arg 			= 472,
             canopy_arg 				= 38,
@@ -968,7 +948,7 @@ return {
 			boarding_arg 			= 38,
             ejection_seat_name 		= 0,
             drop_canopy_name 		= 0,
-            pos 					= {3.93, 0.40, -1.09},
+            pos 					= {3.93-origin_shift_x, 0.40, -1.09},
 			ejection_added_speed	= {0.0, 0.0, -1.0},
             canopy_arg 				= 38,
             role 					= "flight_officer"
@@ -1034,8 +1014,8 @@ return {
 		6.5 degrees and 5 degrees forward matches better, but we're
 		trying to match against CH-65E shown in this video.
 	]]
-			{pos = { 5.07827, 3.04067, 0.0}, pitch = math.rad(-8.0)},	-- Forward rotor (8° forward tilt; experimentally determined to "look right")
-			{pos = {-5.18350, 4.45821, 0.0}, pitch = math.rad(-5.5)},	-- Aft rotor (5.5° forward tilt; experimentally determined to "look right")
+			{pos = { 5.07827-origin_shift_x, 3.04067, 0.0}, pitch = math.rad(-8.0)},	-- Forward rotor (8° forward tilt; experimentally determined to "look right")
+			{pos = {-5.18350-origin_shift_x, 4.45821, 0.0}, pitch = math.rad(-5.5)},	-- Aft rotor (5.5° forward tilt; experimentally determined to "look right")
 		},
 		
         rotor_models = {{
@@ -1057,7 +1037,7 @@ return {
 
     engines_nozzles = {
         [1] = {
-            pos = {-4.5046, 2.042, -0.7},	-- Left engine exhaust plume origin
+            pos = {-4.5046-origin_shift_x, 2.042, -0.7},	-- Left engine exhaust plume origin
 			elevation 			= -20.0,	-- Points 20 degrees down from longitudinal axis with rotor downwash
 			azimuth 			= 30.0,		-- +90 degrees is perpendicular to the longitudinal axis and parallel to the ground (left engine)
 			diameter 			= 0.55,		-- Mensurated the 3D model in ModelViewer in orthographic projection mode
@@ -1067,7 +1047,7 @@ return {
 			engine_number 		= 1,
         }, -- end of [1]
         [2] = {
-            pos = {-4.5046, 2.042, 0.7},	-- Right engine exhaust plume origin
+            pos = {-4.5046-origin_shift_x, 2.042, 0.7},	-- Right engine exhaust plume origin
 			elevation 			= -20.0,	-- Points 20 degrees down from longitudinal axis with rotor downwash
 			azimuth 			= -30.0,	-- -90 degrees is perpendicular to the longitudinal axis and parallel to the ground (right engine)
 			diameter 			= 0.55,		-- Mensurated the 3D model in ModelViewer in orthographic projection mode
@@ -1083,7 +1063,7 @@ return {
 	--[[
 		T58-GE-10 Ratings (Per Engine)
 		Max Takeoff (Short Duration): 	~1,400 SHP = 1,044 kW
-		Max Continuous: 					~1,250 SHP = 932 kW
+		Max Continuous: 				~1,250 SHP = 932 kW
 		Emergency/WEP: 					~1,400 SHP = 1,044 kW
 		
 		These parameters are meant to be PER ENGINE. If you have x engines, DCS will multiply each value by x for you.
@@ -1246,11 +1226,11 @@ return {
     fires_pos =
     {
         [1] = {0,  0,  0.000}, -- "MAIN"
-        [2] = {-4.444,  2.097, -0.600}, -- "ENGINE_L"
-        [3] = {-4.444,  2.097,  0.600}, -- "ENGINE_R"
-        [4] = {-5.958,  1.843,  0.000}, -- "TAIL"
-        [5] = {-1.700,  0.130, -1.500}, -- "FUEL_TANK_LEFT_SIDE"
-        [6] = {-1.700,  0.130,  1.500}, -- "FUEL_TANK_RIGHT_SIDE"
+        [2] = {-4.444-origin_shift_x,  2.097, -0.600}, -- "ENGINE_L"
+        [3] = {-4.444-origin_shift_x,  2.097,  0.600}, -- "ENGINE_R"
+        [4] = {-5.958-origin_shift_x,  1.843,  0.000}, -- "TAIL"
+        [5] = {-1.700-origin_shift_x,  0.130, -1.500}, -- "FUEL_TANK_LEFT_SIDE"
+        [6] = {-1.700-origin_shift_x,  0.130,  1.500}, -- "FUEL_TANK_RIGHT_SIDE"
     }, -- end of fires_pos
 
     effects_presets = {
@@ -1534,7 +1514,7 @@ return {
 					
 					{
 						typename = "RotatingBeacon", 						-- Ventral red beacon
-						-- position = { 1.7556, -0.4933, 0.000 },
+						-- position = { 1.7556-origin_shift_x, -0.4933, 0.000 },
 						connector = "ch46_light_bottom_strobe_mesh",
 						proto = lamp_prototypes.MSL_3_2,
 						color = {1.0, 30/255, 0, 3 * 0.012*math.sqrt(40)},	-- Bright, fiery red-orange
@@ -1553,7 +1533,7 @@ return {
 					]]
 					{
 						typename = "RotatingBeacon", 						-- Fore dorsal red beacon just forward of rear rotor, 1/2 cycle out of phase with others
-						-- position = { -4.200, 4.070, 0.000 },
+						-- position = { -4.200-origin_shift_x, 4.070, 0.000 },
 						connector = "ch46_light_nav_tail_strobe",
 						proto = lamp_prototypes.MSL_3_2,
 						color = {1.0, 30/255, 0, 3 * 0.012*math.sqrt(40)},	-- Bright, fiery red-orange
@@ -1643,26 +1623,26 @@ return {
 					{typename = "Argument", argument = 192}, 				-- White tail lights
 					
 					{	-- Port (left) side position light (red)
-						typename = "Spot", position = { 2.231, 0.847568, -1.117 },
+						typename = "Spot", position = { 2.221-origin_shift_x, 0.847568, -1.117 },
 						direction = {azimuth = math.rad(-90.0), elevation = math.rad(0)},
 						proto = lamp_prototypes.ANO_3_Kr, angle_max = math.rad(180.0),
 						color = {1.0, 15/255, 0, 0.12},
 					},
 					{	-- Starboard (right) side position light (green)
-						typename = "Spot", position = { 2.221, 0.381, 1.117 },
+						typename = "Spot", position = { 2.221-origin_shift_x, 0.381, 1.117 },
 						direction = {azimuth = math.rad(90.0), elevation = math.rad(0)},
 						proto = lamp_prototypes.ANO_3_Zl, angle_max = math.rad(180.0),
 						color = {0.0, 1.0, 65/255, 0.12},
 					},
 					{	-- Aft white nav light (above APU exhaust)
-						typename = "Spot", position = { -7.2567, 2.5091, 0 },
+						typename = "Spot", position = { -7.2567-origin_shift_x, 2.5091, 0 },
 						proto = lamp_prototypes.HS_2A,
 						direction = {azimuth = math.rad(180.0)},
 						angle_max = math.rad(165.0),
 						power_up_t = 0.25, cool_down_t = 0.35,
 					},
 					{	-- Aft white nav light (below APU exhaust)
-						typename = "Spot", position = { -7.2983, 1.957, 0 },
+						typename = "Spot", position = { -7.2983-origin_shift_x, 1.957, 0 },
 						proto = lamp_prototypes.HS_2A,
 						direction = {azimuth = math.rad(180.0)},
 						angle_max = math.rad(165.0),
@@ -1678,7 +1658,7 @@ return {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { 5.92719, 0.709705, -0.00877 },
+						position = { 5.92719-origin_shift_x, 0.709705, -0.00877 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(-130.0)},
 						-- angle_max = math.rad(165.0),
@@ -1703,7 +1683,7 @@ return {
                         typename = "Spot",	-- Cabin is 1.85m tall
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { 2.213394, 1.684508, 0 },
+						position = { 2.213394-origin_shift_x, 1.684508, 0 },
 						-- connector = "ch46_light_red_passenger1", emitter_shift_z = -0.040,
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
@@ -1714,7 +1694,7 @@ return {
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { 2.213394, 1.684508, 0 },
+						position = { 2.213394-origin_shift_x, 1.684508, 0 },
 						intensity_max = 8.0,
 						range = 2,
                     },
@@ -1723,7 +1703,7 @@ return {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { 0.573959, 1.683662, 0 },
+						position = { 0.573959-origin_shift_x, 1.683662, 0 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
 						-- angle_max = math.rad(90.0),
@@ -1733,7 +1713,7 @@ return {
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { 0.573959, 1.683662, 0 },
+						position = { 0.573959-origin_shift_x, 1.683662, 0 },
 						intensity_max = 8.0,
 						range = 2,
                     },
@@ -1742,7 +1722,7 @@ return {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { -1.041669, 1.697513, 0 },
+						position = { -1.041669-origin_shift_x, 1.697513, 0 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
 						-- angle_max = math.rad(90.0),
@@ -1752,7 +1732,7 @@ return {
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { -1.041669, 1.697513, 0 },
+						position = { -1.041669-origin_shift_x, 1.697513, 0 },
 						intensity_max = 8.0,
 						range = 2,
                     },
@@ -1761,7 +1741,7 @@ return {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { -2.682571, 1.654862, 0 },
+						position = { -2.682571-origin_shift_x, 1.654862, 0 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
 						-- angle_max = math.rad(90.0),
@@ -1771,7 +1751,7 @@ return {
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { -2.682571, 1.654862, 0 },
+						position = { -2.682571-origin_shift_x, 1.654862, 0 },
 						intensity_max = 8.0,
 						range = 2,
                     },
@@ -1786,7 +1766,7 @@ return {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
 						color = {0.588, 0, 0},
-						position = { 5.92719, 0.709705, -0.00877 },
+						position = { 5.92719-origin_shift_x, 0.709705, -0.00877 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(-130.0)},
 						-- angle_max = math.rad(165.0),
@@ -1803,7 +1783,7 @@ return {
                     {
                         typename = "Spot",	-- Cabin is 1.85m tall
 						proto = lamp_prototypes.HS_2A,
-						position = { 2.213394, 1.684508, 0 },
+						position = { 2.213394-origin_shift_x, 1.684508, 0 },
 						-- connector = "ch46_light_red_passenger1", emitter_shift_z = -0.040,
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
@@ -1813,7 +1793,7 @@ return {
 					{
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
-						position = { 2.213394, 1.684508, 0 },
+						position = { 2.213394-origin_shift_x, 1.684508, 0 },
 						intensity_max = 8.0,
 						color = {1, 214/255, 170/255},
 						range = 2,
@@ -1822,7 +1802,7 @@ return {
                     {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
-						position = { 0.573959, 1.683662, 0 },
+						position = { 0.573959-origin_shift_x, 1.683662, 0 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
 						color = {1, 214/255, 170/255},
@@ -1831,7 +1811,7 @@ return {
 					{
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
-						position = { 0.573959, 1.683662, 0 },
+						position = { 0.573959-origin_shift_x, 1.683662, 0 },
 						intensity_max = 8.0,
 						color = {1, 214/255, 170/255},
 						range = 2,
@@ -1840,7 +1820,7 @@ return {
                     {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
-						position = { -1.041669, 1.697513, 0 },
+						position = { -1.041669-origin_shift_x, 1.697513, 0 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
 						color = {1, 214/255, 170/255},
@@ -1849,7 +1829,7 @@ return {
 					{
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
-						position = { -1.041669, 1.697513, 0 },
+						position = { -1.041669-origin_shift_x, 1.697513, 0 },
 						intensity_max = 8.0,
 						color = {1, 214/255, 170/255},
 						range = 2,
@@ -1858,7 +1838,7 @@ return {
                     {
                         typename = "Spot",
 						proto = lamp_prototypes.HS_2A,
-						position = { -2.682571, 1.654862, 0 },
+						position = { -2.682571-origin_shift_x, 1.654862, 0 },
 						intensity_max = 8.0,
 						direction = {elevation = math.rad(90)},
 						color = {1, 214/255, 170/255},
@@ -1867,7 +1847,7 @@ return {
 					{
                         typename = "Omni",
 						proto = lamp_prototypes.HS_2A,
-						position = { -2.682571, 1.654862, 0 },
+						position = { -2.682571-origin_shift_x, 1.654862, 0 },
 						intensity_max = 8.0,
 						color = {1, 214/255, 170/255},
 						range = 2,
