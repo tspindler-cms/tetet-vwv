@@ -113,6 +113,7 @@ Thanks
     upuaut - donation of his IX514, Tango and Charly boats
     Fredy - maintaining upaut's legacy boats
     Urbi - textures for EC-121, H-2, and CH-46D
+    TheAdmiral - rigging the AD-30 Solon Turman
 
 Without these persons the mod would not have been possible!
 

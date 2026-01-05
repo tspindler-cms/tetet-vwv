@@ -1,0 +1,27 @@
+CH-46D
+
+ch46d
+
+Name: CH-46D Sea Knight
+Type: Medium Lift Transport Helicopter
+Crew: 3 Flight Crew (Pilot, Co-pilot, Crew Chief) + 25 Troops or 15 Litters
+Length: 44' 10" (13.66 m) [Fuselage] / 84' 4" (25.70 m) [Rotors Turning]
+Rotor Diameter: 50' 0" (15.24 m) [Each]
+Height: 16' 8" (5.08 m) Disc Area: 3,927 ft² (364.8 m²) [Total effective area]
+Max Speed at S/L: 144 kts (166 mph / 267 km/h)
+Max Speed at Altitude: Limited by retreating blade stall (typically ~130 kts cruise)
+Weight empty: 13,067 lb (5,927 kg)
+Max takeoff weight: 23,000 lb (10,433 kg)
+Max landing weight: 23,000 lb (10,433 kg)
+Normal G: +2.5 / -0.5 g G limit: +3.0 g (Structural/Blade Limit)
+Max range: 600 nmi (1,110 km) [Ferry] / ~160 nmi
+Combat Radius Internal Fuel: 3,507 lb (1,590 kg) / 515 US Gal Service ceiling: 14,000' (4,267 m)
+Powerplant: 2 x General Electric T58-GE-10 turboshafts (1,400 shp / 1,044 kW each)
+
+Armament:
+
+    2 x .50 caliber (12.7 mm) XM-218 or M2 Browning machine guns (pintle-mounted in side windows)
+
+The CH-46D Sea Knight, affectionately known as the "Phrog," is a tandem-rotor, twin-engine medium-lift helicopter developed by the Boeing Vertol Company for the United States Navy and Marine Corps. Entering service in the mid-1960s as a more powerful successor to the A-model, the CH-46D became the workhorse of vertical replenishment (VERTREP) and assault transport missions during the Vietnam War. Its distinct tandem-rotor configuration eliminates the need for a tail rotor, allowing 100% of engine power to generate lift and providing exceptional stability in strong crosswinds. Over 260 D-models were procured, serving a vital role in ship-to-shore logistics and medical evacuation until eventually being supplanted by the CH-46E and later the MV-22 Osprey.
+
+Note: Unlike conventional single-rotor helicopters, the CH-46D does not suffer from "loss of tail rotor effectiveness" (LTE) and possesses a generous center of gravity range, making it easier to load unevenly. However, the aircraft is aerodynamically limited by the interaction between the forward and aft rotor wash; high-speed forward flight can induce severe vibration and retreating blade stall on the rear rotor, requiring pilots to carefully manage collective pitch and airspeed during aggressive maneuvering.

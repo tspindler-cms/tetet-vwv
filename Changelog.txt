@@ -1,3 +1,29 @@
+2026-01-05
+  A-1
+    - Enhanced config by HawaiianRyan
+    - Encyclopedia added by HawaiianRyan
+  A-5
+    - Moved origin in edm
+    - Added comment for this in lua config
+  A-37
+    - Encyclopedia added by HawaiianRyan
+  CH-46D
+    - Encyclopedia added by HawaiianRyan
+  EC-121/L-1049
+    - Enhanced config by HawaiianRyan
+    - Encyclopedia added by HawaiianRyan
+    - Added nose gear steering to edm
+    - Removed radomes from L-1049 distance lods
+  H-2
+    - Encyclopedia added by HawaiianRyan
+    - Enhanced config by HawaiianRyan
+  MiG-17
+    - Encyclopedia added by HawaiianRyan
+  AD-30 USS Solon Turman
+    - Initial release of fictive destroyer tender
+  PBR MkII
+    - Fix gun sounds
+    - Fix fore gun using two barrels
 2026-01-02
   USS Radford and USS Epperson
     - Initial Release by James

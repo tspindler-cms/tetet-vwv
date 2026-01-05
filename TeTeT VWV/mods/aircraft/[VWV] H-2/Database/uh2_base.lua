@@ -5,7 +5,8 @@ return {
 -- Ref: Real-world data for Single-Engine T58-GE-8B configuration
 ----------------------------------------------------------------------------------------------------
 -- Useful video: https://www.youtube.com/watch?v=qdA-6MaLH3g
-
+-- https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
+-- https://vertipedia.vtol.org/aircraft/getAircraft/aircraftID/726
 
 	Name                = "uh2a",
     DisplayName         = _("[VWV] UH-2A Seasprite"),
@@ -366,6 +367,7 @@ return {
 	------------------------------------------------------------------------------------------------
     -- ROTOR & PHYSICS
     ------------------------------------------------------------------------------------------------
+	scheme          = 0,		-- "Regular" main rotor/tail rotor helicopter modeling scheme
     -- rotor_height 	= 1.084,    -- Front hub height in the 3D model itself, in its geographic coordinate frame (not from the ground!) [meters]
 	rotor_height	= 1.080367,	-- Front hub height in the 3D model itself, in its geographic coordinate frame (not from the ground!) [meters]
     rotor_diameter  = 13.41,    -- 44 ft [meters]
@@ -377,10 +379,9 @@ return {
     -- sound_name		= "Aircrafts/Engines/RotorSH3",
 	sound_name		= "Aircrafts/Engines/RotorOH58",
 	
-    -- Moments of Inertia [kg*m^2]
-	-- Format: {pitch, roll, yaw}
-    rotor_MOI       = 3650,     -- Rotor total moment of inertia (not per blade) [kg*m^2]
-    MOI             = {5100, 20800, 16800}, -- {Roll,Yaw,Pitch} [kg*m^2]
+    -- Moments of Inertia
+    rotor_MOI		= 4930,     -- [kg*m^2] Rotor total moment of inertia (not per blade) [kg*m^2]
+    MOI	= {4100, 23500, 28200}, -- [kg*m^2] {Roll,Yaw,Pitch}
 
     -- Rotor Aerodynamics (Servo-flap Kaman system)
 	--[[
@@ -425,8 +426,6 @@ return {
 				interference near the tips compared to later tapered designs.
 	]]
 	thrust_correction = 0.635, 	-- Rotor efficiency factor/Figure of merit (see discussion above)
-	
-    scheme          = 0,	-- "Regular" main rotor/tail rotor helicopter modeling scheme
     
     -- Blade Data
 	--[[
@@ -459,8 +458,12 @@ return {
 			Twist: 	The blades have a geometric twist (washout) of approximately
 					-6° to -8° from root to tip to distribute lift evenly.
 	]]
-	blade_chord 	= 0.764,   	-- See discussion above [meters]
-	blade_area 		= 5.12262,  -- The area of each blade (approx. = blade chord * (rotor_diameter/2)) [m^2]
+	-- blade_chord 	= 0.764,   	-- [m] See discussion above 
+	-- blade_area 		= 5.12262,  -- [m^2] The area of each blade (approx. = blade chord * (rotor_diameter/2))
+	
+	-- New source: https://vertipedia.vtol.org/aircraft/getAircraft/aircraftID/726
+	blade_chord 	= 0.561,   	-- [m] 		https://vertipedia.vtol.org/aircraft/getAircraft/aircraftID/726
+	blade_area 		= 3.76,  	-- [m^2]	https://vertipedia.vtol.org/aircraft/getAircraft/aircraftID/726
 	
 	--[[
 		I think the next two parameters are related to the mechanical stops (limits)
@@ -592,7 +595,7 @@ return {
     radar_can_see_ground = false,	-- Is AI radar able to see enemy surface entities (tanks, ships)?
     RCS                 = 10,
     detection_range_max = 11,
-    IR_emission_coeff   = 0.2,
+    IR_emission_coeff   = 0.04,		-- Su-27 ~= 5000 Watts/steradian; UH-2A/B = ~200 W/sr
 	
 	HumanRadio = {
 		editable = true,
@@ -709,10 +712,13 @@ return {
 	
 	rotor_animation = {
         -- rotor_locations = { {pos = { 0.5824, 1.7843, 0.0}, pitch = -0.01}, },
-		rotor_locations = { {pos = { 0.5824, 1.8477, 0.0}, pitch = -0.01}, },
+		
+		-- Forward Tilt: 6° forward; source: https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
+		-- Lateral Tilt: 6° port; source: https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
+		-- EDM already has rotor tilted forward 3 degrees w.r.t. the longitudinal axis.
+		rotor_locations = { {pos = { 0.5824, 1.8477, 0.0}, pitch = math.rad(-3.0), roll = math.rad(-6.0)}, },
         rotor_models = {
             {
-                -- modelRotorHub_EDM       = "uh2a_rotorhub",
 				modelRotorHub_EDM       = "vwv_uh2a_rotorhub_front",
                 modelRotorHubLod_FBX    = "/models/sh2f_rotor_hub_lod.fbx",
                 boundRotorHub_FBX       = "/models/sh2f_rotor_hub_bound.fbx",

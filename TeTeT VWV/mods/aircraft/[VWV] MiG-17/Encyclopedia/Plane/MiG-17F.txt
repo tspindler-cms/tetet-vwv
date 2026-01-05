@@ -1,0 +1,29 @@
+MiG-17F
+
+mig17f
+
+Name: MiG-17F (NATO: Fresco-C)
+Type: Frontline Fighter / Interceptor
+Crew: 1 (Pilot)
+Length: 36' 11" (11.26 m)
+Wing span: 31' 7" (9.63 m)
+Height: 12' 6" (3.80 m)
+Wing area: 243.3 ft² (22.6 m²)
+Max Mach at S/L: 0.90 (595 kts / 684 mph)
+Max Mach at altitude: 0.96 (Level) / 1.03 (Dive Limit)
+Weight empty: 8,664 lb (3,930 kg)
+Max takeoff weight: 13,380 lb (6,069 kg) [With drop tanks]
+Max landing weight: 12,000 lb (5,443 kg)
+Normal G: +8.0 / -3.0 g
+G limit: +8.0 g (Structural)
+Max range: 1,080 nmi (2,000 km) [With drop tanks]
+Internal Fuel: 3,120 lb (1,415 kg)
+Service ceiling: 54,500' (16,600 m)
+Thrust Rating (ISA sea level): 1 x 5,950 lbf (Dry) / 7,450 lbf (Afterburner) [Klimov VK-1F]
+
+Armament: 
+- 1 x 37mm N-37D cannon (40 rounds)
+- 2 x 23mm NR-23 cannons (80 rounds each)
+- 2 x Underwing hardpoints for 250kg bombs or unguided rockets (S-5/S-21)
+
+The MiG-17F is a high-subsonic, swept-wing day fighter developed by the Soviet Union as a refined evolution of the famous MiG-15. Distinguished by its more sharply swept wing (45 degrees), longer fuselage, and the introduction of the VK-1F afterburning engine, the "Fresco-C" remedied the high-speed instability issues of its predecessor. Despite lacking sophisticated radar or missiles, the MiG-17F became a feared adversary over Vietnam; its tight turning radius and heavy cannon armament allowed skilled North Vietnamese pilots to lure heavier, faster American fighters into low-speed "knife fights" where the MiG's superior maneuverability could be decisively exploited.

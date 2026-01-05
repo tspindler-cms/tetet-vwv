@@ -1,0 +1,30 @@
+SH-2F
+
+sh2f
+
+Name: SH-2F Seasprite (LAMPS I)
+Type: Anti-Submarine Warfare (ASW) / Anti-Surface Warfare
+Crew: 3 (Pilot, Co-pilot/ATO, Sensor Operator)
+Length: 38' 4" (11.68 m) [Fuselage] / 52' 7" (16.03 m) [Rotors Turning]
+Rotor Diameter: 44' 0" (13.41 m) [Upgraded "101" Rotor]
+Height: 15' 6" (4.72 m)
+Disc Area: 1,520 ft² (141.2 m²)
+Max Speed at S/L: 143 kts (165 mph / 265 km/h)
+Max Speed at Altitude: 130 kts
+Weight empty: 7,040 lb (3,193 kg)
+Max takeoff weight: 13,500 lb (6,123 kg)
+Max landing weight: 13,500 lb (6,123 kg)
+Normal G: +2.5 / -0.5 g
+G limit: +3.0 g
+Max range: 370 nmi (685 km)
+Internal Fuel: 2,624 lb (1,190 kg) / 386 US Gal (with aux tanks)
+Service ceiling: 13,000' (3,962 m)
+Powerplant: 2 x General Electric T58-GE-8F turboshafts (1,350 shp each)
+
+Armament: 
+- 2 x Mk 46 or Mk 50 Torpedoes
+- 15 x Sonobuoys (internal launcher)
+- LN-66HP Surface Search Radar (Chin mounted)
+- AN/ASQ-81 Magnetic Anomaly Detector (Towed MAD bird)
+
+The SH-2F Seasprite is the definitive "Light Airborne Multi-Purpose System" (LAMPS Mk I) variant, extensively remanufactured from earlier models to provide destroyers and frigates with over-the-horizon detection and attack capabilities. Identified by its chin-mounted radar radome, towed Magnetic Anomaly Detector (MAD) on the starboard fuselage, and upgraded "101" high-performance rotor system, the SH-2F extended the sensor range of its parent ship. Serving well into the 1990s (including service during Operation Desert Storm), the SH-2F utilized a tactical data link to relay radar and acoustic information back to the ship's Combat Information Center, acting as the fleet's primary small-deck ASW asset before the arrival of the SH-60 Seahawk.

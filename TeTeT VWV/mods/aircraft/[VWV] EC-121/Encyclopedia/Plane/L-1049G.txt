@@ -1,0 +1,27 @@
+L-1049G
+
+ec121
+
+Name: L-1049G Super Constellation
+Type: Commercial Airliner / Transport
+Crew: 4 Flight Crew (Pilot, Co-pilot, Flight Engineer, Navigator) + 3–5 Cabin Crew
+Length: 113' 7" (34.62 m)
+Wing span: 126' 2" (38.45 m) [with tip tanks]
+Height: 24' 9" (7.54 m)
+Wing area: 1,654 ft² (153.7 m²)
+Max Mach at S/L: N/A (Max Speed ~260 KTAS / Mach 0.39)
+Max Mach at altitude: 0.52 (Structural limit) / 0.49 (Performance limit ~305 KTAS)
+Weight empty: 79,120 lb (35,888 kg)
+Max takeoff weight: 137,500 lb (62,369 kg)
+Max landing weight: 113,000 lb (51,256 kg)
+Normal G: +2.5 / -1.0 g
+G limit: +3.0 g (Emergency/Yield)
+Max range: 4,160 nmi (7,700 km) [with tip tanks]
+Internal Fuel: 39,300 lb (17,826 kg) / 6,550 US Gal
+Service ceiling: 25,000' (7,620 m)
+Thrust Rating (ISA sea level): 4 x 3,250 BHP (Wright R-3350-DA3 Turbo-Compounds)
+
+Armament: 
+- None
+
+The Lockheed L-1049G Super Constellation, popularly known as the "Super G," is a four-engine, pressurized piston-driven airliner that represents the pinnacle of the Constellation design lineage. entering service in 1954, it was the most successful variant of the Super Constellation series, renowned for its distinctive triple-tail design and dolphin-shaped fuselage. Powered by four Wright R-3350 Turbo-Compound engines and typically equipped with wingtip fuel tanks for extended range, the Super G was capable of flying transatlantic routes non-stop with up to 99 passengers in a pressurized, luxury cabin. Over 100 L-1049Gs were built, serving major carriers like TWA, Air France, and Lufthansa before the jet age rendered them obsolete.

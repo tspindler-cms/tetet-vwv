@@ -1,0 +1,29 @@
+EC-121D
+
+ec121
+
+Name: EC-121D Warning Star
+Type: Airborne Early Warning & Control
+Crew: 6 Flight Crew + 12–25 Mission Crew (Typical Total: 18–31)
+Length: 116' 2" (35.41 m)
+Wing span: 126' 2" (38.45 m)
+Height: 24' 9" (7.54 m)
+Wing area: 1,654 ft² (153.7 m²)
+Max Mach at S/L: N/A (Max Speed ~223 KTAS / Mach 0.34)
+Max Mach at altitude: 0.52 (Structural limit) / 0.45 (Performance limit ~260 KTAS)
+Weight empty: 80,611 lb (36,565 kg)
+Max takeoff weight: 145,000 lb (65,770 kg)
+Max landing weight: ~113,000 lb (51,256 kg)
+Normal G: +2.5 / -1.0 g
+G limit: +3.0 g (Emergency/Yield)
+Max range: 3,700 nmi (6,850 km)
+Internal Fuel: 34,920 lb (15,840 kg) / 5,820 US Gal
+Service ceiling: 25,000' (7,620 m)
+Thrust Rating (ISA sea level): 4 x 3,400 BHP (Est. 34,000 lbf / 15,422 kgf total static thrust)
+
+Armament: 
+- None
+
+The EC-121D Warning Star is a long-range, four-engine, piston-driven Airborne Early Warning and Control (AEW&C) aircraft developed for the United States Air Force and United States Navy by the Lockheed Corporation. Based on the L-1049 Super Constellation and originally designated the RC-121D before 1962, it entered service in 1954 designed primarily to extend the Distant Early Warning Line against Soviet bombers. However, utilizing the massive ventral AN/APS-20 search radar and dorsal AN/APS-45 height-finding radar, the EC-121D is capable of tracking low-flying aircraft over water and directing fighter interceptors in complex tactical environments. Approximately 232 Warning Stars were built between 1953 and 1958.
+
+Note: While the aircraft could reach 25,000 feet, operational patrols (Barrier CAP) were typically flown much lower, often between 3,000 and 12,000 feet due to the lack of Doppler processing in the AN/APS-20 and -45 radar systems. This lower altitude was preferred for radar detection of surface vessels and low-flying aircraft, as well as to avoid the high engine wear associated with operating the R-3350s near their critical altitude limits.

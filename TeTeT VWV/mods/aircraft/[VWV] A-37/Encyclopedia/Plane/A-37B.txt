@@ -1,0 +1,28 @@
+A-37B
+
+a_37_dragonfly
+
+Name: A-37B Dragonfly
+Type: Light Attack / Counter-Insurgency (COIN)
+Crew: 2 (Pilot, Co-pilot/Observer) [Side-by-Side]
+Length: 29' 3" (8.92 m)
+Wing span: 35' 10" (10.93 m) [Including Tip Tanks]
+Height: 8' 10" (2.70 m)
+Wing area: 183.9 ft² (17.1 m²)
+Max Mach at S/L: 0.65 (425 kts / 489 mph)
+Max Mach at altitude: 0.70 (Structural Limit in dive)
+Weight empty: 6,211 lb (2,817 kg)
+Max takeoff weight: 14,000 lb (6,350 kg)
+Max landing weight: 14,000 lb (6,350 kg)
+Normal G: +7.0 / -2.5 g
+G limit: +8.0 g
+Max range: 800 nmi (1,480 km) [Ferry with 4 drop tanks]
+Internal Fuel: 3,500 lb (1,587 kg) [Including non-jettisonable tip tanks]
+Service ceiling: 41,765' (12,730 m)
+Thrust Rating (ISA sea level): 2 x 2,850 lbf (1,293 kgf) [General Electric J85-GE-17A]
+
+Armament: 
+- 1 x 7.62mm GAU-2B/A Minigun (Internal nose, 6,000 rpm)
+- 8 x Underwing hardpoints for 5,800 lb of ordinance (Bombs, Napalm, Rockets, Gun pods)
+
+The Cessna A-37B Dragonfly, often called the "Super Tweet," is a light attack aircraft developed from the T-37 primary trainer to meet the US Air Force's requirement for a dedicated Counter-Insurgency (COIN) platform during the Vietnam War. While it retained the side-by-side seating and friendly handling of the trainer, the A-37B was structurally reinforced and fitted with engines producing nearly three times the thrust of the original. Known for its ability to operate from short, unimproved airstrips and its legendary bombing accuracy, the Dragonfly served extensively with the USAF and South Vietnamese Air Force (VNAF), often flying missions too low and slow for faster jets like the F-4 or F-105.

@@ -1,0 +1,28 @@
+UH-2C
+
+uh2c
+
+Name: UH-2C Seasprite
+Type: All-Weather SAR & Utility (Twin Engine)
+Crew: 3 (Pilot, Co-pilot, Crew Chief/Rescue Swimmer)
+Length: 38' 4" (11.68 m) [Fuselage]
+Rotor Diameter: 44' 0" (13.41 m)
+Height: 13' 7" (4.14 m)
+Disc Area: 1,520 ft² (141.2 m²)
+Max Speed at S/L: 138 kts (159 mph / 256 km/h)
+Max Speed at Altitude: ~130 kts
+Weight empty: 7,200 lb (3,265 kg)
+Max takeoff weight: 11,614 lb (5,268 kg)
+Max landing weight: 11,614 lb (5,268 kg)
+Normal G: +2.5 / -0.5 g
+G limit: +3.0 g
+Max range: 365 nmi (675 km)
+Internal Fuel: 1,883 lb (854 kg) / 277 US Gal
+Service ceiling: 15,600' (4,755 m)
+Powerplant: 2 x General Electric T58-GE-8B turboshafts (1,250 shp each)
+
+Armament: 
+- Optional pintle-mounted M60D machine gun
+- Experimental mounting of AIM-9 Sidewinders (rare)
+
+The UH-2C Seasprite is a twin-engine conversion of existing UH-2A and UH-2B airframes, initiated in 1966 to address the safety concerns of single-engine operation in the maritime environment. By mounting two T58 engines in distinct external pods on either side of the transmission housing, the UH-2C gained true engine redundancy, significantly increasing safety during hover and rescue hoist operations. This modification, often referred to as the "H-2 Tomahawk" during development, doubled the horsepower but slightly reduced range due to higher fuel consumption; it served heavily in the Vietnam theater as the Navy's primary Combat Search and Rescue (CSAR) platform "SAR Clementine."

@@ -1,4 +1,5 @@
 -- Based on HandyWind
+-- Modified by TeTeT for VWV
 
 GT = {};
 GT_t.ws = 0;
@@ -96,70 +97,44 @@ GT.WS[ws].center = 'CENTER_TOWER_01'
 GT.WS[ws].angles = {
                     {math.rad(125), math.rad(-125), math.rad(-4), math.rad(30)},
                    };
-GT.WS[ws].canSetTacticalDir = true 
+GT.WS[ws].canSetTacticalDir = true
 GT.WS[ws].drawArgument1 = 21
 GT.WS[ws].drawArgument2 = 22
-GT.WS[ws].omegaY = math.rad(100);
-GT.WS[ws].omegaZ = math.rad(100); 
-GT.WS[ws].reference_angle_Y = math.rad(0);
-GT.WS[ws].reference_angle_Z = math.rad(0);	
+GT.WS[ws].omegaY = math.rad(100)
+GT.WS[ws].omegaZ = math.rad(100)
+GT.WS[ws].reference_angle_Y = math.rad(0)
+GT.WS[ws].reference_angle_Z = math.rad(0)
 
---[[__LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
-__LN.BR[1].connector_name = 'POINT_GUN_01_L';
-for i=7,10 do
-	__LN.PL[i] = {}
-	set_recursive_metatable(__LN.PL[i], __LN.PL[1]);
-end
-__LN.fireAnimationArgument = 44;
-]]
-GT.WS[ws].LN[1].BR = 
+GT.WS[ws].LN[1].BR =
 					{
 						{
 							connector_name = 'POINT_GUN_01_L',
+						},
+						{
+							connector_name = 'POINT_GUN_01_R',
 						}
 					};
 
-							
 -- =========================== M2 machine gun Stern =======================================
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
--- set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Oerlikon_20)
 
 GT.WS[ws].area = 'STERN';
 GT.WS[ws].center = 'CENTER_TOWER_02'
-GT.WS[ws].drawArgument1 = 23   
-GT.WS[ws].drawArgument2 = 24  
+GT.WS[ws].drawArgument1 = 23
+GT.WS[ws].drawArgument2 = 24
 GT.WS[ws].omegaY = math.rad(90);
-GT.WS[ws].omegaZ = math.rad(90);  
+GT.WS[ws].omegaZ = math.rad(90);
 GT.WS[ws].angles = {
                     {math.rad(160), math.rad(-160), math.rad(-5), math.rad(70)},
                    };
-GT.WS[ws].reference_angle_Y = math.rad(180);	
-GT.WS[ws].reference_angle_Z = math.rad(0);						
+GT.WS[ws].reference_angle_Y = math.rad(180);
+GT.WS[ws].reference_angle_Z = math.rad(0);
 
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.machinegun_12_7_M2);
 __LN.BR[1].connector_name = 'POINT_GUN_02';
 __LN.fireAnimationArgument = 119;
-
-
---[[
-__LN = add_launcher(GT.WS[ws], GT_t.LN_t.automatic_gun_25mm);
-__LN.BR[1].connector_name = 'POINT_GUN_02';
-for i=7,10 do
-	__LN.PL[i] = {}
-	set_recursive_metatable(__LN.PL[i], __LN.PL[1]);
-end
-__LN.fireAnimationArgument = 119;
-]]
---[[
-GT.WS[ws].LN[1].BR = 
-					{
-						{
-							connector_name = 'POINT_GUN_02',
-						}
-					};
-]]
 
 GT.Name = "PBR_MKII";
 GT.DisplayName = _("[VWV] Patrol Boat, River MkII");

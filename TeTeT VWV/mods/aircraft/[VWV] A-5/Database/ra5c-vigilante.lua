@@ -33,6 +33,7 @@ return {
 	attribute  			= {wsType_Air, wsType_Airplane, wsType_Fighter, WSTYPE_PLACEHOLDER ,"Battleplanes",},
 	Categories 			= {},
 	-------------------------
+	-- center_of_mass = {0.0, -1.0, 0.0},
 	M_empty 					= 14870, -- kg
 	M_nominal 					= 21605, -- kg
 	M_max 						= 28615, -- kg

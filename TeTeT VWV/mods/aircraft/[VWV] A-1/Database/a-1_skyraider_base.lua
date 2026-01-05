@@ -739,8 +739,8 @@ return {
 			hMaxEng				=	12.5,		-- [km] Altitude limit for engine
 			cemax				=	0.37,		-- [kg/s] Max fuel consumption per engine
 			cefor				=	0.37,
-			dpdh_m 				= 	0,		-- set to zero so piston parameters are not overridden
-			dpdh_m 				= 	0,		-- set to zero so piston parameters are not overridden
+			dpdh_m 				= 	0,			-- set to zero so piston parameters are not overridden
+			dpdh_m 				= 	0,			-- set to zero so piston parameters are not overridden
 
 			-- Thrust table: Normalized for ~2700 HP Propeller
 			-- Col 1: Mach
@@ -815,9 +815,6 @@ return {
 			Stroke 				= 	0.160,		-- [m] 6.3125 inch stroke
 			V_pist_0			=	18,			-- [#] Number of pistons/cylinders
 			
-			-- Nu_0 				= 	1.2,		-- Constant - Turbo pressure ratio vs. RPM
-			-- Nu_1 				= 	0.87,		-- Linear coefficient - Turbo pressure ratio vs. RPM
-			-- Nu_2 				= 	0.0035,		-- Quadratic coefficient - Turbo pressure ratio vs. RPM
 			Nu_0 				= 	1.28,		-- Static Potential (see below)
 			Nu_1 				= 	0.94,		-- Coefficient for the Advance Ratio (J) (see below)
 			Nu_2 				= 	0.0019,		-- Coefficient for the Helical Tip Mach Number (M_tip^2) (see below)											
@@ -882,11 +879,10 @@ return {
 															M_tip = sqrt( V^2 + (Rotational Velocity)^2 ) / (Speed of Sound)
 											]]
 			
-	
 			N_indic_0			=	2013400,	-- [W] Indicated power
 			
-			N_fr_0 				=	0.072,		-- Friction Mean Effective Pressure (FMEP) - Static drag to turn engine over
-			N_fr_1 				=	0.002,		-- Friction Mean Effective Pressure (FMEP) - Viscous drag as piston speed increases
+			N_fr_0 				=	0.095,		-- Friction Mean Effective Pressure (FMEP) - Static drag to turn engine over
+			N_fr_1 				=	0.055,		-- Friction Mean Effective Pressure (FMEP) - Viscous drag as piston speed increases
 											--[[	Definition: These coefficients model the horsepower lost to friction
 													(piston rings, bearings, valve train) and pumping losses (sucking air
 													in/pushing exhaust out).
@@ -1006,7 +1002,8 @@ return {
 	flaps_transmission          = "Hydraulic",
 	undercarriage_transmission 	= "Hydraulic",
 	doors_transmission 			= "Mechanical",
-
+	
+	doors_movement 				= 2,		-- Enable custom doors mechanimations
 	mechanimations = {
 		--[[
         Removed for Korea use with WWII Essex
@@ -1023,7 +1020,7 @@ return {
 		},
         ]]
 		Door0 = {
-			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.8, "in", 9.0},},},}, Flags = {"Reversible"},},
+			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.849, "in", 9.0},},},}, Flags = {"Reversible"},},
 			{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 6.0},},},}, Flags = {"Reversible", "StepsBackwards"},},
 			{Transition = {"Any", "Bailout"}, Sequence = {{C = {{"JettisonCanopy", 0},},},},},
 		},

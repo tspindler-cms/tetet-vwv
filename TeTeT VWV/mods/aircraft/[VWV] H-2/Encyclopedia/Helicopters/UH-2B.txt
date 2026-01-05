@@ -1,0 +1,27 @@
+UH-2B
+
+uh2b
+
+Name: UH-2B Seasprite
+Type: VFR Utility Transport
+Crew: 3 (Pilot, Co-pilot, Crew Chief)
+Length: 38' 4" (11.68 m) [Fuselage]
+Rotor Diameter: 44' 0" (13.41 m)
+Height: 13' 7" (4.14 m)
+Disc Area: 1,520 ft² (141.2 m²)
+Max Speed at S/L: 145 kts (167 mph / 269 km/h)
+Max Speed at Altitude: ~135 kts
+Weight empty: 5,950 lb (2,698 kg)
+Max takeoff weight: 10,200 lb (4,627 kg)
+Max landing weight: 10,200 lb (4,627 kg)
+Normal G: +2.5 / -0.5 g
+G limit: +3.0 g
+Max range: 580 nmi (1,074 km)
+Internal Fuel: 2,244 lb (1,018 kg) / 330 US Gal
+Service ceiling: 17,400' (5,303 m)
+Powerplant: 1 x General Electric T58-GE-8B turboshaft (1,250 shp)
+
+Armament: 
+- None (Standard) / Optional door gun
+
+The UH-2B Seasprite is a simplified, lightweight variant of the A-model produced concurrently for the US Navy. To reduce cost and weight for clear-weather logistics missions, the UH-2B was delivered without the sophisticated automatic stabilization equipment (ASE) and navigational avionics found in the UH-2A, limiting it strictly to Visual Flight Rules (VFR) operations. Although visually identical to the 'A' model externally, the lack of IFR instrumentation relegated the 'B' model primarily to daylight utility transport and courier duties between ships until nearly all were eventually upgraded to twin-engine standards.
