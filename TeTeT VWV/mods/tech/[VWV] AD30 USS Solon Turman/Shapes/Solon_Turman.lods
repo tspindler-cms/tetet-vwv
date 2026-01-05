@@ -1,0 +1,6 @@
+model = {
+lods = {
+{"Solon_Turman.edm", 1000000.000000};
+};
+     collision_shell = "Solon_Turman_Collision.edm";
+}
