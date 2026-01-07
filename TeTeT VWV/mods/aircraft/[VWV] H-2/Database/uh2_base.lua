@@ -593,7 +593,7 @@ return {
     -- SENSORS & ARMAMENT
     ------------------------------------------------------------------------------------------------
     radar_can_see_ground = false,	-- Is AI radar able to see enemy surface entities (tanks, ships)?
-    RCS                 = 10,
+    RCS                 = 3.0,		-- [m^2] Based on a survey of official ED DCS model RCS values and interpolating for the UH-2A
     detection_range_max = 11,
     IR_emission_coeff   = 0.04,		-- Su-27 ~= 5000 Watts/steradian; UH-2A/B = ~200 W/sr
 	

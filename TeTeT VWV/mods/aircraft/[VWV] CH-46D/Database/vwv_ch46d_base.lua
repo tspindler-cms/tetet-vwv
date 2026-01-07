@@ -19,13 +19,13 @@
 		https://ntrs.nasa.gov/api/citations/19840024310/downloads/19840024310.pdf
 ]]
 
-local origin_shift_x	=	-0.4419
+local origin_shift_x	=	-0.4419		-- EDM model 3D origin shift
 
 return {
 	Name 				=   'vwv_ch46d',
 	DisplayName			= 	_('[VWV] CH-46D Sea Knight'),
 	DisplayNameShort	= 	_('CH-46D'),
-	date_of_introduction= 	1964.06,
+	date_of_introduction= 	1967.11,
 	Picture 			=  	current_mod_path .. '/Textures/sh_2c_f.png',	-- Mission editor loadout picture
 	Rate 				= 	40, -- RewardPoint in Multiplayer
 	Shape 				= 	"ch46d",	-- This points to /Shapes/ch46d.lods
@@ -521,11 +521,12 @@ return {
 												   dimensions (real world)
 	]]
 
-	-- MOI = {18000, 103000, 108000},	-- From NASA Technical Memorandum 84351 transformed to CH-46D's dimensions (real world) [kg*m^2]
+	-- MOI = {18000, 103000, 108000},		-- [kg*m^2] From NASA Technical Memorandum 84351 transformed to CH-46D's dimensions (real world)
 	
-	-- MOI = {24045, 144759, 156869},
+	-- MOI = {12850, 103000, 108000},		-- [kg*m^2]
 	
-	MOI = {34500, 198000, 192000},
+	MOI = {21000, 37000, 39000},		-- [kg*m^2] Empty CH-46D. "Empty" assumption seems to match CH-47F and Mi-24P.
+
 
 
 
@@ -767,6 +768,7 @@ return {
 	
 	-- Best/closest sound we will get given the tandem rotor design of each
     sound_name		= "Aircrafts/Engines/RotorCH47",
+	sounderName 	= "Aircraft/Planes/B-52H",
 
     stores_number	=	0,
     fire_rate		=	0,
@@ -856,8 +858,7 @@ return {
 	
 	cargo_max_weight 	 = 4536,  				-- CH-46D external cargo sling load: 4,536 kg / 10,000 lbs
 	cargo_radius_in_menu = 2000,				-- Presumably how far you have to be away from cargo to have it show up in the cargo UI
-	helicopter_hook_pos  = {-0.21-origin_shift_x, -0.406, 0},	-- Belly hook coordinates (sliding door and hook not modeled in 3D model)
-	-- helicopter_hook_pos = {3.340,1.375,1.625},	-- The hook on this helo's 3D model is here after argument 1003 = +1.000.
+	helicopter_hook_pos  = {0.085, -0.42, 0},	-- Belly hook coordinates (sliding door and hook not modeled in 3D model) - https://www.youtube.com/watch?v=9qndT3j6ttQ
 	h_max_gear_hook 	 = 3.3,					-- What is this parameter? Maybe how close the hook needs to be to "latch" onto cargo? 3.3
 
 	-- SIGNATURES
@@ -928,7 +929,8 @@ return {
 			ejection_added_speed	= {0.0, 0.0, -1.0},
             pilot_body_arg 			= 50,
             canopy_arg 				= 38,
-            role 					= "pilot"
+            role 					= "pilot",
+			pilot_name		   		= "AV8BNA_Pilot",
         }, -- end of [1]
         [2] =
         {
@@ -940,7 +942,8 @@ return {
 			ejection_added_speed	= {0.0, 0.0, -1.0},
             pilot_body_arg 			= 472,
             canopy_arg 				= 38,
-            role 					= "copilot"
+            role 					= "copilot",
+			pilot_name		   		= "AV8BNA_Pilot",
         }, -- end of [2]
 		[3] =
         {
@@ -951,7 +954,8 @@ return {
             pos 					= {3.93-origin_shift_x, 0.40, -1.09},
 			ejection_added_speed	= {0.0, 0.0, -1.0},
             canopy_arg 				= 38,
-            role 					= "flight_officer"
+            role 					= "flight_officer",
+			pilot_name		   		= "AV8BNA_Pilot",
         }, -- end of [3]
     },
 		
@@ -1409,15 +1413,13 @@ return {
 		FoldableWings = {
 			{Transition = {"Retract", "Extend"},
 				Sequence = {
-					{C = {{"Arg", 8, "to", 0.0, "in", 15.0}}}
+					{C = {{"Arg", 8, "to", 0.0, "in", 45.0}}}		-- Unfold the rotor blades (takes 45 seconds real-world)
 				}, Flags = {"Reversible"}},
 				
 			{Transition = {"Extend", "Retract"},
 				Sequence = {
-					{C = {
-						{"Arg", 8, "to", 1.0, "in", 15.0},
-						{"Arg", 40, "to", 0.0, "in", 15.0},
-					}},
+					{C = {{"Arg", 40, "to", 0.0, "in", 15.0}}},		-- Rotate rotor blades to prepare to fold properly
+					{C = {{"Arg", 8, "to", 1.0, "in", 45.0}}},		-- Fold the rotor blades (takes 45 seconds real-world)
 				}, Flags = {"Reversible", "StepsBackwards"}},
 		},
 		
@@ -1557,27 +1559,6 @@ return {
 				-- This lighting set should be on whenever it's dark outside and the helicopter isn't in combat.
 				typename = "Collection",
 				lights = { },
-			},
-			
-			[WOLALIGHT_PROJECTORS] = {
-				-- Handles spotlights
-				typename = "Collection",
-                lights = {
-					{	-- searchlight (part of 3D model); since this is the first table, the corresponding
-						-- mechanimations are: SearchLight0Elevation and SearchLight0Panning
-						
-						-- Spotlight logic for the CH-46D handled by mechanimations.HeadLights
-						{	typename = "Spot",
-							connector = "ch46_light_search_axis",
-							proto = lamp_prototypes.LFS_P_27_450,
-							movable = true,
-							color = {1, 0.945, 0.8784},
-							angle = math.rad(13.0),
-							emitter_angle_z = math.rad(15.0),
-							range = 1800,
-						},
-					},
-				},
 			},
 			
             [WOLALIGHT_LANDING_LIGHTS] = {
@@ -1854,6 +1835,42 @@ return {
                     },
                 },
             },
+			
+			[WOLALIGHT_PROJECTORS] = {
+				-- Handles spotlights
+				typename = "Collection",
+                lights = {
+					{	-- searchlight (part of 3D model); since this is the first table, the corresponding
+						-- mechanimations are: SearchLight0Elevation and SearchLight0Panning
+						
+						-- Spotlight logic for the CH-46D handled by mechanimations.HeadLights
+						{	typename = "Spot",
+							connector = "ch46_light_search_axis",
+							proto = lamp_prototypes.LFS_P_27_450,
+							movable = true,
+							color = {1, 0.945, 0.8784},
+							angle = math.rad(13.0),
+							emitter_angle_z = math.rad(15.0),
+							range = 1800,
+						},
+					},
+				},
+			},
+			
+			[WOLALIGHT_AUX_LIGHTS] = {
+				typename = "Collection",
+                lights = {
+					{	-- Cargo "hell hole" sling load illuminaton floodlight
+						{	typename = "Spot",
+							position = { 0.70, -0.42, 0 },
+							proto = lamp_prototypes.FR_100,
+							direction = {azimuth = math.rad(0), elevation = math.rad(90)},
+							angle = math.rad(50.0),
+							range = 50,
+						},
+					},
+				},
+			},
 			
 			[WOLALIGHT_FORMATION_LIGHTS] = {
 				-- Slime lights, etc. used around airfields (ground and air), but especially around other aircraft (e.g., aerial refuelers).

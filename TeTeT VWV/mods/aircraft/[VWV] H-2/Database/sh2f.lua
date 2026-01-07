@@ -162,7 +162,7 @@ sh2f.MOI = {5400, 29500, 3600}	-- [kg*m^2] Increased inertia due to LAMPS gear/r
 ------------------------------------------------------------------------------------------------
 -- SENSORS & ARMAMENT
 ------------------------------------------------------------------------------------------------
-sh2f.RCS                = 15 	-- Higher RCS due to complex shape/stores
+sh2f.RCS                = 4.5 	-- [m^2] Based on a survey of official ED DCS model RCS values and interpolating for the SH-2F
 sh2f.radar_can_see_ground = true	-- Is AI radar able to see enemy surface entities (tanks, ships)?
 sh2f.detection_range_max = 60   -- LN-66 Range (approx 30-40nm effective)
 sh2f.IR_emission_coeff  = 0.06 	-- Two engines = more IR signature; Su-27 ~= 5000 Watts/steradian; SH-2F = ~300 W/sr

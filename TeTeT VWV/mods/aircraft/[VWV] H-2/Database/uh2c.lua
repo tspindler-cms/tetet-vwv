@@ -103,7 +103,7 @@ uh2c.SFM_Data.engine.table_data = {
 uh2c.rotor_height 	= 1.0804	-- [m] Front hub height in the 3D model itself, in its geographic coordinate frame (not from the ground!)
 uh2c.MOI = {5200, 27000, 33500}	-- [kg*m^2] Increased inertia due to higher mass [Roll, Yaw, Pitch]
 
-uh2c.RCS                = 12 	-- Slightly larger RCS due to more complex geometry
+uh2c.RCS                = 3.5 	-- [m^2] Based on a survey of official ED DCS model RCS values and interpolating for the UH-2C
 uh2c.IR_emission_coeff  = 0.08 	-- Two engines = more IR signature; Su-27 ~= 5000 Watts/steradian; UH-2C = ~400 W/sr
 
 
