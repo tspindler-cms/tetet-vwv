@@ -4,6 +4,9 @@
     - Fix spot light after changing origin
   H-2
     - Fix RCS values by HawaiianRyan
+  O-1
+    - Adjust model and config
+        Note that CAS is no longer working
   USS Card
     - Initial Release by James
 2026-01-05

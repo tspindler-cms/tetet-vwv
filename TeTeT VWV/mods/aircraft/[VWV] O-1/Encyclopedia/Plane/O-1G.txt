@@ -1,0 +1,28 @@
+O-1G
+
+o1_birddog
+
+Name: O-1G Bird Dog
+Type: Observation / Forward Air Control (FAC)
+Crew: 2 (Pilot, Observer) [Tandem]
+Length: 25' 9" (7.85 m)
+Wing span: 36' 0" (10.97 m)
+Height: 7' 3.5" (2.22 m)
+Wing area: 174 ft² (16.16 m²)
+Max Mach at S/L: 0.15 (100 kts / 115 mph)
+Max Mach at altitude: 0.20 (Structural Limit / VNE​: 131 kts / 151 mph)
+Weight empty: 1,614 lb (732 kg)
+Max takeoff weight: 2,400 lb (1,089 kg) [Overload FAC Configuration]
+Max landing weight: 2,400 lb (1,089 kg)
+Normal G: +3.8 / -1.5 g
+G limit: +4.4 g [Utility Category]
+Max range: 460 nmi (853 km) [Standard Internal Fuel]
+Internal Fuel: 250 lb (115 kg) [41 US Gal usable]
+Service ceiling: 18,500' (5,640 m)
+Thrust Rating (ISA sea level): 1 x 213 hp (159 kW) [Continental O-470-11 Flat-Six Piston]
+
+Armament:
+- 4 x Underwing hardpoints for Light Ordinance (White Phosphorus Rockets, Target Marker Flares, Smoke)
+- Crew Personal Weapons (M16 rifles, smoke grenades, or pintle-mounted M60 machine gun in rear)
+
+The Cessna O-1 Bird Dog (originally designated L-19) was the backbone of US Forward Air Control (FAC) operations during the early years of the Vietnam War. Derived from the civilian Cessna 170, the Bird Dog was modified with a cut-down rear fuselage and "Omni-View" canopy to provide exceptional visibility for artillery spotting and target marking. Renowned for its ruggedness and Short Take-Off and Landing (STOL) capabilities, the O-1 could operate from rough, improvised jungle strips. Its pilots, often flying "low and slow" to draw enemy fire, would mark targets with White Phosphorus (Willie Pete) rockets to direct airstrikes from heavier fighter-bombers.

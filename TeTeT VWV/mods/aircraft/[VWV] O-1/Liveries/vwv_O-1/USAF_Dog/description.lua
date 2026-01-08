@@ -7,3 +7,4 @@ name = "USAF Dog"
 countries = {
 	"USA"
 }
+order = 20

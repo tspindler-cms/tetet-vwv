@@ -4,3 +4,4 @@ livery = {
 	{"O1_SKINMESH", ROUGHNESS_METALLIC, "O1_MARINES_RoughMet", false};
 }
 name = "RNoAF"
+order = 100
