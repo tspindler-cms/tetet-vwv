@@ -1,0 +1,9 @@
+model = {
+	lods = {		
+		{"card_dcs.edm", 2000.00}; 
+		{"card_5km_dcs.edm", 5000.00};
+		{"card_10km_dcs.edm", 10000.00};
+		{"card_15km_dcs.edm", 15000.00}; 
+	};
+	collision_shell = "card_coll_dcs.edm";
+}
