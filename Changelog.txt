@@ -1,3 +1,6 @@
+2026-01-10
+  MiG-17
+    - Config: Fix missing comma
 2026-01-08
   CH-46D
     - Cleaned up config, new insight on centering by HawaiianRyan

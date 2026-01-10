@@ -561,7 +561,7 @@ local vwv_mig17f = {
 			ejection_seat_name	= 9,
 			drop_canopy_name	= 41,
 			pos					= {2.27, -0.253, 0},
-			drop_parachute_name	= "pilot_mig15_parachute"
+			drop_parachute_name	= "pilot_mig15_parachute",
 			g_suit 			    = 0.8,		--  G suit effectiveness: 0.0 to 1.0 (1.0 = modern g-suits)
 		}
 	}, 
