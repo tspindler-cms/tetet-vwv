@@ -1,4 +1,6 @@
 2026-01-10
+  CH-46D
+    - Fix ramp connectors
   MiG-17
     - Config: Fix missing comma
   Ships
