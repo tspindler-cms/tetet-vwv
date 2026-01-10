@@ -123,7 +123,7 @@ GT_t.LN_t.ship_mk12_127mm_AIR.PL = {};
 GT_t.LN_t.ship_mk12_127mm_AIR.PL[1] = {
 	shell_name = {"vwv_maddox_t_mk12_127mm_AIR"},
 	automaticLoader = false,
-	shot_delay = 5,
+	shot_delay = 3.5,
 	ammo_capacity = 352,
 };
 
@@ -132,7 +132,7 @@ GT_t.LN_t.ship_mk12_127mm.type = 6
 GT_t.LN_t.ship_mk12_127mm.distanceMin = 20
 GT_t.LN_t.ship_mk12_127mm.distanceMax = 16642
 GT_t.LN_t.ship_mk12_127mm.max_trg_alt = 5410
-GT_t.LN_t.ship_mk12_127mm.reactionTime = 12
+GT_t.LN_t.ship_mk12_127mm.reactionTime = 4
 GT_t.LN_t.ship_mk12_127mm.sensor = {}
 set_recursive_metatable(GT_t.LN_t.ship_mk12_127mm.sensor, GT_t.WSN_t[10])
 GT_t.LN_t.ship_mk12_127mm.PL = {}
@@ -187,7 +187,7 @@ GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.type = 3;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.distanceMin = 20;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.distanceMax = 4341;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.max_trg_alt = 3083;
-GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.reactionTime = 6;
+GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.reactionTime = 2;
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.sensor = {};
 set_recursive_metatable(GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.sensor, GT_t.WSN_t[20]);
 GT_t.LN_t.ship_maddox_t_oerlikon_20mm_AIR.reload_time = 20;

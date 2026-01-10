@@ -132,7 +132,7 @@ GT_t.LN_t.ship_mk42_127mm.type = 6
 GT_t.LN_t.ship_mk42_127mm.distanceMin = 20
 GT_t.LN_t.ship_mk42_127mm.distanceMax = 23691
 GT_t.LN_t.ship_mk42_127mm.max_trg_alt = 8534
-GT_t.LN_t.ship_mk42_127mm.reactionTime = 12
+GT_t.LN_t.ship_mk42_127mm.reactionTime = 4
 GT_t.LN_t.ship_mk42_127mm.sensor = {}
 set_recursive_metatable(GT_t.LN_t.ship_mk42_127mm.sensor, GT_t.WSN_t[10])
 GT_t.LN_t.ship_mk42_127mm.PL = {}
@@ -216,7 +216,7 @@ GT.WS[ws].omegaZ = math.rad(8);
 GT.WS[ws].reference_angle_Y = math.rad(180);
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].LN[1].depends_on_unit = Gray_TRACKERS
-GT.WS[ws].LN[1].launch_delay = 12;
+GT.WS[ws].LN[1].launch_delay = 6;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 8;
 GT.WS[ws].LN[1].show_external_missile = true 
 GT.WS[ws].LN[1].max_number_of_missiles_channels = 8;
