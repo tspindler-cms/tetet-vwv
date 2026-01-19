@@ -1,3 +1,7 @@
+2026-01-19
+  USS New Jersey
+    - New livery by Woogey
+    - Improve config and model by James
 2026-01-16
   Knox class Destroyer Escorts
     - Fix rudder position
