@@ -466,128 +466,64 @@ return {
 	blade_area 		= 3.76,  	-- [m^2]	https://vertipedia.vtol.org/aircraft/getAircraft/aircraftID/726
 	
 	--[[
-		I think the next two parameters are related to the mechanical stops (limits)
-		for the rotor blade Lead-Lag (hunting) motion.
+		These values relate to simplified modeling of landing gear/skid compression for helicopters.
 		
-		This conclusion is based on data extracted from other DCS helicopters and
-		looking at real-world parameters which might match the given data:
+		It's likely a Russian mistransliteration of "Shtok" meaning "Stroke" in English.
 		
-			Ka-50 lead_stock_main = 0.295,
-			Ka-50 lead_stock_support = 0.21,
+		Here is my best explanation of what lead_stock_main and lead_stock_support define,
+		how the sign (+/-) changes the physics model, and how to calibrate the magnitude of each.
+		
+		1. The Sign (+/-) Determines the Gear Type
 
-			Mi-24P lead_stock_main = 0.438,
-			Mi-24P lead_stock_support = 0.356
+			DCS uses the sign of this variable as a boolean switch to select which physics model
+			to apply to the contact point.
 
-			CH-47F lead_stock_main = 0.265,
-			CH-47F lead_stock_support = 0.265
+			Positive (+) Value = Wheeled Gear (Oleo Strut)
+
+				Physics: 	Enables wheel rotation logic, braking friction, and a non-linear
+							suspension curve (simulating gas/oil compression in a strut).
+
+				Behavior: 	The suspension will "squat" and dampen oscillations.
+
+				Example: 	CH-47F (0.265), Mi-24P (0.438).
+
+			Negative (-) Value = Skid Gear (Tubular/Elastic)
+
+				Physics: 	Disables wheel rotation. Applies "scraping" friction immediately.
+							Uses a linear spring model (simulating the bending/flex of a metal
+							tube) rather than a gas strut.
+
+				Behavior: 	The gear is stiffer and allows the helicopter to slide rather than
+							roll.
+
+				Example: SA342 (-0.1), OH-58D (-0.05).
+				
+		2. The Magnitude Determines "Stroke Length"
+
+			The absolute value (e.g., 0.265 or 0.05) defines the Maximum Suspension Travel
+			(in meters) before the gear hits the hard mechanical stop.
 			
-			UH-60A lead_stock_main = 0.117
-			UH-60A lead_stock_support = 0.138 
-		
-		
-		The Physical Meaning
+			For Positive Values (Wheels):
 
-			lead_stock_main: This is likely the Lag Limit (the rearward stop).
+			This is the Oleo Strut Stroke. It is the distance the shiny metal piston can
+			slide into the cylinder.
 
-		In powered flight, drag forces cause the rotor blades to "lag" behind the hub's
-		rotation. This value defines the maximum angle (in radians) the blade can swing
-		backward before hitting the mechanical stop or fully compressing the damper.
+				CH-47F: 0.265 (approx. 10.4 inches).
 
-			lead_stock_support: This is likely the Lead Limit (the forward stop).
+				Mi-24P: 0.438 (approx. 17.2 inches).
 
-		This defines how far forward the blade can swing (e.g., during autorotation or
-		rapid deceleration) before hitting the forward stop.
+			For Negative Values (Skids):
 
-		In the DCS code structure, "stock" is often a transliteration of the Russian
-		term "Shtok" (Шток), which refers to the piston rod of a hydraulic damper.
-		Therefore, these parameters define the maximum travel (stroke) of the lead-lag
-		damper, expressed as the equivalent angular limit (in radians) of the blade.
-		
-		
-		Data Analysis and Findings
-		
-		Helicopter	Parameter		(Rad) 	(Deg)	Real-World Context
-		Mi-24P		Main (Lag)		0.438	25.1°	Massive articulated rotor allows
-													huge lag to absorb drag from heavy
-													blades.
-					Support (Lead)	0.356	20.4°	Large forward swing allowance for
-													high-speed maneuvering.
-					
-		Mi-8MT		Main (Lag)		0.360	20.6°	Similar to Mi-24 but slightly older
-													hub design; limits are tighter.
-					Support (Lead)	0.176	10.1°	Much more restrictive forward swing
-													limit than the Mi-24.
-					
-		Ka-50		Main (Lag)		0.295	16.9°	Coaxial rotors must restrict movement
-													to prevent blades from hitting each other.
-					Support (Lead)	0.210	12.0°
-					
-		CH-47F		Both			0.265	15.2°	Symmetrical limits. The tandem rotors are
-													identical and counter-rotating.
-		
-		UH-60A		Main (Lag)		0.117	6.7°	Key difference: The UH-60 uses an
-													elastomeric rotor head. It doesn't have
-													loose mechanical hinges like the Mi-24;
-													it twists against a rubber bearing.
-													6.7° is a very realistic, tight limit
-													for an elastomeric bearing.
-					Support (Lead)	0.138	7.9°	Slightly more allowance for lead
-													(possibly to account for autorotation
-													dynamics).
-		
-		
-		
-		* Quick aside - Some helicopters have negative values:
-			
-			UH-1H lead_stock_main = -0.1,
-			UH-1H lead_stock_support = -0.1,
-			
-			SA342 lead_stock_main = -0.1,
-			SA342 lead_stock_support = -0.1,
+			This is the Max Elastic Deflection. It is how much the metal cross-tubes can bend
+			before the fuselage hits the ground or the skid hits a hard limit.
 
-			OH-58D lead_stock_main = -0.05,
-			OH-58D lead_stock_support = -0.05,
-			
-		It's likely that negative values tell the DCS engine that these are blades rigidly
-		attached to the rotor hub and do not have lead-lag articulation.
-		
-		Summary of the negative value case:
-		
-		If you see a positive number: The helicopter has a physical hinge, and the number
-		is the angle (in radians) where the blade hits the metal stop.
+				OH-58D: -0.05 (The skid can flex 5 cm / 2 inches).
 
-		If you see a negative number: The helicopter relies on structural flexing
-		(bending the rotor yoke) OR the flight model is "Custom" and has disabled the
-		default hinge physics.
+				SA342: -0.1 (The skid can flex 10 cm / 4 inches).
 		
-		
-		
-		Specific numerical lead and lag limits (in degrees) for the Kaman
-		UH-2A main rotor are not publicly documented in open-source technical
-		data or declassified flight manuals.
-
-		However, based on the UH-2A's fully articulated rotor system
-		(specifically the "101 Rotor" system used on the H-2 series) and
-		comparable naval helicopters of the era, the following engineering
-		context is relevant for simulation parameters:
-
-		Rotor Hub Type: Fully articulated with hydraulic lead-lag dampers.
-
-		Typical Articulated Limits: For 4-bladed articulated rotors of this size
-		(e.g., H-3 Sea King, H-34), lead/lag motion is typically constrained to
-		±15° to ±20° from the radial position during startup/shutdown (static stops)
-		and operates within a narrower dynamic range (approx. ±5° to ±10°) during
-		flight, damped by the hydraulic system.
-
-		Coupling: Unlike standard swashplate helicopters, the Seasprite's unique
-		servo-flap control system introduces significant mechanical coupling.
-		Research on the SH-2 rotor indicates the presence of a "Lag-to-Servo-Flap"
-		feedback coefficient, meaning blade lag motion mechanically inputs a pitch
-		change to the servo flap to dampen oscillations (similar to Delta-3 coupling
-		but applied to the flap).
 	]]
-	lead_stock_main 	= math.rad(10),	-- See discussion above [radians]
-	lead_stock_support 	= math.rad(10),	-- See discussion above [radians]  
+	lead_stock_main		= 0.28,		-- [m] Main gear oleo strut travel with WoW
+	lead_stock_support	= 0.15,		-- [m] Support (i.e., tail) gear oleo strut travel with WoW
     
 	------------------------------------------------------------------------------------------------
     -- SENSORS & ARMAMENT
