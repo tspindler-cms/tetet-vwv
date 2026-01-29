@@ -55,7 +55,6 @@ sh2f.range           = 670		-- Operational Radius decreased vs UH-2A ferry range
 
 sh2f.Vy_max          = 12.4		-- Max climb speed: ~2,440 ft/min
 
-
 ------------------------------------------------------------------------------------------------
 -- AERODYNAMICS & DRAG
 ------------------------------------------------------------------------------------------------
@@ -129,30 +128,6 @@ sh2f.engine_data.SFC_k	= {0.0, -1.150e-005, 0.3900} -- Slightly higher SFC for o
 
 sh2f.SFM_Data.engine.name 	= "T58-GE-8F"
 
---[[ Not needed?
-sh2f.SFM_Data.engine.hMaxEng = 5.5		-- Increased safe altitude for twin engine ops [km]
-
-sh2f.SFM_Data.engine.cemax   = 0.110 	-- Takeoff flow [kg/s] (Per engine logic handled by SFM usually, but tuning here for twin)
-sh2f.SFM_Data.engine.cefor   = 0.110
-
-
---   Updated for Twin Engine thrust profile (~2500shp combined / ~20,000+ lbs lift)
-sh2f.SFM_Data.engine.table_data = {
---   M    Thrust (Newtons) 
---   MTOW SH-2F: ~5,800 kg (~57,000 N).
---   Static Thrust (2 engines) ~1.3x MTOW = ~74,000 N
-	{0.0,   74000.0},  
-	{0.05,  71000.0},  
-	{0.1,   63000.0},  
-	{0.15,  51000.0},  
-	{0.2,   32000.0},  
-	{0.25,  24000.0},  
-	{0.3,   14000.0},  
-	{0.4,    5000.0},  
-	{0.5,    2000.0},  
-	{1.0,       0.0},
-}
-]]
 ------------------------------------------------------------------------------------------------
 -- ROTOR & PHYSICS
 ------------------------------------------------------------------------------------------------
