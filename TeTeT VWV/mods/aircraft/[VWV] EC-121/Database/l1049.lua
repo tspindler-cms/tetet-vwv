@@ -78,7 +78,7 @@ return
 	Ny_max_e					= 3.0,				-- [G] Emergency G limit
 	AOA_take_off				= math.rad(8.5),	-- [rad] Takeoff AoA
 	center_of_mass 			= {2.0, -0.25, 0.0},	-- [m] Center of mass coordinates (standard PAX load)
-	moment_of_inertia	= {2.4e6, 6.8e6, 4.6e6},	-- [kg*m^2] {Roll, Yaw, Pitch}
+	moment_of_inertia	= {2.15e6, 3.95e6, 3.42e6, -55e3},	-- [kg*m^2] {Roll, Yaw, Pitch, POI}
 
 	-- DIMENSIONS
 	wing_area					= 153.7,			-- [m^2] Wing area: 1,654 sq ft

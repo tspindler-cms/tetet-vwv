@@ -84,7 +84,7 @@ return
 	Ny_max_e				= 3.0,								-- [G] Emergency G limit - Structural Yield Point (Bend/Break territory)
 	AOA_take_off			= math.rad(8.5),					-- [rad] Takeoff rotation angle
 	center_of_mass 			= {2.0, -0.65, 0.0},				-- [m] Center of mass coordinates
-	moment_of_inertia	= {2.65e6, 7.2e6, 5.1e6},				-- [kg*m^2] {Roll, Yaw, Pitch}
+	moment_of_inertia	= {2.65e6, 4.68e6, 4.05e6, -35e3},		-- [kg*m^2] {Roll, Yaw, Pitch, POI}
 
 	-- DIMENSIONS
 	wing_area				= 153.7,							-- [m^2] Wing area: 1,654 sq ft
