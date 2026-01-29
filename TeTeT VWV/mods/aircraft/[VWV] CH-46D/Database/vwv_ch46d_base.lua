@@ -20,6 +20,14 @@
 ]]
 
 -- local origin_shift_x 		= -0.4419						-- EDM model 3D origin shift
+local _ForeRotorPos	= { 5.5208, 3.0342, 0.0 }			-- [m] Main rotor hub position (3D model center of hub)
+local _AftRotorPos	= { -4.7625, 4.438, 0.0 }			-- [m] Tail rotor hub position (3D model center of hub)
+local _CG 			= { 0.0, 0.0, 0.0 }					-- [m] CG w.r.t. EDM 3D mesh origin in TsAGI coordinate order
+local _MOI			= { 24500, 185000, 172000, -2500 } 	-- [kg*m^2] {Roll, Yaw, Pitch, POI}
+-- _MOI 	= {18000, 103000, 108000},		-- [kg*m^2] From NASA Technical Memorandum 84351 transformed to CH-46D's dimensions (real world)
+-- _MOI 	= {12850, 103000, 108000},		-- [kg*m^2]
+
+-- _MOI	= {21000, 37000, 39000},			-- [kg*m^2] {Rl,Yw,Ptch} Empty CH-46D. "Empty" assumption seems to match CH-47F and Mi-24P.
 
 return {
 
@@ -101,30 +109,30 @@ return {
 	------------------------------------------------------------------------------------------------
 	-- 3. DIMENSIONS & GEOMETRY
 	------------------------------------------------------------------------------------------------
-	length					= 13.92,						-- [m] Fuselage length
-	height					= 5.08,							-- [m] Height
-	bigParkingRamp			= false,						-- [bool] Does this need an oversized parking spot?
+	length					= 13.92,		-- [m] Fuselage length
+	height					= 5.08,			-- [m] Height
+	bigParkingRamp			= false,		-- [bool] Does this need an oversized parking spot?
 	
-	rotor_height			= 3.0342,						-- [m] Front hub height in the 3D model itself, the y-component of {x,y,z} (not from the ground!).
-															-- 		It's actually the y-component from the CG to determine pendulum effect and dynamic MOI.
-	rotor_pos				= { 5.5208, 3.0342, 0.0},		-- [m] {x,y,z} Forward rotor position (3D model center of hub)
-	tail_pos				= {-4.7625, 4.438,  0.0},		-- [m] {x,y,z} Aft rotor position (3D model center of hub)
+	rotor_height		= _ForeRotorPos[2],	-- [m] Front hub height in the 3D model itself, the y-component of {x,y,z} (not from the ground!).
+											-- 		It's actually the y-component from the CG to determine pendulum effect and dynamic MOI.
+	rotor_pos			= _ForeRotorPos,	-- [m] {x,y,z} Forward rotor position (3D model center of hub)
+	tail_pos			= _AftRotorPos,		-- [m] {x,y,z} Aft rotor position (3D model center of hub)
 	
-	rotor_diameter			= 15.24,						-- [m] Main rotor diameter
-	blades_number			= 6,							-- [#] 3 blades per rotor (6 total)
-	blade_chord				= 0.387,						-- [m] CH-46D chord length: 38.7 cm = 0.387 meters
-	blade_area				= 2.95,							-- [m^2] The area of each blade (blade chord * blade radius = 0.387m * 7.62m)
+	rotor_diameter			= 15.24,		-- [m] Main rotor diameter
+	blades_number			= 6,			-- [#] 3 blades per rotor (6 total)
+	blade_chord				= 0.387,		-- [m] CH-46D chord length: 38.7 cm = 0.387 meters
+	blade_area				= 2.95,			-- [m^2] The area of each blade (blade chord * blade radius = 0.387m * 7.62m)
 
 
 	------------------------------------------------------------------------------------------------
 	-- 4. WEIGHTS & FUEL
 	------------------------------------------------------------------------------------------------
-	M_empty					= 5827,							-- [kg] A empty mass of CH-46D is	~12,846 lbs = ~5,827 kg
-	M_nominal				= 9435,							-- [kg] Normal mission:				 20,800 lbs = ~9,435 kg
-	M_max					= 11022,						-- [kg] Max gross weight:			 24,300 lbs = ~11,022 kg
-															-- Note: This is the absolute structural limit for takeoff, typically used for
-															-- emergency war situations or heavy-lift missions. Operations above 9,435 kg often
-															-- require "running takeoffs" rather than vertical ascents.
+	M_empty					= 5827,			-- [kg] A empty mass of CH-46D is	~12,846 lbs = ~5,827 kg
+	M_nominal				= 9435,			-- [kg] Normal mission:				 20,800 lbs = ~9,435 kg
+	M_max					= 11022,		-- [kg] Max gross weight:			 24,300 lbs = ~11,022 kg
+											-- Note: This is the absolute structural limit for takeoff, typically used for
+											-- emergency war situations or heavy-lift missions. Operations above 9,435 kg often
+											-- require "running takeoffs" rather than vertical ascents.
 
 	--[[
 		Standard internal fuel (stub wings/sponsons) is approximately
@@ -135,15 +143,15 @@ return {
 		
 		Endurance: ~2.0 Hours (plus 20 min reserve)
 	]]
-	M_fuel_max				= 1080,							-- [kg] Internal fuel tanks only (see above)
-	defFuelRatio			= 0.8,							-- [proportion] Default fuel loading (full = 1.0)
+	M_fuel_max				= 1080,			-- [kg] Internal fuel tanks only (see above)
+	defFuelRatio			= 0.8,			-- [proportion] Default fuel loading (full = 1.0)
 
 
 	------------------------------------------------------------------------------------------------
 	-- 5. ROTOR SYSTEM PERFORMANCE
 	------------------------------------------------------------------------------------------------
-	rotor_RPM				=  264,							-- [rpm] Main rotor RPM (synchronized tandem rotors)
-	tail_rotor_RPM			= -264,							-- [rpm] Aft rotor RPM (same RPM as front; (-) for CCW, (+) for CW looking from above)
+	rotor_RPM				=  264,			-- [rpm] Main rotor RPM (synchronized tandem rotors)
+	tail_rotor_RPM			= -264,			-- [rpm] Aft rotor RPM (same RPM as front; (-) for CCW, (+) for CW looking from above)
 	
 	--[[
 		The CH-46D is equipped with two identical tandem rotors, each with three blades.
@@ -158,7 +166,7 @@ return {
 		
 		https://www.ijresm.com/Vol.2_2019/Vol2_Iss3_March19/IJRESM_V2_I3_223.pdf
 	]]
-	rotor_MOI				= 4442,							-- [kg*m^2] TOTAL rotor moment of inertia (includes hub)
+	rotor_MOI				= 4442,			-- [kg*m^2] TOTAL rotor moment of inertia (includes hub)
 
 	--[[
 		For the Boeing Vertol CH-46D Sea Knight, the tandem rotor efficiency factor -- typically
@@ -190,167 +198,8 @@ return {
 		as the rear rotor moves out of the forward rotor's wake, and the "tandem" configuration
 		becomes aerodynamically advantageous due to the lack of a power-consuming tail rotor.
 	]]
-	thrust_correction		= 0.85,							-- [proportion] Tandem rotor efficiency factor (see discussion above)
-	scheme					= 2,							-- [enum] Tandem rotor scheme enumeration
-
-	--[[
-		I think the next two parameters are related to the mechanical stops (limits)
-		for the rotor blade Lead-Lag (hunting) motion.
-		
-		This conclusion is based on data extracted from other DCS helicopters and
-		looking at real-world parameters which might match the given data:
-		
-			Ka-50 lead_stock_main = 0.295,
-			Ka-50 lead_stock_support = 0.21,
-
-			Mi-24P lead_stock_main = 0.438,
-			Mi-24P lead_stock_support = 0.356
-
-			CH-47F lead_stock_main = 0.265,
-			CH-47F lead_stock_support = 0.265
-			
-			UH-60A lead_stock_main = 0.117
-			UH-60A lead_stock_support = 0.138 
-		
-		
-		The Physical Meaning
-
-			lead_stock_main: This is likely the Lag Limit (the rearward stop).
-
-		In powered flight, drag forces cause the rotor blades to "lag" behind the hub's
-		rotation. This value defines the maximum angle (in radians) the blade can swing
-		backward before hitting the mechanical stop or fully compressing the damper.
-
-			lead_stock_support: This is likely the Lead Limit (the forward stop).
-
-		This defines how far forward the blade can swing (e.g., during autorotation or
-		rapid deceleration) before hitting the forward stop.
-
-		In the DCS code structure, "stock" is often a transliteration of the Russian
-		term "Shtok" (Шток), which refers to the piston rod of a hydraulic damper.
-		Therefore, these parameters define the maximum travel (stroke) of the lead-lag
-		damper, expressed as the equivalent angular limit (in radians) of the blade.
-		
-		
-		Data Analysis and Findings
-		
-		Helicopter	Parameter		(Rad) 	(Deg)	Real-World Context
-		Mi-24P		Main (Lag)		0.438	25.1°	Massive articulated rotor allows
-													huge lag to absorb drag from heavy
-													blades.
-					Support (Lead)	0.356	20.4°	Large forward swing allowance for
-													high-speed maneuvering.
-					
-		Mi-8MT		Main (Lag)		0.360	20.6°	Similar to Mi-24 but slightly older
-													hub design; limits are tighter.
-					Support (Lead)	0.176	10.1°	Much more restrictive forward swing
-													limit than the Mi-24.
-					
-		Ka-50		Main (Lag)		0.295	16.9°	Coaxial rotors must restrict movement
-													to prevent blades from hitting each other.
-					Support (Lead)	0.210	12.0°
-					
-		CH-47F		Both			0.265	15.2°	Symmetrical limits. The tandem rotors are
-													identical and counter-rotating.
-		
-		UH-60A		Main (Lag)		0.117	6.7°	Key difference: The UH-60 uses an
-													elastomeric rotor head. It doesn't have
-													loose mechanical hinges like the Mi-24;
-													it twists against a rubber bearing.
-													6.7° is a very realistic, tight limit
-													for an elastomeric bearing.
-					Support (Lead)	0.138	7.9°	Slightly more allowance for lead
-													(possibly to account for autorotation
-													dynamics).
-		
-		
-		
-		* Quick aside - Some helicopters have negative values:
-			
-			UH-1H lead_stock_main = -0.1,
-			UH-1H lead_stock_support = -0.1,
-			
-			SA342 lead_stock_main = -0.1,
-			SA342 lead_stock_support = -0.1,
-
-			OH-58D lead_stock_main = -0.05,
-			OH-58D lead_stock_support = -0.05,
-			
-		It's likely that negative values tell the DCS engine that these are blades rigidly
-		attached to the rotor hub and do not have lead-lag articulation.
-		
-		Summary of the negative value case:
-		
-		If you see a positive number: The helicopter has a physical hinge, and the number
-		is the angle (in radians) where the blade hits the metal stop.
-
-		If you see a negative number: The helicopter relies on structural flexing
-		(bending the rotor yoke) OR the flight model is "Custom" and has disabled the
-		default hinge physics.
-		
-		
-		Back to our CH-46D...
-		
-		We will choose:
-		
-				lead_stock_main: 	0.265 (approx. 15.2°)
-
-				lead_stock_support:	0.265 (approx. 15.2°)
-				
-		
-		The Rationale
-		
-		
-		1. Design Lineage (The "Little Brother" Rule)
-		
-		The CH-46 Sea Knight is the direct predecessor to the CH-47 Chinook. Both
-		were designed by Vertol (later Boeing Vertol) using the exact same rotor
-		hub philosophy:
-
-		Tandem Configuration: 	Two identical, counter-rotating rotors.
-
-		Fully Articulated Hubs:	3 blades per hub, with vertical flapping hinges
-								and vertical lead-lag (drag) hinges.
-
-		Hydraulic Dampers: 		Both use linear hydraulic dampers to manage the
-								lead-lag hunting.
-
-		Because the hub geometry is geometrically scaled, the angular limits
-		(the maximum range the blade can swing before hitting a stop) are likely
-		identical or nearly identical to the CH-47.
-		
-		
-		2. Why Symmetrical Values?
-		
-		Just like the CH-47, the CH-46 uses two identical rotor heads.
-
-		If lead_stock_main and lead_stock_support were different (asymmetric),
-		it would imply the rotor is optimized for air flow coming from only one
-		direction (like a standard helicopter).
-
-		Tandem rotors must operate efficiently with the rear rotor flying in
-		the wake of the front rotor, and the transmission synchronizes them.
-		Symmetrical stops (+/-15.2°) are standard for this configuration to
-		prevent the blades from swinging out of sync and colliding (intermeshing).
-		
-		
-		3. Why not "Negative" or "Low"?
-
-		Not Negative: The CH-46 has real physical hinges (unlike the UH-1H).
-
-		Not Low (<0.15): The CH-46 uses metal hinges and oil-filled dampers,
-		not the stiff elastomeric (rubber) bearings found on the UH-60 Black Hawk.
-		It needs the loose "swing" (15°+) to smooth out the vibrations of the
-		tandem system.
-		
-		The Rationale for Lead-Lag limits:
-		1. Design Lineage: CH-46 and CH-47 use identical rotor hub philosophy.
-		2. Symmetrical Values: Tandem rotors are identical and counter-rotating.
-		3. Not Negative/Low: The CH-46 uses metal hinges and oil-filled dampers, not stiff elastomeric bearings.
-		We choose 15.2 degrees (0.265 rad).
-	]]
-	lead_stock_main			= math.rad(15.2),				-- [rad] See discussion above
-	lead_stock_support		= math.rad(15.2),				-- [rad] See discussion above
+	thrust_correction		= 0.85,			-- [proportion] Tandem rotor efficiency factor (see discussion above)
+	scheme					= 2,			-- [enum] Tandem rotor scheme enumeration
 	
 	-- Add misc. mission editor aircraft configuration options
 	AddPropAircraft = {{					-- This adds a checkbox in the mission editor to fold blades
@@ -432,8 +281,8 @@ return {
 	-- 6. POWERPLANT
 	------------------------------------------------------------------------------------------------
 	-- ENGINES (Two General Electric T58-GE-10 turboshafts)
-	engines_count			= 2,							-- [#] How many engines are modeled by this lua (independent of the 3D model)
-	has_afteburner			= false,						-- [bool] CH-46D does not have afterburner -- sorry Airwolf fans.
+	engines_count			= 2,			-- [#] How many engines are modeled by this lua (independent of the 3D model)
+	has_afteburner			= false,		-- [bool] CH-46D does not have afterburner -- sorry Airwolf fans.
 	
 	engine_data = {
 	--[[
@@ -444,90 +293,477 @@ return {
 		
 		These parameters are meant to be PER ENGINE. If you have x engines, DCS will multiply each value by x for you.
 		
+		The CH-46D combining transmission is rated for a maximum continuous input of approximately 2,800 SHP (2,088 kW).
 		
-			The CH-46D combining transmission is rated for a maximum continuous input of approximately 2,800 SHP (2,088 kW).
-			
-			Because the two T58-GE-10 engines produce exactly 1,400 SHP each (2,800 SHP total) at their maximum Military
-			power setting, the engine output is perfectly matched to the transmission's structural limit. You cannot
-			"over-torque" the transmission with healthy -10 engines unless you exceed the engine's own thermal limits (N1/EGT).
-			
-			Limits:
-				* Military (Takeoff - 30 mins): 1,400 SHP (1,044 kW) per engine.
-				* Normal (Continuous): 1,250 SHP (932 kW) per engine.
-				* The lack of a higher "Emergency" rating meant that if you lost an engine while heavy, you lost 50% of your
-				  power instantly, with no "super-boost" available from the survivor. This made the CH-46D significantly more
-				  vulnerable in combat/hover scenarios compared to the CH-46E (which had -16 engines that could surge to
-				  1,870 SHP to compensate).
-				  
-				  
-			In the CH-46D, 100% Torque indicated 1,400 SHP (Military Power).
+		Because the two T58-GE-10 engines produce exactly 1,400 SHP each (2,800 SHP total) at their maximum Military
+		power setting, the engine output is perfectly matched to the transmission's structural limit. You cannot
+		"over-torque" the transmission with healthy -10 engines unless you exceed the engine's own thermal limits (N1/EGT).
+		
+		Limits:
+			* Military (Takeoff - 30 mins): 1,400 SHP (1,044 kW) per engine.
+			* Normal (Continuous): 1,250 SHP (932 kW) per engine.
+			* The lack of a higher "Emergency" rating meant that if you lost an engine while heavy, you lost 50% of your
+			  power instantly, with no "super-boost" available from the survivor. This made the CH-46D significantly more
+			  vulnerable in combat/hover scenarios compared to the CH-46E (which had -16 engines that could surge to
+			  1,870 SHP to compensate).
+			  
+			  
+		In the CH-46D, 100% Torque indicated 1,400 SHP (Military Power).
 
-			This is why later CH-46E pilots (flying with -16 engines but the same transmission gauges) would see torque
-			readings of 120-130% during high-power maneuvers -- the gauge was still calibrated to the old D-model limit
-			of 1,400 SHP.
-			
-			
-			* Note: The T58-GE-10 engine did not have a specific "2.5-minute" or "Emergency" contingency rating exceeding
-			its Military power. In a short-term emergency (like an engine failure), the pilot was limited to the Military
-			rating of the remaining engine (1,044 kW).
-			
-			
-			This community module models the CH-46D with 2x T58-GE-10 engines.
-			
-			
-			Note on the CH-64E:
-			
-			The primary advantage of the -16 engine is not necessarily combined power, but safety. In the event of
-			a single engine failure, the remaining engine can produce enough power (up to 1,870 SHP) to keep the
-			helicopter flying, whereas earlier engines (like the T58-GE-10 at 1,400 SHP) provided significantly
-			less margin for single-engine recovery.
+		This is why later CH-46E pilots (flying with -16 engines but the same transmission gauges) would see torque
+		readings of 120-130% during high-power maneuvers -- the gauge was still calibrated to the old D-model limit
+		of 1,400 SHP.
+		
+		
+		* Note: The T58-GE-10 engine did not have a specific "2.5-minute" or "Emergency" contingency rating exceeding
+		its Military power. In a short-term emergency (like an engine failure), the pilot was limited to the Military
+		rating of the remaining engine (1,044 kW).
+		
+		
+		This community module models the CH-46D with 2x T58-GE-10 engines.
+		
+		
+		Note on the CH-64E:
+		
+		The primary advantage of the -16 engine is not necessarily combined power, but safety. In the event of
+		a single engine failure, the remaining engine can produce enough power (up to 1,870 SHP) to keep the
+		helicopter flying, whereas earlier engines (like the T58-GE-10 at 1,400 SHP) provided significantly
+		less margin for single-engine recovery.
 	]]
 		
-		power_take_off			= 1044,						-- [kW] Takeoff power per engine: 1,400 SHP = ~1,044 kW (Total 2,800 SHP).
-		power_max				= 932,						-- [kW] Max Continuous: 1,250 SHP = 932 kW per engine (Total 2,500 SHP).
-		power_WEP				= 1044,						-- [kW] Absolute engine power limit: 1,400 SHP = ~1,044 kW (Total 2,800 SHP).
-	
-		-- CH-46D (T58-GE-10) Power vs Altitude Coefficients
-		-- Unit: kW, Altitude: km
-		-- P(h) = a*h^2 + b*h + c
-		-- Pattern: [1] Takeoff, [2] Emergency, [3] Continuous, [4] Cruise
-		power_TH_k = {
-			--		  a,       b,      c
-			[1] = { 4.494,  -118.00, 1044.0 },				-- [coeffs] Max Takeoff (10 min): 1,044 kW (1,400 SHP)
-			[2] = { 4.494,  -118.00, 1044.0 },				-- [coeffs] Emergency / OEI (2.5 min): 1,044 kW (Same as Takeoff)
-			[3] = { 4.012,  -105.35,  932.0 },				-- [coeffs] Max Continuous: 932 kW (1,250 SHP)
-			[4] = { 3.130,   -82.17,  727.0 },				-- [coeffs] Cruise: 727 kW (~78% of Max Cont)
-		},
-		
-		-- CH-46D (T58-GE-10) Specific Fuel Consumption vs Altitude
-		-- SFC(h) = a*h^2 + b*h + c
-		-- Unit: kg / (kW * hr)
-		-- c (Base SFC) corresponds to approx 0.61 lb/shp-hr
-		SFC_k					= {0.0, -1.180e-005, 0.3710}, -- [coeffs] TSFC curve (specific fuel consumption (kg/kWh) vs. power (kW))
-		
-		-- CH-46D (T58-GE-10)
-		-- Power vs RPM Curve coefficients and Min Power Scalar
-		power_RPM_k				= {-0.1150, 0.2750, 0.8400}, -- [coeffs] Engine power out (% max) vs (% RPM)
+		power_take_off		= 1044,		-- [kW] Takeoff power per engine: 1,400 SHP = ~1,044 kW (Total 2,800 SHP).
+		power_WEP			= 1044,		-- [kW] Absolute engine power limit: 1,400 SHP = ~1,044 kW (Total 2,800 SHP).
+		power_max			= 932,		-- [kW] Max Continuous: 1,250 SHP = 932 kW per engine (Total 2,500 SHP).
 		
 	--[[
-		Flight Idle RPM (Ng​)
+		In DCS World helicopter engine definitions, SFC_k represents the Specific Fuel Consumption coefficients.
 
-		"Flight Idle" in the CH-46D refers to the condition where the Speed Selector Levers (SSL) are in the
-		full open ("Fly") position, but the collective pitch is at the minimum (flat pitch).
-
-		Value: Approximately 82% to 85% Ng​
-
-		Behavior: At this setting, the engines are producing just enough power to keep the rotor system spinning
-		at 100% Nr​ without generating lift. If you lower the collective fully during flight (e.g., entering an
-		autorotation), the engines will drop to this RPM band to "wait" for power demand.
+		It defines a quadratic curve that determines fuel efficiency based on the engine's current power output.
+		It does not define the fuel flow directly; rather, it defines how much fuel is required to generate
+		1 kilowatt (kW) of power for 1 hour.
 		
-		power_RPM_min is the minimum RPM percentage at which the engine begins to produce usable power, but it's
-		defined as 1/10 the RPM percentage value for some dumb reason (i.e., set it to 9.1 if you want 91% engine
-		RPM to have the rotors spinning at 100% Nr).
-	]]
-		power_RPM_min			= 75 / 10,					-- See discussion above
+		1. The Mathematical Model
 
-		Nmg_Ready				= 78.0,						-- [%] Flight idle Ng RPM
+			The parameter is a Lua table of three coefficients {a,b,c} used in the following polynomial:
+			
+				SFC   =   ( a * P^2 )  +  ( b * P ) + c
+
+			Where:
+
+				P (Input):		Current Engine Shaft Power in Kilowatts (kW).
+
+				SFC (Output): 	Specific Fuel Consumption in kg/kW·h (Kilograms of fuel per Kilowatt-hour).
+
+				a,b,c: 			The coefficients from the Lua table SFC_k.
+				
+		2. How Fuel Flow is Calculated
+
+			Once the simulation calculates the current SFC using the curve above, it determines the actual fuel
+			flow rate (m'_fuel​) using:
+			
+				Fuel_Flow [kg/h]	=	SFC * Instantaneous_Engine_Power [kW]
+				
+		3. The Physics: Efficiency Curves
+
+			Turbine engines are thermodynamically more efficient at high load than at low load.
+
+				At Idle/Low Power:	The engine burns a lot of fuel just to keep itself spinning, but produces
+									little shaft power. This results in a High SFC (inefficient).
+
+				At High Power: 		The engine is operating at its designed pressure ratios. It burns more total
+									fuel, but gets much more work out of it. This results in a Low SFC (efficient).
+
+			This physical reality is modeled by the coefficients:
+
+				c (Intercept):	The baseline inefficiency. This is the SFC at near-zero load.
+
+				b (Slope):		Usually Negative. As Power (P) increases, this negative term reduces the SFC value,
+								modeling the increase in efficiency.
+
+				a (Curvature):	Fine-tunes the curve (often 0 or a tiny positive number to model efficiency losses
+								at extreme overheat limits).
+								
+		4. Example Analysis (OH-58D)
+
+			From the DCS OH-58D file (December 2025): SFC_k = {0, -0.0003171, 0.512}
+
+			Let's calculate the fuel burn at Max Continuous Power (approx. 400 kW):
+
+				Calculate SFC:
+				
+					SFC(400kW)	=	0 * (400)^2  +  ( −0.0003171 * 400 )  +  0.512
+					
+					SFC(400kW)	=	0  −  0.1268  +  0.512
+								=	0.3852 kg/kWh
+
+				Calculate Total Flow:
+				
+					Flow(400kW)	=	0.3852 * 400	=	154 kg/hr
+								=	0.04278 kg/sec
+		
+		5. Tuning Guide for Developers
+
+			If your helicopter has incorrect fuel endurance:
+			
+	+================================+==============================================================================+
+	|            Problem             |                             Adjustment Strategy                              |
+	+================================+==============================================================================+
+	| Burns too much fuel everywhere | Decrease c. This shifts the entire efficiency curve down (less fuel per kW). |
+	+--------------------------------+------------------------------------------------------------------------------+
+	| Burns too little at Max Power  | Make b less negative (closer to 0). This prevents the engine from becoming   |
+	|								 | "super-efficient" at high power settings.									|
+	+--------------------------------+------------------------------------------------------------------------------+
+	| Burns too much at Idle         | This is tricky. Since P≈0 at idle, the formula relies on c. You may need to  |
+	|								 | lower c and adjust b to keep high-power consumption correct.					|
+	+--------------------------------+------------------------------------------------------------------------------+
+		
+		6. Summary
+
+			SFC_k defines the engine's fuel efficiency curve. It takes the current Shaft Power (kW) and calculates
+			a consumption rate in kg/kWh. Because turbine engines are more efficient under load, the curve usually
+			slopes downward (negative b value), meaning the engine gets "better mileage" per horsepower when working
+			hard compared to when it is idling.
+	]]
+		SFC_k					= {0.0, -1.180e-005, 0.3710}, -- [coeffs] SFC curve: SFC [kg/kWh] vs. power [kW]
+	
+	--[[
+		Power vs Altitude Curve Coefficients
+		Unit: kW, Altitude: km
+		P(h) = a*h^2 + b*h + c
+		Pattern: [1] Takeoff, [2] Emergency, [3] Continuous, [4] Cruise
+		
+		In DCS World helicopter definition files, power_TH_k defines the Engine Power vs. Altitude performance curves.
+
+		It acts as a lookup table that dictates the maximum power (in kilowatts) the engine is physically capable of
+		producing at a specific altitude. It effectively models the "service ceiling" and performance degradation of
+		the engine as the air thins.
+		
+		1. The Data Structure
+
+			The parameter is a Lua table containing multiple sub-tables. Each sub-table represents a different
+			Power Rating (or engine regime).
+
+			The table indices correspond to engine states defined by power_take_off, power_WEP, and power_max:
+
+				[1] = Takeoff / Max Power (Time limited, usually 5-10 mins)
+
+				[2] = Emergency / OEI Power (One Engine Inoperative - 2.5 min limit)
+
+				[3] = Max Continuous Power (No time limit)
+
+				[4] = Cruise / Loiter (Economy setting)
+
+			Each entry contains three coefficients {a,b,c} used in a quadratic formula:
+			
+					P_avail		​=	( a * h^2 ) + ( b * h ) + c
+
+			Where:
+
+				h (Input): 			Altitude in kilometers (km).
+
+				P_avail​ (Output): 	Available Power in kilowatts (kW).
+
+				a, b, c: 			The quadratic coefficients describing the curve.
+		
+		
+		2. The Physics: What it Models
+
+			Turboshaft engines are air-breathing. As altitude increases, air density decreases, meaning there is
+			less oxygen mass per intake cycle to mix with fuel. This parameter models that loss.
+
+				Coefficient c:	Represents the power at Sea Level (h = 0).
+								This is the baseline "Rated Power" for that regime.
+
+				Coefficient b:	The Linear Power Lapse Rate. This coefficient defines the primary slope of the
+								power curve.
+								
+									Negative Value (Standard): Represents the loss of power due to decreasing
+									air density.
+									
+									Positive Value (Rare): Would imply power increases with altitude
+									(physically incorrect for standard operations) OR is used in conjunction
+									with a massive negative a coefficient to model a specific "hump" in
+									performance (e.g., a flat-rated engine that is electronically limited at
+									sea level but performs better in colder, thinner air up to a certain point).
+
+				Coefficient a:	The quadratic curvature. This fine-tunes the curve, as power loss at extreme
+								altitudes is rarely perfectly linear.
+		
+				Intuition: 		Engine power decreases with altitude (coefficient b dominates).
+				
+		
+		3. Recommendation for Tuning
+
+				Start with a = 0.
+
+				Set c to your Sea Level Max Power.
+
+				Set b to a negative number that matches your engine's power at altitude (e.g., if you have
+				1000 kW at SL and 700 kW at 2 km, set b = −150).
+
+				Use a only if you need to bend the line to match data points at extreme altitudes.
+
+
+		4. Algorithm in the Sim
+
+			Pilot Input: 		The pilot pulls the collective.
+
+			Regime Selection: 	The sim checks which power band is active (e.g., [1] Takeoff).
+
+			Calculation: 		It calculates the max kW available for the current altitude using power_TH_k.
+
+			Limiting: 			If the pilot demands more power than this calculated limit, the rotor RPM will
+								droop (governed by power_RPM_k), and eventually, the rotor will stall.
+
+
+		5. Summary
+
+			power_TH_k defines the engine's "lung capacity" at different altitudes. It sets the hard ceiling
+			for horsepower. If a user complains that the helicopter feels too weak in the mountains or too
+			strong at sea level, this is the table to tune.
+	]]
+		power_TH_k = {
+			--		  a,       b,      c
+			[1] = { 4.494,  -118.00, 1044.0 },	-- [coeffs] Max Takeoff (10 min): 1,044 kW (1,400 SHP)
+			[2] = { 4.494,  -118.00, 1044.0 },	-- [coeffs] Emergency / OEI (2.5 min): 1,044 kW (Same as Takeoff)
+			[3] = { 4.012,  -105.35,  932.0 },	-- [coeffs] Max Continuous: 932 kW (1,250 SHP)
+			[4] = { 3.130,   -82.17,  727.0 },	-- [coeffs] Cruise: 727 kW (~78% of Max Cont)
+		},
+	
+	--[[
+		Power Turbine Efficiency (Power Factor vs RPM) Curve
+		
+		In DCS World helicopter definition files, power_RPM_k defines the Power Turbine (N2/Np) Efficiency Curve.
+
+		It represents the relationship between the speed of the power turbine (RPM) and its ability to deliver shaft
+		horsepower (SHP) to the transmission. It acts as a final multiplier on the engine's potential power output,
+		which has already been calculated based on altitude and temperature.
+		
+		1. The Mathematical Model
+
+			The parameter is a table of three coefficients {a, b, c} that form a quadratic polynomial.
+			
+						P_factor = a * x^2 + b * x + c
+
+			Where:
+
+				x (Input): Relative Power Turbine RPM (Np​)
+
+					  1.0 	=	100% (Design RPM)
+
+					  0.9	=	90%
+
+				P_factor​ (Output): Power Efficiency Multiplier.
+
+					  1.0	= 	The engine transmits 100% of generated power.
+
+					< 1.0	= 	Efficiency loss due to off-design RPM.
+
+				a, b, c: The coefficients defined in the Lua table (in order).
+		
+		2. The Physics: Why it matters
+
+			Turboshaft engines are designed to operate at a specific RPM (usually 100%).
+
+				At 100% RPM: The airflow incidence angles on the turbine blades are optimal; energy extraction from
+				the gas stream is maximized.
+
+				Off-Peak RPM: If the rotor droops (e.g., heavy collective pull) or overspeeds, the turbine blades
+				become less efficient at capturing energy. The engine might be burning the same amount of fuel,
+				but less horsepower is actually reaching the rotor mast.
+
+			This parameter simulates that thermodynamic loss.
+			
+		3. Implementation Strategies
+
+			When defining this parameter, there are two distinct approaches: Simulation Realism vs. stability.
+			
+			Approach A: The "Ideal" Free Turbine (High Fidelity)
+
+			This models the physics of a free power turbine where Power = Torque × Angular_Velocity.
+
+				Coefficients: {-1.0, 2.0, 0.0}
+
+				Behavior:
+
+					At 100% RPM (x=1),	Power = 100%.
+
+					At 0% RPM (x=0), 	Power = 0%.
+
+				Effect: This forces the pilot (and governor) to respect RPM limits. If RPM droops significantly,
+				power falls off, leading to a "vortex of peril" where the engine cannot recover rotor speed
+				under load.
+
+			Approach B: The "Stability" Curve (Game/AI Friendly)
+
+			This is commonly seen in older modules or AI aircraft. It artificially boosts power at low RPM.
+
+				Coefficients: {-0.086, 0.242, 0.841}
+
+				Behavior:
+
+					At 100% RPM, Power = 100%.
+
+					At 0% RPM, Power = 84%.
+
+				Effect: The engine produces massive power even if the rotor is nearly stopped. This prevents
+				AI from crashing due to poor collective management and makes the aircraft very difficult to
+				stall, but it is physically incorrect.
+		
+		4. Tuning Guide
+
+			If you need to adjust this for a specific flight model:
+			
+	+==============================================================================================================+
+	|   To Achieve This Effect...   |                              Adjust Coefficient                              |
+	+===============================+==============================================================================+
+	| Make RPM droop more punishing | Increase negative a (e.g., change -1.0 to -1.5). This steepens the parabola. |
+	+-------------------------------+------------------------------------------------------------------------------+
+	| Make RPM droop more forgiving | Decrease negative a (closer to 0) and increase c. This flattens the curve.   |
+	+-------------------------------+------------------------------------------------------------------------------+
+	| Shift the "Sweet Spot"        | Adjust b. If the peak efficiency shouldn't be exactly at 100%, you can       |
+	|								| shift the vertex of the parabola. 										   |
+	+-------------------------------+------------------------------------------------------------------------------+
+		
+			Quick & dirty copy/paste options:
+			
+			Approach A (High Fidelity):				power_RPM_k	= {-1, 2, 0},
+			
+			Approach B (Forgiving/AI Friendly):		power_RPM_k = {-0.08639, 0.24277, 0.84175},
+
+		5. Summary
+
+			power_RPM_k dictates how much power is lost when the pilot lets the Ng RPM drift away from 100%. A steep
+			curve (High Fidelity) punishes bad collective management. A flat curve (Stability) acts as a safety net,
+			ensuring power is available even during severe RPM decay.
+	]]
+		power_RPM_k				= {-0.1150, 0.2750, 0.8400},  	-- [coeffs] Power Turbine (N2/Np) Efficiency Curve
+		
+	--[[
+		In DCS World helicopter engine definitions, power_RPM_min defines the Lower Bound of the Power Turbine (N2)
+		Normalization Range.
+
+		Contrary to the common belief that it acts solely as a "hard cutoff" or "starter gate," empirical testing
+		confirms it effectively sets the floor for the RPM efficiency curve. It dictates the dynamic range over
+		which the engine's power efficiency scaling (defined by power_RPM_k) is applied.
+		
+		1. The Mathematical Logic
+
+			The simulation appears to normalize the current Power Turbine RPM (Np​) into a factor x (0.0 to 1.0)
+			using a standard normalization formula, where power_RPM_min serves as the zero point.
+			
+							Current_RPM - power_RPM_min				Current_RPM - power_RPM_min
+				x 	 =	  -------------------------------	 =	  -------------------------------
+							  Max_RPM - power_RPM_min				Nominal_RPM - power_RPM_min
+			
+			This normalized x is then fed into the quadratic power efficiency curve:
+			
+				P_factor  =  ( a * x^2 )  +  ( b * x )  +  c
+			
+			where coefficients a, b, and c come from power_RPM_k.
+			
+			More abstractly, let
+			
+								  rpm - power_RPM_min
+				f(rpm) 	 =	 -----------------------------
+							  Nominal_RPM - power_RPM_min
+							  
+			then, from the immediately prior discussion on power_RPM_k we have
+			
+			P_factor(rpm)	=  ( power_RPM_k[1] * f^2(rpm) ) + ( power_RPM_k[2] * f(rpm) ) + power_RPM_k[3]
+			
+			In short, the instantaneous torque (and power) output of a helicopter engine in DCS is calculated
+			through a three-step process:
+
+				Normalization: 		The current RPM is first normalized using power_RPM_min to create a value
+									between 0 and 1.
+
+				Efficiency Scaling: This normalized value is then processed by power_RPM_k (the efficiency curve)
+									to determine how effectively the engine can deliver power at that specific RPM.
+
+				Altitude Scaling: 	Finally, this result is multiplied by the maximum available power for the
+									current altitude, which is defined by the power_TH_k table (parameterized by
+									takeoff, emergency, and max power settings across four flight regimes).
+			
+			While you, as the pilot or observer, only see the gas generator speed (Ng​) and observe the resulting
+			power/lift, these three parameters -- power_RPM_min, power_RPM_k, and power_TH_k -- work together
+			"under the hood" to determine exactly how much muscle the engine has at any given moment.
+			
+				 power_RPM_min			   power_RPM_k					power_TH_k
+			RPM  ------------->  RPM_norm  ----------->  Efficiency  *  P_altitude   =   Torque (or Power)
+				
+		2. Functional Behavior: "Droop Sensitivity"
+
+			Because this parameter sets the floor of the range, it acts as a Sensitivity Tuner for RPM droop.
+
+				At 100% RPM: The parameter has no effect.
+
+					If Min is 9% or 90%, the result at Max RPM is always 1.0. Peak power output remains
+					identical regardless of your choice for power_RPM_min.
+
+				During RPM Droop (<100%): 	The parameter controls the Slope of Power Loss.
+
+					Low Min (e.g., 9%):		The "power band" is stretched wide (9–100%). A 1% drop in RPM
+											results in a tiny change in x. The engine is Forgiving; power
+											drops off slowly as the rotor bogs down.
+
+					High Min (e.g., 80%):	The "power band" is compressed (80–100%). A 1% drop in RPM
+											represents a massive percentage of the available range. The
+											engine is punishing; power output collapses precipitously if
+											the pilot allows RPM to droop.
+		
+		3. Tuning Guide for Developers
+
+			When tuning a flight model, use power_RPM_min to adjust how the engine behaves when the rotor
+			is under heavy load (e.g., high G turns or heavy lifting):
+			
++==========================+===========================+====================================================================+
+|     Desired Behavior     |          Setting          |                          Physics Context                           |
++==========================+===========================+====================================================================+
+| Robust / Modern Engine   | Set Low (~9.0 to 20.0)    | Models an engine with a flat torque curve that maintains           |
+| (e.g., T700, T55)		   |						   | authority even during significant RPM transient droop.				|
++--------------------------+---------------------------+--------------------------------------------------------------------+
+| Sensitive / Older Engine | Set Higher (40.0 to 60.0) | Models an engine where efficiency falls off sharply if off-design. |
+| (e.g., T58, TV3-117)	   |						   | Forces the pilot to manage collective strictly to maintain N_r​.	|
++--------------------------+---------------------------+--------------------------------------------------------------------+
+| "Glass Jaw"              | Set Very High (>80.0)     | Models an engine that "flames out" or loses all useful torque      |
+|						   |						   | immediately upon drooping. Useful for simulating compressor stall	|
+|						   |						   | boundaries or very poor governor response.							|
++--------------------------+---------------------------+--------------------------------------------------------------------+
+		
+		4. Summary
+
+			power_RPM_min defines the "floor" of the engine's RPM efficiency curve. While it does not change
+			the maximum power available at 100% RPM, it controls the severity of the penalty when RPM drops.
+			Increasing this value compresses the efficiency curve, making the engine lose power much faster
+			during rotor droop.
+			
+		5. Recommendation
+		
+			Populate with the real-world value for your engine: Self-Sustaining Speed (~10-15% typ.)
+			
+			To determine the correct value for your file, ask this question about the specific helicopter:
+
+			"If the rotor droops to 80% in a climb, should the pilot still have power to recover?"
+
+				YES (Realistic for UH-1Y/CH-47):
+
+					Parameter: Set power_RPM_min to ~9.0 - 15.0.
+
+					Reason: Matches the physics of a free turbine. The curve is wide (0-100), allowing
+							the pilot to "fight" the rotor back up to speed even from deep droop.
+
+				NO (Simulating a Compressor Stall or Governor Limit):
+
+					Parameter: Set power_RPM_min higher (e.g., 60.0).
+
+					Reason: This simulates an engine that becomes unstable or inefficient at low RPMs,
+							forcing the pilot to fly strictly within the green arc.
+
+	]]
+		power_RPM_min			= 45.0, -- 12.0,				-- [%] Lower Bound of the Power Turbine Normalization Range
+
+		Nmg_Ready				= 80.0,				-- [%] Flight idle Ng RPM
 				
 	--[[
 		The T58-GE-10 (used in the CH-46 Sea Knight and SH-3 Sea King) is notorious for its "scream" due to its
@@ -560,16 +796,16 @@ return {
 		engine = {
 			type				= "TurboShaft",
 			name				= "T58-GE-10",
-			typeng				= 5,						-- [enum] Enumeration for turboshaft engines
+			typeng				= 5,					-- [enum] Enumeration for turboshaft engines
 
-			Nmg					= 58.0,						-- [%] Flight idle Ng or N1 RPM (%) (ground idle = 58.0%)
-			Nominal_RPM			= 26300,					-- [rpm] 100% speed for the gas generator (Ng)
-			Nominal_Fan_RPM		= 7583,						-- [rpm] 100% speed for the combining transmission (C-box)
+			Nmg					= 58.0,					-- [%] Flight idle Ng RPM (ground idle = 58-61%)
+			Nominal_RPM			= 26300,				-- [rpm] 100% speed for the gas generator (Ng)
+			Nominal_Fan_RPM		= 7583,					-- [rpm] 100% speed for the combining transmission (C-box)
 			
-			MinRUD				= 0,						-- Min state of the throttle
-			MaxRUD				= 1,						-- Max state of the throttle
-			MaksRUD				= 1,						-- Military power state of the throttle
-			ForsRUD				= 1,						-- Afterburner state of the throttle
+			MinRUD				= 0,					-- Min state of the throttle
+			MaxRUD				= 1,					-- Max state of the throttle
+			MaksRUD				= 1,					-- Military power state of the throttle
+			ForsRUD				= 1,					-- Afterburner state of the throttle
 		},
 	--[[
 		Note: 	The Simple Flight Model (SFM) table_data determines your total thrust,
@@ -589,7 +825,7 @@ return {
 			diameter			= 0.55,			-- [m] Mensurated the 3D model in ModelViewer in orthographic projection mode
 			exhaust_length_ab	= 0.7,			-- [m] Length of turbulent exhaust air
 			exhaust_length_ab_K = 0.35,
-			smokiness_level		= 0.08,
+			smokiness_level		= 0.1,
 			engine_number		= 1,
 		}, -- end of [1]
 		[2] = {
@@ -599,7 +835,7 @@ return {
 			diameter			= 0.55,			-- [m] Mensurated the 3D model in ModelViewer in orthographic projection mode
 			exhaust_length_ab	= 0.7,			-- [m] Length of turbulent exhaust air
 			exhaust_length_ab_K = 0.35,
-			smokiness_level		= 0.08,
+			smokiness_level		= 0.1,
 			engine_number		= 2,
 		}, -- end of [2]
 	},
@@ -608,7 +844,7 @@ return {
 	------------------------------------------------------------------------------------------------
 	-- 7. FLIGHT PERFORMANCE & AERODYNAMICS
 	------------------------------------------------------------------------------------------------
-	V_max					= 267.0,						-- [kph] Max speed: 144 KTAS = ~267 km/h
+	V_max					= 267.0,		-- [kph] Max speed: 144 KTAS = ~267 km/h
 	
 	--[[
 		Although the aircraft is capable of cruising near its top speed (~265 kph), pilots
@@ -621,18 +857,18 @@ return {
 			Fuel Economy: The "Economical Cruise" of ~209 kph (113 knots) is often cited in
 			flight manuals (NATOPS) as the speed that provides the best range per pound of fuel.
 	]]
-	V_max_cruise			= 225,							-- [kph] Cruise speed: 225 km/h = ~ 121.5 KTAS
+	V_max_cruise			= 225,			-- [kph] Cruise speed: 225 km/h = ~ 121.5 KTAS
 	Vy_max					= 10.4,							-- [m/s] Max climb speed (for AI)
 	
 	-- Vertical performance, maximum hover altitude
-	H_stat_max_L			= 4267,							-- [m] Hover altitude out of ground effect (OGE) (Lightweight)
-	H_stat_max				= 2600,							-- [m] Hover altitude OGE (Max weight)
+	H_stat_max_L			= 4267,			-- [m] Hover altitude out of ground effect (OGE) (Lightweight)
+	H_stat_max				= 2600,			-- [m] Hover altitude OGE (Max weight)
 
 	--[[
 		Note: The aerodynamic ceiling is approx. 5,180 m / 17,000 ft, but the
 		CH-46D is typically restricted to 14,000 ft by NATOPS regulations.
 	]]
-	H_din_two_eng			= 5180,							-- [m] Two-engine ceiling
+	H_din_two_eng			= 5180,			-- [m] Two-engine ceiling
 	
 	--[[
 		Single engine ceiling
@@ -641,7 +877,7 @@ return {
 		ceiling is below sea level -- meaning the aircraft cannot maintain altitude
 		and must descend or land immediately.
 	]]
-	H_din_one_eng			= 1450,							-- [m] Single engine ceiling
+	H_din_one_eng			= 1450,			-- [m] Single engine ceiling
 	
 	--[[
 		Because running out of fuel in a helicopter is catastrophic (the engines stop and
@@ -656,7 +892,7 @@ return {
 		
 		For DCS, I'll assume no warmup and 20m reserve to compute this ceiling.
 	]]
-	flight_time_typical		= 120,							-- [min] 2.0 hours hours
+	flight_time_typical		= 120,			-- [min] 2.0 hours hours
 	
 	--[[
 		The absolute maximum flight time for the CH-46D Sea Knight on internal fuel alone is
@@ -664,8 +900,8 @@ return {
 		"Maximum Endurance Speed" (approx. 70–75 knots) to minimize fuel consumption until
 		the engines flame out.
 	]]
-	flight_time_maximum		= 135,							-- [min] Max endurance without extra fuel tanks
-	range					= 370,							-- [km] Maximum one-way range (km) using internal fuel onl
+	flight_time_maximum		= 135,			-- [min] Max endurance without extra fuel tanks
+	range					= 370,			-- [km] Maximum one-way range (km) using internal fuel onl
 
 	-- FUSELAGE AERODYNAMICS --
 	--[[
@@ -721,7 +957,7 @@ return {
 				
 				S_ref 	=	~9.34 m^2
 	]]
-	fuselage_area			= 9.34,							-- [m^2] Frontal Reference Area (S_ref)
+	fuselage_area			= 9.34,			-- [m^2] Frontal Reference Area (S_ref)
 	
 	--[[
 		Definition:
@@ -771,7 +1007,7 @@ return {
 				
 				C_x   = ~0.30
 	]]
-	fuselage_Cxa0			= 0.30,							-- [coeff] 0 degree AoA drag coefficient (Forward drag - C_x0)
+	fuselage_Cxa0			= 0.30,			-- [coeff] 0 degree AoA drag coefficient (Forward drag - C_x0)
 	
 	--[[
 		Definition:
@@ -836,7 +1072,7 @@ return {
 					
 					fuselage_Cxa90 = ~4.38
 	]]
-	fuselage_Cxa90			= 4.38,							-- [coeff] 90 degree AoA drag coefficient (Vertical drag - C_y)
+	fuselage_Cxa90			= 4.38,			-- [coeff] 90 degree AoA drag coefficient (Vertical drag - C_y)
 
 	-- TAIL CONFIGURATION --
 	--[[
@@ -865,7 +1101,7 @@ return {
 		Justification: The CH-46 aft pylon is shorter and narrower; it houses
 		smaller engines.
 	]]
-	tail_fin_area			= 2.2,							-- [m^2] Under the assumptions above, equivalent vertical stabilizer "area"
+	tail_fin_area			= 2.2,			-- [m^2] Under the assumptions above, equivalent vertical stabilizer "area"
 	
 	--[[
 		This parameter says "area" just like the above for tail_fin_area, but as above
@@ -901,7 +1137,7 @@ return {
 		during forward flight, reducing the "porpoising" tendency found in the earlier
 		"D" models.
 	]]
-	tail_stab_area			= 0.74,							-- [m^2] Under the assumptions above, equivalent horizontal stabilizer area
+	tail_stab_area			= 0.74,			-- [m^2] Under the assumptions above, equivalent horizontal stabilizer area
 
 
 	------------------------------------------------------------------------------------------------
@@ -948,7 +1184,7 @@ return {
 |   ±0.1°    |     Minor bias (~0.5-1% Δthrust)       | Slight trim offset; hover attitude drifts 0.5-1°/min.	| Negligible; feels ""off"" in unaugmented flight.	|     
 |			 |										  |	AFCS/DAFCS compensates unnoticed.						|													|
 |			 |										  |															|													|
-|   ±0.5°    | Noticeable (~2-5% Δthrust; ~10-30 kNm) | Pitch oscillations/hunting in hover (±2-5° attitude);	| Demands frequent re-trim; fatiguing reduces       |
+|   ±0.5°    | Noticeable (~2-5% Δthrust; ~10-30 kNm) | Pitch oscillations/hunting in hover (±2-5° attitude);	| Demands frequent re-trim; fatiguing; reduces      |
 |			 |										  |	forward flight requires 10-20% cyclic trim bias.		| precision (e.g., ETL accel unstable at 24 kts).	|
 |			 |										  |															|													|
 |   ±1.0°    |  Severe (~5-10% Δthrust; ~50-100 kNm)  | Static instability: constant nose-up/down accel			| Unflyable unaugmented; AFCS fights limits risking |
@@ -962,7 +1198,7 @@ return {
 						at nominal mass load (monitor pitch rate).
 		
 	]]
-	centering				= -5.393,				-- [deg] Baseline differential collective pitch (DCP) offset
+	centering				= -5.393,		-- [deg] Baseline differential collective pitch (DCP) offset
 	
 							-- Testing values:
 							-- -5.38	seems to surge forward more than 5.39, but rotors do not intersect after landing
@@ -1011,17 +1247,16 @@ return {
 			2) MOI = {18000, 103000, 108000},	-- From NASA Technical Memorandum 84281 transformed to CH-46D's
 												   dimensions (real world)
 	]]
-	-- MOI 					= {18000, 103000, 108000},		-- [kg*m^2] From NASA Technical Memorandum 84351 transformed to CH-46D's dimensions (real world)
-	-- MOI 					= {12850, 103000, 108000},		-- [kg*m^2]
+		
+	MOI	= _MOI,			-- [kg*m^2] {Rl,Yw,Ptch, POI} Empty CH-46D. "Empty" assumption seems to match CH-47F and Mi-24P.
 	
-	MOI						= {21000, 37000, 39000},		-- [kg*m^2] {Rl,Yw,Ptch} Empty CH-46D. "Empty" assumption seems to match CH-47F and Mi-24P.
-
+	center_of_mass		= _CG, 				-- [m] CG w.r.t. EDM 3D mesh origin in TsAGI coordinate order
 
 	------------------------------------------------------------------------------------------------
 	-- 9. LANDING GEAR
 	------------------------------------------------------------------------------------------------
-	nose_gear_pos			= { 5.26663,  -1.73, -0.003494},	-- [m] {x,y,z} Nose gear position (ground under center of the axle)
-	main_gear_pos			= {-2.37379,  -1.23,  1.950383},	-- [m] {x,y,z} Main gear position (ground under center of the axle)
+	nose_gear_pos		= { 5.26663,  -1.73, -0.003494},	-- [m] {x,y,z} Nose gear position (ground under center of the axle)
+	main_gear_pos		= {-2.37379,  -1.26,  1.950383},	-- [m] {x,y,z} Main gear position (ground under center of the axle)
 															-- automatically mirrored
 
 	--[[
@@ -1052,6 +1287,66 @@ return {
 	main_gear_wheel_diameter					=  0.4892,	-- [m] Diameter of the main gear wheels (meters)
 	
 	--[[
+		These values relate to simplified modeling of landing gear/skid compression for helicopters.
+		
+		It's likely a Russian mistransliteration of "Shtok" meaning "Stroke" in English.
+		
+		Here is my best explanation of what lead_stock_main and lead_stock_support define,
+		how the sign (+/-) changes the physics model, and how to calibrate the magnitude of each.
+		
+		1. The Sign (+/-) Determines the Gear Type
+
+			DCS uses the sign of this variable as a boolean switch to select which physics model
+			to apply to the contact point.
+
+			Positive (+) Value = Wheeled Gear (Oleo Strut)
+
+				Physics: 	Enables wheel rotation logic, braking friction, and a non-linear
+							suspension curve (simulating gas/oil compression in a strut).
+
+				Behavior: 	The suspension will "squat" and dampen oscillations.
+
+				Example: 	CH-47F (0.265), Mi-24P (0.438).
+
+			Negative (-) Value = Skid Gear (Tubular/Elastic)
+
+				Physics: 	Disables wheel rotation. Applies "scraping" friction immediately.
+							Uses a linear spring model (simulating the bending/flex of a metal
+							tube) rather than a gas strut.
+
+				Behavior: 	The gear is stiffer and allows the helicopter to slide rather than
+							roll.
+
+				Example: SA342 (-0.1), OH-58D (-0.05).
+				
+		2. The Magnitude Determines "Stroke Length"
+
+			The absolute value (e.g., 0.265 or 0.05) defines the Maximum Suspension Travel
+			(in meters) before the gear hits the hard mechanical stop.
+			
+			For Positive Values (Wheels):
+
+			This is the Oleo Strut Stroke. It is the distance the shiny metal piston can
+			slide into the cylinder.
+
+				CH-47F: 0.265 (approx. 10.4 inches).
+
+				Mi-24P: 0.438 (approx. 17.2 inches).
+
+			For Negative Values (Skids):
+
+			This is the Max Elastic Deflection. It is how much the metal cross-tubes can bend
+			before the fuselage hits the ground or the skid hits a hard limit.
+
+				OH-58D: -0.05 (The skid can flex 5 cm / 2 inches).
+
+				SA342: -0.1 (The skid can flex 10 cm / 4 inches).
+		
+	]]
+	lead_stock_main			= 0.38,			-- [m] Main gear oleo strut travel with WoW
+	lead_stock_support		= 0.28,			-- [m] Support (i.e., nose) gear oleo strut travel with WoW
+	
+	--[[
 		Based on the NATOPS flight manual for the CH-46D Sea Knight, the nose wheel has
 		two distinct modes of operation regarding its turning angle:
 			
@@ -1067,26 +1362,26 @@ return {
 		Since DCS only models self-powered movement, pick (1) then add some extra
 		freedom of motion to account for real-world pilots using pedal turns.
 	]]
-	wheel_steering_angle_max					= math.rad(70.0), -- [rad] Direct max steering angle, does not use tan() like fixed-wing
+	wheel_steering_angle_max = math.rad(70.0),	-- [rad] Direct max steering angle, does not use tan() like fixed-wing
 	
 	--[[
 		Structural Design Limit (Touchdown): Approximately 2.4 meters per second.
 		Hard Landing Threshold: Generally anything exceeding 1.8 – 2.0 meters per second.
 	]]
-	Vy_land_max				= 2.0,							-- [m/s] Max vertical speed landing: 1.8-2.0 m/s
-	Ny_max					= 2.5,							-- [G] Max load factor (Max Positive Load: 24.5 m/s2 (Equivalent to +2.5 G))
+	Vy_land_max				= 2.0,			-- [m/s] Max vertical speed landing: 1.8-2.0 m/s
+	Ny_max					= 2.5,			-- [G] Max load factor (Max Positive Load: 24.5 m/s2 (Equivalent to +2.5 G))
 
 
 	------------------------------------------------------------------------------------------------
 	-- 10. SYSTEMS & SENSORS
 	------------------------------------------------------------------------------------------------
 	-- SIGNATURES
-	RCS						= 9.0,					-- [m^2] Based on a survey of official ED DCS model RCS values and interpolating for the CH-46D
-	IR_emission_coeff		= 0.30,					-- [proportion] Broad-spectrum, all-aspect IR signature compared to the Su-27 (defined as 1.0)
+	RCS						= 8.5,			-- [m^2] Based on a survey of official ED DCS model RCS values and interpolating for the CH-46D
+	IR_emission_coeff		= 0.40,			-- [proportion] Broad-wavelength, all-aspect IR signature compared to the Su-27 (defined as 1.0)
 	
 	-- SENSORS
-	radar_can_see_ground	= true,					-- [bool] Sensors can/cannot see enemy surface entities (tanks, ships)
-	detection_range_max		= 15,					-- [km] How far this aircraft's sensors can possibly detect something (determines absolute maximum SA range)
+	radar_can_see_ground	= true,			-- [bool] Sensors can/cannot see enemy surface entities (tanks, ships)
+	detection_range_max		= 15,			-- [km] How far this aircraft's sensors can possibly detect something (determines absolute maximum SA range)
 	Sensors 				= { },
 	chaff_flare_dispenser 	= { },
 	
@@ -1142,22 +1437,22 @@ return {
 	------------------------------------------------------------------------------------------------
 	-- 11. CARGO & PAYLOAD
 	------------------------------------------------------------------------------------------------
-	openRamp				= 1,							-- [enum] Allow task for internal cargo transportation
-	cargo_max_weight		= 4536,							-- [kg] CH-46D external cargo sling load: 4,536 kg / 10,000 lbs
-	cargo_radius_in_menu	= 2000,							-- [m] Presumably how far you have to be away from cargo to have it show up in the cargo UI
-	helicopter_hook_pos		= {0.085, -0.42, 0},			-- [m] {x,y,z} Belly hook coordinates (sliding door and hook not modeled in 3D model)
-	h_max_gear_hook			= 3.3,							-- [m] What is this parameter? Maybe how close the hook needs to be to "latch" onto cargo? 3.3
+	openRamp				= 1,				-- [enum] Allow task for internal cargo transportation
+	cargo_max_weight		= 4536,				-- [kg] CH-46D external cargo sling load: 4,536 kg / 10,000 lbs
+	cargo_radius_in_menu	= 2000,				-- [m] Presumably how far you have to be away from cargo to have it show up in the cargo UI
+	helicopter_hook_pos		= {0.085, -0.42, 0},	-- [m] {x,y,z} Belly hook coordinates (sliding door and hook not modeled in 3D model)
+	h_max_gear_hook			= 3.3,				-- [m] What is this parameter? Maybe how close the hook needs to be to "latch" onto cargo? 3.3
 	stores_number			= 0,
 	fire_rate				= 0,
 	Pylons 					= { },
 	cannon_sight_type		= 0,
 
 	InternalCargo = {
-		nominalCapacity		= 2000,							-- [kg] A "normal" mission is typically 1,800 - 2,200 kg (4,000–5,000 lbs)
-		maximalCapacity		= 3175,							-- [kg] 7,000 lbs / 3,175 kg or 25 troops
-		para_unit_point		= 10,							-- [#] Paratrooper capacity
-		unit_point			= 18,							-- [#] Troops capacity
-		area				= {8.5, 1.8, 2.1},				-- [m] Cargo bay dimensions (L×W×H)
+		nominalCapacity		= 2000,				-- [kg] A "normal" mission is typically 1,800 - 2,200 kg (4,000–5,000 lbs)
+		maximalCapacity		= 3175,				-- [kg] 7,000 lbs / 3,175 kg or 25 troops
+		para_unit_point		= 10,				-- [#] Paratrooper capacity
+		unit_point			= 18,				-- [#] Troops capacity
+		area				= {8.5, 1.8, 2.1},	-- [m] Cargo bay dimensions (L×W×H)
 			
 	--[[
 		A soldier or Marine in full combat gear required significantly more space than the standard
@@ -1176,11 +1471,11 @@ return {
 														egress.
 								
 	]]
-		unit_block			= {0.76, 0.63},					-- [m] Volume of each soldier/marine (L, W) (meters)
-		far_wall_pos		= {4.709, -0.240, 0}, 			-- [m] coordinates of point on cargohold floor, along centerline, fore face of cargohold
-		deck_connector		= "CARGO_VOLUME",				-- EDM connector where cargo attaches inside the fuselage
-		ramp_connector		= "RAMP_PLATFORM",				-- EDM connector where cargo slides up/down the ramp
-		seat_connector		= "SEAT_POINT",					-- Name of the group of strings which reference connectors for warfighters to sit
+		unit_block		= {0.76, 0.63},			-- [m] Volume of each soldier/marine (L, W) (meters)
+		far_wall_pos	= {4.709, -0.240, 0}, 	-- [m] coordinates of point on cargohold floor, along centerline, fore face of cargohold
+		deck_connector	= "CARGO_VOLUME",		-- EDM connector where cargo attaches inside the fuselage
+		ramp_connector	= "RAMP_PLATFORM",		-- EDM connector where cargo slides up/down the ramp
+		seat_connector	= "SEAT_POINT",			-- Name of the group of strings which reference connectors for warfighters to sit
 		
 		out_door = {
 			cargo_ramp = {
@@ -1226,7 +1521,7 @@ return {
 	------------------------------------------------------------------------------------------------
 	-- 12. CREW
 	------------------------------------------------------------------------------------------------
-	crew_size						= 3,  			-- [#] Pilot, copilot, crew chief (typically)
+	crew_size						= 3,  	-- [#] Pilot, copilot, crew chief (typically)
 
 	crew_members = {
 		[1] =
@@ -1291,7 +1586,8 @@ return {
 	
 	-- Best/closest sound we will get given the tandem rotor design of each
 	sound_name				= "Aircrafts/Engines/RotorCH47",
-	sounderName				= "Aircraft/Planes/B-52H",
+	-- sounderName				= "Aircraft/Planes/B-52H",
+	sounderName 			= "Aircraft/Helicopters/Mi-24",
 
 
 	------------------------------------------------------------------------------------------------
@@ -1410,7 +1706,7 @@ return {
 	
 	undercarriage_transmission	= "Hydraulic",
 	doors_transmission			= "Hydraulic",
-	undercarriage_movement		= 0,		-- Default animations, not custom mechanimation tables
+	undercarriage_movement		= 2,		-- Enable custom landing gear mechanimations
 	doors_movement				= 2,		-- Enable custom doors mechanimations
 	
 	mechanimations = {
@@ -1441,7 +1737,7 @@ return {
 				Sequence = {
 					{C = {										-- All simultaneously in the same step
 						{"Arg", 2, "to", 0.0, "in", 2.0},		-- Center the nose gear in two seconds (from whatever its position is)
-						{"Arg", 36, "to", 0.026, "speed", 0.2},	-- Transition to this state only if in the opening direction
+						{"Arg", 36, "to", 0.026, "speed", 0.2},	-- Open the ramp
 					}},
 				},
 			},
@@ -1449,11 +1745,11 @@ return {
 		
 		Door1 = {	-- Open/close cargohold side door (starboard side)
 			{Transition = {"Close", "Open"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0},},},}, 	Flags = {"Reversible"},},
-			{Transition = {"Open", "Close"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0},},},}, 	Flags = {"Reversible", "StepsBackwards"},},
-			{Transition = {"Any", "Board"},		Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0},},},},},
+			{Transition = {"Open",  "Close"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0},},},}, 	Flags = {"Reversible", "StepsBackwards"},},
+			{Transition = {"Any",   "Board"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0},},},},},
 			{Transition = {"Board", "Close"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0},},},},},
 			
-			{Transition = {"Any", "Bailout"},	Sequence = {{C = {	{"Arg", 50,  "set", 1.0},		-- Vanishes stbd pilot
+			{Transition = {"Any",   "Bailout"},	Sequence = {{C = {	{"Arg", 50,  "set", 1.0},		-- Vanishes stbd pilot
 																	{"Arg", 472, "set", 1.0},		-- Vanishes port pilot
 																	-- {"JettisonCanopy", 0},		-- CH-46D cannot do this
 																	},},},},	-- Crew bails out port-side door
@@ -1475,7 +1771,7 @@ return {
 			{Transition = {"Extend", "Retract"},
 				Sequence = {
 					{C = {{"Arg", 40, "to", 0.0, "in", 15.0}}},		-- Rotate rotor blades to prepare to fold properly
-					{C = {{"Arg", 8, "to", 1.0, "in", 45.0}}},		-- Fold the rotor blades (takes 45 seconds real-world)
+					{C = {{"Arg", 8,  "to", 1.0, "in", 45.0}}},		-- Fold the rotor blades (takes 45 seconds real-world)
 				}, Flags = {"Reversible", "StepsBackwards"}},
 		},
 		
@@ -1506,16 +1802,19 @@ return {
 			-- Spotlight elevation angle: 	arg_value = 2 * (extension_angle_deg / 90 - 1) + 1; fully stowed is angle 0
 			{Transition = {"Any", "Retract"},   Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},	-- Stow search light
 																	{"Arg", 1005, "to", -1.0,  "speed", 0.157},
+																	{"Arg", 38,   "to",  0.0,  "in", 	3.0},		-- Close crew side door
 																	{"Arg", 209,  "to",  0.0,  "speed", 5.0},},},},},
 																	
 			-- Extend search light forward 85.5 deg. That is, it will point 14.5 degrees down from straight ahead
 			{Transition = {"Any", "Taxi"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
 																	{"Arg", 1005, "to",  0.60, "speed", 0.157},
+																	{"Arg", 38,   "to", -1.0,  "in", 	3.0},		-- Half open crew side door
 																	{"Arg", 209,  "to",  0.40, "speed", 2.0},},},},},
 			
 			-- Extend search light forward 60 deg. That is, it will point 30 degrees down from straight ahead
 			{Transition = {"Any", "High"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
 																	{"Arg", 1005, "to",  1/3,  "speed", 0.157},
+																	{"Arg", 38,   "to", -1.0,  "in", 	3.0},		-- Half open crew side door
 																	{"Arg", 209,  "to",  1.0,  "speed", 2.0},},},},},
 		},
 	}, -- end of mechanimations
@@ -1566,17 +1865,17 @@ return {
 			]]
 				typename = "Collection",
 				lights = {
-					{typename = "Argument", argument = 591,},				-- Ventral red beacon (constant on - red)
-					{typename = "Argument", argument = 193,},				-- Fore dorsal beacon (constant on - red)
-					{typename = "Argument", argument = 593,},				-- Aft dorsal beacon (constant on - red)
+					{typename = "Argument", argument = 591,},			-- Ventral red beacon (constant on - red)
+					{typename = "Argument", argument = 193,},			-- Fore dorsal beacon (constant on - red)
+					{typename = "Argument", argument = 593,},			-- Aft dorsal beacon (constant on - red)
 					
 					{
-						typename			= "RotatingBeacon",				-- Ventral red beacon
+						typename			= "RotatingBeacon",			-- Ventral red beacon
 						-- position = { 2.1975, -0.4933, 0.000 },
 						connector			= "ch46_light_bottom_strobe_mesh",
 						proto				= lamp_prototypes.MSL_3_2,
 						color				= {1.0, 30/255, 0, 3 * 0.012*math.sqrt(40)}, -- Bright, fiery red-orange
-						angular_velocity	= math.rad(240.0),				-- 40-45 rpm
+						angular_velocity	= math.rad(240.0),			-- 40-45 rpm
 						angle_max			= math.rad(12.0)
 					},
 					--[[	
@@ -1590,21 +1889,21 @@ return {
 						connectors are oriented properly.
 					]]
 					{
-						typename			= "RotatingBeacon",				-- Fore dorsal red beacon just forward of rear rotor, 1/2 cycle out of phase with others
+						typename			= "RotatingBeacon",			-- Fore dorsal red beacon just forward of rear rotor, 1/2 cycle out of phase with others
 						-- position = { -3.7581, 4.070, 0.000 },
 						connector			= "ch46_light_nav_tail_strobe",
 						proto				= lamp_prototypes.MSL_3_2,
 						color				= {1.0, 30/255, 0, 3 * 0.012*math.sqrt(40)}, -- Bright, fiery red-orange
-						angular_velocity	= math.rad(240.0),				-- 40-45 rpm
-						phase_shift			= 0.25,							-- Half cycle out of phase with the other 2
+						angular_velocity	= math.rad(240.0),			-- 40-45 rpm
+						phase_shift			= 0.25,						-- Half cycle out of phase with the other 2
 						angle_max			= math.rad(12.0)
 					},
 					{
-						typename			= "RotatingBeacon",				-- Aft dorsal red beacon aft of rear rotor
+						typename			= "RotatingBeacon",			-- Aft dorsal red beacon aft of rear rotor
 						connector			= "ch46_light_tail_red_2_strobe",
 						proto				= lamp_prototypes.MSL_3_2,
 						color				= {1.0, 30/255, 0, 3 * 0.012*math.sqrt(40)}, -- Bright, fiery red-orange
-						angular_velocity	= math.rad(240.0),				-- 40-45 rpm
+						angular_velocity	= math.rad(240.0),			-- 40-45 rpm
 						angle_max			= math.rad(12.0)
 					},
 				},
@@ -1655,9 +1954,9 @@ return {
 				-- 	so they don't become balls of light at a distance -- only the 3D model can do that.
 				typename = "Collection",
 				lights = {
-					{typename = "Argument", argument = 190},				-- Left nagivation light (red)
-					{typename = "Argument", argument = 191},				-- Right navigation light (green)
-					{typename = "Argument", argument = 192},				-- White tail lights
+					{typename = "Argument", argument = 190},			-- Left nagivation light (red)
+					{typename = "Argument", argument = 191},			-- Right navigation light (green)
+					{typename = "Argument", argument = 192},			-- White tail lights
 					
 					{	-- Port (left) side position light (red)
 						typename			= "Spot", position = { 2.663, 0.847568, -1.117 },
@@ -1717,7 +2016,7 @@ return {
 				typename = "Collection",
 				lights = {
 					{
-						typename			= "Spot",	-- Cabin is 1.85m tall
+						typename			= "Spot",					-- Cabin is 1.85m tall
 						proto				= lamp_prototypes.HS_2A,
 						color				= {0.588, 0, 0},
 						position			= { 2.65529, 1.684508, 0 },
