@@ -1524,8 +1524,7 @@ return {
 	crew_size						= 3,  	-- [#] Pilot, copilot, crew chief (typically)
 
 	crew_members = {
-		[1] =
-		{
+		[1] = {
 			bailout_arg				= 38,
 			boarding_arg			= 38,
 			ejection_seat_name		= 0,
@@ -1537,8 +1536,7 @@ return {
 			role					= "pilot",
 			pilot_name				= "AV8BNA_Pilot",
 		}, -- end of [1]
-		[2] =
-		{
+		[2] = {
 			bailout_arg				= 38,
 			boarding_arg			= 38,
 			ejection_seat_name		= 0,
@@ -1550,8 +1548,7 @@ return {
 			role					= "copilot",
 			pilot_name				= "AV8BNA_Pilot",
 		}, -- end of [2]
-		[3] =
-		{
+		[3] = {
 			bailout_arg				= 38,
 			boarding_arg			= 38,
 			ejection_seat_name		= 0,
