@@ -1,0 +1,8 @@
+model={
+	lods={
+		{"vap_vc_mg_nest.EDM",50.000000};
+		{"vap_vc_mg_nest_LOD1.EDM",100.000000};
+		{"vap_vc_mg_nest_LOD2.EDM",150.000000};
+		{"vap_vc_mg_nest_LOD3.EDM",15000.000000};
+	};
+}

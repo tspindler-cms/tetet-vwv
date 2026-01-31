@@ -1,0 +1,9 @@
+model = {
+	lods = {
+		{"vap_vc_zil.edm",120.0},
+		{"vap_vc_zil_LOD1.edm",800.0},
+		{"vap_vc_zil_LOD3.edm",12000.0},
+		
+		
+		},
+}

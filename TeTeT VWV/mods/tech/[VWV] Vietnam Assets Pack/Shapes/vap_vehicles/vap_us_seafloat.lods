@@ -1,0 +1,9 @@
+model = {
+	lods = {
+		{"vap_us_seafloat.edm",350.0},
+		{"vap_us_seafloat_LOD1.edm",800.0},
+		{"vap_us_seafloat_LOD2.edm",2000.0},
+		{"vap_us_seafloat_LOD3.edm",15000.0},		
+		
+		},
+}

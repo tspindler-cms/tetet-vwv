@@ -1,0 +1,9 @@
+model = {
+	lods = {
+		{"vap_vc_bicycle_ammo.edm",30.0},
+		{"vap_vc_bicycle_ammo_LOD1.edm",80.0},
+		{"vap_vc_bicycle_ammo_LOD2.edm",300.0},
+		{"vap_vc_bicycle_LOD3.edm",15000.0},		
+		
+		},
+}

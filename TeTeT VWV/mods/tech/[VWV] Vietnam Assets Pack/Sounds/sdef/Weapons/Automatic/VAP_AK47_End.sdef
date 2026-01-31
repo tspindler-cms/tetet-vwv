@@ -1,0 +1,13 @@
+wave = "Effects/Weapons/Automatic/VAP_AK47_End"
+
+detached = false
+
+gain = 2.2
+gain_random = 0.02
+pitch = 0.6
+pitch_random = 0.05
+
+inner_radius = 12
+outer_radius = 1500
+
+--attack = 0.01
