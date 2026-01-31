@@ -1,0 +1,11 @@
+wave = "Effects/Weapons/Automatic/VAP_AK47_Reload"
+
+detached = true
+
+gain = 3
+gain_random = 0.01
+pitch = 1
+pitch_random = 0.01
+
+inner_radius = 2
+outer_radius = 10

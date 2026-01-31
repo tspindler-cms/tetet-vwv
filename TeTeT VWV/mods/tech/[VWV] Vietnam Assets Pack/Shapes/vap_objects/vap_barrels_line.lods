@@ -1,0 +1,8 @@
+model={
+	lods={
+		{"vap_barrels_line.EDM",20.000000};
+		{"vap_barrels_line_LOD1.EDM",60.000000};
+		{"vap_barrels_line_LOD2.EDM",150.000000};
+		{"vap_barrels_line_LOD3.EDM",15000.000000};
+	};
+}

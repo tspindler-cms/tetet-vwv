@@ -1,0 +1,10 @@
+model={
+	lods={
+		{"vap_us_hooch_radio.EDM",50.000000};
+		{"vap_us_hooch_radio_LOD1.EDM",100.000000};
+		{"vap_us_hooch_radio_LOD2.EDM",150.000000};
+		{"vap_us_hooch_radio_LOD3.EDM",300.000000};
+		{"vap_us_hooch_radio_LOD4.EDM",500.000000};
+		{"vap_us_hooch_closed_LOD4.EDM",15000.000000};
+	};
+}

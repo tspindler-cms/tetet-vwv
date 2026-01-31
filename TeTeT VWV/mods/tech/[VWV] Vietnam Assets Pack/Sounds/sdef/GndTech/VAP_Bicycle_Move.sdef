@@ -1,0 +1,10 @@
+wave = "Effects/GndTech/VAP_Bicycle_Move"
+
+detached = false
+
+gain = 1.25
+pitch = 0.8
+pitch_random = 0.05
+
+inner_radius = 2
+outer_radius = 50

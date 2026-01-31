@@ -1,0 +1,7 @@
+model={
+	lods={
+		{"vap_ammo_50cal_pack.EDM",40.000000};
+		{"vap_ammo_50cal_pack_LOD1.EDM",100.000000};
+		{"vap_ammo_50cal_pack_LOD2.EDM",15000.000000};
+	};
+}

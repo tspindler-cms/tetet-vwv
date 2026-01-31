@@ -1,0 +1,9 @@
+model = {
+	lods = {
+		{"vap_m35_truck.edm",250.0},
+		{"vap_m35_truck_LOD1.edm",500.0},
+		{"vap_m35_truck_LOD2.edm",15000.0},
+				
+		},
+		collision_shell="vap_m35_truck_collision.EDM";
+}

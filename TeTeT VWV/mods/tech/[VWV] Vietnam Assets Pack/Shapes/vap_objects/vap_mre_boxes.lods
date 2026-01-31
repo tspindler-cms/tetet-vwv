@@ -1,0 +1,8 @@
+model={
+	lods={
+		{"vap_mre_boxes.EDM",50.000000};
+		{"vap_mre_boxes_LOD1.EDM",80.000000};
+		{"vap_mre_boxes_LOD2.EDM",100.000000};
+		{"vap_mre_boxes_LOD3.EDM",15000.000000};
+	};
+}

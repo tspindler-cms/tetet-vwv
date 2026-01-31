@@ -1,0 +1,10 @@
+model={
+	lods={
+		{"vap_us_hooch_closed.EDM",150.000000};
+		{"vap_us_hooch_LP.EDM",200.000000};
+		{"vap_us_hooch_closed_LOD2.EDM",300.000000};
+		{"vap_us_hooch_closed_LOD3.EDM",500.000000};
+		{"vap_us_hooch_closed_LOD4.EDM",1000.000000};
+		{"vap_us_hooch_closed_LOD5.EDM",15000.000000};
+	};
+}

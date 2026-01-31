@@ -1,0 +1,34 @@
+
+VEHICLES:
+- "Zis 150" (https://sketchfab.com/3d-models/zis-150-983a0ebdd79b467ea1efffdb43cb8ddf) by mamont nikita (https://sketchfab.com/mamontnikita62)
+- "Utility Platform Truck" (https://sketchfab.com/3d-models/utility-platform-truck-a0fb1a1d51114598bda52239e632f3ed) by HippoStance (https://sketchfab.com/hippostance)
+- "ZiL-130" (https://sketchfab.com/3d-models/zil-130-38e93a0437c84184a141fe44a5125e4f) by nghesiyeubuom97 (https://sketchfab.com/nghesiyeubuom97)
+- "Monark vintage bicycle - low poly challenge" (https://sketchfab.com/3d-models/monark-vintage-bicycle-low-poly-challenge-4051385b9c3f42a1b0fc36c2a4a3afed) by MarioK (https://sketchfab.com/marioklos)
+
+HOOCH RADIO:
+- "Fan (Low Poly)" (https://sketchfab.com/3d-models/fan-low-poly-5bb6ca201cd841eb8a277f19a22c2bab) by youssefjoukeh (https://sketchfab.com/youssefjoukeh)
+- "Vintage Electric Desk Lamp" (https://sketchfab.com/3d-models/vintage-electric-desk-lamp-9f8471ec5e3a460b8384e43cca716ae7) by Oleksandr Tserkovniy (https://sketchfab.com/4882262)
+- "AmmoCans_GameReady_Animated_PBR_FREE!" (https://sketchfab.com/3d-models/ammocans-gameready-animated-pbr-free-4d14272e44bd4bb6898d91b223296606) by Alexandr Chub (https://sketchfab.com/DT7)
+- "Simple Table (Low Poly)" (https://sketchfab.com/3d-models/simple-table-low-poly-847fa35fec684e9ca57f4e3f8bdc25d0) by Berk Gedik (https://sketchfab.com/berkgedik)
+- "Rifle Box (Low Poly)" (https://sketchfab.com/3d-models/rifle-box-low-poly-aaa6d521741944359a6b5a6b67a0bee7) by Berk Gedik (https://sketchfab.com/berkgedik)
+- "Reversible Chalkboard" (https://sketchfab.com/3d-models/reversible-chalkboard-7c2682ee49404e26b65bca26dd29a9c8) by Spacesea (https://sketchfab.com/-Spacesea-)
+- "Radio_VEF202" (https://sketchfab.com/3d-models/radio-vef202-58934369266641b2a7be80e0da9cb79d) by egorova.e (https://sketchfab.com/silentegor) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+- "Foldable Chairs" (https://sketchfab.com/3d-models/foldable-chairs-28d501aa620d471892fb9e18cd11ee4d) by Jinhong Jeong (https://sketchfab.com/JinhongJeong)
+
+
+VC BUNKER:
+- "Log pile (game ready asset)" (https://sketchfab.com/3d-models/log-pile-game-ready-asset-0bad9fd158ab4cc187857609f710a440) by Pixel Life (https://sketchfab.com/pixellife)
+
+
+MG NEST:
+- "Coconut Palm" (https://sketchfab.com/3d-models/coconut-palm-26e787f2ff2e4c0fb004c3b0210805a3) by evolveduk (https://sketchfab.com/evolveduk)
+
+
+WEAPONS:
+- "25 mm/60 (1") Type 96 Twin" (https://sketchfab.com/3d-models/25-mm60-1-type-96-twin-a4aa2a6927ab4b81bdbaad513e4de14d) by ThomasBeerens (https://sketchfab.com/ThomasBeerens)
+- "AK47 Counter Strike 2" (https://sketchfab.com/3d-models/ak47-counter-strike-2-f61d46a3eee048999306017d8dd476b6) by blazitt (https://sketchfab.com/blazitt)
+
+
+GEAR:
+- "Vietnam War Era M1 Helmet" (https://sketchfab.com/3d-models/vietnam-war-era-m1-helmet-c4009bdb0f1b4510b710bd3c8d4aa033) by Tom Sandvik (https://sketchfab.com/Tom.Sandvik)
+- "Ration cardboard box" (https://sketchfab.com/3d-models/ration-cardboard-box-29e117f496344efca7ae99ad69a11468) by Sousinho (https://sketchfab.com/sousinho)

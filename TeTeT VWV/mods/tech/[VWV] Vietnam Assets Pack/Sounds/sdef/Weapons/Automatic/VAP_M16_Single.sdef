@@ -1,0 +1,11 @@
+wave = {"Effects/Weapons/Automatic/VAP_M16_Single"}
+
+detached = true
+
+gain = 2
+gain_random = 0.05
+pitch_random = 0.05
+
+peak_radius = 0
+inner_radius = 50
+outer_radius = 1000

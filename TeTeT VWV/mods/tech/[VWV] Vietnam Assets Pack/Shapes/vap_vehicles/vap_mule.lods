@@ -1,0 +1,10 @@
+model = {
+	lods = {
+		{"vap_mule.edm",30.0},
+		{"vap_mule_LOD1.edm",80.0},
+		{"vap_mule_LOD2.edm",200.0},
+		{"vap_mule_LOD3.edm",15000.0},		
+		
+		},
+		collision_shell="vap_mule_collision.EDM";
+}

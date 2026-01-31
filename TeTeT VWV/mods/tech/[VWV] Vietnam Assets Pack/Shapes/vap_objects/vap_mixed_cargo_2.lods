@@ -1,0 +1,8 @@
+model={
+	lods={
+		{"vap_mixed_cargo_2.EDM",40.000000};
+		{"vap_mixed_cargo_2_LOD1.EDM",100.000000};
+		{"vap_mixed_cargo_2_LOD2.EDM",180.000000};
+		{"vap_mixed_cargo_2_LOD3.EDM",15000.000000};
+	};
+}
