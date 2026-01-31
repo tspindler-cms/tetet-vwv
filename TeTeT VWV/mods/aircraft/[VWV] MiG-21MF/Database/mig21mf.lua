@@ -6,7 +6,7 @@ return {
 	HumanCockpit = false,
     Picture = "mig21mf.png",
     Rate = "50",
-    Shape = "mig21mf", 
+    Shape = "mig21mf",
 
     shape_table_data = {
         {
@@ -49,15 +49,15 @@ return {
     has_differential_stabilizer	= false,
     radar_can_see_ground = true,
 
-    -- nose_gear_pos = {1.42, -1.45, 0.00}, -- nosegear coord---6.157,	-1.26,	0
-    nose_gear_pos = {1.42, -1.46, 0.00}, -- nosegear coord---6.157,	-1.26,	0
+    -- nose_gear_pos = {1.42, -1.46, 0.00}, -- nosegear coord---6.157,	-1.26,	0
+    nose_gear_pos = {2.7556, -1.5203, 0.00}, -- nosegear coord---6.157,	-1.26,	0
     nose_gear_amortizer_direct_stroke = 0.1, -- down from nose_gear_pos !!!
     nose_gear_amortizer_reversal_stroke = -0.05, -- up
     nose_gear_amortizer_normal_weight_stroke = 0, -- up
     nose_gear_wheel_diameter = 0.5, -- in m
 
-    -- main_gear_pos = {-2.14, -2.23, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714
-    main_gear_pos = {-2.14, -1.50, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714
+    -- main_gear_pos = {-2.14, -1.50, 0.00}, -- main gear coords	----1.184,	-1.26,	2.714
+    main_gear_pos = {-2.0759, -1.6694, 1.4301}, -- main gear coords	----1.184,	-1.26,	2.714
     main_gear_amortizer_direct_stroke = 0, --  down from main_gear_pos !!!
     main_gear_amortizer_reversal_stroke = 0, --  up
     main_gear_amortizer_normal_weight_stroke = 0, -- down from main_gear_pos
@@ -301,14 +301,16 @@ return {
 
     Guns = {
         -- gun_mount("GSh_23_2", {count = 250}, {muzzle_pos = {2.00, -0.550, -0.5}})
-        gun_mount("GSh_23_2", {count = 250}, {muzzle_pos_connector = "GunPodMuzzle"})
+        -- can we define two muzzle positions for the GSh-23 twin-barrel gun?
+        gun_mount("GSh_23_2", {count = 125}, {muzzle_pos_connector = "Cannon_left"}),
+        gun_mount("GSh_23_2", {count = 125}, {muzzle_pos_connector = "Cannon_right"})
     },
     -------------------------------------------------------------------------------
     -- Pylon definitions improved by sinzov
     Pylons = {
         -- not x y z in blender, but y z x maybe
-        pylon(1, 0, -1.40844, -0.07162, -2.68404,
-            {use_full_connector_position = false, connector = "pylon_1"}, {
+        pylon(1, 0, 0,0,0,
+            {use_full_connector_position = true, connector = "Pylon_5"}, {
 				{CLSID = "FAB_50"},
 				{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
 				{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
@@ -325,8 +327,8 @@ return {
 				-- {CLSID = "CATM-9M"} -- CATM-9M
         }),
 
-	pylon(2, 0, -0.48246, -0.06790, -2.0856,
-            {use_full_connector_position = false, connector = "pylon_2"}, {
+	    pylon(2, 0, 0,0,0,
+            {use_full_connector_position = true, connector = "Pylon_4"}, {
 				{CLSID = "FAB_50"},
 				{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
 				{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
@@ -342,8 +344,8 @@ return {
 				-- {CLSID = "CATM-9M"} -- CATM-9M
         }),
 
-	pylon(3, 0,  0.10, -0.45, 0.0,                       	--  	nr, x?, l, h!, w!  / x, z, y 
-            {use_full_connector_position = false, connector = "pylon_5"}, {
+	    pylon(3, 0, 0,0,0,
+            {use_full_connector_position = true, connector = "Pylon_3"}, {
                 {CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
                 {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
                 {CLSID = "{PTB_490_MIG21}"},
@@ -351,8 +353,8 @@ return {
                 {CLSID = "{PTB_800_MIG21}"},
         }),
 
-	pylon(4, 0, -0.482458, -0.06790, 2.09747,
-            {use_full_connector_position = false, connector = "pylon_3"}, {
+	    pylon(4, 0, 0,0,0,
+            {use_full_connector_position = true, connector = "Pylon_2"}, {
 				{CLSID = "FAB_50"},
 				{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
 				{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
@@ -367,8 +369,8 @@ return {
                 {CLSID = "{RS-2US}"},
 		}),
 
-	pylon(5, 0, -1.40844, -0.07162, 2.69591,
-			{use_full_connector_position = false, connector = "pylon_4"}, {
+	    pylon(5, 0, 0,0,0,
+			{use_full_connector_position = true, connector = "Pylon_1"}, {
 				{CLSID = "FAB_50"},
 				{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
 				{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
@@ -384,12 +386,11 @@ return {
                 {CLSID = "{RS-2US}"},
 		}),
 
-    pylon(6, 0,  -2.95, -0.20, 0.0,
+        pylon(6, 0, -6.0,-0.2,0.0,
             {use_full_connector_position = false, connector = "pylon_3"}, {
           {CLSID = "{SPRD}"},
         }),
     },
-
 
     ------------------------------------------------------------------------------
 
