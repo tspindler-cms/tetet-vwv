@@ -195,16 +195,15 @@ return {
     -- Crew
     crew_members = {
         [1] = {
-            -- ejection_seat_name   = 9,
-            -- drop_canopy_name     = 41,
+            drop_canopy_name     = 41,
             pos                  = {1.54, 0.6, 0},
             drop_parachute_name  = "pilot_mig15_parachute",
 			pilot_name	 		 = "MiG-21_pilot",			-- Borrow ED's MiG-21bis pilot body
 			ejection_seat_name   = "mig19p_pilot_seat",
 			pilot_body_arg       = 38,
 			canopy_arg           = 38,
-			-- bailout_arg          = 38,
-			-- boarding_arg         = 38,
+			bailout_arg          = 38,
+			boarding_arg         = 38,
 			ejection_added_speed = {-1, 5, 0},
 			g_suit				 = 0.8,					-- % G suit efectivity: 0.0 to 1.0 (1.0 = modern g-suits)
         }
@@ -219,8 +218,8 @@ return {
 		{-2.5, 0, -2},
 		{-3.5, 0, 3},				-- Outer wing fire
 		{-3.5, 0, -3},
-        {-9.5, 0.15, 0},			-- 2.3m aft of engine
-		{-9.5, 0.15, 0},
+        {-7.5, 0.15, 0},			-- 2.3m aft of engine
+		{-7.5, 0.15, 0},
 		{-5.4, 0.1, 0.4},			-- engine sides
 		{-5.4, 0.1, -0.4},			-- engine sides
     },
