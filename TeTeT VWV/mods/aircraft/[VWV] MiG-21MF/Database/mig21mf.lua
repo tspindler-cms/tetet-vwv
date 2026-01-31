@@ -19,6 +19,10 @@ CONFIGURATION: MIKOYAN-GUREVICH MiG-21MF (NATO: Fishbed-J)
    - Dry Thrust: 4,070 kgf (~8,970 lbf).
    - Afterburner Thrust: 6,490 kgf (~14,300 lbf).
    - Note: Less powerful than the R-25 found in the MiG-21bis.
+   
+4. ARMAMENT:
+   - The union of weapons the VPAF and LSK used.
+
 --]]
 
 return {
@@ -81,10 +85,10 @@ return {
     ]]
 
     -- Center of Mass
-    center_of_mass          = {-0.2, -0.1, 0.0}, -- [m] Relative to model center (approx)
+    center_of_mass          = {-1.8, 0.0, 0.0}, -- [m] Relative to model center (approx)
 
     -- Moment of Inertia
-    moment_of_inertia       = {2500, 24000, 21000, -500}, -- [kg*m^2] {Roll, Yaw, Pitch, POI}
+    moment_of_inertia       = {3300, 61000, 57500, -1500}, -- [kg*m^2] {Roll, Yaw, Pitch, POI}
 
     -- ===================================================================
     -- PERFORMANCE PARAMETERS
@@ -93,7 +97,7 @@ return {
     -- Speeds
     V_opt                   = 250,          -- [m/s TAS] Cruise speed
     V_take_off              = 95,           -- [m/s TAS] Takeoff speed (~185 kts)
-    V_land                  = 85,           -- [m/s TAS] Landing speed (~165 kts)
+    V_land                  = 94,           -- [m/s TAS] Landing speed
     V_max_sea_level         = 361,          -- [m/s TAS] Max speed at Sea Level (Mach 1.06)
     V_max_h                 = 620,          -- [m/s TAS] Max speed at Altitude (Mach 2.05)
     CAS_min                 = 75,           -- [m/s TAS] Stall/Min controllable speed
@@ -111,7 +115,7 @@ return {
     Ny_min                  = -3.0,         -- [G] Min G limit
     Ny_max                  = 7.0,          -- [G] Normal operational limit
     Ny_max_e                = 8.5,          -- [G] Structural limit
-    bank_angle_max          = 75,           -- [deg] AI Bank limit
+    bank_angle_max          = 76,           -- [deg] AI Bank limit
 
     -- Takeoff Geometry
     AOA_take_off            = math.rad(10), -- [rad] Rotation AoA (~10 deg)
@@ -174,14 +178,14 @@ return {
     -- Nominal Weight (Static on Ground): 110 mm – 130 mm
     -- Maximum Weight (MTOW / Hard Landing): ~40 mm – 50 mm
     main_gear_amortizer_direct_stroke           =  0.0,     -- [arg value] Full Strut Expansion (no weight on wheels) (EDM doesn't have main gear compression args)
-    main_gear_amortizer_reversal_stroke         =  0.0,     -- [m] Full Strut Compression (maximum+ weight on wheels)
-    main_gear_amortizer_normal_weight_stroke    =  0.0,     -- [m] Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
+    main_gear_amortizer_reversal_stroke         =  0.0,    -- [m] Full Strut Compression (maximum+ weight on wheels)
+    main_gear_amortizer_normal_weight_stroke    =  0.0,    -- [m] Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
     main_gear_wheel_diameter                    =  0.655,   -- [m] Diameter of the main gear wheel
 
     tand_gear_max           = math.tan(math.rad(35)),       -- [tan] Caster steering angle stop (35 deg)
 
     -- Control Surfaces
-    flaps_maneuver          = 0.5,          -- [scalar] Flap efficiency/state for maneuvering
+    flaps_maneuver          = 25/45,        -- [scalar] Flap efficiency/state for maneuvering
     wing_tip_pos            = { -3.85, -0.065, 3.55 },
     stores_number           = 5,            -- [int] 4 Wings + 1 Centerline
 
@@ -191,19 +195,34 @@ return {
     -- Crew
     crew_members = {
         [1] = {
-            ejection_seat_name  = 9,
-            drop_canopy_name    = 41,
-            pos                 = {1.54, 0.6, 0},
-            drop_parachute_name = "pilot_mig15_parachute",
-			pilot_name	 		= "MiG-21_pilot",			-- Borrow ED's MiG-21bis pilot body
+            -- ejection_seat_name   = 9,
+            -- drop_canopy_name     = 41,
+            pos                  = {1.54, 0.6, 0},
+            drop_parachute_name  = "pilot_mig15_parachute",
+			pilot_name	 		 = "MiG-21_pilot",			-- Borrow ED's MiG-21bis pilot body
+			ejection_seat_name   = "mig19p_pilot_seat",
+			pilot_body_arg       = 38,
+			canopy_arg           = 38,
+			-- bailout_arg          = 38,
+			-- boarding_arg         = 38,
+			ejection_added_speed = {-1, 5, 0},
+			g_suit				 = 0.8,					-- % G suit efectivity: 0.0 to 1.0 (1.0 = modern g-suits)
         }
     },
 
     -- Damage / Fires
     fires_pos = {
-        {-0.6, 0.5, 0}, {0, 0, 1}, {0, 0, -1},
-        {-1, 0, 2}, {-1, 0, -2}, {-2, 0, 3}, {-2, 0, -3},
-        {-8, 0.15, 0}, {-3.5, 0.2, 0.4}, {-3.5, 0.2, -0.4}
+        {-2.2, 1.12, 0},			-- Center tank fire (dorsel)
+		{-1, 0, 1},					-- Inner wing fire
+		{-1, 0, -1},
+        {-2.5, 0, 2},				-- Mid wing fire
+		{-2.5, 0, -2},
+		{-3.5, 0, 3},				-- Outer wing fire
+		{-3.5, 0, -3},
+        {-9.5, 0.15, 0},			-- 2.3m aft of engine
+		{-9.5, 0.15, 0},
+		{-5.4, 0.1, 0.4},			-- engine sides
+		{-5.4, 0.1, -0.4},			-- engine sides
     },
 
     -- Sensors
@@ -397,78 +416,104 @@ return {
     Pylons = {
         -- Outboard Port
         pylon(1, 0, 0, 0, 0, {use_full_connector_position = true, connector = "Pylon_5"}, {
-            {CLSID = "FAB_50"},
+    -- {CLSID = "FAB_50"},
+			{CLSID = "{FB3CE165-BF07-4979-887C-92B87F13276B}"}, -- FAB-100
 			{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
-			{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
-			{CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
-			{CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
-			{CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
-			{CLSID = "FAB_100M"},
-			{CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
-            {CLSID = "{PTB_490C_MIG21}"}, -- droptank
+	-- {CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
+	-- {CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
+	-- {CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
+	-- {CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
+	-- {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+    -- {CLSID = "{PTB_490C_MIG21}"}, -- droptank
             {CLSID = "{R-13M}"},
-            {CLSID = "{R-3R}"},
+    -- {CLSID = "{R-3R}"},
             {CLSID = "{R-3S}"},
-            {CLSID = "{RS-2US}"},
-			-- {CLSID = "CATM-9M"} -- CATM-9M
+    -- {CLSID = "{RS-2US}"},
+			{CLSID = "{UB-16_S5M}"},
+			{CLSID = "{R-60}"},
         }),
+		
         -- Inboard Port
         pylon(2, 0, 0, 0, 0, {use_full_connector_position = true, connector = "Pylon_4"}, {
-            {CLSID = "FAB_50"},
+	-- {CLSID = "FAB_50"},
+			{CLSID = "{FB3CE165-BF07-4979-887C-92B87F13276B}"}, -- FAB-100
+			{CLSID = "{FAB-100-4}"},							-- MER 4xFAB-100
 			{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
-			{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
-			{CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
-			{CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
-			{CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
-			{CLSID = "FAB_100M"},
-			{CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+			{CLSID = "{37DCC01E-9E02-432F-B61D-10C166CA2798}"}, -- FAB-500 M62
+	-- {CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
+	-- {CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
+	-- {CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
+	-- {CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
+	-- {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
 			{CLSID = "{R-13M}"},
 			{CLSID = "{R-3R}"},
 			{CLSID = "{R-3S}"},
-			{CLSID = "{RS-2US}"},
-			-- {CLSID = "CATM-9M"} -- CATM-9M
+	-- {CLSID = "{RS-2US}"},
+			{CLSID = "{UB-16_S5M}"},
+			{CLSID = "{UB-32_S5M}"},
+			{CLSID = "{S-24A}"},
+			{CLSID = "{S-24B}"},
+			{CLSID = "{R-60}"},
+			{CLSID = "{R-60 2L}"},
         }),
+		
         -- Centerline
         pylon(3, 0, 0, 0, 0, {use_full_connector_position = true, connector = "Pylon_3"}, {
-            {CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
-			{CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
-			{CLSID = "{PTB_490_MIG21}"},
+            {CLSID = "{FB3CE165-BF07-4979-887C-92B87F13276B}"}, -- FAB-100
+			{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
+			{CLSID = "{37DCC01E-9E02-432F-B61D-10C166CA2798}"}, -- FAB-500 M62
+	-- {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+	-- {CLSID = "{PTB_490_MIG21}"},
 			{CLSID = "{PTB_490C_MIG21}"},
 			{CLSID = "{PTB_800_MIG21}"},
+			{CLSID = "{RN-28}"},
         }),
+		
         -- Inboard Stbd
         pylon(4, 0, 0, 0, 0, {use_full_connector_position = true, connector = "Pylon_2"}, {
-            {CLSID = "FAB_50"},
+    -- {CLSID = "FAB_50"},
+			{CLSID = "{FB3CE165-BF07-4979-887C-92B87F13276B}"}, -- FAB-100
+			{CLSID = "{FAB-100-4}"},							-- MER 4xFAB-100
 			{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
-			{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
-			{CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
-			{CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
-			{CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
-			{CLSID = "FAB_100M"},
-			{CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+			{CLSID = "{37DCC01E-9E02-432F-B61D-10C166CA2798}"}, -- FAB-500 M62
+	-- {CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
+	-- {CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
+	-- {CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
+	-- {CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
+	-- {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
 			{CLSID = "{R-13M}"},
 			{CLSID = "{R-3R}"},
 			{CLSID = "{R-3S}"},
-			{CLSID = "{RS-2US}"},
+	-- {CLSID = "{RS-2US}"},
+			{CLSID = "{UB-16_S5M}"},
+			{CLSID = "{UB-32_S5M}"},
+			{CLSID = "{S-24A}"},
+			{CLSID = "{S-24B}"},
+			{CLSID = "{R-60}"},
+			{CLSID = "{R-60 2R}"},
         }),
+		
         -- Outboard Stbd
         pylon(5, 0, 0, 0, 0, {use_full_connector_position = true, connector = "Pylon_1"}, {
-            {CLSID = "FAB_50"},
+    -- {CLSID = "FAB_50"},
+			{CLSID = "{FB3CE165-BF07-4979-887C-92B87F13276B}"}, -- FAB-100
 			{CLSID = "{3C612111-C7AD-476E-8A8E-2485812F4E5C}"}, -- FAB-250
-			{CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
-			{CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
-			{CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
-			{CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
-			{CLSID = "FAB_100M"},
-			{CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
-			{CLSID = "{PTB_490C_MIG21}"}, -- droptank
+	-- {CLSID = "B_8V20A_CM"}, -- B-8V20A - 20 S-8TsM
+	-- {CLSID = "B_8V20A_OM"}, -- B-8V20A - 20 S-8OM
+	-- {CLSID = "B-8M1 - 20 S-8OFP2"}, -- B-8M1 - 20 S-8OFP2
+	-- {CLSID = "B-8V20A - 20 S-8OFP2"}, -- B-8V20A - 20 S-8OFP2
+	-- {CLSID = "{05544F1A-C39C-466b-BC37-5BD1D52E57BB}"}, -- UPK-23-250
+	-- {CLSID = "{PTB_490C_MIG21}"}, -- droptank
 			{CLSID = "{R-13M}"},
-			{CLSID = "{R-3R}"},
+	-- {CLSID = "{R-3R}"},
 			{CLSID = "{R-3S}"},
-			{CLSID = "{RS-2US}"},
+	-- {CLSID = "{RS-2US}"},
+			{CLSID = "{UB-16_S5M}"},
+			{CLSID = "{R-60}"},
         }),
+		
         -- SPRD (JATO)
-        pylon(6, 0, -3.85, -0.37, 0.0, {use_full_connector_position = false"}, {
+        pylon(6, 0, -3.85, -0.37, 0.0, {use_full_connector_position = false}, {
             {CLSID = "{SPRD}"},
         }),
     },
