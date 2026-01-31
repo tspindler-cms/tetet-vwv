@@ -129,9 +129,9 @@ return {
     engines_nozzles = {
         [1] = {
 			-- pos  = {-5.65, 0.26, 0.004707}, -- [m] Nozzle position
-            pos = {-7.4, 0.0779, 0.004707}, -- [m] Nozzle position
+            pos      = {-7.4, 0.0779, 0.0}, -- [m] Nozzle position
             elevation           = 0.0,      -- [deg] Thrust vector elevation angle
-            diameter            = 0.657,    -- [m] Nozzle diameter
+            diameter            = 0.906,    -- [m] Nozzle diameter
             exhaust_length_ab   = 4.5,      -- [m] Flame length (R-13 is shorter than R-25's 6.5m CSR flame)
             exhaust_length_ab_K = 0.76,     -- [scalar] Flame expansion
             smokiness_level     = 0.6,      -- [scalar] Older engine, smokier than modern
@@ -157,8 +157,8 @@ return {
 
     -- Gear Geometry
     -- Nose: 2.75m fwd, 1.52m down. Main: 2.07m aft, 1.67m down, 1.43m side
-    nose_gear_pos           = {  2.7630, -1.661, 0.000 },
-    main_gear_pos           = { -2.0735, -1.667, 1.427 },
+    nose_gear_pos           = {  2.7630, -1.66, 0.000 },
+    main_gear_pos           = { -2.0735, -1.66, 1.427 },
 
     -- KT-102 Strut
     -- Unweighted (In Flight / Jacked): ~200 mm
@@ -174,8 +174,8 @@ return {
     -- Nominal Weight (Static on Ground): 110 mm – 130 mm
     -- Maximum Weight (MTOW / Hard Landing): ~40 mm – 50 mm
     main_gear_amortizer_direct_stroke           =  0.0,     -- [arg value] Full Strut Expansion (no weight on wheels) (EDM doesn't have main gear compression args)
-    main_gear_amortizer_reversal_stroke         = -0.27,    -- [m] Full Strut Compression (maximum+ weight on wheels)
-    main_gear_amortizer_normal_weight_stroke    = -0.12,    -- [m] Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
+    main_gear_amortizer_reversal_stroke         =  0.0,     -- [m] Full Strut Compression (maximum+ weight on wheels)
+    main_gear_amortizer_normal_weight_stroke    =  0.0,     -- [m] Strut Weight Compression (normal compression with weight on wheels; number is amount of "chrome showing")
     main_gear_wheel_diameter                    =  0.655,   -- [m] Diameter of the main gear wheel
 
     tand_gear_max           = math.tan(math.rad(35)),       -- [tan] Caster steering angle stop (35 deg)
@@ -467,7 +467,7 @@ return {
 			{CLSID = "{RS-2US}"},
         }),
         -- SPRD (JATO)
-        pylon(6, 0, -3.85, -0.35, 0.0, {use_full_connector_position = false"}, {
+        pylon(6, 0, -3.85, -0.37, 0.0, {use_full_connector_position = false"}, {
             {CLSID = "{SPRD}"},
         }),
     },
