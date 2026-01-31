@@ -1,0 +1,18 @@
+wave = "Effects/Weapons/Automatic/VAP_QuadM2_Reload"
+
+detached = false
+
+gain = 0.6
+gain_random = 0.0
+pitch = 1
+pitch_random = 0.05
+
+position = {-2, 0.0, 0}
+
+peak_radius = 0
+inner_radius = 10
+outer_radius = 100
+
+--attack = 2
+--release = 2
+--nodoppler = true

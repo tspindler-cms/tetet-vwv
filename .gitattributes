@@ -1,2 +1,11 @@
 Solon_Turman.edm filter=lfs diff=lfs merge=lfs -text
 MiG21MF.zip filter=lfs diff=lfs merge=lfs -text
+vap_us_seafloat_LOD1.edm filter=lfs diff=lfs merge=lfs -text
+radio_vietnam.ogg filter=lfs diff=lfs merge=lfs -text
+vap_us_seafloat.edm filter=lfs diff=lfs merge=lfs -text
+pbr_mk2.zip filter=lfs diff=lfs merge=lfs -text
+vap_m35_truck.zip filter=lfs diff=lfs merge=lfs -text
+vap_mule.zip filter=lfs diff=lfs merge=lfs -text
+vap_prop.zip filter=lfs diff=lfs merge=lfs -text
+vap_us_barge.zip filter=lfs diff=lfs merge=lfs -text
+vap_zil130.zip filter=lfs diff=lfs merge=lfs -text

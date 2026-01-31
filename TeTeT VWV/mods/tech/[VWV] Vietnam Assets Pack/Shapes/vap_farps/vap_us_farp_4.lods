@@ -1,0 +1,7 @@
+model={
+	lods={
+		{"vap_us_farp_4.EDM",40.000000};
+		{"vap_us_farp_4_LOD1.EDM",300.000000};
+		{"vap_us_farp_4_LOD2.EDM",15000.000000};
+	};
+}

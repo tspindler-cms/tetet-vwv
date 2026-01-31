@@ -1,0 +1,8 @@
+model = {
+	lods = {
+		{"vap_house_tiny.edm",300.0},
+		{"vap_house_tiny_LOD1.edm",1200.0},
+		{"vap_house_tiny_LOD2.edm",20000.0},
+		
+		},
+}

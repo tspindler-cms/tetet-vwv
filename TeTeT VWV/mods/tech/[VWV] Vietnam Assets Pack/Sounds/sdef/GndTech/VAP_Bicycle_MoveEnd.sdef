@@ -1,0 +1,10 @@
+wave = "Effects/GndTech/VAP_Bicycle_MoveEnd"
+
+detached = true
+
+gain = 1.0
+pitch = 1.0
+pitch_random = 0.05
+
+inner_radius = 2
+outer_radius = 50

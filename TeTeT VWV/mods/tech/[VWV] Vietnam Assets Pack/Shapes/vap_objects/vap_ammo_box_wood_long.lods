@@ -1,0 +1,8 @@
+model={
+	lods={
+		{"vap_ammo_box_wood_long.EDM",20.000000};
+		{"vap_ammo_box_wood_long_LOD1.EDM",80.000000};
+		{"vap_ammo_box_wood_long_LOD2.EDM",150.000000};
+		{"vap_ammo_box_wood_long_LOD3.EDM",500.000000};
+	};
+}

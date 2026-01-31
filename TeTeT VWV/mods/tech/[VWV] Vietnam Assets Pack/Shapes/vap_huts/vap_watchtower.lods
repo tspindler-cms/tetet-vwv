@@ -1,0 +1,8 @@
+model = {
+	lods = {
+		{"vap_watchtower.edm",500.0},
+		{"vap_watchtower_LOD1.edm",1200.0},
+		{"vap_watchtower_LOD2.edm",20000.0},
+		
+		},
+}

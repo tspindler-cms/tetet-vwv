@@ -1,0 +1,6 @@
+model={
+	lods={
+		{"vap_vc_tunnel_dest.EDM",50.000000};
+		{"vap_vc_tunnel_dest_LOD1.EDM",5000.000000};
+	};
+}

@@ -1,0 +1,7 @@
+model = {
+	lods = {
+		{"vap_m35_truck_dest.edm",150.0},
+		{"vap_m35_truck_dest_LOD1.edm",12000.0},		
+		
+		},
+}

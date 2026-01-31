@@ -1,0 +1,9 @@
+model = {
+	lods = {
+		{"vap_civ_zis_150.edm",50.0},
+		{"vap_civ_zis_150_LOD1.edm",800.0},
+		{"vap_vc_zil_LOD3.edm",12000.0},
+				
+		},
+		collision_shell="vap_vc_zis_150_collision.EDM";
+}

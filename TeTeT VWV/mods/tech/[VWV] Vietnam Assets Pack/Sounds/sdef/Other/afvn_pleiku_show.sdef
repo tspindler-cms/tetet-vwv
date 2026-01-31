@@ -1,0 +1,4 @@
+wave = "Effects/Other/afvn_pleiku_show"
+inner_radius = 5
+outer_radius = 30
+gain = 4

@@ -1,0 +1,4 @@
+wave = "Effects/Other/fm_radio_nam"
+inner_radius = 5
+outer_radius = 50
+gain = 10
