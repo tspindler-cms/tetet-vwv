@@ -1,0 +1,30 @@
+MiG-21MF
+
+mig21mf
+
+Name: MiG-21MF (NATO: Fishbed-J)
+Type: Multi-role Fighter / Interceptor
+Crew: 1 (Pilot)
+Length: 47' 7" (14.50 m)
+Wing span: 23' 5" (7.15 m)
+Height: 13' 5" (4.10 m)
+Wing area: 247.6 ft² (23.0 m²)
+Max Mach at S/L: 1.05 (694 kts / 800 mph)
+Max Mach at altitude: 2.10 (Level)
+Weight empty: 11,800 lb (5,350 kg)
+Max takeoff weight: 20,725 lb (9,400 kg) [With 3 drop tanks]
+Max landing weight: 14,990 lb (6,800 kg)
+Normal G: +7.0 / -3.0 g G limit: +8.5 g (Structural)
+Max range: 770 nmi (1,430 km) [Internal + 3 drop tanks]
+Internal Fuel: 5,840 lb (2,650 kg) Service ceiling: 57,400' (17,500 m)
+Thrust Rating (ISA sea level): 1 x 9,040 lbf (Dry) / 14,550 lbf (Afterburner) [Tumansky R-13-300]
+
+Armament:
+
+    1 x 23mm GSh-23L twin-barrel cannon (200 rounds)
+
+    4 x Underwing hardpoints for up to 4 x K-13A (AA-2 Atoll) or R-60 (AA-8 Aphid) air-to-air missiles
+
+    2 x UB-16 or UB-32 rocket pods (S-5 rockets) or up to 2,000 kg of bombs
+
+The MiG-21MF represents the "third generation" of the legendary Fishbed series, evolving the platform from a specialized, short-range interceptor into a more capable multi-role fighter. Characterized by its large dorsal spine—which housed additional fuel and avionics—and the more powerful R-13 engine, the "MF" addressed the critical lack of an internal gun found in earlier "P" variants. While it retained the delta-wing’s superb high-speed performance and climb rate, the MF introduced the RP-22 Sapfir-21 radar and doubled the missile capacity to four pylons. In the final stages of the Vietnam War and later Cold War conflicts, the MiG-21MF proved to be a lethal energy fighter; though it lacked the high-alpha maneuverability of the MiG-17, its blistering acceleration and "hit-and-run" capability made it a supreme interceptor against the F-4 Phantom and F-105 Thunderchief.
