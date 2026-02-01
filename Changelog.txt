@@ -1,3 +1,6 @@
+2026-02-01
+  Vietnam Asset Pack
+    - Remove oggs
 2026-01-31
   Vietnam Asset Pack 
     - Add VAP from EightBall and Tobsen
