@@ -14,8 +14,8 @@ GT.visual.shape_dstr	= "vap_loudspeakers2Vietnam_dest";
 GT.visual.fire_size = 0.000;
 
 GT.radar_rotation_period = 1.0;
-GT.snd.radarRotation = "radio_vietnam";
-GT.toggle_alarm_state_interval = 7228.0;
+GT.snd.radarRotation = "AFVN_LS";
+--GT.toggle_alarm_state_interval = 60.0;
 
 GT.sensor = {};
 GT.sensor.max_range_finding_target = 0;

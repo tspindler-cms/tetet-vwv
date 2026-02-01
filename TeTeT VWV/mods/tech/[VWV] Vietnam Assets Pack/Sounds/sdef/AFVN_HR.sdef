@@ -1,0 +1,5 @@
+wave = "Effects/Other/AFVN"
+gain = 0.65
+pitch = 1.0
+inner_radius = 5
+outer_radius = 100

@@ -12,7 +12,7 @@ GT.visual.shape_dstr = "vap_us_hooch_radio";
 
 -----------------------------------------------------------------------------------------------------
 GT.radar_rotation_period = 1.0;
-GT.snd.radarRotation = "afvn_custom";
+GT.snd.radarRotation = "AFVN_HR";
 --GT.toggle_alarm_state_interval = 60.0;
 
 GT.animation_arguments.locator_rotation = 11;
