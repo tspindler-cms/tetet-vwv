@@ -33,6 +33,7 @@ return {
     Picture                 = "mig21mf.png",
     Rate                    = "50",			-- [#] Multiplayer points
     Shape                   = "mig21mf",
+    country_of_origin 	    = "SUN",	    -- USSR
 
     shape_table_data        = {
         {
