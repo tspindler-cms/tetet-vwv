@@ -268,24 +268,44 @@ local vwv_mig17f = {
 			cx_brk				= 0.032,			-- [coeff] Airbrake drag
 			
 			table_data = {
-				-- M: Mach, Cx0: Zero-lift drag, Cya: Normal force coeff, B/B4: Polar shape
-				-- Omxmax: Roll rate, Aldop: Max AoA, Cymax: Max Lift
-				-- M     Cx0     Cya      B      B4     Omxmax  Aldop   Cymax
-				{ 0.0,	0.018,	0.067,	0.074,	0.01,	0.272,	17.3,	1.1   },		
-				{ 0.1,	0.018,	0.067,	0.074,	0.01,	0.272,	17.3,	1.1   },
-				{ 0.2,	0.0172,	0.067,	0.074,	0.01,	0.641,	17.3,	1.1   },
-				{ 0.3,	0.0165,	0.067,	0.074,	0.01,	0.989,	17.3,	1.1   },
-				{ 0.4,	0.016,	0.0682,	0.074,	0.01,	1.289,	17.3,	1.1   },
-				{ 0.5,	0.016,	0.0708,	0.074,	0.01,	1.289,	16.9,	1.075 },
-				{ 0.6,	0.016,	0.0746,	0.074,	0.01,	1.008,	16.2,	1.031 },
-				{ 0.7,	0.016,	0.0798,	0.074,	0.01,	0.450,	15.3,	0.974 }, -- Hydro-boosters help roll
-				{ 0.8,	0.0168,	0.0850,	0.08,	0.01,	0.300,	13.9,	0.882 }, 
-				{ 0.86,	0.018,	0.0822,	0.082,	0.11,	0.200,	12.8,	0.815 }, 
-				{ 0.9,	0.022,	0.076,	0.088,	0.36,	0.100,	11.6,	0.737 }, -- Drag rise delayed (45 deg sweep)
-				{ 0.94,	0.030,	0.0737,	0.125,	0.43,	0.050,	9.8,	0.625 }, 
-				{ 1,	0.048,	0.0735,	0.15,	0.56,	0.020,	8,		0.511 }, 
-				{ 1.04,	0.060,	0.0744,	0.23,	0.84,	0.010,	7.4,	0.469 },
-				{ 1.2,	0.0642,	0.0760,	0.26,	1,		0.005,	6.7,	0.425 },
+				-- M:       Mach Number
+                -- Cx0:     Zero-lift drag coefficient (Parasitic + Wave Drag)
+                -- Cya:     Normal force coefficient slope (Lift efficiency)
+                -- B:       Induced drag coefficient (2nd order)
+                -- B4:      Induced drag coefficient (4th order)
+                -- Omxmax:  Max roll rate (approximate rad/s)
+                -- Aldop:   Max Angle of Attack (Stall angle in degrees)
+                -- Cymax:   Max Lift Coefficient
+
+                -- M    Cx0     Cya    B      B4    Omxmax  Aldop  Cymax
+                -- LOW SPEED
+                { 0.0,  0.022,  0.076, 0.090, 0.02, 0.400,  18.0,  1.15 }, 
+                { 0.1,  0.022,  0.076, 0.090, 0.02, 0.400,  18.0,  1.15 },
+                { 0.2,  0.022,  0.076, 0.090, 0.02, 0.850,  18.0,  1.15 },
+
+                -- CRUISE (Increased B from 0.075 to 0.090 to punish high weight)
+                { 0.3,  0.025,  0.072, 0.100, 0.02, 1.400,  18.0,  1.15 },
+                { 0.4,  0.025,  0.072, 0.100, 0.02, 1.600,  18.0,  1.15 },
+                { 0.5,  0.028,  0.072, 0.110, 0.02, 1.600,  17.5,  1.12 },
+                
+                -- THE PROBLEM ZONE (Floating occurred here)
+                { 0.6,  0.040,  0.070, 0.200, 0.10, 1.500,  17.0,  1.08 },
+                { 0.7,  0.045,  0.065, 0.250, 0.12, 1.100,  16.5,  1.02 },
+
+                -- TRANSONIC ONSET (Mach 0.80)
+                { 0.8,  0.050,  0.055, 0.220, 0.15, 0.600,  15.0,  0.94 }, 
+                
+                -- MACH 0.86 "THE TRAP"
+                { 0.86, 0.075,  0.048, 0.350, 0.40, 0.400,  14.0,  0.80 },
+
+                -- MACH "WALL" (Mach 0.90 - 0.98)
+                { 0.9,  0.095,  0.050, 0.450, 0.60, 0.250,  12.5,  0.80 },
+                { 0.94, 0.120,  0.040, 0.500, 0.90, 0.150,  11.0,  0.72 }, 
+                { 0.98, 0.150,  0.035, 0.600, 1.20, 0.100,  10.0,  0.65 },
+
+                -- SUPERSONIC (Mach 1.05+)
+                { 1.05, 0.180,  0.030, 0.700, 1.50, 0.050,  9.0,   0.55 },
+                { 1.2,  0.200,  0.025, 0.800, 1.80, 0.020,  8.5,   0.45 },
 			}, 
 		}, 
 
@@ -304,8 +324,8 @@ local vwv_mig17f = {
 			dcx_eng				= 0.0134,			-- [coeff] Engine drag
 			cemax				= 1.05,				-- [kg/kgf/h] SFC (Dry)
 			cefor				= 2.05,				-- [kg/kgf/h] SFC (AB)
-			dpdh_m				= 1340,				-- [N/km] Thrust loss/km (Dry)
-			dpdh_f				= 1750,				-- [N/km] Thrust loss/km (AB)
+			dpdh_m				= 2100,				-- [N/km] Thrust loss/km (Dry)
+			dpdh_f				= 6000,				-- [N/km] Thrust loss/km (AB)
 
 			table_data = {
 				-- Klimov VK-1F Thrust Table in Newtons
