@@ -12,7 +12,7 @@ GT.visual.shape_dstr = "vap_us_hooch_closed";
 
 -----------------------------------------------------------------------------------------------------
 GT.radar_rotation_period = 1.0;
---GT.snd.radarRotation = "";
+--GT.snd.radarRotation = "AFVN_HC";
 --GT.toggle_alarm_state_interval = 60.0;
 
 GT.animation_arguments.locator_rotation = 11;
@@ -70,8 +70,8 @@ end --for
 
 -----------------------------------------------------------------------------------------------------
 GT.Name = "vap_us_hooch_closed";
-GT.DisplayName = _("VAP US Hooch");
-GT.DisplayNameShort = _("Hooch")
+GT.DisplayName = _("VAP US Hooch Closed");
+GT.DisplayNameShort = _("Hooch Closed")
 GT.Rate = 5;
 
 --GT.Sensors = { OPTIC = {"generic tank daysight", "human nightsight", "human daysight",}, RADAR = GT.Name, };
