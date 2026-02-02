@@ -29,6 +29,7 @@ return {
     Name                    = "vwv_mig21mf",
     DisplayName             = _("[VWV] MiG-21MF 'Fishbed J'"),
     DisplayNameShort        = _("MiG-21MF"),
+    date_of_introduction	= 1969.00,
     HumanCockpit            = false,
     Picture                 = "mig21mf.png",
     Rate                    = "50",			-- [#] Multiplayer points
