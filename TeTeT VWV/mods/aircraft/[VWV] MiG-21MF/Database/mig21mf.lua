@@ -200,7 +200,7 @@ return {
             pos                  = {1.54, 0.6, 0},
             drop_parachute_name  = "pilot_mig15_parachute",
 			pilot_name	 		 = "MiG-21_pilot",			-- Borrow ED's MiG-21bis pilot body
-			ejection_seat_name   = "mig19p_pilot_seat",
+			ejection_seat_name   = 9,
 			pilot_body_arg       = 38,
 			canopy_arg           = 38,
 			bailout_arg          = 38,
