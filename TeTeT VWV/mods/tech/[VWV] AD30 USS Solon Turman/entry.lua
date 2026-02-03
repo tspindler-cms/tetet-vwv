@@ -6,7 +6,7 @@ installed 	 = true,
 dirName	  	 = current_mod_path,
 
 fileMenuName = _("vwv_Solon_Turman"),
-version		 = "2.4.0",
+version		 = "3.0.0",
 state		 = "installed",
 info		 = _("Solon Turman is a General Cargo Ship built in 1961. In DCS we depict it as militarized version in form of a Destroyer Tender with a helicopter landing pad."),
 

@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-2.4.0
+3.0.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
@@ -34,6 +34,7 @@ USS Oklahoma City (CLG-5), a Cleveland light cruiser class conversion to a guide
 Tango and Charlie boats, landing crafts modified for riverine usage
 USS Radford Fletcher (DD-446), class FRAM II destroyer
 USS Epperson (DD-719), Gearing class FRAM I destroyer
+Vietnam Asset Pack, from EightBall and Tobsen
 
 This has been my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -114,6 +115,8 @@ Thanks
     Fredy - maintaining upaut's legacy boats
     Urbi - textures for EC-121, H-2, and CH-46D
     TheAdmiral - rigging the AD-30 Solon Turman
+    EightBall & Tobsen - for the Vietnam Asset Pack (VAP)
+    HawaiianRyan - massive support in updating and streamlining configs
 
 Without these persons the mod would not have been possible!
 
@@ -155,6 +158,9 @@ RA-5C Vigilante
 MiG-21MF "Fishbed-C"
     - Textures are work in progress
     - Gear up location is pretty bad
+    - Cone too large
+    - Aux inlet door alwaus open
+    - Pilot sits too deep
 A-1 Skyraider
     - The new bridle disappears during launch
     - The precision of dropping Napalm is abysmal
