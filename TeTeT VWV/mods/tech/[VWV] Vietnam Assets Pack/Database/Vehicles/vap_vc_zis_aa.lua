@@ -1,4 +1,4 @@
--- VAP VC zis AA Type 96, truck based on HL pickup with DShK by ED --
+-- VAP VC ZiS-150 AA Type 96 technical, truck based on HL pickup with DShK by ED --
 
 GT = {};
 GT_t.ws = 0;
@@ -93,8 +93,8 @@ __LN.BR = {	{ connector_name = 'POINT_GUN_01_L'},
 
 -----------------------------------------------------------------------------------------------------
 GT.Name = "vap_zis_150_aa";
-GT.DisplayName = _("VAP VC Zis AA Type 96");
-GT.DisplayNameShort = _("VC Zis AA");
+GT.DisplayName = _("VAP VC ZiS-150 AA Type 96");
+GT.DisplayNameShort = _("VC Type 96 Technical");
 GT.Rate = 6;
 
 GT.Crew = 3;
@@ -113,4 +113,5 @@ GT.tags  =
     "Air Defence",
 	"SP AAA",
 }
+
 GT.Countries = {"Vietnam"}
