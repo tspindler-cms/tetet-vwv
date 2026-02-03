@@ -29,10 +29,12 @@ return {
     Name                    = "vwv_mig21mf",
     DisplayName             = _("[VWV] MiG-21MF 'Fishbed J'"),
     DisplayNameShort        = _("MiG-21MF"),
+    date_of_introduction	= 1969.00,
     HumanCockpit            = false,
     Picture                 = "mig21mf.png",
     Rate                    = "50",			-- [#] Multiplayer points
     Shape                   = "mig21mf",
+    country_of_origin 	    = "SUN",	    -- USSR
 
     shape_table_data        = {
         {
@@ -196,10 +198,10 @@ return {
     crew_members = {
         [1] = {
             drop_canopy_name     = 41,
-            pos                  = {1.54, 0.6, 0},
+            pos                  = {1.58, 0.6, 0},
             drop_parachute_name  = "pilot_mig15_parachute",
 			pilot_name	 		 = "MiG-21_pilot",			-- Borrow ED's MiG-21bis pilot body
-			ejection_seat_name   = "mig19p_pilot_seat",
+			ejection_seat_name   = 9,
 			pilot_body_arg       = 38,
 			canopy_arg           = 38,
 			bailout_arg          = 38,
