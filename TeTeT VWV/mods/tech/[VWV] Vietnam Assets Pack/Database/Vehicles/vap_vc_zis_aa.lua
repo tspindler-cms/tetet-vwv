@@ -1,4 +1,4 @@
--- VAP VC zis ZU-23-2, trcuk based on HL pickup with DShK by ED --
+-- VAP VC zis AA Type 96, truck based on HL pickup with DShK by ED --
 
 GT = {};
 GT_t.ws = 0;
@@ -26,7 +26,7 @@ GT.sensor.height = 2.826;
 			-- { id = "camo" , control = 'checkbox', label = _('camo'), defValue = true, arg=60, boolean_inverted = true} -- boolean_inverted = true by default: element present - argVal=0, absent - argVal=1
 		-- }
 		
-GT.animation_arguments.headlights = 31;		
+GT.animation_arguments.headlights = 31;
 
 --destruction  
 GT.agony_fire_pos_y = 0.982;
@@ -72,7 +72,7 @@ GT.WS[ws].pidY = GT_t.AAA_PIDY;
 GT.WS[ws].pidZ = GT_t.AAA_PIDZ;
 
 --GT.WS[1].LN[1]
-__LN = add_launcher(GT.WS[ws], GT_t.LN_t.vap_2zu23);
+__LN = add_launcher(GT.WS[ws], GT_t.LN_t.vap_type96tm);
 --__LN.type = 3;
 __LN.connectorFire 			= true
 __LN.reflection_limit 		= 0.22;
@@ -81,7 +81,7 @@ __LN.sightMasterMode 		= 1;
 __LN.sightIndicationMode 	= 1;
 --__LN.PL[1].virtualStwID 	= 1;
 --__LN.PL[1].ammo_capacity 	= 100
-for i=2,10 do -- 10x100 clips, 1000 rounds
+for i=2,30 do
 	__LN.PL[i] = {}
 	set_recursive_metatable(__LN.PL[i], __LN.PL[1])
 end
@@ -90,11 +90,11 @@ __LN.BR = {	{ connector_name = 'POINT_GUN_01_L'},
 			{ connector_name = 'POINT_GUN_01_R'},
 
 		};
-		
+
 -----------------------------------------------------------------------------------------------------
 GT.Name = "vap_zis_150_aa";
-GT.DisplayName = _("VAP VC Zis AA ZU-23");
-GT.DisplayNameShort = _("VC Zis ZU23");
+GT.DisplayName = _("VAP VC Zis AA Type 96");
+GT.DisplayNameShort = _("VC Zis AA");
 GT.Rate = 6;
 
 GT.Crew = 3;
@@ -109,7 +109,7 @@ GT.attribute = {wsType_Ground, wsType_Tank, wsType_Gun, wsType_SAM, WSTYPE_PLACE
                 };
 GT.category = "Air Defence";
 GT.tags  =
-{	
+{
     "Air Defence",
 	"SP AAA",
 }
