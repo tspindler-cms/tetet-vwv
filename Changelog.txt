@@ -1,15 +1,56 @@
+2026-02-03
+  Vietnam Asset Pack
+    - Change VC ZIS truck to be armed with Japanese 25mm instead of ZU 23-2mm
+2026-02-02
+  MiG-21MF
+    - Complete overhaul of model by Odyseus
+    - Complete overhaul of config by HawaiianRyan
 2026-02-01
   Vietnam Asset Pack
     - Remove oggs
 2026-01-31
-  Vietnam Asset Pack 
+  Vietnam Asset Pack (EightBall and Fredy, FMD)
     - Add VAP from EightBall and Tobsen
+    - New mod name "[VWV] Vietnam Assets Pack"
+		- File restructuring (Units & Sounders)
+		  - Harmonization of DisplayName and ShortDisplayName without affecting GT_Name
+    - New Units :	
+      - US M35 Quad M2 BMG
+		  - VC Bicycle Ammo (for weapon resupply)
+		  - VC Tunnel AK47 Type3
+		  - Loudspeakers Vietnam (broadcasting "Radio Vietnam" on loudspeakers)
+    - New Weapons :	
+      - Quad M2 BMG (Browning machine gun) + projectiles
+		  - AK47 Type II + projectiles
+		  - AK47 Type III + projectiles
+		  - M40 Recoilless Gun with 3 selectable rounds (in the editor)
+		  - ZU-23 + projectiles API-APIT-HEI-HEFT
+		  - Type63 MLRS Rocket Launcher
+    - New Sounds :	
+      - Soundtrack for Weapon Quad M2
+		  - Soundtrack for Weapon AK47 TypeII and TypeIII
+    - Updates :	
+      - Implementation of 3 firing positions for "Bunker single", Center-Left-Right
+		  - Removal of "Engine" and "movement" sound effects on all Bicycles
+		  - Removal of "Engine" sound effects on VC Type63 MLRS
+		  - Removal of turret rotation sound effects for "VC bicycle mortar" and "VC Type63 MLRS"
+		  - Corrections of arguments and firing angles for 	vehicles :
+        - VC Zil 130 (AK47)
+				- VC Zis AA ZU-23
+				- VC Type63 MLRS
+			- fortifications:	
+        - VC Bunker Single
+				- VC MG net
+		- Adjustment of detection + engagement distances for all "Vehicles" and "Fortifications"
+		- Repositioning of Combined Arms viewpoint for :
+      - VC Type63 MLRS
+			- VC Bunker single (Still a work in progress)
 2026-01-19
-  USS New Jersey
+  USS New Jersey (James)
     - New livery by Woogey
     - Improve config and model by James
 2026-01-16
-  Knox class Destroyer Escorts
+  Knox class Destroyer Escorts (James)
     - Fix rudder position
 2026-01-12
   O-1
