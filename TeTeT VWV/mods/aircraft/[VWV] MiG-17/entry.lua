@@ -4,7 +4,7 @@ declare_plugin(self_ID, {
     dirName = current_mod_path,
     displayName = _("mig17f"),
     fileMenuName = _("mig17f"),
-    developerName = _("Hawkeye, TeTeT"),
+    developerName = _("Hawkeye, TeTeT, HawaiianRyan"),
     update_id = "mig17f",
     version = "3.0.0",
     state = "installed",
