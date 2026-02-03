@@ -263,8 +263,8 @@ local vwv_mig17f = {
 			Czbe				= -0.014,			-- [coeff] Yaw stability
 			
 			cx_gear				= 0.025,			-- [coeff] Gear drag
-			cx_flap				= 0.065,			-- [coeff] Flap drag
-			cy_flap				= 0.35,				-- [coeff] Flap lift
+			cx_flap				= 0.075,			-- [coeff] Flap drag
+			cy_flap				= 0.22,				-- [coeff] Flap lift
 			cx_brk				= 0.032,			-- [coeff] Airbrake drag
 			
 			table_data = {
@@ -279,9 +279,9 @@ local vwv_mig17f = {
 
                 -- M    Cx0     Cya    B      B4    Omxmax  Aldop  Cymax
                 -- LOW SPEED
-                { 0.0,  0.022,  0.076, 0.090, 0.02, 0.400,  18.0,  1.15 }, 
-                { 0.1,  0.022,  0.076, 0.090, 0.02, 0.400,  18.0,  1.15 },
-                { 0.2,  0.022,  0.076, 0.090, 0.02, 0.850,  18.0,  1.15 },
+                { 0.0,  0.025,  0.065, 0.120, 0.02, 0.400,  18.0,  1.15 }, 
+                { 0.1,  0.025,  0.065, 0.120, 0.02, 0.400,  18.0,  1.15 },
+                { 0.2,  0.025,  0.065, 0.120, 0.02, 0.850,  18.0,  1.15 },
 
                 -- CRUISE / LOITER (Mach 0.3 - 0.5)
                 { 0.3,  0.022,  0.072, 0.160, 0.05, 1.400,  18.0,  1.15 },
