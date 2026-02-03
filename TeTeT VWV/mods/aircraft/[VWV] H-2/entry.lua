@@ -10,7 +10,7 @@ declare_plugin("jjj_Kaman",
     encyclopedia_path = current_mod_path..'/Encyclopedia',
     update_id        = "H-2 Seasprite",
     fileMenuName = _("H-2 Seasprite"),
-    version = "2.4.0",
+    version = "3.0.0",
     state = "installed",
     info = _("Wikipedia: The Kaman Seasprite is a ship-based helicopter originally developed and produced by American manufacturer Kaman Aircraft Corporation. It has been typically used as a compact and fast-moving rotorcraft for utility and anti-submarine warfare missions."),
 })
