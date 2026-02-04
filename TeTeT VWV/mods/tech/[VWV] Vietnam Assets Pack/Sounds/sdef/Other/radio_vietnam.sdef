@@ -1,9 +1,0 @@
-wave = "Effects/Other/radio_vietnam"
-
-gain = 0.8
-
-position = {0, 8.8, 0}
-
-peak_radius = 0.5
-inner_radius = 40
-outer_radius = 600
