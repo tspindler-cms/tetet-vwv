@@ -7,6 +7,5 @@ dofile("GroundUnits/WeaponSystem/Tools/MissileSounds.lua")
 
 
 vap_zis_150_aa_weapons = weapons:new()
-vap_zis_150_aa_weapons:addTurret(1)
-vap_zis_150_aa_weapons:addLauncher(1, 1, automatic_gun_2A38)
-
+vap_zis_150_aa_weapons:addTurret(1, "GndTech/TurretRotation_Manual")
+vap_zis_150_aa_weapons:addLauncher(1, 1, automatic_gun_25mm)

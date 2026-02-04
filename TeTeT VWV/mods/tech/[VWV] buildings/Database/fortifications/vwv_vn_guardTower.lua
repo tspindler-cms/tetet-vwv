@@ -43,7 +43,7 @@ GT.WS[ws].stabilizer = false;
 GT.WS[ws].laser = false;
 -- GT.WS[ws].pointer = 'POINT_SIGHT_1';
 
-local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vap_vc_ak47n)
+local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vwv_ak47t3)
 ln.maxShootingSpeed = 0
 for i=2,8 do
     ln.PL[i] = {}
@@ -71,7 +71,7 @@ GT.WS[ws].stabilizer = false;
 GT.WS[ws].laser = false;
 -- GT.WS[ws].pointer = 'POINT_SIGHT_2';
 
-local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vap_vc_ak47n)
+local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vwv_ak47t3)
 ln.maxShootingSpeed = 0
 for i=2,8 do
     ln.PL[i] = {}
@@ -99,7 +99,7 @@ GT.WS[ws].stabilizer = false;
 GT.WS[ws].laser = false;
 -- GT.WS[ws].pointer = 'POINT_SIGHT_3';
 
-local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vap_vc_ak47n)
+local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vwv_ak47t3)
 ln.maxShootingSpeed = 0
 for i=2,8 do
     ln.PL[i] = {}
@@ -127,7 +127,7 @@ GT.WS[ws].stabilizer = false;
 GT.WS[ws].laser = false;
 -- GT.WS[ws].pointer = 'POINT_SIGHT_4';
 
-local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vap_vc_ak47n)
+local ln = add_launcher(GT.WS[ws], GT_t.LN_t.vwv_ak47t3)
 ln.maxShootingSpeed = 0
 for i=2,8 do
     ln.PL[i] = {}
