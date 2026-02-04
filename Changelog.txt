@@ -1,3 +1,8 @@
+2026-02-04
+  Vietnam Asset Pack
+    - Remove not needed sounds
+  Buildings
+    - Fix AK-47s firing from VC Guard Tower
 2026-02-03
   Vietnam Asset Pack
     - Change VC ZIS truck to be armed with Japanese 25mm instead of ZU 23-2mm
