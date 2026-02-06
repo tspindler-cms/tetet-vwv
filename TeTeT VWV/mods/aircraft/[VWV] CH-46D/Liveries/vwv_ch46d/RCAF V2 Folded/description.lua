@@ -1,6 +1,5 @@
 livery = {
 
-
 {"ch46_outside",	DIFFUSE			,	"CH46_OUTSIDE", false};
 {"ch46_outside",	NORMAL_MAP		,	"CH46_OUTSIDE_Normal", true};
 {"ch46_outside",        ROUGHNESS_METALLIC      ,       "CH46_OUTSIDE_RoughMet", true};
@@ -8,11 +7,8 @@ livery = {
 {"ch46d_BORT_single",	DIFFUSE			,	"empty", true};
 {"ch46d_BORT_tens",	DIFFUSE			,	"empty", true};
 
-{"Pilot1_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_GREEN", false};
-{"Pilot2_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_GREEN", false};
-
-
-
+{"Pilot1_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_ORANGE", true};
+{"Pilot2_Helmet",	DIFFUSE			,	"T_Pilot_Helmet1_color_USMC_ORANGE", true};
 
 };
 

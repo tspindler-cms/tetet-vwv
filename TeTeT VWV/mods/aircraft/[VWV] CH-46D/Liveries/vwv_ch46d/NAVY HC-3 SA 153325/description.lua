@@ -1,8 +1,8 @@
 livery = {
 	{"ch46_outside",	DIFFUSE			  ,	"CH46_OUTSIDE", false};
-	{"ch46_outside",	ROUGHNESS_METALLIC,	"CH46_OUTSIDE_roughmet", false};	
+	{"ch46_outside",	ROUGHNESS_METALLIC,	"CH46_OUTSIDE_roughmet", false};
 	{"ch46d_BORT_single",	DIFFUSE			,	"empty", true};
-	{"ch46d_BORT_tens",	DIFFUSE			,	"empty", true};	
+	{"ch46d_BORT_tens",	DIFFUSE			,	"empty", true};
 };
 
 custom_args =

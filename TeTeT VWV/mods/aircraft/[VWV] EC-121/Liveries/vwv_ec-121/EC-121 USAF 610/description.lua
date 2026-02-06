@@ -4,7 +4,7 @@ livery = {
 	{"EC121_Outside",	ROUGHNESS_METALLIC,	"EC121_Fuselage RM USAF 3", false};
 
 	{"EC121_Gears",			DIFFUSE			,	"GEARS", false};
-	{"EC121_Wheels",		DIFFUSE			,	"WHEELS", false};
+	{"EC121_Wheels",		DIFFUSE			,	"EC121_WHEELS_ALT", true};
 	{"EC121_Exhausts",		DIFFUSE			,	"EXHAUST", false};
 }
 

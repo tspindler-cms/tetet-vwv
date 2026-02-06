@@ -9,3 +9,4 @@ vap_mule.zip filter=lfs diff=lfs merge=lfs -text
 vap_prop.zip filter=lfs diff=lfs merge=lfs -text
 vap_us_barge.zip filter=lfs diff=lfs merge=lfs -text
 vap_zil130.zip filter=lfs diff=lfs merge=lfs -text
+CH46D-pilot.zip filter=lfs diff=lfs merge=lfs -text
