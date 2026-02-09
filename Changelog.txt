@@ -1,3 +1,6 @@
+2026-02-09
+  USS Enterprise 66 and 69
+    - Fix deck hull number reflecting on water
 2026-02-04
   Vietnam Asset Pack
     - Remove not needed sounds
