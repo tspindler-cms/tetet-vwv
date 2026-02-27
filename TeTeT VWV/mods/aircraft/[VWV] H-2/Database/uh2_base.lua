@@ -657,7 +657,8 @@ return {
             {
 				modelRotorHub_EDM       = "vwv_uh2a_rotorhub_front",
                 modelRotorHubLod_FBX    = "/models/sh2f_rotor_hub_lod.fbx",
-                boundRotorHub_FBX       = "/models/sh2f_rotor_hub_bound.fbx",
+                -- boundRotorHub_FBX       = "/models/sh2f_rotor_hub_bound.fbx",
+				boundRotorHub_FBX       = "/models/vwv_uh2a_rotor_hub_bound.fbx",
                 boundBlade_FBX          = "/models/ch46d_rotor_blade_bound.fbx",
                 modelBlade_FBX          = {"/models/sh2f_rotor_blade.fbx"},
             },
@@ -665,7 +666,7 @@ return {
         tail_rotor = {
             blades_count    = 3,
             modelBlade_FBX  = "/models/sh2f_blade.fbx",
-            rotor_direction = -1,
+            rotor_direction = 1,
             rotor_locations = {{pos = {-7.2187, 1.4516, -0.4933}, pitch = 0.0, yaw = math.rad(90)}},
         },
     },
