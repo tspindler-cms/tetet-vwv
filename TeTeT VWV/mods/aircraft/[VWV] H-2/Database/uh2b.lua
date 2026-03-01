@@ -1,16 +1,16 @@
-local uh2b = dofile(current_mod_path.."/Database/uh2_base.lua")
+local uh2b = dofile(current_mod_path .. "/Database/uh2_base.lua")
 
-uh2b.Name 						= "uh2b"
-uh2b.DisplayName 				= _("[VWV] UH-2B Seasprite")
-uh2b.DisplayNameShort 			= _("UH-2B")
-uh2b.date_of_introduction		= 1963.08
-uh2b.Shape 						= "uh2b"
-uh2b.WorldID					=  WSTYPE_PLACEHOLDER
-uh2b.livery_entry 				= "uh2b"
+uh2b.Name 						    = "uh2b"
+uh2b.DisplayName 				    = _("[VWV] UH-2B Seasprite")
+uh2b.DisplayNameShort 			    = _("UH-2B")
+uh2b.date_of_introduction		    = 1963.08
+uh2b.Shape 						    = "uh2b"
+uh2b.WorldID					    =  WSTYPE_PLACEHOLDER
+uh2b.livery_entry 				    = "uh2b"
 uh2b.shape_table_data[1].file		= "uh2b"
 uh2b.shape_table_data[1].index		= WSTYPE_PLACEHOLDER
 uh2b.shape_table_data[1].username 	= "uh2b"
-uh2b.attribute					= {wsType_Air, wsType_Helicopter, wsType_Cruiser, WSTYPE_PLACEHOLDER ,"Transport helicopters",}
+uh2b.attribute					    = {wsType_Air, wsType_Helicopter, wsType_Cruiser, WSTYPE_PLACEHOLDER ,"Transport helicopters",}
 -- uh2b.rotor_animation.rotor_models.modelRotorHub_EDM = "sh2f_rotor_hub"
 -- uh2b.rotor_animation.rotor_locations = {pos = { 0.5824, 1.8477, 0.0}, pitch = -0.01}
 -- uh2b.rotor_animation.tail_rotor.blades_count = 3
