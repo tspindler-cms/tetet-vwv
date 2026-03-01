@@ -657,7 +657,8 @@ return {
             {
 				modelRotorHub_EDM       = "vwv_uh2a_rotorhub_front",
                 modelRotorHubLod_FBX    = "/models/sh2f_rotor_hub_lod.fbx",
-                boundRotorHub_FBX       = "/models/sh2f_rotor_hub_bound.fbx",
+                -- boundRotorHub_FBX       = "/models/sh2f_rotor_hub_bound.fbx",
+				boundRotorHub_FBX       = "/models/vwv_uh2a_rotor_hub_bound.fbx",
                 boundBlade_FBX          = "/models/ch46d_rotor_blade_bound.fbx",
                 modelBlade_FBX          = {"/models/sh2f_rotor_blade.fbx"},
             },
@@ -870,3 +871,4 @@ return {
 		},
     },
 };
+
