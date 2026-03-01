@@ -1,17 +1,17 @@
-local uh2c = dofile(current_mod_path.."/Database/uh2_base.lua")
+local uh2c = dofile(current_mod_path .. "/Database/uh2_base.lua")
 
-uh2c.Name 						= "uh2c"
-uh2c.DisplayName 				= _("[VWV] UH-2C Seasprite")
-uh2c.DisplayNameShort 			= _("UH-2C")
-uh2c.date_of_introduction		= 1967.08
-uh2c.Shape 						= "uh2c"
-uh2c.livery_entry 				= "uh2c"
+uh2c.Name 							= "uh2c"
+uh2c.DisplayName 					= _("[VWV] UH-2C Seasprite")
+uh2c.DisplayNameShort 				= _("UH-2C")
+uh2c.date_of_introduction			= 1967.08
+uh2c.Shape 							= "uh2c"
+uh2c.livery_entry 					= "uh2c"
 uh2c.shape_table_data[1].file		= "uh2c"
 uh2c.shape_table_data[1].username 	= "uh2c"
 -- uh2c.rotor_animation.rotor_models.modelRotorHub_EDM = "sh2f_rotor_hub"
 -- uh2c.rotor_animation.rotor_locations = {pos = { 0.5824, 1.8477, 0.0}, pitch = -0.01}
 -- uh2c.rotor_animation.tail_rotor.blades_count = 3
-uh2c.attribute					= {wsType_Air, wsType_Helicopter, wsType_Battleplane, WSTYPE_PLACEHOLDER ,"Transport helicopters",}
+uh2c.attribute			= {wsType_Air, wsType_Helicopter, wsType_Battleplane, WSTYPE_PLACEHOLDER ,"Transport helicopters",}
 
 
 uh2c.height 			= 4.40		-- Height increased slightly due to new engine doghouse/fairing

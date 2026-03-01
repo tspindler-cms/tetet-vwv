@@ -8,7 +8,7 @@ return {
 -- https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
 -- https://vertipedia.vtol.org/aircraft/getAircraft/aircraftID/726
 
-	Name                = "uh2a",
+    Name                = "uh2a",
     DisplayName         = _("[VWV] UH-2A Seasprite"),
     DisplayNameShort    = _("UH-2A"),
     date_of_introduction= 1962.12,
@@ -16,50 +16,45 @@ return {
     Rate                = 40, 
     Shape               = "uh2b",	-- I know, but the "a" EDM had 3 blades on the main rotor mistakenly
     WorldID             = WSTYPE_PLACEHOLDER,
-	defFuelRatio    	= 0.8, -- fuel default in fractions of the full (1.0)
-	
-	-- AI / MAP PROPERTIES
+    defFuelRatio		= 0.8,		-- fuel default in fractions of the full (1.0)
+
+    -- AI / MAP PROPERTIES
     mapclasskey         = "P0091000020",
     attribute           = {wsType_Air, wsType_Helicopter, wsType_Cruiser, WSTYPE_PLACEHOLDER ,"Transport helicopters",},
-	-- Categories 			= {"{828CEADE-3F1D-40aa-93CE-8CDB73FE2710}", "Helicopter",},
+    -- Categories		= {"{828CEADE-3F1D-40aa-93CE-8CDB73FE2710}", "Helicopter",},
     Categories          = {},
     country_of_origin   = "USA",
-	takeoff_and_landing_type = "VTOL",		-- VTOL, CTOL... any others?
-	
-	-- LIFE & DAMAGE
-    livery_entry    	= "uh2a",
-	shape_table_data 	=
-	{
-		{
-			file  	 = "uh2b";	-- I know, but the "a" EDM had 3 blades on the main rotor mistakenly
-			life  	 = 5; -- lifebar
-			vis   	 = 3; -- visibility gain.
-			desrt    = 'sh-60b-oblomok'; -- Name of destroyed object file name
-			fire  	 = { 300, 2}; -- Fire on the ground after destroyed: 300sec 2m
-			username = "uh2a";	-- This needs to match Name up above, or at least be unique
-			index    =  WSTYPE_PLACEHOLDER;
-            classname 	= "lLandPlane";
-			positioning = "BYNORMAL";
-			drawonmap = true;
-		},
-		{
-			name  = "sh-60b-oblomok";
-			file  = "sh-60b-oblomok";
-			fire  = { 240, 2};
-		},
+    takeoff_and_landing_type = "VTOL",	-- VTOL, CTOL... any others?
 
-	},
-	
-	
-	------------------------------------------------------------------------------------------------
+    -- LIFE & DAMAGE
+    livery_entry  		= "uh2a",
+    shape_table_data    = {{
+        file        = "uh2b";   -- I know, but the "a" EDM had 3 blades on the main rotor mistakenly
+        life        = 5;		-- lifebar
+        vis         = 3;		-- visibility gain.
+        desrt       = 'sh-60b-oblomok'; -- Name of destroyed object file name
+        fire        = {300, 2};	-- Fire on the ground after destroyed: 300sec 2m
+        username    = "uh2a";   -- This needs to match Name up above, or at least be unique
+        index       = WSTYPE_PLACEHOLDER;
+        classname   = "lLandPlane";
+        positioning = "BYNORMAL";
+        drawonmap   = true;
+    },{
+        name  = "sh-60b-oblomok";
+        file  = "sh-60b-oblomok";
+        fire  = { 240, 2};
+    }},
+
+
+    ------------------------------------------------------------------------------------------------
     -- DIMENSIONS & GEOMETRY
     ------------------------------------------------------------------------------------------------
-	length 			= 11.48,    -- [m] Fuselage length (Total length w/ rotors ~15.9m)
-	height 			= 4.11,     -- [m] Overall height
-	
-	-- Landing Gear
-	nose_gear_pos 	= {-4.728, -1.755,	0}, 	-- Nose gear position (ground under center of the axle)
-	main_gear_pos 	= { 1.664, -1.728,  1.699},-- Main gear position (ground under center of the axle)
+    length           = 11.48,    -- [m] Fuselage length (Total length w/ rotors ~15.9m)
+    height           = 4.11,     -- [m] Overall height
+    
+    -- Landing Gear
+    nose_gear_pos   = {-4.728, -1.755,    0},   -- Nose gear position (ground under center of the axle)
+    main_gear_pos   = { 1.664, -1.728,  1.699},	-- Main gear position (ground under center of the axle)
 												-- automatically mirrored
 	wheel_steering_angle_max = math.rad(180.0),	-- Maximum steering angle for tail wheel [degrees]
 
@@ -647,10 +642,6 @@ return {
     },
 	
 	rotor_animation = {
-        -- rotor_locations = { {pos = { 0.5824, 1.7843, 0.0}, pitch = -0.01}, },
-		
-		-- Forward Tilt: 6° forward; source: https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
-		-- Lateral Tilt: 6° port; source: https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
 		-- EDM already has rotor tilted forward 3 degrees w.r.t. the longitudinal axis.
 		rotor_locations = { {pos = { 0.5824, 1.8477, 0.0}, pitch = math.rad(-3.0), roll = math.rad(-6.0)}, },
         rotor_models = {

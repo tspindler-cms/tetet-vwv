@@ -6,16 +6,18 @@ local sh2f = dofile(current_mod_path.."/Database/uh2_base.lua")
 -- Ref: Real-world data for Twin-Engine T58-GE-8F configuration
 ----------------------------------------------------------------------------------------------------
 
-sh2f.Name 						= "sh2f"
-sh2f.DisplayName 				= _('[VWV] SH-2F Seasprite')
-sh2f.DisplayNameShort 			= _('SH-2F')
-sh2f.date_of_introduction		= 1973.05	-- Operational introduction of the F model
-sh2f.Shape 						= "sh2f"
-sh2f.livery_entry 				= "sh2f"
+sh2f.Name 							= "sh2f"
+sh2f.DisplayName 					= _('[VWV] SH-2F Seasprite')
+sh2f.DisplayNameShort 				= _('SH-2F')
+sh2f.date_of_introduction			= 1973.05	-- Operational introduction of the F model
+sh2f.Shape 							= "sh2f"
+sh2f.livery_entry 					= "sh2f"
 sh2f.shape_table_data[1].file		= "sh2f"
 sh2f.shape_table_data[1].username 	= "sh2f"
--- sh2f.rotor_animation.rotor_models.modelRotorHub_EDM = "sh2f_rotor_hub"
--- sh2f.rotor_animation.rotor_locations = {pos = { 0.5824, 1.7843, 0.0, pitch = math.rad(-4.0), roll = math.rad(-2.0)} }
+-- Forward Tilt: 6° forward; source: https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
+-- Lateral Tilt: 6° port; source: https://www.sjsu.edu/researchfoundation/docs/AHS_1999_Colbourne.pdf
+-- EDM already has rotor tilted forward 3 degrees w.r.t. the longitudinal axis.
+sh2f.rotor_animation.rotor_locations = { {pos = { 0.5824, 1.8477, 0.0}, pitch = math.rad(-3.0), roll = math.rad(-6.0)}, }
 sh2f.rotor_animation.tail_rotor.blades_count = 4
 sh2f.mapclasskey = "P0091000021"
 sh2f.attribute = {wsType_Air, wsType_Helicopter, wsType_Battleplane, WSTYPE_PLACEHOLDER, "Attack helicopters", "Transport helicopters", }
@@ -70,7 +72,7 @@ sh2f.Vy_max          = 12.4		-- Max climb speed: ~2,440 ft/min
 	New Area Estimation:
 	Base (5.5) + Radome (0.5) + External Gear (0.4) = ~6.4 m^2
 ]]
-sh2f.fuselage_area 	= 6.4	-- Frontal Reference Area (S_ref) [m^2]
+sh2f.fuselage_area	= 6.4	-- Frontal Reference Area (S_ref) [m^2]
 --[[
 	Drag Coefficient Update:
 	The chin radome is aerodynamically blunt.
@@ -88,18 +90,18 @@ sh2f.engines_count			= 2
 
 sh2f.engines_nozzles = {
 	[1] = { -- STARBOARD ENGINE
-		pos = {-0.1963, 0.95, 1.3},	
-		elevation 			= -5.0,		
+		pos = {-0.1963, 0.95, 1.3},
+		elevation 			= -5.0,
 		azimuth 			= -30.0,	-- Angled out 45 degrees in actuality
-		diameter 			= 0.37,		
+		diameter 			= 0.37,
 		exhaust_length_ab 	= 1.1,
 		exhaust_length_ab_K = 0.35,
 		smokiness_level 	= 0.08,
 		engine_number 		= 1,
 	}, 
 	[2] = { -- PORT ENGINE
-		pos = {-0.1963, 0.95, -1.3},	
-		elevation 			= -5.0,		
+		pos = {-0.1963, 0.95, -1.3},
+		elevation 			= -5.0,
 		azimuth 			= 30.0,
 		diameter 			= 0.37,
 		exhaust_length_ab 	= 1.1,
@@ -118,15 +120,15 @@ sh2f.engine_data.power_WEP		=	1007	-- Emergency power [kW]
 
 -- T58-GE-8F Power vs Altitude Coefficients
 sh2f.engine_data.power_TH_k	= {
-	[1] = { 3.40,  -92.00,  932.0},	-- Max Continuous
-	[2] = { 4.30, -115.00,  1007.0},-- Takeoff 
-	[3] = {-0.81,  -60.30,  850.0}, -- Cruise
-	[4] = {-1.30,  -28.17,  650.0}, -- Idle/Descent
+	[1] = {  3.40, -92.00, 932.0 },	-- Max Continuous
+	[2] = {  4.30, -115.0, 1007.0 },-- Takeoff 
+	[3] = { -0.81, -60.30, 850.0 },	-- Cruise
+	[4] = { -1.30, -28.17, 650.0 },	-- Idle/Descent
 }
 
-sh2f.engine_data.SFC_k	= {0.0, -1.150e-005, 0.3900} -- Slightly higher SFC for older -8F at power
+sh2f.engine_data.SFC_k = {0.0, -1.150e-005, 0.3900} -- Slightly higher SFC for older -8F at power
 
-sh2f.SFM_Data.engine.name 	= "T58-GE-8F"
+sh2f.SFM_Data.engine.name = "T58-GE-8F"
 
 ------------------------------------------------------------------------------------------------
 -- ROTOR & PHYSICS
