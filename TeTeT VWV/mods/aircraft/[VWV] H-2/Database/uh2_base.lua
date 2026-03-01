@@ -666,7 +666,7 @@ return {
         tail_rotor = {
             blades_count    = 3,
             modelBlade_FBX  = "/models/sh2f_blade.fbx",
-            rotor_direction = 1,
+            rotor_direction = -1,
             rotor_locations = {{pos = {-7.2187, 1.4516, -0.4933}, pitch = 0.0, yaw = math.rad(90)}},
         },
     },
@@ -871,3 +871,4 @@ return {
 		},
     },
 };
+
