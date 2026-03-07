@@ -1707,7 +1707,6 @@ return {
 	doors_movement				= 2,		-- Enable custom doors mechanimations
 	
 	mechanimations = {
-		
 		Door0 = {
 			-- Open/close main ramp (aft of aircraft)
 			-- 0.026 to hit ground with compression (args 4 & 6 -> 0.58 for appropriate compression when full open = 0)
@@ -1739,37 +1738,34 @@ return {
 				},
 			},
 		},
-		
+
 		Door1 = {	-- Open/close cargohold side door (starboard side)
-			{Transition = {"Close", "Open"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0},},},}, 	Flags = {"Reversible"},},
-			{Transition = {"Open",  "Close"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0},},},}, 	Flags = {"Reversible", "StepsBackwards"},},
-			{Transition = {"Any",   "Board"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0},},},},},
-			{Transition = {"Board", "Close"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0},},},},},
+			{Transition = {"Any", 	"Open"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0}}}}},
+			{Transition = {"Any",	"Close"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0}}}}},
+			{Transition = {"Any",   "Board"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0}}}}},
 			
 			{Transition = {"Any",   "Bailout"},	Sequence = {{C = {	{"Arg", 50,  "set", 1.0},		-- Vanishes stbd pilot
 																	{"Arg", 472, "set", 1.0},		-- Vanishes port pilot
 																	-- {"JettisonCanopy", 0},		-- CH-46D cannot do this
-																	},},},},	-- Crew bails out port-side door
+																	}}}},	-- Crew bails out port-side door
 		},
 		
 		Door2 = {DuplicateOf = "Door1"},
 		
 		CrewLadder = {
-			{Transition = {"Dismantle", "Erect"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0},},},}, 	Flags = {"Reversible"},},
-			{Transition = {"Erect", "Dismantle"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0},},},}, 	Flags = {"Reversible", "StepsBackwards"},},
+			{Transition = {"Dismantle", "Erect"},	Sequence = {{C = {{"Arg", 38, "to", 1.0, "in", 3.0}}}}},
+			{Transition = {"Erect", "Dismantle"},	Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 3.0}}}}},
 		},
 		
 		FoldableWings = {
-			{Transition = {"Retract", "Extend"},
-				Sequence = {
-					{C = {{"Arg", 8, "to", 0.0, "in", 45.0}}}		-- Unfold the rotor blades (takes 45 seconds real-world)
-				}, Flags = {"Reversible"}},
-				
+			-- Unfold the rotor blades (takes 45 seconds real-world)
+			{Transition = {"Retract", "Extend"},	Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 45.0}}}}},
+			
 			{Transition = {"Extend", "Retract"},
 				Sequence = {
 					{C = {{"Arg", 40, "to", 0.0, "in", 15.0}}},		-- Rotate rotor blades to prepare to fold properly
 					{C = {{"Arg", 8,  "to", 1.0, "in", 45.0}}},		-- Fold the rotor blades (takes 45 seconds real-world)
-				}, Flags = {"Reversible", "StepsBackwards"}},
+				}},
 		},
 		
 		ExternalCargoEquipment = {
@@ -1780,12 +1776,12 @@ return {
 		
 		SearchLight0Elevation = {
 			-- Formula for determining arg 1005 values:	arg_value = 2 * (extension_angle_deg / 90 - 1) + 1; fully stowed is angle 0
-			{Transition = {"Any", "Retract"},	Sequence = {{C = {{"Arg", 1005, "from",  0.0,  "to",  -1.0, "speed", 0.157},},},},},
-			{Transition = {"Any", "Extend"},	Sequence = {{C = {{"Arg", 1005, "from", -1.0,  "to",   0.0, "speed", 0.157},},},},},
+			{Transition = {"Any", "Retract"},	Sequence = {{C = {{"Arg", 1005, "from",  0.0,  "to",  -1.0, "speed", 0.157}}}}},
+			{Transition = {"Any", "Extend"},	Sequence = {{C = {{"Arg", 1005, "from", -1.0,  "to",   0.0, "speed", 0.157}}}}},
 		},
 		SearchLight0Panning = {
-			{Transition = {"Any", "Right"},		Sequence = {{C = {{"Arg", 1004, "from",  1.0,  "to",  -1.0, "speed", 0.17},},},},},	-- pan right/starboard
-			{Transition = {"Any", "Left"},		Sequence = {{C = {{"Arg", 1004, "from", -1.0,  "to",   1.0, "speed", 0.17},},},},}, -- pan left/port
+			{Transition = {"Any", "Right"},		Sequence = {{C = {{"Arg", 1004, "from",  1.0,  "to",  -1.0, "speed", 0.17}}}}},	-- pan right/starboard
+			{Transition = {"Any", "Left"},		Sequence = {{C = {{"Arg", 1004, "from", -1.0,  "to",   1.0, "speed", 0.17}}}}}, -- pan left/port
 		},
 		
 		HeadLights = {
@@ -1800,19 +1796,25 @@ return {
 			{Transition = {"Any", "Retract"},   Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},	-- Stow search light
 																	{"Arg", 1005, "to", -1.0,  "speed", 0.157},
 																	{"Arg", 38,   "to",  0.0,  "in", 	3.0},		-- Close crew side door
-																	{"Arg", 209,  "to",  0.0,  "speed", 5.0},},},},},
+																	{"Arg", 209,  "to",  0.0,  "speed", 5.0}}}}},
 																	
-			-- Extend search light forward 85.5 deg. That is, it will point 14.5 degrees down from straight ahead
+			-- Extend search light forward 75.5 deg. That is, it will point 14.5 degrees down from straight ahead
 			{Transition = {"Any", "Taxi"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
 																	{"Arg", 1005, "to",  0.60, "speed", 0.157},
 																	{"Arg", 38,   "to", -1.0,  "in", 	3.0},		-- Half open crew side door
-																	{"Arg", 209,  "to",  0.40, "speed", 2.0},},},},},
+																	{"Arg", 209,  "to",  0.40, "speed", 2.0}}}}},
 			
 			-- Extend search light forward 60 deg. That is, it will point 30 degrees down from straight ahead
-			{Transition = {"Any", "High"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed", 0.17},
-																	{"Arg", 1005, "to",  1/3,  "speed", 0.157},
+			{Transition = {"Any", "High"}, 		Sequence = {{C = {	{"Arg", 1004, "to",  0.0,  "speed",	0.17},
+																	{"Arg", 1005, "to",  1/3,  "speed",	0.157},
 																	{"Arg", 38,   "to", -1.0,  "in", 	3.0},		-- Half open crew side door
-																	{"Arg", 209,  "to",  1.0,  "speed", 2.0},},},},},
+																	{"Arg", 209,  "to",  1.0,  "speed", 2.0}}}}},
+		},
+
+		CentralStrut = {
+			-- Opens top half the crew chief door instead of manipulating landing gear.
+			{Transition = {"Retract", "Extend"},	Sequence = {{C = {{"Arg", 38, "to", -1.0, "in", 3.0}}}}},
+			{Transition = {"Extend", "Retract"},	Sequence = {{C = {{"Arg", 38, "to",  0.0, "in", 3.0}}}}},
 		},
 	}, -- end of mechanimations
 
