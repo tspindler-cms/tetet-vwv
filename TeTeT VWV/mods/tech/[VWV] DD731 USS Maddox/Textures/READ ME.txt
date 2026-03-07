@@ -1,3 +1,0 @@
-All textures go here.
-
-use .zip
