@@ -1,3 +1,8 @@
+2026-03-15
+  USS Bon Homme Richard
+    - Fix window frames on island
+  USS Enterprise 66 and 69
+    - Fix marking at aft deck
 2026-02-09
   USS Enterprise 66 and 69
     - Fix deck hull number reflecting on water
