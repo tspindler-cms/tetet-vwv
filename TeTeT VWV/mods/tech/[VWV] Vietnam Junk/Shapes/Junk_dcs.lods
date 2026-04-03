@@ -1,0 +1,8 @@
+model = {
+	lods = {		
+		{"Junk_dcs.edm", 5000.00};
+		{"Junk_5km_lod.edm", 10000.00};
+		{"Junk_10km_lod.edm", 20000.00};		 
+	};
+	collision_shell = "Junk_coll.edm";
+}
