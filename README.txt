@@ -35,6 +35,7 @@ Tango and Charlie boats, landing crafts modified for riverine usage
 USS Radford Fletcher (DD-446), class FRAM II destroyer
 USS Epperson (DD-719), Gearing class FRAM I destroyer
 Vietnam Asset Pack, from EightBall and Tobsen
+Vietnamese Junks, sail ships
 
 This has been my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -84,7 +85,7 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/USS_Oklahoma_City_(CL-91) 
     * https://en.wikipedia.org/wiki/Armored_Troop_Carrier_(LCM)
     * https://en.wikipedia.org/wiki/Monitor_(Vietnam_War)
-
+    * https://en.wikipedia.org/wiki/Junk_(ship)
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
