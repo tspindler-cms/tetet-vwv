@@ -36,6 +36,7 @@ USS Radford Fletcher (DD-446), class FRAM II destroyer
 USS Epperson (DD-719), Gearing class FRAM I destroyer
 Vietnam Asset Pack, from EightBall and Tobsen
 Vietnamese Junks, sail ships
+Sampans, wooden boats for use on rivers and lakes
 
 This has been my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -86,6 +87,7 @@ Links and model sources:
     * https://en.wikipedia.org/wiki/Armored_Troop_Carrier_(LCM)
     * https://en.wikipedia.org/wiki/Monitor_(Vietnam_War)
     * https://en.wikipedia.org/wiki/Junk_(ship)
+    * https://en.wikipedia.org/wiki/Sampan 
 
 Thanks
     Joey45 - for the DCS ship template on github and help via discord
@@ -193,3 +195,6 @@ EC-121
   - the textures are very basic
   - the take-off runway length is too long, should be ~2km, is more like 3.5km+
   - the flaps animation is wrong, they need to extend back and then down
+Sampans
+  - they sit flat on the water, leaky - the water texture is displayed inside the boat
+  - on the Ocean they will be washed over by waves without sinking
