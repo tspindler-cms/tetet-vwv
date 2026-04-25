@@ -9,9 +9,9 @@ GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 
 GT.life = 30; -- hit points
 GT.mass = 200.0; -- KGs
-GT.max_velocity = 2.05777778; --M/S
-GT.race_velocity = 2.05777778; --M/S
-GT.economy_velocity = 1.3; --M/S
+GT.max_velocity = 1.0; --M/S
+GT.race_velocity = 1.0; --M/S
+GT.economy_velocity = 0.8; --M/S
 GT.economy_distance = 12000; -- KM
 GT.race_distance = 2.778e+006;
 GT.shipLength = 6.4939; -- o.a in meters
