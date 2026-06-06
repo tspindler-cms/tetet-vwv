@@ -1,4 +1,7 @@
 2026-06-06
+  Buildings
+    - Add Hoi An houses
+    - Add Apartment building
   MiG-17
     - New textures by Urbi
     - Improve old texture sets by Urbi
