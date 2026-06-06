@@ -1,6 +1,12 @@
 2026-06-06
   USS Oklahoma City
     - Change tag from Heavy Cruiser to Cruiser, works in ME then
+  Buildings
+    - Add Hoi An houses
+    - Add Apartment building
+  MiG-17
+    - New textures by Urbi
+    - Improve old texture sets by Urbi
 2026-04-21
   Sampans
     - Initial Release

@@ -9,9 +9,9 @@ dirName	  	 	= current_mod_path,
 encyclopedia_path = current_mod_path..'/Encyclopedia',
 
 fileMenuName 	= _("VWV"),
-version		 	= "3.0.0",
+version		 	= "3.2.0",
 state		 	= "installed",
-developerName	= "TeTeT, Pirat3n, Odyseus",
+developerName	= "TeTeT, Pirat3n, Odyseus, Eight Ball",
 info		 	= _("Buildings for the VWV mod"),
 
 })
@@ -36,6 +36,8 @@ mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_revetment_panels"
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_hangar")
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_barracks")
 mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_blu82")
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_vn_hoian")
+mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_vn_apts")
 
 -- Weapons
 dofile(current_mod_path .."/Database/vwv_mgunsandshell.lua")
