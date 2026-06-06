@@ -12,7 +12,7 @@ local function add_structure(f)
 		GT.visual.shape_dstr = f.ShapeNameDestr
 		GT.CustomAimPoint = {1,1,0}
 		GT.visual.fire_size = f.fire_size or 0
-		GT.visual.fire_pos = {-2,0,0};
+		GT.visual.fire_pos = f.fire_pos or {-2,0,0};
 		GT.visual.fire_time = 30
 		GT.time_agony = 0;
 
@@ -252,4 +252,213 @@ add_structure({
     Life		 =  3,
     Rate		 =  1,
     category     =  'Fortification',
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_vnHoiAn_M1",
+    DisplayName  = _("[VWV] Hoi An Building M1"),
+    ShapeName	 =   "vwv_vn_HoiAn_M1",
+    ShapeNameDestr = "vwv_vn_HoiAn_M1_destroyed",
+    Life		 =  3,
+    Rate		 =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_vnHoiAn_M2",
+    DisplayName  = _("[VWV] Hoi An Building M2"),
+    ShapeName	 =   "vwv_vn_HoiAn_M2",
+    ShapeNameDestr = "vwv_vn_HoiAn_M2_destroyed",
+    Life		 =  3,
+    Rate		 =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name 		 =  "vwv_bdg_vnHoiAn_M3",
+    DisplayName  = _("[VWV] Hoi An Building M3"),
+    ShapeName	 =   "vwv_vn_HoiAn_M3",
+    ShapeNameDestr = "vwv_vn_HoiAn_M3_destroyed",
+    Life		 =  4,
+    Rate		 =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M4",
+    DisplayName  = _("[VWV] Hoi An Building M4"),
+    ShapeName    =   "vwv_vn_HoiAn_M4",
+    ShapeNameDestr = "vwv_vn_HoiAn_M4_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M5",
+    DisplayName  = _("[VWV] Hoi An Building M5"),
+    ShapeName    =   "vwv_vn_HoiAn_M5",
+    ShapeNameDestr = "vwv_vn_HoiAn_M5_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M6",
+    DisplayName  = _("[VWV] Hoi An Building M6"),
+    ShapeName    =   "vwv_vn_HoiAn_M6",
+    ShapeNameDestr = "vwv_vn_HoiAn_M6_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M7",
+    DisplayName  = _("[VWV] Hoi An Building M7"),
+    ShapeName    =   "vwv_vn_HoiAn_M7",
+    ShapeNameDestr = "vwv_vn_HoiAn_M7_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M8",
+    DisplayName  = _("[VWV] Hoi An Building M8"),
+    ShapeName    =   "vwv_vn_HoiAn_M8",
+    ShapeNameDestr = "vwv_vn_HoiAn_M8_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M9",
+    DisplayName  = _("[VWV] Hoi An Building M9"),
+    ShapeName    =   "vwv_vn_HoiAn_M9",
+    ShapeNameDestr = "vwv_vn_HoiAn_M9_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M10",
+    DisplayName  = _("[VWV] Hoi An Building M10"),
+    ShapeName    =   "vwv_vn_HoiAn_M10",
+    ShapeNameDestr = "vwv_vn_HoiAn_M10_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M11",
+    DisplayName  = _("[VWV] Hoi An Building M11"),
+    ShapeName    =   "vwv_vn_HoiAn_M11",
+    ShapeNameDestr = "vwv_vn_HoiAn_M11_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_M12",
+    DisplayName  = _("[VWV] Hoi An Building M12"),
+    ShapeName    =   "vwv_vn_HoiAn_M12",
+    ShapeNameDestr = "vwv_vn_HoiAn_M12_destroyed",
+    Life         =  4,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_m1__2",
+    DisplayName  = _("[VWV] Hoi An Building m1__2"),
+    ShapeName    =   "vwv_vn_HoiAn_m1__2",
+    ShapeNameDestr = "vwv_vn_HoiAn_m1__2_destroyed",
+    Life         =  2,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_m2__2",
+    DisplayName  = _("[VWV] Hoi An Building m2__2"),
+    ShapeName    =   "vwv_vn_HoiAn_m2__2",
+    ShapeNameDestr = "vwv_vn_HoiAn_m2__2_destroyed",
+    Life         =  2,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_m3__2",
+    DisplayName  = _("[VWV] Hoi An Building m3__2"),
+    ShapeName    =   "vwv_vn_HoiAn_m3__2",
+    ShapeNameDestr = "vwv_vn_HoiAn_m3__2_destroyed",
+    Life         =  2,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_m4__2",
+    DisplayName  = _("[VWV] Hoi An Building m4__2"),
+    ShapeName    =   "vwv_vn_HoiAn_m4__2",
+    ShapeNameDestr = "vwv_vn_HoiAn_m4__2_destroyed",
+    Life         =  2,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_m5__2",
+    DisplayName  = _("[VWV] Hoi An Building m5__2"),
+    ShapeName    =   "vwv_vn_HoiAn_m5__2",
+    ShapeNameDestr = "vwv_vn_HoiAn_m5__2_destroyed",
+    Life         =  2,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_bdg_vnHoiAn_m6__2",
+    DisplayName  = _("[VWV] Hoi An Building m6__2"),
+    ShapeName    =   "vwv_vn_HoiAn_m6__2",
+    ShapeNameDestr = "vwv_vn_HoiAn_m6__2_destroyed",
+    Life         =  2,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_vn_apartment_3GV73",
+    DisplayName  = _("[VWV] Apartment 3GV73"),
+    ShapeName    =   "vwv_vn_apartment_3GV73",
+    ShapeNameDestr = "vwv_vn_apartment_3GV73_destroyed",
+    Life         =  5,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
 })
