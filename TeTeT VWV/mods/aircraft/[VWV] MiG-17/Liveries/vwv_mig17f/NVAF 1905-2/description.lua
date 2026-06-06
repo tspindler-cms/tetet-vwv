@@ -1,13 +1,9 @@
 livery = {
-  {"body_main",	   	0, "Vietnam People's Air Force.dds" ,false},
-  {"body_main",		ROUGHNESS_METALLIC			,"MIG-17 TEST RM4"	, true};
-  {"Material #20",	ROUGHNESS_METALLIC,	"MIG-17 TEST RM4", true};
+  {"body_main",	   	0, "body_main" ,false},
 
-  {"canopy",	   	0, "Mig-17f Canopy Green" , true},
-  {"canopy",ROUGHNESS_METALLIC, "Mig-17f Canopy RM Flat" , true},
+  {"MIG-17_canopy",	   	0, "body_main" ,false}, 
+  {"MIG-17_canopy",	   ROUGHNESS_METALLIC, "MIG-17_ussr_Roughmet" ,true}, 
+
 }
-
-name = "NVAF 1905-2"
---countries = {"USA"}
 
 

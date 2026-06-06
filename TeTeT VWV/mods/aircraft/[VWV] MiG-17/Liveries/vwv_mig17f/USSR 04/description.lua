@@ -1,10 +1,17 @@
 livery = {
-     {"body_main",	   	0, "MIG-17PM_ussr.dds" ,false},
-	 {"body_main",		ROUGHNESS_METALLIC			,"MIG-17 TEST RM5"	, true},
-	{"Material #20",	ROUGHNESS_METALLIC,	"MIG-17 TEST RM5", true},
+     {"body_main",	   	0, "MIG-17PM_ussr" ,false},  
+	 
+	 {"body_main",		ROUGHNESS_METALLIC			,"MIG-17PM_ussr_Roughmet"	, false};
+     {"Material #16",	ROUGHNESS_METALLIC,	"MIG-17PM_ussr_Roughmet", false};
+	 
+	 
+	 
+	 
+	{"MIG-17_canopy",	   	0, "MIG-17PM_ussr" ,false}, 
+	{"MIG-17_canopy",	   	ROUGHNESS_METALLIC, "MIG-17PM_ussr_Roughmet" ,false}, 
 
-	{"canopy",	   	0, "Mig-17f Canopy Silver" , true},
-	{"canopy",	   	ROUGHNESS_METALLIC, "Mig-17f Canopy RM Silver" , true},
+
+
+
 }
-name = "USSR 04"
 
