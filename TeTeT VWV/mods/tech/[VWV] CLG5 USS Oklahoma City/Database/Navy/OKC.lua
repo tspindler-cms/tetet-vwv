@@ -406,5 +406,5 @@ GT.Categories		= {
 -- categories in the mission editor 
 GT.tags  = 
 {
-	"Heavy Cruiser",
+	"Cruiser",
 };
