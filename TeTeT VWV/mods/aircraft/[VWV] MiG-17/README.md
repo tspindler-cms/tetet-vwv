@@ -4,6 +4,6 @@ This mod is released under the Creative Commons Attribution-NonCommercial-ShareA
 
 A mod from Hawkeye60 and Markindel, donated to Vietnam War Vessels.
 
-Modified for the VWV mod by TeTeT.
+Modified for the VWV mod by TeTeT. Textures improved by Urbi.
 
 Provides an AI MiG-17F for the North Vietnamese air force.
