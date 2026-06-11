@@ -61,7 +61,7 @@ GT.WS = {};
 GT.WS.maxTargetDetectionRange = 5000;
 GT.WS.radar_type = 102
 GT.WS.fire_on_march = true;
-GT.animation_arguments.alarm_state = 9;
+-- GT.animation_arguments.alarm_state = 9; this does not seem to work reliably on dedicated servers, so it is not used for now.
 GT.animation_arguments.luna_lights = -1;
 
 
