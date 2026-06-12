@@ -462,3 +462,36 @@ add_structure({
     category     =  'Fortification',
     fire_pos     = {2,2,0},
 })
+
+add_structure({
+    Name         =  "vwv_vn_FrenchHouse1",
+    DisplayName  = _("[VWV] French House 1"),
+    ShapeName    =   "vwv_vn_FrenchHouse1",
+    ShapeNameDestr = "vwv_vn_FrenchHouse1_destroyed",
+    Life         =  5,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_vn_FrenchHouse2",
+    DisplayName  = _("[VWV] French House 2"),
+    ShapeName    =   "vwv_vn_FrenchHouse2",
+    ShapeNameDestr = "vwv_vn_FrenchHouse2_destroyed",
+    Life         =  5,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})
+
+add_structure({
+    Name         =  "vwv_vn_FrenchHouse3",
+    DisplayName  = _("[VWV] French House 3"),
+    ShapeName    =   "vwv_vn_FrenchHouse3",
+    ShapeNameDestr = "vwv_vn_FrenchHouse3_destroyed",
+    Life         =  5,
+    Rate         =  1,
+    category     =  'Fortification',
+    fire_pos     = {2,2,0},
+})

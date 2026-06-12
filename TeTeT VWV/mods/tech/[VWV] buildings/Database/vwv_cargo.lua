@@ -94,12 +94,13 @@ add_cargo({
 ---------------------------------------------
 --[[
  Does not work, when detaching goes underground
+]]
 add_cargo({
 	Name 		 	=  "vwv_cgo_usM113",
 	--Name that will appear inside ME
 	DisplayName  	=  _("[VWV] US M113, Cargo"),
 	--Shape EDM name
-	ShapeName	 	=   "m-113",
+	ShapeName	 	=   "vwv_us_m113_cargo",
 	ShapeNameDestr = "M-113_p_1",
 	Life		 	 	=  20,
 	Rate		 	=  10,
@@ -110,5 +111,4 @@ add_cargo({
 	couldCargo		= true,
 	topdown_view 	=  topdown_view,
 })
-]]
 --- You can continue adding more cargo objets to the database following the structure above, between dot lines. Remember to add also a new *.csv file for each to Data folder
