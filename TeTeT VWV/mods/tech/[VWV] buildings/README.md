@@ -7,6 +7,7 @@ The models in this mod have been sources from multiple locations.
 In general the models were modified by Odyseus to fit into DCS, and rigged by TeTeT.
 The Indohuts were created by Pirat3n.
 The Hoi An buildings were sourced from cgtrader.
+The Apartments buildings were created by Odyseus.
 
 The armed Guard Tower needs the AK-47n weapon from the Vietnam Asset Pack (VAP), see
 https://github.com/tobi-be/DCS-OH-6A/releases for download options.
@@ -28,6 +29,7 @@ US Marsdenmat - steel mat for placing heavy equipment such as aircraft on them, 
 US Revetments - earth filled barrier to be placed for protection
 US Watchtower - a lookout post for a camp
 VN Hoin An buildings - town buildings for an old style Vietnamese town
+VN Apartments buildings - city buildings for a more modern Vietnamese city (only one so far)
 
 This part of the mod is still under (heavy) development.
 
