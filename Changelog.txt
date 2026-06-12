@@ -2,6 +2,8 @@
   Buildings
     - Add sling load capability to Conex and vanilla M-113
     - Add French buildings
+  MiG-21MF
+    - New liveries by Urbi
 2026-06-11
   IX 514
     - Remove alarmstate to keep nets down on dedicated server

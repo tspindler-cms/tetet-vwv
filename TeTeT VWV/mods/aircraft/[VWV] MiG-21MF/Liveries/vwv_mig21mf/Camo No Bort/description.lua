@@ -1,6 +1,5 @@
 livery = {
     {"MiG21MF_Hull",	DIFFUSE			        ,	"MiG21_Hull", false};
-	{"MiG21MF_Hull",	NORMAL_MAP		        ,	"MiG21_Hull_Normal", false};
     {"MiG21MF_Hull",	ROUGHNESS_METALLIC		,	"MiG21_Hull_RoughMet", false};
 };
 
