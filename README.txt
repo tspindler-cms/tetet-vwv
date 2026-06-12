@@ -159,11 +159,7 @@ Fletcher Class Destroyers with FRAM II upgrade
 RA-5C Vigilante
     - The plane is too large for regular parking spots, best to use as single plane on the runway
 MiG-21MF "Fishbed-C"
-    - Textures are work in progress
-    - Gear up location is pretty bad
-    - Cone too large
-    - Aux inlet door alwaus open
-    - Pilot sits too deep
+    - Pilot needs an update
 A-1 Skyraider
     - The new bridle disappears during launch
     - The precision of dropping Napalm is abysmal
