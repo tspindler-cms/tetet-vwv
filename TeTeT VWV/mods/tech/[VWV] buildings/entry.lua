@@ -1,19 +1,15 @@
 declare_plugin("tetet_vwv_buildings",
-
 {
-displayName   	= _("Vietnam War Vessels Buildings"),
-shortName	  	=   "vwv_bdg",
-installed 	 	= true,
-dirName	  	 	= current_mod_path,
-
+dirName       = current_mod_path,
+displayName   = _("Vietnam War Vessels Buildings"),
+shortName     = "vwv_bdg",
+version       = "3.2.0",
+state         = "installed",
+installed     = true,
+fileMenuName  = _("VWV"),
+developerName = "TeTeT, Pirat3n, Odyseus, Eight Ball",
+info          = _("Buildings for the VWV mod"),
 encyclopedia_path = current_mod_path..'/Encyclopedia',
-
-fileMenuName 	= _("VWV"),
-version		 	= "3.2.0",
-state		 	= "installed",
-developerName	= "TeTeT, Pirat3n, Odyseus, Eight Ball",
-info		 	= _("Buildings for the VWV mod"),
-
 })
 -- ------------------------------------------------------------------------------------------------------------------------
 -- shapes
@@ -23,21 +19,21 @@ mount_vfs_model_path    (current_mod_path ..  "/Shapes")
 mount_vfs_liveries_path (current_mod_path ..  "/Liveries")
 -- ------------------------------------------------------------------------------------------------------------------------
 -- textures
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/indohut")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/GuardTower")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/us_watch_tower")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_barrels")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_boomgate")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_half_connex")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_barbwire_fence")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_guard_shed")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_marsdenmat")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_revetment_panels")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_hangar")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_barracks")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_us_blu82")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_vn_hoian")
-mount_vfs_texture_path	(current_mod_path ..  "/Textures/vwv_vn_apts")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/indohut")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/GuardTower")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/us_watch_tower")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_barrels")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_boomgate")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_half_connex")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_barbwire_fence")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_guard_shed")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_marsdenmat")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_revetment_panels")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_hangar")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_barracks")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_us_blu82")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_vn_hoian")
+mount_vfs_texture_path  (current_mod_path ..  "/Textures/vwv_vn_apts")
 
 -- Weapons
 dofile(current_mod_path .."/Database/vwv_mgunsandshell.lua")
