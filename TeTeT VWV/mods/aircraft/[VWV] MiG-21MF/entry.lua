@@ -1,4 +1,4 @@
-self_ID = "tetet_mig21mf"
+local self_ID = "tetet_mig21mf"
 declare_plugin(self_ID, {
     installed = true, -- if false that will be place holder , or advertising
     dirName = current_mod_path,

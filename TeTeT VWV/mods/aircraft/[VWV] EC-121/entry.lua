@@ -1,15 +1,13 @@
-self_ID = "tetet_ec121"
+local self_ID = "tetet_ec121"
 declare_plugin(self_ID,
 {
-	image     	 = "FC3.bmp",
 	installed 	 = true, -- if false that will be place holder , or advertising
 	dirName	  	 = current_mod_path,
-	displayName  = _("EC-121 Warning Star"),
-	developerName = _("TeTeT"),
-
-	fileMenuName = _("EC-121 Warning Star"),
-	update_id    = "ec121_warningStar",
-	version		 = "3.0.0",
+	displayName      = _("EC-121 Warning Star"),
+	developerName    = _("TeTeT"),
+	fileMenuName     = _("EC-121 Warning Star"),
+	update_id        = "ec121_warningStar",
+	version		 = "3.2.0",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Lockheed EC-121 Warning Star is an American airborne early warning and control radar surveillance aircraft operational in the 1950s in both the United States Navy (USN) and United States Air Force (USAF)."),
 	creditsFile = "credits.txt",

@@ -1,9 +1,9 @@
-self_ID = "tetet_mig17f"
+local self_ID = "tetet_mig17f"
 declare_plugin(self_ID, {
     installed = true, -- if false that will be place holder , or advertising
     dirName = current_mod_path,
-    displayName = _("mig17f"),
-    fileMenuName = _("mig17f"),
+    displayName = _("MiG-17F 'Fresco'"),
+    fileMenuName = _("MiG-17F"),
     developerName = _("Hawkeye, TeTeT, HawaiianRyan"),
     update_id = "mig17f",
     version = "3.2.0",

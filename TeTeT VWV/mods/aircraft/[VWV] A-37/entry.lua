@@ -4,10 +4,12 @@ declare_plugin(self_ID,
 {
 installed 	 = true,
 dirName	  	 = current_mod_path,
-version		 = "3.0.0",
+displayName      = _("A-37 Dragonfly"),
+fileMenuName     = _("A-37 Dragonfly"),
+version		 = "3.2.0",
 state		 = "installed",
 info		 = _("Wikipedia: The Cessna A-37 Dragonfly, or Super Tweet, is a jet-powered, light attack aircraft designed and produced by the American aircraft manufacturer Cessna."),
-developerName= _("Hawkeye60"),
+developerName    = "Hawkeye60",
 
 InputProfiles =
 {
