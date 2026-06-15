@@ -1,15 +1,14 @@
-self_ID = "tetet_ra5"
+local self_ID = "tetet_ra5"
 declare_plugin(self_ID,
 {
-	image     	 = "FC3.bmp",
 	installed 	 = true, -- if false that will be place holder , or advertising
 	dirName	  	 = current_mod_path,
-	displayName  = _("RA-5C Vigilante"),
-	developerName = _("TeTeT, Hawkeye60"),
+	displayName      = _("RA-5C Vigilante"),
+	developerName    = _("TeTeT, Odyseus, Hawkeye60"),
 
-	fileMenuName = _("RA-5C Vigilante"),
-	update_id    = "ra5-vigilante",
-	version		 = "3.0.0",
+	fileMenuName     = _("RA-5C Vigilante"),
+	update_id        = "ra5-vigilante",
+	version		 = "3.2.0",
 	state		 = "installed",
 	info		 = _("ChatGPT: The RA-5C Vigilante was a supersonic, carrier-based reconnaissance aircraft used by the U.S. Navy during the Cold War, known for its advanced sensors and sleek design."),
 	creditsFile = "credits.txt",

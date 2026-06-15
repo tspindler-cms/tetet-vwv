@@ -1,17 +1,15 @@
-declare_plugin("jjj_Kaman",
+local self_ID = "jjj_Kaman"
+declare_plugin(self_ID,
 {
-
-    image     	 = "FC3.bmp",
-    installed 	 = true, -- if false that will be place holder , or advertising
+    installed    	 = true, -- if false that will be place holder , or advertising
     dirName	  	 = current_mod_path,
-    displayName  = _("H-2 Seasprite"),
-    developerName = _("H-2 Seasprite"),
-
-    encyclopedia_path = current_mod_path..'/Encyclopedia',
-    update_id        = "H-2 Seasprite",
-    fileMenuName = _("H-2 Seasprite"),
-    version = "3.0.1",
-    state = "installed",
+    displayName          = _("H-2 Seasprite"),
+    developerName        = "James, Urbi",
+    encyclopedia_path    = current_mod_path..'/Encyclopedia',
+    update_id            = "h2seasprite",
+    fileMenuName         = _("H-2 Seasprite"),
+    version              = "3.2.0",
+    state                = "installed",
     info = _("Wikipedia: The Kaman Seasprite is a ship-based helicopter originally developed and produced by American manufacturer Kaman Aircraft Corporation. It has been typically used as a compact and fast-moving rotorcraft for utility and anti-submarine warfare missions."),
 })
 
@@ -26,6 +24,5 @@ add_aircraft(dofile(current_mod_path..'/Database/sh2f.lua'))
 add_aircraft(dofile(current_mod_path..'/Database/uh2a.lua'))
 add_aircraft(dofile(current_mod_path..'/Database/uh2b.lua'))
 add_aircraft(dofile(current_mod_path..'/Database/uh2c.lua'))
-
 
 plugin_done()

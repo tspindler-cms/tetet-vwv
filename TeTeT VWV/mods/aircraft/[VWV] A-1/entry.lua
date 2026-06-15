@@ -1,15 +1,14 @@
-self_ID = "tetet_a-1_skyraider"
+local self_ID = "tetet_a-1_skyraider"
 declare_plugin(self_ID,
 {
-	-- image     	 = "a_1_skyraider.bmp",
 	installed 	 = true, -- if false that will be place holder , or advertising
 	dirName	  	 = current_mod_path,
-	displayName  = _("A-1 Skyraider"),
-	developerName = _("TeTeT, Hawkeye60, seabat, Beldin, Violent Nomad, dotbmp"),
-	creditsFile = "credits.txt",
-	fileMenuName = _("A-1 Skyraider"),
-	update_id    = "a-1_skyraider",
-	version		 = "3.0.0",
+	displayName      = _("A-1 Skyraider"),
+	developerName    = _("TeTeT, Hawkeye60, seabat, Beldin, Violent Nomad, dotbmp"),
+	creditsFile      = "credits.txt",
+	fileMenuName     = _("A-1 Skyraider"),
+	update_id        = "a-1_skyraider",
+	version		 = "3.2.0",
 	state		 = "installed",
 	info		 = _("Wikipedia: The Douglas A-1 Skyraider (formerly designated AD before the 1962 unification of Navy and Air Force designations) is an American single-seat attack aircraft in service from 1946 to the early 1980s, which served during the Korean War and Vietnam War."),
 

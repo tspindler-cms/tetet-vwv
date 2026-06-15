@@ -1,12 +1,12 @@
-self_ID = "tetet_mig17f"
+local self_ID = "tetet_mig17f"
 declare_plugin(self_ID, {
     installed = true, -- if false that will be place holder , or advertising
     dirName = current_mod_path,
-    displayName = _("mig17f"),
-    fileMenuName = _("mig17f"),
+    displayName = _("MiG-17F 'Fresco'"),
+    fileMenuName = _("MiG-17F"),
     developerName = _("Hawkeye, TeTeT, HawaiianRyan"),
     update_id = "mig17f",
-    version = "3.0.0",
+    version = "3.2.0",
     state = "installed",
     info = _("Wikipedia: The Mikoyan-Gurevich MiG-17 (Russian: Микоян и Гуревич МиГ-17; NATO reporting name: Fresco) is a high-subsonic fighter aircraft produced in the Soviet Union from 1952 and was operated by air forces internationally."),
     creditsFile = "credits.txt",

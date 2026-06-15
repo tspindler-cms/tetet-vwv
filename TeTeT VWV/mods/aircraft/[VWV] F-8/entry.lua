@@ -1,14 +1,12 @@
-self_ID = "tetet_crusader"
+local self_ID = "tetet_crusader"
 declare_plugin(self_ID,
 {
-	image = "FC3.bmp",
 	installed = true, -- if false that will be place holder , or advertising
 	dirName = current_mod_path,
-	displayName = _("crusader"),
-
-	fileMenuName = _("crusader"),
+	displayName = _("F-8 Crusader"),
+	fileMenuName = _("F-8 Crusader"),
 	update_id = "crusader",
-	version = "3.0.0",
+	version = "3.2.0",
 	state = "installed",
 	info = _("Wikipedia: The Vought F-8 Crusader (originally F8U) is a single-engine, supersonic, carrier-based air superiority jet aircraft designed and produced by the American aircraft manufacturer Vought. It was the last American fighter that had guns as the primary weapon, earning it the title 'The Last of the Gunfighters'."), 
 
