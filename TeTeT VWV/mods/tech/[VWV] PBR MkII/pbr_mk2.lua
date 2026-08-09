@@ -17,7 +17,7 @@ GT.snd.move = "Ships/speedboatMove";
 GT.IR_emission_coeff = 0.35
 GT.animation_arguments.crew_presence = 50;
 
-GT.life = 20
+GT.life = 6.4
 GT.mass = 1500
 GT.max_velocity = 37
 GT.race_velocity = 24

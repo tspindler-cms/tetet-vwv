@@ -9,7 +9,7 @@ GT.visual = {}
 GT.visual.shape 		= "CCB"
 GT.visual.shape_dstr	= ""
 
-GT.life 				= 120
+GT.life 				= 7.3
 GT.mass 				= 80000
 GT.max_velocity 		= 4.37242
 GT.race_velocity 		= 4.11556
