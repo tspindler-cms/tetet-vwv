@@ -1,7 +1,0 @@
-model = {
-	lods = {
-		{"ATC-H_Heavy_L00.edm",1500.000000},
-		{"ATC-H_Heavy_L01.edm",5000.000000},
-		{"ATC-H_Heavy_L02.edm",15000.000000},
-		},
-	}
