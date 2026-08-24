@@ -51,14 +51,14 @@ GT.animation_arguments.water_propeller = 70;
 --Turret aft gun -----------------------------------------
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
-GT.WS[ws].center = 'Turret_aft_empty';
+GT.WS[ws].center = "Turret_aft_empty";
 GT.WS[ws].angles = {{math.rad(145), math.rad(-145), math.rad(-20), math.rad(80)},};
 GT.WS[ws].reference_angle_Y = math.rad(180);
 GT.WS[ws].reference_angle_Z = math.rad(5);
 GT.WS[ws].drawArgument1 = 19;
 GT.WS[ws].drawArgument2 = 20;
 set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Oerlikon_20 );
-GT.WS[ws].LN[1].BR = {{ connector_name = 'Point_aft' }};
+GT.WS[ws].LN[1].BR = {{ connector_name = "Point_aft" }};
 GT.WS[ws].LN[1].PL = {[1]={}}
 set_recursive_metatable(GT.WS[ws].LN[1].PL[1], GT_t.WS_t.ship_Oerlikon_20.LN[1].PL[1])
 GT.WS[ws].LN[1].PL[1].shell_name = {"vwv_20mm_HE_red"};
@@ -70,11 +70,11 @@ GT.WS[ws] = {};
 GT.WS[ws].angles = {{math.rad(-25), math.rad(-175), math.rad(-5), math.rad(80)},};
 GT.WS[ws].reference_angle_Y = math.rad(-174);
 GT.WS[ws].reference_angle_Z = math.rad(5);
-GT.WS[ws].center = 'Turret_starboard_empty';
+GT.WS[ws].center = "Turret_starboard_empty";
 GT.WS[ws].drawArgument1 = 17;
 GT.WS[ws].drawArgument2 = 18;
 set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Oerlikon_20 );
-GT.WS[ws].LN[1].BR = {{ connector_name = 'Point_starboard' }};
+GT.WS[ws].LN[1].BR = {{ connector_name = "Point_starboard" }};
 GT.WS[ws].LN[1].PL = {[1]={}}
 set_recursive_metatable(GT.WS[ws].LN[1].PL[1], GT_t.WS_t.ship_Oerlikon_20.LN[1].PL[1])
 GT.WS[ws].LN[1].PL[1].shell_name = {"vwv_20mm_HE_red"};
@@ -86,11 +86,11 @@ GT.WS[ws] = {};
 GT.WS[ws].angles = {{math.rad(175), math.rad(25), math.rad(-5), math.rad(80)},};
 GT.WS[ws].reference_angle_Y = math.rad(174);
 GT.WS[ws].reference_angle_Z = math.rad(5);
-GT.WS[ws].center = 'Turret_port_empty';
+GT.WS[ws].center = "Turret_port_empty";
 GT.WS[ws].drawArgument1 = 15;
 GT.WS[ws].drawArgument2 = 16;
 set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Oerlikon_20 );
-GT.WS[ws].LN[1].BR = {{ connector_name = 'Point_port' }};
+GT.WS[ws].LN[1].BR = {{ connector_name = "Point_port" }};
 GT.WS[ws].LN[1].PL = {[1]={}}
 set_recursive_metatable(GT.WS[ws].LN[1].PL[1], GT_t.WS_t.ship_Oerlikon_20.LN[1].PL[1])
 GT.WS[ws].LN[1].PL[1].shell_name = {"vwv_20mm_HE_red"};
