@@ -20,8 +20,8 @@ mount_vfs_texture_path  (current_mod_path .. "/Textures/vwv_CCB.zip")
 mount_vfs_texture_path  (current_mod_path .. "/Textures/vwv_ATC.zip")
 mount_vfs_liveries_path (current_mod_path .. "/Liveries")
 ---------------------------------------------------------------------------------------
-dofile(current_mod_path.."/Database/Weapons/vwv_ammunition.lua")
-dofile(current_mod_path.."/Database/db_ships.lua")
+dofile(current_mod_path .. "/Database/Weapons/vwv_ammunition.lua")
+dofile(current_mod_path .. "/Database/db_ships.lua")
 
 ---------------------------------------------------------------------------------------
 
