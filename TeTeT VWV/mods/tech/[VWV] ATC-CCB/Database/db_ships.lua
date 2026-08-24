@@ -7,21 +7,21 @@ local function ship_file(f)
 		return
 	end
 	if(GT) then
-		GT.shape_table_data = 
+		GT.shape_table_data =
 		{
 			{
 				file  	    = GT.visual.shape;
 				username    = GT.Name;
 				desrt       = GT.visual.shape_dstr;
 			    classname 	= "lLandShip";
-				
+
 				positioning = GT.positioning or "BYNORMAL";
 				--"BYNORMAL",	-- use normal from surface to form UP  ( y) axis 
 				--"ONLYHEIGTH",	-- given position normalized ,  p.y  set to surface height value
 				--"BY_XZ",	-- project x , z axis from given position projected to surface , 
 				--"NO",			-- No transforms
 				--"ADD_HEIGTH"	-- No transforms, only hight of surface are added to hight of object
-				
+
 				life		= GT.life or 6;
 			},
 			{
@@ -41,5 +41,6 @@ end
 
 ship_file("/Database/Navy/ATC-H.lua")
 ship_file("/Database/Navy/ATC-H_Heavy.lua")
+ship_file("/Database/Navy/ATC-H_Cargo.lua")
 
 ship_file("/Database/Navy/CCB.lua")
