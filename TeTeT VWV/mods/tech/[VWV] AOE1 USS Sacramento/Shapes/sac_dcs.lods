@@ -1,0 +1,8 @@
+model = {
+	lods = {
+		{"sac_dcs.edm",1000.000000},
+		{"sac_5km_dcs.edm",3000.000000},	
+		{"sac_5km_dcs.edm",50000.000000},
+	};
+	collision_shell = "sac_dcs_Collision.edm",
+}

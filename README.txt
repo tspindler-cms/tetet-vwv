@@ -37,6 +37,7 @@ USS Epperson (DD-719), Gearing class FRAM I destroyer
 Vietnam Asset Pack, from EightBall and Tobsen
 Vietnamese Junks, sail ships
 Sampans, wooden boats for use on rivers and lakes
+USS Sacramento, a logistics ship
 
 This has been my first attempt at modding for DCS, so take the results with a grain of salt.
 

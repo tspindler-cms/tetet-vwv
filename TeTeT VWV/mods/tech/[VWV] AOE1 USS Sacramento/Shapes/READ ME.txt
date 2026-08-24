@@ -1,0 +1,9 @@
+You don't need 5 lods it's up to you but 5 is max.
+
+If you only need 2 then use 2 and delete the other 
+lines.
+
+The distance can/will be different depending
+
+on your MOD.
+ 
