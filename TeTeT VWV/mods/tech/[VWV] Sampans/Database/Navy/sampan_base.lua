@@ -7,7 +7,7 @@ GT.visual = {}
 GT.visual.shape = "sampan_open"  -- name of LODs lua
 GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 
-GT.life = 30; -- hit points
+GT.life = 1.8; -- hit points
 GT.mass = 200.0; -- KGs
 GT.max_velocity = 1.0; --M/S
 GT.race_velocity = 1.0; --M/S

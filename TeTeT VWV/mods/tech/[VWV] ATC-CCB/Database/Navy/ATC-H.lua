@@ -9,7 +9,7 @@ GT.visual = {}
 GT.visual.shape 		= "ATC-H"
 GT.visual.shape_dstr 	= ""
 
-GT.life 				= 100
+GT.life 				= 50
 GT.mass 				= 66500
 GT.max_velocity 		= 4.37242
 GT.race_velocity 		= 4.11556

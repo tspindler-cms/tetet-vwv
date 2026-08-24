@@ -11,7 +11,7 @@ GT.visual = {}
 GT.visual.shape = "junk_dcs"  -- name of LODs lua
 GT.visual.shape_dstr = "" -- if there is a destruction model it goes here
 
-GT.life = 300; -- hit points
+GT.life = 5.2; -- hit points
 GT.mass = 20000.0; -- KGs
 GT.max_velocity = 2.05777778; --M/S
 GT.race_velocity = 2.05777778; --M/S

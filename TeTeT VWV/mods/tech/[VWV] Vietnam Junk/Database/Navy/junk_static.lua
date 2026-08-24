@@ -9,7 +9,7 @@ GT.visual = {}
 GT.visual.shape = "Junk_static"
 GT.visual.shape_dstr = ""
 
-GT.life = 300; -- hit points
+GT.life = 5.2; -- hit points
 GT.mass = 20000.0; -- KGs
 GT.max_velocity = 2.05777778; --M/S
 GT.race_velocity = 2.05777778; --M/S

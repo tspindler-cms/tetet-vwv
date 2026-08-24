@@ -5,7 +5,7 @@ GT_t.ws = 0;
 
 set_recursive_metatable(GT, GT_t.generic_stationary)
 set_recursive_metatable(GT.chassis, GT_t.CH_t.STATIC);
-GT.chassis.life = 35
+GT.chassis.life = 11.0
 
 GT.visual.shape = "vap_vc_bunker_single"
 GT.visual.shape_dstr = "vap_vc_bunker_dest"
