@@ -26,7 +26,4 @@ local function ship_file(f)
 end
 --^^ this is normal on all ships
 
-ship_file(current_mod_path.."/Database/p4.lua") -- this is the ship or ships lua files
--- ship_file(current_mod_path.."/Database/something else.lua") -- if there is more that one file then add more
-
---add anything else here like LSO POS and Hanger stuff
+ship_file(current_mod_path.."/Database/Navy/p4.lua")
