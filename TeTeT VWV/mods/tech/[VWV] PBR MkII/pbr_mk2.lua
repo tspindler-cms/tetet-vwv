@@ -114,7 +114,9 @@ GT.WS[ws].LN[1].BR =
 							connector_name = 'POINT_GUN_01_R',
 						}
 					};
-
+GT.WS[ws].LN[1].PL[1].shell_name = {"vwv_20mm_HE_red"}
+GT.WS[ws].LN[1].PL[1].shell_display_name = "20mm HE-T"
+GT.WS[ws].LN[1].fireAnimationArgument = -1
 -- =========================== M2 machine gun Stern =======================================
 
 ws = GT_t.inc_ws();
@@ -126,9 +128,11 @@ GT.WS[ws].drawArgument1 = 23
 GT.WS[ws].drawArgument2 = 24
 GT.WS[ws].omegaY = math.rad(90);
 GT.WS[ws].omegaZ = math.rad(90);
+
 GT.WS[ws].angles = {
-                    {math.rad(160), math.rad(-160), math.rad(-5), math.rad(70)},
-                   };
+    {math.rad(-55), math.rad(55), math.rad(-5), math.rad(70)},
+};
+
 GT.WS[ws].reference_angle_Y = math.rad(180);
 GT.WS[ws].reference_angle_Z = math.rad(0);
 

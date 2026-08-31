@@ -6,7 +6,7 @@ GT_t.ws = 0;
 set_recursive_metatable(GT, GT_t.generic_wheel_vehicle);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.vap_vc_bicycle_chassis);
 GT.chassis.mass = GT.chassis.mass + 70;
-GT.chassis.life = 0.72
+GT.chassis.life = 1.5
 
 GT.visual.shape = "vap_vc_bicycle_mortar";
 GT.visual.shape_dstr = "vap_vc_bicycle_dest";
