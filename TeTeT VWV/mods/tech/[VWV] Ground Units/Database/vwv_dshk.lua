@@ -34,7 +34,7 @@ GT.toggle_alarm_state_interval = 1.0;
 
 GT.mobile = false;
 
-GT.IR_emission_coeff = 0.002
+GT.IR_emission_coeff = 0.002;
 
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
@@ -47,16 +47,16 @@ GT.WS.fire_on_march = false;
 -- =====================================================================================
 
 ws = GT_t.inc_ws();
-GT.WS[ws] = {}
+GT.WS[ws] = {};
 
-GT.WS[ws].center = 'vwv_dshk_rot_empty'
+GT.WS[ws].center = 'vwv_dshk_rot_empty';
 -- seems we do not find the right spot in the model for POINT_SIGHT_01, so we will use the cockpit instead
 GT.WS[ws].cockpit = {"IronSight/IronSight",  {-2.00, 0.234, 0.0501}, open = true};
--- GT.WS[ws].pointer = "POINT_SIGHT_01"
-GT.WS[ws].drawArgument1 = 0
-GT.WS[ws].drawArgument2 = 1
-GT.WS[ws].omegaY = math.rad(60)
-GT.WS[ws].omegaZ = math.rad(60)
+-- GT.WS[ws].pointer = "POINT_SIGHT_01";
+GT.WS[ws].drawArgument1 = 0;
+GT.WS[ws].drawArgument2 = 1;
+GT.WS[ws].omegaY = math.rad(60);
+GT.WS[ws].omegaZ = math.rad(60);
 GT.WS[ws].reference_angle_Y = math.rad(0);
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].angles = {
@@ -71,11 +71,11 @@ __LN.sightIndicationMode = 1;
 
 -- =====================================================================================
 
-GT.EPLRS = true
+GT.EPLRS = true;
 
 GT.Transportable = {
     size = 200,
-    valide = true
+    valide = true,
 };
 
 GT.DetectionRange = 5000;
