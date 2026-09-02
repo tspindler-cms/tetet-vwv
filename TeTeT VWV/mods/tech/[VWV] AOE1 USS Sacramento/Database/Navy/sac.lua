@@ -80,7 +80,7 @@ GT.DM = {
 };
 
 GT.airWeaponDist = 14630.0;  -- Max engagement range air threats (meters)
-GT.airFindDist = 130000; -- Max detection range air threats (meters)
+GT.airFindDist = 130000; -- Max detenction range air threats (meters)
 
 
 --Radar info
@@ -328,5 +328,5 @@ GT.Categories		= {
 -- categories in the mission editor 
 GT.tags  = 
 {
-	"Cruiser",
+	"Support",
 };

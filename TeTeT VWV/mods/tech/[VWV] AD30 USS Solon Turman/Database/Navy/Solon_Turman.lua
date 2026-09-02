@@ -94,5 +94,8 @@ GT.attribute = {wsType_Navy, wsType_Ship, wsType_CivilShip, wsType_GenericCivShi
 				};
 
 GT.Countries = {"USA", };
-
+GT.tags  =
+{
+	"Support",
+};
 add_surface_unit(GT)
