@@ -5,7 +5,7 @@ GT_t.ws = 0;
 
 set_recursive_metatable(GT, GT_t.generic_wheel_vehicle);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.vap_vc_bicycle_chassis);
-GT.chassis.life = 0.72
+GT.chassis.life = 1.5;
 
 GT.visual.shape = "vap_vc_bicycle";
 GT.visual.shape_dstr = "vap_vc_bicycle_dest";
@@ -37,7 +37,7 @@ GT.animation_arguments.crew_presence = 50;
 -----------------------------------------------------------------------------------------------------
 GT.Name = "vap_vc_bicycle";
 GT.DisplayName = _("VAP VC Bicycle");
-GT.DisplayNameShort = _("VC Bike")
+GT.DisplayNameShort = _("VC Bike");
 GT.Rate = 2;
 
 GT.DetectionRange  = 0;
@@ -52,5 +52,5 @@ GT.tags  =
 {
     "Unarmed",
 	"Support & Logistics",
-}
+};
 GT.Countries = {"Vietnam"}

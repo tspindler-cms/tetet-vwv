@@ -6,7 +6,7 @@ GT_t.ws = 0;
 set_recursive_metatable(GT, GT_t.generic_wheel_vehicle);
 set_recursive_metatable(GT.chassis, GT_t.CH_t.vap_type63_chassis);
 GT.chassis.mass = GT.chassis.mass + 470; 	
-GT.chassis.life = 1.1
+GT.chassis.life = 1.5;
 
 GT.visual.shape = "vap_type63_mlrs";
 GT.visual.shape_dstr = "vap_type63_mlrs_dest";
@@ -28,9 +28,9 @@ GT.encyclopediaAnimation = {
 		[131] = 1.0, -- rocket back
 		[132] = 1.0, -- rocket back
 	}
-}
+};
 
-GT.IR_emission_coeff = 0.08
+GT.IR_emission_coeff = 0.08;
 
 GT.swing_on_run = false;
 GT.snd.engine = "";
@@ -58,10 +58,10 @@ GT.visual.min_time_agony = 5;
 GT.visual.max_time_agony = 10;
 GT.visual.agony_explosion_size = 1;
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_MLRS_80, IR_COEFFS_BODY, {0.25, 0.25/1050}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_MLRS_80, IR_COEFFS_BODY, {0.25, 0.25/1050}}};
 
-GT.driverCockpit = "DriverCockpit/DriverCockpit"
-GT.driverViewConnectorName = "DRIVER_POINT"
+GT.driverCockpit = "DriverCockpit/DriverCockpit";
+GT.driverViewConnectorName = "DRIVER_POINT";
 
 -----------------------------------------------------------------------------------------------------
 -- weapon systems
@@ -89,7 +89,7 @@ GT.WS[ws].LN[1].BR = {
 	{connector_name = 'POINT_ROCKET_10', drawArgument = 130},
 	{connector_name = 'POINT_ROCKET_11', drawArgument = 131},
 	{connector_name = 'POINT_ROCKET_12', drawArgument = 132},
-}
+};
 
 GT.WS[ws].LN[1].customViewPoint = { "genericMLRS", {-100.0, 12.0, 35.0 }, open = true};
 
@@ -106,10 +106,10 @@ GT.WS[ws].drawArgument1 = 24;
 GT.WS[ws].drawArgument2 = 25;
 GT.WS[ws].omegaY = math.rad(50);
 GT.WS[ws].omegaZ = math.rad(50);
-GT.WS[ws].pidY = GT_t.MG_TOWER_PIDY
-GT.WS[ws].pidZ = GT_t.MG_TOWER_PIDZ
-GT.WS[ws].pointer = 'POINT_SIGHT_AK'
-GT.WS[ws].cockpit = {'IronSight/IronSight', {1.8, -0.0, 0.35 },}
+GT.WS[ws].pidY = GT_t.MG_TOWER_PIDY;
+GT.WS[ws].pidZ = GT_t.MG_TOWER_PIDZ;
+GT.WS[ws].pointer = 'POINT_SIGHT_AK';
+GT.WS[ws].cockpit = {'IronSight/IronSight', {1.8, -0.0, 0.35 },};
 
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.vap_ak47t2);
 __LN.type = 10;
@@ -139,10 +139,10 @@ GT.mapclasskey 		= "P0091000208";
 GT.attribute = {wsType_Ground, wsType_Tank,wsType_Miss,wsType_GenericMLRS, WSTYPE_PLACEHOLDER,
                  "MLRS",
                 };
-GT.category = "Artillery"
+GT.category = "Artillery";
 GT.tags  =
 {
     "Artillery",
     "MRL",
-}
+};
 GT.Countries = {"Vietnam"}
