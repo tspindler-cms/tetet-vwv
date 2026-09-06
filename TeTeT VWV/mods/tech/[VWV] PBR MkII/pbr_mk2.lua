@@ -32,7 +32,7 @@ GT.DeckLevel = 1.0;
 GT.X_nose = 3;
 GT.X_tail = -3;
 GT.Tail_Width = 2;
-GT.Gamma_max = 1.0;
+GT.Gamma_max = 0.2;
 GT.Om = 5.0;
 GT.speedup = 8.0;
 GT.R_min = 10.0;
@@ -57,8 +57,6 @@ GT.animation_arguments = {
 
 GT.radar1_period = 3.0;
 GT.radar2_period = 1.0;
-
-
 
 GT.airWeaponDist = 5200;
 GT.airFindDist = 40000;
