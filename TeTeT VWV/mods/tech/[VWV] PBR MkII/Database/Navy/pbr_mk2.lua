@@ -35,7 +35,7 @@ GT.Tail_Width = 2;
 GT.Gamma_max = 0.2;
 GT.Om = 5.0;
 GT.speedup = 8.0;
-GT.R_min = 10.0;
+GT.R_min = 20.0;
 GT.distFindObstacles = 50;
 GT.RCS = 100;  -- estimated RCS in square meters / оценочная ЭПР в кв.м.
 
