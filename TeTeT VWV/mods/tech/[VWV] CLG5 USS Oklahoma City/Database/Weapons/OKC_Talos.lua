@@ -69,18 +69,18 @@ OKC_RIM8_Talos = {
 
 declare_weapon(OKC_RIM8_Talos)
 
-GT_t.WS_t.OKC_RIM8_Talos = {name = "OKC_RIM8E_Talos", display_name = _("RIM-8E")}; 
+GT_t.WS_t.OKC_RIM8_Talos = {name = "OKC_RIM8E_Talos", display_name = _("RIM-8E")}
 GT_t.WS_t.OKC_RIM8_Talos.angles = {
 					{math.rad(180), math.rad(-180), math.rad(-90), math.rad(90)},
-					};
+					}
 GT_t.WS_t.OKC_RIM8_Talos.moveable = false
 GT_t.WS_t.OKC_RIM8_Talos.LN = {}
 GT_t.WS_t.OKC_RIM8_Talos.LN[1] = {}
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].type = 4
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].distanceMin = 1000
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].distanceMax = 160000
-GT_t.WS_t.OKC_RIM8_Talos.LN[1].reactionTime = 2;
-GT_t.WS_t.OKC_RIM8_Talos.LN[1].launch_delay = 0.03;
+GT_t.WS_t.OKC_RIM8_Talos.LN[1].reactionTime = 2
+GT_t.WS_t.OKC_RIM8_Talos.LN[1].launch_delay = 0.03
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].reflection_limit = 0.02
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].ECM_K = 0.1
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].max_number_of_missiles_channels = 2
@@ -92,5 +92,5 @@ GT_t.WS_t.OKC_RIM8_Talos.LN[1].PL = {}
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].PL[1] = {}
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].PL[1].ammo_capacity = 46
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].PL[1].type_ammunition = OKC_RIM8_Talos.wsTypeOfWeapon
-GT_t.WS_t.OKC_RIM8_Talos.LN[1].PL[1].reload_time = 1000000; 
+GT_t.WS_t.OKC_RIM8_Talos.LN[1].PL[1].reload_time = 1000000
 GT_t.WS_t.OKC_RIM8_Talos.LN[1].BR = { {pos = {0, 0, 0} } }
