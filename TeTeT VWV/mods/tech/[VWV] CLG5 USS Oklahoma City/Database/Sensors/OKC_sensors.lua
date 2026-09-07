@@ -96,3 +96,5 @@ OKC_AS =
         }
 
 declare_sensor(OKC_AS)
+
+

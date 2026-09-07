@@ -23,3 +23,4 @@ https://www.alamy.com/usa-vietnam-krieg-vietnam-war-atc-armored-troop-carrier-ta
 
 AI helicopter start and land in direction of travel on the Tango boats, with their tail overlapping the boat superstructure
 The Tango (Heavy) hull designation is different from it's landing pad designation
+The player controlled Huey does not always like to land on the Tango
