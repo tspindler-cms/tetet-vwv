@@ -72,7 +72,7 @@ GT.DM = {
 	{ area_name = "FlightDeck", area_arg = 1006, area_life = 100},
 };
 
-GT.airWeaponDist = 18650.0;  -- Max engagement range air threats (meters)
+GT.airWeaponDist = 27000.0;  -- Max engagement range air threats (meters)
 GT.airFindDist = 45000; -- Max detenction range air threats (meters)
 
 -- weapon systems
@@ -185,14 +185,15 @@ GT.WS[ws].drawArgument2 = 202
 GT.WS[ws].angles = {
 					{math.rad(120), math.rad(-120), math.rad(0), math.rad(45)},
 					};
-GT.WS[ws].omegaY = math.rad(8);
-GT.WS[ws].omegaZ = math.rad(8);
+GT.WS[ws].omegaY = math.rad(16);
+GT.WS[ws].omegaZ = math.rad(16);
 GT.WS[ws].reference_angle_Y = math.rad(0);
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].LN[1].launch_delay = 12;
-GT.WS[ws].LN[1].PL[1].ammo_capacity = 2;
 GT.WS[ws].LN[1].show_external_missile = true 
 GT.WS[ws].LN[1].max_number_of_missiles_channels = 2;
+GT.WS[ws].LN[1].PL[1].ammo_capacity = 2;
+--GT.WS[ws].LN[1].PL[1].reload_time = 1800;
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'ASROC_1', recoilArgument = 211, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
 	{connector_name = 'ASROC_5', recoilArgument = 215, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
@@ -203,7 +204,7 @@ GT.WS[ws].LN[1].BR = {
 -------------------------------------------------------------------------------------------------
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
-set_recursive_metatable(GT.WS[ws], GT_t.WS_t.seasparrow )
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.Gray_RIM7_SeaSparrow )
 GT.WS[ws].area = 'kx_t3'
 GT.WS[ws].center = 'CENTER_TURRET_03'
 GT.WS[ws].drawArgument1 = 219
@@ -211,12 +212,12 @@ GT.WS[ws].drawArgument2 = 220
 GT.WS[ws].angles = {
 					{math.rad(-45), math.rad(45), math.rad(0), math.rad(45)},
 					};
-GT.WS[ws].omegaY = math.rad(8);
-GT.WS[ws].omegaZ = math.rad(8);
+GT.WS[ws].omegaY = math.rad(16);
+GT.WS[ws].omegaZ = math.rad(16);
 GT.WS[ws].reference_angle_Y = math.rad(180);
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].LN[1].depends_on_unit = Gray_TRACKERS
-GT.WS[ws].LN[1].launch_delay = 6;
+GT.WS[ws].LN[1].launch_delay = 2;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 8;
 GT.WS[ws].LN[1].show_external_missile = true 
 GT.WS[ws].LN[1].max_number_of_missiles_channels = 8;
@@ -230,6 +231,7 @@ GT.WS[ws].LN[1].BR = {
 						{connector_name = 'SP_7', drawArgument = 227},
 						{connector_name = 'SP_8', drawArgument = 228},
 					}
+
 -------------------------------------------------------------------------------------------------
 --   Torpedos
 -------------------------------------------------------------------------------------------------
@@ -267,7 +269,7 @@ GT.WS[ws] = {
 			frequencyRange = {0.5e9, 0.58e9},
             ECM_K = 0.65,
             min_trg_alt = 5,
-            max_trg_alt = 15000,
+            max_trg_alt = 24400,
             max_number_of_missiles_channels = 1,
             beamWidth = math.rad(90),
         }
@@ -298,11 +300,13 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
-GT.Singleton		= "yes";
+GT.ThreatRangeMin = 23691;
+GT.Singleton		= "no";
 GT.mapclasskey		= "P0091000070"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
 						"Frigate",
 						"RADAR_BAND1_FOR_ARM",
+					"RADAR_BAND2_FOR_ARM",
 						"DetectionByAWACS",
 					"HeavyArmoredUnits",
 					"Heavy armed ships", 
@@ -319,3 +323,5 @@ GT.tags  =
 {
 	"Frigate",
 };
+GT.Countries = {"USA"}
+add_surface_unit(GT)

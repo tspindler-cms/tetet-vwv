@@ -74,15 +74,15 @@ GT.DM = {
 };
 
 GT.airWeaponDist = 160000.0;  -- Max engagement range air threats (meters)
-GT.airFindDist = 180000; -- Max detenction range air threats (meters)
+GT.airFindDist = 480000; -- Max detenction range air threats (meters)
 
 
 --Radar info
 GT.WS = {}
-GT.WS.maxTargetDetectionRange = 56000;
+GT.WS.maxTargetDetectionRange = 275000;
 GT.WS.radar_type = 102 --optical in wstypes
 GT.WS.searchRadarMaxElevation = math.rad(60);
-GT.WS.searchRadarFrequencies = {{50.0e6, 54.0e6}, {2.0e9, 2.2e9}};
+GT.WS.searchRadarFrequencies = {{5.9e9}, {5.4e9}};
 local ws;
 
 -- weapon systems goes here
@@ -192,15 +192,15 @@ GT.WS[ws] = {
         [1] = {
             type = 102,
             distanceMin = 1,
-            distanceMax = 300000,
+            distanceMax = 275000,
             reactionTime = 2.0,
-            reflection_limit = 0.03,
-			frequencyRange = {0.5e9, 0.58e9},
-            ECM_K = 0.65,
+            reflection_limit = 2.2,
+			frequencyRange = {5.4e9,5.9e9},
+            ECM_K = 0.5,
             min_trg_alt = 5,
             max_trg_alt = 30480,
             max_number_of_missiles_channels = 1,
-            beamWidth = math.rad(90),
+            beamWidth = math.rad(1.8),
         }
     }
 }
@@ -233,13 +233,11 @@ GT.WS[ws].angles = {
 					};
 GT.WS[ws].reference_angle_Y = math.rad(-180);
 GT.WS[ws].reference_angle_Z = math.rad(0);
-GT.WS[ws].LN[1].reactionTime = 2;
-GT.WS[ws].LN[1].launch_delay = 0.03;
 GT.WS[ws].LN[1].depends_on_unit = OKC_tracker_ws;
 GT.WS[ws].LN[1].show_external_missile = true;
 --GT.WS[ws].LN[1].max_number_of_missiles_channels = 2;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 46;
-GT.WS[ws].LN[1].PL[1].shot_delay = 24 
+GT.WS[ws].LN[1].PL[1].shot_delay = 45 
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'POINT_ROCKET_1', recoilArgument = 5555, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1.0, recoilTime = 2},
 	{connector_name = 'POINT_ROCKET_2', recoilArgument = 6666, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1.0, recoilTime = 2},
@@ -257,9 +255,9 @@ GT.WS[ws].angles = {
 GT.WS[ws].drawArgument1 = 1031
 GT.WS[ws].LN[1].reactionTime = 1;
 GT.WS[ws].LN[1].distanceMin = 400;
-GT.WS[ws].LN[1].distanceMax = 180000;
+GT.WS[ws].LN[1].distanceMax = 275000;
 GT.WS[ws].LN[1].min_trg_alt = 0;
-GT.WS[ws].LN[1].max_trg_alt = 24400;
+GT.WS[ws].LN[1].max_trg_alt = 30480;
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[2]);
@@ -281,9 +279,9 @@ GT.WS[ws].angles = {
 GT.WS[ws].drawArgument1 = 1032
 GT.WS[ws].LN[1].reactionTime = 1;
 GT.WS[ws].LN[1].distanceMin = 400;
-GT.WS[ws].LN[1].distanceMax = 180000;
+GT.WS[ws].LN[1].distanceMax = 275000;
 GT.WS[ws].LN[1].min_trg_alt = 0;
-GT.WS[ws].LN[1].max_trg_alt = 24400;
+GT.WS[ws].LN[1].max_trg_alt = 30480;
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[2]);
@@ -300,16 +298,12 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
 				RADAR = {"OKC air",
                     "OKC surface",} --radar types
 			};
---[[
-GT.sensor = {};
-set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 15;
-GT.sensor.max_range_finding_target = 500;
-]]
+
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
-GT.ThreatRangeMin = 1000;
+GT.ThreatRangeMin = 21381;
+GT.ThreatRangeMax = 160000;
 GT.Singleton		= "no";
 GT.mapclasskey		= "P0091000066"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,WSTYPE_PLACEHOLDER,

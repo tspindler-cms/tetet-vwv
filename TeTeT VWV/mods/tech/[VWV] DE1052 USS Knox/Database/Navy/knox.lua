@@ -72,7 +72,7 @@ GT.DM = {
 	{ area_name = "FlightDeck", area_arg = 1006, area_life = 100},
 };
 
-GT.airWeaponDist = 18650.0;  -- Max engagement range air threats (meters)
+GT.airWeaponDist = 14155.0;  -- Max engagement range air threats (meters)
 GT.airFindDist = 45000; -- Max detenction range air threats (meters)
 
 -- weapon systems
@@ -183,14 +183,15 @@ GT.WS[ws].drawArgument2 = 202
 GT.WS[ws].angles = {
 					{math.rad(120), math.rad(-120), math.rad(0), math.rad(45)},
 					};
-GT.WS[ws].omegaY = math.rad(8);
-GT.WS[ws].omegaZ = math.rad(8);
+GT.WS[ws].omegaY = math.rad(16);
+GT.WS[ws].omegaZ = math.rad(16);
 GT.WS[ws].reference_angle_Y = math.rad(0);
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].LN[1].launch_delay = 12;
-GT.WS[ws].LN[1].PL[1].ammo_capacity = 2;
 GT.WS[ws].LN[1].show_external_missile = true 
 GT.WS[ws].LN[1].max_number_of_missiles_channels = 2;
+GT.WS[ws].LN[1].PL[1].ammo_capacity = 2;
+--GT.WS[ws].LN[1].PL[1].reload_time = 1800;
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'ASROC_1', recoilArgument = 211, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
 	{connector_name = 'ASROC_5', recoilArgument = 215, recoilT0 = -2, recoilT1 = -1, recoilT2 = 1, recoilTime = 2},
@@ -219,18 +220,16 @@ GT.Rate = 3000.000000;
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
                 RADAR = {"ticonderoga search radar"}, --radar types
 };
-GT.sensor = {};
-set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 28.8;
-GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
-GT.Singleton		= "yes";
+GT.ThreatRangeMin = 23691;
+GT.Singleton		= "no";
 GT.mapclasskey		= "P0091000070"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
 						"Frigate",
 						"RADAR_BAND1_FOR_ARM",
+					"RADAR_BAND2_FOR_ARM",
 						"DetectionByAWACS",
 					"HeavyArmoredUnits",
 					"Heavy armed ships", 
@@ -247,3 +246,5 @@ GT.tags  =
 {
 	"Frigate",
 };
+GT.Countries = {"USA"}
+add_surface_unit(GT)

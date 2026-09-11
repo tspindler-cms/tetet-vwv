@@ -36,18 +36,18 @@ OKC_SS =
                 azimuth = {-180.0, 180.0},
                 elevation = {-15.0, 70.0}
             },
-            max_measuring_distance = 150000.0,
+            max_measuring_distance = 80000.0,
             detection_distance =
             {
                 [HEMISPHERE_UPPER] =
                 {
-                    [ASPECT_HEAD_ON] = 150000.0,
-                    [ASPECT_TAIL_ON] = 150000.0
+                    [ASPECT_HEAD_ON] = 80000.0,
+                    [ASPECT_TAIL_ON] = 80000.0
                 },
                 [HEMISPHERE_LOWER] =
                 {
-                    [ASPECT_HEAD_ON] = 150000.0,
-                    [ASPECT_TAIL_ON] = 150000.0
+                    [ASPECT_HEAD_ON] = 80000.0,
+                    [ASPECT_TAIL_ON] = 80000.0
                 }
             },
             lock_on_distance_coeff = 1.0,
@@ -73,18 +73,18 @@ OKC_AS =
                 azimuth = {-180.0, 180.0},
                 elevation = {-15.0, 70.0}
             },
-            max_measuring_distance = 300000.0,
+            max_measuring_distance = 460000.0,
             detection_distance =
             {
                 [HEMISPHERE_UPPER] =
                 {
-                    [ASPECT_HEAD_ON] = 300000.0,
-                    [ASPECT_TAIL_ON] = 300000.0
+                    [ASPECT_HEAD_ON] = 460000.0,
+                    [ASPECT_TAIL_ON] = 460000.0
                 },
                 [HEMISPHERE_LOWER] =
                 {
-                    [ASPECT_HEAD_ON] = 300000.0,
-                    [ASPECT_TAIL_ON] = 300000.0
+                    [ASPECT_HEAD_ON] = 460000.0,
+                    [ASPECT_TAIL_ON] = 460000.0
                 }
             },
             lock_on_distance_coeff = 0.95,

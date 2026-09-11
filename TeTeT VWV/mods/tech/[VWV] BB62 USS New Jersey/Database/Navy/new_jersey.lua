@@ -85,10 +85,10 @@ GT.airFindDist = 130000; -- Max detenction range air threats (meters)
 
 --Radar info
 GT.WS = {}
-GT.WS.maxTargetDetectionRange = 28000;
+GT.WS.maxTargetDetectionRange = 80000;
 GT.WS.radar_type = 102 --optical in wstypes
 GT.WS.searchRadarMaxElevation = math.rad(60);
-GT.WS.searchRadarFrequencies = {{50.0e6, 54.0e6}, {2.0e9, 2.2e9}};
+GT.WS.searchRadarFrequencies = {{5.45e9, 5.825e9}};
 local ws;
 
 -- weapon systems goes here
@@ -760,13 +760,10 @@ GT.Rate = 61000.000000
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
 				RADAR = {"ticonderoga search radar"}, --radar types
 			};
-GT.sensor = {};
-set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 15;
-GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
+GT.ThreatRangeMin = 38720;
 GT.Singleton		= "no";
 GT.mapclasskey		= "P0091000066"; --map icon >>MissionEditor\data\NewMap\images P00910000114514 for BB symbol
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
@@ -774,6 +771,7 @@ GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArm
 						"AircraftCarrier", 
 						"Cruisers",
 						"RADAR_BAND1_FOR_ARM",
+					"RADAR_BAND2_FOR_ARM",
 						"DetectionByAWACS",
 };
 					--unfortunately the list with these have since been hidden by ED along with the ships lua files
@@ -781,9 +779,13 @@ GT.Categories		= {
 	{name = "Armed Ship"}, -- has weapons
 	{name = "AircraftCarrier"}
 };
+
+GT.Countries = {"USA"}
 				
 -- categories in the mission editor 
 GT.tags  = 
 {
 	"Battleship",
 };
+
+add_surface_unit(GT)	
