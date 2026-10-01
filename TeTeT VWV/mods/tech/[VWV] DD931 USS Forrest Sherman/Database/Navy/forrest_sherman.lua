@@ -64,7 +64,7 @@ GT.DM = {
 	{ area_name = "mk33_mount_JJJ_1.001", area_arg = 1007, area_life = 80},
 };
 
-GT.airWeaponDist = 18650.0;  -- Max engagement range air threats (meters)
+GT.airWeaponDist = 15728.0;  -- Max engagement range air threats (meters)
 GT.airFindDist = 45000; -- Max detenction range air threats (meters)
 
 --Radar info
@@ -291,7 +291,7 @@ __LN.BR = {{ connector_name = 'POINT_GUN_3inch_2_1',
 
 
 
-
+--[[
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 set_recursive_metatable( GT.WS[ws], GT_t.WS_t.ship_Torpedo84 );
@@ -303,7 +303,7 @@ GT.WS[ws].LN[1].BR = {
 	{connector_name = 'TPO_04', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
 };
 GT.WS[ws].LN[1].show_external_missile = false;
-
+]]
 -------------------------------------------------------------------------
 
 GT.Name = "USS Forrest Sherman"; -- folder name for Liveries
@@ -316,7 +316,7 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
 };
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 15;
+GT.sensor.height = 25.3;
 GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;

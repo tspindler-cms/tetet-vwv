@@ -51,7 +51,7 @@ GT.exhaust = {
 };
 
 GT.animation_arguments = {
-	nav_lights = 0,
+	nav_lights = 69,
 	radar1_rotation = 23,
 	radar2_rotation = 24,
 	radar3_rotation = 25,
@@ -143,7 +143,7 @@ GT.WS[ws].drawArgument2 = 1212;
 GT.WS[ws].reference_angle_Z = math.rad(0);
 GT.WS[ws].reference_angle_Y = math.rad(0);
 GT.WS[ws].angles = {
-	{math.rad(140), math.rad(-140), math.rad(-10), math.rad(85)},
+	{math.rad(120), math.rad(-120), math.rad(-10), math.rad(85)},
 };
 -- first set of launchers
 --GT.WS[2].LN[1]
@@ -164,7 +164,7 @@ GT.WS[ws].center = 'CENTER_TURRET_02'
 GT.WS[ws].omegaY = math.rad(30);
 GT.WS[ws].omegaZ = math.rad(20);
 GT.WS[ws].angles = {
-	{math.rad(140), math.rad(-140), math.rad(-10), math.rad(85)},
+	{math.rad(120), math.rad(-120), math.rad(-10), math.rad(85)},
 };
 GT.WS[ws].reference_angle_Z = math.rad(0);
 -- second set of launchers
@@ -262,7 +262,7 @@ ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[2]);
 GT.WS[ws].base = ws-1;
-local visual_tracker_ws1 = {{{"self", ws-1}}, {{"self", ws}}};
+local OKC_tracker_ws1 = {{{"self", ws-1}}, {{"self", ws}}};
 
 
 
@@ -286,7 +286,7 @@ ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 set_recursive_metatable(GT.WS[ws], GT_t.SS_t.VYMPEL_TRACKER[2]);
 GT.WS[ws].base = ws-1;
-local visual_tracker_ws2 = {{{"self", ws-1}}, {{"self", ws}}};					
+local OKC_tracker_ws2 = {{{"self", ws-1}}, {{"self", ws}}};					
 -------------------------------------------------------------------------
 
 GT.Name = "USS Oklahoma City" -- folder name for Liveries
@@ -298,7 +298,10 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
 				RADAR = {"OKC air",
                     "OKC surface",} --radar types
 			};
-
+GT.sensor = {};
+set_recursive_metatable(GT.sensor, GT_t.SN_visual);
+GT.sensor.height = 34.0;
+GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;

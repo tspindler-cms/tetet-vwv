@@ -51,9 +51,9 @@ GT.exhaust = {
 };
 
 GT.animation_arguments = {
+	nav_lights = 0,
 	water_propeller = 6,
 	radar1_rotation = 7,
-	nav_lights = 901,
 };
 GT.radar1_period = 4; --speed
 
@@ -110,7 +110,7 @@ GT.Sensors = {  OPTIC = {"long-range naval optics"}, --optics types
 			};
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 15;
+GT.sensor.height = 26.0;
 GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;

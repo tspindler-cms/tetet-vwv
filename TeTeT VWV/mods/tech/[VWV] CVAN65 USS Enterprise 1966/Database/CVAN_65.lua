@@ -97,7 +97,7 @@ GT.animation_arguments.bubbles = {138, 139} -- doesn't go back down ED bug
 
 GT.animation_arguments.catapult_shuttles = {145, 146, 147, 148} -- shuttle args
 GT.animation_arguments.arresting_wires = {400, 401, 402, 403} -- can't get the visibilty anim to work, differnt #arg numbers on the Stennis and SC
-GT.animation_arguments.landing_strip_illumination = 150 --runway lights
+GT.animation_arguments.nav_lights = 0 --runway lights
 GT.animation_arguments.water_propeller = 10
 GT.animation_arguments.radar1_rotation = 1
 GT.animation_arguments.radar2_rotation = 2
@@ -105,7 +105,6 @@ GT.animation_arguments.radar3_rotation = 3
 GT.radar1_period = 4; --speed
 GT.radar2_period = 4.5; --speed
 GT.radar3_period = 2; --speed
-
 -- Lighting lua def copied from Forrestal
 --Lighting
 	--150: Runway
@@ -123,7 +122,7 @@ GT.radar3_period = 2; --speed
 
 GT.carrierIlluminationStates = {
 	{{792, 0.0, 1.0}, {794, 0.0, 1.0}, {150, 0.0, 1.0}  }, --NAV_LIGHTS
-	{{790, 0.0, 1.0}, {792, 0.0, 1.0}, {793, 0.0, 1.0}, {794, 0.0, 1.0}, {150, 0.0, 1.0}  }, -- AC_LAUNCH_STATE
+	{{790, 0.0, 1.0}, {792, 0.0, 1.0}, {793, 0.0, 1.0}, {794, 0.0, 1.0}  }, -- AC_LAUNCH_STATE
 	{{793, 0.0, 1.0}, {794, 0.0, 1.0}, {792, 0.0, 1.0}, {150, 0.0, 1.0}  }, -- AC_RECOVERY_STATE
 }
 
@@ -167,9 +166,8 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
             };
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 30;
+GT.sensor.height = 42.0;
 GT.sensor.max_range_finding_target = 500;
-
 ----------------------------------------------------
 GT.DetectionRange	= GT.airFindDist;
 GT.ThreatRange		= GT.airWeaponDist;

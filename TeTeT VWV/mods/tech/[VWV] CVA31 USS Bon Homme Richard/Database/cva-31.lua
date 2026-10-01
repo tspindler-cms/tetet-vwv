@@ -46,8 +46,8 @@ GT.ICLS_Glideslope_position = {-72.591599,  17.2, -5.60511,   3.5}	-- {x [m], y 
 --Optical Landing System
 GT.OLS = {
 	Type = GT_t.OLS_TYPE.IFLOLS,
-	CutLightsArg = 44,
-	DatumAndWaveOffLightsArg = 45,
+	CutLightsArg = 404,
+	DatumAndWaveOffLightsArg = 405,
 	MeatBallArg = 151,
 	GlideslopeBasicAngle = 3.5,
 	VerticalCoverageAngle = 1.7
@@ -134,7 +134,7 @@ GT.DM = {
 --GT.driverViewConnectorName = {"DRIVER_POINT", offset = {0.0, 0.0, 0.0}} --possible CA or weapon controls??
 --GT.driverCockpit = "DriverCockpit/DriverCockpitWithIR" --possible CA or weapon controls??
 
-GT.airWeaponDist = 15000  -- Max engagement range air threats (meters)
+GT.airWeaponDist = 16642  -- Max engagement range air threats (meters)
 GT.airFindDist = 28000 -- Max detenction range air threats (meters)
 
 --Radar info
@@ -163,7 +163,7 @@ GT_t.WSN_t[20] = WSN_20;
 GT_t.LN_t.ship_mk12_127mm_AIR = {};
 GT_t.LN_t.ship_mk12_127mm_AIR.type = 11;
 GT_t.LN_t.ship_mk12_127mm_AIR.distanceMin = 20;
-GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 9144;
+GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 16642;
 GT_t.LN_t.ship_mk12_127mm_AIR.max_trg_alt = 11339;
 GT_t.LN_t.ship_mk12_127mm_AIR.reactionTime = 2;
 GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {};
@@ -471,9 +471,8 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
             };
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 30;
+GT.sensor.height = 43.0;
 GT.sensor.max_range_finding_target = 500;
-
 ----------------------------------------------------
 GT.DetectionRange	= GT.airFindDist;
 GT.ThreatRange		= GT.airWeaponDist;
