@@ -3,6 +3,8 @@
 -- Ballistics are based on the stock DCS 20 mm round; "tracer_bullet_red" is the
 -- stock red tracer visual, so rounds leave a red trail in flight.
 
+_G.vwv = _G.vwv or {}
+
 if not _G.vwv.VWV_20MM_HE_RED_DECLARED then -- Marlboros edit
 
     declare_weapon({
