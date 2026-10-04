@@ -412,3 +412,4 @@ GT.tags  =
 {
 	"Destroyer",
 };
+GT.Countries = {"USA"}
