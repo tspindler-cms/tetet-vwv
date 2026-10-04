@@ -253,4 +253,3 @@ GT.tags  =
 	"Frigate",
 };
 GT.Countries = {"USA"}
-add_surface_unit(GT)

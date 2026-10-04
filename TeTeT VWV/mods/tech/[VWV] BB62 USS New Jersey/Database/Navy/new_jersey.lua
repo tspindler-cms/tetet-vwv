@@ -791,5 +791,3 @@ GT.tags  =
 {
 	"Battleship",
 };
-
-add_surface_unit(GT)	

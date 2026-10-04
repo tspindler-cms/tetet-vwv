@@ -329,4 +329,3 @@ GT.tags  =
 	"Carrier"
 };
 GT.Countries = { "USA" };
-add_surface_unit(GT)
