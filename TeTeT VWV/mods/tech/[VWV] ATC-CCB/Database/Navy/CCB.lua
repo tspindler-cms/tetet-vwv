@@ -156,6 +156,10 @@ GT.DisplayName = _("[VWV] CCB Charlie");
 GT.DisplayNameShort = _("CCB");
 GT.Rate = 700;
 
+GT.sensor = {};
+set_recursive_metatable(GT.sensor, GT_t.SN_visual);
+GT.sensor.height = 3;
+GT.sensor.max_range_finding_target = 500;
 GT.Sensors = {OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR",},
 				        RADAR = {"Patriot str","ticonderoga search radar",}};
 

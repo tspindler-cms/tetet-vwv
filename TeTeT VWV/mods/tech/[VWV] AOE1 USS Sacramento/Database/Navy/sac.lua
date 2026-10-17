@@ -53,7 +53,7 @@ GT.exhaust = {
 };
 
 GT.animation_arguments = {
-	nav_lights = 0,
+	nav_lights = 69,
 	radar1_rotation = 10,
 	radar2_rotation = 11,
 	radar3_rotation = 12,
@@ -156,15 +156,12 @@ GT.WS[ws].angles = {
                     };
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
 __LN.sightMaxTanVel = 300;
-__LN.BR = {
-		   { connector_name = 'POINT_MK33_1L',
+__LN.BR = {{ connector_name = 'POINT_MK33_1L',
 			recoilArgument = 1113,
 			recoilTime = 0.4 },
-	
 		   { connector_name = 'POINT_MK33_1R',
 			recoilArgument = 1114,
-			recoilTime = 0.4 },
-};
+			recoilTime = 0.4 }};
 
 -------------------------------------------------------------------------------------------------
 --   3inch turret 2
@@ -177,20 +174,18 @@ GT.WS[ws].area = 'T2';
 GT.WS[ws].center = 'T2M';
 GT.WS[ws].drawArgument1 = 1121;
 GT.WS[ws].drawArgument2 = 1122;
-GT.WS[ws].reference_angle_Y = math.rad(-0);
+GT.WS[ws].reference_angle_Y = math.rad(-0)
 GT.WS[ws].angles = {
                     {math.rad(57), math.rad(-130), math.rad(0), math.rad(85)},
                     };
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
 __LN.sightMaxTanVel = 300;
-__LN.BR = {
-		   { connector_name = 'POINT_MK33_2L',
+__LN.BR = {{ connector_name = 'POINT_MK33_2L',
 			recoilArgument = 1123,
 			recoilTime = 0.4 },
 		   { connector_name = 'POINT_MK33_2R',
 			recoilArgument = 1124,
-			recoilTime = 0.4 },
-};
+			recoilTime = 0.4 }};
 -------------------------------------------------------------------------------------------------
 --   3inch turret 3
 -------------------------------------------------------------------------------------------------
@@ -202,20 +197,18 @@ GT.WS[ws].area = 'T3';
 GT.WS[ws].center = 'T3M';
 GT.WS[ws].drawArgument1 = 1131;
 GT.WS[ws].drawArgument2 = 1132;
-GT.WS[ws].reference_angle_Y = math.rad(-180);
+GT.WS[ws].reference_angle_Y = math.rad(-180)
 GT.WS[ws].angles = {
                     {math.rad(-120), math.rad(52), math.rad(0), math.rad(85)},
                     };
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
 __LN.sightMaxTanVel = 300;
-__LN.BR = {
-		   { connector_name = 'POINT_MK33_3L',
+__LN.BR = {{ connector_name = 'POINT_MK33_3L',
 			recoilArgument = 1133,
 			recoilTime = 0.4 },
 		   { connector_name = 'POINT_MK33_3R',
 			recoilArgument = 1134,
-			recoilTime = 0.4 },
-};
+			recoilTime = 0.4 }};
 
 -------------------------------------------------------------------------------------------------
 --   3inch turret 4
@@ -234,18 +227,16 @@ GT.WS[ws].angles = {
                     };
 __LN = add_launcher(GT.WS[ws], GT_t.LN_t.ship_mk33_76mm_AIR);
 __LN.sightMaxTanVel = 300;
-__LN.BR = {
-		   { connector_name = 'POINT_MK33_4L',
+__LN.BR = {{ connector_name = 'POINT_MK33_4L',
 			recoilArgument = 1143,
 			recoilTime = 0.4 },
 		   { connector_name = 'POINT_MK33_4R',
 			recoilArgument = 1144,
-			recoilTime = 0.4 },
-};
+			recoilTime = 0.4 }};
 
 --------------------------- SAC_radar ------------------------------------------
-ws = GT_t.inc_ws();
-local first_SAC_tracker_id = ws;
+ws = GT_t.inc_ws()
+local first_SAC_tracker_id = ws
 GT.WS[ws] = {
 	area = 'Mast',
 	center = 'RADAR1',
@@ -274,10 +265,10 @@ GT.WS[ws] = {
 local SAC_TRACKERS = {{{'self', ws}}};
 
 for i = 2, 13 do 
-    ws = GT_t.inc_ws()
-    GT.WS[ws] = {}
-    set_recursive_metatable(GT.WS[ws], GT.WS[first_SAC_tracker_id])
-    table.insert(SAC_TRACKERS, {{'self', ws}})
+    ws = GT_t.inc_ws();
+    GT.WS[ws] = {};
+    set_recursive_metatable(GT.WS[ws], GT.WS[first_SAC_tracker_id]);
+    table.insert(SAC_TRACKERS, {{'self', ws}});
 end
 --------------------------- SAC_SPG49 tracker radar ------------------------------------------
 ws = GT_t.inc_ws();
@@ -306,15 +297,15 @@ local visual_tracker_ws1 = {{{"self", ws-1}}, {{"self", ws}}};
 GT.Name = "USS Sacramento 1968"; -- folder name for Liveries
 GT.DisplayName = _("[VWV] AOE-1 USS Sacramento"); -- name in game in ME and on the tape at the bottom
 GT.DisplayNameShort = _("Sacramento class"); -- Label name
-GT.Rate = 53000.000000;
+GT.Rate = 53000.000000; 
 
-GT.Sensors = {
-				OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
-				RADAR = {"SAC air", "SAC surface"}, --radar types
+GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
+				RADAR = {"SAC air",
+                    "SAC surface",}, --radar types
 			};
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 15;
+GT.sensor.height = 38;
 GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
@@ -331,7 +322,7 @@ GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArm
 					--unfortunately the list with these have since been hidden by ED along with the ships lua files
 GT.Categories		= {
 	{name = "Armed Ship"}, -- has weapons
-	{name = "HelicopterCarrier"},
+	{name = "HelicopterCarrier"}
 };
 				
 -- categories in the mission editor 

@@ -97,7 +97,7 @@ GT.animation_arguments.bubbles = {138, 139} -- doesn't go back down ED bug
 
 GT.animation_arguments.catapult_shuttles = {145, 146, 147, 148} -- shuttle args
 GT.animation_arguments.arresting_wires = {400, 401, 402, 403} -- can't get the visibilty anim to work, differnt #arg numbers on the Stennis and SC
-GT.animation_arguments.landing_strip_illumination = 150 --runway lights
+GT.animation_arguments.nav_lights = 0 --runway lights
 GT.animation_arguments.water_propeller = 10
 GT.animation_arguments.radar1_rotation = 1
 GT.animation_arguments.radar2_rotation = 2
@@ -123,7 +123,7 @@ GT.radar3_period = 2; --speed
 
 GT.carrierIlluminationStates = {
 	{{792, 0.0, 1.0}, {794, 0.0, 1.0}, {150, 0.0, 1.0}  }, --NAV_LIGHTS
-	{{790, 0.0, 1.0}, {792, 0.0, 1.0}, {793, 0.0, 1.0}, {794, 0.0, 1.0}, {150, 0.0, 1.0}  }, -- AC_LAUNCH_STATE
+	{{790, 0.0, 1.0}, {792, 0.0, 1.0}, {793, 0.0, 1.0}, {794, 0.0, 1.0}  }, -- AC_LAUNCH_STATE
 	{{793, 0.0, 1.0}, {794, 0.0, 1.0}, {792, 0.0, 1.0}, {150, 0.0, 1.0}  }, -- AC_RECOVERY_STATE
 }
 
@@ -147,8 +147,8 @@ GT.DM = {
 --GT.driverViewConnectorName = {"DRIVER_POINT", offset = {0.0, 0.0, 0.0}} --possible CA or weapon controls??
 --GT.driverCockpit = "DriverCockpit/DriverCockpitWithIR" --possible CA or weapon controls??
 
-GT.airWeaponDist = 25000  -- Max engagement range air threats (meters)
-GT.airFindDist = 50000 -- Max detenction range air threats (meters)
+GT.airWeaponDist = 27000  -- Max engagement range air threats (meters)
+GT.airFindDist = 250000 -- Max detenction range air threats (meters)
 
 -- weapon systems
 GT.WS = {}
@@ -178,7 +178,7 @@ GT_t.WSN_t[20] = WSN_20;
 -------------------------------------------------------------------------------------------------
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
-set_recursive_metatable(GT.WS[ws], GT_t.WS_t.seasparrow )
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.CVN6569_RIM7_SeaSparrow )
 GT.WS[ws].area = 'SPT1'
 GT.WS[ws].center = 'CENTER_TURRET_01'
 GT.WS[ws].drawArgument1 = 1110
@@ -186,12 +186,12 @@ GT.WS[ws].drawArgument2 = 1119
 GT.WS[ws].angles = {
 					{math.rad(-85), math.rad(175), math.rad(0), math.rad(45)},
 					};
-GT.WS[ws].omegaY = math.rad(8);
-GT.WS[ws].omegaZ = math.rad(8);
+GT.WS[ws].omegaY = math.rad(16);
+GT.WS[ws].omegaZ = math.rad(16);
 GT.WS[ws].reference_angle_Y = math.rad(-90);
 GT.WS[ws].reference_angle_Z = math.rad(15);
 GT.WS[ws].LN[1].depends_on_unit = visual_tracker_ws1
-GT.WS[ws].LN[1].launch_delay = 6;
+GT.WS[ws].LN[1].launch_delay = 2;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 8;
 GT.WS[ws].LN[1].show_external_missile = true 
 GT.WS[ws].LN[1].max_number_of_missiles_channels = 8;
@@ -208,7 +208,7 @@ GT.WS[ws].LN[1].BR = {
 
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
-set_recursive_metatable(GT.WS[ws], GT_t.WS_t.seasparrow )
+set_recursive_metatable(GT.WS[ws], GT_t.WS_t.CVN6569_RIM7_SeaSparrow )
 GT.WS[ws].area = 'SPT2'
 GT.WS[ws].center = 'CENTER_TURRET_02'
 GT.WS[ws].drawArgument1 = 1120
@@ -216,12 +216,12 @@ GT.WS[ws].drawArgument2 = 1129
 GT.WS[ws].angles = {
 					{math.rad(-175), math.rad(85), math.rad(0), math.rad(45)},
 					};
-GT.WS[ws].omegaY = math.rad(8);
-GT.WS[ws].omegaZ = math.rad(8);
+GT.WS[ws].omegaY = math.rad(16);
+GT.WS[ws].omegaZ = math.rad(16);
 GT.WS[ws].reference_angle_Y = math.rad(90);
 GT.WS[ws].reference_angle_Z = math.rad(15);
 GT.WS[ws].LN[1].depends_on_unit = visual_tracker_ws2
-GT.WS[ws].LN[1].launch_delay = 6;
+GT.WS[ws].LN[1].launch_delay = 2;
 GT.WS[ws].LN[1].PL[1].ammo_capacity = 8;
 GT.WS[ws].LN[1].show_external_missile = true 
 GT.WS[ws].LN[1].max_number_of_missiles_channels = 8;
@@ -251,7 +251,7 @@ GT.WS[ws].angles = {
 --GT.WS[ws].drawArgument2 = 1119;
 GT.WS[ws].LN[1].reactionTime = 1;
 GT.WS[ws].LN[1].distanceMin = 400;
-GT.WS[ws].LN[1].distanceMax = 25000;
+GT.WS[ws].LN[1].distanceMax = 27000;
 GT.WS[ws].LN[1].min_trg_alt = 0;
 GT.WS[ws].LN[1].max_trg_alt = 24400;
 ws = GT_t.inc_ws();
@@ -276,7 +276,7 @@ GT.WS[ws].angles = {
 --GT.WS[ws].drawArgument2 = 1129;
 GT.WS[ws].LN[1].reactionTime = 1;
 GT.WS[ws].LN[1].distanceMin = 400;
-GT.WS[ws].LN[1].distanceMax = 25000;
+GT.WS[ws].LN[1].distanceMax = 27000;
 GT.WS[ws].LN[1].min_trg_alt = 0;
 GT.WS[ws].LN[1].max_trg_alt = 24400;
 ws = GT_t.inc_ws();
@@ -296,13 +296,12 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
             };
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 30;
+GT.sensor.height = 42.0;
 GT.sensor.max_range_finding_target = 500;
-
 ----------------------------------------------------
 GT.DetectionRange	= GT.airFindDist;
 GT.ThreatRange		= GT.airWeaponDist;
-GT.Singleton		= "yes";
+GT.Singleton		= "no";
 GT.mapclasskey		= "P0091000065"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy, wsType_Ship, wsType_AirCarrier, WSTYPE_PLACEHOLDER, 
 						"Aircraft Carriers", 

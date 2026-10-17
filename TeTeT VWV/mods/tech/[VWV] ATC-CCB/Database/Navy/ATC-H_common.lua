@@ -56,6 +56,10 @@ function vwv_atc_build_base()
 	GT.animation_arguments.alarm_state = 9
 	GT.animation_arguments.luna_lights = -1
 
+	GT.sensor = {};
+	set_recursive_metatable(GT.sensor, GT_t.SN_visual);
+	GT.sensor.height = 3;
+	GT.sensor.max_range_finding_target = 500;
 	GT.Rate = 100
 	GT.Sensors = {
 		OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR"},

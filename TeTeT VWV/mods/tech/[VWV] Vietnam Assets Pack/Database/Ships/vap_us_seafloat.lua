@@ -127,6 +127,7 @@ GT.sensor.max_range_finding_target = 0;
 GT.sensor.min_range_finding_target = 0;
 GT.sensor.max_alt_finding_target = 0;
 GT.sensor.height = 3.8;
+GT.sensor.max_range_finding_target = 500;
 
 -----------------------------------------------------------------------------------------------------
 GT.WS = {};

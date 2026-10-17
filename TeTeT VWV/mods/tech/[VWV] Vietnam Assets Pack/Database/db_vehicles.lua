@@ -72,11 +72,6 @@ vehicle_file("vehicles/vap_civ_zis.lua")
 -- VC Truck AAA
 vehicle_file("vehicles/vap_vc_zis_aa.lua")
 
-
--- Type 63 MLRS
-chassis_file("chassis/vap_type63_chassis.lua")
-vehicle_file("vehicles/vap_type63_mlrs.lua")
-
 -- VC Bicycle
 chassis_file("chassis/vap_vc_bicycle_chassis.lua")
 vehicle_file("vehicles/vap_vc_bicycle.lua")

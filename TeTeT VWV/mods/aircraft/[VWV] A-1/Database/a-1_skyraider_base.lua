@@ -491,7 +491,7 @@ return {
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
 				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.13 ,0 }},--LAU-10 pod - 4 x Zuni HE
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.13 ,0 }},--Hawkeye 5 inch unguided rocket
+				{ CLSID = "{vwv_tinytim}" ,attach_point_position = {.60, -.13 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb
@@ -551,7 +551,7 @@ return {
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
 				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.13 ,0 }},--LAU-10 pod - 4 x Zuni HE
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.13 ,0 }},--Hawkeye 5 inch unguided rocket
+				{ CLSID = "{vwv_tinytim}" ,attach_point_position = {.60, -.13 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 				{ CLSID = "{toilet_bomb}", attach_point_position = {0.55, -0.3, 0}}, -- Toilet Bomb

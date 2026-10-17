@@ -55,7 +55,7 @@ GT.animation_arguments = {
 	water_propeller = 1,
 	radar1_rotation = 2,
 	radar2_rotation = 3,
-	nav_lights = 901,
+	nav_lights = 69,
 };
 GT.radar1_period = 4; --speed
 GT.radar2_period = 4;
@@ -74,7 +74,7 @@ GT.DM = {
 	{ area_name = "FlightDeck", area_arg = 79, area_life = 500},
 };
 
-GT.airWeaponDist = 18650.0;  -- Max engagement range air threats (meters)
+GT.airWeaponDist = 16642.0;  -- Max engagement range air threats (meters)
 GT.airFindDist = 45000; -- Max detenction range air threats (meters)
 
 --Radar info
@@ -122,7 +122,7 @@ GT_t.WS_t.ship_mk12_2x127mm.reference_angle_Z = 0
 GT_t.LN_t.ship_mk12_127mm_AIR = {}
 GT_t.LN_t.ship_mk12_127mm_AIR.type = 11
 GT_t.LN_t.ship_mk12_127mm_AIR.distanceMin = 20
-GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 9144
+GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 16642
 GT_t.LN_t.ship_mk12_127mm_AIR.max_trg_alt = 11339
 GT_t.LN_t.ship_mk12_127mm_AIR.reactionTime = 2
 GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {}
@@ -182,7 +182,7 @@ __LN.BR = {{ connector_name = 'POINT_GUN_130mm_1',
 ws = GT_t.inc_ws();
 GT.WS[ws] = {}
 GT.WS[ws].area = 'T4'
-GT.WS[ws].center = 'CENTER_TURRET_04_1'
+GT.WS[ws].center = 'CENTER_TURRET_04'
 GT.WS[ws].omegaY = math.rad(30);
 GT.WS[ws].omegaZ = math.rad(20);
 GT.WS[ws].angles = {
@@ -207,10 +207,10 @@ __LN.BR = {{ connector_name = 'POINT_GUN_130mm_4',
 
 							ws = GT_t.inc_ws();
 
---[[
+
 -------------------------------------------------- Torpedo Launcher-------------------------------------------------------------
 -- Mark 32 Surface Vessel Torpedo Tubes
-
+--[[
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk46 );
@@ -227,11 +227,11 @@ GT.WS[ws].LN[1].BR = {
 	{connector_name = 'TPO_03' }, 
 }
 GT.WS[ws].LN[1].customViewPoint = { "genericMissile", {-2.0, 0.75, 0.0}, }; 
-
+]]
 -- ======================================================================================
 
 -- Mark 32 Surface Vessel Torpedo Tubes
-
+--[[
 ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_mk46 );
@@ -261,7 +261,7 @@ GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "lo
 };
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 15;
+GT.sensor.height = 15.2;
 GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;

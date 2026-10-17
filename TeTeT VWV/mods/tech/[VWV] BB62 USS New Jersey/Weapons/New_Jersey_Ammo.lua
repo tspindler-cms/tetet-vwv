@@ -10,12 +10,12 @@ declare_weapon({
 	projectile	  		= "HE",
 	payloadEffect   		= "Fragmentation",
 	payloadMaterial 		= "RDX",
-	v0						= 797, -- 2615.0 fps,
-	Dv0						= 0.0018, -- 0.001,
-	Da0						= 0.0005, -- 0.0002,
-	Da1						= 0.00008, -- 0.0001,
+	v0						= 820, -- 2615.0 fps,
+	Dv0						= 0.0015, -- 0.001,
+	Da0						= 0.00030, -- 0.0002,
+	Da1						= 0.00001, -- 0.0001,
 	mass	  				= 862.0,
-	explosive	 			= 471.3, -- about 69.67kg,
+	explosive	 			= 464.47, -- about 69.67kg,
 	life_time	 			= 300,
 	caliber	 			= 406.0,
 	s		 				= 0.0,
@@ -23,24 +23,22 @@ declare_weapon({
 	l		 				= 0.0,
 	charTime				= 0,
 	cx						= {0.0,0.52,0.67,0.14,1.76},
-	k1						= 9.6e-10,
+	k1						= 2.3e-08,
 	tracer_off				= 1.7,
         tracer_on       = tracer_on_time,
-        smoke_tail_life_time = 1.7,
+        smoke_tail_life_time = 1.7, 
 	scale_tracer  			= 1,
 	scale_smoke			= barrel_smoke_level,
 	smoke_opacity  			= barrel_smoke_opacity,
 	smoke_particle  		= 1,
 	cartridge 				= 0,
-
 	aiming_table			=
 	{
 		precalculateAirDefenceAimingTable = true,
 		precalculateAimingTable = true,
-		[1] = { init_vel = 810.0 } -- intentionally not 792 to get less accurate
+		[1] = { init_vel = 820.0 } -- intentionally not 792 to get less accurate
 	}
-
-})
+});
 
 
 

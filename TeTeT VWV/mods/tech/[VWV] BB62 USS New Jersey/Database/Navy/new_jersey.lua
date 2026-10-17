@@ -54,7 +54,7 @@ GT.animation_arguments = {
 	water_propeller = 12,
 	radar1_rotation = 13,
 	radar2_rotation = 14,
-	nav_lights = 901,
+	nav_lights = 69,
 };
 GT.radar1_period = 4; --speed
 GT.radar2_period = 4;
@@ -79,16 +79,16 @@ GT.DM = {
 	{ area_name = "nj_5in38_mk32_T10", area_arg = 987, area_life = 50},
 };
 
-GT.airWeaponDist = 14630.0;  -- Max engagement range air threats (meters)
+GT.airWeaponDist = 16642.0;  -- Max engagement range air threats (meters)
 GT.airFindDist = 130000; -- Max detenction range air threats (meters)
 
 
 --Radar info
 GT.WS = {}
-GT.WS.maxTargetDetectionRange = 28000;
+GT.WS.maxTargetDetectionRange = 80000;
 GT.WS.radar_type = 102 --optical in wstypes
 GT.WS.searchRadarMaxElevation = math.rad(60);
-GT.WS.searchRadarFrequencies = {{50.0e6, 54.0e6}, {2.0e9, 2.2e9}};
+GT.WS.searchRadarFrequencies = {{5.45e9, 5.825e9}};
 local ws;
 
 -- weapon systems goes here
@@ -157,7 +157,7 @@ GT_t.WS_t.ship_mk12_2x127mm.reference_angle_Z = 0;
 GT_t.LN_t.ship_mk12_127mm_AIR = {};
 GT_t.LN_t.ship_mk12_127mm_AIR.type = 11;
 GT_t.LN_t.ship_mk12_127mm_AIR.distanceMin = 20;
-GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 9144;
+GT_t.LN_t.ship_mk12_127mm_AIR.distanceMax = 16642;
 GT_t.LN_t.ship_mk12_127mm_AIR.max_trg_alt = 11339;
 GT_t.LN_t.ship_mk12_127mm_AIR.reactionTime = 2;
 GT_t.LN_t.ship_mk12_127mm_AIR.sensor = {};
@@ -758,15 +758,17 @@ GT.DisplayNameShort = _("Big J") -- Label name
 GT.Rate = 61000.000000 
 
 GT.Sensors = {  OPTIC = {"long-range naval optics", "long-range naval LLTV", "long-range naval FLIR", "long-range air defence optics"}, --optics types
-				RADAR = {"ticonderoga search radar"}, --radar types
+				RADAR = {"NJ68 air",
+                    "NJ68 surface",} --radar types
 			};
 GT.sensor = {};
 set_recursive_metatable(GT.sensor, GT_t.SN_visual);
-GT.sensor.height = 15;
+GT.sensor.height = 41.0;
 GT.sensor.max_range_finding_target = 500;
 ----------------------------------------------------
 GT.DetectionRange  	= GT.airFindDist;
 GT.ThreatRange 		= GT.airWeaponDist;
+GT.ThreatRangeMin = 38720;
 GT.Singleton		= "no";
 GT.mapclasskey		= "P0091000066"; --map icon >>MissionEditor\data\NewMap\images P00910000114514 for BB symbol
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
@@ -774,6 +776,7 @@ GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArm
 						"AircraftCarrier", 
 						"Cruisers",
 						"RADAR_BAND1_FOR_ARM",
+					"RADAR_BAND2_FOR_ARM",
 						"DetectionByAWACS",
 };
 					--unfortunately the list with these have since been hidden by ED along with the ships lua files
@@ -781,9 +784,9 @@ GT.Categories		= {
 	{name = "Armed Ship"}, -- has weapons
 	{name = "AircraftCarrier"}
 };
-				
 -- categories in the mission editor 
 GT.tags  = 
 {
 	"Battleship",
 };
+GT.Countries = { "USA" };	

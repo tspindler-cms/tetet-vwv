@@ -3,12 +3,11 @@ declare_plugin("jjj_Gray_73",
 dirName		  = current_mod_path,
 displayName   = _("USS Gray"),
 shortName	  = "Gray",
-version		  = "3.3.0",
+version		  = "3.3.1",
 state		  = "installed",
 fileMenuName  = _("vwv Gray"),
 developerName = "James J Jackson",
 info		  = _("USS Gray, DE-1054, circa 1973"),
-encyclopedia_path = current_mod_path .. '/Encyclopedia',
 
 Skins =
 {
@@ -29,8 +28,8 @@ mount_vfs_texture_path	(current_mod_path ..  "/Textures/Gray.zip") -- I use uniq
 dofile(current_mod_path.."/Database/Sensors/Gray_sensors.lua")
 
 -- weapons
-dofile(current_mod_path..'/Weapons/Gray_Ammo.lua') -- any custom weapons the mod has
-
+dofile(current_mod_path.."/Database/Weapons/Gray_Ammo.lua") -- any custom weapons the mod has
+dofile(current_mod_path.."/Database/Weapons/Gray_Missile.lua") -- any custom weapons the mod has
 --Ship
 dofile(current_mod_path .."/Database/db_ships.lua")
 

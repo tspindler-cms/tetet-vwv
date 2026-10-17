@@ -3,12 +3,11 @@ declare_plugin("jjj_enterprise_66",
 	dirName		  = current_mod_path,
 	displayName   = _("CVAN-65 Enterprise"),
 	shortName	  =   "Big-E 1966",
-	version		  =   "3.3.0",
+	version		  =   "3.3.1",
 	state		  =   "installed",
 	fileMenuName = _("vwv Enterprise 66"),
 	developerName =   "TeTeT, James J. Jackson, Riko, Tansoku102cm",
 	info		  =    _("USS Enterprise, CVAN-65, circa 1966, Wikipedia:  In 1958, she became the first nuclear-powered aircraft carrier in the United States Navy, and the world, as well as the eighth United States naval vessel to bear the name."),
-	encyclopedia_path = current_mod_path .. '/Encyclopedia',
 
 	Skins =
 	{

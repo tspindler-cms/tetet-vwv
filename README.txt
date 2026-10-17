@@ -1,5 +1,5 @@
 Vietnam War Vessels by TeTeT
-3.3.0
+3.4.0
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
