@@ -7,3 +7,4 @@ livery = {
 	{"vwv_ra5c_exterior_2",	ROUGHNESS_METALLIC	,	"vwv_ra5c_exterior_2_RoughMet", false};
 }
 name="A-5 VIGILANTE RVAH-1"
+order=10
