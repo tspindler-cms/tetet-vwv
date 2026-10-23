@@ -57,7 +57,21 @@ return {
 	has_afteburner	            = true,
 	has_speedbrake	            = true,
 
-	nose_gear_pos                            = {4.642, -1.9177, 0.000}, -- 15cm lower due to suspension
+	tand_gear_max = 3.73,
+	nose_gear_pos                            = {4.593, -1.799, 0.000}, -- tire contact at arg 0
+	nose_gear_amortizer_direct_stroke        =  0.200, -- full extension, 20 cm down
+	nose_gear_amortizer_reversal_stroke      = -0.200, -- full compression, 20 cm up
+	nose_gear_amortizer_normal_weight_stroke =  0.0,
+	nose_gear_wheel_diameter                 = 0.710,
+
+	main_gear_pos                            = {-1.738, -1.780, 1.881}, -- tire contact at arg 0; Z is half-track, mirrored
+	main_gear_amortizer_direct_stroke        =  0.200,
+	main_gear_amortizer_reversal_stroke      = -0.200,
+	main_gear_amortizer_normal_weight_stroke =  0.0,
+	main_gear_wheel_diameter                 = 0.922,
+
+	--[[
+	nose_gear_pos                            = {4.642, -1.8777, 0.000}, -- 15cm lower due to suspension
 	nose_gear_amortizer_direct_stroke        = 0.300,
 	nose_gear_amortizer_reversal_stroke      = -0.150,
 	nose_gear_amortizer_normal_weight_stroke = 0.0,
@@ -65,11 +79,12 @@ return {
     tand_gear_max = 3.73, -- math.rad(180.0), --	-5.54,
 
 	-- Suspension disabled as it puts the nose wheel in the deck
-    main_gear_pos                            = {-1.7407, -1.9529, 0.000}, -- 19cm lower due to suspension
-    main_gear_amortizer_direct_stroke        = 0.000,
-    main_gear_amortizer_reversal_stroke      = 0.000,
+    main_gear_pos                            = {-1.7407, -1.8729, 0.000}, -- 19cm lower due to suspension
+    main_gear_amortizer_direct_stroke        = 0.300,
+    main_gear_amortizer_reversal_stroke      = -0.150,
     main_gear_amortizer_normal_weight_stroke = 0.0,
     main_gear_wheel_diameter                 = 0.9225,
+]]
 
     wing_tip_pos = {-4.0, 0.9, 8.0},
 
@@ -92,7 +107,7 @@ return {
 	engines_nozzles = {
 		[1] =
 		{
-			pos 		=  {-8.80, 0.40, 1.05}, -- nozzle coords
+			pos 		=  {-8.80, 0.40, 1.02}, -- nozzle coords
 			elevation   =  1.0, -- AFB cone elevation
 			diameter	 = 1.2, -- AFB cone diameter
 			exhaust_length_ab   = 10, -- length in m
@@ -102,7 +117,7 @@ return {
 		}, -- end of [1]
 		[2] =
 		{
-			pos 		=  {-8.80, 0.40, -1.05}, -- nozzle coords
+			pos 		=  {-8.80, 0.40, -1.02}, -- nozzle coords
 			elevation   =  1.0, -- AFB cone elevation
 			diameter	 = 1.2, -- AFB cone diameter
 			exhaust_length_ab   = 10, -- length in m
