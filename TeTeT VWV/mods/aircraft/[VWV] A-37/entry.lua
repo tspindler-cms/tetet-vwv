@@ -13,7 +13,7 @@ developerName    = "Hawkeye60",
 
 InputProfiles =
 {
-    ["a37_dragonfly"] = current_mod_path .. '/Input/a37_dragonfly',
+    ["a_37_dragonfly"] = current_mod_path .. '/Input/a37_dragonfly',
 },
 
 Skins	=
@@ -36,7 +36,7 @@ LogBook =
 	{
 		{
 			name		= _("A-37 Dragonfly"),
-			type		= "a37_dragonfly",
+			type		= "a_37_dragonfly",
 		},
 	},
 }
@@ -50,23 +50,16 @@ mount_vfs_model_path	(current_mod_path.."/Shapes")
 mount_vfs_liveries_path (current_mod_path.."/Liveries")
 mount_vfs_texture_path  (current_mod_path.."/Textures/A_37.zip")
 
-dofile(current_mod_path.."/Cockpit/Scripts/mainpanel_init.lua")
--- make_flyable('a37_dragonfly',current_mod_path..'/Cockpit/Scripts/', true, current_mod_path..'/comm.lua')--SFM
 load_immediately = true
 
 mount_vfs_sound_path (current_mod_path.."/Sounds")
 dofile(current_mod_path.."/Views.lua")
 
--- Unclear why there are two entries for views?
---make_view_settings('A37_Dragonfly', ViewSettings, SnapViews)
-make_view_settings('a37_dragonfly', ViewSettings, SnapViews)
+make_view_settings('a_37_dragonfly', ViewSettings, SnapViews)
 
 local support_cockpit = current_mod_path..'/Cockpit/Scripts/'
 -- dofile(current_mod_path..'/Weapons/napalm.lua')
 dofile(current_mod_path..'/Weapons/Weapons.lua')
 dofile(current_mod_path..'/Database/a37_dragonfly.lua')
--- Not sure why we have two make_flyable calls here
-----------------------------------------------------------------------------------------
-make_flyable('a37_dragonfly', support_cockpit, nil, current_mod_path..'/comm.lua')
-----------------------------------------------------------------------------------------
+make_flyable('a_37_dragonfly', support_cockpit, nil, current_mod_path..'/comm.lua')
 plugin_done()

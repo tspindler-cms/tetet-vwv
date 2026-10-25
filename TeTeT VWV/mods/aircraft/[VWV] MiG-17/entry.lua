@@ -37,7 +37,7 @@ mount_vfs_model_path(current_mod_path .. "/Shapes")
 mount_vfs_liveries_path(current_mod_path .. "/Liveries")
 mount_vfs_texture_path(current_mod_path .. "/Textures/mig17f")
 -------------------------------------------------------------------------------------
-add_aircraft(dofile(current_mod_path .. '/Database/mig17f.lua'))
-add_aircraft(dofile(current_mod_path .. '/statics/mig_boarding_ladder.lua'))
+dofile(current_mod_path .. '/Database/mig17f.lua')
+dofile(current_mod_path .. '/Database/statics/mig_boarding_ladder.lua')
 -------------------------------------------------------------------------------------
 plugin_done()
