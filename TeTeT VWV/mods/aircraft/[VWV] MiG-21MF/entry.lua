@@ -35,7 +35,7 @@ declare_plugin(self_ID, {
 -------------------------------------------------------------------------------------
 mount_vfs_model_path(current_mod_path    .. "/Shapes")
 mount_vfs_liveries_path(current_mod_path .. "/Liveries")
-mount_vfs_texture_path(current_mod_path  .. "/Textures/mig21mf")
+mount_vfs_texture_path(current_mod_path  .. "/Textures/MiG21MF.zip")
 -------------------------------------------------------------------------------------
 add_aircraft( dofile(current_mod_path .. "/Database/mig21mf.lua") )
 -------------------------------------------------------------------------------------
