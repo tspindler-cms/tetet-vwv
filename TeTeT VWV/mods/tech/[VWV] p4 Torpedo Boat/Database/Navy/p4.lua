@@ -99,7 +99,10 @@ ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Torpedo84 );
 GT.WS[ws].area = 'BOAT';
-GT.WS[ws].center = 'CENTER_TOWER';
+GT.WS[ws].center = 'TPO_01';
+GT.WS[ws].canSetTacticalDir = true;
+GT.WS[ws].moveable = false;
+GT.WS[ws].angles = {{math.rad(0.2), math.rad(-0.2), math.rad(-10), math.rad(10)}};
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'TPO_01', recoilArgument = 177, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0}
 };
@@ -109,7 +112,10 @@ ws = GT_t.inc_ws();
 GT.WS[ws] = {};
 set_recursive_metatable(GT.WS[ws], GT_t.WS_t.ship_Torpedo84 );
 GT.WS[ws].area = 'BOAT';
-GT.WS[ws].center = 'CENTER_TOWER';
+GT.WS[ws].center = 'TPO_02';
+GT.WS[ws].canSetTacticalDir = true;
+GT.WS[ws].moveable = false;
+GT.WS[ws].angles = {{math.rad(0.2), math.rad(-0.2), math.rad(-10), math.rad(10)}};
 GT.WS[ws].LN[1].BR = {
 	{connector_name = 'TPO_02', recoilArgument = 178, recoilT0 = -1, recoilT1 = -0.5, recoilT2 = 0.5, recoilTime = 1.0},
 };
