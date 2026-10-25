@@ -58,8 +58,8 @@ add_structure({
     Name 		 =  "vwv_bdg_indohut1",
     DisplayName  = _("[VWV] Indochina Hut High"),
     ShapeName	 =   "indo_hut1",
-    ShapeNameDestr = "indo_hut1",
-    Life		 =  5,
+    ShapeNameDestr = "indo_hut1_destroyed",
+    Life		 =  2,
     Rate		 =  1,
     category     =  'Fortification',
 })
@@ -68,8 +68,8 @@ add_structure({
     Name 		 =  "vwv_bdg_indohut2",
     DisplayName  = _("[VWV] Indochina Hut Low"),
     ShapeName	 =   "indo_hut2",
-    ShapeNameDestr = "indo_hut2",
-    Life		 =  5,
+    ShapeNameDestr = "indo_hut2_destroyed",
+    Life		 =  2,
     Rate		 =  1,
     category     =  'Fortification',
 })
@@ -79,7 +79,7 @@ add_structure({
     DisplayName  = _("[VWV] Guard Tower"),
     ShapeName	 =   "guardTower",
 	ShapeNameDestr = "guardTower_destroyed",
-    Life		 =  5,
+    Life		 =  3,
     Rate		 =  1,
     category     =  'Fortification',
 })
@@ -89,7 +89,7 @@ add_structure({
     DisplayName  = _("[VWV] US Watch Tower"),
     ShapeName	 =   "vwv_us_watchtower",
 	ShapeNameDestr = "vwv_us_watchtower",
-    Life		 =  5,
+    Life		 =  3,
     Rate		 =  1,
     category     =  'Fortification',
 })
