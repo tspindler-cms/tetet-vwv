@@ -43,7 +43,7 @@ return {
 	-- M = 15600 lbs
 	V_opt 						= 190,-- Cruise speed (for AI)*
 	V_take_off 					= 69.44, -- Take off speed in m/s (for AI)
-	V_land 						= 40, -- m/s
+	V_land 						= 68, -- m/s
 	V_max_sea_level 			= 250, -- Max speed at sea level in m/s (for AI)
 	V_max_h 					= 240, -- Max speed at max altitude in m/s (for AI)
 	Vy_max 						= 17, -- Max climb speed in m/s (for AI)
@@ -184,7 +184,7 @@ return {
 	doors_movement = 2,
 	mechanimations = {
 		Door0 = {
-			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 50, "to", 1.0, "in", 2.0}, {"Arg", 701, "to", 1.0, "in", 2.0}, {"Arg", 38, "to", 0.9, "in", 2.0}}}}, Flags = {"Reversible"}},
+			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.9, "in", 2.0}}}}, Flags = {"Reversible"}},
 			{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 2.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
 			{Transition = {"Open", "Board"},  Sequence = {{C = {{"Sleep", "for", 45.0}}}}},
 			{Transition = {"Board", "Open"},  Sequence = {{C = {{"Sleep", "for", 0.0}}}}},
