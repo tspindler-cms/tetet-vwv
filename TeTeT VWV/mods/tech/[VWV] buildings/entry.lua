@@ -14,6 +14,8 @@ encyclopedia_path = current_mod_path..'/Encyclopedia',
 -- ------------------------------------------------------------------------------------------------------------------------
 -- shapes
 mount_vfs_model_path    (current_mod_path ..  "/Shapes")
+-- cargo aerodynamic tables, loaded by ShapeName.csv
+mount_vfs_model_path    (current_mod_path ..  "/Data")
 ------------------------------------------------------------------------------------------------------------------------
 -- liveries
 mount_vfs_liveries_path (current_mod_path ..  "/Liveries")
