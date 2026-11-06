@@ -9,14 +9,14 @@ installed     = true,
 fileMenuName  = _("VWV"),
 developerName = "TeTeT, Pirat3n, Odyseus, Eight Ball",
 info          = _("Buildings for the VWV mod"),
-encyclopedia_path = current_mod_path..'/Encyclopedia',
+encyclopedia_path = current_mod_path .. "/Encyclopedia",
 })
 -- ------------------------------------------------------------------------------------------------------------------------
 -- shapes
-mount_vfs_model_path    (current_mod_path ..  "/Shapes")
+mount_vfs_model_path    (current_mod_path .. "/Shapes")
 ------------------------------------------------------------------------------------------------------------------------
 -- liveries
-mount_vfs_liveries_path (current_mod_path ..  "/Liveries")
+mount_vfs_liveries_path (current_mod_path .. "/Liveries")
 -- ------------------------------------------------------------------------------------------------------------------------
 -- textures
 mount_vfs_texture_path  (current_mod_path .. "/Textures/indohut")
