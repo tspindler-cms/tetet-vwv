@@ -329,5 +329,4 @@ GT.tags  =
 {
 	"Cruiser",
 };
-
-GT.Countries = {"USA"}
+GT.Countries = { "USA" };
