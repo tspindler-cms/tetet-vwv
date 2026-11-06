@@ -2,7 +2,7 @@ declare_plugin("JJJ_Card_64",
 {
 dirName		  = current_mod_path,
 displayName   = _("USNS Card"),
-version		  = "3.3.1",
+version		  = "3.4.0",
 state		  = "installed",
 fileMenuName  = _("vwv_Card"),
 developerName = "James J Jackson",
