@@ -1,0 +1,7 @@
+model = {
+	lods = {
+		{"m-113.edm",10000.0},
+		{"ld_tec.edm",20000.0},
+	},
+	collision_shell = "vwv_us_m113_collision.edm";
+}

@@ -2,20 +2,22 @@
 
 local function add_cargo(f)
 	if(f) then
+		-- desrt = "self" keeps the live mesh on impact. DCS still looks for
+		-- <ShapeName>_dam on cargo damage; those .lods files alias the live model.
 		f.shape_table_data =
 		{
 			{
 				file  	    = f.ShapeName,
 				life		= f.Life,
 				username    = f.Name,
-				desrt       = f.ShapeNameDestr,
+				desrt       = f.ShapeNameDestr or "self",
 				-- classname = "lLandCargo",
 			}
 		}
-		if f.ShapeNameDestr then
-			f.shape_table_data[#f.shape_table_data + 1] = 
+		if f.ShapeNameDestr and f.ShapeNameDestr ~= f.ShapeName and f.ShapeNameDestr ~= "self" then
+			f.shape_table_data[#f.shape_table_data + 1] =
 			{
-				name  = f.ShapeName,
+				name  = f.ShapeNameDestr,
 				file  = f.ShapeNameDestr,
 			}
 		end
@@ -41,9 +43,8 @@ add_cargo({
 	DisplayName  	=  _("[VWV] US Conex (half), Cargo"),
 	--Shape EDM name
 	ShapeName	 	=   "vwv_us_connex",
-	ShapeNameDestr = "vwv_us_connex",
-	Life		 	 	=  10,
-	Rate		 	=  10,
+	Life		 	 	=  1,
+	Rate		 	=  2,
 	canExplode		= false,
 	mass			= 1000,
 	minMass		= 500,
@@ -79,9 +80,8 @@ add_cargo({
 	DisplayName  	=  _("[VWV] US blu82 for C130, Cargo"),
 	--Shape EDM name
 	ShapeName	 	=   "vwv_us_blu82_c130",
-	ShapeNameDestr = "vwv_us_blu82_c130",
-	Life		 	 	=  10,
-	Rate		 	=  10,
+	Life		 	 	=  1,
+	Rate		 	=  2,
 	canExplode		= true,
 	mass			= 6800,
 	minMass		= 6800,
@@ -92,18 +92,14 @@ add_cargo({
 	-- type = "gbu_43b_airdrop"
 })
 ---------------------------------------------
---[[
- Does not work, when detaching goes underground
-]]
 add_cargo({
 	Name 		 	=  "vwv_cgo_usM113",
 	--Name that will appear inside ME
 	DisplayName  	=  _("[VWV] US M113, Cargo"),
 	--Shape EDM name
 	ShapeName	 	=   "vwv_us_m113_cargo",
-	ShapeNameDestr = "M-113_p_1",
-	Life		 	 	=  20,
-	Rate		 	=  10,
+	Life		 	 	=  1,
+	Rate		 	=  4,
 	canExplode		= false,
 	mass			= 1000,
 	minMass		= 4000, -- real: 12300,
@@ -111,4 +107,53 @@ add_cargo({
 	couldCargo		= true,
 	topdown_view 	=  topdown_view,
 })
---- You can continue adding more cargo objets to the database following the structure above, between dot lines. Remember to add also a new *.csv file for each to Data folder
+
+add_cargo({
+	Name 		 	=  "vwv_cgo_bedford_MWD",
+	--Name that will appear inside ME
+	DisplayName  	=  _("[VWV] Bedfort MWD, Cargo"),
+	--Shape EDM name
+	ShapeName	 	=   "vwv_bedford_mwd_cargo",
+	Life		 	 	=  1,
+	Rate		 	=  4,
+	canExplode		= false,
+	mass			= 1000,
+	minMass		= 2850,
+	maxMass		= 3000,
+	couldCargo		= true,
+	topdown_view 	=  topdown_view,
+})
+
+add_cargo({
+	Name 		 	=  "vwv_cgo_mutt",
+	--Name that will appear inside ME
+	DisplayName  	=  _("[VWV] Mutt, Cargo"),
+	--Shape EDM name
+	ShapeName	 	=   "vwv_mutt_cargo",
+	Life		 	 	=  1,
+	Rate		 	=  3,
+	canExplode		= false,
+	mass			= 1000,
+	minMass		= 1100,
+	maxMass		= 1633,
+	couldCargo		= true,
+	topdown_view 	=  topdown_view,
+})
+
+add_cargo({
+	Name 		 	=  "vwv_cgo_mule",
+	--Name that will appear inside ME
+	DisplayName  	=  _("[VWV] Mule, Cargo"),
+	--Shape EDM name
+	ShapeName	 	=   "vwv_mule_cargo",
+	Life		 	 	=  1,
+	Rate		 	=  3,
+	canExplode		= false,
+	mass			= 1000,
+	minMass		= 361,
+	maxMass		= 454,
+	couldCargo		= true,
+	topdown_view 	=  topdown_view,
+})
+
+--- You can continue adding more cargo objets to the database following the structure above, between dot lines. Add Data/<ShapeName>.csv for each; the filename is the shape, not the unit name.
