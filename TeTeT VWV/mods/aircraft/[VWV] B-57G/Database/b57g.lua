@@ -28,7 +28,7 @@ return {
 		},
 
 	},
-	mapclasskey 		= "P0091000025",
+	mapclasskey 		= "P0091000027",
 	attribute  			= {wsType_Air, wsType_Airplane, wsType_F_Bomber, WSTYPE_PLACEHOLDER, "Bombers",},
 	Categories 			= {},
 	-------------------------
@@ -38,7 +38,8 @@ return {
 	M_max 						= 25000, -- kg
 	M_fuel_max 					= 5500, -- kg
 	H_max 					 	= 13700, -- m
-	average_fuel_consumption 	= 0.004, -- relative, same scale as the RA-5C template
+	average_fuel_consumption 	= 0.45, -- changed to A-37 value, is this even used?
+	defFuelRatio 				= 0.5, -- ratio of internal fuel to total fuel
 	CAS_min 					= 50, -- minimal indicated airspeed*?
 	-- M = 15600 lbs
 	V_opt 						= 190,-- Cruise speed (for AI)*
@@ -85,6 +86,9 @@ return {
 	RCS	=	10.0,
 	IR_emission_coeff	=	0.5,
 	IR_emission_coeff_ab	=	0.5,
+
+	date_of_introduction	=	1970.0,
+	country_of_origin	=	"USA",
 
 	engines_count				= 2, -- Engines count
 	engines_nozzles = {
@@ -236,9 +240,21 @@ return {
 	FlareChargeSize 		= 0,
 	CMDS_Edit 				= false,
 
+	HumanRadio = {
+		frequency		=	251.0,
+		editable		=	true,
+		minFrequency	=	30.000,
+		maxFrequency	=	399.975,
+		modulation		=	MODULATION_AM,
+		rangeFrequency 	= {
+			{min =  30.0, max =  79.95, modulation	= MODULATION_FM},
+			{min = 225.0, max = 399.975, modulation	= MODULATION_AM},
+		},
+	},
+
 	--sensors
-	detection_range_max		 = 0,
-	radar_can_see_ground 	 = false, -- this should be examined (what is this exactly?)
+	detection_range_max		 = 33, -- km
+	radar_can_see_ground 	 = true, -- not certain this is of any use
 	CanopyGeometry = {
 		azimuth   = {-160.0, 160.0}, -- pilot view horizontal (AI)
 		elevation = {-50.0, 90.0} -- pilot view vertical (AI)
@@ -246,6 +262,7 @@ return {
 	-- The laser flags on the turret sensors are not enough on their own.
 	-- laserEquipment is what lets the AI self-designate for its own bombs.
 	Sensors = {
+		RADAR = "B-57G APQ-139",
 		OPTIC = {"B-57G LLLTV", "B-57G FLIR"},
 	},
 	laserEquipment = {

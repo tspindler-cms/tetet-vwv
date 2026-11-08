@@ -3,6 +3,8 @@
 local SENSOR_OPTICAL = 0
 local OPTIC_SENSOR_LLTV = 1
 local OPTIC_SENSOR_IR = 2
+local SENSOR_RADAR = 1
+local RADAR_SS = 1
 
 local function turret_volume()
 	return {
@@ -40,4 +42,21 @@ declare_sensor({
 	resolution = 0.07,
 	laserRanger = true,
 	laserDesignator = true,
+})
+
+declare_sensor({
+	category = SENSOR_RADAR,
+	Name = "B-57G APQ-139",
+	type = RADAR_SS, -- surface search only; no air-to-air search
+	scan_volume = {
+		azimuth = {-55.0, 55.0},   -- forward nose sector, same pattern as the A-6
+		elevation = {-60.0, 30.0},
+	},
+	max_measuring_distance = 33300.0, -- 18 NM instrumented range
+	scan_period = 1.1,
+	vehicles_detection = true, -- moving-target detection
+	RCS = 100,
+	RBM_detection_distance = 33300.0,
+	GMTI_detection_distance = 33300.0,
+	HRM_detection_distance = 15742.0,
 })
