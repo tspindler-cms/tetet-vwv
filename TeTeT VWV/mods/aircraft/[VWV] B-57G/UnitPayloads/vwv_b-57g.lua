@@ -64,8 +64,20 @@ local unitPayloads = {
 				[4] = 17,
 			},
 		},
-		-- Last payload that lists Ground Attack. The mission generator keeps the last match for the default task.
 		[5] = {
+			["name"] = "Bay Mk-82",
+			["pylons"] = {
+				[1] = { ["CLSID"] = "{b57g_bay_mk82}", ["num"] = 5 },
+			},
+			["tasks"] = {
+				[1] = 32,
+				[2] = 31,
+				[3] = 34,
+				[4] = 17,
+			},
+		},
+		-- Last payload that lists Ground Attack. The mission generator keeps the last match for the default task.
+		[6] = {
 			["name"] = "Night Mission",
 			["pylons"] = {
 				[1] = { ["CLSID"] = "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}", ["num"] = 1 },

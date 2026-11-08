@@ -27,6 +27,7 @@ mount_vfs_texture_path  (current_mod_path.."/Textures/m36.zip")
 ----------------------------------------------------------------------------------------
 dofile(current_mod_path.."/Database/sensors.lua")
 dofile(current_mod_path.."/Weapons/m36.lua")
+dofile(current_mod_path.."/Weapons/bay.lua")
 add_aircraft(dofile(current_mod_path.."/Database/b57g.lua"))
 
 -------------------------------------------------------------------------------------

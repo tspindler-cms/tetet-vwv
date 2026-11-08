@@ -71,7 +71,7 @@ return {
 
     wing_tip_pos = {2.0, 0.67, 9.6}, -- right tip
 
-	stores_number = 4,
+	stores_number = 5, -- four wing racks plus the bay station
 	tanker_type	=	0, -- no air-to-air refueling
 	wing_area = 89.2,
 	wing_span = 19.2,
@@ -182,6 +182,7 @@ return {
 	-- Close/Open/Board are what let the crew climb out after the aircraft is parked.
 	doors_transmission = "Mechanical",
 	doors_movement = 2,
+	bomb_bay_movement = 2,
 	mechanimations = {
 		Door0 = {
 			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.9, "in", 2.0}}}}, Flags = {"Reversible"}},
@@ -191,7 +192,10 @@ return {
 			{Transition = {"Any", "Bailout"}, Sequence = {{C = {{"Arg", 38, "set", 1.0}}}}},
 		},
 		Door1 = {DuplicateOf = "Door0"},
-
+		BombBay = {
+			{Transition = {"Close", "Open"}, Sequence = {{C = {{"Arg", 26, "to", 1.0, "in", 2.0, "sign", 1}}}}},
+			{Transition = {"Open", "Close"}, Sequence = {{C = {{"Arg", 26, "to", 0.0, "in", 2.0, "sign", -1}}}}},
+		},
 		CentralStrut = {
 			{Transition = {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 0, "from", 0.0, "to", 1.0, "in", 8.0}}}}, Flags = {"Reversible"}},
 			{Transition = {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 0, "from", 1.0, "to", 0.0, "in", 8.0}}}}, Flags = {"Reversible"}},
@@ -290,6 +294,15 @@ return {
 			{ CLSID = "{mk77mod0}" }, -- Mk-77 mod 0
 			{ CLSID = "{m36}" }, -- M36 incendiary
 			{ CLSID = "{m36_rack}" },
+			{ CLSID = "<CLEAN>" },
+		}),
+		-- One hatch station. Each CLSID places six bombs on BAY_1..BAY_6.
+		pylon(5, 2, 0, 0, 0, {use_full_connector_position = true, connector = "disable"},
+		{
+			{ CLSID = "{b57g_bay_mk82}" },
+			{ CLSID = "{b57g_bay_gbu12}" }, -- they clip a bit through the bay, but keeping for convenience
+			{ CLSID = "{b57g_bay_m36}" },
+			-- { CLSID = "{b57g_bay_mk77}" }, -- these bombs are too large for the bay
 			{ CLSID = "<CLEAN>" },
 		}),
     },
