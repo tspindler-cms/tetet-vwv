@@ -80,7 +80,7 @@ return {
 	length					=	11.84,								-- [m] Corrected from 15.96 (38ft 10in)
 	height					=	4.77,								-- [m] Approx 15 ft 8 in
 	RCS						=	5,									-- [m2] Radar Cross Section
-	
+
 	CanopyGeometry = {
         azimuth = {-140.0, 140.0},
         elevation = {-10.0, 90.0},
@@ -102,27 +102,28 @@ return {
 
 	V_max_sea_level			=	143.0,								-- [m/s TAS] ~278 kts / 320 mph
 	V_max_h					=	145.0,								-- [m/s TAS] ~281 kts (Speed does not increase drastically with alt for this airframe)
-	V_opt					=	165,								-- [m/s TAS] Cruise/Optimum
-	V_take_off				=	50,									-- [m/s TAS] ~97 kts
-	V_land					=	45,									-- [m/s TAS] ~87 kts
+	Vy_max                  =    14,
+	V_opt					=	105,								-- [m/s TAS] Cruise/Optimum
+	V_take_off				=	70,									-- [m/s TAS] ~97 kts
+	V_land					=	55,									-- [m/s TAS] increased to 100 knots ~87 kts
 	Mach_max				=	0.75,								-- [Mach] Safe limit
 	H_max					=	8685,								-- [m] Ceiling ~28,500 ft
 	
 	CAS_min					=	40.1,								-- [m/s TAS] Stall speed
-	AOA_take_off			=	math.rad(2),						-- [rad]
+	AOA_take_off			=	math.rad(6),						-- [rad]
 	bank_angle_max			=	60,									-- [deg]
 	Ny_min					=	-1,									-- [G] Min G
-	Ny_max					=	2,									-- [G] Max G (structural)
-	Ny_max_e				=	3,									-- [G] Ultimate
+	Ny_max					=	6,									-- [G] Max G (structural)
+	Ny_max_e				=	8,									-- [G] Ultimate
 	range					=	2540,								-- [km] Ferry range
 	
 	has_afteburner			=	false,
 	has_speedbrake			=	true,
 	has_differential_stabilizer = false,
-	flaps_maneuver			=	1,
+	flaps_maneuver			=	0.5,
 
-	thrust_sum_max			=	3600,								-- [kgf] Static thrust (Approx 8000 lbs). Used for UI/AI.
-	thrust_sum_ab			=	3600,								-- [kgf] No Afterburner
+	thrust_sum_max			=	14000,								-- [kgf] Static thrust (Approx 8000 lbs). Used for UI/AI.
+	thrust_sum_ab			=	14000,								-- [kgf] No Afterburner
 	
 	radar_can_see_ground	=	true,
 	detection_range_max		=	60,									-- Max detection range of ground units
@@ -700,9 +701,9 @@ return {
 			Czbe			=	-0.012,		-- [coeff] Directional stability
 			
 			-- Drag coefficients
-			cx_gear			=	0.035,		-- [coeff] Drag Gear
-			cx_flap			=	0.045,		-- [coeff] Drag Flaps
-			cy_flap			=	0.35,		-- [coeff] Lift Flaps
+			cx_gear			=	0.07, -- 0.035,		-- [coeff] Drag Gear
+			cx_flap			=   0.09, -- 0.045,		-- [coeff] Drag Flaps
+			cy_flap			=	0.30,		-- [coeff] Lift Flaps
 			cx_brk			=	0.12,		-- [coeff] Drag Airbrakes
 			table_data		= 
 			{
@@ -728,7 +729,7 @@ return {
 			MaxRUD				=	1,
 			MaksRUD				=	1,
 			ForsRUD				=	1,
-			typeng				=	2,			-- [enum] 2 = Piston logic
+			-- typeng				=	2,			-- [enum] 2 = Piston logic
 			type				=	"Radial",
 			Startup_Prework		=	12,
 			Startup_RPMs		=	{ {0, 0}, {1, 66}, {4.6, 66}, {5, 300}, {5.5, 450}, {7, 500}, {9, 800}, {12, 900} },
@@ -739,8 +740,8 @@ return {
 			hMaxEng				=	12.5,		-- [km] Altitude limit for engine
 			cemax				=	0.37,		-- [kg/s] Max fuel consumption per engine
 			cefor				=	0.37,
-			dpdh_m 				= 	0,			-- set to zero so piston parameters are not overridden
-			dpdh_m 				= 	0,			-- set to zero so piston parameters are not overridden
+			dpdh_m 				= 	1800,
+			dpdh_f 				= 	1800,
 
 			-- Thrust table: Normalized for ~2700 HP Propeller
 			-- Col 1: Mach
@@ -879,10 +880,10 @@ return {
 															M_tip = sqrt( V^2 + (Rotational Velocity)^2 ) / (Speed of Sound)
 											]]
 			
-			N_indic_0			=	2013400,	-- [W] Indicated power
+			N_indic_0			=	1023040,	-- [W] Indicated power
 			
 			N_fr_0 				=	0.095,		-- Friction Mean Effective Pressure (FMEP) - Static drag to turn engine over
-			N_fr_1 				=	0.055,		-- Friction Mean Effective Pressure (FMEP) - Viscous drag as piston speed increases
+			N_fr_1 				=	0.02,		-- Friction Mean Effective Pressure (FMEP) - Viscous drag as piston speed increases
 											--[[	Definition: These coefficients model the horsepower lost to friction
 													(piston rings, bearings, valve train) and pumping losses (sucking air
 													in/pushing exhaust out).
@@ -897,7 +898,7 @@ return {
 			k_gearbox			=	16/7,		-- Engine/propeller gearbox ratio (inverse of reduction ratio; never less than 1.0 in DCS)
 			P_oil				=	482633,		-- [Pa] Oil pressure
 			
-			k_boost				=	8.67,		-- Supercharger boost factor/Boost scaling
+			k_boost				=	3,		-- Supercharger boost factor/Boost scaling
 											--[[	Real-World Equivalent: Charge density scalar.
 
 													Definition: Likely a coefficient linking Manifold Pressure to actual
