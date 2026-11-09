@@ -11,16 +11,11 @@ state		 = "installed",
 info		 = _("Wikipedia: The Cessna A-37 Dragonfly, or Super Tweet, is a jet-powered, light attack aircraft designed and produced by the American aircraft manufacturer Cessna."),
 developerName    = "Hawkeye60",
 
-InputProfiles =
-{
-    ["a_37_dragonfly"] = current_mod_path .. '/Input/a37_dragonfly',
-},
+	InputProfiles =
+		{
+			["a_37_dragonfly"] = current_mod_path .. "/Input/a37_dragonfly",
+		},
 
-Skins	=
-	{
-	    ["a_37_dragonfly"] = current_mod_path .. "/Input/a37_dragonfly",
-	},
-	
 	Skins	=
 		{
 			{
