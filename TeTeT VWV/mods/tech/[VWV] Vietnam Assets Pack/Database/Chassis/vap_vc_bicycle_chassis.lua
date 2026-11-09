@@ -1,7 +1,7 @@
 -- VAP Chassis VC Bicycle --
 
 GT_t.CH_t.vap_vc_bicycle_chassis = {
-	life = 2,
+	life = 1.02,
 		mass = 81, -- 
 		length = 2.000,
 		width = 1.27,
