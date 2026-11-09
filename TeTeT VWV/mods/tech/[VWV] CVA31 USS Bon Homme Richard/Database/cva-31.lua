@@ -499,3 +499,5 @@ GT.tags  =
 {
 	"Carrier"
 }
+GT.Countries = { "USA" };
+
