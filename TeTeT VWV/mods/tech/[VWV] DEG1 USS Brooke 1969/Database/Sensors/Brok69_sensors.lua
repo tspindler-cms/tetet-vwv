@@ -34,7 +34,7 @@ Brok69_SS =
             scan_volume =
             {
                 azimuth = {-180.0, 180.0},
-                elevation = {-15.0, 70.0}
+                elevation = {-3.0, 10.0}
             },
             max_measuring_distance = 80000.0,
             detection_distance =
@@ -53,10 +53,10 @@ Brok69_SS =
             lock_on_distance_coeff = 1.0,
             velocity_limits =
             {
-                radial_velocity_min = 10.0,
+                radial_velocity_min = 12.0,
             },
             scan_period = 10.0,
-            RCS = 10.0,
+            RCS = 100.0,
             RBM_detection_distance = 80000.0			
         }
 
@@ -71,7 +71,7 @@ Brok69_AS =
             scan_volume =
             {
                 azimuth = {-180.0, 180.0},
-                elevation = {-15.0, 70.0}
+                elevation = {-15.0, 80.0}
             },
             max_measuring_distance = 480000.0,
             detection_distance =
