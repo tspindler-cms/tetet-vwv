@@ -18,28 +18,33 @@ InputProfiles =
 
 Skins	=
 	{
-		{
-			name	= _("A-37 Dragonfly"),
-			dir		= "Theme"
-		},
+	    ["a_37_dragonfly"] = current_mod_path .. "/Input/a37_dragonfly",
 	},
-
-Missions =
-	{
+	
+	Skins	=
 		{
-			name		= _("A-37 Dragonfly"),
-			dir			= "Missions",
+			{
+				name	= _("A-37 Dragonfly"),
+				dir		= "Theme"
+			},
 		},
-	},
-
-LogBook =
-	{
+	
+	Missions =
 		{
-			name		= _("A-37 Dragonfly"),
-			type		= "a_37_dragonfly",
+			{
+				name		= _("A-37 Dragonfly"),
+				dir			= "Missions",
+			},
 		},
-	},
-}
+	
+	LogBook =
+		{
+			{
+				name		= _("A-37 Dragonfly"),
+				type		= "a_37_dragonfly",
+			},
+		},
+	}
 )
 mount_vfs_texture_path  ( current_mod_path ..  "/Theme/ME" )--for simulator loading window
 --mount_vfs_texture_path  ( current_mod_path ..  "/Cockpit/Textures/a_37_dragonfly-CPT-TEXTURES" )
