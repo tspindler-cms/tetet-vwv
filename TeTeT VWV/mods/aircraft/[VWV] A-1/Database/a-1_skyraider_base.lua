@@ -113,8 +113,8 @@ return {
 	AOA_take_off			=	math.rad(6),						-- [rad]
 	bank_angle_max			=	60,									-- [deg]
 	Ny_min					=	-1,									-- [G] Min G
-	Ny_max					=	6,									-- [G] Max G (structural)
-	Ny_max_e				=	8,									-- [G] Ultimate
+	Ny_max					=	2,									-- [G] Max G (structural)
+	Ny_max_e				=	3,									-- [G] Ultimate
 	range					=	2540,								-- [km] Ferry range
 	
 	has_afteburner			=	false,
