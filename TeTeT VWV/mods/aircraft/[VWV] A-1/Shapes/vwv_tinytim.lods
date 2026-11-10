@@ -1,0 +1,7 @@
+model = {
+	lods = {
+		{"tinytim.edm",10000.0};
+      
+	};
+}
+
