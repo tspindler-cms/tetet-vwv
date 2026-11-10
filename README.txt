@@ -38,6 +38,10 @@ Vietnam Asset Pack, from EightBall and Tobsen
 Vietnamese Junks, sail ships
 Sampans, wooden boats for use on rivers and lakes
 USS Sacramento, a logistics ship
+USS Bradley (DE-1041), USS Sample (DE-1048), Garcia class Destroyer Escorts
+USS Brooke (DEG-1), Brooke class guided missile Destroyer Escort
+B-57G Canberra, a night-attack bomber from Project Tropic Moon
+DShK HMG, a heavy machine gun ground unit
 
 This has been my first attempt at modding for DCS, so take the results with a grain of salt.
 
