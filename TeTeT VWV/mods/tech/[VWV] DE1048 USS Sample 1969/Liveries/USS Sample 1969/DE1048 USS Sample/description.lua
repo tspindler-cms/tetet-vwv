@@ -1,13 +1,13 @@
 -- rename it to description.lua
 livery = 
 {
-    {"voge_registry_number",	   	0, "voge_registry_number.dds" ,false};
+    {"smpl_registry_number",	   	0, "smpl_registry_number.dds" ,false};
 }
 ----== below part is not required for cockpit livery ==----
 --[[ name your own skin in default language (en)
      meanwhile, you can also name the skin in more than one languages,
      replace xx by [ru, cn, cs, de, es, fr, or it] ]]
-name = "(DE-1047) USS Voge"
+name = "(DE-1048) USS Sample"
 --name_xx = ""
 --[[ assign the countries
      if you want no country limitation,

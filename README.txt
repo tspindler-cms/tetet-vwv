@@ -38,6 +38,10 @@ Vietnam Asset Pack, from EightBall and Tobsen
 Vietnamese Junks, sail ships
 Sampans, wooden boats for use on rivers and lakes
 USS Sacramento, a logistics ship
+USS Bradley (DE-1041), USS Sample (DE-1048), Garcia class Destroyer Escorts
+USS Brooke (DEG-1), Brooke class guided missile Destroyer Escort
+B-57G Canberra, a night-attack bomber from Project Tropic Moon
+DShK HMG, a heavy machine gun ground unit
 
 This has been my first attempt at modding for DCS, so take the results with a grain of salt.
 
@@ -46,13 +50,17 @@ How to install
 The mods directory needs to go into your Saved Games DCS folder. 
 
 Liveries:
-    * https://www.digitalcombatsimulator.com/en/files/3335218/ A-4 Skyhawk livery set for CVA-31 by seabat
+    * https://files.digitalcombatsimulator.com/en/files/3335218/ A-4 Skyhawk livery set for CVA-31 by seabat
+    * https://files.digitalcombatsimulator.com/en/files/3352003/ VAP Mutt (Jeep) Liveries - Cold War for Vietnam Mod Pk by ggrewe
+    * https://files.digitalcombatsimulator.com/en/files/3351998/ VAP Mutt (Jeep) Liveries Part 1 - USA, Canada for Vietnam Mod Pk by ggrewe
+    * https://files.digitalcombatsimulator.com/en/files/3351978/ VAP River Boat Liveries for Vietnam Mod Pk UPDATE 26.11.09 by ggrewe
+    * https://files.digitalcombatsimulator.com/en/files/3351972/ VAP Mutt Gun Liveries - Cold War Incl. Suez Crisis '56 for Vietnam Mod Pk by ggrewe
+    * https://files.digitalcombatsimulator.com/en/files/3351971/ VAP Mutt Gun Liveries - USA, Canada for Vietnam Mod Pk by ggrewe
 
 Videos:
     * https://www.youtube.com/watch?v=yv03h-a1TQA Sidekick65's video of Unboxing and First Impression for CVA-31
     * https://www.youtube.com/watch?v=6SQsg3xx6JA Sidekick65's video on the 0.6.0 update 
-    * https://youtu.be/h-b9WlLvd8E TeTeT's take on a release video for CVA-31
-    * https://youtu.be/VT4Cq9SRnMg TeTeT's take on an update video for CVA-31
+    * https://www.youtube.com/watch?v=h-b9WlLvd8E&list=PLnrCsp76znQBK6BxLXVV_LNTz28iWTPaO TeTeT's playlist for VWV
 
 Links and model sources:
     * https://en.wikipedia.org/wiki/USS_Bon_Homme_Richard_(CV-31)
@@ -121,6 +129,8 @@ Thanks
     TheAdmiral - rigging the AD-30 Solon Turman
     EightBall & Tobsen - for the Vietnam Asset Pack (VAP)
     HawaiianRyan - massive support in updating and streamlining configs
+    Showtime 100 - for testing support throughout the years
+    K then.... - for great screenshots
 
 Without these persons the mod would not have been possible!
 

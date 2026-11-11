@@ -3,29 +3,29 @@ Brok69_RIM24_Tartar = {
     name            = "Brok69_RIM24_Tartar",
     user_name       = _("RIM-24B"),
     model           = 'Brok69_tartar',
-    mass            = 707.0,
+    mass            = 594.0,
     wsTypeOfWeapon  = {4,4,34,WSTYPE_PLACEHOLDER},
 
  	Escort 			= 3, -- Escort(Requires tracking?): 0 - no, 1 - launch aircraft, 2 - another aircraft, 3 - from the ground
 	Head_Type 		= 6, -- Seeker type code, in our case 6 is for Semi-active radar homing. 1 = Passive IR homing, 2 = Active Radar Homing
 	sigma 			= {80, 80, 80}, -- maximum aiming error in meters, in target coordinates. x - longitudinal axis of the target, y - vertical axis of the target, z - transverse axis of the target
-	M 			    = 707.0, -- Mass of the missile at launch
+	M 			    = 594.0, -- Mass of the missile at launch
 	H_max 			= 29630.0, -- Maximum target altitude
 	H_min 			= 45.0, -- minimum target altitude
-	Diam 			= 34.3, -- Missile diameter in cm
-	Cx_pil 			= 1, -- "Cx like pendants" - Moment of inertia??
-	D_max 			= 29630.0, -- Maximum range firing at low altitude, in meters
-	D_min 			= 3000.0, -- minimum range in meters
+	Diam 			= 343.0, -- Missile diameter in mm
+	Cx_pil 			= 5, -- "Cx like pendants" - Moment of inertia??
+	D_max 			= 14815.0, -- Maximum range firing at low altitude, in meters
+	D_min 			= 1500.0, -- minimum range in meters
 	Head_Form 		= 1, -- determines shape of the missile head for drag modeling; 0 for hemispherical, 1 for conical
-	Life_Time 		= 480.0, -- Battery life
-	Nr_max 			= 16, -- Maximum g when turning
-	v_min 			= 120.0, -- Minimum speed in m/s
-	v_mid 			= 617.4, -- average speed in m/s
+	Life_Time 		= 180.0, -- Battery life
+	Nr_max 			= 20.0, -- Maximum g when turning
+	v_min 			= 180.0, -- Minimum speed in m/s
+	v_mid 			= 586.53, -- average speed in m/s
 	Mach_max 		= 1.8, -- maximum Mach of the missile
 	t_b 			= 0.0, -- Motor start delay
-	t_acc 			= 5.0, -- motor burn time
-	t_marsh 		= 36.0, -- cruise time, 0.0 if not applicable
-	Range_max 		= 29630.0, -- Max range in meters 16nm
+	t_acc 			= 4.0, -- motor burn time
+	t_marsh 		= 20.0, -- cruise time, 0.0 if not applicable
+	Range_max 		= 35556.0, -- Max range in meters 
 	H_min_t 		= 50.0, -- minimum target height above the terrain, m.
 	Fi_start 		= 3.14152, -- angle of tracking and sighting at launch, in radians
 	Fi_rak 			= 3.14152, -- allowable angle of view of the target, in radians
@@ -33,25 +33,23 @@ Brok69_RIM24_Tartar = {
 	Fi_search 		= 99.9, -- limit angle of free search
 	OmViz_max 		= 99.9, -- line-of-sight speed limit
 	Engine_Type  	= 1,
-	exhaust1 		= { 1, 1, 1, 1 },
+	exhaust 		= { 1, 1, 1, 1 },
 	X_back 			= -3.0,
 	Y_back 			= 0.0,
 	Z_back 			= 0.0,
-	exhaust2 		= {1, 1, 1, 1 },
-	X_back_acc 		= -3.0,
-	Y_back_acc 		= 0.0,
-	Z_back_acc 		= 0.0,
 	tail_scale 	 	= 8.5,
 	Reflection 		= 0.25,
 	KillDistance 	= 10.0,
-	ccm_k0       	= 0.1,		
+	SeekerGen = 2,  -- Seeker generation
+	ccm_k0       	= 0.7,	-- Counter Countermeasures Probability Factor. Value = 0 - missile has absolutely resistance to countermeasures. Default = 1 (medium probability)	
+	supersonic_A_coef_skew = 0.01,
 
 	PN_coeffs = {3, 				-- Number of Entries
 				50000.0 ,1.0,		-- Less 5 km to target Pn = 1
 				100000.0, 0.5,		-- Between 10 and 5 km  to target, Pn smoothly changes from 0.5 to 1.0. 
 				200000.0, 0.0};		-- Between 20 and 10 km  to target, Pn smoothly changes from 0.2 to 0.5. Longer then 30 km Pn = 0.2.
 	
-	warhead = enhanced_a2a_warhead(60.0); 
+	warhead = enhanced_a2a_warhead(60.0);
 
     shape_table_data = {
         {
@@ -80,7 +78,7 @@ GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].distanceMin = 500
 GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].distanceMax = 29630
 GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].reactionTime = 0.1;
 GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].launch_delay = 0.03;
-GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].reflection_limit = 1.8
+GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].reflection_limit = 0.02
 GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].ECM_K = 0.1
 GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].max_number_of_missiles_channels = 1
 GT_t.WS_t.Brok69_RIM24_Tartar.LN[1].sensor = {}

@@ -1,0 +1,9 @@
+model = {
+	lods={
+		{"Bedford_MWD_LOD0.edm",150.0};
+		{"Bedford_MWD_LOD1.edm",500.0};
+		{"Bedford_MWD_LOD2.edm",1000.0};
+		{"Bedford_MWD_LOD3.edm",20000.0};		     
+	};
+	collision_shell = "vwv_us_m113_collision.edm";
+}

@@ -84,7 +84,7 @@ GT.airFindDist = 296000; -- Max detenction range air threats (meters)
 GT.WS = {}
 GT.WS.maxTargetDetectionRange = 190000;
 GT.WS.radar_type = 102
-GT.WS.searchRadarMaxElevation = math.rad(60);
+GT.WS.searchRadarMaxElevation = math.rad(90);
 GT.WS.searchRadarFrequencies = {{10.25e6, 10.5e6}, {5.45e9, 5.825e9}};
 
 -- weapon systems goes here
@@ -181,8 +181,8 @@ local first_Brok69_tracker_id = ws
 GT.WS[ws] = {
 	--area = 'Mast',
 	center = 'RADAR_1',
-    omegaY = 2,
-    omegaZ = 2,
+    --omegaY = 2,
+    --omegaZ = 2,
     pidY = {p=100, i=0.05, d=12, inn = 50},
     pidZ = {p=100, i=0.05, d=12, inn = 50},
     angles = { {math.rad(180), math.rad(-180), math.rad(-90), math.rad(80)} },
@@ -192,7 +192,7 @@ GT.WS[ws] = {
             distanceMin = 500,
             distanceMax = 190000,
             reactionTime = 2.0,
-            reflection_limit = 1.8,
+            reflection_limit = 1.0,
 			frequencyRange = {5.45e9, 5.825e9},
             ECM_K = 0.6,
             min_trg_alt = 5,
@@ -231,8 +231,8 @@ GT.WS[ws].angles = {
 					};
 GT.WS[ws].drawArgument1 = 1311
 GT.WS[ws].drawArgument2 = 1312
-GT.WS[ws].omegaY = 2
-GT.WS[ws].omegaZ = 2
+--GT.WS[ws].omegaY = 2
+--GT.WS[ws].omegaZ = 2
 GT.WS[ws].reference_angle_Y = math.rad(-180);
 GT.WS[ws].reference_angle_Z = math.rad(89.5);
 GT.WS[ws].pidY = {p=10, i=0.5, d=5, inn = 2};
@@ -245,16 +245,6 @@ GT.WS[ws].LN[1].PL[1].ammo_capacity = 16;
 GT.WS[ws].LN[1].PL[1].shot_delay = 8
 --GT.WS[ws].LN[1].PL[1].virtualStwID = 1	
 GT.WS[ws].LN[1].BR = Brok69_front_cells
-
--- HARPOON
-
---GT.WS[ws].LN[2] = {}
---set_recursive_metatable(GT.WS[ws].LN[2], GT_t.WS_t.ship_HARPOON.LN[1])
---GT.WS[ws].LN[2].show_external_missile = false
---GT.WS[ws].LN[2].PL[1].ammo_capacity = 8;
---GT.WS[ws].LN[2].PL[1].shot_delay = 22;
---GT.WS[ws].LN[2].PL[1].virtualStwID = 1;	
---GT.WS[ws].LN[2].BR = Brok69_front_cells
 
 -------------------------------------------------------------------------------------------------
 --   ASROC  *ps Blooke and Garcia Class does not have Harpoon modification. so I disable it. but keep it just in case.
@@ -326,7 +316,6 @@ GT.mapclasskey		= "P0091000070"; --map icon >>MissionEditor\data\NewMap\images
 GT.attribute		= {wsType_Navy,wsType_Ship,wsType_ArmedShip,wsType_GenericLightArmoredShip,
 						"Frigate",
 						"RADAR_BAND1_FOR_ARM",
-					"RADAR_BAND2_FOR_ARM",
 						"DetectionByAWACS",
 					"HeavyArmoredUnits",
 					"Heavy armed ships", 
