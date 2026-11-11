@@ -1,4 +1,4 @@
-# DCS-Ship-mod-Template P 4 class torpedo boat
+# P 4 class torpedo boat for DCS
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 

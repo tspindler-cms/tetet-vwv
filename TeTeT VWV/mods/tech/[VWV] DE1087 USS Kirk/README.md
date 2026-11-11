@@ -1,4 +1,4 @@
-# USS Kirk (DE-1079) for DCS
+# USS Kirk (DE-1087) for DCS
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
