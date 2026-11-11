@@ -2,4 +2,4 @@
 
 This mod is released under the Creative Commons Attribution-NonCommercial-ShareAlike license, see LICENSE.md for details
 
-A mod of the A-37 Crusader for DCS, thanks to Hawkeye60.
+A mod of the A-37 Dragonfly for DCS, thanks to Hawkeye60.
