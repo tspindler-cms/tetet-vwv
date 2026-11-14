@@ -281,7 +281,6 @@ return {
 		{
 			{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" }, -- Mk-82
 			{ CLSID = "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}" }, -- GBU-12
-			{ CLSID = "{mk77mod0}" }, -- Mk-77 mod 0, from the A-4E-C mod
 			{ CLSID = "{m36}" }, -- M36 incendiary
 			{ CLSID = "{m36_rack}" }, -- two M36 on the twin saddle
 			{ CLSID = "<CLEAN>" },
@@ -290,7 +289,6 @@ return {
 		{
 			{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" }, -- Mk-82
 			{ CLSID = "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}" }, -- GBU-12
-			{ CLSID = "{mk77mod0}" }, -- Mk-77 mod 0
 			{ CLSID = "{m36}" }, -- M36 incendiary
 			{ CLSID = "{m36_rack}" },
 			{ CLSID = "<CLEAN>" },
@@ -299,7 +297,6 @@ return {
 		{
 			{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" }, -- Mk-82
 			{ CLSID = "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}" }, -- GBU-12
-			{ CLSID = "{mk77mod0}" }, -- Mk-77 mod 0
 			{ CLSID = "{m36}" }, -- M36 incendiary
 			{ CLSID = "{m36_rack}" },
 			{ CLSID = "<CLEAN>" },
@@ -308,7 +305,6 @@ return {
 		{
 			{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" }, -- Mk-82
 			{ CLSID = "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}" }, -- GBU-12
-			{ CLSID = "{mk77mod0}" }, -- Mk-77 mod 0
 			{ CLSID = "{m36}" }, -- M36 incendiary
 			{ CLSID = "{m36_rack}" },
 			{ CLSID = "<CLEAN>" },
@@ -319,7 +315,6 @@ return {
 			{ CLSID = "{b57g_bay_mk82}" },
 			{ CLSID = "{b57g_bay_gbu12}" }, -- they clip a bit through the bay, but keeping for convenience
 			{ CLSID = "{b57g_bay_m36}" },
-			-- { CLSID = "{b57g_bay_mk77}" }, -- these bombs are too large for the bay
 			{ CLSID = "<CLEAN>" },
 		}),
     },

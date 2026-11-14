@@ -8,7 +8,7 @@ declare_plugin(self_ID,
 	creditsFile = "credits.txt",
 	fileMenuName     = _("B-57G"),
 	update_id        = "b57g",
-	version		 = "3.4.0",
+	version		 = "3.4.1",
 	state		 = "installed",
 	info		 = _("Wikipedia: Converted as a specialized night-intruder and interdiction aircraft during the Vietnam War to hunt supply traffic along the Ho Chi Minh Trail."),
 	Skins	=
