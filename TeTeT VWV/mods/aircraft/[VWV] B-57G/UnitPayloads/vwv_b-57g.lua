@@ -50,21 +50,6 @@ local unitPayloads = {
 			},
 		},
 		[4] = {
-			["name"] = "Mk-77 mod 0*4",
-			["pylons"] = {
-				[1] = { ["CLSID"] = "{mk77mod0}", ["num"] = 1 },
-				[2] = { ["CLSID"] = "{mk77mod0}", ["num"] = 2 },
-				[3] = { ["CLSID"] = "{mk77mod0}", ["num"] = 3 },
-				[4] = { ["CLSID"] = "{mk77mod0}", ["num"] = 4 },
-			},
-			["tasks"] = {
-				[1] = 32,
-				[2] = 31,
-				[3] = 34,
-				[4] = 17,
-			},
-		},
-		[5] = {
 			["name"] = "Bay Mk-82",
 			["pylons"] = {
 				[1] = { ["CLSID"] = "{b57g_bay_mk82}", ["num"] = 5 },
@@ -77,7 +62,7 @@ local unitPayloads = {
 			},
 		},
 		-- Last payload that lists Ground Attack. The mission generator keeps the last match for the default task.
-		[6] = {
+		[5] = {
 			["name"] = "Night Mission",
 			["pylons"] = {
 				[1] = { ["CLSID"] = "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}", ["num"] = 1 },

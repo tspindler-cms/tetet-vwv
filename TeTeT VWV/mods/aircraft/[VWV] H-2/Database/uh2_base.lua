@@ -668,7 +668,7 @@ return {
     Tasks = {
         aircraft_task(Transport),
         aircraft_task(Reconnaissance),
-		aircraft_task(Airborne),
+		-- invalid aircraft_task(Airborne),
     },
     DefaultTask = aircraft_task(Transport),
     
