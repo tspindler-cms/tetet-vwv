@@ -44,7 +44,7 @@ livery = {
 	{"HandControls",	DIFFUSE			,	"handcontrols_basecolor", true};
 	{"HandControls",	NORMAL_MAP			,	"handcontrols_normal", true};
 	{"HandControls",	ROUGHNESS_METALLIC			,	"handcontrols_roughmet", true};
-	{"lambert1.001",	DIFFUSE			,	"mule_driver_body_diff", true};
+	--[[ {"lambert1.001",	DIFFUSE			,	"mule_driver_body_diff", true};
 	{"lambert1.001",	NORMAL_MAP			,	"mule_driver_body_normal", true};
 	{"lambert1.001",	ROUGHNESS_METALLIC			,	"mule_driver_body_roughmet", true};
 	{"lambert4",	DIFFUSE			,	"mule_driver_legs_diff", true};
@@ -65,6 +65,7 @@ livery = {
 	{"lambert5",	DIFFUSE			,	"mule_driver_legs_diff", true};
 	{"lambert5",	NORMAL_MAP			,	"mule_driver_legs_normal", true};
 	{"lambert5",	ROUGHNESS_METALLIC			,	"mule_driver_legs_roughmet", true};
+	--]]
 	{"SeatCushion",	DIFFUSE			,	"seatcushion_basecolor", true};
 	{"SeatCushion",	NORMAL_MAP			,	"seatcushion_normal", true};
 	{"SeatCushion",	ROUGHNESS_METALLIC			,	"seatcushion_roughmet", true};
@@ -89,4 +90,9 @@ livery = {
 	{"Tire",	DIFFUSE			,	"mule_tire_basecolor", true};
 	{"Tire",	NORMAL_MAP			,	"mule_tire_normal", true};
 	{"Tire",	ROUGHNESS_METALLIC			,	"mule_tire_roughmet", true};
+}
+
+custom_args =
+{
+        [60] = 0.0, -- No loadout
 }
